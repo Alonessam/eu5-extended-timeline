@@ -1,0 +1,157 @@
+roman_polytheism = {
+	color = { 225 62 44 }
+	group = folk_european_group
+
+	religious_aspects = 1
+
+	needs_reform = yes
+
+
+	has_religious_head = yes 
+    
+    definition_modifier = {
+		global_defensive = 0.1
+		prestige_from_land_battle = 0.1 
+		global_levy_size_modifier = 0.1
+    }
+    
+    opinions = {
+
+    }
+
+	tags = {
+		folk_european_gfx pagan_gfx
+	}
+}
+
+hispano_roman_polytheism = {
+	color = {225 80 59}
+	group = folk_european_group
+
+	religious_aspects = 1
+
+	needs_reform = yes
+
+
+	has_religious_head = yes 
+    
+    definition_modifier = {
+		global_defensive = 0.1
+		prestige_from_land_battle = 0.1 
+		global_levy_size_modifier = 0.1
+    }
+    
+    opinions = {
+
+    }
+
+	tags = {
+		folk_european_gfx pagan_gfx
+	}
+}
+
+gallo_roman_polytheism = {
+	color = {154 222 100}
+	group = folk_european_group
+
+	religious_aspects = 1
+
+	needs_reform = yes
+
+
+	has_religious_head = yes 
+    
+    definition_modifier = {
+		global_defensive = 0.1
+		prestige_from_land_battle = 0.1 
+		global_levy_size_modifier = 0.1
+    }
+    
+    opinions = {
+
+    }
+
+	tags = {
+		folk_european_gfx pagan_gfx
+	}
+}
+
+romano_british_polytheism = {
+	color = {60 156 224}
+	group = folk_european_group
+
+	religious_aspects = 1
+
+	needs_reform = yes
+
+
+	has_religious_head = yes 
+    
+    definition_modifier = {
+		global_defensive = 0.1
+		prestige_from_land_battle = 0.1 
+		global_levy_size_modifier = 0.1
+    }
+    
+    opinions = {
+
+    }
+
+	tags = {
+		folk_european_gfx pagan_gfx
+	}
+}
+
+romano_germanic_polytheism = {
+	color = { 143 143 143 }
+	group = folk_european_group
+
+	religious_aspects = 1
+
+	needs_reform = yes
+
+
+	has_religious_head = yes 
+    
+    definition_modifier = {
+		global_defensive = 0.1
+		prestige_from_land_battle = 0.1 
+		global_levy_size_modifier = 0.1
+    }
+    
+    opinions = {
+
+    }
+
+	tags = {
+		folk_european_gfx pagan_gfx
+	}
+}
+
+hellenism_religion = {
+	color = map_greek
+	group = folk_european_group
+
+	religious_aspects = 2
+	has_religious_influence = yes
+	has_canonization = yes
+	saints_concept = god_emperors
+
+	has_omens = yes
+
+	definition_modifier = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+		army_heavy_infantry_power = 0.05
+		skill_of_new_artists = 0.1
+		omens_offered = 3
+		monthly_religious_influence = 0.1
+	}
+
+	opinions = {
+	}
+
+	tags = {
+		hellenism_gfx folk_european_gfx pagan_gfx
+	}
+}

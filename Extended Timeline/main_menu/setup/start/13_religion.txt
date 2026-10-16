@@ -1,0 +1,31 @@
+building_manager = {
+
+}
+
+religion_manager = {
+	catholic = {
+		timed_modifier = {
+			modifier = "limited_indulgences_religion"
+			start_date = 1000.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "tolerated_simony_religion"
+			start_date = 313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		#Saints
+
+		
+	}
+
+	orthodox = {
+
+	}
+
+	miaphysite = {
+
+	}
+}

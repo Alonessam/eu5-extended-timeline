@@ -1,0 +1,19 @@
+diplomacy_manager = {
+	# Roman client states / vassals in 58 AD
+	dependency = { first = ROM second = IBER subject_type = vassal }
+	dependency = { first = ROM second = PONT subject_type = vassal }
+	dependency = { first = ROM second = BOSP subject_type = vassal }
+	dependency = { first = ROM second = COMM subject_type = vassal }
+	dependency = { first = ROM second = CORD subject_type = vassal }
+	scripted_oneway = { first = ROM second = CALB type = guarantee }
+	scripted_mutual = { first = ROM second = NABA type = alliance }
+
+	# Parthian client states / vassals in 58 AD
+	dependency = { first = PART second = ARM subject_type = vassal }
+	dependency = { first = PART second = ATRO subject_type = vassal }
+	dependency = { first = PART second = ADIA subject_type = vassal }
+	dependency = { first = PART second = OSRO subject_type = vassal }
+	dependency = { first = PART second = ELYM subject_type = vassal }
+	dependency = { first = PART second = PESS subject_type = vassal }
+	dependency = { first = PART second = CHRC subject_type = vassal }
+}

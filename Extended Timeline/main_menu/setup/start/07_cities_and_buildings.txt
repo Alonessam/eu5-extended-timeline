@@ -1,0 +1,9 @@
+locations = {
+	rome = { rank = city }
+	alexandria = { rank = city }
+	antioch = { rank = city }
+	athens = { rank = city }
+	carthage = { rank = city }
+	baghdad = { rank = city }
+	luoyang = { rank = city }
+}

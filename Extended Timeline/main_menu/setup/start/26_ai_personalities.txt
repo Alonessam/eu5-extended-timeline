@@ -1,0 +1,7 @@
+countries = {
+	countries = {
+		ROM = { ai_personality = ai_aggressive }
+		PART = { ai_personality = ai_aggressive }
+		HAN0 = { ai_personality = ai_aggressive }
+	}
+}

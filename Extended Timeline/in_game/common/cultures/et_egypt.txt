@@ -1,0 +1,40 @@
+kushite = {
+	language = meroitic_language
+	
+	color = rgb{ 175 41 99 }
+	
+	tags = { east_african_gfx african_gfx }
+
+	opinions = {
+	}
+	
+	culture_groups = {
+	}
+}
+old_egyptian = {
+	language = egyptian_language
+	
+	color = rgb{ 159 60 32 }
+	
+	tags = { east_african_gfx african_gfx }
+	
+	opinions = {
+	}
+	culture_groups = {
+	}
+}
+
+helleno_egyptian = {
+	language = greek_language
+	
+	color = rgb{ 180 80 120 }
+	
+	tags = { greek_gfx middle_eastern_gfx }
+
+	opinions = {
+	}
+	
+	culture_groups = {
+		greek_group
+	}
+}

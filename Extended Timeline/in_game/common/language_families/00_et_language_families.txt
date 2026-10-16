@@ -1,0 +1,7 @@
+﻿et_missing_language_family = {
+    color = map_missing
+}
+
+mongolic_family = {
+
+}

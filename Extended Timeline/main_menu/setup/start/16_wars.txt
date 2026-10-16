@@ -1,0 +1,71 @@
+war_manager = {
+	war = {
+		war_name = {
+			name = "FIRST_ROMAN_PARTHIAN_WAR"
+			ordinal = 1
+			first = {
+				name = "ROM"
+			}
+			second = {
+				name = "PART"
+			}
+		}
+
+		take_province = {
+			type = conquer_province
+			casus_belli = cb_conquer_province
+			location = yerevan
+		}
+
+		start_date = 58.2.1
+		action = 58.2.1
+		attacker = {
+			country = ROM
+			request = {
+				reason = Instigator
+			}
+		}
+		attacker = {
+			country = IBER
+			request = {
+				caller = ROM
+				reason = Subject
+			}
+		}
+		attacker = {
+			country = COMM
+			request = {
+				caller = ROM
+				reason = Subject
+			}
+		}
+
+		defender = {
+			country = PART
+			request = {
+				reason = Target
+			}
+		}
+		defender = {
+			country = ARM
+			request = {
+				caller = PART
+				reason = Subject
+			}
+		}
+		defender = {
+			country = ADIA
+			request = {
+				caller = PART
+				reason = Subject
+			}
+		}
+		defender = {
+			country = ATRO
+			request = {
+				caller = PART
+				reason = Subject
+			}
+		}
+	}
+}

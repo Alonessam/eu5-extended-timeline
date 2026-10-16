@@ -1,0 +1,14 @@
+mesopotamian_group = {
+}
+
+canaanite_group = {
+}
+
+latin_group = {
+}
+
+western_balkan_group = {
+}
+
+continental_celtic_group = {
+}

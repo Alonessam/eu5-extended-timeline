@@ -1,0 +1,394 @@
+dynasty_manager = {
+	default_dynasty = { name = { name = default_dynasty } home = rome }
+
+	abgarid_dynasty = {
+		name = { name = abgarid_dynasty }
+	}
+	adiabene_dynasty = {
+		name = { name = adiabene_dynasty }
+	}
+	adulis_dynasty = {
+		name = { name = adulis_dynasty }
+	}
+	ailao_dynasty = {
+		name = { name = ailao_dynasty }
+	}
+	alamanni_dynasty = {
+		name = { name = alamanni_dynasty }
+	}
+	angle_dynasty = {
+		name = { name = angle_dynasty }
+	}
+	aorsi_dynasty = {
+		name = { name = aorsi_dynasty }
+	}
+	archelaid_dynasty = {
+		name = { name = archelaid_dynasty }
+	}
+	arsacid_dynasty = {
+		name = { name = arsacid_dynasty }
+	}
+	atrebate_dynasty = {
+		name = { name = atrebate_dynasty }
+	}
+	aulus_dynasty = {
+		name = { name = aulus_dynasty }
+	}
+	ay_dynasty = {
+		name = { name = ay_dynasty }
+	}
+	bactrian_dynasty = {
+		name = { name = bactrian_dynasty }
+	}
+	baekje_dynasty = {
+		name = { name = baekje_dynasty }
+	}
+	bar_monobaz_dynasty = {
+		name = { name = bar_monobaz_dynasty }
+	}
+	barnwal_dynasty = {
+		name = { name = barnwal_dynasty }
+	}
+	bazarangid_dynasty = {
+		name = { name = bazarangid_dynasty }
+	}
+	bazdeo_dynasty = {
+		name = { name = bazdeo_dynasty }
+	}
+	bosporan_dynasty = {
+		name = { name = bosporan_dynasty }
+	}
+	brigante_dynasty = {
+		name = { name = brigante_dynasty }
+	}
+	caledonian_dynasty = {
+		name = { name = caledonian_dynasty }
+	}
+	cantiaci_dynasty = {
+		name = { name = cantiaci_dynasty }
+	}
+	catuvellauni_dynasty = {
+		name = { name = catuvellauni_dynasty }
+	}
+	chandra_dynasty = {
+		name = { name = chandra_dynasty }
+	}
+	chatti_dynasty = {
+		name = { name = chatti_dynasty }
+	}
+	chauci_dynasty = {
+		name = { name = chauci_dynasty }
+	}
+	cherusci_dynasty = {
+		name = { name = cherusci_dynasty }
+	}
+	chola_dynasty = {
+		name = { name = chola_dynasty }
+	}
+	chutu_dynasty = {
+		name = { name = chutu_dynasty }
+	}
+	cimbri_dynasty = {
+		name = { name = cimbri_dynasty }
+	}
+	connacht_dynasty = {
+		name = { name = connacht_dynasty }
+	}
+	corieltauvi_dynasty = {
+		name = { name = corieltauvi_dynasty }
+	}
+	cornovii_dynasty = {
+		name = { name = cornovii_dynasty }
+	}
+	cottii_dynasty = {
+		name = { name = cottii_dynasty }
+	}
+	dacian_dynasty = {
+		name = { name = dacian_dynasty }
+	}
+	dal_birn_dynasty = {
+		name = { name = dal_birn_dynasty }
+	}
+	danyawaddy_dynasty = {
+		name = { name = danyawaddy_dynasty }
+	}
+	dongbuyeo_dynasty = {
+		name = { name = dongbuyeo_dynasty }
+	}
+	euthydemus_dynasty = {
+		name = { name = euthydemus_dynasty }
+	}
+	flavian_dynasty = {
+		name = { name = flavian_dynasty }
+	}
+	galsa_buyeo_dynasty = {
+		name = { name = galsa_buyeo_dynasty }
+	}
+	gaya_dynasty = {
+		name = { name = gaya_dynasty }
+	}
+	gerrha_dynasty = {
+		name = { name = gerrha_dynasty }
+	}
+	go_dynasty = {
+		name = { name = go_dynasty }
+	}
+	gonandiya_dynasty = {
+		name = { name = gonandiya_dynasty }
+	}
+	gongsun_dynasty = {
+		name = { name = gongsun_dynasty }
+	}
+	goth_dynasty = {
+		name = { name = goth_dynasty }
+	}
+	gumo_dynasty = {
+		name = { name = gumo_dynasty }
+	}
+	hermunduri_dynasty = {
+		name = { name = hermunduri_dynasty }
+	}
+	herodian_dynasty = {
+		name = { name = herodian_dynasty }
+	}
+	heruli_dynasty = {
+		name = { name = heruli_dynasty }
+	}
+	himyar_dynasty = {
+		name = { name = himyar_dynasty }
+	}
+	hyspaosinid_dynasty = {
+		name = { name = hyspaosinid_dynasty }
+	}
+	iazyge_dynasty = {
+		name = { name = iazyge_dynasty }
+	}
+	iceni_dynasty = {
+		name = { name = iceni_dynasty }
+	}
+	igodomigodo_dynasty = {
+		name = { name = igodomigodo_dynasty }
+	}
+	indo_scythian_dynasty = {
+		name = { name = indo_scythian_dynasty }
+	}
+	irmione_dynasty = {
+		name = { name = irmione_dynasty }
+	}
+	julio_claudian_dynasty = {
+		name = { name = julio_claudian_dynasty }
+	}
+	kamnaskirid_dynasty = {
+		name = { name = kamnaskirid_dynasty }
+	}
+	kandis_dynasty = {
+		name = { name = kandis_dynasty }
+	}
+	karasahr_dynasty = {
+		name = { name = karasahr_dynasty }
+	}
+	kashmiri_dynasty = {
+		name = { name = kashmiri_dynasty }
+	}
+	kaundinya_dynasty = {
+		name = { name = kaundinya_dynasty }
+	}
+	khotan_dynasty = {
+		name = { name = khotan_dynasty }
+	}
+	kirati_dynasty = {
+		name = { name = kirati_dynasty }
+	}
+	kshaharata_dynasty = {
+		name = { name = kshaharata_dynasty }
+	}
+	kucha_dynasty = {
+		name = { name = kucha_dynasty }
+	}
+	kuninda_dynasty = {
+		name = { name = kuninda_dynasty }
+	}
+	kushan_dynasty = {
+		name = { name = kushan_dynasty }
+	}
+	laigin_dynasty = {
+		name = { name = laigin_dynasty }
+	}
+	lambakanna_dynasty = {
+		name = { name = lambakanna_dynasty }
+	}
+	langkasuka_dynasty = {
+		name = { name = langkasuka_dynasty }
+	}
+	liu_dynasty = {
+		name = { name = liu_dynasty }
+	}
+	lombard_dynasty = {
+		name = { name = lombard_dynasty }
+	}
+	mahameghavahana_dynasty = {
+		name = { name = mahameghavahana_dynasty }
+	}
+	manikya_dynasty = {
+		name = { name = manikya_dynasty }
+	}
+	marcomanni_dynasty = {
+		name = { name = marcomanni_dynasty }
+	}
+	marcus_salvius_dynasty = {
+		name = { name = marcus_salvius_dynasty }
+	}
+	massylii_dynasty = {
+		name = { name = massylii_dynasty }
+	}
+	meroe_dynasty = {
+		name = { name = meroe_dynasty }
+	}
+	minaean_dynasty = {
+		name = { name = minaean_dynasty }
+	}
+	munster_dynasty = {
+		name = { name = munster_dynasty }
+	}
+	musulami_dynasty = {
+		name = { name = musulami_dynasty }
+	}
+	nabataean_dynasty = {
+		name = { name = nabataean_dynasty }
+	}
+	naga_dynasty = {
+		name = { name = naga_dynasty }
+	}
+	nerva_antonine_dynasty = {
+		name = { name = nerva_antonine_dynasty }
+	}
+	ningthouja_dynasty = {
+		name = { name = ningthouja_dynasty }
+	}
+	odinson_dynasty = {
+		name = { name = odinson_dynasty }
+	}
+	of_atropatene_dynasty = {
+		name = { name = of_atropatene_dynasty }
+	}
+	orontid_dynasty = {
+		name = { name = orontid_dynasty }
+	}
+	panchala_dynasty = {
+		name = { name = panchala_dynasty }
+	}
+	pandya_dynasty = {
+		name = { name = pandya_dynasty }
+	}
+	parataraja_dynasty = {
+		name = { name = parataraja_dynasty }
+	}
+	pharnavazid_dynasty = {
+		name = { name = pharnavazid_dynasty }
+	}
+	praetavi_dynasty = {
+		name = { name = praetavi_dynasty }
+	}
+	ptolemaic_dynasty = {
+		name = { name = ptolemaic_dynasty }
+	}
+	pythodoros_dynasty = {
+		name = { name = pythodoros_dynasty }
+	}
+	qataban_dynasty = {
+		name = { name = qataban_dynasty }
+	}
+	quadi_dynasty = {
+		name = { name = quadi_dynasty }
+	}
+	ror_dynasty = {
+		name = { name = ror_dynasty }
+	}
+	sapaean_dynasty = {
+		name = { name = sapaean_dynasty }
+	}
+	satavahana_dynasty = {
+		name = { name = satavahana_dynasty }
+	}
+	semnone_dynasty = {
+		name = { name = semnone_dynasty }
+	}
+	severius_sulpicius_dynasty = {
+		name = { name = severius_sulpicius_dynasty }
+	}
+	shanshan_dynasty = {
+		name = { name = shanshan_dynasty }
+	}
+	shaodang_dynasty = {
+		name = { name = shaodang_dynasty }
+	}
+	shule_dynasty = {
+		name = { name = shule_dynasty }
+	}
+	sicambri_dynasty = {
+		name = { name = sicambri_dynasty }
+	}
+	silla_dynasty = {
+		name = { name = silla_dynasty }
+	}
+	silure_dynasty = {
+		name = { name = silure_dynasty }
+	}
+	siraces_dynasty = {
+		name = { name = siraces_dynasty }
+	}
+	siyavushid_dynasty = {
+		name = { name = siyavushid_dynasty }
+	}
+	solomonid_dynasty = {
+		name = { name = solomonid_dynasty }
+	}
+	somvong_dynasty = {
+		name = { name = somvong_dynasty }
+	}
+	sri_ksetra_dynasty = {
+		name = { name = sri_ksetra_dynasty }
+	}
+	suren_dynasty = {
+		name = { name = suren_dynasty }
+	}
+	thaton_dynasty = {
+		name = { name = thaton_dynasty }
+	}
+	tikal_dynasty = {
+		name = { name = tikal_dynasty }
+	}
+	ulster_dynasty = {
+		name = { name = ulster_dynasty }
+	}
+	vanavaramban_dynasty = {
+		name = { name = vanavaramban_dynasty }
+	}
+	vandal_dynasty = {
+		name = { name = vandal_dynasty }
+	}
+	venadudayar_dynasty = {
+		name = { name = venadudayar_dynasty }
+	}
+	vijaya_dynasty = {
+		name = { name = vijaya_dynasty }
+	}
+	wang_dynasty = {
+		name = { name = wang_dynasty }
+	}
+	xianbei_dynasty = {
+		name = { name = xianbei_dynasty }
+	}
+	xiongnu_dynasty = {
+		name = { name = xiongnu_dynasty }
+	}
+	yamato_dynasty = {
+		name = { name = yamato_dynasty }
+	}
+	yarkand_dynasty = {
+		name = { name = yarkand_dynasty }
+	}
+	yarlung_dynasty = {
+		name = { name = yarlung_dynasty }
+	}
+}
