@@ -191,6 +191,16 @@ tasks:
       upper-Egypt resistance sync (spec 0.15 vs script 0.25) are flagged as
       maintainer confirmations in the design note, section 7 (items 7-8). Test B
       remains the next step.
+      UPDATE 3 (2026-10-17, Egypt track): second review applied the ownership
+      decision - vanilla-shadowing copies without a real delta were removed
+      (arabic_language, coptic_language, lower/upper egyptian cultures, miaphysite's
+      simplified version), restoring the vanilla definitions intact (seven Arabic
+      dialects, character name pools, culture opinions/goods_demand_modifier,
+      miaphysite autocephaly/canonization/religious_aspects); the two real deltas
+      stay as verbatim vanilla plus delta (coptic_culture + arabic_group; miaphysite
+      + language = coptic_language); the .5 upper-Egypt resistance returns to the
+      spec value 0.15. Invalid gfx tags from the removed blocks dropped with them;
+      the remainder stays in invalid_culture_gfx_tags. Test B remains the next step.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -216,9 +226,10 @@ tasks:
     evidence: >-
       The 2026-10-17 key scan cross-checked mod culture tags against
       in_game/gfx/graphical_culture_types: middle_eastern_gfx (et_egypt.txt:35,
-      et_missing.txt:124/132/148) and arabic_gfx (et_egypt.txt:65) are not
-      defined; the further candidates north_african_gfx (et_missing.txt:132),
-      iranian_gfx (et_missing.txt:148) and steppe_gfx (et_missing.txt:156) are
-      absent as well. Valid neighbours include middle_east_gfx, arabian_gfx,
-      maghrebi_gfx, persian_gfx and egyptian_gfx.
+      et_missing.txt:124/132/148) is not defined; the further candidates
+      north_african_gfx (et_missing.txt:132), iranian_gfx (et_missing.txt:148)
+      and steppe_gfx (et_missing.txt:156) are absent as well (the arabic_gfx
+      usages were removed on 2026-10-17 together with the shadow culture blocks).
+      Valid neighbours include middle_east_gfx, arabian_gfx, maghrebi_gfx,
+      persian_gfx and egyptian_gfx.
     acceptance: Replace only with tags verified in the vanilla list; keep regional intent reviewed by maintainers; graphics fallback is the expected current effect.
