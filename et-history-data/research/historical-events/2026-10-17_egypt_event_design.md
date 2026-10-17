@@ -181,8 +181,8 @@ kesri ayrılıp yeni din/kültüre geçer, kalan aynı kalır.
   popların **tamamı** `coptic_culture`'a geçer. Gerekçe: sınıflama tutarlılığı —
   Hristiyan = Kopt (vanilla 1337 görünümü); kesirli geçiş kalıcı "Hristiyan ama
   Eski Mısırlı" pop yığını bırakıyordu.
-- **.3:** pencere `650–1300` yapıldı (1100 sonrası fetihlerde zincir
-  tıkanmasın); dönüşüm limitine putperest kalıntı OR'u ve kültür süzgeci
+- **.3:** pencere `650–1100` yapıldı (kayıt: vilayet dönemi erken
+  İslamlaşma; fetih sonrası tıkanmayı önlemek için esnetildi); dönüşüm limitine putperest kalıntı OR'u ve kültür süzgeci
   (`old_egyptian`/`coptic_culture`) eklendi — direniş rotasında bile İslamlaşma
   tutarlı ilerler. Direniş payı `0.05`/`0.05`.
 - **.4:** limit genişletmesi .3 ile aynı; paylar `0.60`/`0.50`, direniş `0.10`.
