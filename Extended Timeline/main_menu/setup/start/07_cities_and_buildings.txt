@@ -1,9 +1,154 @@
-locations = {
-	rome = { rank = city }
-	alexandria = { rank = city }
-	antioch = { rank = city }
-	athens = { rank = city }
-	carthage = { rank = city }
-	baghdad = { rank = city }
-	luoyang = { rank = city }
+locations={
+
+	# ==============================================================================
+	# 58 AD ANCIENT MEGALOPOLISES (~400,000 - 1,000,000 population)
+	# ==============================================================================
+	rome = { rank = megalopolis town_setup = italian_coastal_city } # Caput Mundi, Capital of Roman Empire (~1 million pop)
+	alexandria = { rank = megalopolis town_setup = egyptian_city } # Great Hellenistic-Egyptian Metropolis & Harbor (~600k pop)
+	antioch = { rank = megalopolis town_setup = levant_city } # Queen of the East, Roman Syria provincial capital (~400k pop)
+	baghdad = { rank = megalopolis town_setup = central_asian_city } # Seleucia-on-Tigris & Ctesiphon, Parthian dual capital (~500k pop)
+	luoyang = { rank = megalopolis town_setup = chinese_city } # Imperial Capital of Eastern Han Dynasty under Emperor Ming (~500k pop)
+	changan = { rank = megalopolis town_setup = chinese_city } # Former Western Han capital, great Silk Road terminus (~400k pop)
+	patna = { rank = megalopolis town_setup = indian_city } # Pataliputra, ancient imperial metropolis on the Ganges (~400k pop)
+
+	# ==============================================================================
+	# 58 AD MAJOR ANCIENT METROPOLISES & REGIONAL CAPITALS (rank = city)
+	# ==============================================================================
+	# Roman Greece, Aegean & Black Sea
+	ayasuluk = { rank = city town_setup = greek_city_port } # Ephesus (Capital of Asia, Temple of Artemis, ~200k pop)
+	athens = { rank = city town_setup = greek_city_port } # Intellectual capital, Parthenon & philosophical academies
+	corinth = { rank = city town_setup = greek_city_port } # Capital of Roman Achaea, major dual-harbor commercial emporium
+	thessaloniki = { rank = city town_setup = greek_city_port } # Capital of Roman Macedonia, hub of the Via Egnatia
+	smyrna = { rank = city town_setup = greek_city_port } # Major Ionian commercial port on the Aegean
+	rodos = { rank = city town_setup = greek_city_port } # Rhodes, renowned maritime trading and naval center
+	bergama = { rank = city town_setup = anatolian_city } # Pergamum, ancient Attalid capital, Asclepeion sanctuary
+	izmit = { rank = city town_setup = anatolian_city } # Nicomedia, capital of Bithynia et Pontus
+	tarsus = { rank = city town_setup = anatolian_city } # Capital of Cilicia, renowned philosophical center
+	sinop = { rank = city town_setup = anatolian_city } # Sinope, major Pontic Black Sea metropolis
+	trebizond = { rank = city town_setup = anatolian_city } # Trapezus, Roman Black Sea fleet base
+	kayseri = { rank = city town_setup = anatolian_city } # Caesarea Mazaca, capital of Roman Cappadocia
+	vosporo = { rank = city town_setup = greek_city_port } # Panticapaeum, capital of the Bosporan Kingdom
+
+	# Italy & Western Mediterranean
+	syracuse = { rank = city town_setup = italian_coastal_city } # Greatest Greek metropolis of Sicily
+	naples = { rank = city town_setup = italian_coastal_city } # Neapolis, cultural jewel of Magna Graecia
+	milano = { rank = city town_setup = italian_city } # Mediolanum, economic powerhouse of Cisalpine Gaul
+	ravenna = { rank = city town_setup = italian_coastal_city } # Base of the Roman Classis Ravennas imperial fleet
+	aquileia = { rank = city town_setup = italian_coastal_city } # Great northeastern gateway and emporium of Italy
+	brindisi = { rank = city town_setup = italian_coastal_city } # Brundisium, terminus of the Via Appia
+	taranto = { rank = city town_setup = italian_coastal_city } # Tarentum, major Calabrian naval port
+	tunis = { rank = city town_setup = maghreb_coastal_city } # Colonia Iulia Carthago, capital of Africa Proconsularis
+	tripoli = { rank = city town_setup = maghreb_coastal_city } # Oea, Tripolitanian port
+	bizerte = { rank = city town_setup = maghreb_coastal_city } # Utica, ancient Phoenician port
+	al_khums = { rank = city town_setup = maghreb_coastal_city } # Leptis Magna, thriving Punic-Roman emporium
+	cherchell = { rank = city town_setup = maghreb_coastal_city } # Caesarea Mauretaniae, capital of Mauretania Caesariensis
+	tangier = { rank = city town_setup = maghreb_coastal_city } # Tingis, capital of Mauretania Tingitana
+	constantine_ALG = { rank = city town_setup = maghreb_city } # Cirta, ancient Numidian royal center
+
+	# Roman Gaul, Germania & Hispania
+	lyon = { rank = city town_setup = french_city } # Lugdunum, capital of the Three Gauls & imperial mint
+	marseille = { rank = city town_setup = french_city } # Massalia, ancient Phocaean trading port
+	narbonne = { rank = city town_setup = french_city } # Narbo Martius, capital of Gallia Narbonensis
+	nimes = { rank = city town_setup = french_city } # Nemausus, Roman colony (Maison Carree)
+	arles = { rank = city town_setup = french_city } # Arelate, Rhone river trading colony
+	bordeaux = { rank = city town_setup = french_city } # Burdigala, capital of Gallia Aquitania
+	trier = { rank = city town_setup = german_city } # Augusta Treverorum, Roman administrative center on the Moselle
+	cologne = { rank = city town_setup = german_city } # Colonia Claudia Ara Agrippinensium, capital of Germania Inferior
+	mainz = { rank = city town_setup = german_city } # Mogontiacum, capital of Germania Superior & legion base
+	cadiz = { rank = city town_setup = iberian_city_port } # Gades, ancient Phoenician-Roman Atlantic metropolis
+	cordoba = { rank = city town_setup = iberian_city } # Corduba, capital of Hispania Baetica
+	sevilla = { rank = city town_setup = iberian_city } # Hispalis, major river port on the Baetis
+	tarragona = { rank = city town_setup = iberian_city_port } # Tarraco, capital of Hispania Tarraconensis
+	merida = { rank = city town_setup = iberian_city } # Emerita Augusta, capital of Hispania Lusitania
+	cartagena = { rank = city town_setup = iberian_city_port } # Carthago Nova, naval harbor and silver mining center
+
+	# Levant, Near East, Arabia & Northeast Africa
+	jerusalem = { rank = city town_setup = levant_city } # Second Temple metropolis, massive pilgrimage center
+	damascus = { rank = city town_setup = levant_city } # Ancient oasis crossroads of caravan trade
+	sidon = { rank = city town_setup = levant_city } # Ancient Phoenician maritime trade & glass metropolis
+	beirut = { rank = city town_setup = levant_city } # Berytus, Roman veteran colony and renowned law center
+	sur = { rank = city town_setup = levant_city } # Tyre, famous Phoenician purple-dye & maritime metropolis
+	maan = { rank = city town_setup = levant_city } # Petra, rock-carved capital of the Nabataean Kingdom
+	marib = { rank = city town_setup = levant_city } # Ma'rib, Sabaean royal capital of the Great Dam
+	axum = { rank = city town_setup = sahel_city } # Aksum, emerging highland capital of the Aksumite Kingdom
+	shendi = { rank = city town_setup = sahel_city } # Meroe, royal Kushite capital of pyramids & iron smelting
+	karima = { rank = city town_setup = sahel_city } # Napata, ancient sacred royal Kushite city at Jebel Barkal
+
+	# Parthia, Mesopotamia & Iranian Plateau
+	susa = { rank = city town_setup = central_asian_city } # Susa, ancient Elamite and Persian royal residence
+	hamadan = { rank = city town_setup = central_asian_city } # Ecbatana, Arsacid Parthian royal summer capital
+	rey = { rank = city town_setup = central_asian_city } # Rhages / Rayy, key northern Iranian Silk Road hub
+	merv = { rank = city town_setup = central_asian_city } # Antiochia Margiana, pearl of Central Asian trade
+	balkh = { rank = city town_setup = central_asian_city } # Bactra, Mother of Cities, Bactrian metropolis
+	samarkand = { rank = city town_setup = central_asian_city } # Marakanda, Sogdian trading hub of Transoxiana
+	nishapur = { rank = city town_setup = central_asian_city } # Prominent Khurasani trade & cultural center
+	hunedoara = { rank = city town_setup = carpathian_town } # Sarmizegetusa Regia, sacred capital of Dacia
+	yerevan = { rank = city town_setup = anatolian_city } # Artaxata, royal capital of Armenia on the Aras
+	mtskheta = { rank = city town_setup = anatolian_town } # Mtskheta, royal capital of the Kingdom of Iberia
+
+	# India & Sri Lanka
+	rawalpindi = { rank = city town_setup = indian_city } # Taxila, Gandharan center of learning & Silk Road trade
+	peshawar = { rank = city town_setup = indian_city } # Pushkalavati, Gandharan western metropolis
+	ujjain = { rank = city town_setup = indian_city } # Prime meridian of Indian astronomy, Malwa capital
+	varanasi = { rank = city town_setup = indian_city } # Kashi, sacred eternal city on the Ganges
+	mathura = { rank = city town_setup = indian_city } # Northern Indian cultural & Kushan sculptural center
+	madurai = { rank = city town_setup = indian_coastal_city } # Pandyan Sangam capital of Tamil literature & pearls
+	anuradhapura = { rank = city town_setup = indian_city } # Sprawling sacred Buddhist royal capital of Sri Lanka
+	kodungallur = { rank = city town_setup = indian_coastal_city } # Muziris, premier Greco-Roman pepper trade emporium
+	pondicherry = { rank = city town_setup = indian_coastal_city } # Arikamedu / Poduke, Indo-Roman maritime emporium
+	daulatabad = { rank = city town_setup = indian_city } # Pratishthana, royal capital of the Satavahana Empire
+	kanchipuram = { rank = city town_setup = indian_city } # Ancient southern center of temples and learning
+
+	# East Asia & Americas
+	chengdu = { rank = city town_setup = chinese_city } # Shu brocade, lacquer & iron metropolis of Sichuan
+	suzhou = { rank = city town_setup = chinese_coastal_city } # Wu, premier textile & canal hub of lower Yangtze
+	guangzhou = { rank = city town_setup = chinese_coastal_city } # Panyu, southern maritime gateway of the Han Empire
+	thang_long = { rank = city town_setup = chinese_city } # Longbian / Jiaozhi, administrative center of Han Vietnam
+	handan = { rank = city town_setup = chinese_city } # Major northern iron & commercial center of Han China
+	jiangling = { rank = city town_setup = chinese_city } # Ancient Chu heartland center on the middle Yangtze
+	shaoxing = { rank = city town_setup = chinese_coastal_city } # Kuaiji, southeast coastal trade & cultural center
+	qixian_taiyuan = { rank = city town_setup = chinese_city } # Jinyang, northern frontier iron & military metropolis
+	gyeongju = { rank = city town_setup = korea_city } # Saro / Gyeongju, early royal center of Silla
+	tehotihuacan = { rank = city town_setup = mexican_city } # Teotihuacan, vast Mesoamerican metropolis of Pyramids (~100k pop)
+
+	# ==============================================================================
+	# 58 AD PROMINENT TOWNS, GARRISONS & COLONIES (rank = town)
+	# ==============================================================================
+	london = { rank = town town_setup = british_town_port } # Londinium, Roman Thames river port
+	colchester = { rank = town town_setup = british_town } # Camulodunum, Roman veteran colony in Britannia
+	york = { rank = town town_setup = british_town } # Eboracum, Roman legionary base
+	chester = { rank = town town_setup = british_town } # Deva Victrix, Roman legionary fortress
+	gloucester = { rank = town town_setup = british_town } # Glevum, Roman legionary base
+	st_albans = { rank = town town_setup = british_town } # Verulamium, major Romanized British center
+	bath = { rank = town town_setup = british_town } # Aquae Sulis, famous Roman mineral baths
+	exeter = { rank = town town_setup = british_town } # Isca Dumnoniorum, southwestern Roman base
+	lincoln = { rank = town town_setup = british_town } # Lindum Colonia, Roman veteran colony
+	paris = { rank = town town_setup = french_town } # Lutetia Parisiorum, Roman Gallic settlement on Seine
+	zaragoza = { rank = town town_setup = iberian_town } # Caesaraugusta, Roman colony on the Ebro
+	lisbon = { rank = town town_setup = iberian_town_port } # Olisipo, prominent Lusitanian Atlantic port
+	genoa = { rank = town town_setup = italian_coastal_town } # Genua, Roman Ligurian naval port
+	bologna = { rank = town town_setup = italian_town } # Bononia, Roman colony along the Via Aemilia
+	verona = { rank = town town_setup = italian_town } # Verona, Roman amphitheater city at Alpine crossroads
+	ancona = { rank = town town_setup = italian_coastal_town } # Picenum port for Adriatic crossings to Illyricum
+	ankara = { rank = town town_setup = anatolian_town } # Ancyra, capital of Roman Galatia
+	pest = { rank = town town_setup = carpathian_town } # Aquincum, Roman Danube legion fortress
+	belgrad = { rank = town town_setup = balkan_town } # Singidunum, Roman fortress at Danube-Sava junction
+	sremska_mitrovica = { rank = town town_setup = balkan_town } # Sirmium, major Roman fortress in Pannonia
+	constanta = { rank = town town_setup = greek_town_port } # Tomis, Greek-Roman Black Sea port (Ovid's exile)
+	varna = { rank = town town_setup = greek_town_port } # Odessus, Pontic Greek trading colony
+	bejaia = { rank = town town_setup = maghreb_coastal_town } # Saldae, Roman colony in Mauretania
+	sabha = { rank = town town_setup = sahel_town } # Garama / Germa, desert capital of the Garamantes
+	jaffa = { rank = town town_setup = levant_town } # Caesarea Maritima / Joppa, Roman port of Judaea
+	tadmur = { rank = town town_setup = levant_town } # Palmyra / Tadmor, wealthy oasis caravan trade republic
+	bosra = { rank = town town_setup = levant_town } # Bostra, northern Nabataean caravan junction
+	safaga = { rank = town town_setup = egyptian_city } # Myos Hormos, Roman Red Sea port for Indian trade
+	najran = { rank = town town_setup = levant_town } # Ancient oasis emporium on the Frankincense trail
+	damghan = { rank = town town_setup = central_asian_town } # Hecatompylos, ancient Arsacid capital in Parthia
+	bukhara = { rank = town town_setup = central_asian_town } # Ancient Sogdian trading oasis
+	xianyang = { rank = town town_setup = chinese_town } # Ancient Qin capital satellite of Chang'an
+	kaifeng = { rank = town town_setup = chinese_town } # Commercial center on the Yellow River plain
+	youzhou = { rank = town town_setup = chinese_town } # Ji / Youzhou, northern frontier garrison hub
+	gwangju = { rank = town town_setup = korea_town } # Ancient Mahan proto-state center
+	nara = { rank = town town_setup = japan_town } # Yamato plain ritual and political center
+	cahuachi = { rank = town town_setup = andes_town } # Major ceremonial pilgrimage center of the Nazca culture
 }

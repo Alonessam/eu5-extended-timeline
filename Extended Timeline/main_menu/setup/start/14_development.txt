@@ -44,340 +44,166 @@ development = {
 	plateau = -1
 	wetlands = -4
 
+	# ==============================================================================
+	# 58 AD REGIONAL BASELINE DEVELOPMENT (Classical Antiquity)
+	# ==============================================================================
+	# Mediterranean, Roman Empire & Europe
+	italy_region = 30 # Heart of the Roman Empire, caput mundi, extensive paved road network & aqueducts
+	egypt_region = 28 # Agricultural powerhouse of the Nile, breadbasket of the Mediterranean
+	crescent_region = 24 # Fertile Crescent, Roman Syria, Phoenician ports & Silk Road terminus
+	anatolia_region = 24 # Wealthy Greco-Roman cities of Asia, Bithynia, Pontus, Cilicia
+	balkan_region = 20 # Greece, Achaea, Macedonia, Thrace
+	iberia_region = 18 # Roman Hispania: fertile Baetica, silver-rich Sierra Morena, Tarraconensis
+	maghreb_region = 16 # Africa Proconsularis, Numidia, Tripolitania (Carthage, Leptis Magna)
+	france_region = 14 # Roman Gaul undergoing rapid infrastructure building under Julio-Claudian emperors
+	south_german_region = 8 # Roman frontier provinces of Raetia, Noricum and the upper Rhine
+	great_britain_region = 8 # Newly annexed Roman frontier province (invasion began 43 AD under Claudius)
+	north_german_region = 6 # Magna Germania beyond the Rhine, dense tribal forests
+	carpathia_region = 10 # Dacia and Pannonia borderlands
+	baltic_region = 5 # Tribal Baltic & amber route
+	ireland_region = 5 # Iron Age Celtic tribal kingdoms
+	scandinavian_region = 4 # Early Iron Age tribal Scandinavia
+	russian_region = 4 # Eastern European forest zone
+	ruthenia_region = 6 # Dnieper river basin
+	steppes_region = 4 # Sarmatian & Scythian nomadic steppes
+	caucasus_region = 14 # Ancient kingdoms of Armenia, Iberia, Caucasian Albania
+	ural_region = 3
+	north_atlantic_islands_region = 2
 
-	# regions
-	#western europe
-	scandinavian_region = 10
-	north_atlantic_islands_region = 5
-	north_german_region = 18
-	south_german_region = 23
-	great_britain_region = 18
-	ireland_region = 12
-	france_region = 20
-	iberia_region = 20
-	italy_region = 25
-	#eastern europe
-	carpathia_region = 15
-	baltic_region = 15
-	caucasus_region = 15
-	steppes_region = 5
-	russian_region = 15
-	ruthenia_region = 15
-	ural_region = 5
-	balkan_region = 15
-	#africa
-	egypt_region = 25
-	macaronesia_region = 5
-	maghreb_region = 15
-	guinea_region = 5
-	sahel_region = 13
-	ethiopia_region = 10
-	nubia_region = 10
-	somalia_region = 12
-	great_lakes_region = 5
-	swahili_coast_region = 10
-	madagascar_region = 5
-	kongo_region = 5
+	# Africa
+	sahel_region = 10
+	ethiopia_region = 12 # Aksumite trading empire
+	nubia_region = 12 # Kingdom of Kush (Meroe, Napata)
+	somalia_region = 10 # Incense and Indian Ocean coastal emporia
+	macaronesia_region = 3
+	guinea_region = 4
+	great_lakes_region = 4
+	swahili_coast_region = 6 # Early Azanian trading coast (Rhapta)
+	madagascar_region = 3
+	kongo_region = 4
 	southern_africa_islands_region = 0
 	southern_africa_region = 0
-	zimbabwe_region = 5
-	#asia
-	anatolia_region = 20
-	crescent_region = 16
-	arabia_region = 10
-	persia_region = 20
-	khorasan_region = 15
+	zimbabwe_region = 3
+
+	# Asia (Classical Asian Civilizations)
+	north_china_region = 30 # Zhongyuan, Yellow River basin, heart of the Eastern Han Empire
+	east_china_region = 28 # Lower Yangtze agricultural & silk basin
+	west_china_region = 26 # Sichuan basin (Shu iron, lacquer, brocade)
+	south_china_region = 22 # Lingnan and Han maritime south
+	persia_region = 22 # Parthian Empire heartland, Royal Road, qanat irrigation
+	khorasan_region = 18 # Margiana, Bactria, eastern Iranian crossroads
+	hindustan_region = 28 # Gangetic plain, ancient Maurya/Kushan urban centers
+	bengal_region = 26 # Lower Ganges delta trade & agriculture
+	western_india_region = 24 # Gujarat & Malwa trade emporia (Barygaza)
+	deccan_region = 22 # Satavahana Empire heartland
+	central_india_region = 20
+	indochina_region = 18 # Early Funan and maritime river valleys
+	indonesia_region = 16 # Early Spice Route archipelagos
+	korea_region = 18 # Proto-Three Kingdoms (Goguryeo, Baekje, Silla)
+	japan_region = 14 # Yayoi period agricultural society
+	arabia_region = 12 # Frankincense Kingdoms (Saba, Himyar, Hadhramaut, Nabataea)
+	xinjiang_region = 14 # Tarim Basin Silk Road oasis kingdoms (Shule, Yarkand, Khotan)
+	tibet_region = 8 # Early Yarlung and Zhangzhung kingdoms
+	manchuria_region = 8 # Buyeo and tribal hunters
+	mongolia_region = 5 # Xiongnu steppe empire
 	west_siberia_region = 0
 	east_siberia_region = 0
-	east_china_region = 30
-	japan_region = 25
-	korea_region = 25
-	manchuria_region = 10
-	mongolia_region = 5
-	north_china_region = 30
-	south_china_region = 27
-	tibet_region = 10
-	west_china_region = 28
-	xinjiang_region = 10
-	hindustan_region = 28
-	bengal_region = 30
-	western_india_region = 23
-	deccan_region = 25
-	central_india_region = 25
-	indochina_region = 25
-	indonesia_region = 25
-	#america
-	canada_region = 0
-	caribbean_region = 0
-	east_coast_region = 0
-	great_plains_region = 5
-	mesoamerica_region = 12
-	central_america_region = 9
-	aridoamerica_region = 7
-	alaska_region = 0
-	west_coast_region = 0
+
+	# Americas
+	mesoamerica_region = 14 # Teotihuacan, Zapotec (Monte Alban), Preclassic Maya
+	central_america_region = 8
+	andes_region = 12 # Moche, Nazca, Paracas cultures
+	aridoamerica_region = 6
 	colombia_region = 7
+	great_plains_region = 4
+	east_coast_region = 3
+	west_coast_region = 0
+	caribbean_region = 2
 	brazil_region = 0
-	andes_region = 10
 	chaco_region = 0
 	la_plata_region = 0
-	#oceania
-	australia_region = 0
+	alaska_region = 0
+	canada_region = 0
+
+	# Oceania
 	melanesia_region = 0
 	micronesia_region = 0
 	polynesia_region = 0
+	australia_region = 0
 	new_zealand_region = 0
 
+	# ==============================================================================
+	# 58 AD UNIQUE ANCIENT LOCATIONS DEVELOPMENT BOOSTS
+	# ==============================================================================
+	# Megalopolises & Greatest World Metropolises
+	rome = 18 # Caput Mundi (~1 million pop)
+	alexandria = 14 # Hellenistic-Egyptian trade, science & naval metropolis (~600k pop)
+	luoyang = 14 # Capital of Eastern Han Empire (~500k pop)
+	antioch = 12 # Queen of the East, Syria (~400k pop)
+	changan = 12 # Great Silk Road imperial capital (~400k pop)
+	baghdad = 12 # Seleucia-on-Tigris & Ctesiphon (~500k pop)
+	patna = 12 # Pataliputra, Ganges imperial metropolis (~400k pop)
 
-	# areas
-	#scandinavia
-	svealand_area = 4
-	gotaland_area = 3
-	denmark_area = 5
-	skaneland_area = 5
-	syd_norge_area = 3
-	karelia_area = -5
-	kola_area = -5
-	#balkan region
-	thrace_area = 5
-	morea_area = 5
-	slovenia_area = 5
-	#great britain
-	home_counties_area = 5
-	west_country_area = 3
-	east_anglia_area = 4
-	midlands_area = 1
-	hebrides_area = -10
-	scottish_highlands_area = -5
-	wales_area = -3
-	leinster_area = 3
-	connaught_area = -2
-	northumbria_area = -2
-	ulster_area = -3
+	# Mediterranean, European & Near Eastern Cities
+	ayasuluk = 8 # Ephesus, Temple of Artemis, Asia capital
+	athens = 8 # Intellectual capital of antiquity
+	corinth = 7 # Dual-harbor emporium of Achaea
+	syracuse = 7 # Magna Graecia jewel of Sicily
+	tunis = 8 # Carthage, capital of Africa Proconsularis
+	lyon = 6 # Lugdunum, capital of the Three Gauls
+	cadiz = 6 # Gades, ancient Atlantic port
+	cordoba = 6 # Corduba, Baetica capital
+	tarragona = 6 # Tarraco, Tarraconensis capital
+	merida = 6 # Emerita Augusta, Lusitania capital
+	jerusalem = 7 # Second Temple pilgrimage metropolis
+	damascus = 6 # Ancient desert oasis metropolis
+	sur = 6 # Tyre, Phoenician maritime metropolis
+	sidon = 5 # Phoenician trade & glass center
+	beirut = 5 # Berytus, Roman colony & law school
+	maan = 6 # Petra, rock-carved Nabataean capital
+	al_khums = 6 # Leptis Magna, Tripolitania
+	cherchell = 5 # Caesarea Mauretaniae
+	milano = 5 # Mediolanum
+	ravenna = 5 # Classis Ravennas fleet base
+	naples = 5 # Neapolis
+	trier = 5 # Augusta Treverorum
+	cologne = 5 # Colonia Agrippina
+	mainz = 5 # Mogontiacum
+	thessaloniki = 5 # Macedonia capital
 
-	#iberia
-	valencia_area = 3
-	andalusia_area = 3
-	granada_area = 3
-	#italy
-	sardinia_area = -10
-	sicily_area = -5
-	basilicata_area = -3
-	apulia_area = -5
-	campania_area = -3
-	lazio_area = -5
-	marche_area = -5
-	#carpathia
-	north_alfold_area = 3
-	transdanubia_area = 3
-	slovakia_area = 5
-	moldavia_area = -5
-	transylvania_area = 5
-	#north germany
-	flanders_area = 7
-	holland_area = 5
-	brabant_area = 5
-	rhineland_area = 4
-	hesse_area = 4
-	#south germany
-	bohemia_area = -3
-	moravia_area = -3
-	eastern_switzerland_area = -4
-	western_switzerland_area = -4
-	central_switzerland_area = -4
-	carinthia_area = -2
-	swabia_area = -2
-	franconia_area = -2
-	bavaria_area = -2
-	upper_austria_area = -2
-	styria_area = -1
-	#poland
-	silesia_area = 3
-	#Russia
-	tambov_area = -8
-	ryazan_area = -3
-	samara_area = -8
-	pomorye_area = -10
-	arkhangelsk_area = -10
-	#Africa
-	#egypt
-	cyrenaica_area = -10
-	#swahili coast
-	wami_area = 5
-	rufiji_area = 5
-	#Nubia
-	butana_area = 3
-	#Somalia
-	southern_somalia_area = 1
+	# Iranian Plateau, Central Asia & India
+	susa = 6 # Ancient Elamite/Persian royal city
+	hamadan = 6 # Ecbatana, Arsacid summer capital
+	rey = 5 # Rhages / Rayy
+	merv = 5 # Antiochia Margiana
+	balkh = 5 # Bactra, Mother of Cities
+	samarkand = 5 # Marakanda, Sogdiana
+	rawalpindi = 6 # Taxila, Gandhara university & Silk Road city
+	peshawar = 5 # Pushkalavati
+	varanasi = 6 # Kashi, sacred Ganges city
+	ujjain = 6 # Malwa prime meridian
+	mathura = 5 # Northern Indian sculptural center
+	madurai = 6 # Pandyan Sangam pearl capital
+	anuradhapura = 6 # Sri Lanka Buddhist royal capital
+	kodungallur = 6 # Muziris, Greco-Roman pepper port
+	pondicherry = 5 # Arikamedu Indo-Roman port
+	daulatabad = 5 # Pratishthana, Satavahana capital
 
-	#Asia
-	#tibet
-	kham_area = 5
-	#Korea
-	gwanseo_area = -5
-	gwanbuk_area = -10
-	#Manchuria
-	liaodong_area = 5
-	#Xinjiang
-	tarim_area = 5
-	#Japan
-	ou_area = -5
-	ezo_area = -25
-	ryuukyuu_area = -15
-	saikaidou_area = -3
-	#East China
-	hunan_area = -3
-	wuling_area = -3
-	hubei_area = -3
-	jiangxi_area = -5
-	#West China
-	gansu_area = -7
-	hexi_area = -3
-	longyou_area = -3
-	shaanxi_area = -3
-	#South China
-	dali_area = -3
-	yunnan_area = -3
-	guizhou_area = -3
-	liangjiang_area = -3
-	guangxi_area = -3
-	#Khorasan
-	khwarazm_area = -3
-	desht_kipchak_area = -5
-	zhetysu_area = -3
-	#Arabia
-	north_yemen_area = 5
-	south_yemen_area = 5
-	#Bengal
-	assam_area = -10
-	hill_area = -10
-	monyul_area = -10
-	#Hindustan
-	upper_indus_area = -7
-	#Anatolia
-	west_anatolia_area = -3
-	cilicia_area = -3
-	marmara_area = -3
-	armenian_highlands_area = -3
-	#Cresent
-	levant_area = 2
-	#Indonesia
-	java_area = 3
-	luzon_area = -6
-	visayas_area = -6
-	mindanao_area = -6
-	south_borneo_area = -3
-	north_borneo_area = -3
-	#Persia
-	kordestan_area = -4
-	khuzestan_area = -3
-
-	# provinces
-	#Egypt
-	oasis_province = -5
-	#Britain
-	argyll_province = -5
-	dublin_province = 3
-	kildare_province = 2
-	wexford_province = 2
-	antrim_province = 4
-	down_province = 2
-	wexford_province = 2
-	cork_province = 1
-	waterford_province = 3
-	mayo_province = 2
-
-	#Southern Germany
-	pongau_province = -2
-	#North germany
-	koln_bucht_province = 2
-	#Italy
-	ticino_province = -5
-	novara_province = -3
-	valtellina_province = -3
-	cismonte_province = -10
-	pumonte_province = -10
-	#Russia
-	bogdanovo_province = -3
-	#Ethiopia
-	begemder_province = 5
-	semien_province = 5
-	tigray_province = 5
-	lasta_province = 5
-	#Manchuria
-	jinzhou_province = 5
-	liaoyang_province = 5
-	gaizhou_province = 5
-	#Korea
-	hamheung_province = 5
-	#North China
-	#Shanxi Area
-	qingcheng_province = -5
-	jining_shanxi_province = -5
-	datong_province = -5
-	#Beizhili Area
-	xinghe_province = -3
-	shangdu_province = -7
-	quanning_province = -7
-	daning_province = -7
-	xingzhou_province = -3
-	wanquan_province = -3
-	baoan_province = -3
-	#Mongolia
-	#Southern Gobi
-	ordos_province = 3
-	#Bengal
-	#Bengal Area
-	tripura_province = -10
-	sylhet_province = -10
-	#North America
-	kanienkehaka_province = 2
-	onyotaaka_province = 2
-	onondagega_province = 2
-	gayogohono_province = 1
-	onondowaga_province = 1
-	
-	#unique locations
-	granada = 5
-	prague = 5
-	venice = 7
-	cairo = 5
-	mecca = 10
-	medina = 5
-	baghdad = -5
-	damascus = 7
-	dadu = 10
-	paris = 5
-	cordoba = -3
-	lisbon = 5
-	zaragoza = 2
-	salamanca = 2
-	segovia = 2
-	magdeburg = 5
-	lubeck = 4
-	wittenberg = 5
-	frankfurt = 5
-	cologne = 5
-	aachen = 5
-	heidelberg = 3
-	vienna = -3
-	freiberg = 4
-	great_zimbabwe = 8
-	samarkand = 3
-	nishapur = 3
-	sarai_al_jadid = 5
-	astrakhan = 10
-	naples = 1
-	nidaros = 3
-	cahokia = 7
-	ochechiton = 2
-	kaskaskia = 2
-	sangamon = 2
-	macoupin = 2
-	canadaigua = 1
-	onenioteke = 1
-	skaniatares = 1
-	tsikahiotsisto = 1
-	canajoharie = 1
+	# East Asia, Africa & Americas
+	chengdu = 6 # Shu iron, lacquer & brocade metropolis
+	suzhou = 6 # Wu canal & textile hub
+	guangzhou = 5 # Panyu, southern maritime gateway
+	thang_long = 5 # Longbian, Han Jiaozhi
+	handan = 5 # Han northern iron center
+	jiangling = 5 # Chu heartland
+	shaoxing = 5 # Kuaiji
+	qixian_taiyuan = 5 # Jinyang
+	shendi = 5 # Meroe, Kushite iron & pyramids capital
+	karima = 5 # Napata, Kushite sacred city
+	axum = 5 # Aksumite trading empire capital
+	marib = 6 # Ma'rib, Sabaean Great Dam capital
+	tehotihuacan = 6 # Mesoamerican Pyramid Metropolis
+	hunedoara = 5 # Sarmizegetusa Regia, Dacia
+	yerevan = 5 # Artaxata, Armenia
+	vosporo = 5 # Panticapaeum, Bosporus
 }
-
