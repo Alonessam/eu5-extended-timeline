@@ -140,7 +140,7 @@ development = {
 	alexandria = 14 # Hellenistic-Egyptian trade, science & naval metropolis (~600k pop)
 	luoyang = 14 # Capital of Eastern Han Empire (~500k pop)
 	antioch = 12 # Queen of the East, Syria (~400k pop)
-	xianyang = 12 # Chang'an & Xianyang, Guanzhong imperial capital (~400k pop)
+	jingzhao = 12 # Chang'an (Jingzhao), Guanzhong imperial capital (~400k pop)
 	baghdad = 12 # Seleucia-on-Tigris & Ctesiphon (~500k pop)
 	patna = 12 # Pataliputra, Ganges imperial metropolis (~400k pop)
 

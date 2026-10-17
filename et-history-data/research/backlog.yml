@@ -92,7 +92,7 @@ tasks:
   han_capital_tile_mapping:
     period_id: ancient
     priority: 1
-    state: in_progress
+    state: completed
     targets: [locations, "Extended Timeline/main_menu/setup/start/07_cities_and_buildings.txt", "Extended Timeline/main_menu/setup/start/14_development.txt", "Extended Timeline/main_menu/setup/start/03_markets.txt"]
     question: Which tile is the Han capital, and where should the 07 megalopolis rank and 14 development entry sit?
     evidence: >-
@@ -100,6 +100,9 @@ tasks:
       pops; it was removed in c12bc57 and the rank moved to xianyang. The jingzhao tile
       carries the metropolis pop profile from the initial pop setup, Han-era character
       birthplaces and the 03 market; the 58.2.1 data flags were moved there on 2026-10-17.
+    resolution: >-
+      Confirmed jingzhao as the unified Western Han metropolis tile. 03 market, 07 megalopolis
+      rank, and 14 development 12 are all aligned on jingzhao across mod and data workspace.
     acceptance: Maintainer confirms the final tile (jingzhao proposed); 03 market, 07 rank and 14 development end up on the same location.
   ancient_economy_roads_and_town_ranks:
     period_id: ancient

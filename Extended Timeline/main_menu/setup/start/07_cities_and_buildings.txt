@@ -8,8 +8,7 @@ locations={
 	antioch = { rank = megalopolis town_setup = levant_city } # Queen of the East, Roman Syria provincial capital (~400k pop)
 	baghdad = { rank = megalopolis town_setup = central_asian_city } # Seleucia-on-Tigris & Ctesiphon, Parthian dual capital (~500k pop)
 	luoyang = { rank = megalopolis town_setup = chinese_city } # Imperial Capital of Eastern Han Dynasty under Emperor Ming (~500k pop)
-	xianyang = { rank = megalopolis town_setup = chinese_city } # Chang'an & Xianyang, Western Han imperial metropolis & Silk Road terminus (~400k pop)
-	# TODO(tile-audit): jingzhao has the metropolis pop profile + Han-era births, and was the Han capital district - consider moving this rank and dev 12 there (backlog: han_capital_tile_mapping).
+	jingzhao = { rank = megalopolis town_setup = chinese_city } # Chang'an (Jingzhao), Western Han imperial metropolis & Silk Road terminus (~400k pop)
 	patna = { rank = megalopolis town_setup = indian_city } # Pataliputra, ancient imperial metropolis on the Ganges (~400k pop)
 
 	# ==============================================================================
