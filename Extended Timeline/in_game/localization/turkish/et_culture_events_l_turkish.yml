@@ -130,3 +130,17 @@
  et_culture.113.b: "Deniz kurtlarına güvenilmez."
  et_culture.113.historical_info: "Saint-Clair-sur-Epte Antlaşması (911), Viking lideri Rollo'ya Normandiya olacak toprakları verdi. İki nesil içinde Normanlar Fransızca dilini ve Katolik inancını benimsedi; savaşçılık yeteneklerini korudular."
  et_culture.113.tt: "Caen, Cherbourg, Bayeux ve Rouen'da Norman yerleşmeleri ortaya çıkar."
+
+ et_culture.114.title: "Albigens Haçlı Seferi"
+ et_culture.114.desc: "Güney Fransa'daki Kathar sapkınlığı yayılıyor ve Papa buna karşı bir haçlı seferi çağrısı yapıyor. Kuzeyin orduları Toulouse ve Languedoc üzerine ilerliyor. Oksitan kültürü — gururlu ve kendine has — kuzeyin çelikleri ve papalık otoritesi eziyetinde kırılıyor. Güney, Paris tacına bağlanıyor."
+ et_culture.114.a: "Güney Paris'e boyun eğmeli."
+ et_culture.114.b: "Oksitanlar inançlarını korusun."
+ et_culture.114.historical_info: "Albigens Haçlı Seferi (1209–1229), Papa III. Innocent'in güney Fransa'daki Kathar sapkınlığına karşı başlattığı bir seferdi. Kuzey Fransa soyluları Oksitan direnişini kırdı, Languedoc'un Fransa tacına bağlanmasına ve Oksitan kültürünün gerilemesine yol açtı."
+ et_culture.114.tt: "Güney Galya'nın Oksitan nüfusu Fransız kültürüne geçer."
+
+ et_culture.115.title: "Yüzyıl Savaşları"
+ et_culture.115.desc: "Yüzyılı aşkın bir süredir İngiltere ve Fransa kralları taht için savaşıyor. Ancak bu savaşın kazanımında yeni bir şey doğuyor: Fransız milleti. Domrémy'li köylü kız orduları hurarediyor ve Loire'den Ren'e kadar kendilerini Norman, Breton ya da Burgundian diyen erkekler ve kadınlar artık Fransız diyorlar. Paris lehçesi krallığın diline dönüşüyor."
+ et_culture.115.a: "Tek kral, tek yasa, tek dil."
+ et_culture.115.b: "Eski eyalet kimlikleri sürdürülmeli."
+ et_culture.115.historical_info: "Yüzyıl Savaşları (1337–1453), İngiltere ile Fransa arasında birleşik bir Fransız milli kimliği yarattı. Jeanne d'Arc'nın seferleri (1429) dengeleri değiştirdi ve savaşın sonunda Fransız dil ve kimlik, bölgesel partikülyerizmlerin yerini aldı."
+ et_culture.115.tt: "Norman ve Arpitan nüfusu Fransız kültürüne ve kimliğine geçer."

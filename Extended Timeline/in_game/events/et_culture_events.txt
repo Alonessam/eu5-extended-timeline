@@ -1475,6 +1475,121 @@ et_culture.113 = {
 	}
 }
 
+# ===========================================================================
+# GAUL PHASE 5 EVENTS (WS4: et_culture.114 - et_culture.115)
+# Period: High Middle Ages & French Kingdom (MS 1000-1500)
+# ===========================================================================
+
+# 14. Albigensian Crusade & the South's Submission (MS 1209-1229)
+et_culture.114 = {
+	type = country_event
+	title = et_culture.114.title
+	desc = et_culture.114.desc
+	outcome = neutral
+	historical_info = et_culture.114.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = FRA
+		from = 1209.1.1
+		to = 1229.1.1
+		monthly_chance = 15
+	}
+
+	trigger = {
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.114.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.114.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:toulouse
+						location = location:bordeaux
+						location = location:nimes
+						location = location:arles
+						location = location:marseille
+					}
+				}
+				every_pop = {
+					limit = {
+						culture = culture:occitan
+					}
+					change_pop_culture = culture:french
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.114.b
+		add_stability = -10
+		add_prestige = -prestige_mild_bonus
+	}
+}
+
+# 15. Hundred Years' War & the Birth of National Identity (MS 1337-1453)
+et_culture.115 = {
+	type = country_event
+	title = et_culture.115.title
+	desc = et_culture.115.desc
+	outcome = good
+	historical_info = et_culture.115.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = FRA
+		from = 1337.1.1
+		to = 1453.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.115.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.115.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:paris
+						location = location:rouen
+						location = location:reims
+						location = location:orleans
+						location = location:tours
+						location = location:caen
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:norman
+							culture = culture:arpitan
+						}
+					}
+					change_pop_culture = culture:french
+				}
+			}
+		}
+		add_prestige = prestige_extreme_bonus
+	}
+
+	option = {
+		name = et_culture.115.b
+		add_stability = -10
+		add_prestige = -prestige_mild_penalty
+	}
+}
+
 # ---- Copy-and-adapt template for region chains ----
 # et_culture.N = {
 # 	type = country_event

@@ -130,3 +130,17 @@
  et_culture.113.b: "The sea-wolves cannot be trusted."
  et_culture.113.historical_info: "The Treaty of Saint-Clair-sur-Epte (911) granted Viking leader Rollo the lands that became Normandy. Within two generations, the Normans adopted the French language and Catholic faith while retaining their martial prowess."
  et_culture.113.tt: "Norman settlements appear in Caen, Cherbourg, Bayeux, and Rouen."
+
+ et_culture.114.title: "The Albigensian Crusade"
+ et_culture.114.desc: "The Cathar heresy has taken root in the south of France, and the Pope calls for a crusade against it. The armies of the north march on Toulouse and Languedoc. The Occitan culture, so proud and distinct, is broken on the wheel of northern steel and papal authority. The south is annexed to the crown of Paris."
+ et_culture.114.a: "The south must bend to Paris."
+ et_culture.114.b: "Let the Occitans keep their faith."
+ et_culture.114.historical_info: "The Albigensian Crusade (1209-1229) was launched by Pope Innocent III against the Cathar heresy in southern France. The northern French nobility crushed the Occitan resistance, leading to the annexation of Languedoc to the French crown and the decline of Occitan culture."
+ et_culture.114.tt: "The Occitan population of southern Gaul adopts the French culture."
+
+ et_culture.115.title: "The Hundred Years' War"
+ et_culture.115.desc: "For over a century the kings of England and France have contested the throne. Yet out of this crucible of war a new thing emerges: a French nation. The peasant girl of Domrémy rallies the armies, and from the Loire to the Rhine, men and women who once called themselves Norman, Breton, or Burgundian now call themselves French. The dialect of Paris becomes the language of the realm."
+ et_culture.115.a: "One king, one law, one language."
+ et_culture.115.b: "The old provincial identities must endure."
+ et_culture.115.historical_info: "The Hundred Years' War (1337-1453) between England and France forged a unified French national identity. Joan of Arc's campaigns (1429) turned the tide, and by the war's end, the French language and identity had supplanted regional particularisms."
+ et_culture.115.tt: "The Norman and Arpitan populations adopt the French culture and identity."
