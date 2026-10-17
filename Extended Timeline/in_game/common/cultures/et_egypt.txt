@@ -42,46 +42,22 @@ helleno_egyptian = {
 	}
 }
 
+# Mod-owned by design (second review, 2026-10-17): verbatim vanilla content
+# plus arabic_group so the Coptic identity shares the Egyptian group
+# (vanilla leaves coptic_culture groupless; source: vanilla egypt.txt).
 coptic_culture = {
 	language = coptic_language
-	
-	color = rgb{ 100 50 20 }
-	
-	tags = { east_african_gfx african_gfx }
+
+	color = color_language_coptic
+
+	tags = { egyptian_gfx middle_east_gfx }
 
 	opinions = {
+		lower_egyptian_culture = positive
+		upper_egyptian_culture = positive
+		libyan_arabic_culture = positive
 	}
-	
-	culture_groups = {
-		arabic_group
-	}
-}
 
-lower_egyptian_culture = {
-	language = arabic_language
-	
-	color = rgb{ 180 120 60 }
-	
-	tags = { middle_eastern_gfx arabic_gfx }
-
-	opinions = {
-	}
-	
-	culture_groups = {
-		arabic_group
-	}
-}
-
-upper_egyptian_culture = {
-	language = arabic_language
-	
-	color = rgb{ 160 100 50 }
-	
-	tags = { east_african_gfx african_gfx }
-
-	opinions = {
-	}
-	
 	culture_groups = {
 		arabic_group
 	}

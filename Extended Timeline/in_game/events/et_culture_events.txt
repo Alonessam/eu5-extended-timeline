@@ -650,7 +650,7 @@ et_culture.5 = { # Arabization (record: egypt_coptic_spoken_decline)
 						}
 					}
 					split_pop = {
-						fraction = 0.25
+						fraction = 0.15
 						culture = culture:upper_egyptian_culture
 					}
 				}
