@@ -166,6 +166,15 @@ tasks:
       sourced records collected in historical-events/2026-10-17_gaul_culture_transition.yml,
       gallo_roman defined in mod, and pilot events et_culture.101 to et_culture.103
       implemented with English and Turkish localization). Neither track blocks the other.
+      UPDATE (2026-10-17, Egypt track): the Egyptian chain is now implemented in the mod -
+      et_culture.1 to et_culture.5 in in_game/events/et_culture_events.txt, fired by
+      et_egypt_yearly_pulse in the new file in_game/common/on_action/et_history_pulses.txt
+      (vanilla yearly_country_pulse hook; owner-agnostic, one-shot per country via
+      variables), with English and Turkish localization; the et_culture.9000 test event
+      stays until in-game validation. The numbering agreement is realized: the Gaul pilot
+      was renumbered to et_culture.101-103, leaving .1-.49 to Egypt (.100-.149 Gaul).
+      In-game tests are the next step: A (template event) and B (chain, with temporary
+      58.x windows).
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient

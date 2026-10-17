@@ -1,7 +1,9 @@
 # Mısır Pilotu — Olay Tasarım Notu (Faz 1 / WS4)
 
-**Tarih:** 17 Ekim 2026 · **Hat:** Mısır (paralel pilot) · **Durum:** öneri —
-maintainer onayı ve oyun içi test bekliyor.
+**Tarih:** 17 Ekim 2026 · **Hat:** Mısır (paralel pilot) · **Durum:** v1
+scriptlendi (oyun içi test bekliyor; `et_culture.1`–`.5` +
+`on_action/et_history_pulses.txt`). Numara mutabakatı sağlandı: Galya pilotu
+`.101`–`.103` olarak ayrıldı.
 
 **Veri temeli:** `2026-10-17_egypt_culture_transition.yml` (11 kayıtlı geçiş).
 **Kalite kuralları:** `README.md` bölüm 6. **Doğrulama kaynağı:** kurulu EU5
@@ -160,6 +162,37 @@ kesri ayrılıp yeni din/kültüre geçer, kalan aynı kalır.
 3. Ateşleme: yalnız `et_egypt_yearly_pulse` üzerinden (DHE bloğu **yok**).
 4. Metinler EN + TR; `historical_info` kaynağı özetler.
 
+**Uygulama notları (v1 — scriptle eşitlenen sapmalar, 17 Ekim 2026):**
+
+- **Tekilleştirme iki katmanlı:** her olay `immediate` bloğunda ateş anında
+  `et_egypt_N_fired` işaretçisini kurar (oyuncu seçim beklerken pulse ikinci
+  popup açamaz); seçim sonuçları ayrı değişkenlerdir (`et_egypt_christ_1`,
+  `..._coptic`, `..._islam_1`, `..._islam_2`, `..._arabized` + `*_resist`).
+  Bölüm 2.5'teki "trigger'da `NOT has_variable`" ilkesi bu iki katmanla
+  uygulanır.
+- **.1:** dönüşüm limitine `culture = culture:old_egyptian` süzgeci eklendi
+  (Mısır bölgelerinde yaşayan Beja vb. topluluklar kapsam dışı). Direniş payı
+  iki bölgede de `0.05`.
+- **.2:** (i) **din tamamlama adımı eklendi** — putperest `old_egyptian`
+  poplarda Delta `0.45` / Yukarı Mısır `0.35` → `miaphysite` (kayıt:
+  Hristiyanlaşma 4.–5. yy'da çoğunluk; ilk dalga tek başına düşük kalıyordu).
+  (ii) **kimlik geçişi kesirsiz uygulandı**: `miaphysite` + `old_egyptian`
+  popların **tamamı** `coptic_culture`'a geçer. Gerekçe: sınıflama tutarlılığı —
+  Hristiyan = Kopt (vanilla 1337 görünümü); kesirli geçiş kalıcı "Hristiyan ama
+  Eski Mısırlı" pop yığını bırakıyordu.
+- **.3:** pencere `650–1300` yapıldı (1100 sonrası fetihlerde zincir
+  tıkanmasın); dönüşüm limitine putperest kalıntı OR'u ve kültür süzgeci
+  (`old_egyptian`/`coptic_culture`) eklendi — direniş rotasında bile İslamlaşma
+  tutarlı ilerler. Direniş payı `0.05`/`0.05`.
+- **.4:** limit genişletmesi .3 ile aynı; paylar `0.60`/`0.50`, direniş `0.10`.
+- **.5:** limit `religion = islam` **ve** kültür OR'u {`coptic_culture`,
+  `old_egyptian`}; direniş Delta `0.25` / Yukarı Mısır `0.15`.
+- **custom_tooltip deseni:** dönüşüm efektleri, vanilla MAM/SWE deseniyle
+  (`flavor_MAM.txt:2661-2677`) `custom_tooltip` bloğunun **içine** yazıldı
+  (görünüm + yürütme birebir vanilla).
+- **Nübya (`.6`/`.7`) bu sürümde yok** — bölüm 7 karar 3 bekliyor.
+- **`et_culture.9000`** test olayı, test A geçene dek dosyada kalır.
+
 ### et_culture.1 — "Nil'de Yeni Bir Şafak" / "A New Dawn on the Nile"
 
 *Hristiyanlaşma I — kentler ve Delta önde (tahmini pencere: 200–500).*
@@ -299,10 +332,10 @@ geçtikten sonra kaldırılır.
 
 ## 5. Test planı
 
-- **Aşama A — şablon doğrulaması (şimdi, kullanıcı):** EU5'te 58 başlangıcı
+- **Aşama A — şablon doğrulaması (kullanıcı):** EU5'te 58 başlangıcı
   ROM; birkaç ay ilerlet; `et_culture.9000` görünmeli; `error.log` temiz
-  olmalı. *(Mevcut bekleme maddesi.)*
-- **Aşama B — zincir doğrulaması (script sonrası):** Öneri: yerel test
+  olmalı. *(Hâlâ bekliyor.)*
+- **Aşama B — zincir doğrulaması (scriptler yazıldı; sıradaki):** Öneri: yerel test
   dalında pencereler geçici olarak `58.x`'e çekilir; olaylar sırayla (her biri
   bir sonraki yıl) ateşlenir. Kontroller: dönüşüm payları `fraction` ile
   uyumlu mu; değişken işaretleri kuruluyor mu; Kıptî kalıntısı kalıyor mu;
@@ -325,8 +358,10 @@ geçtikten sonra kaldırılır.
 4. Test A → Test B → (gerekirse kalibrasyon) → Test C.
 5. Zincir doğrulanınca `et_culture.9000` emekli; README/backlog senkronu.
 
-Numara rezervasyonu önerisi (Samet ile mutabakat): Mısır `.1`–`.49`,
-Galya `.100`–`.149`, sonraki bölgeler `.150`+.
+**Durum:** 1–3 ✓ (17 Ekim 2026). 4–5 sırada.
+
+Numara rezervasyonu (Samet ile mutabakat — **sağlandı**): Mısır `.1`–`.49`,
+Galya `.100`–`.149` (Galya `.101`–`.103` yürürlükte), sonraki bölgeler `.150`+.
 
 ## 7. Açık kararlar (maintainer)
 
@@ -339,7 +374,9 @@ Galya `.100`–`.149`, sonraki bölgeler `.150`+.
 4. **Oran kalibrasyonu:** İlk taslak paylar; test verisiyle ayar. İslamlaşma
    için ikinci dalga yeterli olmazsa `.4b` denge dalgası eklenir.
 5. **Hellno kaydı:** Sağlam kaynak bulunana kadar script yok (`pending`).
-6. **Galya numaralandırma mutabakatı** (bölüm 6). Samet'e not.
+6. ~~Galya numaralandırma mutabakatı~~ **sağlandı** (17 Ekim 2026): Samet
+   Galya olaylarını `.101`–`.103`'e taşıdı; Mısır `.1`–`.49`, Galya
+   `.100`–`.149` fiilen yürürlükte.
 
 ## 8. İzlenebilirlik: kayıt → olay
 

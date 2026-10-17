@@ -10,10 +10,10 @@ doğrulanmıştır; doğrulama notları bu dokümandadır.
 
 **Durum:** Plan yayında. **Faz 1 paralel iki pilotla sürüyor: Mısır ve Galya**
 (17 Ekim 2026 mutabakatı). Mısır hattında kaynaklı geçiş kayıtları, kültür
-grafiği düzeltmeleri, olay iskeleti ve olay tasarım notu hazır
-(`2026-10-17_egypt_event_design.md`; sıradaki adım olay scriptleri); Galya
-hattı `gallo_roman` ara kimliğiyle ayrı bir hatta yürütülüyor (kaynak toplama
-aşamasında).
+grafiği düzeltmeleri ve **olay zinciri v1** hazır (`et_culture.1`–`.5` +
+`on_action/et_history_pulses.txt`; oyun içi test sırada). Galya hattında
+`gallo_roman` ara kimliği ve pilot olaylar (`.101`–`.103`) yazıldı (Samet);
+numara rezervasyonu mutabık: Mısır `.1`–`.49`, Galya `.100`–`.149`.
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
@@ -115,12 +115,13 @@ option = {
 
 ## 3. Mevcut durum (17 Ekim 2026)
 
-- **Olay katmanı iskeleti kuruldu** (17 Ekim 2026): `in_game/events/`
-  (`et_culture_events.txt`: `et_culture` namespace'i, şablon yorumları ve oyun
-  içi doğrulama için `et_culture.9000` test olayı) ve localization dosyaları
-  (`in_game/localization/{english,turkish}/et_culture_events_l_*.yml`).
-  `on_action/` ve `decisions/` henüz yok; DHE pencereleri `on_action`
-  gerektirmiyor.
+- **Olay katmanı kuruldu** (17 Ekim 2026): `in_game/events/`
+  (`et_culture_events.txt`: `et_culture` namespace'i; `et_culture.9000` test
+  olayı; Mısır zinciri `.1`–`.5`; Galya pilotu `.101`–`.103`) ve localization
+  dosyaları (`in_game/localization/{english,turkish}/et_culture_events_l_*.yml`).
+  `on_action/et_history_pulses.txt` eklendi: `yearly_country_pulse`'a bağlı,
+  sahip-bağımsız `et_egypt_yearly_pulse` (ileriki bölge zincirleri için desen);
+  Galya olayları DHE pencereleriyle yürüyor. `decisions/` henüz yok.
 - **Başlangıç pop verisi** (`main_menu/setup/start/06_pops.txt`, ~50 bin pop
   bloğu): örnek — `gallian` ~1.000, `old_egyptian` ~300, modern `french` 0. Bu
   dağılım, dönüşümün ancak olaylarla kurulabileceğini gösterir.
@@ -175,9 +176,9 @@ Veri-önce kuralı, test protokolü, merge disiplini (bkz. bölüm 6).
 
 - **Faz 0 (bu dosya):** Plan yayında. ✓
 - **Faz 1 — Pilotlar: Mısır + Galya (paralel)** (17 Ekim 2026 mutabakatı).
-  Mısır hattı: kaynaklı geçiş kayıtları ✓ → 3–5 olaylık zincir → oyun içi
-  test → şablon çıkarma. Galya hattı: `gallo_roman` ara kimliği + kaynaklı
-  kayıtlar → aynı akış.
+  Mısır hattı: kaynaklı geçiş kayıtları ✓ → zincir `.1`–`.5` ✓ → oyun içi
+  test (sırada) → şablon çıkarma. Galya hattı: `gallo_roman` kimliği +
+  kayıtlar + olaylar `.101`–`.103` ✓ → test (sırada).
 - **Faz 2 — Geç Antik ve Kavimler Göçü (200–700):** Roma çöküşü sonrası
   Latin/Romance ayrışması; Germen ve Slav yayılımı; `add_migration` dalgaları.
 - **Faz 3 — Postklasik (700–1400):** Arap fetihleri ve Arapçalaşma; Türk
@@ -198,12 +199,11 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
 - [x] Olay tasarım notu — `2026-10-17_egypt_event_design.md` (5 olaylık
   çekirdek zincir + Nübya eki önerisi; sahip-bağımsız on_action pulse
   mimarisi doğrulandı)
-- [x] Mod iskeleti: `events/` + localization kuruldu (test olayı dahil); pilot
-  olay scriptleri tasarım notundan sonra
-- [ ] Oyun içi test (58 başlangıcı, hızlandırılmış gözlem) ve log kontrolü —
-  test olayı hazır: `et_culture.9000` (ROM, 58.1–58.6)
-- [ ] Galya hattı (paralel): `gallo_roman` ara kimliği + kaynaklı kayıtlar →
-  olay zinciri
+- [x] Mod iskeleti: `events/` + localization kuruldu (test olayı dahil)
+- [x] Olay zincirleri: Mısır `et_culture.1`–`.5` + `et_history_pulses.txt`
+  (17 Ekim 2026) · Galya `et_culture.101`–`.103` + `gallo_roman` (Samet)
+- [ ] Oyun içi test ve log kontrolü — test A: `et_culture.9000` (ROM,
+  58.1–58.6); test B: zincir olayları (pencereler geçici `58.x`'e çekilerek)
 
 ## 6. Bağlayıcı kalite kuralları
 
@@ -242,8 +242,9 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
 - `research/backlog.yml` — ilgili açık işler
   (`historical_events_and_culture_transition`, `ancient_economy_roads_and_town_ranks` vb.).
 - Bu klasördeki veri dosyaları:
-  `2026-10-17_egypt_culture_transition.yml` (pilot geçiş kayıtları),
+  `2026-10-17_egypt_culture_transition.yml` (Mısır geçiş kayıtları),
   `2026-10-17_egypt_event_design.md` (Mısır olay tasarım notu),
+  `2026-10-17_gaul_culture_transition.yml` (Galya geçiş kayıtları),
   `2026-10-17_culture_graph_audit.md` (WS3 denetimi).
 - `Extended Timeline/loading_screen/common/defines/00_defines.txt` — asimilasyon
   ve kültür sabitleri.
