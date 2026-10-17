@@ -1,4 +1,4 @@
-latvian_polytheism = {
+﻿latvian_polytheism = {
     color = rgb{ 157 34 53 }
     group = folk_european_group
     needs_reform = yes

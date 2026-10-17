@@ -1,4 +1,4 @@
-dynasty_manager = {
+﻿dynasty_manager = {
 	default_dynasty = { name = { name = default_dynasty } home = rome }
 
 	abgarid_dynasty = {

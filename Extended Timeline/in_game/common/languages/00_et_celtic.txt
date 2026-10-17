@@ -1,4 +1,4 @@
-gaulish_language = {
+﻿gaulish_language = {
 
 	color = rgb{ 85 76 84 }
 

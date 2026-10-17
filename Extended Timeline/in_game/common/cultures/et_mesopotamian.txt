@@ -1,4 +1,4 @@
-
+﻿
 assyrian = {
     language = assyrian_dialect
 	

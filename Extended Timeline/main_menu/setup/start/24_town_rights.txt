@@ -1,2 +1,2 @@
-townrights_manager = {
+﻿townrights_manager = {
 }

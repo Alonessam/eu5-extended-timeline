@@ -1,4 +1,4 @@
-war_manager = {
+﻿war_manager = {
 	war = {
 		war_name = {
 			name = "FIRST_ROMAN_PARTHIAN_WAR"

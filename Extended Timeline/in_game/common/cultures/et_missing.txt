@@ -1,4 +1,4 @@
-missing_culture = {
+﻿missing_culture = {
 	
 	language = missing_language
 	

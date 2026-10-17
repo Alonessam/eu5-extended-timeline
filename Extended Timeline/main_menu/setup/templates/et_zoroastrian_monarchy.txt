@@ -1,4 +1,4 @@
-# Ancient Iranian / Zoroastrian monarchy (Parthia, Persis, Atropatene, Sogdia, Khwarazm)
+﻿# Ancient Iranian / Zoroastrian monarchy (Parthia, Persis, Atropatene, Sogdia, Khwarazm)
 
 starting_technology_level = 3
 government = {

@@ -1,4 +1,4 @@
-locations={
+﻿locations={
 
 stockholm = {
 	define_pop = {	type = nobles	size = 0.032	culture = germanic	religion = germanic_polytheism }

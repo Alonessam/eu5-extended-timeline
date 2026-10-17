@@ -1,4 +1,4 @@
-diplomacy_manager = {
+﻿diplomacy_manager = {
 	# Roman client states / vassals in 58 AD
 	dependency = { first = ROM second = IBER subject_type = vassal }
 	dependency = { first = ROM second = PONT subject_type = vassal }

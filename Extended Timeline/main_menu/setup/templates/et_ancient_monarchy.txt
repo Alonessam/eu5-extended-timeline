@@ -1,4 +1,4 @@
-# Generic ancient kingdom (58 AD): Berber, Arabian, Mesopotamian and
+﻿# Generic ancient kingdom (58 AD): Berber, Arabian, Mesopotamian and
 # Caucasian monarchies that do not fit a culture-specific et_ template.
 # Structure copied from et_european_pagan_monarchy (= vanilla catholic_monarchy
 # skeleton) so all keys stay vanilla-valid; only slider values are tuned.

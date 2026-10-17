@@ -1,4 +1,4 @@
-kushite = {
+﻿kushite = {
 	language = meroitic_language
 	
 	color = rgb{ 175 41 99 }

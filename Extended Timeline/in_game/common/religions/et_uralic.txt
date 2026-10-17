@@ -1,4 +1,4 @@
-
+﻿
 ﻿hungarian_polytheism = {
 	color = rgb{ 252 136 200 }
 	group = folk_asian_group

@@ -1,4 +1,4 @@
-daco_thracian_language = {
+﻿daco_thracian_language = {
 
 	color = rgb{ 161 150 155 }
 

@@ -1,4 +1,4 @@
-AAC = {
+﻿AAC = {
 	color = rgb { 157  51  167 }
 	color2 = rgb { 157  51  167 }
 	culture_definition = rhine_franconian

@@ -1,4 +1,4 @@
-egyptian_polytheism = {
+﻿egyptian_polytheism = {
 	color = rgb {210 210 80}
 	group = folk_african_group
 	needs_reform = yes

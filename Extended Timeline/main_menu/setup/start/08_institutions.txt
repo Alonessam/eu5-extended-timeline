@@ -1,4 +1,4 @@
-locations={
+﻿locations={
 
 	# ==============================================================================
 	# 58 AD CLASSICAL ANTIQUITY INSTITUTIONS SETUP

@@ -1,4 +1,4 @@
-meroitic_language = {
+﻿meroitic_language = {
 
 	color = rgb{ 175 41 99 }
 

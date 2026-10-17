@@ -1,4 +1,4 @@
-
+﻿
 ##ET
 gallo_roman = {
 	language = latin_language

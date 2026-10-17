@@ -1,4 +1,4 @@
-#ET
+﻿#ET
 belzec = { topography = flatland vegetation = forest climate = continental religion = slavic_polytheism culture = slavic raw_material = legumes}
 niedzica = { topography = hills vegetation = forest climate = continental religion = slavic_polytheism culture = slavic raw_material = alum}
 stara_lubovna = { topography = hills vegetation = forest climate = continental religion = slavic_polytheism culture = slavic raw_material = alum}

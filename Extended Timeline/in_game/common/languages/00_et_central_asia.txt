@@ -1,4 +1,4 @@
-tocharian_language = {
+﻿tocharian_language = {
 
 	color = rgb{ 239 153 63 }
 

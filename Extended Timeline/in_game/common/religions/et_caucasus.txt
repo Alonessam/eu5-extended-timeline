@@ -1,4 +1,4 @@
-georgian_religion = {
+﻿georgian_religion = {
     color = rgb{ 198 25 25 }
     group = folk_caucasian_group
     needs_reform = yes

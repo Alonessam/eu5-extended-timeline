@@ -1,4 +1,4 @@
-
+﻿
 gothic = {
 	language = gothic_language
 	

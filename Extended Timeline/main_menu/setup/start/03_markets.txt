@@ -1,4 +1,4 @@
-market_manager = {
+﻿market_manager = {
 	# 58 AD (CE 58) market network - converted from the 1337-era baseline; core set = researched 58.2.1 market flags (2026-10-17).
 
 	# Europe

@@ -1,4 +1,4 @@
-#Temp file, copy of eastern_european_monarchy
+﻿#Temp file, copy of eastern_european_monarchy
 
 starting_technology_level = 3
 government = {

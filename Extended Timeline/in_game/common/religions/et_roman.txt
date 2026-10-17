@@ -1,4 +1,4 @@
-roman_polytheism = {
+﻿roman_polytheism = {
 	color = { 225 62 44 }
 	group = folk_european_group
 

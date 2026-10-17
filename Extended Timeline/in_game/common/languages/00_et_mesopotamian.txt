@@ -1,4 +1,4 @@
-akkadian_language = {
+﻿akkadian_language = {
     male_names = {
 			Izates Bazeus Monobaz Meharaspes Narsai Shahrat Aphraates Sargon Ashur Aphrahat Pkidha Ninos Noh Habel 
 			Abedhmiha Hiran Saloupha Ahadabuhi Soubaliso Rhima Abbousta Erishum Ikunum Asinum Lullaya Bazaya Adad-Nirari
