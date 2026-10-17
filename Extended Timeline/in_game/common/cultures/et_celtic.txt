@@ -14,6 +14,7 @@ gallian = {
 	culture_groups = {
 		celtic_group
 		continental_celtic_group
+		french_group
 	}
 }
 belgae  = {

@@ -1,0 +1,5 @@
+﻿l_english:
+ et_culture.9000.title: "Extended Timeline: Event Template Test"
+ et_culture.9000.desc: "This is a template test event for the Extended Timeline culture transition layer (namespace et_culture). If you can read this, the events file loads and the dynamic historical event window fires. It will be replaced by the sourced Egypt pilot chain."
+ et_culture.9000.a: "Understood."
+ et_culture.9000.historical_info: "Test scaffolding added on 2026-10-17 to verify the WS4 event skeleton; see et-history-data/research/historical-events/README.md."

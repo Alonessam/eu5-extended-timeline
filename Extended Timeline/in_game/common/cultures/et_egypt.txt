@@ -9,6 +9,7 @@ kushite = {
 	}
 	
 	culture_groups = {
+		nilosahelian_group
 	}
 }
 old_egyptian = {
@@ -21,6 +22,7 @@ old_egyptian = {
 	opinions = {
 	}
 	culture_groups = {
+		arabic_group
 	}
 }
 

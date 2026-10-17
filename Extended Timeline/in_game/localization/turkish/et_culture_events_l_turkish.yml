@@ -1,0 +1,5 @@
+﻿l_turkish:
+ et_culture.9000.title: "Extended Timeline: Şablon Testi"
+ et_culture.9000.desc: "Bu, Extended Timeline kültür dönüşümü katmanının (namespace et_culture) şablon test olayıdır. Bunu görebiliyorsanız olay dosyası yükleniyor ve dinamik tarihsel olay penceresi çalışıyor demektir. Mısır pilot zinciriyle değiştirilecektir."
+ et_culture.9000.a: "Anlaşıldı."
+ et_culture.9000.historical_info: "WS4 olay iskeletini doğrulamak için 17 Ekim 2026'da eklenen test altyapısı; bkz. et-history-data/research/historical-events/README.md."
