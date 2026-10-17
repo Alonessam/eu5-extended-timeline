@@ -346,7 +346,7 @@ ALN = {
 	color = rgb { 130  167  71 }
 	color2 = rgb { 130  167  71 }
 	culture_definition = alan_culture
-	religion_definition = tengri
+	religion_definition = alan_paganism
 	description_category = diplomatic
 	difficulty = 2
 }
@@ -3154,7 +3154,7 @@ DGL = {
 	color = rgb { 191  25  25 }
 	color2 = rgb { 191  25  25 }
 	culture_definition = sinhalese
-	religion_definition = mahayana
+	religion_definition = hindu
 	description_category = diplomatic
 	difficulty = 2
 }
@@ -4146,7 +4146,7 @@ GLI = {
 	color = rgb { 93  110  190 }
 	color2 = rgb { 93  110  190 }
 	culture_definition = ladakh_culture
-	religion_definition = bon
+	religion_definition = hindu
 	description_category = diplomatic
 	difficulty = 2
 }
@@ -6666,7 +6666,7 @@ KTU = {
 	color = rgb { 173 141 158  }
 	color2 = rgb { 173 141 158  }
 	culture_definition = newar_culture
-	religion_definition = mahayana
+	religion_definition = hindu
 	description_category = diplomatic
 	difficulty = 2
 }
@@ -11386,7 +11386,7 @@ SND = {
 	color = rgb { 135  104  85 }
 	color2 = rgb { 135  104  85 }
 	culture_definition = sindhi
-	religion_definition = mahayana
+	religion_definition = hindu
 	description_category = diplomatic
 	difficulty = 2
 }
