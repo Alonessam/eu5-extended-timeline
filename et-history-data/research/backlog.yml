@@ -178,6 +178,19 @@ tasks:
       no mod-related line. Test B (chain) uses the verified EU5 console protocol
       (event, test_event_trigger, event_probabilities, change_date, tick_day) instead of
       temporary 58.x windows; protocol recorded in the design note, section 5.
+      UPDATE 2 (2026-10-17, Egypt track): Samet's review commit f3d304d aligned the
+      chain with the spec (event .2 resistance 0.05->0.15; event .3 window to
+      650-1100) and materialized the Egyptian end-state keys inside the mod
+      (coptic/lower/upper egyptian cultures in et_egypt.txt; coptic/arabic
+      languages in 00_et_african.txt; miaphysite in et_christianity.txt) using the
+      mod's established implicit-override pattern (the mod never uses REPLACE:;
+      filenames sort after vanilla). Possible content loss in the vanilla-owned
+      definitions (arabic dialect block referenced by ~30 vanilla cultures and by
+      the mod's own et_muslim islam religion; character name pools; culture
+      opinions/goods_demand_modifier; miaphysite autocephaly features) and the .5
+      upper-Egypt resistance sync (spec 0.15 vs script 0.25) are flagged as
+      maintainer confirmations in the design note, section 7 (items 7-8). Test B
+      remains the next step.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -193,3 +206,19 @@ tasks:
       research/historical-events/2026-10-17_culture_graph_audit.md; the 26-entry
       East Asia cluster mirrors vanilla groupless isolates and is out of scope.
     acceptance: Assign only groups with a documented successor relation using vanilla group ids; leave intentionally isolate cultures groupless.
+  invalid_culture_gfx_tags:
+    period_id: ancient
+    priority: 3
+    state: pending
+    targets: [Extended Timeline/in_game/common/cultures/et_egypt.txt, Extended Timeline/in_game/common/cultures/et_missing.txt]
+    source_refs: []
+    question: Which mod culture files use gfx tags that are not defined in the vanilla graphical culture types list?
+    evidence: >-
+      The 2026-10-17 key scan cross-checked mod culture tags against
+      in_game/gfx/graphical_culture_types: middle_eastern_gfx (et_egypt.txt:35,
+      et_missing.txt:124/132/148) and arabic_gfx (et_egypt.txt:65) are not
+      defined; the further candidates north_african_gfx (et_missing.txt:132),
+      iranian_gfx (et_missing.txt:148) and steppe_gfx (et_missing.txt:156) are
+      absent as well. Valid neighbours include middle_east_gfx, arabian_gfx,
+      maghrebi_gfx, persian_gfx and egyptian_gfx.
+    acceptance: Replace only with tags verified in the vanilla list; keep regional intent reviewed by maintainers; graphics fallback is the expected current effect.

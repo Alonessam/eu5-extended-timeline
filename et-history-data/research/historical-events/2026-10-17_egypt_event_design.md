@@ -3,7 +3,7 @@
 **Tarih:** 17 Ekim 2026 · **Hat:** Mısır (paralel pilot) · **Durum:** v1
 scriptlendi; **Test A geçti** (17 Ekim 2026: `et_culture.9000` ve Galya `.101`
 oyun içinde ateşlendi, `error.log`'da mod satırı yok — kanıt bölüm 5). Zincir
-doğrulaması (Test B, console protokolü) sırada. Numara mutabakatı sağlandı:
+doğrulaması (Test B, console protokolü) sırada. Samet'in inceleme commit'i (`f3d304d`) payları spec'e hizaladı ve son-kimlik anahtarlarını mod'a aldı (teyitler bölüm 7'de). Numara mutabakatı sağlandı:
 Galya pilotu `.101`–`.103` olarak ayrıldı.
 
 **Veri temeli:** `2026-10-17_egypt_culture_transition.yml` (11 kayıtlı geçiş).
@@ -143,7 +143,7 @@ kesri ayrılıp yeni din/kültüre geçer, kalan aynı kalır.
 | Anahtar | Tür | Kaynak | Not |
 |---|---|---|---|
 | `egyptian_polytheism` | din | mod (`et_egyptian.txt:1`) | 58 kurulumunda Mısır popları bu dinde |
-| `miaphysite` | din | vanilla (`christian.txt:365`) | `enable` yok → 58'den itibaren kullanılabilir |
+| `miaphysite` | din | vanilla (`christian.txt:365`) + mod (`et_christianity.txt:106`, `f3d304d`) | `enable` yok → 58'den itibaren kullanılabilir; mod sürümü sadeleştirilmiş (bölüm 7, karar 7) |
 | `chalcedonism` | din | mod (`et_christianity.txt:2`) | `enable = 2.1.1` → 58'de açık (Melkit hattı) |
 | `islam` | din | mod (`et_muslim.txt:2`) | `group = muslim` |
 | `old_egyptian` → `coptic_culture` → `lower/upper_egyptian_culture` | kültür | mod + vanilla | WS3 düzeltmeleriyle grup bağları hazır |
@@ -180,14 +180,15 @@ kesri ayrılıp yeni din/kültüre geçer, kalan aynı kalır.
   (ii) **kimlik geçişi kesirsiz uygulandı**: `miaphysite` + `old_egyptian`
   popların **tamamı** `coptic_culture`'a geçer. Gerekçe: sınıflama tutarlılığı —
   Hristiyan = Kopt (vanilla 1337 görünümü); kesirli geçiş kalıcı "Hristiyan ama
-  Eski Mısırlı" pop yığını bırakıyordu.
+  Eski Mısırlı" pop yığını bırakıyordu. (iii) **direniş payı spec'e hizalandı:** Delta/Yukarı Mısır `0.15`/`0.15` (Samet, `f3d304d`; v1 scriptte `0.05` idi).
 - **.3:** pencere `650–1100` yapıldı (kayıt: vilayet dönemi erken
   İslamlaşma; fetih sonrası tıkanmayı önlemek için esnetildi); dönüşüm limitine putperest kalıntı OR'u ve kültür süzgeci
   (`old_egyptian`/`coptic_culture`) eklendi — direniş rotasında bile İslamlaşma
   tutarlı ilerler. Direniş payı `0.05`/`0.05`.
 - **.4:** limit genişletmesi .3 ile aynı; paylar `0.60`/`0.50`, direniş `0.10`.
 - **.5:** limit `religion = islam` **ve** kültür OR'u {`coptic_culture`,
-  `old_egyptian`}; direniş Delta `0.25` / Yukarı Mısır `0.15`.
+  `old_egyptian`}; direniş Delta `0.25` / Yukarı Mısır `0.25` — **senkron notu:** spec bu satırda `0.15` idi; script (Samet, `f3d304d`) Yukarı Mısır'ı `0.25` yaptı (**teyit: bölüm 7, karar 8**).
+- **Son-kimlik anahtarları modda (Samet, `f3d304d`):** `coptic_culture`, `lower/upper_egyptian_culture` (`et_egypt.txt`), `coptic_language`, `arabic_language` (`00_et_african.txt`) ve `miaphysite` (`et_christianity.txt:106`) artık modda da tanımlı — implicit override (mod genelinde `REPLACE:` yok); etki ve teyitler bölüm 7, karar 7'de.
 - **custom_tooltip deseni:** dönüşüm efektleri, vanilla MAM/SWE deseniyle
   (`flavor_MAM.txt:2661-2677`) `custom_tooltip` bloğunun **içine** yazıldı
   (görünüm + yürütme birebir vanilla).
@@ -402,6 +403,25 @@ Galya `.100`–`.149` (Galya `.101`–`.103` yürürlükte), sonraki bölgeler `
 6. ~~Galya numaralandırma mutabakatı~~ **sağlandı** (17 Ekim 2026): Samet
    Galya olaylarını `.101`–`.103`'e taşıdı; Mısır `.1`–`.49`, Galya
    `.100`–`.149` fiilen yürürlükte.
+
+7. **Mısır anahtarlarının mod sahipliği (teyit — Samet, `f3d304d`):** `coptic_culture`,
+   `lower/upper_egyptian_culture`, `coptic_language`, `arabic_language` ve `miaphysite`
+   artık modda da tanımlı (implicit override — mod genelinde `REPLACE:` yok; yerleşik
+   desen: `hellenism_religion`, `aramaic_language`, `gothic_language`). Dosya adları
+   vanilla'dan sonra sıralandığından tanımlar oyunda etkin görünüyor. "Tam değişim"
+   varsayımıyla olası kayıplar: `arabic_language`'ın 7 diyalekti (yalnız vanilla
+   tanımında; modun kendi `et_muslim` dini ve ~30 vanilla kültür satırı referans
+   veriyor) ve isim listeleri; 3 kültürün `opinions`/`goods_demand_modifier` alanları;
+   `miaphysite`'ın otosefal patrikhane/kanonizasyon/`religious_aspects` ve modifier
+   satırları. `coptic_culture`'a `arabic_group` eklenmesi hedefli görünüyor (vanilla
+   Koptî grubusuz — WS3 eksiği). Yeni bloklarda `middle_eastern_gfx`/`arabic_gfx`
+   geçerli culture tag'i değil (doğrular: `middle_east_gfx`, `arabian_gfx`); eski
+   dosyalarda da var — backlog'da ayrı temizlik görevi. **Karar:** bilinçli mi; içerik
+   kaybı kabul mü, yoksa vanilla içerikleri mod bloklarına mı taşınacak? Bir sonraki
+   açılışta `error.log` teyidi + Samet onayı.
+8. **`.5` direniş senkronu (teyit):** §3 uygulama notu "Delta `0.25` / Yukarı Mısır
+   `0.15`" diyordu; script (Samet, `f3d304d`) Yukarı Mısır'ı `0.25` yaptı. Teyitle
+   birlikte not ya da script hizalanacak.
 
 ## 8. İzlenebilirlik: kayıt → olay
 

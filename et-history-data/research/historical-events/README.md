@@ -13,7 +13,7 @@ doğrulanmıştır; doğrulama notları bu dokümandadır.
 grafiği düzeltmeleri ve **olay zinciri v1** hazır (`et_culture.1`–`.5` +
 `on_action/et_history_pulses.txt`); **Test A geçti** (17 Ekim 2026:
 `et_culture.9000` + Galya `.101` oyun içinde ateşlendi; `error.log`'da mod
-satırı yok). Zincir doğrulaması (Test B) sırada. Galya hattında
+satırı yok). Zincir doğrulaması (Test B) sırada. Samet'in inceleme commit'i (`f3d304d`) payları spec'e hizaladı ve Mısır son-kimlik anahtarlarını mod'a aldı; yan etki/senkron teyitleri design note §7'de. Galya hattında
 `gallo_roman` ara kimliği ve pilot olaylar (`.101`–`.103`) yazıldı (Samet);
 numara rezervasyonu mutabık: Mısır `.1`–`.49`, Galya `.100`–`.149`.
 
