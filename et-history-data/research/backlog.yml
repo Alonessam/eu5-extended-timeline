@@ -136,3 +136,20 @@ tasks:
     source_refs: [wiki_urban_sizes, periplus_schoff]
     question: Which tiles cover Rhodes, Paithan, Memphis, Berenice, Istakhr and Yangzhou/Guangling, and how precise are the approximations already noted (Petra, Artaxata, Taxila, Cyrene, Chang'an, Linzi, Dunhuang)?
     acceptance: Verify filename uniqueness and document distances in records; postpone tile renames.
+  historical_events_and_culture_transition:
+    period_id: ancient
+    priority: 1
+    state: pending
+    targets: [research/historical-events/README.md]
+    source_refs: []
+    question: Which region pilots the historical events and culture transition layer, and are intermediate identities (e.g. gallo_roman) needed between the 58 CE cultures and the modern keys?
+    evidence: >-
+      The 58 CE start leaves large ancient culture blocs (roman, germanic, slavic,
+      gallian, ancient_greek, old_egyptian) while modern identities carry almost no
+      pops; the engine only assimilates pops toward the owner's primary culture and
+      never splits cultures on its own, so historical differentiation requires a
+      script layer. The plan at research/historical-events/README.md records verified
+      EU5 1.3.x tools (change_pop_culture, change_pop_religion, form_new_culture,
+      merge_culture_group, change_language, add_migration) and phases the work
+      data-first; the mod has no events or on_action layer yet.
+    acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
