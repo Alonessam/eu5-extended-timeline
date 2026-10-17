@@ -161,35 +161,11 @@ tasks:
       Mısır pilot needs no new culture keys.
       RESOLVED (2026-10-17): the two decisions run as parallel Phase 1 tracks — Mısır
       (Egypt: records and WS3 fixes collected, design note published in
-      historical-events/2026-10-17_egypt_event_design.md; five-event chain planned)
-      and Gaul (Galya: gallo_roman intermediate identity, sourced records collected in
-      historical-events/2026-10-17_gaul_culture_transition.yml, gallo_roman defined in
-      mod, and pilot events et_culture.1 to et_culture.3 implemented with English and
-      Turkish localization). Neither track blocks the other.
-    question: Which region pilots the historical events and culture transition layer, and are intermediate identities (e.g. gallo_roman) needed between the 58 CE cultures and the modern keys?
-    evidence: >-
-      The 58 CE start leaves large ancient culture blocs (roman, germanic, slavic,
-      gallian, ancient_greek, old_egyptian) while modern identities carry almost no
-      pops; the engine only assimilates pops toward the owner's primary culture and
-      never splits cultures on its own, so historical differentiation requires a
-      script layer. The plan at research/historical-events/README.md records verified
-      EU5 1.3.x tools (change_pop_culture, change_pop_religion, form_new_culture,
-      merge_culture_group, change_language, add_migration) and phases the work
-      data-first; the mod has no events or on_action layer yet. Maintainers confirmed
-      Gaul (Galya) as the Phase 1 pilot region with gallo_roman intermediate identity.
-      The 2026-10-17 working session selected Mısır (Egypt) as the pilot region and
-      collected sourced transition records for the Egyptian chain (old_egyptian ->
-      coptic_culture -> lower/upper egyptian, plus kushite -> nubian) in
-      historical-events/2026-10-17_egypt_culture_transition.yml; the culture graph gaps
-      for old_egyptian, kushite and gallian were fixed in the mod the same day. The
-      Mısır pilot needs no new culture keys.
-      RESOLVED (2026-10-17): the two decisions run as parallel Phase 1 tracks — Mısır
-      (Egypt: records and WS3 fixes collected, design note published in
-      historical-events/2026-10-17_egypt_event_design.md; five-event chain planned)
-      and Gaul (Galya: gallo_roman intermediate identity, sourced records collected in
-      historical-events/2026-10-17_gaul_culture_transition.yml, gallo_roman defined in
-      mod, and pilot events et_culture.1 to et_culture.3 implemented with English and
-      Turkish localization). Neither track blocks the other.
+      historical-events/2026-10-17_egypt_event_design.md; five-event chain planned via
+      tag-agnostic yearly on_action pulse) and Gaul (Galya: gallo_roman intermediate identity,
+      sourced records collected in historical-events/2026-10-17_gaul_culture_transition.yml,
+      gallo_roman defined in mod, and pilot events et_culture.101 to et_culture.103
+      implemented with English and Turkish localization). Neither track blocks the other.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient

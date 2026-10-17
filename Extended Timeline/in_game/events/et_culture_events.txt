@@ -39,17 +39,18 @@ et_culture.9000 = {
 }
 
 # ===========================================================================
-# GAUL PILOT EVENTS (WS4: et_culture.1 - et_culture.3)
+# GAUL PILOT EVENTS (WS4: et_culture.101 - et_culture.103)
 # Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
+# Number reservation: Egypt .1-.49, Gaul .100-.149
 # ===========================================================================
 
 # 1. Concilium Galliarum & Claudian Integration (MS 58–100)
-et_culture.1 = {
+et_culture.101 = {
 	type = country_event
-	title = et_culture.1.title
-	desc = et_culture.1.desc
+	title = et_culture.101.title
+	desc = et_culture.101.desc
 	outcome = good
-	historical_info = et_culture.1.historical_info
+	historical_info = et_culture.101.historical_info
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -65,10 +66,10 @@ et_culture.1 = {
 	}
 
 	option = {
-		name = et_culture.1.a
+		name = et_culture.101.a
 		historical_option = yes
 		custom_tooltip = {
-			text = et_culture.1.tt
+			text = et_culture.101.tt
 			every_owned_location = {
 				limit = {
 					OR = {
@@ -100,19 +101,19 @@ et_culture.1 = {
 	}
 
 	option = {
-		name = et_culture.1.b
+		name = et_culture.101.b
 		add_stability = -10
 		add_prestige = -prestige_mild_bonus
 	}
 }
 
 # 2. Interpretatio Romana & Gallo-Roman Syncretism (MS 100–180)
-et_culture.2 = {
+et_culture.102 = {
 	type = country_event
-	title = et_culture.2.title
-	desc = et_culture.2.desc
+	title = et_culture.102.title
+	desc = et_culture.102.desc
 	outcome = good
-	historical_info = et_culture.2.historical_info
+	historical_info = et_culture.102.historical_info
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -128,10 +129,10 @@ et_culture.2 = {
 	}
 
 	option = {
-		name = et_culture.2.a
+		name = et_culture.102.a
 		historical_option = yes
 		custom_tooltip = {
-			text = et_culture.2.tt
+			text = et_culture.102.tt
 			every_owned_location = {
 				every_pop = {
 					limit = {
@@ -149,18 +150,18 @@ et_culture.2 = {
 	}
 
 	option = {
-		name = et_culture.2.b
+		name = et_culture.102.b
 		add_prestige = prestige_mild_bonus
 	}
 }
 
 # 3. Constitutio Antoniniana - Edict of Caracalla (MS 212–230)
-et_culture.3 = {
+et_culture.103 = {
 	type = country_event
-	title = et_culture.3.title
-	desc = et_culture.3.desc
+	title = et_culture.103.title
+	desc = et_culture.103.desc
 	outcome = good
-	historical_info = et_culture.3.historical_info
+	historical_info = et_culture.103.historical_info
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -175,10 +176,10 @@ et_culture.3 = {
 	}
 
 	option = {
-		name = et_culture.3.a
+		name = et_culture.103.a
 		historical_option = yes
 		custom_tooltip = {
-			text = et_culture.3.tt
+			text = et_culture.103.tt
 			every_owned_location = {
 				every_pop = {
 					limit = {
@@ -192,7 +193,7 @@ et_culture.3 = {
 	}
 
 	option = {
-		name = et_culture.3.b
+		name = et_culture.103.b
 		add_prestige = -prestige_mild_bonus
 	}
 }

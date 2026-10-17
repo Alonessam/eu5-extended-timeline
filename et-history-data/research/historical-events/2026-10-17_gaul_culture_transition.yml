@@ -35,7 +35,7 @@ records:
     mechanism: senatorial integration, municipal urbanization, elite Latinization
     source_refs: [{id: tacitus_annales_claudius, locator: "Tacitus, Annales 11.23-25; CIL XIII 1668"}]
     confidence: high
-    integration: {status: in_progress, target: "events (et_culture.1)", note: "Pilot event et_culture.1 triggers for ROM c. 58-100 CE."}
+    integration: {status: in_progress, target: "events (et_culture.101)", note: "Pilot event et_culture.101 triggers for ROM c. 58-100 CE."}
 
   gaul_interpretatio_romana_and_syncretism:
     entity: culture_gallian
@@ -51,7 +51,7 @@ records:
     mechanism: syncretic religious practice, villa economy, road infrastructure
     source_refs: [{id: caesar_de_bello_gallico, locator: "Book 6 (Deities of the Gauls)"}]
     confidence: high
-    integration: {status: in_progress, target: "events (et_culture.2)", note: "Pilot event et_culture.2 triggers for ROM c. 100-180 CE."}
+    integration: {status: in_progress, target: "events (et_culture.102)", note: "Pilot event et_culture.102 triggers for ROM c. 100-180 CE."}
 
   gaul_constitutio_antoniniana_212:
     entity: culture_gallian
@@ -67,7 +67,7 @@ records:
     mechanism: imperial edict, universal legal franchise
     source_refs: [{id: caracalla_constitutio_antoniniana, locator: "P.Giss. 40, col. I; Cassius Dio 78.9"}]
     confidence: high
-    integration: {status: in_progress, target: "events (et_culture.3)", note: "Pilot event et_culture.3 triggers for ROM c. 212-230 CE."}
+    integration: {status: in_progress, target: "events (et_culture.103)", note: "Pilot event et_culture.103 triggers for ROM c. 212-230 CE."}
 
   gaul_christianization_martin_tours:
     entity: culture_gallo_roman
