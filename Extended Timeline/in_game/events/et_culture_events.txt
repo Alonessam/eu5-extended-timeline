@@ -724,7 +724,7 @@ et_culture.101 = {
 	option = {
 		name = et_culture.101.b
 		add_stability = -10
-		add_prestige = -prestige_mild_bonus
+		add_prestige = prestige_mild_penalty
 	}
 }
 
@@ -810,12 +810,12 @@ et_culture.103 = {
 				}
 			}
 		}
-		add_prestige = prestige_major_bonus
+		add_prestige = prestige_extreme_bonus
 	}
 
 	option = {
 		name = et_culture.103.b
-		add_prestige = -prestige_mild_bonus
+		add_prestige = prestige_mild_penalty
 	}
 }
 
@@ -884,7 +884,7 @@ et_culture.104 = {
 	option = {
 		name = et_culture.104.b
 		add_stability = -10
-		add_prestige = -prestige_mild_bonus
+		add_prestige = prestige_mild_penalty
 	}
 }
 
@@ -946,7 +946,7 @@ et_culture.105 = {
 	option = {
 		name = et_culture.105.b
 		add_stability = -5
-		add_prestige = -prestige_mild_bonus
+		add_prestige = prestige_mild_penalty
 	}
 }
 
@@ -1092,28 +1092,52 @@ et_culture.108 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.108.tt
-			add_migration = {
-				culture = culture:burgundian
-				religion = religion:arianism
-				locations = {
-					location:geneva
-					location:lyon
+			location:geneve = {
+				add_pop = {
+					culture = culture:burgundian
+					religion = religion:arianism
+					type = pop_type:peasants
+					size = 2
 				}
 			}
-			add_migration = {
-				culture = culture:visigoth
-				religion = religion:arianism
-				locations = {
-					location:toulouse
-					location:bordeaux
+			location:lyon = {
+				add_pop = {
+					culture = culture:burgundian
+					religion = religion:arianism
+					type = pop_type:peasants
+					size = 2
 				}
 			}
-			add_migration = {
-				culture = culture:vandal
-				religion = religion:arianism
-				locations = {
-					location:marseille
-					location:nimes
+			location:toulouse = {
+				add_pop = {
+					culture = culture:visigoth
+					religion = religion:arianism
+					type = pop_type:peasants
+					size = 2
+				}
+			}
+			location:bordeaux = {
+				add_pop = {
+					culture = culture:visigoth
+					religion = religion:arianism
+					type = pop_type:peasants
+					size = 2
+				}
+			}
+			location:marseille = {
+				add_pop = {
+					culture = culture:vandal
+					religion = religion:arianism
+					type = pop_type:peasants
+					size = 2
+				}
+			}
+			location:nimes = {
+				add_pop = {
+					culture = culture:vandal
+					religion = religion:arianism
+					type = pop_type:peasants
+					size = 2
 				}
 			}
 		}
@@ -1169,13 +1193,13 @@ et_culture.109 = {
 				}
 			}
 		}
-		add_prestige = prestige_major_bonus
+		add_prestige = prestige_extreme_bonus
 	}
 
 	option = {
 		name = et_culture.109.b
 		add_stability = -10
-		add_prestige = -prestige_mild_bonus
+		add_prestige = prestige_mild_penalty
 	}
 }
 
@@ -1222,16 +1246,16 @@ et_culture.110 = {
 							culture = culture:frankish
 						}
 					}
-					change_pop_religion = religion:catholicism
+					change_pop_religion = religion:catholic
 				}
 			}
 		}
-		add_prestige = prestige_major_bonus
+		add_prestige = prestige_extreme_bonus
 	}
 
 	option = {
 		name = et_culture.110.b
-		add_prestige = -prestige_mild_bonus
+		add_prestige = prestige_mild_penalty
 	}
 }
 
