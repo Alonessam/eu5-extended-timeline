@@ -1,0 +1,162 @@
+schema_version: 1
+period_id: ancient
+collected_on: "2026-10-17"
+records:
+  gaul_58ce_population_baseline:
+    entity: culture_gallian
+    subject: population_baseline_58ce
+    finding: >-
+      At the 58 CE start the population of Gaul (modern France, Belgium, and the
+      Rhineland) is overwhelmingly recorded as gallian (~1,000 pop blocks),
+      practicing celtic_paganism. Aquitanian pops in the southwest speak basque_language,
+      Belgae in the north are recorded under continental Celtic traditions, and Roman
+      administrative, military, and merchant minorities exist in colonies such as
+      Lugdunum, Narbo Martius, Nemausus, and Massilia. This baseline is the anchor
+      for all western European romance transitions.
+    population: "Gallic rural and tribal majority; small Roman colonial presence"
+    dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
+    mechanism: start setup data (no transition claimed)
+    source_refs: [{id: caesar_de_bello_gallico, locator: "Book 1, Section 1 (Gallia est omnis divisa in partes tres)"}]
+    confidence: high
+    integration: {status: applied, target: "Extended Timeline/main_menu/setup/start/06_pops.txt", note: "58.2.1 start blocks"}
+
+  gaul_concilium_galliarum_claudian_integration:
+    entity: culture_gallian
+    subject: elite_romanization_and_gallo_roman_emergence
+    finding: >-
+      Following the Speech of Claudius (48 CE, Tabula Claudiana), Gallic chieftains
+      (initially Haedui, later across Gallia Comata) receive senatorial rights and Roman
+      citizenship. The annual Concilium Galliarum at the Altar of Rome and Augustus in
+      Lugdunum (Lyon) anchors the Gallic aristocracy into the imperial political structure.
+      Urban elites adopt Latin, Roman civic administration, and the toga, creating the
+      first tier of gallo_roman identity.
+    population: "Gallic aristocracy, tribal chieftains, urban burghers, and administrative centers"
+    dating: {precision: period, date: "c. 48-100", calendar: ce_year_normalized_to_et}
+    mechanism: senatorial integration, municipal urbanization, elite Latinization
+    source_refs: [{id: tacitus_annales_claudius, locator: "Tacitus, Annales 11.23-25; CIL XIII 1668"}]
+    confidence: high
+    integration: {status: in_progress, target: "events (et_culture.1)", note: "Pilot event et_culture.1 triggers for ROM c. 58-100 CE."}
+
+  gaul_interpretatio_romana_and_syncretism:
+    entity: culture_gallian
+    subject: religious_and_cultural_syncretism
+    finding: >-
+      Gallo-Roman religion synthesizes indigenous Celtic deities with Roman counterparts
+      (Interpretatio Romana): Lugus and Mercury, Toutatis and Mars, Apollo Grannus,
+      Sulis-Minerva, and Epona. Rural villas, road networks, and Romano-Celtic temples
+      (fana) proliferate, spreading Vulgar Latin and Gallo-Roman material culture
+      beyond urban centers into the agrarian countryside.
+    population: "Provincial artisan, peasant, and agrarian populations across Gallia"
+    dating: {precision: period, date: "c. 100-200", calendar: ce_year_normalized_to_et}
+    mechanism: syncretic religious practice, villa economy, road infrastructure
+    source_refs: [{id: caesar_de_bello_gallico, locator: "Book 6 (Deities of the Gauls)"}]
+    confidence: high
+    integration: {status: in_progress, target: "events (et_culture.2)", note: "Pilot event et_culture.2 triggers for ROM c. 100-180 CE."}
+
+  gaul_constitutio_antoniniana_212:
+    entity: culture_gallian
+    subject: universal_citizenship_and_legal_integration
+    finding: >-
+      In 212 CE, Emperor Caracalla issues the Constitutio Antoniniana (Edict of Caracalla),
+      granting full Roman citizenship to all free men throughout the Roman Empire,
+      including all provincial Gauls. This eliminates the legal distinction between Gallic
+      provincials and Roman citizens, solidifying legalism and completing the institutional
+      transition of Gallic populations into the gallo_roman cultural sphere.
+    population: "All free provincial inhabitants of Gallia"
+    dating: {precision: year, date: "212", calendar: ce_year_normalized_to_et}
+    mechanism: imperial edict, universal legal franchise
+    source_refs: [{id: caracalla_constitutio_antoniniana, locator: "P.Giss. 40, col. I; Cassius Dio 78.9"}]
+    confidence: high
+    integration: {status: in_progress, target: "events (et_culture.3)", note: "Pilot event et_culture.3 triggers for ROM c. 212-230 CE."}
+
+  gaul_christianization_martin_tours:
+    entity: culture_gallo_roman
+    subject: pop_religion_christianization
+    finding: >-
+      Early urban Christian communities (Lyon martyrs, 177 CE; St. Denis of Paris, c. 250 CE)
+      are expanded to rural peasantry in the late 4th century by Saint Martin of Tours
+      (316-397 CE). Martin methodically dismantles rural Celtic shrines and sacred groves,
+      establishing parish churches and monastic foundations that absorb the last pagan pops.
+    population: "Rural and urban Gallo-Roman populations"
+    dating: {precision: period, date: "c. 250-450", calendar: ce_year_normalized_to_et}
+    mechanism: monastic evangelism, destruction of rural pagan shrines, episcopal parish system
+    source_refs: []
+    confidence: high
+    integration: {status: pending, target: "events (WS2 religion layer)"}
+
+  gaul_armorica_breton_migration:
+    entity: culture_gallian
+    subject: insular_celtic_migration_and_breton_genesis
+    finding: >-
+      Between the late 4th and 6th centuries, Brittonic-speaking Celts from southwestern
+      Britain flee Anglo-Saxon invasions and settle heavily in the Armorican peninsula.
+      They assimilate the sparse Gallo-Roman population, re-establishing a living Celtic
+      tongue (Breton, Breizh) in northwestern Gaul.
+    population: "Armorican peninsula population"
+    dating: {precision: period, date: "c. 380-550", calendar: ce_year_normalized_to_et}
+    mechanism: trans-marine migration, language replacement
+    source_refs: []
+    confidence: high
+    integration: {status: pending, target: "events (add_migration / breton genesis)"}
+
+  gaul_clovis_conversion_and_franco_roman_synthesis:
+    entity: culture_gallo_roman
+    subject: germanic_superstrate_and_frankish_synthesis
+    finding: >-
+      Following the Battle of Soissons (486 CE) and the defeat of the last Gallo-Roman ruler
+      Syagrius, King Clovis I converts to Chalcedonian Catholicism (c. 496/508 CE) at Reims.
+      The Frankish warrior elite integrates with the Gallo-Roman senatorial and episcopal
+      aristocracy; Frankish phonetic and vocabulary influences merge into Vulgar Latin,
+      forming the roots of Old French.
+    population: "Northern Gaulish populations and Frankish warrior settlers"
+    dating: {precision: period, date: "c. 486-530", calendar: ce_year_normalized_to_et}
+    mechanism: conquest, dynastic baptism, elite intermarriage, bilingual linguistic contact
+    source_refs: []
+    confidence: high
+    integration: {status: pending, target: "events (Phase 2 migration/Frankish layer)"}
+
+  gaul_oil_oc_dialect_divergence:
+    entity: culture_gallo_roman
+    subject: regional_romance_differentiation
+    finding: >-
+      During the Carolingian period, Gallo-Roman speech splits definitively into Langue
+      d'oïl in the north (heavy Frankish superstrate, evolved into French, Picard, Walloon),
+      Langue d'oc in the south (Mediterranean Latin continuity, evolved into Occitan, Gascon,
+      Provençal), and Arpitan in the Alpine/Rhône corridor. The Council of Tours (813 CE)
+      and Oaths of Strasbourg (842 CE) mark the official recognition of Old French.
+    population: "All Romance-speaking populations across the former Gaul"
+    dating: {precision: period, date: "c. 650-850", calendar: ce_year_normalized_to_et}
+    mechanism: phonetic divergence, substrate/superstrate differentiation, administrative vernacularization
+    source_refs: []
+    confidence: high
+    integration: {status: pending, target: "events (Phase 3 divergence layer)"}
+
+  gaul_norman_genesis_911:
+    entity: culture_french
+    subject: scandinavian_settlement_and_norman_genesis
+    finding: >-
+      By the Treaty of Saint-Clair-sur-Epte (911 CE), King Charles the Simple grants the
+      lower Seine valley to Viking leader Rollo. The Norse settlers rapidly adopt the local
+      Old French language and Catholic religion within two generations, creating the distinct
+      norman culture.
+    population: "Lower Seine / Normandy populations and Scandinavian settlers"
+    dating: {precision: year, date: "911", calendar: ce_year_normalized_to_et}
+    mechanism: feudal cession, conversion, rapid linguistic assimilation
+    source_refs: []
+    confidence: high
+    integration: {status: pending, target: "events (Phase 3 Norman layer)"}
+
+  gaul_jules_ferry_modern_unification_1881:
+    entity: culture_french
+    subject: modern_national_linguistic_homogenization
+    finding: >-
+      Through the Jules Ferry laws of 1881-1882, the French Third Republic establishes free,
+      mandatory, and strictly secular public primary education. The systematic prohibition
+      of regional languages and patois in schools turns regional peasant populations into
+      standard French speakers across France.
+    population: "All regional and provincial populations of France"
+    dating: {precision: period, date: "1881-1882", calendar: ce_year_normalized_to_et}
+    mechanism: universal compulsory primary education, linguistic centralism
+    source_refs: [{id: weber_peasants_into_frenchmen, locator: "Chapters 6, 18, 29"}]
+    confidence: high
+    integration: {status: pending, target: "events (Phase 4 modern consolidation layer)"}

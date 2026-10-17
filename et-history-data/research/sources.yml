@@ -454,3 +454,29 @@ sources:
     type: encyclopedia_article
     url: https://en.wikipedia.org/wiki/Nobatia
     locator: Article intro; History and Christianity sections
+  tacitus_annales_claudius:
+    title: Annales (Book XI, 23-25) & Tabula Claudiana
+    publisher: Classical Latin text / Corpus Inscriptionum Latinarum
+    type: primary_source
+    url: https://en.wikipedia.org/wiki/Claudius%27_speech_to_the_Senate_and_the_Gallic_senators
+    locator: Tacitus, Annales 11.23-25; CIL XIII 1668 (Lyon Bronze Tablet)
+    caveat: Tacitus provides a literary paraphrase of Emperor Claudius' actual 48 CE speech preserved on the Lyon tablet.
+  caracalla_constitutio_antoniniana:
+    title: Constitutio Antoniniana (Edict of Caracalla)
+    publisher: Papyrus Gissensis 40
+    type: primary_source
+    url: https://en.wikipedia.org/wiki/Constitutio_Antoniniana
+    locator: P.Giss. 40, col. I; Cassius Dio 78.9.5
+    caveat: Universal grant of Roman citizenship to free provincial inhabitants in 212 CE; Dediticii exceptions debated by scholars.
+  caesar_de_bello_gallico:
+    title: Commentarii de Bello Gallico
+    publisher: Classical Latin text
+    type: primary_source
+    url: https://en.wikipedia.org/wiki/Commentarii_de_Bello_Gallico
+    locator: Books 1-8; tribal ethnographic introductions
+  weber_peasants_into_frenchmen:
+    title: 'Peasants into Frenchmen: The Modernization of Rural France, 1870-1914'
+    publisher: Stanford University Press
+    type: monograph
+    url: https://en.wikipedia.org/wiki/Peasants_into_Frenchmen
+    locator: Chapters 6, 18, 29 (Linguistic unification and schooling)

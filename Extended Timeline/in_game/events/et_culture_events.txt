@@ -38,6 +38,165 @@ et_culture.9000 = {
 	}
 }
 
+# ===========================================================================
+# GAUL PILOT EVENTS (WS4: et_culture.1 - et_culture.3)
+# Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
+# ===========================================================================
+
+# 1. Concilium Galliarum & Claudian Integration (MS 58–100)
+et_culture.1 = {
+	type = country_event
+	title = et_culture.1.title
+	desc = et_culture.1.desc
+	outcome = good
+	historical_info = et_culture.1.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 58.1.1
+		to = 100.1.1
+		monthly_chance = 15
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:lyon
+	}
+
+	option = {
+		name = et_culture.1.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.1.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:lyon
+						location = location:paris
+						location = location:bordeaux
+						location = location:toulouse
+						location = location:nimes
+						location = location:arles
+						location = location:marseille
+						location = location:reims
+						location = location:rouen
+					}
+				}
+				every_pop = {
+					limit = {
+						culture = culture:gallian
+						OR = {
+							pop_type = pop_type:nobles
+							pop_type = pop_type:clergy
+							pop_type = pop_type:burghers
+						}
+					}
+					change_pop_culture = culture:gallo_roman
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.1.b
+		add_stability = -10
+		add_prestige = -prestige_mild_bonus
+	}
+}
+
+# 2. Interpretatio Romana & Gallo-Roman Syncretism (MS 100–180)
+et_culture.2 = {
+	type = country_event
+	title = et_culture.2.title
+	desc = et_culture.2.desc
+	outcome = good
+	historical_info = et_culture.2.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 100.1.1
+		to = 180.1.1
+		monthly_chance = 12
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:lyon
+	}
+
+	option = {
+		name = et_culture.2.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.2.tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:gallian
+						OR = {
+							pop_type = pop_type:craftsmen
+							pop_type = pop_type:peasants
+						}
+					}
+					change_pop_culture = culture:gallo_roman
+				}
+			}
+		}
+		add_stability = 10
+	}
+
+	option = {
+		name = et_culture.2.b
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+# 3. Constitutio Antoniniana - Edict of Caracalla (MS 212–230)
+et_culture.3 = {
+	type = country_event
+	title = et_culture.3.title
+	desc = et_culture.3.desc
+	outcome = good
+	historical_info = et_culture.3.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 212.1.1
+		to = 230.1.1
+		monthly_chance = 25
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+	}
+
+	option = {
+		name = et_culture.3.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.3.tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:gallian
+					}
+					change_pop_culture = culture:gallo_roman
+				}
+			}
+		}
+		add_prestige = prestige_major_bonus
+	}
+
+	option = {
+		name = et_culture.3.b
+		add_prestige = -prestige_mild_bonus
+	}
+}
+
 # ---- Copy-and-adapt template for region chains ----
 # et_culture.N = {
 # 	type = country_event

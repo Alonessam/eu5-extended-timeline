@@ -1,5 +1,23 @@
-﻿
+
 ##ET
+gallo_roman = {
+	language = latin_language
+	
+	color = rgb { 128 45 155 }
+	
+	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		gallian = kindred
+		roman = kindred
+	}
+	
+	culture_groups = {
+		latin_group
+		french_group
+	}
+}
+
 aquitanian = { 
 	language = basque_language
 	
