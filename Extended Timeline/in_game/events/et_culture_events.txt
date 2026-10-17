@@ -1,17 +1,22 @@
-# Extended Timeline - culture and population transition events (WS4 skeleton).
+﻿# Extended Timeline - culture and population transition events (WS4).
+# Egypt chain fired by regional pulses in in_game/common/on_action/et_history_pulses.txt
+# (vanilla yearly_country_pulse hook; owner-agnostic, unlike tag-locked DHEs).
 # Verified against EU5 1.3.x vanilla patterns; plan and quality rules:
 # et-history-data/research/historical-events/README.md
 #   - dynamic historical event window: in_game/events/DHE/flavor_SWE.txt:2162-2177
 #   - pop culture conversion pattern:   in_game/events/DHE/flavor_SWE.txt:2134-2155
+#   - area-scoped pop conversion:       in_game/events/DHE/flavor_MAM.txt:2606-2688
+#   - one-shot country markers:         set_variable / has_variable (flavor_MAM.txt:2701-2707)
 # Sourced transition records:
-# et-history-data/research/historical-events/2026-10-17_egypt_culture_transition.yml
+#   Egypt: et-history-data/research/historical-events/2026-10-17_egypt_culture_transition.yml
+#   Gaul:  et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
 # Localization keys: in_game/localization/{english,turkish}/et_culture_events_l_*.yml
 
 namespace = et_culture
 
 # Template test event: verifies that the events file loads and that the
-# dynamic_historical_event window fires. Remove or replace once the pilot
-# Egypt chain (et_culture.1+) is written from the sourced records.
+# dynamic_historical_event window fires. Kept until the pilot chains pass
+# in-game validation (test A); retire afterwards.
 et_culture.9000 = {
 	type = country_event
 	title = et_culture.9000.title
@@ -35,6 +40,620 @@ et_culture.9000 = {
 		name = et_culture.9000.a
 		# Harmless effect so the option effect path is exercised in the test.
 		add_prestige = prestige_mild_bonus
+	}
+}
+
+# ===========================================================================
+# EGYPT PILOT EVENTS (WS4: et_culture.1 - et_culture.5)
+# Sourced records: et-history-data/research/historical-events/2026-10-17_egypt_culture_transition.yml
+# Number reservation: Egypt .1-.49, Gaul .100-.149
+# Fired via et_egypt_yearly_pulse in on_action/et_history_pulses.txt (owner-agnostic).
+# Design note: et-history-data/research/historical-events/2026-10-17_egypt_event_design.md
+# Planned stretch: Nubia (et_culture.6/.7) - separate decision, see design note.
+# ===========================================================================
+
+et_culture.1 = { # Christianization I (record: egypt_christianization_rise)
+	type = country_event
+	title = et_culture.1.title
+	desc = et_culture.1.desc
+	outcome = neutral
+	historical_info = et_culture.1.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		current_year >= 200
+		current_year <= 500
+		NOT = { has_variable = et_egypt_1_fired }
+	}
+
+	immediate = {
+		# One-shot marker set at fire time, so the pulse cannot open a second
+		# popup while the choice is still pending.
+		set_variable = { name = et_egypt_1_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.1.a
+		historical_option = yes
+		set_variable = { name = et_egypt_christ_1 value = 1 }
+		custom_tooltip = {
+			text = et_culture.1.a.tt
+			# Lower Egypt (Delta): the towns lead the conversion.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:old_egyptian
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.30
+						religion = religion:miaphysite
+					}
+				}
+			}
+			# Upper Egypt: the conversion arrives later and slower.
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:old_egyptian
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.15
+						religion = religion:miaphysite
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = et_culture.1.b
+		set_variable = { name = et_egypt_christ_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.1.b.tt
+			# Resistance: a trickle only, and the chain stalls here.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:old_egyptian
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.05
+						religion = religion:miaphysite
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:old_egyptian
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.05
+						religion = religion:miaphysite
+					}
+				}
+			}
+		}
+	}
+}
+
+et_culture.2 = { # Coptic identity (records: egypt_coptic_emergence_and_continuity, egypt_chalcedon_split_451)
+	type = country_event
+	title = et_culture.2.title
+	desc = et_culture.2.desc
+	outcome = neutral
+	historical_info = et_culture.2.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		has_variable = et_egypt_christ_1
+		current_year >= 300
+		current_year <= 600
+		NOT = { has_variable = et_egypt_2_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_2_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.2.a
+		historical_option = yes
+		set_variable = { name = et_egypt_coptic value = 1 }
+		custom_tooltip = {
+			text = et_culture.2.a.tt
+			# (i) Consolidation: the villages follow the towns into Christianity.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:old_egyptian
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.45
+						religion = religion:miaphysite
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:old_egyptian
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.35
+						religion = religion:miaphysite
+					}
+				}
+			}
+			# (ii) Identity: the Christianized Egyptians become Copts. Full
+			# shift, not a fraction, so that Christian and Coptic stay one and
+			# the same community (v1 implementation note in the design note).
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:old_egyptian
+						religion = religion:miaphysite
+					}
+					change_pop_culture = culture:coptic_culture
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:old_egyptian
+						religion = religion:miaphysite
+					}
+					change_pop_culture = culture:coptic_culture
+				}
+			}
+		}
+	}
+
+	option = {
+		name = et_culture.2.b
+		set_variable = { name = et_egypt_2_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.2.b.tt
+			# Resistance: a trickle of consolidation; no identity shift.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:old_egyptian
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.05
+						religion = religion:miaphysite
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:old_egyptian
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.05
+						religion = religion:miaphysite
+					}
+				}
+			}
+		}
+	}
+}
+
+et_culture.3 = { # Islamization I (record: egypt_islamization_waves)
+	type = country_event
+	title = et_culture.3.title
+	desc = et_culture.3.desc
+	outcome = neutral
+	historical_info = et_culture.3.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		religion.group = religion_group:muslim
+		current_year >= 650
+		current_year <= 1300
+		NOT = { has_variable = et_egypt_3_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_3_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.3.a
+		historical_option = yes
+		set_variable = { name = et_egypt_islam_1 value = 1 }
+		custom_tooltip = {
+			text = et_culture.3.a.tt
+			# First wave: slow conversion under the dhimma, slower in the south.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.30
+						religion = religion:islam
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.15
+						religion = religion:islam
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = et_culture.3.b
+		set_variable = { name = et_egypt_3_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.3.b.tt
+			# Resistance: a trickle only, and the wave stalls.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.05
+						religion = religion:islam
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.05
+						religion = religion:islam
+					}
+				}
+			}
+		}
+	}
+}
+
+et_culture.4 = { # Islamization II (record: egypt_islamization_waves, Fatimid-Mamluk wave)
+	type = country_event
+	title = et_culture.4.title
+	desc = et_culture.4.desc
+	outcome = neutral
+	historical_info = et_culture.4.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		has_variable = et_egypt_islam_1
+		current_year >= 1000
+		current_year <= 1400
+		NOT = { has_variable = et_egypt_4_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_4_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.4.a
+		historical_option = yes
+		set_variable = { name = et_egypt_islam_2 value = 1 }
+		custom_tooltip = {
+			text = et_culture.4.a.tt
+			# The great wave: by the end of the Mamluk era roughly ten to one.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.60
+						religion = religion:islam
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.50
+						religion = religion:islam
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = et_culture.4.b
+		set_variable = { name = et_egypt_4_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.4.b.tt
+			# Resistance: the wave remains limited.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.10
+						religion = religion:islam
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.10
+						religion = religion:islam
+					}
+				}
+			}
+		}
+	}
+}
+
+et_culture.5 = { # Arabization (record: egypt_coptic_spoken_decline)
+	type = country_event
+	title = et_culture.5.title
+	desc = et_culture.5.desc
+	outcome = neutral
+	historical_info = et_culture.5.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		has_variable = et_egypt_islam_1
+		current_year >= 950
+		current_year <= 1450
+		NOT = { has_variable = et_egypt_5_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_5_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.5.a
+		historical_option = yes
+		set_variable = { name = et_egypt_arabized value = 1 }
+		custom_tooltip = {
+			text = et_culture.5.a.tt
+			# The Muslims of the valley take on Arabic-speaking identities;
+			# the Christian minority keeps being Coptic.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						religion = religion:islam
+						OR = {
+							culture = culture:coptic_culture
+							culture = culture:old_egyptian
+						}
+					}
+					split_pop = {
+						fraction = 0.75
+						culture = culture:lower_egyptian_culture
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						religion = religion:islam
+						OR = {
+							culture = culture:coptic_culture
+							culture = culture:old_egyptian
+						}
+					}
+					split_pop = {
+						fraction = 0.55
+						culture = culture:upper_egyptian_culture
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = et_culture.5.b
+		set_variable = { name = et_egypt_5_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.5.b.tt
+			# Resistance: the shift is much slower.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						religion = religion:islam
+						OR = {
+							culture = culture:coptic_culture
+							culture = culture:old_egyptian
+						}
+					}
+					split_pop = {
+						fraction = 0.25
+						culture = culture:lower_egyptian_culture
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						religion = religion:islam
+						OR = {
+							culture = culture:coptic_culture
+							culture = culture:old_egyptian
+						}
+					}
+					split_pop = {
+						fraction = 0.15
+						culture = culture:upper_egyptian_culture
+					}
+				}
+			}
+		}
 	}
 }
 

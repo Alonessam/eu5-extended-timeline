@@ -1,0 +1,36 @@
+﻿# Extended Timeline - regional historical event pulses.
+#
+# Modding rule: a mod may only ADD an on_actions block to an existing vanilla
+# on action (EU5 wiki, "On action" -> "Modding on actions"). Vanilla pattern:
+# in_game/common/on_action/country_yearly.txt (yearly_flavor_nav_pulse:
+# cheap guard + events list).
+#
+# Plan and quality rules:
+#   et-history-data/research/historical-events/README.md
+# Egypt pilot design note:
+#   et-history-data/research/historical-events/2026-10-17_egypt_event_design.md
+
+yearly_country_pulse = {
+	on_actions = {
+		et_egypt_yearly_pulse
+	}
+}
+
+# Cheap outer guard: does the country hold an Egyptian anchor location?
+# The expensive conditions live inside the events themselves.
+et_egypt_yearly_pulse = {
+	trigger = {
+		OR = {
+			owns = location:alexandria
+			owns = location:cairo
+			owns = location:aswan
+		}
+	}
+	events = {
+		et_culture.1
+		et_culture.2
+		et_culture.3
+		et_culture.4
+		et_culture.5
+	}
+}
