@@ -17,14 +17,19 @@ satırı yok). Zincir doğrulaması (Test B) sırada. Samet'in inceleme commit'i
 `gallo_roman` ara kimliği ve pilot olaylar (`.101`–`.103`) yazıldı (Samet); Faz 2–3 olayları (`.104`–`.110`) incelendi — din/locasyon/efekt/prestij token'ları vanilla'ya göre düzeltildi (backlog UPDATE 5);
 numara rezervasyonu mutabık: Mısır `.1`–`.49`, Galya `.100`–`.149`.
 
-**Galya modern dönemi (Faz 7):** 18 Ekim 2026'da Galya zinciri `.119`–`.122` ile
+**Galya modern dönemi (Faz 7-8):** 18 Ekim 2026'da Galya zinciri `.119`–`.122` ile
 M.S. 2026'ya uzatıldı: Jules Ferry okul yasaları (1881-1882), Kilise-Devlet
 ayrılığı/laïcité (1905), Büyük Savaş ve Kutsal Birlik (1914-1918) ve Cumhuriyetin
 dili anayasal düzenlemesi (1992-2008). Yeni kaynaklar `wiki_jules_ferry_laws`,
 `wiki_separation_church_state_1905`, `wiki_sacred_union` ve `wiki_languages_of_france`
 olarak `sources.yml`'e eklendi; geçiş kayıtları
 `2026-10-17_gaul_culture_transition.yml` içinde `gaul_*` anahtarlarıyla yer alır.
-Test B (oyun içi zincir doğrulaması) hâlâ sırada.
+18 Ekim 2026 mutabakatıyla bu zincir, projenin dönem sınıfları sınırından
+(`docs/Period Classes.md`: `industrial` 1800–1945, `contemporary` 1945+) iki faza
+ayrıldı: **Faz 7 — Modern Fransa (1837–1945)** = `.119`–`.121` ve
+**Faz 8 — Çağdaş Fransa (1945–2026)** = `.122` + savaş sonrası göç katmanı
+(backlog: `gaul_postwar_immigration_layer`). Test B (oyun içi zincir doğrulaması)
+hâlâ sırada.
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
@@ -204,7 +209,14 @@ zinciri şu uygulama fazlarına bölündü (numara rezervasyonu `.100`–`.149`)
 - **Faz 4 — Dil Ayrışması ve Normanlar (600–1000):** `et_culture.111`–`.113`
 - **Faz 5 — Yüksek Orta Çağ ve Fransız Krallığı (1000–1500):** `.114`–`.115`
 - **Faz 6 — Erken Modern ve Fransız Devrimi (1500–1837):** `.116`–`.118`
-- **Faz 7 — Modern ve Çağdaş Fransa (1837–2026):** `.119`–`.122`
+- **Faz 7 — Modern Fransa (1837–1945):** `.119`–`.121`
+- **Faz 8 — Çağdaş Fransa (1945–2026):** `.122` + savaş sonrası göç katmanı
+  (backlog: `gaul_postwar_immigration_layer`)
+
+Faz 7/Faz 8 sınırı, projenin kendi dönem sınıflarına dayanır
+(`docs/Period Classes.md`: `industrial` 1800–1945, `contemporary` 1945+); bu yüzden
+Faz 7'nin 1945-sonrası içeriği ayrı bir faza taşındı. Olay ID'leri ve
+localization anahtarları değişmedi — yalnızca faz etiketleri yeniden düzenlendi.
 
 Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → oyun içi test
 → backlog senkronu.
