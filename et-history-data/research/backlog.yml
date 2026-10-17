@@ -140,8 +140,8 @@ tasks:
     period_id: ancient
     priority: 1
     state: in_progress
-    targets: [research/historical-events/README.md]
-    source_refs: []
+    targets: [research/historical-events/README.md, research/historical-events/2026-10-17_egypt_culture_transition.yml]
+    source_refs: [wiki_islamization_egypt, wiki_coptic_language]
     question: Which region pilots the historical events and culture transition layer, and are intermediate identities (e.g. gallo_roman) needed between the 58 CE cultures and the modern keys?
     evidence: >-
       The 58 CE start leaves large ancient culture blocs (roman, germanic, slavic,
@@ -153,4 +153,27 @@ tasks:
       merge_culture_group, change_language, add_migration) and phases the work
       data-first; the mod has no events or on_action layer yet. Maintainers confirmed
       Gaul (Galya) as the Phase 1 pilot region with gallo_roman intermediate identity.
+      The 2026-10-17 working session selected Mısır (Egypt) as the pilot region and
+      collected sourced transition records for the Egyptian chain (old_egyptian ->
+      coptic_culture -> lower/upper egyptian, plus kushite -> nubian) in
+      historical-events/2026-10-17_egypt_culture_transition.yml; the culture graph gaps
+      for old_egyptian, kushite and gallian were fixed in the mod the same day. The
+      Mısır pilot needs no new culture keys.
+      TODO (reconciliation): the Gaul and Mısır pilot decisions conflict; maintainers
+      must pick one before pilot event scripts are written. Neither pilot has event
+      scripts yet, so both data sets and the WS3 fixes stay valid either way.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
+  culture_group_gaps_remaining:
+    period_id: ancient
+    priority: 3
+    state: pending
+    targets: [Extended Timeline/in_game/common/cultures/et_balkans.txt, Extended Timeline/in_game/common/cultures/et_persian.txt, Extended Timeline/in_game/common/cultures/et_south_east_asia.txt, Extended Timeline/in_game/common/cultures/et_missing.txt]
+    source_refs: []
+    question: Which successor culture groups should the remaining groupless mod cultures receive (pannonian, illyrian, tocharian, pyu, pear, and the et_missing fallback set)?
+    evidence: >-
+      The 2026-10-17 WS3 scan flagged 39 culture records; the Egypt pilot fixed
+      old_egyptian and kushite and the plan-flagged gallian link. The remaining
+      non-East-Asia entries are triaged in
+      research/historical-events/2026-10-17_culture_graph_audit.md; the 26-entry
+      East Asia cluster mirrors vanilla groupless isolates and is out of scope.
+    acceptance: Assign only groups with a documented successor relation using vanilla group ids; leave intentionally isolate cultures groupless.

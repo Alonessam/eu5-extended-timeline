@@ -1,0 +1,178 @@
+schema_version: 1
+period_id: ancient
+collected_on: "2026-10-17"
+records:
+  egypt_58ce_population_baseline:
+    entity: culture_old_egyptian
+    subject: population_baseline_58ce
+    finding: >-
+      At the 58 CE start the Nile Valley population is recorded as old_egyptian
+      (about 300 pop blocks), with Greek-speaking helleno_egyptian communities
+      around Alexandria and the Ptolemaic foundations, Roman and Mediterranean
+      minorities in the administration and the ports, and the Meroitic kushite
+      state upstream of the First Cataract. This baseline is the anchor that the
+      transition chains move from.
+    population: "Nile Valley rural majority; urban Greek-speaking minority; Roman administration layer"
+    dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
+    mechanism: start setup data (no transition claimed)
+    source_refs: []
+    confidence: high
+    integration: {status: applied, target: "Extended Timeline/main_menu/setup/start/06_pops.txt", note: "58.2.1 start blocks; counts are approximate."}
+  egypt_christianization_rise:
+    entity: culture_old_egyptian
+    subject: pop_religion_change_polytheism_to_christianity
+    finding: >-
+      Christianity reaches Egypt in the first century (Alexandria is one of the
+      earliest Christian centers); it grows through the 2nd-3rd centuries, is
+      tested by the great persecutions (mid-3rd to early 4th century) and
+      becomes the majority religion of Egyptians by the 4th-to-5th century.
+      Egyptian Christianity develops its own liturgical language (Coptic),
+      tying religious and cultural identity together.
+    population: "Nile Valley rural and urban populations"
+    dating: {precision: period, date: "c. 50-400", calendar: ce_year_normalized_to_et}
+    mechanism: urban mission, monasticism, persecution and post-Constantinian imperial favor
+    source_refs: [{id: wiki_christianity_egypt, locator: "Early history; The Rise of Christianity; The Era of Martyrs"}, {id: wiki_coptic_language, locator: "Article intro (Old Coptic, 1st-3rd century)"}]
+    confidence: medium
+    integration: {status: pending, target: "events (WS2 religion layer)", note: "Candidate event window c. 150-450; rate must stay gradual."}
+  egypt_coptic_emergence_and_continuity:
+    entity: culture_old_egyptian
+    subject: culture_continuity_script_and_identity_shift
+    finding: >-
+      Coptic is the final stage of the Egyptian language, written in a
+      Greek-derived script (Old Coptic from the 1st century, literary Coptic
+      from the 3rd). The shift from old_egyptian to coptic_culture in game terms
+      is therefore a script-and-religion-driven identity change among the same
+      population, not a migration or population replacement.
+    population: "same Nile Valley population as the old_egyptian baseline"
+    dating: {precision: period, date: "c. 1-400", calendar: ce_year_normalized_to_et}
+    mechanism: language stage change (Demotic to Coptic) plus Christianization
+    source_refs: [{id: wiki_coptic_language, locator: "Article intro"}]
+    confidence: high
+    integration: {status: pending, target: "culture chain old_egyptian -> coptic_culture", note: "Both keys exist; no new culture key needed."}
+  egypt_chalcedon_split_451:
+    entity: culture_coptic
+    subject: religious_identity_boundary
+    finding: >-
+      The Council of Chalcedon (451) is rejected by the Egyptian church,
+      producing a separate Miaphysite (Coptic Orthodox) patriarchate. The
+      confessional split runs close to the language divide (Greek-speaking
+      Melkites versus Coptic-speaking Miaphysites) and hardens Copt as an
+      identity.
+    population: "populationwide confessional division"
+    dating: {precision: year, date: "451", calendar: ce_year_normalized_to_et}
+    mechanism: church schism
+    source_refs: [{id: wiki_christianity_egypt, locator: "The Byzantine Empire"}]
+    confidence: high
+    integration: {status: pending, target: "events (WS2 religion layer)", note: "Identity marker; may not need a direct pop effect."}
+  egypt_arab_conquest_639_642:
+    entity: culture_coptic
+    subject: ruler_change_not_mass_conversion
+    finding: >-
+      Rashidun armies conquer Egypt in 639-642 (Alexandria 641, recovered after
+      a Byzantine counterattack in 645-646); Fustat is founded as a garrison in
+      641. The conquest changes rule and legal status (dhimma, jizya) but no
+      mass conversion follows; per the plan quality rules, a ruler change is
+      recorded separately from population change.
+    population: "Egyptian population remains majority Christian for centuries"
+    dating: {precision: period, date: "639-642", calendar: ce_year_normalized_to_et}
+    mechanism: conquest and garrison settlement
+    source_refs: [{id: wiki_arab_conquest_egypt, locator: "Article intro and campaign sections"}]
+    confidence: high
+    integration: {status: pending, target: "state layer; later events", note: "Do not model as single-day pop conversion."}
+  egypt_arabic_administration_700:
+    entity: culture_coptic
+    subject: elite_language_shift
+    finding: >-
+      At the turn of the 8th century the caliphal chancery reform replaces
+      Greek with Arabic as the language of administration (Egypt's diwan is
+      arabized around 700-706). Coptic remains the vernacular; this is an
+      elite and administrative arabization decades before mass language shift.
+    population: "administrative and urban elites first"
+    dating: {precision: period, date: "c. 700-706", calendar: ce_year_normalized_to_et}
+    mechanism: state administration reform
+    source_refs: [{id: wiki_coptic_language, locator: "Article intro and history sections"}]
+    confidence: medium
+    integration: {status: pending, target: "events", note: "Source attributes the decree to Abd al-Malik (turn of the 8th century); Egypt implementation c. 706 — keep the window."}
+  egypt_islamization_waves:
+    entity: culture_coptic
+    subject: pop_religion_change_christian_to_muslim
+    finding: >-
+      Conversion to Islam is slow at first and accelerates in waves (8th-9th
+      century fiscal pressure and revolts, the Fatimid era, and a large wave in
+      the 14th century under the Mamluks; by the end of the Mamluk period the
+      Muslim-to-Christian ratio is estimated around ten to one). By Fatimid
+      times Copts are no longer the majority. Rates differ by region (Delta
+      earlier, Upper Egypt later).
+    population: "Nile Valley population; urban Christians convert earlier"
+    dating: {precision: period, date: "c. 700-1400", calendar: ce_year_normalized_to_et}
+    mechanism: fiscal pressure, social mobility, revolts and persecution waves
+    source_refs: [{id: wiki_islamization_egypt, locator: "Article intro; Fatimid and Mamluk era sections"}]
+    confidence: medium
+    integration: {status: pending, target: "events (WS2 religion layer)", note: "Model with stepped windows and partial shares; majority threshold c. 1000-1200."}
+  egypt_coptic_spoken_decline:
+    entity: culture_coptic
+    subject: pop_culture_change_coptic_to_egyptian_arabic
+    finding: >-
+      Coptic remains the spoken language of the native majority until about the
+      10th-12th century; it declines sharply under al-Hakim (r. 996-1021),
+      ceases to be the literary language during the 11th-12th century (last
+      literary work in the late 14th century), and survives afterwards as a
+      minority spoken language (into the 17th century and beyond) and as the
+      liturgical language of the Coptic Church. In game terms coptic_culture
+      gradually becomes lower_egyptian_culture or upper_egyptian_culture while
+      a Coptic minority persists.
+    population: "Nile Valley; towns shift earlier than villages"
+    dating: {precision: period, date: "c. 950-1400", calendar: ce_year_normalized_to_et}
+    mechanism: language shift following Islamization, administration and urban pressure
+    source_refs: [{id: wiki_coptic_language, locator: "Article intro and decline sections"}]
+    confidence: medium
+    integration: {status: pending, target: "culture chain coptic_culture -> lower/upper egyptian", note: "Leave a residual Coptic share (roughly the modern minority)."}
+  egypt_helleno_egyptian_absorption:
+    entity: culture_helleno_egyptian
+    subject: minority_elite_culture_absorption
+    finding: >-
+      The Greek-speaking population of Egypt (Alexandria and the towns) loses
+      its administrative role after the conquest (Arabic replaces Greek in
+      government by c. 700) and over the early Middle Ages merges into the
+      Arabic-speaking majority (partly via the Coptic community); Greek
+      persists mainly as a liturgical language of the Melkite church. The pace
+      of absorption is poorly quantified — flagged for a stronger source.
+    population: "urban Greek-speaking communities"
+    dating: {precision: period, date: "c. 700-1100", calendar: ce_year_normalized_to_et}
+    mechanism: loss of administrative function, intermarriage, language shift
+    source_refs: [{id: wiki_coptic_language, locator: "Article intro"}, {id: wiki_christianity_egypt, locator: "Under Muslim rule"}]
+    confidence: low
+    integration: {status: pending, target: "events", note: "Needs a dedicated source before scripting; weak dating."}
+  kush_meroe_collapse_and_nubian_successors:
+    entity: culture_kushite
+    subject: polity_collapse_and_identity_transition
+    finding: >-
+      The Kushite kingdom centered on Meroe declines through the 3rd-4th
+      centuries; Meroe is destroyed by Aksum around 350 (Ezana's era) and the
+      Meroitic language goes extinct around 400. The successor is the lower
+      Nubian Nobadian polity (c. 400, the Ballana culture, in the former
+      Meroitic province of Akine); the Nobatae had been settled on the frontier
+      by Diocletian in 297. In game terms kushite flows into the Nubian
+      successor cultures (vanilla nubian and relatives).
+    population: "Middle Nile valley population"
+    dating: {precision: period, date: "c. 300-400", calendar: ce_year_normalized_to_et}
+    mechanism: state collapse, Aksumite campaign, elite replacement by the Nobatae
+    source_refs: [{id: wiki_meroe, locator: "Fourth Meroitic Period"}, {id: wiki_nobatia, locator: "History"}]
+    confidence: medium
+    integration: {status: pending, target: "culture chain kushite -> nubian", note: "Nubian successor cultures and the nilosahelian_group wiring are now in place."}
+  nubia_christianization_543:
+    entity: culture_kushite
+    subject: pop_religion_and_culture_change
+    finding: >-
+      Nobatia officially converts to non-Chalcedonian (Coptic) Christianity in
+      543, with Christian presence attested before that; towns convert quickly
+      and the villages during the 7th-9th centuries. Nobatia is absorbed by
+      Makuria during the 7th century (by 707). The Christian Nubian kingdoms
+      (Nobatia, Makuria, Alodia) succeed Kush, and Old Nubian replaces
+      Meroitic.
+    population: "Lower and Middle Nubia"
+    dating: {precision: year, date: "543", calendar: ce_year_normalized_to_et}
+    mechanism: royal conversion, missionary activity, temple conversions
+    source_refs: [{id: wiki_nobatia, locator: "Article intro; History and Christianity sections"}]
+    confidence: medium
+    integration: {status: pending, target: "events (WS2 religion layer)", note: "Christianization window c. 536-900 with town-then-village pacing."}

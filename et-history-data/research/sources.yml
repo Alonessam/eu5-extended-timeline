@@ -421,3 +421,36 @@ sources:
     type: encyclopedia_article
     url: https://en.wikipedia.org/wiki/Teotihuacan
     locator: Article intro and Period II section
+  wiki_coptic_language:
+    title: Coptic language
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Coptic_language
+    locator: Article intro; development and decline sections
+    caveat: Spoken-language decline dates are scholarly estimates (10th-14th century windows); the administrative replacement of Greek by Arabic is attributed to the chancery reform at the turn of the 8th century.
+  wiki_islamization_egypt:
+    title: Islamization of Egypt
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Islamization_of_Egypt
+    locator: Article intro; Fatimid and Mamluk-era sections
+    caveat: Conversion chronology is reconstructed from scattered evidence; majority dates and ratios are estimates, not census data.
+  wiki_arab_conquest_egypt:
+    title: Arab conquest of Egypt
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Arab_conquest_of_Egypt
+    locator: Article intro and campaign sections
+  wiki_christianity_egypt:
+    title: Christianity in Egypt
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Christianity_in_Egypt
+    locator: Early history; The Rise of Christianity; Under Muslim rule
+    caveat: Traditional founding dates (Mark in Alexandria) are church tradition; modern population shares are disputed.
+  wiki_nobatia:
+    title: Nobatia
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Nobatia
+    locator: Article intro; History and Christianity sections

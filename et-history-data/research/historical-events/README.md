@@ -8,8 +8,10 @@ olay scriptleri yalnızca bu kayıtlara dayanılarak yazılır. Planın teknik
 kısımları 17 Ekim 2026'da incelenen kurulu EU5 1.3.x dosyalarından
 doğrulanmıştır; doğrulama notları bu dokümandadır.
 
-**Durum:** Plan yayında. Pilot bölge seçimi ve ara kimlik politikası maintainer
-onayı bekliyor.
+**Durum:** Plan yayında. **Pilot bölge: Mısır** (17 Ekim 2026 kararı). İlk
+kaynaklı geçiş kayıtları, kültür grafiği düzeltmeleri ve olay iskeleti
+hazırlandı (Faz 1 sürüyor). Ara kimlik politikası Mısır dışı bölgeler için
+açık.
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
@@ -111,16 +113,21 @@ option = {
 
 ## 3. Mevcut durum (17 Ekim 2026)
 
-- **Script katmanı yok.** `Extended Timeline/in_game/` klasörleri: `common`,
-  `localization`, `map_data`, `setup`. `events/`, `on_action/` ve `decisions/`
-  hiç yok. Bu plan yeni katmanı kurar.
+- **Olay katmanı iskeleti kuruldu** (17 Ekim 2026): `in_game/events/`
+  (`et_culture_events.txt`: `et_culture` namespace'i, şablon yorumları ve oyun
+  içi doğrulama için `et_culture.9000` test olayı) ve localization dosyaları
+  (`in_game/localization/{english,turkish}/et_culture_events_l_*.yml`).
+  `on_action/` ve `decisions/` henüz yok; DHE pencereleri `on_action`
+  gerektirmiyor.
 - **Başlangıç pop verisi** (`main_menu/setup/start/06_pops.txt`, ~50 bin pop
   bloğu): örnek — `gallian` ~1.000, `old_egyptian` ~300, modern `french` 0. Bu
   dağılım, dönüşümün ancak olaylarla kurulabileceğini gösterir.
-- **Kültür grafiği kısmi**: mod kültür dosyaları (`et_*.txt`) ve diller mevcut;
-  tespit edilen boşluklar arasında `old_egyptian` ve `kushite` kültürlerinin boş
-  `culture_groups` taşıması ve `gallian` ile fransız hattı arasında doğrudan bağ
-  bulunmaması var. Denetim tamamlanmadı.
+- **Kültür grafiği denetimi yapıldı** (17 Ekim 2026,
+  `2026-10-17_culture_graph_audit.md`): Mısır pilotu için `old_egyptian` →
+  `arabic_group` ve `kushite` → `nilosahelian_group` eşleştirildi; `gallian`
+  hattına `french_group` eklendi. Taramada işaretlenen 39 kaydın kalanı
+  (fallback kültürler, Balkan/Tohar/Pyu-Pear hatları, Doğu Asya izoleleri)
+  önceliklendirildi; ayrıntı ve gerekçeler rapordadır.
 - **Araştırma altyapısı hazır**:
   `research/native-history-requirements/2026-10-13/societies.yml` r13–r16,
   dönüşüm kayıt disiplinini tanımlıyor: etkilenen nüfus, başlangıç/bitiş
@@ -164,10 +171,10 @@ Veri-önce kuralı, test protokolü, merge disiplini (bkz. bölüm 6).
 
 ## 5. Fazlar
 
-- **Faz 0 (bu dosya):** Plan yayında; pilot bölge ve ara kimlik kararları
-  bekleniyor.
-- **Faz 1 — Pilot:** Bölge seçimi (adaylar: **Galya**, **Mısır**) → kaynaklı
-  geçiş kayıtları → 3–5 olaylık zincir → oyun içi test → şablon çıkarma.
+- **Faz 0 (bu dosya):** Plan yayında. ✓
+- **Faz 1 — Pilot: Mısır** (17 Ekim 2026 kararı; Galya sonraki aday) →
+  kaynaklı geçiş kayıtları ✓ → 3–5 olaylık zincir → oyun içi test → şablon
+  çıkarma.
 - **Faz 2 — Geç Antik ve Kavimler Göçü (200–700):** Roma çöküşü sonrası
   Latin/Romance ayrışması; Germen ve Slav yayılımı; `add_migration` dalgaları.
 - **Faz 3 — Postklasik (700–1400):** Arap fetihleri ve Arapçalaşma; Türk
@@ -181,12 +188,15 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
 
 **Faz 1 açılış kontrol listesi:**
 
-- [ ] Pilot bölge kararı (maintainer) — adaylar: Galya, Mısır
-- [ ] Kaynak seti toplama (`research/sources.yml` içine yeni kaynaklar)
-- [ ] Geçiş kayıtları (`research/historical-events/YYYY-MM-DD_<bölge>.yml`)
+- [x] Pilot bölge kararı — **Mısır** (17 Ekim 2026)
+- [x] Kaynak seti toplama — `sources.yml`'e 5 yeni kaynak (coptic_language,
+  islamization_egypt, arab_conquest_egypt, christianity_egypt, nobatia)
+- [x] Geçiş kayıtları — `2026-10-17_egypt_culture_transition.yml` (11 kayıt)
 - [ ] Olay tasarım notu (olaylar, pencereler, koşullar, localization anahtarları)
-- [ ] Mod iskeleti: `events/` + localization; olay scriptleri
-- [ ] Oyun içi test (58 başlangıcı, hızlandırılmış gözlem) ve log kontrolü
+- [x] Mod iskeleti: `events/` + localization kuruldu (test olayı dahil); pilot
+  olay scriptleri tasarım notundan sonra
+- [ ] Oyun içi test (58 başlangıcı, hızlandırılmış gözlem) ve log kontrolü —
+  test olayı hazır: `et_culture.9000` (ROM, 58.1–58.6)
 
 ## 6. Bağlayıcı kalite kuralları
 
@@ -204,9 +214,12 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
 
 ## 7. Açık kararlar (maintainer)
 
-- Pilot bölge: Galya mı, Mısır mı, başka mı?
-- Ara kimlikler (`gallo_roman` vb.) eklenecek mi; yoksa doğrudan modern
-  kimliklere mi geçilecek?
+- ~~Pilot bölge: Galya mı, Mısır mı?~~ → **Mısır seçildi** (17 Ekim 2026);
+  Galya sonraki aday olarak duruyor.
+- Ara kimlikler: **Mısır hattı yeni anahtar gerektirmiyor** — `old_egyptian` →
+  `coptic_culture` → `lower_egyptian_culture`/`upper_egyptian_culture` ve
+  `kushite` → `nubian` zincirlerinin tamamı vanilla'da mevcut. `gallo_roman`
+  benzeri ara kimlikler Mısır dışı bölgeler için hâlâ açık.
 - Railroad derecesi: sabit tarihler mi, koşullu pencereler mi?
 - Hangi olaylar AI'yı zorlar (fetih/göç dalgaları); hangileri serbest
   simülasyona bırakılır?
@@ -219,6 +232,9 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
   `societies.md` — r13–r16 geçiş kayıt gereksinimleri.
 - `research/backlog.yml` — ilgili açık işler
   (`historical_events_and_culture_transition`, `ancient_economy_roads_and_town_ranks` vb.).
+- Bu klasördeki veri dosyaları:
+  `2026-10-17_egypt_culture_transition.yml` (pilot geçiş kayıtları),
+  `2026-10-17_culture_graph_audit.md` (WS3 denetimi).
 - `Extended Timeline/loading_screen/common/defines/00_defines.txt` — asimilasyon
   ve kültür sabitleri.
 - Vanilla 1.3.x dosyaları: bölüm 2'deki tablo.
