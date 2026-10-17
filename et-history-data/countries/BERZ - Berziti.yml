@@ -1,0 +1,10 @@
+#imported from EU4
+2.1.1:
+  government: et_european_pagan_monarchy
+  color: rgb { 72 63 120 }
+  government_rank: rank_duchy
+  religion: slavic_polytheism
+  primary_culture: macedonian
+  capital: ohrid
+869.1.1:
+  religion: orthodox

@@ -1,0 +1,25 @@
+#imported from EU4 file: history/provinces/2486 - Yakima.txt
+2.1.1:
+  pops: 
+    saleesh_culture-iroquoian_totemism: 1
+1811.1.1:
+  pops: 
+    saleesh_culture-iroquoian_totemism: 0
+    british_californian-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+  resource: fur
+1814.12.24:
+  owner: GBR
+  controller: GBR
+  cores:
+    USA: no
+    GBR: yes
+1846.6.15:
+  owner: USA
+  controller: USA
+  cores:
+    GBR: no
+    USA: yes

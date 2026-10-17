@@ -1,0 +1,48 @@
+#imported from EU4 file: history/provinces/1139 - Gold Coast.txt
+2.1.1:
+  pops: 
+    akan-bantu_religion: 1
+1550.1.1:
+  pops: 
+    akan-bantu_religion: 0
+    akan-catholic: 1
+  owner: POR
+  controller: POR
+  resource: gold
+1600.1.1:
+  cores:
+    POR: yes
+1652.1.1:
+  pops: 
+    akan-catholic: 0
+    akan-lutheran: 1
+  owner: SWE
+  controller: SWE
+  cores:
+    POR: no
+1657.1.1:
+  owner: DAN
+  controller: DAN
+1670.1.1:
+  resource: slaves
+1707.1.1:
+  cores:
+    DAN: yes
+1720.1.1:
+  cores:
+    ASHA: yes
+1840.1.1:
+  resource: grain
+1850.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    DAN: no
+    GBR: yes
+1957.3.6:
+  owner: GHA
+  controller: GHA
+  cores:
+    GBR: no
+    ASHA: no
+    GHA: yes

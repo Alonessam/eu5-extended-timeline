@@ -1,0 +1,151 @@
+#imported from EU4 file: history/provinces/130 - Istria.txt
+2.1.1:
+  pops: 
+    dalmatian-hellenism_religion: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: salt
+300.1.1:
+  pops: 
+    dalmatian-hellenism_religion: 0
+    dalmatian-chalcedonism: 1
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+476.9.4:
+  owner: ITA
+  controller: ITA
+  cores:
+    ITA: yes
+480.1.1:
+  cores:
+    ROMW: no
+489.1.1:
+  owner: OSTR
+  controller: OSTR
+  cores:
+    ITA: no
+    OSTR: yes
+490.1.1:
+  pops: 
+    dalmatian-chalcedonism: 0
+    dalmatian-arianism: 1
+540.1.1:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    BYZ: yes
+550.1.1:
+  pops: 
+    dalmatian-arianism: 0
+    dalmatian-chalcedonism: 1
+751.1.1:
+  owner: LOMB
+  controller: LOMB
+  cores:
+    OSTR: no
+    BYZ: no
+    LOMB: yes
+789.1.1:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    LOMB: no
+    FRAN: yes
+840.6.21:
+  owner: MFRA
+  controller: MFRA
+  cores:
+    FRAN: no
+    MFRA: yes
+855.9.30:
+  owner: ITA
+  controller: ITA
+  cores:
+    MFRA: no
+    ITA: yes
+867.1.1:
+  pops: 
+    dalmatian-chalcedonism: 0
+    dalmatian-catholic: 1
+951.1.1:
+  owner: BAV
+  controller: BAV
+  cores:
+    EFRA: no
+    BAV: yes
+    CRH: yes
+962.2.2:
+  owner: CRH
+  controller: CRH
+  cores:
+    BAV: no
+    CRH: yes
+1012.1.1:
+  owner: CAR
+  controller: CAR
+  cores:
+    CRH: no
+    CAR: yes
+1209.1.1:
+  owner: AQU
+  controller: AQU
+  cores:
+    AQU: yes
+1267.2.15:
+  owner: VEN
+  controller: VEN
+  cores:
+    VEN: yes
+1420.1.1:
+  cores:
+    AQU: no
+1797.10.17:
+  owner: HAB
+  controller: HAB
+  cores:
+    HAB: yes
+1805.12.26:
+  owner: FRA
+  controller: FRA
+  cores:
+    HAB: no
+    FRA: yes
+1813.9.20:
+  controller: HAB
+1814.4.6:
+  owner: HAB
+  cores:
+    FRA: no
+    HAB: yes
+1840.1.1:
+  pops: 
+    dalmatian-catholic: 0
+    croatian-catholic: 1
+1919.9.10:
+  owner: ITA
+  controller: ITA
+  cores:
+    HAB: no
+    VEN: no
+    ITA: yes
+1943.9.8:
+  owner: GER
+  controller: GER
+  cores:
+    ITA: no
+    YUGO: yes
+    CRO: yes
+1945.5.8:
+  owner: YUGO
+  controller: YUGO
+1991.6.25:
+  owner: CRO
+  controller: CRO
+  cores:
+    YUGO: no

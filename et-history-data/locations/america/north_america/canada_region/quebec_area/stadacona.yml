@@ -1,0 +1,45 @@
+#imported from EU4 file: history/provinces/994 - Stadacona.txt
+2.1.1:
+  pops: 
+    stadaconan_culture-iroquoian_totemism: 1
+  owner: STD
+  controller: STD
+  cores:
+    STD: yes
+  resource: fish
+1608.7.3:
+  pops: 
+    stadaconan_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  resource: naval_supplies
+1629.7.16:
+  owner: ENG
+  controller: ENG
+1632.3.29:
+  owner: FRA
+  controller: FRA
+1633.1.1:
+  cores:
+    FRA: yes
+1760.1.1:
+  controller: GBR
+1763.2.10:
+  owner: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1790.1.1:
+  pops: 
+    french-catholic: 0
+    french_canadian-catholic: 1
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes
+1980.5.20:
+  cores:
+    QUEB: yes

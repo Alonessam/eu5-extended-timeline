@@ -1,0 +1,99 @@
+#imported from EU4 file: history/provinces/4527 - Checiny.txt
+2.1.1:
+  pops: 
+    vandal-germanic: 1
+  owner: VAND
+  controller: VAND
+  cores:
+    VAND: yes
+  resource: cloth
+140.1.1:
+  pops: 
+    vandal-germanic: 0
+    gepid-germanic: 1
+  owner: GEPI
+  controller: GEPI
+  cores:
+    VAND: no
+    GEPI: yes
+200.1.1:
+  pops: 
+    gepid-germanic: 0
+    lesser_polish-slavic: 1
+  owner: VEND
+  controller: VEND
+  cores:
+    GEPI: no
+    VEND: yes
+220.1.1:
+  owner: VIST
+  controller: VIST
+  cores:
+    VEND: no
+    VIST: yes
+940.1.1:
+  owner: POL
+  controller: POL
+  cores:
+    POL: yes
+1050.1.1:
+  pops: 
+    lesser_polish-slavic: 0
+    lesser_polish-catholic: 1
+1550.1.1:
+  pops: 
+    lesser_polish-catholic: 0
+    lesser_polish-calvinist: 1
+1569.7.1:
+  owner: PLC
+  controller: PLC
+  cores:
+    PLC: yes
+    POL: no
+1589.1.1:
+  controller: PLC
+1608.1.1:
+  controller: PLC
+1655.1.1:
+  controller: SWE
+1660.1.1:
+  controller: PLC
+1735.1.1:
+  controller: PLC
+1795.10.24:
+  owner: HAB
+  controller: HAB
+  cores:
+    HAB: yes
+1807.7.9:
+  owner: POL
+  controller: POL
+  cores:
+    HAB: no
+    POL: yes
+1812.12.12:
+  controller: RUS
+1814.4.11:
+  owner: RUS
+  cores:
+    RUS: yes
+1914.12.6:
+  controller: GER
+1918.3.3:
+  owner: POL
+  controller: POL
+  cores:
+    RUS: no
+1939.9.8:
+  controller: GER
+1939.10.6:
+  owner: GER
+1940.1.1:
+  pops: 
+    lesser_polish-calvinist: 0
+    lesser_polish-catholic: 1
+1945.1.16:
+  controller: SOVI
+1945.5.8:
+  owner: POL
+  controller: POL

@@ -1,0 +1,12 @@
+#imported from EU4
+2.1.1:
+  government: indian_hindu_monarchy
+  color: rgb { 129  39  19 }
+  ruler: puzh_chutukulananda_chutu
+  religion: hindu
+  primary_culture: tamil
+  capital: darwar
+78.1.1:
+  ruler: puzh_mulananda_chutu
+175.1.1:
+  ruler: puzh_sivalananda_chutu

@@ -1,0 +1,169 @@
+ubh_ruhaga_buhaya:
+  1420.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: ruhaga
+    dynasty: buhaya_dynasty
+    adm: 30
+    dip: 15
+    mil: 15
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1490.1.1:
+    death: yes
+ubh_ruhaga_ii_buhaya:
+  1470.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: ruhaga
+    dynasty: buhaya_dynasty
+    adm: 30
+    dip: 30
+    mil: 45
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1560.1.1:
+    death: yes
+ubh_ruhaga_ii_buhaya_1:
+  1530.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: ruhaga
+    dynasty: buhaya_dynasty
+    adm: 30
+    dip: 30
+    mil: 45
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1600.1.1:
+    death: yes
+ubh_kmenyi_buhaya:
+  1560.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: kmenyi
+    dynasty: buhaya_dynasty
+    adm: 30
+    dip: 30
+    mil: 30
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1630.1.1:
+    death: yes
+ubh_ntare_i_buhaya:
+  1590.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: ntare
+    dynasty: buhaya_dynasty
+    adm: 30
+    dip: 30
+    mil: 30
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1670.1.1:
+    death: yes
+ubh_buhinda_buhaya:
+  1650.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: buhinda
+    dynasty: buhaya_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1700.1.1:
+    death: yes
+ubh_maziga_buhaya:
+  1680.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: maziga
+    dynasty: buhaya_dynasty
+    adm: 30
+    dip: 30
+    mil: 15
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1730.1.1:
+    death: yes
+ubh_masimba_buhaya:
+  1680.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: masimba
+    dynasty: buhaya_dynasty
+    adm: 30
+    dip: 30
+    mil: 15
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1750.1.1:
+    death: yes
+ubh_kivunangoma_buhaya:
+  1730.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: kivunangoma
+    dynasty: buhaya_dynasty
+    adm: 15
+    dip: 30
+    mil: 15
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1760.1.1:
+    death: yes
+ubh_ntare_ii_buhaya:
+  1730.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: ntare
+    dynasty: buhaya_dynasty
+    adm: 15
+    dip: 30
+    mil: 15
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1780.1.1:
+    death: yes
+ubh_kanyoni_buhaya:
+  1750.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: kanyoni
+    dynasty: buhaya_dynasty
+    adm: 15
+    dip: 30
+    mil: 30
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1800.1.1:
+    death: yes
+ubh_rwasa_buhaya:
+  1781.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: rwasa
+    dynasty: buhaya_dynasty
+    adm: 30
+    dip: 30
+    mil: 30
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  1815.1.1:
+    death: yes
+ubh_ntare_buhaya:
+  1786.1.1:
+    birth: ujiji #TODO: Date and location guessed, check if better data is available
+    first_name: ntare
+    dynasty: buhaya_dynasty
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: bantu_religion
+    culture: rwanda_culture
+    tag: UBH
+  3000.1.1:
+    death: yes

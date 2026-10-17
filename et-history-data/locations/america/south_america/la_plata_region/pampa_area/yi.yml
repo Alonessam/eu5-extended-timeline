@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/2850 - Montevideo.txt
+2.1.1:
+  pops: 
+    charrua_culture-muisca_religion: 1
+1724.1.1:
+  pops: 
+    charrua_culture-muisca_religion: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+  resource: livestock
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    iberian_la_platan-catholic: 1
+1822.9.7:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    BRAZ: yes
+1825.8.25:
+  owner: URUG
+  controller: URUG
+  cores:
+    SPA: no
+    URUG: yes
+1828.8.28:
+  cores:
+    BRAZ: no

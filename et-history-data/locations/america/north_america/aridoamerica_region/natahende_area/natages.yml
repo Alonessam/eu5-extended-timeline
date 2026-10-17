@@ -1,0 +1,42 @@
+#imported from EU4 file: history/provinces/882 - Mescalero.txt
+2.1.1:
+  pops: 
+    ancestral_pueblo_culture-iroquoian_totemism: 1
+1200.1.1:
+  pops: 
+    ancestral_pueblo_culture-iroquoian_totemism: 0
+    naadahende_culture-iroquoian_totemism: 1
+  owner: MSC
+  controller: MSC
+  cores:
+    MSC: yes
+  resource: wool
+1825.1.1:
+  pops: 
+    naadahende_culture-iroquoian_totemism: 0
+    mexican-catholic: 1
+  owner: MEX
+  controller: MEX
+  cores:
+    MEX: yes
+1836.3.2:
+  pops: 
+    mexican-catholic: 0
+    iberian_louisianan-catholic: 1
+  owner: TEXA
+  controller: TEXA
+  cores:
+    TEXA: yes
+1845.12.29:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1848.2.2:
+  cores:
+    MEX: no
+1862.2.1:
+  controller: CSAM
+1862.4.8:
+  controller: USA
+1900.1.1:

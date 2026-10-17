@@ -1,0 +1,105 @@
+#imported from EU4 file: history/provinces/2750 - Plovdiv.txt
+2.1.1:
+  pops: 
+    thracian-zamolxism: 1
+  owner: ODRY
+  controller: ODRY
+  cores:
+    ODRY: yes
+  resource: grain
+46.1.1:
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+80.1.1:
+  cores:
+    ODRY: no
+120.1.1:
+  pops: 
+    thracian-zamolxism: 0
+    thracian-hellenism_religion: 1
+395.1.17:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    ROM: no
+    BYZ: yes
+700.1.1:
+  pops: 
+    thracian-hellenism_religion: 0
+    thracian-chalcedonism: 1
+812.1.1:
+  owner: BUL
+  controller: BUL
+834.1.1:
+  pops: 
+    thracian-chalcedonism: 0
+    bulgarian-chalcedonism: 1
+  cores:
+    BUL: yes
+856.1.1:
+  owner: BYZ
+  controller: BYZ
+867.1.1:
+  pops: 
+    bulgarian-chalcedonism: 0
+    bulgarian-orthodox: 1
+894.1.1:
+  owner: BUL
+  controller: BUL
+  cores:
+    BUL: yes
+969.1.1:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    BYZ: yes
+1204.4.13:
+  owner: LAT
+  controller: LAT
+  cores:
+    LAT: yes
+1207.1.1:
+  owner: BUL
+  controller: BUL
+  cores:
+    BUL: yes
+1208.1.1:
+  owner: LAT
+  controller: LAT
+1225.1.1:
+  owner: BUL
+  controller: BUL
+  cores:
+    LAT: no
+1263.1.1:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    BYZ: yes
+1322.1.1:
+  owner: BUL
+  controller: BUL
+1323.1.1:
+  owner: BYZ
+  controller: BYZ
+1344.1.1:
+  owner: BUL
+  controller: BUL
+1364.1.1:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1413.1.1:
+  controller: TUR
+1878.1.4:
+  controller: RUS
+1878.3.3:
+  controller: TUR
+1885.9.6:
+  owner: BUL
+  controller: BUL
+  cores:
+    TUR: no

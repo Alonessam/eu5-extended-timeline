@@ -1,0 +1,72 @@
+#imported from EU4 file: history/provinces/2296 - Biga.txt
+2.1.1:
+  pops: 
+    greek_culture-hellenism_religion: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: naval_supplies
+340.1.1:
+  pops: 
+    greek_culture-hellenism_religion: 0
+    greek_culture-chalcedonism: 1
+395.1.17:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    ROM: no
+    BYZ: yes
+867.1.1:
+  pops: 
+    greek_culture-chalcedonism: 0
+    greek_culture-orthodox: 1
+1204.4.13:
+  owner: NICA
+  controller: NICA
+  cores:
+    NICA: yes
+1205.1.1:
+  owner: LAT
+  controller: LAT
+  cores:
+    LAT: yes
+1225.1.1:
+  owner: NICA
+  controller: NICA
+  cores:
+    LAT: no
+1261.1.1:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    NICA: no
+1326.1.1:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1340.1.1:
+  pops: 
+    greek_culture-orthodox: 0
+    turkish_culture-sunni: 1
+  cores:
+    BYZ: no
+1404.1.1:
+  controller: TUR
+1482.7.26:
+  controller: TUR
+1513.1.1:
+  controller: TUR
+1920.4.24:
+  owner: TURK
+  controller: TURK
+  cores:
+    TURK: yes
+1920.8.10:
+  controller: GRE
+1922.9.6:
+  controller: TURK
+1922.11.1:
+  cores:
+    TUR: no

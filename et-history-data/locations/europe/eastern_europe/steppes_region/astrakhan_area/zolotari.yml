@@ -1,0 +1,113 @@
+#imported from EU4 file: history/provinces/466 - Sarai.txt
+2.1.1:
+  pops: 
+    alan_culture-: 1
+  owner: ALN
+  controller: ALN
+  cores:
+    ALN: yes
+  resource: wool
+320.1.1:
+  pops: 
+    hunnic-: 1
+  owner: HUNS
+  controller: HUNS
+  cores:
+    ALN: no
+    HUNS: yes
+376.1.1:
+  pops: 
+    khazar-: 1
+  cores:
+    KHAZ: yes
+448.1.1:
+  owner: KHAZ
+  controller: KHAZ
+  cores:
+    HUNS: no
+920.1.1:
+  pops: 
+    khazar-sunni: 1
+969.1.1:
+  pops: 
+    khazar-sunni: 0
+    cuman_culture-sunni: 1
+  owner: PECH
+  controller: PECH
+  cores:
+    KHAZ: no
+    PECH: yes
+1037.1.1:
+  owner: CUMA
+  controller: CUMA
+  cores:
+    PECH: no
+    CUMA: yes
+1236.1.1:
+  pops: 
+    cuman_culture-sunni: 0
+    astrakhani-sunni: 1
+  owner: MGE
+  controller: MGE
+  cores:
+    CUMA: no
+    MGE: yes
+    ATR: yes
+1260.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    MGE: no
+    WHHO: yes
+1372.1.1:
+  owner: BLHO
+  controller: BLHO
+  cores:
+    BLHO: yes
+1374.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    BLHO: no
+1378.1.1:
+  owner: GLH
+  controller: GLH
+  cores:
+    GLH: yes
+1442.1.1:
+  owner: GRHO
+  controller: GRHO
+  cores:
+    GLH: no
+    GRHO: yes
+1502.6.1:
+  owner: ATR
+  controller: ATR
+  cores:
+    GRHO: no
+1556.6.2:
+  owner: RUS
+  controller: RUS
+  cores:
+    ATR: no
+    RUS: yes
+1600.1.1:
+  pops: 
+    astrakhani-sunni: 0
+    muscovite-orthodox: 1
+1671.4.14:
+  controller: RUS
+1775.2.1:
+  controller: RUS
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

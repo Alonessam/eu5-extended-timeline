@@ -1,0 +1,47 @@
+#imported from EU4 file: history/provinces/579 - Arakan.txt
+2.1.1:
+  pops: 
+    rakhine_culture-mahayana: 1
+  owner: ARK
+  controller: ARK
+  cores:
+    ARK: yes
+  resource: grain
+1150.1.1:
+  pops: 
+    rakhine_culture-mahayana: 0
+    rakhine_culture-theravada: 1
+1500.1.1:
+  pops: 
+    rakhine_culture-theravada: 0
+    rakhine_culture-sunni: 1
+1785.1.2:
+  owner: BURM
+  controller: BURM
+  cores:
+    BURM: yes
+1815.1.1:
+  controller: BURM
+1826.2.24:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1885.11.29:
+  cores:
+    ARK: no
+1942.5.1:
+  controller: JAP
+1945.3.1:
+  controller: GBR
+1948.1.4:
+  owner: BURM
+  controller: BURM
+  cores:
+    GBR: no
+1989.1.1:
+  owner: MYAN
+  controller: MYAN
+  cores:
+    BURM: no
+    MYAN: yes

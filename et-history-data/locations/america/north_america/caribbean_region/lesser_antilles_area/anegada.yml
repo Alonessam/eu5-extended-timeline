@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/3254 - Montserrat.txt
+2.1.1:
+  pops: 
+    arawak_culture-muisca_religion: 1
+1632.1.1:
+  pops: 
+    arawak_culture-muisca_religion: 0
+    english-catholic: 1
+  owner: ENG
+  controller: ENG
+  resource: sugar
+1667.1.1:
+  cores:
+    ENG: yes
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    ENG: no
+    GBR: yes
+1780.1.1:

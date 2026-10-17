@@ -1,0 +1,39 @@
+wrc_henryk_iii_piast:
+  1227.1.1:
+    birth: wroclaw #TODO: Date and location guessed, check if better data is available
+    first_name: henryk
+    dynasty: piast_dynasty
+    adm: 0
+    dip: 60
+    mil: 0
+    religion: catholic
+    culture: silesian
+    tag: WRC
+  1266.12.3:
+    death: yes
+wrc_henryk_iv_piast:
+  1258.1.1:
+    birth: wroclaw #TODO: Date and location guessed, check if better data is available
+    first_name: henryk
+    dynasty: piast_dynasty
+    adm: 0
+    dip: 0
+    mil: 45
+    religion: catholic
+    culture: silesian
+    tag: WRC
+  1290.6.23:
+    death: yes
+wrc_henryk_vi_piast:
+  1294.3.18:
+    birth: wroclaw #TODO: Location guessed, check if better data is available
+    first_name: henryk
+    dynasty: piast_dynasty
+    adm: 60
+    dip: 30
+    mil: 45
+    religion: catholic
+    culture: silesian
+    tag: WRC
+  3000.1.1:
+    death: yes

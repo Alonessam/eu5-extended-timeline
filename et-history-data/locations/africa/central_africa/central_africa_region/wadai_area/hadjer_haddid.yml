@@ -1,0 +1,41 @@
+#imported from EU4 file: history/provinces/2932 - Ouaddai.txt
+2.1.1:
+  pops: 
+    daju_language-bantu_religion: 1
+1100.1.1:
+  owner: DAJ
+  controller: DAJ
+  cores:
+    DAJ: yes
+  resource: grain
+1420.1.1:
+  pops: 
+    daju_language-bantu_religion: 0
+    tunjur_culture-bantu_religion: 1
+  owner: TUNJ
+  controller: TUNJ
+  cores:
+    TUNJ: yes
+1470.1.1:
+  cores:
+    DAJ: no
+1635.1.1:
+  pops: 
+    tunjur_culture-bantu_religion: 0
+    maba_africa_culture-sunni: 1
+  owner: WAD
+  controller: WAD
+  cores:
+    WAD: yes
+1912.1.1:
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+1960.8.11:
+  owner: CHAD
+  controller: CHAD
+  cores:
+    FRA: no
+    WAD: no
+    CHAD: yes

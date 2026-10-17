@@ -1,0 +1,17 @@
+#imported from EU4
+2.1.1:
+  government: et_nomadic_horde
+  color: rgb { 23  169  207 }
+  religion: tengri
+  primary_culture: kimek
+  capital: imakia
+920.1.1:
+  ruler: kime_alip_qara_uran_imak
+980.1.1:
+  ruler: kime_alip_derek_imak
+1040.1.1:
+  ruler: kime_inalchiq_imak
+1100.1.1:
+  ruler: kime_abarkhan_imak
+1160.1.1:
+  ruler: kime_shad_tutuk_ilburi

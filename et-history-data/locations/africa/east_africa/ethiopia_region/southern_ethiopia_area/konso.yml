@@ -1,0 +1,22 @@
+#imported from EU4 file: history/provinces/1799 - Urgoma.txt
+2.1.1:
+  pops: 
+    oromo_culture-bantu_religion: 1
+1897.1.1:
+  owner: ETH
+  controller: ETH
+  cores:
+    ETH: yes
+  resource: grain
+1933.1.1:
+  owner: ITA
+  controller: ITA
+1941.3.27:
+  controller: GBR
+1941.11.27:
+  owner: ETH
+  controller: ETH
+1977.7.20:
+  controller: SOMA
+1978.3.15:
+  controller: ETH

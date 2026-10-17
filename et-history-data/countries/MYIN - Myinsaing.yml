@@ -1,0 +1,7 @@
+#imported from EU4
+2.1.1:
+  government: south_east_asia_monarchy
+  color: rgb { 220  220  180 }
+  religion: theravada
+  primary_culture: burmese_culture
+  capital: kyaukse

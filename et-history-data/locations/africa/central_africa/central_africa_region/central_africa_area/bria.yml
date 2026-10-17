@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/1796 - Central Africa.txt
+2.1.1:
+  pops: 
+    gbaya_culture-bantu_religion: 1
+1903.1.1:
+  pops: 
+    gbaya_culture-bantu_religion: 0
+    gbaya_culture-lutheran: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: grain
+1960.8.13:
+  owner: CAFR
+  controller: CAFR
+  cores:
+    FRA: no
+    CAFR: yes
+2013.3.24:
+  controller: CAFR

@@ -1,0 +1,28 @@
+#imported from EU4
+2.1.1:
+  government: et_european_pagan_monarchy
+  color: rgb { 34 131 193 }
+  religion: catholic
+  primary_culture: slovak
+  capital: bratislava
+1910.1.1:
+  religion: secularism
+1939.3.14:
+  government: et_modern_republic
+  ruler: slok_jozef_tiso
+1945.5.8:
+  government: et_modern_republic
+1992.12.31:
+  capital: bratislava
+1993.3.2:
+  ruler: slok_michal_kovac
+1999.6.15:
+  ruler: slok_rudolf_schuster
+2004.6.15:
+  ruler: slok_ivan_gasparovic
+2014.6.15:
+  ruler: slok_andrej_kiska
+2019.6.15:
+  ruler: slok_zuzana_caputova
+2024.6.15:
+  ruler: slok_peter_pellegrini

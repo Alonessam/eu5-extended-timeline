@@ -1,0 +1,48 @@
+#imported from EU4 file: history/provinces/984 - Acadia.txt
+2.1.1:
+  pops: 
+    mikmaq_culture-iroquoian_totemism: 1
+1605.1.1:
+  pops: 
+    mikmaq_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: fish
+1613.1.1:
+  owner: ENG
+  controller: ENG
+  cores:
+    ENG: yes
+1632.3.29:
+  owner: FRA
+  controller: FRA
+  cores:
+    ENG: no
+1692.1.1:
+  controller: ENG
+1697.9.20:
+  controller: FRA
+1710.10.1:
+  controller: GBR
+1713.4.11:
+  owner: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1750.1.1:
+  pops: 
+    french-catholic: 0
+    english-lutheran: 1
+1790.1.1:
+  pops: 
+    english-lutheran: 0
+    british_canadian-lutheran: 1
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

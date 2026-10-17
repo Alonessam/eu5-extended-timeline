@@ -1,0 +1,76 @@
+#imported from EU4 file: history/provinces/2960 - Nowy Sacz.txt
+2.1.1:
+  pops: 
+    quadian-germanic: 1
+  owner: QUAD
+  controller: QUAD
+  cores:
+    QUAD: yes
+  resource: iron
+550.1.1:
+  pops: 
+    quadian-germanic: 0
+    lesser_polish-slavic: 1
+  owner: VIST
+  controller: VIST
+  cores:
+    QUAD: no
+    VIST: yes
+870.1.1:
+  owner: MVA
+  controller: MVA
+  cores:
+    MVA: yes
+895.1.1:
+  owner: VIST
+  controller: VIST
+  cores:
+    MVA: no
+940.1.1:
+  owner: POL
+  controller: POL
+  cores:
+    POL: yes
+980.1.1:
+  pops: 
+    lesser_polish-slavic: 0
+    lesser_polish-catholic: 1
+1558.1.1:
+  pops: 
+    lesser_polish-catholic: 0
+    lesser_polish-lutheran: 1
+1569.7.1:
+  owner: PLC
+  controller: PLC
+  cores:
+    PLC: yes
+    POL: no
+1589.1.1:
+  controller: PLC
+1658.1.1:
+  pops: 
+    lesser_polish-lutheran: 0
+    lesser_polish-catholic: 1
+1735.1.1:
+  controller: PLC
+1772.8.5:
+  owner: HAB
+  controller: HAB
+  cores:
+    HAB: yes
+1918.11.11:
+  owner: POL
+  controller: POL
+  cores:
+    KRAK: no
+    HAB: no
+    POL: yes
+1939.9.6:
+  controller: GER
+1939.10.6:
+  owner: GER
+1945.1.1:
+  controller: SOVI
+1945.5.8:
+  owner: POL
+  controller: POL

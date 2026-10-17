@@ -1,0 +1,49 @@
+#imported from EU4 file: history/provinces/4110 - Sutherland.txt
+2.1.1:
+  pops: 
+    pictish-druidism: 1
+  owner: LUGI
+  controller: LUGI
+  cores:
+    LUGI: yes
+  resource: grain
+250.1.1:
+  owner: PICT
+  controller: PICT
+  cores:
+    PICT: yes
+580.1.1:
+  pops: 
+    pictish-druidism: 0
+    pictish-chalcedonism: 1
+843.1.1:
+  owner: SCO
+  controller: SCO
+  cores:
+    PICT: no
+    SCO: yes
+867.1.1:
+  pops: 
+    pictish-chalcedonism: 0
+    pictish-catholic: 1
+900.1.1:
+  pops: 
+    pictish-catholic: 0
+    highland-catholic: 1
+1296.1.1:
+  controller: ENG
+1314.1.1:
+  controller: SCO
+1560.8.1:
+  pops: 
+    highland-catholic: 0
+    highland-calvinist: 1
+1647.1.1:
+  controller: SCO
+1689.11.1:
+  controller: SCO
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes

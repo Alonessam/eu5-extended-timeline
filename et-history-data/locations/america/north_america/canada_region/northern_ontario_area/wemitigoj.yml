@@ -1,0 +1,23 @@
+#imported from EU4 file: history/provinces/2671 - Missisage.txt
+2.1.1:
+  pops: 
+    ojibwe_culture-iroquoian_totemism: 1
+  owner: MSG
+  controller: MSG
+  cores:
+    MSG: yes
+  resource: fur
+1855.1.1:
+  pops: 
+    ojibwe_culture-iroquoian_totemism: 0
+    british_canadian-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

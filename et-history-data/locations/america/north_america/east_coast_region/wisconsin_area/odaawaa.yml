@@ -1,0 +1,18 @@
+#imported from EU4 file: history/provinces/2518 - Noquet.txt
+2.1.1:
+  pops: 
+    ojibwe_culture-iroquoian_totemism: 1
+1710.1.1:
+  owner: OJI
+  controller: OJI
+  cores:
+    OJI: yes
+  resource: naval_supplies
+1813.10.5:
+  pops: 
+    ojibwe_culture-iroquoian_totemism: 0
+    american-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes

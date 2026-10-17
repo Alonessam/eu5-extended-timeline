@@ -1,0 +1,30 @@
+#imported from EU4 file: history/provinces/632 - Sumbawa.txt
+2.1.1:
+  pops: 
+    asmat_culture-bimoism: 1
+1815.1.1:
+  pops: 
+    asmat_culture-bimoism: 0
+    tetum_culture-bimoism: 1
+1850.1.1:
+  pops: 
+    tetum_culture-bimoism: 0
+    tetum_culture-sunni: 1
+1920.1.1:
+  owner: NED
+  controller: NED
+  cores:
+    NED: yes
+    INDN: yes
+  resource: gold
+1942.3.9:
+  owner: JAP
+  controller: JAP
+1945.8.15:
+  owner: NED
+1945.8.17:
+  owner: INDN
+  controller: INDN
+1949.12.27:
+  cores:
+    NED: no

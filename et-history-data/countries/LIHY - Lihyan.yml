@@ -1,0 +1,12 @@
+#imported from EU4
+2.1.1:
+  government: et_tribal_federation
+  color: rgb { 10  160  160 }
+  government_rank: rank_duchy
+  religion: south_arabian_polytheism
+  primary_culture: hijazi_culture
+  capital: tayma
+106.1.1:
+  ruler: lihy_hanas_ibn_tilmi_banu_lihyan
+160.1.1:
+  ruler: lihy_ibn_hanas_banu_lihyan

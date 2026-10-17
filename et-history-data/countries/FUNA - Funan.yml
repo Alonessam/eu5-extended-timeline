@@ -1,0 +1,48 @@
+#imported from EU4
+2.1.1:
+  government: south_east_asia_monarchy
+  color: rgb { 210  180  60 }
+  ruler: funa_som_somvong
+  religion: hindu
+  primary_culture: khmer_culture
+  capital: vyadhapura
+68.1.1:
+  ruler: funa_soma_somvong
+80.1.1:
+  ruler: funa_kaundinya_i_varman
+130.1.1:
+  ruler: funa_hunpanhuang_varman
+170.1.1:
+  ruler: funa_panpan_varman
+201.1.1:
+  ruler: funa_srei_meara_varman
+225.1.1:
+  ruler: funa_fan_jinsheng_varman
+235.1.1:
+  ruler: funa_fan_zhan_varman
+244.1.1:
+  ruler: funa_fan_chang_varman
+248.1.1:
+  ruler: funa_fan_xun_varman
+289.1.1:
+  ruler: funa_viravarman_varman
+340.1.1:
+  ruler: funa_candana_varman
+380.1.1:
+  ruler: funa_indravarman_varman
+400.1.1:
+  ruler: funa_kaundinya_ii_varman
+434.1.1:
+  ruler: funa_sri_indravarman_varman
+445.1.1:
+  ruler: funa_bhavavarman_varman
+484.1.1:
+  ruler: funa_jayavarman_varman
+514.1.1:
+  ruler: funa_rudravarman_varman
+550.1.1:
+  ruler: funa_pvirakvarman_varman
+600.1.1:
+  ruler: funa_mhenteractvarman_varman
+615.1.1:
+  ruler: funa_nteractvarman_varman

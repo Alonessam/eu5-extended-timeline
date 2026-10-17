@@ -1,0 +1,82 @@
+#imported from EU4 file: history/provinces/4375 - Chester.txt
+2.1.1:
+  pops: 
+    cumbric-druidism: 1
+  owner: BRIG
+  controller: BRIG
+  cores:
+    BRIG: yes
+  resource: salt
+71.1.1:
+  controller: ROM
+78.1.1:
+  owner: ROM
+  cores:
+    ROM: yes
+380.1.1:
+  cores:
+    BRIG: no
+    RHEG: yes
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+410.1.1:
+  owner: RHEG
+  controller: RHEG
+  cores:
+    ROMW: no
+    BRIG: no
+    RHEG: yes
+630.1.1:
+  pops: 
+    cumbric-druidism: 0
+    cumbric-chalcedonism: 1
+633.1.1: #controlled by Mercia from 633, changed history to adjust for being controlled by Mercia. https://www.wilcuma.org.uk/mercia/a-history-of-cheshire/
+  owner: MERC
+  controller: MERC
+  cores:
+    RHEG: no
+    MERC: yes
+720.1.1:
+  pops: 
+    cumbric-chalcedonism: 0
+    anglo_saxon-chalcedonism: 1
+867.1.1:
+  pops: 
+    anglo_saxon-chalcedonism: 0
+    anglo_saxon-catholic: 1
+927.1.1:
+  owner: ENG
+  controller: ENG
+  cores:
+    ENG: yes
+1000.1.1:
+  cores:
+    MERC: no
+1066.12.25:
+  pops: 
+    anglo_saxon-catholic: 0
+    english-catholic: 1
+1070.1.1: # controlled by Chester due to creation of County Palatine of Chester. Control ends in 1536.
+  owner: CET
+  controller: CET
+  cores:
+    CET: yes
+1536.1.1:
+  owner: ENG
+  controller: ENG
+  cores:
+    CET: no
+1645.1.1:
+  controller: ENG
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    ENG: no
+    GBR: yes
+1920.1.1:
+  resource: cars

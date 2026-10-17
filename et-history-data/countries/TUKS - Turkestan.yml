@@ -1,0 +1,14 @@
+#imported from EU4
+2.1.1:
+  government: et_ancient_monarchy
+  color: rgb { 150 195 215 }
+  religion: sunni
+  primary_culture: khazak
+  capital: fergana
+1910.1.1:
+  religion: secularism
+1917.11.27:
+  government: et_modern_republic
+  ruler: tuks_mukhamedzhan_tynyshpaev
+1917.12.12:
+  ruler: tuks_mustafa_shokay

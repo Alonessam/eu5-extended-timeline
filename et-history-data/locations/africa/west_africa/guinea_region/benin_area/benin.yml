@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/1147 - Benin.txt
+2.1.1:
+  pops: 
+    edo-bantu_religion: 1
+523.1.1:
+  owner: BEN
+  controller: BEN
+  cores:
+    BEN: yes
+  resource: ivory
+1750.1.1:
+  resource: slaves
+1897.2.17:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: ivory
+1900.1.1:
+  pops: 
+    edo-bantu_religion: 0
+    edo-lutheran: 1
+1960.10.1:
+  owner: NIGR
+  controller: NIGR
+  cores:
+    GBR: no
+    BEN: no
+    NIGR: yes
+2008.1.1:
+  resource: oil

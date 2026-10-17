@@ -1,0 +1,46 @@
+#imported from EU4 file: history/provinces/4633 - Sobaipuri.txt
+2.1.1:
+  pops: 
+    pima_culture-iroquoian_totemism: 1
+  owner: HHK
+  controller: HHK
+  cores:
+    HHK: yes
+  resource: salt
+1375.1.1:
+  owner: ---
+  controller: ---
+  cores:
+    HHK: no
+1731.1.1:
+  pops: 
+    pima_culture-iroquoian_totemism: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    mexican-catholic: 1
+1810.9.16:
+  owner: MEX
+  controller: SPA
+  cores:
+    MEX: yes
+1821.9.27:
+  controller: MEX
+  cores:
+    SPA: no
+1846.12.16:
+  controller: USA
+1848.2.2:
+  controller: MEX
+1853.12.30:
+  owner: USA
+  controller: USA
+  cores:
+    MEX: no
+    USA: yes
+1940.1.1:

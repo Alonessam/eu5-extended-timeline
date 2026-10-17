@@ -1,0 +1,13 @@
+#imported from EU4 file: history/provinces/2728 - Larrakia.txt
+2.1.1:
+  pops: 
+    yangman_culture-dreamtime_religion: 1
+1200.1.1:
+  cores:
+    ???: yes
+  resource: fish
+1911.1.1:
+  owner: AUST
+  controller: AUST
+  cores:
+    AUST: yes

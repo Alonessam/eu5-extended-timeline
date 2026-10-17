@@ -1,0 +1,37 @@
+#imported from EU4 file: history/provinces/4095 - Ishindi.txt
+2.1.1:
+  pops: 
+    chokwe-bantu_religion: 1
+1350.1.1:
+  owner: CHO
+  controller: CHO
+  cores:
+    CHO: yes
+  resource: ivory
+1700.1.1:
+  owner: LND
+  controller: LND
+  cores:
+    LND: yes
+1850.1.1:
+  owner: CHO
+  controller: CHO
+  cores:
+    LND: no
+    CHO: yes
+1930.1.1:
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+1960.1.1:
+  pops: 
+    chokwe-bantu_religion: 0
+    chokwe-lutheran: 1
+1975.11.11:
+  owner: ANGO
+  controller: ANGO
+  cores:
+    POR: no
+    NDON: no
+    ANGO: yes

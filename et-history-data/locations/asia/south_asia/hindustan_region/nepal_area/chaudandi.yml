@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/4483 - Morang.txt
+2.1.1:
+  pops: 
+    newar_culture-mahayana: 1
+  owner: LWA
+  controller: LWA
+  cores:
+    LWA: yes
+  resource: wool
+680.1.1:
+  pops: 
+    newar_culture-mahayana: 0
+    newar_culture-tibetan_buddhism: 1
+1584.1.1:
+1609.1.1:
+  owner: MAKW
+  controller: MAKW
+  cores:
+    MAKW: yes
+1760.1.1:
+  pops: 
+    newar_culture-tibetan_buddhism: 0
+    newar_culture-hindu: 1
+1769.1.1:
+  owner: LWA
+  controller: LWA
+1774.7.17:
+  owner: NPL
+  controller: NPL
+  cores:
+    NPL: yes

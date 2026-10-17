@@ -1,0 +1,30 @@
+#imported from EU4 file: history/provinces/4481 - Punakha.txt
+2.1.1:
+  pops: 
+    ngalop_culture-bon: 1
+  owner: BHUT
+  controller: BHUT
+  cores:
+    BHUT: yes
+  resource: wool
+605.1.1:
+  owner: KAMA
+  controller: KAMA
+  cores:
+    KAMA: yes
+618.1.1:
+  owner: TIB
+  controller: TIB
+  cores:
+    KAMA: no
+    TIB: yes
+740.1.1:
+  pops: 
+    ngalop_culture-bon: 0
+    ngalop_culture-tibetan_buddhism: 1
+746.1.1:
+  owner: BHUT
+  controller: BHUT
+  cores:
+    TIB: no
+    BHUT: yes

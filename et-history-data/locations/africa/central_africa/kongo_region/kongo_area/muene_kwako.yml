@@ -1,0 +1,24 @@
+#imported from EU4 file: history/provinces/4081 - Bandundu.txt
+2.1.1:
+  pops: 
+    kongo-bantu_religion: 1
+1350.1.1:
+  owner: KON
+  controller: KON
+  cores:
+    KON: yes
+  resource: spices
+1885.1.1:
+  pops: 
+    kongo-bantu_religion: 0
+    kongo-catholic: 1
+  owner: BEL
+  controller: BEL
+  cores:
+    BEL: yes
+1960.7.1:
+  owner: DRCO
+  controller: DRCO
+  cores:
+    BEL: no
+    DRCO: yes

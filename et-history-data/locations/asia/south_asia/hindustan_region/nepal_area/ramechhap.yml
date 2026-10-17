@@ -1,0 +1,24 @@
+#imported from EU4 file: history/provinces/557 - Katmandu.txt
+2.1.1:
+  pops: 
+    newar_culture-mahayana: 1
+  owner: KTU
+  controller: KTU
+  cores:
+    KTU: yes
+  resource: incense
+1350.1.1:
+  pops: 
+    newar_culture-mahayana: 0
+    newar_culture-hindu: 1
+1767.1.1:
+  owner: GRK
+  controller: GRK
+  cores:
+    GRK: yes
+1774.7.17:
+  owner: NPL
+  controller: NPL
+  cores:
+    GRK: no
+    NPL: yes

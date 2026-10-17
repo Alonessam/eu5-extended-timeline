@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/4867 - Wunambul.txt
+2.1.1:
+  pops: 
+    yangman_culture-dreamtime_religion: 1
+1890.1.1:
+  pops: 
+    yangman_culture-dreamtime_religion: 0
+    yangman_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: grain
+1901.1.1:
+  owner: AUST
+  controller: AUST
+  cores:
+    GBR: no
+    AUST: yes
+1910.1.1:
+  resource: aluminum

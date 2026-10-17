@@ -1,0 +1,51 @@
+#imported from EU4 file: history/provinces/1753 - Kostroma.txt
+2.1.1:
+  pops: 
+    mari_culture-muinaisusko: 1
+600.1.1:
+  owner: MARI
+  controller: MARI
+  cores:
+    MARI: yes
+  resource: wool
+1160.1.1:
+  owner: VLR
+  controller: VLR
+  cores:
+    MARI: no
+    VLR: yes
+1200.1.1:
+  pops: 
+    mari_culture-muinaisusko: 0
+    muscovite-muinaisusko: 1
+1220.1.1:
+  pops: 
+    muscovite-muinaisusko: 0
+    muscovite-orthodox: 1
+1250.1.1:
+  resource: cloth
+1330.1.1:
+  owner: MOS
+  controller: MOS
+  cores:
+    VLR: no
+    MOS: yes
+    NOV: yes
+1503.4.1:
+  owner: RUS
+  controller: RUS
+  cores:
+    MOS: no
+    RUS: yes
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

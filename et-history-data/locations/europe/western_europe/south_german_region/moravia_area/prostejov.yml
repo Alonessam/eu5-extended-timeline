@@ -1,0 +1,128 @@
+#imported from EU4 file: history/provinces/4237 - Olomouc.txt
+2.1.1:
+  pops: 
+    quadian-germanic: 1
+  owner: QUAD
+  controller: QUAD
+  cores:
+    QUAD: yes
+  resource: grain
+395.1.1:
+  pops: 
+    quadian-germanic: 0
+    vandal-germanic: 1
+  owner: NAHA
+  controller: NAHA
+  cores:
+    QUAD: no
+    NAHA: yes
+454.1.1:
+  pops: 
+    vandal-germanic: 0
+    southern_bavarian-germanic: 1
+  owner: HERU
+  controller: HERU
+  cores:
+    NAHA: no
+    HERU: yes
+509.1.1:
+  pops: 
+    southern_bavarian-germanic: 0
+    langobardi-germanic: 1
+  owner: LOMB
+  controller: LOMB
+  cores:
+    HERU: no
+    LOMB: yes
+569.1.1:
+  pops: 
+    langobardi-germanic: 0
+    czech-slavic: 1
+  owner: MVA
+  controller: MVA
+  cores:
+    LOMB: no
+    MVA: yes
+623.1.1:
+  owner: SAMO
+  controller: SAMO
+  cores:
+    SAMO: yes
+659.1.1:
+  owner: MVA
+  controller: MVA
+  cores:
+    SAMO: no
+831.1.1:
+  pops: 
+    czech-slavic: 0
+    czech-chalcedonism: 1
+867.1.1:
+  pops: 
+    czech-chalcedonism: 0
+    czech-catholic: 1
+907.1.1:
+  owner: BOH
+  controller: BOH
+  cores:
+    BOH: yes
+999.1.1:
+  owner: POL
+  controller: POL
+  cores:
+    POL: yes
+1019.1.1:
+  owner: BOH
+  controller: BOH
+  cores:
+    POL: no
+1419.12.1:
+  pops: 
+    czech-catholic: 0
+    czech-hussite: 1
+1436.7.5:
+  controller: BOH
+1526.8.30:
+  owner: HAB
+  controller: HAB
+  cores:
+    BOH: no
+    HAB: yes
+1618.5.23:
+  owner: BOH
+  controller: BOH
+  cores:
+    BOH: yes
+1620.11.8:
+  owner: HAB
+  controller: HAB
+  cores:
+    BOH: no
+1918.10.28:
+  owner: CZES
+  controller: CZES
+  cores:
+    HAB: no
+    CZES: yes
+1930.1.1:
+  resource: cars
+1939.3.16:
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+1945.5.8:
+  owner: CZES
+  controller: CZES
+  cores:
+    GER: no
+1980.1.1:
+  pops: 
+    czech-hussite: 0
+    czech-irreligious: 1
+1992.12.31:
+  owner: CZEC
+  controller: CZEC
+  cores:
+    CZES: no
+    CZEC: yes

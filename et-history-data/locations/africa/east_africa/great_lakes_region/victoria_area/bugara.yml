@@ -1,0 +1,30 @@
+#imported from EU4 file: history/provinces/4063 - Karagwe.txt
+2.1.1:
+  pops: 
+    baganda_culture-bantu_religion: 1
+1350.1.1:
+  owner: KRW
+  controller: KRW
+  cores:
+    KRW: yes
+  resource: iron
+1890.1.1:
+  pops: 
+    baganda_culture-bantu_religion: 0
+    baganda_culture-catholic: 1
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+1919.6.28:
+  owner: GBR
+  controller: GBR
+  cores:
+    GER: no
+    GBR: yes
+1961.12.9:
+  owner: TANZ
+  controller: TANZ
+  cores:
+    GBR: no
+    TANZ: yes

@@ -1,0 +1,41 @@
+#imported from EU4 file: history/provinces/315 - Finnmark.txt
+2.1.1:
+  pops: 
+    sapmi-muinaisusko: 1
+750.1.1:
+  owner: SMI
+  controller: SMI
+  cores:
+    SMI: yes
+  resource: fish
+1200.1.1:
+  pops: 
+    sapmi-muinaisusko: 0
+    sapmi-catholic: 1
+  owner: NOR
+  controller: NOR
+  cores:
+    NOR: yes
+1536.1.1:
+  pops: 
+    sapmi-catholic: 0
+    sapmi-lutheran: 1
+  owner: DAN
+  controller: DAN
+  cores:
+    DAN: yes
+1814.1.14:
+  owner: SWE
+  cores:
+    DAN: no
+1814.5.17:
+  owner: NOR
+  controller: NOR
+1900.1.1:
+  pops: 
+    sapmi-lutheran: 0
+    norwegian-lutheran: 1
+1940.4.9:
+  controller: GER
+1945.5.8:
+  controller: NOR

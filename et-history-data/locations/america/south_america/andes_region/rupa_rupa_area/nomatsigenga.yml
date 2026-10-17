@@ -1,0 +1,26 @@
+#imported from EU4 file: history/provinces/2944 - Ucayali.txt
+2.1.1:
+  pops: 
+    moxo_culture-inti: 1
+1730.1.1:
+  pops: 
+    moxo_culture-inti: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  resource: tropical_wood
+1755.1.1:
+  cores:
+    SPA: yes
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    iberian_peruvian-catholic: 1
+1821.7.28:
+  owner: PERU
+  controller: PERU
+  cores:
+    PERU: yes
+1879.8.14:
+  cores:
+    SPA: no

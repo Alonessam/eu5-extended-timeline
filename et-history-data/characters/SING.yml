@@ -1,0 +1,82 @@
+sing_ken_arok_singhasari:
+  1192.1.1:
+    birth: surabaya #TODO: Date and location guessed, check if better data is available
+    first_name: ken_arok
+    dynasty: singhasari_dynasty
+    adm: 60
+    dip: 45
+    mil: 15
+    religion: hindu
+    culture: javanese_culture
+    tag: SING
+  1227.1.1:
+    death: yes
+sing_anusapati_singhasari:
+  1197.1.1:
+    birth: surabaya #TODO: Date and location guessed, check if better data is available
+    first_name: anusapati
+    dynasty: singhasari_dynasty
+    adm: 30
+    dip: 45
+    mil: 60
+    religion: hindu
+    culture: javanese_culture
+    tag: SING
+  1248.1.1:
+    death: yes
+sing_panji_tohjaya_singhasari:
+  1218.1.1:
+    birth: surabaya #TODO: Date and location guessed, check if better data is available
+    first_name: panji_tohjaya
+    dynasty: singhasari_dynasty
+    adm: 45
+    dip: 30
+    mil: 45
+    religion: hindu
+    culture: javanese_culture
+    tag: SING
+  1249.1.1:
+    death: yes
+sing_wishnuwardhana_singhasari:
+  1219.1.1:
+    birth: surabaya #TODO: Date and location guessed, check if better data is available
+    first_name: wishnuwardhana
+    dynasty: singhasari_dynasty
+    adm: 30
+    dip: 45
+    mil: 60
+    religion: hindu
+    culture: javanese_culture
+    tag: SING
+  1268.1.1:
+    death: yes
+sing_kertanegara_singhasari:
+  1238.1.1:
+    birth: surabaya #TODO: Date and location guessed, check if better data is available
+    first_name: kertanegara
+    dynasty: singhasari_dynasty
+    adm: 15
+    dip: 30
+    mil: 45
+    religion: hindu
+    culture: javanese_culture
+    tag: SING
+  3000.1.1:
+    death: yes
+sing_gayatri_rajapatni:
+  1276.1.1:
+    birth: malang
+    first_name: gayatri_rajapatni
+    female: yes
+    dynasty: singhasari_dynasty
+    father: sing_kertanegara_singhasari
+    adm: 50
+    dip: 50
+    mil: 50
+    religion: vajrayana
+    culture: javanese_culture
+    tag: MAJ
+  1293.11.10:
+    spouse: maj_raden_wijaya_rajasanagara
+  1350.1.1:
+    death: yes

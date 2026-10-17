@@ -1,0 +1,76 @@
+#imported from EU4 file: history/provinces/1858 - Stettin.txt
+2.1.1:
+  pops: 
+    western_pomeranian-germanic: 1
+  owner: LEMO
+  controller: LEMO
+  cores:
+    LEMO: yes
+  resource: naval_supplies
+140.1.1:
+  owner: RUGE
+  controller: RUGE
+  cores:
+    LEMO: no
+    RUGE: yes
+395.1.1:
+  pops: 
+    western_pomeranian-germanic: 0
+    kashubian-slavic: 1
+  owner: POM
+  controller: POM
+  cores:
+    RUGE: no
+    POM: yes
+1128.1.1:
+  pops: 
+    kashubian-slavic: 0
+    western_pomeranian-catholic: 1
+1186.1.1:
+  owner: DAN
+  controller: DAN
+  cores:
+    DAN: yes
+1235.1.1:
+  owner: POM
+  controller: POM
+  cores:
+    DAN: no
+1295.1.1:
+  owner: STE
+  controller: STE
+  cores:
+    POM: no
+    STE: yes
+1529.1.1:
+  pops: 
+    western_pomeranian-catholic: 0
+    western_pomeranian-lutheran: 1
+1630.1.1:
+  owner: SWE
+  controller: SWE
+  cores:
+    SWE: yes
+1720.1.1:
+  owner: PRU
+  controller: PRU
+  cores:
+    PRU: yes
+1871.1.18:
+  owner: GER
+  controller: GER
+  cores:
+    PRU: no
+    GER: yes
+1900.1.1:
+  cores:
+    POM: no
+1945.4.26:
+  controller: SOVI
+1945.5.8:
+  owner: POL
+  controller: POL
+  cores:
+    GER: no
+    POL: yes
+1975.1.1:

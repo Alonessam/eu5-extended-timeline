@@ -1,0 +1,18 @@
+#imported from EU4
+2.1.1:
+  government: et_tribal_federation
+  color: rgb { 40  120  190 }
+  religion: slavic_polytheism
+  primary_culture: sorbian
+  capital: bautzen
+610.1.1:
+  ruler: sorb_dervan_sorb
+790.1.1:
+  ruler: sorb_miliduch_sorb
+820.1.1:
+  ruler: sorb_czimislav_colodici
+831.1.1:
+  government: eurasian_tribe
+  government_rank: rank_duchy
+840.1.1:
+  ruler: sorb_cestibor_sorb

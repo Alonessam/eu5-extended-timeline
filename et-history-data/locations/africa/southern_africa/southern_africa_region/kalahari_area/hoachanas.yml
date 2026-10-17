@@ -1,0 +1,32 @@
+#imported from EU4 file: history/provinces/1173 - Damaraland.txt
+2.1.1:
+  pops: 
+    khoemana_culture-bantu_religion: 1
+1884.4.24:
+  pops: 
+    khoemana_culture-bantu_religion: 0
+    khoemana_culture-lutheran: 1
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+  resource: grain
+1910.3.31:
+  cores:
+    SAFR: yes
+1915.5.12:
+  controller: GBR
+1919.6.28:
+  owner: SAFR
+  controller: SAFR
+  cores:
+    GER: no
+    SAFR: yes
+1968.1.1:
+  resource: uranium
+1990.3.21:
+  owner: NAMI
+  controller: NAMI
+  cores:
+    SAFR: no
+    NAMI: yes

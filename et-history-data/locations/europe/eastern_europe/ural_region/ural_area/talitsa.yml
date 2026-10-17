@@ -1,0 +1,35 @@
+#imported from EU4 file: history/provinces/1078 - Middle Urals.txt
+2.1.1:
+  pops: 
+    khanty_culture-mari_paganism: 1
+1468.1.1:
+  owner: SIBI
+  controller: SIBI
+  cores:
+    SIBI: yes
+  resource: iron
+1582.10.26:
+  pops: 
+    khanty_culture-mari_paganism: 0
+    muscovite-orthodox: 1
+  owner: RUS
+  controller: RUS
+  cores:
+    SIBI: no
+    RUS: yes
+1775.2.1:
+  controller: RUS
+1880.1.1:
+  resource: coal
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

@@ -1,0 +1,111 @@
+#imported from EU4 file: history/provinces/2109 - Hinggan.txt
+2.1.1:
+  pops: 
+    buyeo-: 1
+  owner: BUYE
+  controller: BUYE
+  cores:
+    BUYE: yes
+  resource: iron
+410.1.1:
+  owner: GOGU
+  controller: GOGU
+  cores:
+    GOGU: yes
+520.1.1:
+  pops: 
+    buyeo-mahayana: 1
+650.1.1:
+  pops: 
+    buyeo-mahayana: 0
+    khitan-mahayana: 1
+668.1.1:
+  owner: SUMO
+  controller: SUMO
+  cores:
+    SUMO: yes
+726.1.1:
+  owner: BALH
+  controller: BALH
+  cores:
+    SUMO: no
+    GOGU: no
+    BALH: yes
+907.6.1:
+  owner: LIAO
+  controller: LIAO
+  cores:
+    BALH: no
+    LIAO: yes
+1115.1.1:
+  owner: JIN0
+  controller: JIN0
+  cores:
+    LIAO: no
+    JIN0: yes
+1214.1.1:
+  owner: MGE
+  controller: MGE
+  cores:
+    JIN0: no
+    MGE: yes
+1220.1.1:
+  pops: 
+    khitan-mahayana: 0
+    chahar-mahayana: 1
+1265.1.1:
+  pops: 
+    chahar-mahayana: 0
+    chahar-tibetan_buddhism: 1
+1271.1.1:
+  owner: YUA
+  controller: YUA
+  cores:
+    MGE: no
+    YUA: yes
+1368.1.23:
+  owner: KHRC
+  controller: KHRC
+  cores:
+    YUA: no
+    KHRC: yes
+1624.1.1:
+  owner: MCH
+  controller: MCH
+  cores:
+    KHRC: no
+    MCH: yes
+1636.5.15:
+  owner: QNG
+  controller: QNG
+  cores:
+    MCH: no
+    QNG: yes
+1875.1.1:
+  pops: 
+    chahar-tibetan_buddhism: 0
+    manchu_new-tibetan_buddhism: 1
+1912.2.12:
+  owner: CHI
+  controller: CHI
+  cores:
+    QNG: no
+    CHI: yes
+1920.1.1:
+  resource: coal
+1924.11.3:
+  controller: CHI
+1932.2.4:
+  controller: JAP
+1932.2.18:
+  owner: MANC
+  controller: MANC
+  cores:
+    MANC: yes
+1945.8.15:
+  owner: CHI
+  controller: CHI
+  cores:
+    MANC: no
+1949.10.1:
+  controller: CHI

@@ -1,0 +1,34 @@
+#imported from EU4 file: history/provinces/2772 - Dembiya.txt
+2.1.1:
+  pops: 
+    agaw_culture-judaism: 1
+  owner: AKSM
+  controller: AKSM
+  cores:
+    AKSM: yes
+  resource: cotton
+960.1.1:
+  owner: ETH
+  controller: ETH
+  cores:
+    AKSM: no
+    ETH: yes
+1000.1.1:
+  pops: 
+    agaw_culture-judaism: 0
+    amhara-judaism: 1
+1200.1.1:
+  pops: 
+    amhara-judaism: 0
+    amhara-miaphysite: 1
+1631.1.1:
+  controller: ETH
+1632.8.1:
+  controller: ETH
+1880.1.1:
+1936.5.9:
+  owner: ITA
+  controller: ITA
+1941.11.27:
+  owner: ETH
+  controller: ETH

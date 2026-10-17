@@ -1,0 +1,33 @@
+#imported from EU4 file: history/provinces/953 - Conoy.txt
+2.1.1:
+  pops: 
+    powhatan_culture-iroquoian_totemism: 1
+1634.3.24:
+  pops: 
+    powhatan_culture-iroquoian_totemism: 0
+    english-lutheran: 1
+  owner: ENG
+  controller: ENG
+  cores:
+    ENG: yes
+  resource: tobacco
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    ENG: no
+    GBR: yes
+1764.7.1:
+  pops: 
+    english-lutheran: 0
+    american-lutheran: 1
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1782.11.1:
+  cores:
+    GBR: no
+1970.1.1:
+  resource: electronics

@@ -1,0 +1,38 @@
+#imported from EU4 file: history/provinces/2780 - Beledweyne.txt
+2.1.1:
+  pops: 
+    somali_culture-bantu_religion: 1
+850.1.1:
+  pops: 
+    somali_culture-bantu_religion: 0
+    somali_culture-sunni: 1
+  owner: AJU
+  controller: AJU
+  cores:
+    AJU: yes
+  resource: livestock
+1526.1.1:
+  owner: ADA
+  controller: ADA
+1555.1.1:
+  owner: AJU
+  controller: AJU
+1620.1.1:
+  owner: MDI
+  controller: MDI
+  cores:
+    AJU: no
+1889.1.7:
+  owner: ITA
+  controller: ITA
+  cores:
+    ITA: yes
+1960.7.1:
+  owner: SOMA
+  controller: SOMA
+  cores:
+    ITA: no
+    MDI: no
+    SOMA: yes
+2011.12.31:
+  controller: SOMA

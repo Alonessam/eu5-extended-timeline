@@ -1,0 +1,67 @@
+#imported from EU4 file: history/provinces/2996 - Mecklenburg.txt
+2.1.1:
+  pops: 
+    saxon-germanic: 1
+  owner: SAX
+  controller: SAX
+  cores:
+    SAX: yes
+  resource: cloth
+570.1.1:
+  pops: 
+    saxon-germanic: 0
+    polabian-slavic: 1
+  owner: OBOT
+  controller: OBOT
+  cores:
+    SAX: no
+    OBOT: yes
+1160.1.1:
+  pops: 
+    polabian-slavic: 0
+    polabian-catholic: 1
+1178.1.1:
+  pops: 
+    polabian-catholic: 0
+    western_pomeranian-catholic: 1
+  owner: MKL
+  controller: MKL
+  cores:
+    OBOT: no
+    MKL: yes
+1531.1.1:
+  pops: 
+    western_pomeranian-catholic: 0
+    western_pomeranian-lutheran: 1
+1648.10.24:
+  owner: SWE
+  controller: SWE
+  cores:
+    SWE: yes
+1803.1.1:
+  owner: MKL
+  controller: MKL
+  cores:
+    MKL: yes
+1871.1.18:
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+1900.1.1:
+  cores:
+    MKL: no
+1945.5.8:
+  owner: EGER
+  controller: EGER
+  cores:
+    EGER: yes
+1985.1.1:
+  pops: 
+    western_pomeranian-lutheran: 0
+    western_pomeranian-irreligious: 1
+1990.10.3:
+  owner: GER
+  controller: GER
+  cores:
+    EGER: no

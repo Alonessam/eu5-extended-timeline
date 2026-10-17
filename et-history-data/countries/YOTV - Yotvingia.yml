@@ -1,0 +1,14 @@
+#imported from EU4
+2.1.1:
+  government: et_tribal_federation
+  color: rgb { 4  59  146 }
+  government_rank: rank_duchy
+  religion: romuva
+  primary_culture: yotvingian
+  capital: suwalki
+980.1.1:
+  government: eastern_european_monarchy
+1240.1.1:
+  ruler: yotv_skomantas_yotvingian
+1387.1.1:
+  religion: catholic

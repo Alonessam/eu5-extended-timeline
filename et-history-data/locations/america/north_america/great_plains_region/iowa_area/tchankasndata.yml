@@ -1,0 +1,17 @@
+#imported from EU4 file: history/provinces/4900 - Otoe.txt
+2.1.1:
+  pops: 
+    tsawi_culture-iroquoian_totemism: 1
+1710.1.1:
+  pops: 
+    tsawi_culture-iroquoian_totemism: 0
+    ithanktunwan_culture-iroquoian_totemism: 1
+1819.1.1:
+  pops: 
+    ithanktunwan_culture-iroquoian_totemism: 0
+    american-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+  resource: livestock

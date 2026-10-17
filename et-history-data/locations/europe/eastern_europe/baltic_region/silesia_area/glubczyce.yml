@@ -1,0 +1,98 @@
+#imported from EU4 file: history/provinces/263 - Ratibor.txt
+2.1.1:
+  pops: 
+    vandal-germanic: 1
+  owner: VAND
+  controller: VAND
+  cores:
+    VAND: yes
+  resource: iron
+395.1.1:
+  owner: NAHA
+  controller: NAHA
+  cores:
+    VAND: no
+    NAHA: yes
+550.1.1:
+  pops: 
+    vandal-germanic: 0
+    silesian-slavic: 1
+  owner: SIL
+  controller: SIL
+  cores:
+    SCIR: no
+    SIL: yes
+940.1.1:
+  owner: BOH
+  controller: BOH
+  cores:
+    BOH: yes
+990.1.1:
+  owner: POL
+  controller: POL
+  cores:
+    BOH: no
+    POL: yes
+1020.1.1:
+  pops: 
+    silesian-slavic: 0
+    silesian-catholic: 1
+1039.1.1:
+  owner: BOH
+  controller: BOH
+  cores:
+    BOH: yes
+1054.1.1:
+  owner: POL
+  controller: POL
+1163.1.1:
+  owner: OPL
+  controller: OPL
+  cores:
+    OPL: yes
+1282.8.27:
+  owner: RCB
+  controller: RCB
+  cores:
+    RCB: yes
+1337.1.1:
+  owner: BOH
+  controller: BOH
+  cores:
+    BOH: yes
+1523.1.1:
+  pops: 
+    silesian-catholic: 0
+    silesian-lutheran: 1
+1675.11.21:
+  owner: HAB
+  controller: HAB
+  cores:
+    HAB: yes
+1740.1.1:
+  cores:
+    PRU: yes
+1745.1.1:
+  owner: PRU
+  controller: PRU
+1763.1.1:
+  cores:
+    HAB: no
+1870.1.1:
+  resource: coal
+1871.1.18:
+  owner: GER
+  controller: GER
+  cores:
+    PRU: no
+    SIL: no
+    GER: yes
+1930.1.1:
+  resource: cars
+1945.5.8:
+  owner: POL
+  controller: POL
+  cores:
+    GER: no
+    POL: yes
+1950.1.1:

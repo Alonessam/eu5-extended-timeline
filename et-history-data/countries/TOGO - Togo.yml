@@ -1,0 +1,21 @@
+#imported from EU4
+2.1.1:
+  government: subsaharan_monarchy
+  color: rgb { 99  17  122 }
+  religion: bantu_religion
+  primary_culture: yoruba
+  capital: anecho
+1900.1.1:
+  government: et_modern_republic
+1910.1.1:
+  religion: secularism
+1960.4.27:
+  ruler: togo_sylvanus_olympio
+1963.1.16:
+  ruler: togo_nicolas_grunitzky
+1967.1.14:
+  ruler: togo_kleber_dadjo
+1967.4.14:
+  ruler: togo_etienne_eyadema
+2005.2.5:
+  ruler: togo_faure_gnassingbe

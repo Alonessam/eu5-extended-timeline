@@ -1,0 +1,32 @@
+#imported from EU4 file: history/provinces/1249 - Yola.txt
+2.1.1:
+  pops: 
+    jukun-bantu_religion: 1
+1807.1.1:
+  owner: SOKO
+  controller: SOKO
+  cores:
+    SOKO: yes
+  resource: grain
+1901.1.1:
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+1910.1.1:
+  pops: 
+    jukun-bantu_religion: 0
+    jukun-catholic: 1
+1919.6.28:
+  owner: GBR
+  controller: GBR
+  cores:
+    GER: no
+    GBR: yes
+1960.10.1:
+  owner: NIGR
+  controller: NIGR
+  cores:
+    GBR: no
+    SOKO: no
+    NIGR: yes

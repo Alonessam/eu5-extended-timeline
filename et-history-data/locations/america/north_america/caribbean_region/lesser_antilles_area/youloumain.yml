@@ -1,0 +1,45 @@
+#imported from EU4 file: history/provinces/3057 - St. Vincent.txt
+2.1.1:
+  pops: 
+    guaribes_culture-muisca_religion: 1
+1719.1.1:
+  pops: 
+    guaribes_culture-muisca_religion: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  resource: sugar
+1750.1.1:
+  cores:
+    FRA: yes
+1763.2.10:
+  owner: GBR
+  controller: GBR
+1779.6.20:
+  owner: FRA
+  controller: FRA
+1780.1.1:
+  pops: 
+    french-catholic: 0
+    french_caribbean-catholic: 1
+1783.9.4:
+  pops: 
+    french_caribbean-catholic: 0
+    british_caribbean-calvinist: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1863.1.1:
+  pops: 
+    british_caribbean-calvinist: 0
+    british_caribbean-lutheran: 1
+1969.10.27:
+  cores:
+    SVGR: yes
+1979.10.27:
+  owner: SVGR
+  controller: SVGR
+  cores:
+    GBR: no

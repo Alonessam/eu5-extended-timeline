@@ -1,0 +1,11 @@
+#imported from EU4
+2.1.1:
+  government: et_tribal_federation
+  color: rgb { 90  50  11 }
+  religion: slavic_polytheism
+  primary_culture: novgorodian
+  capital: novgorod
+750.1.1:
+  ruler: ilme_burivoi_ilmen
+800.1.1:
+  ruler: ilme_gostomysl_ilmen

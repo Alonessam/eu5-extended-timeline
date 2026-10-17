@@ -1,0 +1,84 @@
+#imported from EU4 file: history/provinces/1846 - Yazgod.txt
+2.1.1:
+  pops: 
+    pontic_greek_culture-hellenism_religion: 1
+  owner: PONT
+  controller: PONT
+  cores:
+    PONT: yes
+  resource: iron
+62.1.1:
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+80.1.1:
+  cores:
+    PONT: no
+395.1.17:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    ROM: no
+    BYZ: yes
+440.1.1:
+  pops: 
+    pontic_greek_culture-hellenism_religion: 0
+    pontic_greek_culture-chalcedonism: 1
+867.1.1:
+  pops: 
+    pontic_greek_culture-chalcedonism: 0
+    pontic_greek_culture-orthodox: 1
+1075.1.1:
+  owner: DANI
+  controller: DANI
+  cores:
+    DANI: yes
+1120.1.1:
+  pops: 
+    pontic_greek_culture-orthodox: 0
+    turkish_culture-sunni: 1
+1178.1.1:
+  owner: RUM
+  controller: RUM
+  cores:
+    RUM: yes
+1200.1.1:
+  resource: paper
+1234.1.1:
+  owner: MGE
+  controller: MGE
+  cores:
+    MGE: yes
+1240.1.1:
+  cores:
+    BYZ: no
+1260.1.1:
+  owner: ILK
+  controller: ILK
+  cores:
+    MGE: no
+    ILK: yes
+1335.1.1:
+  owner: ERE
+  controller: ERE
+  cores:
+    ILK: no
+    ERE: yes
+1399.1.1:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1482.7.26:
+  controller: TUR
+1513.1.1:
+  controller: TUR
+1920.4.24:
+  owner: TURK
+  controller: TURK
+  cores:
+    TURK: yes
+1922.11.1:
+  cores:
+    TUR: no

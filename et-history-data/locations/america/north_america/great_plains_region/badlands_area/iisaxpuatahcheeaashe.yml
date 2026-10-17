@@ -1,0 +1,15 @@
+#imported from EU4 file: history/provinces/2504 - Eeelalapito.txt
+2.1.1:
+  pops: 
+    siksika_culture-iroquoian_totemism: 1
+1865.8.15:
+  pops: 
+    siksika_culture-iroquoian_totemism: 0
+    british_californian-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    CHEY: no
+    USA: yes
+1880.1.1:
+  resource: coal

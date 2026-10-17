@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/2586 - Tionontate.txt
+2.1.1:
+  pops: 
+    tionontate_culture-iroquoian_totemism: 1
+  owner: TIO
+  controller: TIO
+  cores:
+    TIO: yes
+  resource: tobacco
+1650.1.1:
+  pops: 
+    tionontate_culture-iroquoian_totemism: 0
+    ojibwe_culture-iroquoian_totemism: 1
+  owner: ---
+  controller: ---
+  cores:
+    TIO: no
+1800.1.1:
+  pops: 
+    ojibwe_culture-iroquoian_totemism: 0
+    british_canadian-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

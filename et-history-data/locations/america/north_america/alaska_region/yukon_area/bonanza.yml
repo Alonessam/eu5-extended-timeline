@@ -1,0 +1,16 @@
+#imported from EU4 file: history/provinces/3107 - Gwichin.txt
+2.1.1:
+  pops: 
+    tlingit_culture-iroquoian_totemism: 1
+1885.1.1:
+  pops: 
+    tlingit_culture-iroquoian_totemism: 0
+    tlingit_culture-lutheran: 1
+  owner: CAN
+  controller: CAN
+  cores:
+    CAN: yes
+  resource: naval_supplies
+1896.1.1:
+  resource: gold
+2020.1.1:

@@ -1,0 +1,22 @@
+#imported from EU4 file: history/provinces/1096 - Cape Verde.txt
+2.1.1:
+  pops: 
+    uninhabited-: 1
+1457.1.1:
+  pops: 
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+  resource: slaves
+1500.1.1:
+  resource: fish
+1951.1.1:
+  cores:
+    CPVR: yes
+1975.7.5:
+  owner: CPVR
+  controller: CPVR
+  cores:
+    POR: no

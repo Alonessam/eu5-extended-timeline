@@ -1,0 +1,38 @@
+#imported from EU4 file: history/provinces/3276 - Amis.txt
+2.1.1:
+  pops: 
+    formosan_culture-bimoism: 1
+  owner: AMIS
+  controller: AMIS
+  cores:
+    AMIS: yes
+  resource: fish
+1851.1.1:
+  owner: QNG
+  controller: QNG
+  cores:
+    MNG: no
+    QNG: yes
+1860.1.1:
+  pops: 
+    formosan_culture-bimoism: 0
+    taiwanese-mahayana: 1
+1895.4.17:
+  owner: JAP
+  controller: JAP
+  cores:
+    JAP: yes
+1912.2.12:
+  cores:
+    CHI: yes
+    QNG: no
+1945.8.15:
+  owner: CHI
+  controller: CHI
+  cores:
+    JAP: no
+1949.10.1:
+  owner: TAIW
+  controller: TAIW
+  cores:
+    TAIW: yes

@@ -1,0 +1,90 @@
+#imported from EU4 file: history/provinces/236 - London.txt
+2.1.1:
+  pops: 
+    briton-druidism: 1
+  owner: CATU
+  controller: CATU
+  cores:
+    CATU: yes
+  resource: cloth
+43.1.1:
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+58.2.1:
+  city:
+    rank: city
+250.1.1:
+  pops: 
+    briton-druidism: 0
+    briton-hellenism_religion: 1
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+420.1.1:
+  pops: 
+    briton-hellenism_religion: 0
+    anglo_saxon-germanic: 1
+  owner: ESSE
+  controller: ESSE
+  cores:
+    ROMW: no
+    ESSE: yes
+670.1.1:
+  owner: MERC
+  controller: MERC
+  cores:
+    ESSE: no
+    MERC: yes
+675.1.1:
+  pops: 
+    anglo_saxon-germanic: 0
+    anglo_saxon-chalcedonism: 1
+825.1.1:
+  owner: WESS
+  controller: WESS
+  cores:
+    WESS: yes
+867.1.1:
+  pops: 
+    anglo_saxon-chalcedonism: 0
+    anglo_saxon-catholic: 1
+871.1.1:
+  controller: DAN
+886.1.1:
+  controller: WESS
+911.1.1:
+  cores:
+    MERC: no
+927.1.1:
+  owner: ENG
+  controller: ENG
+  cores:
+    ENG: yes
+1027.1.1:
+  cores:
+    WESS: no
+1066.12.25:
+  pops: 
+    anglo_saxon-catholic: 0
+    english-catholic: 1
+1461.6.1:
+  controller: ENG
+1534.11.1:
+  pops: 
+    english-catholic: 0
+    english-anglican: 1
+1646.5.5:
+  controller: ENG
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    ENG: no
+    GBR: yes
+1970.1.1:
+  resource: electronics

@@ -1,0 +1,30 @@
+#imported from EU4 file: history/provinces/2002 - Galapagos Islands.txt
+2.1.1:
+  pops: 
+    uninhabited-bimoism: 1
+1535.3.10:
+  pops: 
+    uninhabited-bimoism: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+1600.1.1:
+  cores:
+    SPA: yes
+  resource: grain
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    iberian_colombian-catholic: 1
+1819.12.17:
+  owner: COLO
+  controller: COLO
+  cores:
+    SPA: no
+    COLO: yes
+1830.5.13:
+  owner: ECUA
+  controller: ECUA
+  cores:
+    COLO: no
+    ECUA: yes

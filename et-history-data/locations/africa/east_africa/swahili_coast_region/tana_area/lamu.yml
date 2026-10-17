@@ -1,0 +1,61 @@
+#imported from EU4 file: history/provinces/1204 - Lamu.txt
+2.1.1:
+  pops: 
+    somali_culture-bantu_religion: 1
+200.1.1:
+  pops: 
+    somali_culture-bantu_religion: 0
+    swahili_culture-bantu_religion: 1
+850.1.1:
+  owner: MLI
+  controller: MLI
+  cores:
+    MLI: yes
+  resource: ivory
+1000.1.1:
+  pops: 
+    swahili_culture-bantu_religion: 0
+    swahili_culture-sunni: 1
+1586.1.1:
+  owner: TUR
+  controller: TUR
+1588.1.1:
+  owner: MLI
+  controller: MLI
+1637.1.1:
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+1689.1.1:
+  owner: MLI
+  controller: MLI
+  cores:
+    POR: no
+1728.1.1:
+  owner: POR
+  controller: POR
+1729.7.1:
+  owner: OMA
+  controller: OMA
+  cores:
+    OMA: yes
+1856.10.19:
+  owner: ZZB
+  controller: ZZB
+  cores:
+    OMA: no
+    ZZB: yes
+1895.7.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    ZZB: no
+    GBR: yes
+1963.12.12:
+  owner: KENY
+  controller: KENY
+  cores:
+    GBR: no
+    MLI: no
+    KENY: yes

@@ -1,0 +1,121 @@
+#imported from EU4 file: history/provinces/4551 - Avila.txt
+2.1.1:
+  pops: 
+    celtiberian-druidism: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: livestock
+360.1.1:
+  pops: 
+    celtiberian-druidism: 0
+    celtiberian-chalcedonism: 1
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+448.1.1:
+  owner: SUEB
+  controller: SUEB
+  cores:
+    SUEB: yes
+453.1.1:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    SUEB: no
+456.1.1:
+  owner: VISG
+  controller: VISG
+  cores:
+    VISG: yes
+458.10.1:
+  owner: ROMW
+  controller: ROMW
+461.8.2:
+  owner: VISG
+  controller: VISG
+  cores:
+    ROMW: no
+470.1.1:
+  pops: 
+    celtiberian-chalcedonism: 0
+    celtiberian-arianism: 1
+570.1.1:
+  pops: 
+    celtiberian-arianism: 0
+    celtiberian-chalcedonism: 1
+711.1.1:
+  owner: UMAY
+  controller: UMAY
+  cores:
+    VISG: no
+    UMAY: yes
+750.8.6:
+  owner: CRDB
+  controller: CRDB
+  cores:
+    UMAY: no
+    CRDB: yes
+780.1.1:
+  pops: 
+    celtiberian-chalcedonism: 0
+    celtiberian-sunni: 1
+800.1.1:
+  pops: 
+    celtiberian-sunni: 0
+    andalusi-sunni: 1
+1011.1.1:
+  owner: TOLE
+  controller: TOLE
+  cores:
+    CRDB: no
+    TOLE: yes
+1080.1.1:
+  owner: MOR
+  controller: MOR
+1081.1.1:
+  owner: TOLE
+  controller: TOLE
+1085.5.25:
+  pops: 
+    andalusi-sunni: 0
+    castilian-sunni: 1
+  owner: CAS
+  controller: CAS
+  cores:
+    TOLE: no
+    CAS: yes
+1150.1.1:
+  pops: 
+    castilian-sunni: 0
+    castilian-catholic: 1
+1516.1.23:
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1521.4.1:
+  controller: SPA
+1706.6.25:
+  controller: ENG
+1706.8.4:
+  controller: SPA
+1710.9.27:
+  controller: HAB
+1710.11.9:
+  controller: SPA
+1713.4.11:
+  cores:
+    CAS: no
+1808.5.1:
+  controller: FRA
+1808.5.3:
+  controller: SPA
+1813.12.11:
+  controller: SPA
+1970.1.1:
+  resource: electronics

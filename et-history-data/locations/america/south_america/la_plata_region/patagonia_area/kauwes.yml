@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/782 - Tierra del Fuego.txt
+2.1.1:
+  pops: 
+    teushen_culture-muisca_religion: 1
+1879.1.1:
+  pops: 
+    teushen_culture-muisca_religion: 0
+    iberian_peruvian-catholic: 1
+  owner: CHIL
+  controller: CHIL
+  cores:
+    CHIL: yes
+    ARGE: yes
+  resource: gold
+1881.7.23:
+  cores:
+    ARGE: no
+1950.1.1:
+  resource: fish

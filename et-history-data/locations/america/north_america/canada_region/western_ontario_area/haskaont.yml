@@ -1,0 +1,47 @@
+#imported from EU4 file: history/provinces/2670 - Tkaronto.txt
+2.1.1:
+  pops: 
+    attigneenongnahac_culture-iroquoian_totemism: 1
+  owner: TRT
+  controller: TRT
+  cores:
+    TRT: yes
+  resource: tobacco
+1650.1.1:
+  pops: 
+    attigneenongnahac_culture-iroquoian_totemism: 0
+    onondowaga_culture-iroquoian_totemism: 1
+  owner: ---
+  controller: ---
+  cores:
+    TRT: no
+1701.8.4:
+  pops: 
+    onondowaga_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+1763.2.10:
+  owner: GBR
+  controller: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1783.1.1:
+  pops: 
+    french-catholic: 0
+    english-lutheran: 1
+1790.1.1:
+  pops: 
+    english-lutheran: 0
+    british_canadian-lutheran: 1
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes
+1920.1.1:
+  resource: cars

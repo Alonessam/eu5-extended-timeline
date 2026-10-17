@@ -1,0 +1,7 @@
+#imported from EU4
+2.1.1:
+  government: eurasian_tribe
+  color: rgb { 110  187  61 }
+  religion: germanic_polytheism
+  primary_culture: swabian
+  capital: nuremberg

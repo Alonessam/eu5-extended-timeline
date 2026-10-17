@@ -1,0 +1,35 @@
+#imported from EU4 file: history/provinces/778 - Rio de la Plata.txt
+2.1.1:
+  pops: 
+    charrua_culture-muisca_religion: 1
+  resource: grain
+1535.1.1:
+  pops: 
+    charrua_culture-muisca_religion: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  resource: fish
+1560.1.1:
+  cores:
+    SPA: yes
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    iberian_la_platan-catholic: 1
+1816.7.9:
+  owner: ARGE
+  controller: ARGE
+  cores:
+    SPA: no
+    ARGE: yes
+1852.9.11:
+  owner: BUAI
+  controller: BUAI
+  cores:
+    BUAI: yes
+1861.12.17:
+  owner: ARGE
+  controller: ARGE
+  cores:
+    BUAI: no

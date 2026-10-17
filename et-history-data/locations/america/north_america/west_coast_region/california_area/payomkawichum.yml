@@ -1,0 +1,34 @@
+#imported from EU4 file: history/provinces/2476 - Kumeyaay.txt
+2.1.1:
+  pops: 
+    pima_culture-iroquoian_totemism: 1
+1769.7.16:
+  pops: 
+    pima_culture-iroquoian_totemism: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+  resource: grain
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    mexican-catholic: 1
+1810.9.16:
+  owner: MEX
+  controller: SPA
+  cores:
+    MEX: yes
+1821.9.27:
+  controller: MEX
+  cores:
+    SPA: no
+1846.8.13:
+  controller: USA
+1848.2.2:
+  owner: USA
+  cores:
+    MEX: no
+    USA: yes
+1920.1.1:

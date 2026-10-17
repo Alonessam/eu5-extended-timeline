@@ -1,0 +1,35 @@
+#imported from EU4 file: history/provinces/763 - Rio de Janeiro.txt
+2.1.1:
+  pops: 
+    tupinamba_culture-muisca_religion: 1
+1555.1.1:
+  pops: 
+    tupinamba_culture-muisca_religion: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  resource: sugar
+1565.3.1:
+  pops: 
+    french-catholic: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+1590.1.1:
+  cores:
+    POR: yes
+1750.1.1:
+  cores:
+    POR: yes
+1780.1.1:
+  pops: 
+    portuguese-catholic: 0
+    brazilian-catholic: 1
+1822.9.7:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    POR: no
+    BRAZ: yes
+2006.1.1:
+  resource: oil

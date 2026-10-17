@@ -1,0 +1,48 @@
+#imported from EU4 file: history/provinces/1958 - Kargopol.txt
+2.1.1:
+  pops: 
+    vepsian-muinaisusko: 1
+750.1.1:
+  owner: VEPS
+  controller: VEPS
+  cores:
+    VEPS: yes
+  resource: naval_supplies
+1146.1.1:
+  owner: NOV
+  controller: NOV
+  cores:
+    VEPS: no
+    NOV: yes
+1160.1.1:
+  pops: 
+    vepsian-muinaisusko: 0
+    novgorodian-muinaisusko: 1
+1200.1.1:
+  pops: 
+    novgorodian-muinaisusko: 0
+    novgorodian-orthodox: 1
+1478.1.15:
+  owner: MOS
+  controller: MOS
+  cores:
+    NOV: no
+    MOS: yes
+1503.4.1:
+  owner: RUS
+  controller: RUS
+  cores:
+    MOS: no
+    RUS: yes
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

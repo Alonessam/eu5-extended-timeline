@@ -1,0 +1,53 @@
+#imported from EU4 file: history/provinces/1765 - Nis.txt
+2.1.1:
+  pops: 
+    thracian-hellenism_religion: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: iron
+395.1.17:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    ROM: no
+    BYZ: yes
+700.1.1:
+  pops: 
+    thracian-hellenism_religion: 0
+    thracian-chalcedonism: 1
+809.1.1:
+  pops: 
+    thracian-chalcedonism: 0
+    bulgarian-chalcedonism: 1
+  owner: BUL
+  controller: BUL
+  cores:
+    BUL: yes
+867.1.1:
+  pops: 
+    bulgarian-chalcedonism: 0
+    bulgarian-orthodox: 1
+1014.1.1:
+  owner: BYZ
+  controller: BYZ
+1185.1.1:
+  owner: BUL
+  controller: BUL
+1385.1.1:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1413.1.1:
+  controller: TUR
+1878.1.4:
+  controller: RUS
+1878.3.3:
+  controller: TUR
+1878.7.13:
+  owner: BUL
+  controller: BUL
+  cores:
+    TUR: no

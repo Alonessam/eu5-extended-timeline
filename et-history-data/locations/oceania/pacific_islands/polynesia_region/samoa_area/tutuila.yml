@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/3217 - Pago Pago.txt
+2.1.1:
+  pops: 
+    maohi_culture-bimoism: 1
+900.1.1:
+  owner: SAM
+  controller: SAM
+  cores:
+    SAM: yes
+  resource: fish
+1877.1.1:
+  pops: 
+    maohi_culture-bimoism: 0
+    maohi_culture-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1962.1.1:
+  cores:
+    SAM: no

@@ -1,0 +1,11 @@
+#imported from EU4
+2.1.1:
+  government: eurasian_tribe
+  color: rgb { 90  20  20 }
+  religion: germanic_polytheism
+  primary_culture: eastphalian
+  capital: stade
+20.1.1:
+  ruler: chci_gannascus_chauci
+69.1.1:
+  ruler: chci_brinno_chauci

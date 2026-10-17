@@ -1,0 +1,51 @@
+#imported from EU4 file: history/provinces/2555 - Honniasont.txt
+2.1.1:
+  pops: 
+    tionontate_culture-iroquoian_totemism: 1
+1656.1.1:
+  pops: 
+    tionontate_culture-iroquoian_totemism: 0
+    onondowaga_culture-iroquoian_totemism: 1
+  cores:
+    ???: yes
+  resource: fur
+1754.4.18:
+  pops: 
+    onondowaga_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+1763.2.10:
+  pops: 
+    french-catholic: 0
+    english-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1763.10.9:
+  pops: 
+    english-lutheran: 0
+    onondowaga_culture-iroquoian_totemism: 1
+  cores:
+    GBR: no
+    ???: yes
+1768.11.5:
+  pops: 
+    onondowaga_culture-iroquoian_totemism: 0
+    american-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    GBR: no
+    USA: yes
+1880.1.1:
+  resource: coal

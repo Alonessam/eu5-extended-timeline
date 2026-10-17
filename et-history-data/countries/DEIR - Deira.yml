@@ -1,0 +1,37 @@
+1:
+  government: et_tribal_federation
+  color: rgb { 80  189  135 }
+  government_rank: rank_duchy
+  religion: druidism
+  primary_culture: welsh
+  capital: york
+540:
+  ruler: deir_yffe_yffing
+  religion: germanic_polytheism
+  primary_culture: anglo_saxon
+559:
+  ruler: deir_aella_yffing
+589:
+  ruler: deir_aethelric_iding
+604:
+  ruler: bern_aethelfrith_iding
+616:
+  ruler: deir_edwin_yffing
+632.10.14:
+  ruler: deir_osric_iding
+634.6:
+  government: et_tribal_federation
+  religion: chalcedonism
+  ruler: bern_oswald_bernicia
+642.8.5:
+  ruler: nol_oswiu_of_northumbria
+644:
+  ruler: deir_oswine_yffing
+651.8.20:
+  ruler: deir_oethelwald_iding
+655.11.15:
+  ruler: deir_alhfrith_iding
+664:
+  ruler: nol_ecgfrith_of_northumbria
+670.2.15:
+  ruler: deir_aelfwine_iding

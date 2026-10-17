@@ -1,0 +1,20 @@
+#imported from EU4 file: history/provinces/4921 - Kuttawa.txt
+2.1.1:
+  pops: 
+    chalahgawtha_culture-iroquoian_totemism: 1
+1774.10.19:
+  pops: 
+    chalahgawtha_culture-iroquoian_totemism: 0
+    british_louisianan-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    GBR: no
+    USA: yes
+1930.1.1:
+  resource: cars

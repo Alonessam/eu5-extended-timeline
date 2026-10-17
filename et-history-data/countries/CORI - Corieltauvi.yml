@@ -1,0 +1,10 @@
+#imported from EU4
+2.1.1:
+  government: eurasian_tribe
+  color: rgb { 145 20 12 }
+  ruler: cori_dumnocoveros_corieltauvi
+  religion: druidism
+  primary_culture: briton
+  capital: leicester
+30.1.1:
+  ruler: cori_cartivellaunos_corieltauvi

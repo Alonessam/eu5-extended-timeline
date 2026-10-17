@@ -1,0 +1,11 @@
+#imported from EU4 file: history/provinces/1988 - Rapa Nui.txt
+2.1.1:
+  pops: 
+    maohi_culture-bimoism: 1
+1888.1.2:
+  cores:
+    CHIL: yes
+1888.9.9:
+  owner: CHIL
+  controller: CHIL
+  resource: fish

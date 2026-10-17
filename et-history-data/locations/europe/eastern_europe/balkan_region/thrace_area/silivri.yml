@@ -1,0 +1,55 @@
+#imported from EU4 file: history/provinces/151 - Thrace.txt
+2.1.1:
+  pops: 
+    greek_culture-hellenism_religion: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: glass
+320.1.1:
+  pops: 
+    greek_culture-hellenism_religion: 0
+    greek_culture-chalcedonism: 1
+395.1.17:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    ROM: no
+    BYZ: yes
+867.1.1:
+  pops: 
+    greek_culture-chalcedonism: 0
+    greek_culture-orthodox: 1
+1204.4.13:
+  owner: LAT
+  controller: LAT
+  cores:
+    LAT: yes
+1261.1.1:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    LAT: no
+1453.5.29:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1459.1.1:
+  pops: 
+    greek_culture-orthodox: 0
+    turkish_culture-sunni: 1
+1502.1.1:
+  cores:
+    BYZ: no
+1622.6.1:
+  controller: TUR
+1920.4.24:
+  cores:
+    TURK: yes
+1922.11.1:
+  owner: TURK
+  controller: TURK
+  cores:
+    TUR: no

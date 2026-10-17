@@ -1,0 +1,33 @@
+#imported from EU4 file: history/provinces/4894 - Ottagotouemin.txt
+2.1.1:
+  pops: 
+    weskarini_culture-iroquoian_totemism: 1
+1668.1.1:
+  pops: 
+    weskarini_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: fur
+1760.1.1:
+  controller: GBR
+1763.2.10:
+  owner: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1790.1.1:
+  pops: 
+    french-catholic: 0
+    french_canadian-catholic: 1
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes
+1980.5.20:
+  cores:
+    QUEB: yes

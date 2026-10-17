@@ -1,0 +1,24 @@
+#imported from EU4 file: history/provinces/2524 - Wabash.txt
+2.1.1:
+  pops: 
+    osage_culture-iroquoian_totemism: 1
+  owner: WZZ
+  controller: WZZ
+  cores:
+    WZZ: yes
+  resource: grain
+1670.1.1:
+  pops: 
+    osage_culture-iroquoian_totemism: 0
+    chalahgawtha_culture-iroquoian_totemism: 1
+  owner: ---
+  controller: ---
+1805.1.1:
+  pops: 
+    chalahgawtha_culture-iroquoian_totemism: 0
+    american-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+  resource: grain

@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/3069 - Maniema.txt
+2.1.1:
+  pops: 
+    luba-bantu_religion: 1
+1895.1.1:
+  pops: 
+    luba-bantu_religion: 0
+    luba-catholic: 1
+  owner: BEL
+  controller: BEL
+  cores:
+    BEL: yes
+  resource: grain
+1960.7.1:
+  owner: DRCO
+  controller: DRCO
+  cores:
+    BEL: no
+    DRCO: yes

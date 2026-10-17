@@ -1,0 +1,51 @@
+#imported from EU4 file: history/provinces/2449 - Jufra.txt
+2.1.1:
+  pops: 
+    eastern_amazigh-bantu_religion: 1
+  owner: GARA
+  controller: GARA
+  cores:
+    GARA: yes
+  resource: livestock
+660.1.1:
+  owner: FZA
+  controller: FZA
+  cores:
+    GARA: no
+    FZA: yes
+850.1.1:
+  pops: 
+    eastern_amazigh-bantu_religion: 0
+    eastern_amazigh-ibadi: 1
+1070.1.1:
+  pops: 
+    eastern_amazigh-ibadi: 0
+    tunisian-sunni: 1
+1173.1.1:
+  owner: MAM
+  controller: MAM
+  cores:
+    MAM: yes
+1212.1.1:
+  owner: FZA
+  controller: FZA
+  cores:
+    MAM: no
+    FZA: yes
+1912.10.18:
+  owner: ITA
+  controller: ITA
+  cores:
+    FZA: no
+    ITA: yes
+    LIBY: yes
+1943.1.12:
+  controller: FRA
+1943.4.11:
+  owner: FRA
+  controller: FRA
+  cores:
+    ITA: no
+1951.12.24:
+  owner: LIBY
+  controller: LIBY

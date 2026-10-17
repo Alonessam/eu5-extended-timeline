@@ -1,0 +1,121 @@
+#imported from EU4 file: history/provinces/2416 - Majar.txt
+2.1.1:
+  pops: 
+    alan_culture-: 1
+  owner: SIRA
+  controller: SIRA
+  cores:
+    SIRA: yes
+  resource: livestock
+300.1.1:
+  owner: CIR
+  controller: CIR
+  cores:
+    SIRA: no
+    CIR: yes
+420.1.1:
+  owner: HUNS
+  controller: HUNS
+  cores:
+    CIR: no
+    HUNS: yes
+448.1.1:
+  owner: ALN
+  controller: ALN
+  cores:
+    HUNS: no
+    ALN: yes
+632.1.1:
+  pops: 
+    khazar-: 1
+  owner: KHAZ
+  controller: KHAZ
+  cores:
+    ALN: no
+    KHAZ: yes
+1000.1.1:
+  pops: 
+    khazar-sunni: 1
+1048.1.1:
+  owner: CUMA
+  controller: CUMA
+  cores:
+    KHAZ: no
+    CUMA: yes
+1236.1.1:
+  pops: 
+    khazar-sunni: 0
+    astrakhani-sunni: 1
+  owner: MGE
+  controller: MGE
+  cores:
+    CUMA: no
+    MGE: yes
+    ATR: yes
+1260.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    MGE: no
+    WHHO: yes
+1372.1.1:
+  owner: BLHO
+  controller: BLHO
+  cores:
+    BLHO: yes
+1374.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    BLHO: no
+1378.1.1:
+  owner: GLH
+  controller: GLH
+  cores:
+    GLH: yes
+1442.1.1:
+  owner: GRHO
+  controller: GRHO
+  cores:
+    GLH: no
+    GRHO: yes
+1459.1.1:
+  owner: ATR
+  controller: ATR
+  cores:
+    GRHO: no
+1556.6.2:
+  owner: NOG
+  controller: NOG
+  cores:
+    ATR: no
+    NOG: yes
+1634.1.1:
+  pops: 
+    astrakhani-sunni: 0
+    mongolian_culture-mahayana: 1
+  owner: RUS
+  controller: RUS
+  cores:
+    NOG: no
+    RUS: yes
+1777.1.1:
+  pops: 
+    mongolian_culture-mahayana: 0
+    muscovite-orthodox: 1
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1942.8.3:
+  controller: GER
+1943.1.21:
+  controller: SOVI
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

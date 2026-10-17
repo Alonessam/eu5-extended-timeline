@@ -1,0 +1,26 @@
+#imported from EU4 file: history/provinces/4047 - Nsenga.txt
+2.1.1:
+  pops: 
+    twa_culture-bantu_religion: 1
+300.1.1:
+  pops: 
+    twa_culture-bantu_religion: 0
+    sena-bantu_religion: 1
+1350.1.1:
+  owner: LDU
+  controller: LDU
+  cores:
+    LDU: yes
+  resource: livestock
+1899.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1964.10.24:
+  owner: ZAMB
+  controller: ZAMB
+  cores:
+    GBR: no
+    ZAMB: yes
+1970.1.1:

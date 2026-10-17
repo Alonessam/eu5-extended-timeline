@@ -1,0 +1,25 @@
+#imported from EU4 file: history/provinces/2722 - Daru.txt
+2.1.1:
+  pops: 
+    asmat_culture-bimoism: 1
+1884.1.1:
+  pops: 
+    asmat_culture-bimoism: 0
+    asmat_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  resource: fish
+1901.1.1:
+  owner: AUST
+  controller: AUST
+  cores:
+    GBR: no
+    AUST: yes
+1973.12.1:
+  cores:
+    PAPU: yes
+1975.9.16:
+  owner: PAPU
+  controller: PAPU
+  cores:
+    AUST: no

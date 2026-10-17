@@ -1,0 +1,13 @@
+#imported from EU4
+2.1.1:
+  government: et_nomadic_horde
+  color: rgb { 100  50  150 }
+  religion: tengri
+  primary_culture: oirat_culture
+  capital: tes
+1120.1.1:
+  ruler: naim_naershi_tayang_gucugut
+1143.1.1:
+  ruler: naim_inanch_bilge_gucugut
+1198.1.1:
+  ruler: naim_tayang_khan_gucugut

@@ -1,0 +1,46 @@
+#imported from EU4 file: history/provinces/2702 - Butuan.txt
+2.1.1:
+  pops: 
+    cebuano_culture-bimoism: 1
+900.1.1:
+  owner: BTU
+  controller: BTU
+  cores:
+    BTU: yes
+  resource: gems
+1450.1.1:
+  pops: 
+    cebuano_culture-bimoism: 0
+    cebuano_culture-sunni: 1
+1521.3.31:
+  pops: 
+    cebuano_culture-sunni: 0
+    cebuano_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+  resource: tropical_wood
+1872.1.1:
+  cores:
+    MAGU: no
+    PHIL: yes
+1890.1.1:
+1898.8.12:
+  owner: USA
+  controller: USA
+  cores:
+    SPA: no
+    USA: yes
+1917.1.1:
+  cores:
+    SULU: no
+1942.1.2:
+  controller: JAP
+1945.3.1:
+  controller: USA
+1946.7.4:
+  owner: PHIL
+  controller: PHIL
+  cores:
+    USA: no

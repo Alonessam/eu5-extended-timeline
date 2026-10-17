@@ -1,0 +1,23 @@
+#imported from EU4 file: history/provinces/760 - Porto Seguro.txt
+2.1.1:
+  pops: 
+    akwe_culture-muisca_religion: 1
+1504.1.1:
+  pops: 
+    akwe_culture-muisca_religion: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+  resource: sugar
+1780.1.1:
+  pops: 
+    portuguese-catholic: 0
+    brazilian-catholic: 1
+1822.9.7:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    POR: no
+    BRAZ: yes

@@ -1,0 +1,28 @@
+#imported from EU4 file: history/provinces/1069 - Surgut.txt
+2.1.1:
+  pops: 
+    nenets_culture-mari_paganism: 1
+1468.1.1:
+  owner: SIBI
+  controller: SIBI
+  resource: fur
+1582.10.23:
+  pops: 
+    nenets_culture-mari_paganism: 0
+    nenets_culture-orthodox: 1
+  owner: RUS
+  controller: RUS
+  cores:
+    RUS: yes
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

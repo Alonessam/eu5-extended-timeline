@@ -1,0 +1,39 @@
+#imported from EU4 file: history/provinces/4619 - Marien.txt
+2.1.1:
+  pops: 
+    arawak_culture-muisca_religion: 1
+1504.1.1:
+  pops: 
+    arawak_culture-muisca_religion: 0
+    castilian-catholic: 1
+  owner: CAS
+  controller: CAS
+  cores:
+    CAS: yes
+1510.1.1:
+  resource: sugar
+1516.1.23:
+  owner: SPA
+  controller: SPA
+  cores:
+    CAS: no
+    SPA: yes
+1697.1.1:
+  pops: 
+    castilian-catholic: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    SPA: no
+    FRA: yes
+1780.1.1:
+  pops: 
+    french-catholic: 0
+    french_caribbean-catholic: 1
+1804.1.1:
+  owner: HAIT
+  controller: HAIT
+  cores:
+    FRA: no
+    HAIT: yes

@@ -1,0 +1,45 @@
+#imported from EU4 file: history/provinces/1777 - Kola.txt
+2.1.1:
+  pops: 
+    sapmi-muinaisusko: 1
+750.1.1:
+  owner: SMI
+  controller: SMI
+  cores:
+    SMI: yes
+  resource: fur
+1390.1.1:
+  owner: NOV
+  controller: NOV
+  cores:
+    NOV: yes
+1450.1.1:
+  pops: 
+    sapmi-muinaisusko: 0
+    sapmi-orthodox: 1
+1478.1.15:
+  owner: MOS
+  controller: MOS
+  cores:
+    NOV: no
+    MOS: yes
+1503.4.1:
+  owner: RUS
+  controller: RUS
+  cores:
+    MOS: no
+    RUS: yes
+1922.12.30:
+  pops: 
+    sapmi-orthodox: 0
+    novgorodian-orthodox: 1
+  owner: SOVI
+  controller: SOVI
+  cores:
+    SOVI: yes
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

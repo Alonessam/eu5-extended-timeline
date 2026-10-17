@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/1239 - Vanuatu.txt
+2.1.1:
+  pops: 
+    tiri_culture-bimoism: 1
+1887.10.16:
+  pops: 
+    tiri_culture-bimoism: 0
+    tiri_culture-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+    GBR: yes
+  resource: coffee
+1980.7.30:
+  owner: VANU
+  controller: VANU
+  cores:
+    FRA: no
+    GBR: no
+    VANU: yes

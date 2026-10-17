@@ -1,0 +1,44 @@
+#imported from EU4 file: history/provinces/4172 - Awjila.txt
+2.1.1:
+  pops: 
+    eastern_amazigh-bantu_religion: 1
+  owner: NASA
+  controller: NASA
+  cores:
+    NASA: yes
+  resource: grain
+550.1.1:
+  pops: 
+    eastern_amazigh-bantu_religion: 0
+    eastern_amazigh-chalcedonism: 1
+650.1.1:
+  owner: ---
+  controller: ---
+  cores:
+    NASA: no
+680.1.1:
+  pops: 
+    eastern_amazigh-chalcedonism: 0
+    eastern_amazigh-sunni: 1
+1843.1.1:
+  owner: CYRE
+  controller: CYRE
+  cores:
+    CYRE: yes
+  resource: grain
+1912.10.18:
+  cores:
+    ITA: yes
+1922.1.1:
+  owner: ITA
+  controller: ITA
+  cores:
+    LIBY: yes
+1943.9.8:
+  owner: GBR
+  controller: GBR
+  cores:
+    ITA: no
+1951.12.24:
+  owner: LIBY
+  controller: LIBY

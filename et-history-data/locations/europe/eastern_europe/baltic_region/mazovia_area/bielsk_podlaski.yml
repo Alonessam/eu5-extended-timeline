@@ -1,0 +1,93 @@
+#imported from EU4 file: history/provinces/4924 - Siedlecz.txt
+2.1.1:
+  pops: 
+    yotvingian-romuva: 1
+  owner: NEUR
+  controller: NEUR
+  cores:
+    NEUR: yes
+  resource: livestock
+450.1.1:
+  pops: 
+    yotvingian-romuva: 0
+    lesser_polish-slavic: 1
+  owner: MAZ
+  controller: MAZ
+  cores:
+    NEUR: no
+    MAZ: yes
+940.1.1:
+  owner: POL
+  controller: POL
+  cores:
+    POL: yes
+981.1.1:
+  owner: KIEV
+  controller: KIEV
+  cores:
+    POL: no
+    KIEV: yes
+1054.2.20:
+  owner: HAL
+  controller: HAL
+  cores:
+    KIEV: no
+    HAL: yes
+1080.1.1:
+  pops: 
+    lesser_polish-slavic: 0
+    lesser_polish-catholic: 1
+1323.1.1:
+  owner: LIT
+  controller: LIT
+  cores:
+    HAL: no
+    LIT: yes
+1569.7.1:
+  owner: PLC
+  controller: PLC
+  cores:
+    PLC: yes
+1589.1.1:
+  controller: PLC
+1655.1.1:
+  controller: SWE
+1660.1.1:
+  controller: PLC
+1735.1.1:
+  controller: PLC
+1795.10.24:
+  owner: PRU
+  controller: PRU
+  cores:
+    PRU: yes
+1807.7.7:
+  owner: RUS
+  controller: RUS
+  cores:
+    PRU: no
+    RUS: yes
+1915.8.13:
+  controller: GER
+1918.3.3:
+  owner: POL
+  controller: POL
+  cores:
+    RUS: no
+    POL: yes
+1939.9.1:
+  controller: GER
+1939.10.6:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    SOVI: yes
+1941.6.22:
+  controller: GER
+1944.7.27:
+  controller: SOVI
+1945.5.8:
+  owner: POL
+  controller: POL
+  cores:
+    SOVI: no

@@ -1,0 +1,37 @@
+#imported from EU4 file: history/provinces/3264 - Kiteve.txt
+2.1.1:
+  pops: 
+    zembere-bantu_religion: 1
+300.1.1:
+  pops: 
+    zembere-bantu_religion: 0
+    shona_culture-bantu_religion: 1
+1220.1.1:
+  owner: KITE
+  controller: KITE
+  cores:
+    KITE: yes
+  resource: ivory
+1460.1.1:
+  owner: MUTA
+  controller: MUTA
+  cores:
+    MUTA: yes
+1630.1.1:
+  owner: KITE
+  controller: KITE
+  cores:
+    MUTA: no
+    KITE: yes
+1700.1.1:
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+1975.6.25:
+  owner: MOZA
+  controller: MOZA
+  cores:
+    POR: no
+    MUTA: no
+    MOZA: yes

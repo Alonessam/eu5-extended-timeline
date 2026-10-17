@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/2482 - Kalapuya.txt
+2.1.1:
+  pops: 
+    chinook_culture-iroquoian_totemism: 1
+1813.1.1:
+  pops: 
+    chinook_culture-iroquoian_totemism: 0
+    british_californian-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: fur
+1846.6.15:
+  owner: USA
+  controller: USA
+  cores:
+    GBR: no
+    USA: yes

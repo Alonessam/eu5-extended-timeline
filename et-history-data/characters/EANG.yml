@@ -1,0 +1,351 @@
+eang_wehha_wuffinga:
+  510:
+    birth: norwich #unknown
+    first_name: wehha
+    dynasty: wuffinga_dynasty
+    adm: 60
+    dip: 45
+    mil: 90
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: EANG
+  571:
+    death: yes
+eang_wuffa_wuffinga:
+  530:
+    birth: norwich #unknown
+    first_name: wuffa
+    dynasty: wuffinga_dynasty
+    father: eang_wehha_wuffinga
+    adm: 60
+    dip: 60
+    mil: 75
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: EANG
+  578:
+    death: yes
+eang_tytila_wuffinga:
+  550:
+    birth: norwich #unknown
+    first_name: tytila
+    dynasty: wuffinga_dynasty
+    father: eang_wuffa_wuffinga
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: EANG
+  616:
+    death: yes
+eang_raedwald_wuffinga:
+  570:
+    birth: norwich #unknown
+    first_name: raedwald
+    dynasty: wuffinga_dynasty
+    father: eang_tytila_wuffinga
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: EANG
+  605:
+    religion: chalcedonism
+  624:
+    death: yes
+eang_eni_wuffinga:
+  580:
+    birth: norwich #unknown
+    first_name: eni
+    dynasty: wuffinga_dynasty
+    father: eang_tytila_wuffinga
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: EANG
+  630:
+    death: yes
+eang_raegenhere_wuffinga:
+  590:
+    birth: norwich #unknown
+    first_name: raegenhere
+    dynasty: wuffinga_dynasty
+    father: eang_raedwald_wuffinga
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: EANG
+  616:
+    death: yes
+eang_ricberht_wuffinga:
+  590:
+    birth: norwich #unknown
+    first_name: ricberht
+    dynasty: wuffinga_dynasty
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: EANG
+  630:
+    death: yes
+eang_eorpwald_wuffinga:
+  595:
+    birth: norwich #unknown
+    first_name: eorpwald
+    dynasty: wuffinga_dynasty
+    father: eang_raedwald_wuffinga
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: EANG
+  627:
+    religion: chalcedonism
+  628:
+    death: yes
+eang_sigeberht_wuffinga:
+  600:
+    birth: norwich #unknown
+    first_name: sigeberht
+    dynasty: wuffinga_dynasty
+    father: eang_raedwald_wuffinga #uncertain
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: EANG
+  605:
+    religion: chalcedonism
+  637:
+    death: yes
+eang_ecgric_wuffinga:
+  605:
+    birth: norwich #unknown
+    first_name: ecgric
+    dynasty: wuffinga_dynasty
+    father: eang_raedwald_wuffinga #uncertain
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  641:
+    death: yes
+eang_anna_wuffinga:
+  610:
+    birth: norwich #unknown
+    first_name: anna
+    dynasty: wuffinga_dynasty
+    father: eang_eni_wuffinga
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  653:
+    death: yes
+eang_aethelhere_wuffinga:
+  612:
+    birth: norwich #unknown
+    first_name: aethelhere
+    dynasty: wuffinga_dynasty
+    father: eang_eni_wuffinga
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  655.11.15:
+    death: yes
+eang_aethelwold_wuffinga:
+  614:
+    birth: norwich #unknown
+    first_name: aethelwold
+    dynasty: wuffinga_dynasty
+    father: eang_eni_wuffinga
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  664:
+    death: yes
+eang_aethilric_wuffinga:
+  616:
+    birth: norwich #unknown
+    first_name: aethilric
+    dynasty: wuffinga_dynasty
+    father: eang_eni_wuffinga
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  647:
+    death: yes
+eang_hereswith:
+  625:
+    birth: norwich #unknown
+    first_name: hereswith
+    female: yes
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  640:
+    spouse: eang_aethilric_wuffinga
+  680:
+    death: yes
+eang_wendreda_wuffinga:
+  633:
+    birth: norwich #unknown
+    first_name: wendreda
+    dynasty: wuffinga_dynasty
+    female: yes
+    father: eang_anna_wuffinga
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  680:
+    death: yes
+eang_ealdwulf_wuffinga:
+  645:
+    birth: norwich #unknown
+    first_name: ealdwulf
+    dynasty: wuffinga_dynasty
+    father: eang_aethilric_wuffinga
+    mother: eang_hereswith
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  713:
+    death: yes
+eang_aelfwald_wuffinga:
+  680:
+    birth: norwich #unknown
+    first_name: aelfwald
+    dynasty: wuffinga_dynasty
+    father: eang_ealdwulf_wuffinga
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  749:
+    death: yes
+eang_alberht_wuffinga:
+  710:
+    birth: norwich #unknown
+    first_name: name_albert
+    dynasty: wuffinga_dynasty
+    father: eang_aelfwald_wuffinga
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  760:
+    death: yes
+eang_aethelred_i_angle:
+  720:
+    birth: norwich #unknown
+    first_name: aethelred
+    dynasty: east_anglia_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  779:
+    death: yes
+eang_aethelberht_ii_angle:
+  750:
+    birth: norwich #unknown
+    first_name: aethelberht
+    dynasty: east_anglia_dynasty
+    father: eang_aethelred_i_angle
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  794.5.20:
+    death: yes
+eang_eadwald_angle:
+  760:
+    birth: norwich #unknown
+    first_name: eadwald
+    dynasty: east_anglia_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  800:
+    death: yes
+eang_aethelstan_angle:
+  800:
+    birth: norwich #unknown
+    first_name: aethelstan
+    dynasty: east_anglia_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  844:
+    death: yes
+eang_aethelweard_angle:
+  820:
+    birth: norwich #unknown
+    first_name: aethelweard
+    dynasty: east_anglia_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  855:
+    death: yes
+eang_oswald_i_angle:
+  840:
+    birth: norwich #unknown
+    first_name: oswald
+    dynasty: east_anglia_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  867:
+    religion: catholic
+  875:
+    death: yes
+eang_edmund_angle:
+  841:
+    birth: norwich #unknown
+    first_name: name_edmond
+    dynasty: east_anglia_dynasty
+    father: eang_aethelweard_angle
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  867:
+    religion: catholic
+  869.11.20:
+    death: yes
+eang_aethelred_ii_angle:
+  845:
+    birth: norwich #unknown
+    first_name: aethelred
+    dynasty: east_anglia_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  867:
+    religion: catholic
+  878:
+    death: yes
+eang_guthrum_i_guthruming:
+  835:
+    birth: kolding #unknown
+    first_name: guthrum
+    dynasty: guthruming_dynasty
+    adm: 35
+    dip: 55
+    mil: 70
+    religion: norse
+    culture: danish
+    tag: DAN
+  878:
+    tag: EANG
+    religion: catholic
+  890:
+    death: yes
+eang_eohric_i_guthruming:
+  860:
+    birth: kolding #unknown
+    first_name: name_eric
+    dynasty: guthruming_dynasty
+    father: eang_guthrum_i_guthruming #conjecture
+    religion: norse
+    culture: danish
+    tag: DAN
+  878:
+    tag: EANG
+    religion: catholic
+  902.12.13:
+    death: yes
+eang_guthrum_ii_guthruming:
+  880:
+    birth: norwich #unknown
+    first_name: guthrum
+    dynasty: guthruming_dynasty
+    father: eang_eohric_i_guthruming #conjecture
+    religion: catholic
+    culture: danish
+    tag: EANG
+  918:
+    death: yes

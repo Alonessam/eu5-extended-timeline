@@ -1,0 +1,30 @@
+#imported from EU4 file: history/provinces/1242 - Fiji.txt
+2.1.1:
+  pops: 
+    maohi_culture-bimoism: 1
+900.1.1:
+  owner: BUB
+  controller: BUB
+  cores:
+    BUB: yes
+  resource: livestock
+1850.1.1:
+  pops: 
+    maohi_culture-bimoism: 0
+    maohi_culture-lutheran: 1
+1871.6.5:
+  owner: FIJI
+  controller: FIJI
+  cores:
+    FIJI: yes
+1874.10.6:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1970.10.10:
+  owner: FIJI
+  controller: FIJI
+  cores:
+    GBR: no
+    FIJI: yes

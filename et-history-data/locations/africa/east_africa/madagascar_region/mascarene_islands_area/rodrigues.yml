@@ -1,0 +1,52 @@
+#imported from EU4 file: history/provinces/1102 - Mauritius.txt
+2.1.1:
+  pops: 
+    uninhabited-bimoism: 1
+1638.1.1:
+  pops: 
+    uninhabited-bimoism: 0
+    low_franconian-calvinist: 1
+  owner: NED
+  controller: NED
+  resource: sugar
+1700.1.1:
+  cores:
+    NED: yes
+1710.1.1:
+  pops: 
+    low_franconian-calvinist: 0
+    uninhabited-bimoism: 1
+  owner: ---
+  controller: ---
+  cores:
+    NED: no
+1735.6.4:
+  pops: 
+    uninhabited-bimoism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  resource: sugar
+1750.1.1:
+  cores:
+    FRA: yes
+1810.12.3:
+  controller: GBR
+1814.4.11:
+  pops: 
+    french-catholic: 0
+    english-catholic: 1
+  owner: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1834.1.1:
+  pops: 
+    english-catholic: 0
+    magahi-hindu: 1
+1968.3.12:
+  owner: MART
+  controller: MART
+  cores:
+    GBR: no
+    MART: yes

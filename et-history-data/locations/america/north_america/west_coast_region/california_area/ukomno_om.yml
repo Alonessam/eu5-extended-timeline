@@ -1,0 +1,23 @@
+#imported from EU4 file: history/provinces/871 - Pomo.txt
+2.1.1:
+  pops: 
+    chinook_culture-iroquoian_totemism: 1
+1812.1.1:
+  pops: 
+    chinook_culture-iroquoian_totemism: 0
+    muscovite-orthodox: 1
+  owner: RUS
+  controller: RUS
+  cores:
+    RUS: yes
+  resource: wool
+1849.4.13:
+  pops: 
+    muscovite-orthodox: 0
+    british_californian-catholic: 1
+  owner: USA
+  controller: USA
+  cores:
+    RUS: no
+    USA: yes
+1850.1.1:

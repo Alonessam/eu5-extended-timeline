@@ -1,0 +1,13 @@
+#imported from EU4
+2.1.1:
+  government: subsaharan_muslim_monarchy
+  color: rgb { 66  140  190 }
+  religion: sunni
+  primary_culture: somali_culture
+  capital: tadjoura
+1900.1.1:
+  government: et_modern_republic
+1977.6.27:
+  ruler: djib_hassan_gouled_aptidon
+1999.5.8:
+  ruler: djib_ismail_omar_guelleh

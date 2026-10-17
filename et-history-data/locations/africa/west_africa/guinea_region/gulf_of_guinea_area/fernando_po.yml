@@ -1,0 +1,39 @@
+#imported from EU4 file: history/provinces/1097 - Fernando Po.txt
+2.1.1:
+  pops: 
+    fang_gabun-bantu_religion: 1
+1472.1.1:
+  pops: 
+    fang_gabun-bantu_religion: 0
+    fang_gabun-catholic: 1
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+  resource: slaves
+1778.1.1:
+  owner: SPA
+  controller: SPA
+  cores:
+    POR: no
+    SPA: yes
+1827.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1843.1.1:
+  resource: fish
+1843.3.1:
+  owner: SPA
+  controller: SPA
+  cores:
+    GBR: no
+1968.10.12:
+  owner: EQGU
+  controller: EQGU
+  cores:
+    SPA: no
+    EQGU: yes
+1995.1.1:
+  resource: oil

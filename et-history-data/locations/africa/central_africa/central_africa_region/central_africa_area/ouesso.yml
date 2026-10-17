@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/3020 - Likouala.txt
+2.1.1:
+  pops: 
+    kongo-bantu_religion: 1
+1889.1.1:
+  pops: 
+    kongo-bantu_religion: 0
+    kongo-lutheran: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: naval_supplies
+1911.11.4:
+  owner: GER
+  controller: GER
+  cores:
+    FRA: no
+    GER: yes
+1919.6.28:
+  owner: FRA
+  controller: FRA
+  cores:
+    GER: no
+    FRA: yes
+1960.8.15:
+  owner: CONG
+  controller: CONG
+  cores:
+    FRA: no
+    CONG: yes

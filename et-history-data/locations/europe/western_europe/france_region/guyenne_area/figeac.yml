@@ -1,0 +1,140 @@
+#imported from EU4 file: history/provinces/4112 - Cahors.txt
+2.1.1:
+  pops: 
+    gallian-druidism: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: wine
+260.1.1:
+  cores:
+    GALL: yes
+268.1.1:
+  controller: ROM
+  cores:
+    GALL: no
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+400.1.1:
+  pops: 
+    gallian-druidism: 0
+    gallian-chalcedonism: 1
+455.1.1:
+  owner: VISG
+  controller: VISG
+  cores:
+    ROMW: no
+    VISG: yes
+507.1.1:
+  pops: 
+    gallian-chalcedonism: 0
+    languedocien-chalcedonism: 1
+  owner: FRAN
+  controller: FRAN
+  cores:
+    VISG: no
+    FRAN: yes
+511.11.27:
+  owner: SOIS
+  controller: SOIS
+  cores:
+    SOIS: yes
+558.12.23:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    SOIS: no
+    FRAN: yes
+561.11.29:
+  owner: NEUS
+  controller: NEUS
+  cores:
+    NEUS: yes
+567.12.1:
+  owner: ASTS
+  controller: ASTS
+  cores:
+    NEUS: no
+    ASTS: yes
+583.1.1:
+  owner: AQN
+  controller: AQN
+  cores:
+    ASTS: no
+    AQN: yes
+769.2.1:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    FRAN: yes
+840.6.21:
+  owner: WFRA
+  controller: WFRA
+  cores:
+    FRAN: no
+    WFRA: yes
+866.1.1:
+  owner: AQN
+  controller: AQN
+  cores:
+    WFRA: no
+    AQN: yes
+867.1.1:
+  pops: 
+    languedocien-chalcedonism: 0
+    languedocien-catholic: 1
+877.10.6:
+  owner: WFRA
+  controller: WFRA
+  cores:
+    AQN: no
+    WFRA: yes
+987.7.3:
+  owner: FRA
+  controller: FRA
+  cores:
+    WFRA: no
+    FRA: yes
+    AQN: yes
+1152.3.11:
+  owner: AQN
+  controller: AQN
+1204.4.1:
+  owner: FRA
+  controller: FRA
+1360.5.9:
+  owner: ENG
+  controller: ENG
+1377.1.1:
+  owner: FRA
+  controller: FRA
+1560.1.1:
+  pops: 
+    languedocien-catholic: 0
+    languedocien-calvinist: 1
+1686.1.17:
+  pops: 
+    languedocien-calvinist: 0
+    languedocien-catholic: 1
+1705.1.1:
+  controller: FRA
+1870.9.4:
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+1940.6.14:
+  owner: VFRA
+  controller: VFRA
+  cores:
+    VFRA: yes
+1944.8.25:
+  owner: FRA
+  controller: FRA
+  cores:
+    VFRA: no

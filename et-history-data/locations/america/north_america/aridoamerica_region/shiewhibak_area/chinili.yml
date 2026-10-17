@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/875 - Canyon.txt
+2.1.1:
+  pops: 
+    ancestral_pueblo_culture-iroquoian_totemism: 1
+1350.1.1:
+  pops: 
+    ancestral_pueblo_culture-iroquoian_totemism: 0
+    dine_culture-iroquoian_totemism: 1
+1864.1.1:
+  pops: 
+    dine_culture-iroquoian_totemism: 0
+    british_californian-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+  resource: salt
+1880.1.1:
+  resource: coal

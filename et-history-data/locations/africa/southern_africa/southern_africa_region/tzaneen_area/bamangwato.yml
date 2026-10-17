@@ -1,0 +1,23 @@
+#imported from EU4 file: history/provinces/3227 - Mahalapye.txt
+2.1.1:
+  pops: 
+    kung_culture-bantu_religion: 1
+400.1.1:
+  pops: 
+    kung_culture-bantu_religion: 0
+    tswana_culture-bantu_religion: 1
+1885.3.31:
+  pops: 
+    tswana_culture-bantu_religion: 0
+    tswana_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: grain
+1966.9.30:
+  owner: BOTS
+  controller: BOTS
+  cores:
+    GBR: no
+    BOTS: yes

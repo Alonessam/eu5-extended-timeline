@@ -1,0 +1,29 @@
+#imported from EU4 file: history/provinces/4622 - Canimar.txt
+2.1.1:
+  pops: 
+    arawak_culture-muisca_religion: 1
+1516.1.23:
+  pops: 
+    arawak_culture-muisca_religion: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    CAS: no
+    SPA: yes
+  resource: tobacco
+1780.1.1:
+  pops: 
+    castilian-catholic: 0
+    iberian_caribbean-catholic: 1
+1868.10.10:
+  cores:
+    CUBA: yes
+1878.1.1:
+  controller: SPA
+1898.4.25:
+  owner: CUBA
+  controller: CUBA
+1898.8.12:
+  cores:
+    SPA: no

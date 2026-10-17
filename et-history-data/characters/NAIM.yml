@@ -1,0 +1,53 @@
+naim_naershi_tayang_gucugut:
+  1090.1.1:
+    birth: tes #TODO: Date and location guessed, check if better data is available
+    first_name: naershi_tayang
+    dynasty: gucugut_dynasty
+    adm: 45
+    dip: 30
+    mil: 30
+    religion: tengri
+    culture: oirat_culture
+    tag: NAIM
+  1143.1.1:
+    death: yes
+naim_inanch_bilge_gucugut:
+  1113.1.1:
+    birth: tes #TODO: Date and location guessed, check if better data is available
+    first_name: inanch_bilge
+    dynasty: gucugut_dynasty
+    adm: 45
+    dip: 30
+    mil: 60
+    religion: tengri
+    culture: oirat_culture
+    tag: NAIM
+  1198.1.1:
+    death: yes
+naim_tayang_khan_gucugut:
+  1168.1.1:
+    birth: tes #TODO: Date and location guessed, check if better data is available
+    first_name: tayang_khan
+    dynasty: gucugut_dynasty
+    adm: 60
+    dip: 45
+    mil: 15
+    religion: nestorianism
+    culture: oirat_culture
+    tag: NAIM
+  1204.6.1:
+    death: yes
+naim_kuchlug_gucugut:
+  1178.1.1:
+    birth: tes #TODO: Date and location guessed, check if better data is available
+    first_name: kuchlug
+    dynasty: gucugut_dynasty
+    father: naim_tayang_khan_gucugut #TODO: check if this makes sense
+    adm: 45
+    dip: 45
+    mil: 75
+    religion: tengri
+    culture: oirat_culture
+    tag: NAIM
+  1218.1.1:
+    death: yes

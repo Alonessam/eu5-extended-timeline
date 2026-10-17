@@ -1,0 +1,24 @@
+#imported from EU4 file: history/provinces/2844 - Chepes.txt
+2.1.1:
+  pops: 
+    warpe_culture-muisca_religion: 1
+1561.3.2:
+  pops: 
+    warpe_culture-muisca_religion: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+1576.1.1:
+  cores:
+    SPA: yes
+  resource: grain
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    iberian_la_platan-catholic: 1
+1816.7.9:
+  owner: ARGE
+  controller: ARGE
+  cores:
+    SPA: no
+    ARGE: yes

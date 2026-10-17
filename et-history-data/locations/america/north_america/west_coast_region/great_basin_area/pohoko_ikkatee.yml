@@ -1,0 +1,18 @@
+#imported from EU4 file: history/provinces/2020 - Idaho.txt
+2.1.1:
+  pops: 
+    tukudeka_culture-iroquoian_totemism: 1
+  owner: SHOS
+  controller: SHOS
+  cores:
+    SHOS: yes
+  resource: fur
+1864.1.1:
+  pops: 
+    tukudeka_culture-iroquoian_totemism: 0
+    british_californian-mormon: 1
+  owner: USA
+  controller: USA
+  cores:
+    SHOS: no
+    USA: yes

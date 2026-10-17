@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/3027 - Borkou.txt
+2.1.1:
+  pops: 
+    toubou_culture-bantu_religion: 1
+1200.1.1:
+  pops: 
+    toubou_culture-bantu_religion: 0
+    toubou_culture-sunni: 1
+1905.1.1:
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: grain
+1960.8.11:
+  owner: CHAD
+  controller: CHAD
+  cores:
+    FRA: no
+    KBO: no
+    CHAD: yes

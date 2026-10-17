@@ -1,0 +1,78 @@
+#imported from EU4 file: history/provinces/392 - Nejd.txt
+2.1.1:
+  pops: 
+    najdi_culture-south_arabian: 1
+425.1.1:
+  owner: KIND
+  controller: KIND
+  cores:
+    KIND: yes
+  resource: livestock
+540.1.1:
+  owner: NAJD
+  controller: NAJD
+  cores:
+    KIND: no
+    NAJD: yes
+633.1.1:
+  pops: 
+    najdi_culture-south_arabian: 0
+    najdi_culture-islam: 1
+  owner: RASH
+  controller: RASH
+  cores:
+    RASH: yes
+661.7.28:
+  pops: 
+    najdi_culture-islam: 0
+    najdi_culture-sunni: 1
+  owner: UMAY
+  controller: UMAY
+  cores:
+    RASH: no
+    UMAY: yes
+750.8.6:
+  owner: ABBA
+  controller: ABBA
+  cores:
+    UMAY: no
+    ABBA: yes
+755.1.1:
+  pops: 
+    najdi_culture-sunni: 0
+    najdi_culture-shia: 1
+867.1.1:
+  owner: NAJD
+  controller: NAJD
+  cores:
+    ABBA: no
+    NAJD: yes
+1050.1.1:
+  pops: 
+    najdi_culture-shia: 0
+    najdi_culture-sunni: 1
+1818.9.9:
+  owner: TUR
+  controller: TUR
+1824.1.1:
+  owner: NAJD
+  controller: NAJD
+1891.1.24:
+  owner: SHM
+  controller: SHM
+  cores:
+    SHM: yes
+1902.1.13:
+  owner: NAJD
+  controller: NAJD
+  cores:
+    SHM: no
+    NAJD: yes
+1932.9.23:
+  owner: SAUD
+  controller: SAUD
+  cores:
+    NAJD: no
+    SAUD: yes
+1980.1.1:
+  resource: oil

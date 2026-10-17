@@ -1,0 +1,44 @@
+#imported from EU4 file: history/provinces/2879 - Santa Tecla.txt
+2.1.1:
+  pops: 
+    ava_culture-muisca_religion: 1
+1609.1.1:
+  pops: 
+    ava_culture-muisca_religion: 0
+    ava_culture-catholic: 1
+  owner: GUAR
+  controller: GUAR
+  cores:
+    GUAR: yes
+  resource: tobacco
+1756.2.1:
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1776.3.23:
+  owner: POR
+  controller: POR
+  cores:
+    SPA: no
+    POR: yes
+1780.1.1:
+  pops: 
+    ava_culture-catholic: 0
+    brazilian-catholic: 1
+1822.9.7:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    POR: no
+    BRAZ: yes
+1836.9.11:
+  owner: RIOG
+  controller: RIOG
+  cores:
+    RIOG: yes
+1845.3.1:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    BRAZ: yes

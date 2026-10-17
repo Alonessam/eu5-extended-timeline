@@ -1,0 +1,94 @@
+#imported from EU4 file: history/provinces/2965 - Chemnitz.txt
+2.1.1:
+  pops: 
+    east_franconian-germanic: 1
+  owner: HERM
+  controller: HERM
+  cores:
+    HERM: yes
+  resource: wool
+260.1.1:
+  owner: SEMN
+  controller: SEMN
+  cores:
+    HERM: no
+    SEMN: yes
+280.1.1:
+  owner: HERM
+  controller: HERM
+  cores:
+    SEMN: no
+    HERM: yes
+390.1.1:
+  owner: THU
+  controller: THU
+  cores:
+    HERM: no
+    THU: yes
+600.1.1:
+  pops: 
+    east_franconian-germanic: 0
+    sorbian-slavic: 1
+  owner: SORB
+  controller: SORB
+  cores:
+    THU: no
+    SORB: yes
+932.1.1:
+  owner: SAX
+  controller: SAX
+  cores:
+    SORB: no
+    SAX: yes
+955.1.1:
+  owner: BRA
+  controller: BRA
+  cores:
+    SAX: no
+    BRA: yes
+960.1.1:
+  pops: 
+    sorbian-slavic: 0
+    saxon-catholic: 1
+965.5.20:
+  owner: MEI
+  controller: MEI
+  cores:
+    BRA: no
+    MEI: yes
+1423.1.6:
+  owner: SAX
+  controller: SAX
+  cores:
+    SAX: yes
+1445.9.10:
+  owner: THU
+  controller: THU
+1547.5.19:
+  owner: SAX
+  controller: SAX
+  cores:
+    THU: no
+    SAX: yes
+1871.1.18:
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+1900.1.1:
+  cores:
+    SAX: no
+1945.5.8:
+  owner: EGER
+  controller: EGER
+  cores:
+    EGER: yes
+1990.1.1:
+  pops: 
+    saxon-catholic: 0
+    saxon-irreligious: 1
+1990.10.3:
+  owner: GER
+  controller: GER
+  cores:
+    EGER: no

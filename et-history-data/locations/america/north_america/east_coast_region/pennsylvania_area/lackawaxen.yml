@@ -1,0 +1,29 @@
+#imported from EU4 file: history/provinces/2023 - Munsee.txt
+2.1.1:
+  pops: 
+    unami_culture-iroquoian_totemism: 1
+1754.1.1:
+  pops: 
+    unami_culture-iroquoian_totemism: 0
+    english-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: grain
+1764.7.4:
+  pops: 
+    english-lutheran: 0
+    american-lutheran: 1
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1783.9.3:
+  cores:
+    GBR: no
+1846.1.1:
+  resource: coal
+1959.1.1:
+  resource: grain

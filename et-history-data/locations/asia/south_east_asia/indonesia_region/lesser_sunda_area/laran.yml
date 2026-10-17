@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/2695 - Timor.txt
+2.1.1:
+  pops: 
+    tetum_culture-bimoism: 1
+1556.1.1:
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+  resource: spices
+1650.1.1:
+  pops: 
+    tetum_culture-bimoism: 0
+    tetum_culture-catholic: 1
+1912.9.10:
+  cores:
+    INDN: yes
+1975.11.28:
+  owner: ETIM
+  controller: ETIM
+  cores:
+    POR: no
+    ETIM: yes
+1976.7.17:
+  owner: INDN
+  controller: INDN
+2002.5.20:
+  owner: ETIM
+  controller: ETIM
+  cores:
+    INDN: no

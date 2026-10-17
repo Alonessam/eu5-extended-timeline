@@ -1,0 +1,42 @@
+#imported from EU4 file: history/provinces/851 - Zacatula.txt
+2.1.1:
+  pops: 
+    mephaa_culture-nahuatl: 1
+  owner: TLA
+  controller: TLA
+  cores:
+    TLA: yes
+  resource: fish
+1465.1.1:
+  owner: TAR
+  controller: TAR
+1490.1.1:
+  cores:
+    TAR: yes
+1523.1.1:
+  pops: 
+    mephaa_culture-nahuatl: 0
+    mephaa_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1541.1.1:
+  pops: 
+    mephaa_culture-catholic: 0
+    castilian-catholic: 1
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    mexican-catholic: 1
+1810.9.16:
+  owner: MEX
+  controller: SPA
+  cores:
+    MEX: yes
+1810.10.17:
+  controller: MEX
+1821.9.27:
+  controller: MEX
+  cores:
+    SPA: no

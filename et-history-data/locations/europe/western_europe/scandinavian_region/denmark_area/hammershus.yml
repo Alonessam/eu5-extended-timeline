@@ -1,0 +1,33 @@
+#imported from EU4 file: history/provinces/1981 - Bornholm.txt
+2.1.1:
+  pops: 
+    danish-norse: 1
+  owner: HERU
+  controller: HERU
+  cores:
+    HERU: yes
+  resource: fish
+380.1.1:
+  owner: DAN
+  controller: DAN
+  cores:
+    HERU: no
+    DAN: yes
+950.1.1:
+  pops: 
+    danish-norse: 0
+    danish-catholic: 1
+1536.3.15:
+  pops: 
+    danish-catholic: 0
+    danish-lutheran: 1
+1658.2.26:
+  owner: SWE
+  controller: SWE
+1660.5.27:
+  owner: DAN
+  controller: DAN
+1940.4.10:
+  controller: GER
+1945.5.4:
+  controller: DAN

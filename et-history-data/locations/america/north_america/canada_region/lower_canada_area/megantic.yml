@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/2012 - Arsigantegok.txt
+2.1.1:
+  pops: 
+    eastern_abenaki_culture-iroquoian_totemism: 1
+1791.1.1:
+  pops: 
+    eastern_abenaki_culture-iroquoian_totemism: 0
+    french_canadian-catholic: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes
+1980.5.20:
+  cores:
+    QUEB: yes

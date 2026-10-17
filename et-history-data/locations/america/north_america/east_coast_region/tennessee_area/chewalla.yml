@@ -1,0 +1,26 @@
+#imported from EU4 file: history/provinces/918 - Tennessee.txt
+2.1.1:
+  pops: 
+    chickasaw_culture-iroquoian_totemism: 1
+1600.1.1:
+  cores:
+    ???: yes
+  resource: grain
+1786.1.10:
+  pops: 
+    chickasaw_culture-iroquoian_totemism: 0
+    british_louisianan-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1861.5.7:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

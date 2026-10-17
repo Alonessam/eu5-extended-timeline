@@ -1,0 +1,61 @@
+#imported from EU4 file: history/provinces/4628 - Nitahende.txt
+2.1.1:
+  pops: 
+    yaqui_culture-iroquoian_totemism: 1
+1200.1.1:
+  pops: 
+    yaqui_culture-iroquoian_totemism: 0
+    naadahende_culture-iroquoian_totemism: 1
+1682.1.1:
+  pops: 
+    naadahende_culture-iroquoian_totemism: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+  resource: grain
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    mexican-catholic: 1
+1810.9.16:
+  owner: MEX
+  controller: SPA
+  cores:
+    MEX: yes
+1821.9.27:
+  controller: MEX
+  cores:
+    SPA: no
+1836.3.2:
+  pops: 
+    mexican-catholic: 0
+    iberian_louisianan-catholic: 1
+  owner: TEXA
+  controller: TEXA
+  cores:
+    TEXA: yes
+1845.12.29:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1848.2.2:
+  cores:
+    MEX: no
+1861.2.1:
+  owner: TEXA
+  controller: TEXA
+  cores:
+    TEXA: yes
+1861.3.2:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

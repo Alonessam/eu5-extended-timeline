@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/2585 - Kichesipi.txt
+2.1.1:
+  pops: 
+    attigneenongnahac_culture-iroquoian_totemism: 1
+  owner: ARN
+  controller: ARN
+  cores:
+    ARN: yes
+  resource: fur
+1650.1.1:
+  pops: 
+    attigneenongnahac_culture-iroquoian_totemism: 0
+    ojibwe_culture-iroquoian_totemism: 1
+  owner: ---
+  controller: ---
+  cores:
+    ARN: no
+1830.1.1:
+  pops: 
+    ojibwe_culture-iroquoian_totemism: 0
+    british_canadian-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

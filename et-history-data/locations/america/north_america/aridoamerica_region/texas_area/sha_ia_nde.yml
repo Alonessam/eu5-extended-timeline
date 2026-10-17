@@ -1,0 +1,48 @@
+#imported from EU4 file: history/provinces/4629 - Tel Kondaha.txt
+2.1.1:
+  pops: 
+    coahuilteco_culture-iroquoian_totemism: 1
+1200.1.1:
+  pops: 
+    coahuilteco_culture-iroquoian_totemism: 0
+    lepai_nde_culture-iroquoian_totemism: 1
+1835.1.1:
+  pops: 
+    lepai_nde_culture-iroquoian_totemism: 0
+    mexican-catholic: 1
+  owner: MEX
+  controller: MEX
+  cores:
+    MEX: yes
+  resource: wool
+1836.3.2:
+  pops: 
+    mexican-catholic: 0
+    british_louisianan-catholic: 1
+  owner: TEXA
+  controller: TEXA
+  cores:
+    TEXA: yes
+1845.12.29:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1848.2.2:
+  cores:
+    MEX: no
+1861.2.1:
+  owner: TEXA
+  controller: TEXA
+  cores:
+    TEXA: yes
+1861.3.2:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

@@ -1,0 +1,41 @@
+#imported from EU4 file: history/provinces/835 - Panama.txt
+2.1.1:
+  pops: 
+    muisca_culture-muisca_religion: 1
+1509.1.1:
+  pops: 
+    muisca_culture-muisca_religion: 0
+    castilian-catholic: 1
+  owner: CAS
+  controller: CAS
+  resource: naval_supplies
+1516.1.23:
+  owner: SPA
+  controller: SPA
+1534.1.1:
+  cores:
+    SPA: yes
+1739.11.22:
+  controller: GBR
+1742.1.1:
+  controller: SPA
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    iberian_colombian-catholic: 1
+1810.7.20:
+  owner: COLO
+  controller: COLO
+  cores:
+    COLO: yes
+1819.8.7:
+  cores:
+    SPA: no
+1903.1.22:
+  cores:
+    PANA: yes
+1903.11.3:
+  owner: PANA
+  controller: PANA
+  cores:
+    COLO: no

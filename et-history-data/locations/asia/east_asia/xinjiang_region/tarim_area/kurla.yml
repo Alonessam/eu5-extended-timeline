@@ -1,0 +1,129 @@
+#imported from EU4 file: history/provinces/2192 - Korla.txt
+2.1.1:
+  pops: 
+    tocharian-: 1
+  owner: KARA
+  controller: KARA
+  cores:
+    KARA: yes
+  resource: grain
+180.1.1:
+  pops: 
+    tocharian-mahayana: 1
+439.1.1:
+  owner: TUYU
+  controller: TUYU
+  cores:
+    TUYU: yes
+460.1.1:
+  pops: 
+    tocharian-mahayana: 0
+    uyghur_culture-mahayana: 1
+  owner: KARA
+  controller: KARA
+  cores:
+    TUYU: no
+    KARA: yes
+650.1.1:
+  owner: TANG
+  controller: TANG
+  cores:
+    TANG: yes
+670.1.1:
+  owner: TIB
+  controller: TIB
+  cores:
+    TANG: no
+    TIB: yes
+680.1.1:
+  pops: 
+    uyghur_culture-mahayana: 0
+    uyghur_culture-manichaeism: 1
+692.1.1:
+  owner: TANG
+  controller: TANG
+  cores:
+    TIB: no
+    TANG: yes
+763.1.1:
+  owner: TIB
+  controller: TIB
+  cores:
+    TANG: no
+    TIB: yes
+842.1.1:
+  owner: UTSA
+  controller: UTSA
+  cores:
+    TIB: no
+    UTSA: yes
+843.1.1:
+  owner: UYGH
+  controller: UYGH
+  cores:
+    UTSA: no
+    UYGH: yes
+880.1.1:
+  pops: 
+    uyghur_culture-manichaeism: 0
+    uyghur_culture-tibetan_buddhism: 1
+1209.1.1:
+  owner: MGE
+  controller: MGE
+  cores:
+    UYGH: no
+    MGE: yes
+1260.1.1:
+  owner: CHG
+  controller: CHG
+  cores:
+    MGE: no
+    CHG: yes
+1347.1.1:
+  owner: MOGH
+  controller: MOGH
+  cores:
+    CHG: no
+    MOGH: yes
+1389.1.1:
+  owner: YARK
+  controller: YARK
+  cores:
+    MOGH: no
+    YARK: yes
+1682.1.1:
+  owner: ZUNG
+  controller: ZUNG
+  cores:
+    ZUNG: yes
+1755.1.1:
+  owner: YARK
+  controller: YARK
+  cores:
+    YARK: yes
+1759.1.1:
+  owner: QNG
+  controller: QNG
+  cores:
+    QNG: yes
+1820.1.1:
+  pops: 
+    uyghur_culture-tibetan_buddhism: 0
+    uyghur_culture-sunni: 1
+1850.1.1:
+  cores:
+    OIR: no
+1862.4.1:
+  cores:
+    UYGH: yes
+1877.5.30:
+  controller: QNG
+1912.2.12:
+  owner: CHI
+  controller: CHI
+  cores:
+    QNG: no
+    CHI: yes
+1933.11.12:
+  cores:
+    UYGH: yes

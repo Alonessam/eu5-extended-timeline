@@ -1,0 +1,7 @@
+#imported from EU4
+2.1.1:
+  government: eurasian_tribe
+  color: rgb { 190  190  100 }
+  religion: germanic_polytheism
+  primary_culture: eastphalian
+  capital: hanover

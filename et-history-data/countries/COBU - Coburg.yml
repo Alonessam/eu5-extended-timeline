@@ -1,0 +1,8 @@
+#imported from EU4
+2.1.1:
+  government: et_tribal_federation
+  color: rgb { 71  201  101 }
+  government_rank: rank_duchy
+  religion: catholic
+  primary_culture: east_franconian
+  capital: abalessa

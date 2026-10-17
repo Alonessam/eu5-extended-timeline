@@ -1,0 +1,40 @@
+#imported from EU4 file: history/provinces/993 - Hochelega.txt
+2.1.1:
+  pops: 
+    stadaconan_culture-iroquoian_totemism: 1
+  owner: OSG
+  controller: OSG
+  cores:
+    OSG: yes
+  resource: fur
+1642.5.17:
+  pops: 
+    stadaconan_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: fur
+1760.1.1:
+  controller: GBR
+1763.2.10:
+  owner: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1790.1.1:
+  pops: 
+    french-catholic: 0
+    french_canadian-catholic: 1
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes
+1970.1.1:
+  resource: electronics
+1980.5.20:
+  cores:
+    QUEB: yes

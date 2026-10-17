@@ -1,0 +1,34 @@
+#imported from EU4 file: history/provinces/2657 - Colima.txt
+2.1.1:
+  pops: 
+    teco_culture-nahuatl: 1
+  owner: CLM
+  controller: CLM
+  cores:
+    CLM: yes
+  resource: fish
+1523.1.1:
+  pops: 
+    teco_culture-nahuatl: 0
+    teco_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1541.1.1:
+  pops: 
+    teco_culture-catholic: 0
+    castilian-catholic: 1
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    mexican-catholic: 1
+1810.9.16:
+  owner: MEX
+  controller: MEX
+  cores:
+    MEX: yes
+1821.9.27:
+  controller: MEX
+  cores:
+    SPA: no

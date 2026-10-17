@@ -1,0 +1,82 @@
+#imported from EU4 file: history/provinces/165 - Bern.txt
+2.1.1:
+  pops: 
+    helvetian-druidism: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: iron
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+410.1.1:
+  pops: 
+    helvetian-druidism: 0
+    high_alemannic-germanic: 1
+  owner: ALEM
+  controller: ALEM
+  cores:
+    ALEM: yes
+480.6.1:
+  cores:
+    ROMW: no
+620.1.1:
+  pops: 
+    high_alemannic-germanic: 0
+    high_alemannic-chalcedonism: 1
+746.1.1:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    ALEM: no
+    FRAN: yes
+840.6.21:
+  owner: MFRA
+  controller: MFRA
+  cores:
+    FRAN: no
+    MFRA: yes
+855.9.30:
+  owner: LOT
+  controller: LOT
+  cores:
+    MFRA: no
+    LOT: yes
+867.1.1:
+  pops: 
+    high_alemannic-chalcedonism: 0
+    high_alemannic-catholic: 1
+870.8.8:
+  owner: EFRA
+  controller: EFRA
+  cores:
+    LOT: no
+    EFRA: yes
+888.1.1:
+  owner: BUR
+  controller: BUR
+  cores:
+    WFRA: no
+    BUR: yes
+1313.1.1:
+  owner: SWI
+  controller: SWI
+  cores:
+    BUR: no
+    SWI: yes
+1528.1.1:
+  pops: 
+    high_alemannic-catholic: 0
+    high_alemannic-calvinist: 1
+1798.3.5:
+  controller: FRA
+1798.4.12:
+  controller: SWI
+1798.9.1:
+  controller: SWI
+1802.9.18:
+  controller: SWI

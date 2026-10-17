@@ -1,0 +1,8 @@
+#imported from EU4
+2.1.1:
+  government: amerindian_tribe
+  color: rgb { 125 132 189 }
+  government_rank: rank_duchy
+  religion: iroquoian_totemism
+  primary_culture: chickasaw_culture
+  capital: natchez

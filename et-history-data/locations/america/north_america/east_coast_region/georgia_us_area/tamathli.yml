@@ -1,0 +1,54 @@
+#imported from EU4 file: history/provinces/2539 - Mocama.txt
+2.1.1:
+  pops: 
+    yamasee_culture-iroquoian_totemism: 1
+1587.1.1:
+  pops: 
+    yamasee_culture-iroquoian_totemism: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+  resource: cotton
+1702.1.1:
+  pops: 
+    castilian-catholic: 0
+    muscogee_culture-iroquoian_totemism: 1
+  owner: MCG
+  controller: MCG
+  cores:
+    MCG: yes
+1733.1.1:
+  pops: 
+    muscogee_culture-iroquoian_totemism: 0
+    english-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1764.7.1:
+  pops: 
+    english-lutheran: 0
+    british_louisianan-lutheran: 1
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1780.1.1:
+  controller: GBR
+1782.11.1:
+  controller: USA
+  cores:
+    GBR: no
+1861.1.19:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

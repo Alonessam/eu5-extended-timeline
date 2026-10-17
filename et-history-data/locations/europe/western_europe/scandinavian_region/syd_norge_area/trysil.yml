@@ -1,0 +1,43 @@
+#imported from EU4 file: history/provinces/22 - Eisdiva.txt
+2.1.1:
+  pops: 
+    norwegian-norse: 1
+550.1.1:
+  owner: VEST
+  controller: VEST
+  cores:
+    VEST: yes
+  resource: naval_supplies
+872.1.1:
+  owner: NOR
+  controller: NOR
+  cores:
+    VEST: no
+    NOR: yes
+1040.1.1:
+  pops: 
+    norwegian-norse: 0
+    norwegian-catholic: 1
+1532.7.15:
+  controller: NOR
+1536.1.1:
+  pops: 
+    norwegian-catholic: 0
+    norwegian-lutheran: 1
+  owner: DAN
+  controller: DAN
+  cores:
+    DAN: yes
+1630.1.1:
+  resource: copper
+1814.1.14:
+  owner: SWE
+  cores:
+    DAN: no
+1814.5.17:
+  owner: NOR
+  controller: NOR
+1940.4.9:
+  controller: GER
+1945.5.8:
+  controller: NOR

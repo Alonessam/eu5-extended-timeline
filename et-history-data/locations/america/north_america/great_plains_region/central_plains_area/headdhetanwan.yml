@@ -1,0 +1,23 @@
+#imported from EU4 file: history/provinces/4908 - Tawehash.txt
+2.1.1:
+  pops: 
+    kitikitish_culture-iroquoian_totemism: 1
+1834.6.30:
+  pops: 
+    kitikitish_culture-iroquoian_totemism: 0
+    cherokee_culture-iroquoian_totemism: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+  resource: grain
+1898.1.18:
+  pops: 
+    cherokee_culture-iroquoian_totemism: 0
+    american-lutheran: 1
+  cores:
+    KTK: no
+1905.11.22:
+  resource: oil
+1950.1.1:
+  resource: grain

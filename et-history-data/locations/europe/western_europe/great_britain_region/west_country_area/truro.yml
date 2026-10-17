@@ -1,0 +1,78 @@
+#imported from EU4 file: history/provinces/233 - Cornwall.txt
+2.1.1:
+  pops: 
+    briton-druidism: 1
+  owner: DUMN
+  controller: DUMN
+  cores:
+    DUMN: yes
+  resource: copper
+55.1.1:
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+200.1.1:
+  pops: 
+    briton-druidism: 0
+    cornish-druidism: 1
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+410.1.1:
+  owner: DUMN
+  controller: DUMN
+  cores:
+    ROMW: no
+    DUMN: yes
+500.1.1:
+  pops: 
+    cornish-druidism: 0
+    cornish-chalcedonism: 1
+710.1.1:
+  owner: CRN
+  controller: CRN
+  cores:
+    DUMN: no
+    CRN: yes
+867.1.1:
+  pops: 
+    cornish-chalcedonism: 0
+    cornish-catholic: 1
+890.1.1:
+  owner: WESS
+  controller: WESS
+  cores:
+    WESS: yes
+927.1.1:
+  owner: ENG
+  controller: ENG
+  cores:
+    WESS: no
+    ENG: yes
+1013.1.1:  #Controlled by Cornwall from 1013 to 1035, it was a vassal of Sweyn Forkbeard
+  owner: CRN
+  controller: CRN
+1035.1.1:
+  owner: ENG
+  controller: ENG
+1470.10.6:
+  controller: ENG
+1575.1.1:
+  pops: 
+    cornish-catholic: 0
+    cornish-lutheran: 1
+1600.1.1:
+  pops: 
+    cornish-lutheran: 0
+    cornish-calvinist: 1
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    ENG: no
+    GBR: yes
+

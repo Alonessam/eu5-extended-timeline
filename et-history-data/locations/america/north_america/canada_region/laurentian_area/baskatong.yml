@@ -1,0 +1,22 @@
+#imported from EU4 file: history/provinces/4895 - Batiscan.txt
+2.1.1:
+  pops: 
+    weskarini_culture-iroquoian_totemism: 1
+1820.1.1:
+  pops: 
+    weskarini_culture-iroquoian_totemism: 0
+    french_canadian-catholic: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: fur
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes
+1980.5.20:
+  cores:
+    QUEB: yes

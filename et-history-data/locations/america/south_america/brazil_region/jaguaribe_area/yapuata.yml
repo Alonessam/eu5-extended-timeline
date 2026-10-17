@@ -1,0 +1,37 @@
+#imported from EU4 file: history/provinces/755 - Itamaraca.txt
+2.1.1:
+  pops: 
+    tupinamba_culture-muisca_religion: 1
+1535.3.12:
+  pops: 
+    tupinamba_culture-muisca_religion: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+  resource: sugar
+1630.1.1:
+  pops: 
+    portuguese-catholic: 0
+    low_franconian-calvinist: 1
+  owner: NED
+  controller: NED
+1654.1.1:
+  pops: 
+    low_franconian-calvinist: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+1655.1.1:
+  resource: sugar
+1780.1.1:
+  pops: 
+    portuguese-catholic: 0
+    brazilian-catholic: 1
+1822.9.7:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    POR: no
+    BRAZ: yes

@@ -1,0 +1,22 @@
+#imported from EU4 file: history/provinces/2815 - Puerto Carreno.txt
+2.1.1:
+  pops: 
+    wayuu_culture-muisca_religion: 1
+1571.1.1:
+  pops: 
+    wayuu_culture-muisca_religion: 0
+    wayuu_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  resource: tropical_wood
+1596.1.1:
+  cores:
+    SPA: yes
+1810.7.20:
+  owner: COLO
+  controller: COLO
+  cores:
+    COLO: yes
+1819.8.7:
+  cores:
+    SPA: no

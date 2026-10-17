@@ -1,0 +1,22 @@
+#imported from EU4 file: history/provinces/1118 - Sierra Leone.txt
+2.1.1:
+  pops: 
+    wolof-bantu_religion: 1
+1780.1.1:
+  pops: 
+    wolof-bantu_religion: 0
+    wolof-sunni: 1
+1808.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: slaves
+1870.1.1:
+  resource: gems
+1961.4.27:
+  owner: SLEO
+  controller: SLEO
+  cores:
+    GBR: no
+    SLEO: yes

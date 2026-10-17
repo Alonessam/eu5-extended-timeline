@@ -1,0 +1,81 @@
+#imported from EU4 file: history/provinces/61 - Dresden.txt
+2.1.1:
+  pops: 
+    east_franconian-germanic: 1
+  owner: SEMN
+  controller: SEMN
+  cores:
+    SEMN: yes
+  resource: iron
+280.1.1:
+  pops: 
+    east_franconian-germanic: 0
+    burgundione-germanic: 1
+  owner: BUR
+  controller: BUR
+  cores:
+    SEMN: no
+    BUR: yes
+395.1.1:
+  pops: 
+    burgundione-germanic: 0
+    sorbian-slavic: 1
+  owner: SORB
+  controller: SORB
+  cores:
+    BUR: no
+    SORB: yes
+932.1.1:
+  owner: SAX
+  controller: SAX
+  cores:
+    SORB: no
+    SAX: yes
+955.1.1:
+  owner: BRA
+  controller: BRA
+  cores:
+    SAX: no
+    BRA: yes
+960.1.1:
+  pops: 
+    sorbian-slavic: 0
+    saxon-catholic: 1
+965.5.20:
+  owner: MEI
+  controller: MEI
+  cores:
+    BRA: no
+    MEI: yes
+1423.1.6:
+  owner: SAX
+  controller: SAX
+  cores:
+    MEI: no
+    SAX: yes
+1531.1.1:
+  pops: 
+    saxon-catholic: 0
+    saxon-lutheran: 1
+1871.1.18:
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+1900.1.1:
+  cores:
+    SAX: no
+1945.5.8:
+  owner: EGER
+  controller: EGER
+  cores:
+    EGER: yes
+1965.1.1:
+  pops: 
+    saxon-lutheran: 0
+    saxon-irreligious: 1
+1990.10.3:
+  owner: GER
+  controller: GER
+  cores:
+    EGER: no

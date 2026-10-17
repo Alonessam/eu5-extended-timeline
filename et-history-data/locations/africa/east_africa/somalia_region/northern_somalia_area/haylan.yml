@@ -1,0 +1,41 @@
+#imported from EU4 file: history/provinces/2786 - Bosaso.txt
+2.1.1:
+  pops: 
+    somali_culture-bantu_religion: 1
+  owner: BOSA
+  controller: BOSA
+  cores:
+    BOSA: yes
+  resource: incense
+1050.1.1:
+  pops: 
+    somali_culture-bantu_religion: 0
+    somali_culture-sunni: 1
+1200.1.1:
+  owner: WAR
+  controller: WAR
+  cores:
+    WAR: yes
+1526.1.1:
+  owner: ADA
+  controller: ADA
+1555.1.1:
+  owner: WAR
+  controller: WAR
+1730.1.1:
+  owner: MAJE
+  controller: MAJE
+  cores:
+    MAJE: yes
+1924.1.1:
+  owner: ITA
+  controller: ITA
+  cores:
+    ITA: yes
+1960.7.1:
+  owner: SOMA
+  controller: SOMA
+  cores:
+    ITA: no
+    MAJE: no
+    SOMA: yes

@@ -1,0 +1,82 @@
+#imported from EU4 file: history/provinces/1937 - Grodno.txt
+2.1.1:
+  pops: 
+    yotvingian-romuva: 1
+550.1.1:
+  owner: YOTV
+  controller: YOTV
+  cores:
+    YOTV: yes
+  resource: livestock
+1000.1.1:
+  pops: 
+    yotvingian-romuva: 0
+    yotvingian-orthodox: 1
+1274.1.1:
+  pops: 
+    yotvingian-orthodox: 0
+    polatskian_culture-orthodox: 1
+  owner: LIT
+  controller: LIT
+  cores:
+    LIT: yes
+1569.7.1:
+  owner: PLC
+  controller: PLC
+  cores:
+    PLC: yes
+1570.1.1:
+  pops: 
+    polatskian_culture-orthodox: 0
+    polatskian_culture-catholic: 1
+1697.1.1:
+  pops: 
+    polatskian_culture-catholic: 0
+    lesser_polish-catholic: 1
+1795.10.24:
+  owner: RUS
+  controller: RUS
+  cores:
+    RUS: yes
+1915.10.1:
+  controller: GER
+1918.3.3:
+  controller: RUS
+1918.3.25:
+  owner: BELA
+  controller: BELA
+  cores:
+    BELA: yes
+1919.4.27:
+  controller: POL
+1920.7.20:
+  controller: BELA
+1920.9.23:
+  controller: POL
+1921.3.18:
+  owner: POL
+  cores:
+    RUS: no
+    POL: yes
+1939.9.22:
+  controller: SOVI
+1939.10.6:
+  owner: SOVI
+  cores:
+    SOVI: yes
+1941.6.23:
+  controller: GER
+1944.7.16:
+  controller: SOVI
+1945.1.1:
+  pops: 
+    lesser_polish-catholic: 0
+    polatskian_culture-catholic: 1
+1945.5.8:
+  cores:
+    POL: no
+1990.7.27:
+  owner: BELA
+  controller: BELA
+  cores:
+    SOVI: no

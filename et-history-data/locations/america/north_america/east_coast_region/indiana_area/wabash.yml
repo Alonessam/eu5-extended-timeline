@@ -1,0 +1,13 @@
+#imported from EU4 file: history/provinces/942 - Wea.txt
+2.1.1:
+  pops: 
+    piankeshaw_culture-iroquoian_totemism: 1
+1804.1.1:
+  pops: 
+    piankeshaw_culture-iroquoian_totemism: 0
+    american-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+  resource: grain

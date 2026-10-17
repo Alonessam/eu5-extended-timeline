@@ -1,0 +1,22 @@
+#imported from EU4 file: history/provinces/889 - Arapaho.txt
+2.1.1:
+  pops: 
+    kitikitish_culture-iroquoian_totemism: 1
+1836.3.2:
+  pops: 
+    kitikitish_culture-iroquoian_totemism: 0
+    american-lutheran: 1
+  owner: TEXA
+  controller: TEXA
+  cores:
+    TEXA: yes
+    MEX: yes
+  resource: grain
+1845.12.29:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1848.2.2:
+  cores:
+    MEX: no

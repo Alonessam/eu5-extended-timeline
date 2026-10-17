@@ -1,0 +1,113 @@
+#imported from EU4 file: history/provinces/227 - Lisboa.txt
+2.1.1:
+  pops: 
+    turduli-druidism: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: fish
+360.1.1:
+  pops: 
+    turduli-druidism: 0
+    turduli-chalcedonism: 1
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+440.1.1:
+  owner: SUEB
+  controller: SUEB
+  cores:
+    SUEB: yes
+456.1.1:
+  owner: VISG
+  controller: VISG
+  cores:
+    SUEB: no
+    VISG: yes
+458.10.1:
+  owner: ROMW
+  controller: ROMW
+461.8.2:
+  owner: VISG
+  controller: VISG
+  cores:
+    ROMW: no
+711.1.1:
+  owner: UMAY
+  controller: UMAY
+  cores:
+    VISG: no
+    UMAY: yes
+750.8.6:
+  owner: CRDB
+  controller: CRDB
+  cores:
+    UMAY: no
+    CRDB: yes
+796.1.1:
+  controller: ASTU
+798.1.1:
+  controller: CRDB
+800.1.1:
+  pops: 
+    turduli-chalcedonism: 0
+    andalusi-chalcedonism: 1
+820.1.1:
+  pops: 
+    andalusi-chalcedonism: 0
+    andalusi-sunni: 1
+955.1.1:
+  controller: LON
+958.1.1:
+  controller: CRDB
+1011.1.1:
+  owner: BADJ
+  controller: BADJ
+  cores:
+    CRDB: no
+    BADJ: yes
+1027.1.1:
+  owner: SEVI
+  controller: SEVI
+  cores:
+    SEVI: yes
+1034.1.1:
+  owner: BADJ
+  controller: BADJ
+  cores:
+    SEVI: no
+1094.1.1:
+  owner: MOR
+  controller: MOR
+  cores:
+    BADJ: no
+    MOR: yes
+1144.1.1:
+  owner: BADJ
+  controller: BADJ
+  cores:
+    MOR: no
+1147.10.25:
+  pops: 
+    andalusi-sunni: 0
+    portuguese-sunni: 1
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+1150.1.1:
+  pops: 
+    portuguese-sunni: 0
+    portuguese-catholic: 1
+1580.8.25:
+  controller: SPA
+1580.8.26:
+  controller: POR
+1807.12.1:
+  controller: FRA
+1808.8.30:
+  controller: POR

@@ -1,0 +1,62 @@
+#imported from EU4 file: history/provinces/4838 - Roi Et.txt
+2.1.1:
+  pops: 
+    bru_culture-bimoism: 1
+  owner: KUY
+  controller: KUY
+  cores:
+    KUY: yes
+  resource: ivory
+650.1.1:
+  pops: 
+    bru_culture-bimoism: 0
+    bru_culture-mahayana: 1
+707.2.6:
+  owner: KUY
+  controller: KUY
+  cores:
+    KUY: yes
+810.1.1:
+  owner: CAMB
+  controller: CAMB
+  cores:
+    KUY: no
+    CAMB: yes
+1295.1.1:
+  pops: 
+    bru_culture-mahayana: 0
+    bru_culture-theravada: 1
+1354.1.1:
+  owner: LAXA
+  controller: LAXA
+  cores:
+    CAMB: no
+    LAXA: yes
+1380.1.1:
+  pops: 
+    bru_culture-theravada: 0
+    lao_culture-theravada: 1
+1707.1.1:
+  owner: VTN
+  controller: VTN
+  cores:
+    LAXA: no
+    VTN: yes
+1713.1.1:
+  owner: CHAK
+  controller: CHAK
+  cores:
+    VTN: no
+    CHAK: yes
+1792.1.1:
+  owner: RTP
+  controller: RTP
+  cores:
+    CHAK: no
+    RTP: yes
+1932.7.24:
+  owner: SIA
+  controller: SIA
+  cores:
+    RTP: no
+    SIA: yes

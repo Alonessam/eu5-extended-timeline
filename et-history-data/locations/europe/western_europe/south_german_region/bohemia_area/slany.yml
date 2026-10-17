@@ -1,0 +1,105 @@
+#imported from EU4 file: history/provinces/266 - Bohemia.txt
+2.1.1:
+  pops: 
+    southern_bavarian-germanic: 1
+  owner: MARC
+  controller: MARC
+  cores:
+    MARC: yes
+  resource: cloth
+395.1.1:
+  pops: 
+    southern_bavarian-germanic: 0
+    langobardi-germanic: 1
+  owner: LOMB
+  controller: LOMB
+  cores:
+    MARC: no
+    LOMB: yes
+550.1.1:
+  pops: 
+    langobardi-germanic: 0
+    czech-slavic: 1
+  owner: BOH
+  controller: BOH
+  cores:
+    LOMB: no
+    BOH: yes
+623.1.1:
+  owner: SAMO
+  controller: SAMO
+  cores:
+    SAMO: yes
+659.1.1:
+  owner: MVA
+  controller: MVA
+  cores:
+    SAMO: no
+    MVA: yes
+867.1.1:
+  pops: 
+    czech-slavic: 0
+    czech-catholic: 1
+880.1.1:
+894.1.1:
+  owner: BOH
+  controller: BOH
+  cores:
+    MVA: no
+    BOH: yes
+1419.12.1:
+  pops: 
+    czech-catholic: 0
+    czech-hussite: 1
+1436.7.5:
+  controller: BOH
+1526.8.30:
+  owner: HAB
+  controller: HAB
+  cores:
+    BOH: no
+    HAB: yes
+1576.1.1:
+  pops: 
+    czech-hussite: 0
+    czech-lutheran: 1
+1618.5.23:
+  owner: BOH
+  controller: BOH
+  cores:
+    BOH: yes
+1620.11.8:
+  owner: HAB
+  controller: HAB
+  cores:
+    BOH: no
+1627.1.1:
+  pops: 
+    czech-lutheran: 0
+    czech-catholic: 1
+1918.10.28:
+  owner: CZES
+  controller: CZES
+  cores:
+    HAB: no
+    CZES: yes
+1939.3.16:
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+1945.5.8:
+  owner: CZES
+  controller: CZES
+  cores:
+    GER: no
+1970.1.1:
+  pops: 
+    czech-catholic: 0
+    czech-irreligious: 1
+1992.12.31:
+  owner: CZEC
+  controller: CZEC
+  cores:
+    CZES: no
+    CZEC: yes

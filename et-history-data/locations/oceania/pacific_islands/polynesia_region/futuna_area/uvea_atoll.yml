@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/3240 - Uvea.txt
+2.1.1:
+  pops: 
+    maohi_culture-bimoism: 1
+900.1.1:
+  owner: TOG
+  controller: TOG
+  cores:
+    TOG: yes
+  resource: fish
+1887.4.1:
+  pops: 
+    maohi_culture-bimoism: 0
+    maohi_culture-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+1940.6.14:
+  owner: VFRA
+  controller: VFRA
+  cores:
+    VFRA: yes
+1944.8.25:
+  owner: FRA
+  controller: FRA
+  cores:
+    VFRA: no
+1970.6.4:
+  cores:
+    TOG: no

@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/2595 - Saskatchewan.txt
+2.1.1:
+  pops: 
+    denesoline_culture-iroquoian_totemism: 1
+1776.1.1:
+  pops: 
+    denesoline_culture-iroquoian_totemism: 0
+    denesoline_culture-catholic: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: fur
+1870.7.15:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes
+1968.1.1:
+  resource: uranium

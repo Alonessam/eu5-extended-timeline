@@ -1,0 +1,25 @@
+#imported from EU4 file: history/provinces/1080 - North Urals.txt
+2.1.1:
+  pops: 
+    khanty_culture-mari_paganism: 1
+1592.1.1:
+  pops: 
+    khanty_culture-mari_paganism: 0
+    muscovite-orthodox: 1
+  owner: RUS
+  controller: RUS
+  cores:
+    RUS: yes
+  resource: iron
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

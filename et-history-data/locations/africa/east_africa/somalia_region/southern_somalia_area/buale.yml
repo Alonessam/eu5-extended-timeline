@@ -1,0 +1,36 @@
+#imported from EU4 file: history/provinces/2777 - Bardera.txt
+2.1.1:
+  pops: 
+    somali_culture-bantu_religion: 1
+850.1.1:
+  pops: 
+    somali_culture-bantu_religion: 0
+    somali_culture-sunni: 1
+  owner: TUNN
+  controller: TUNN
+  cores:
+    TUNN: yes
+  resource: grain
+1220.1.1:
+  owner: AJU
+  controller: AJU
+  cores:
+    AJU: yes
+1690.1.1:
+  owner: GLE
+  controller: GLE
+  cores:
+    AJU: no
+    GLE: yes
+1911.1.1:
+  owner: ITA
+  controller: ITA
+  cores:
+    ITA: yes
+1960.7.1:
+  owner: SOMA
+  controller: SOMA
+  cores:
+    ITA: no
+    GLE: no
+    SOMA: yes

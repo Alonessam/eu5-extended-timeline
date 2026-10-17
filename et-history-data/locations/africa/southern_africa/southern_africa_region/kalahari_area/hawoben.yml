@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/2864 - Khoikhoi.txt
+2.1.1:
+  pops: 
+    khoemana_culture-bantu_religion: 1
+1840.1.1:
+  pops: 
+    khoemana_culture-bantu_religion: 0
+    khoemana_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: wine
+1910.3.31:
+  owner: SAFR
+  controller: SAFR
+  cores:
+    GBR: no
+    SAFR: yes

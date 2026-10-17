@@ -1,0 +1,26 @@
+#imported from EU4 file: history/provinces/3261 - Kinshasa.txt
+2.1.1:
+  pops: 
+    kongo-bantu_religion: 1
+1350.1.1:
+  owner: KON
+  controller: KON
+  cores:
+    KON: yes
+  resource: copper
+1881.1.1:
+  owner: BEL
+  controller: BEL
+  cores:
+    BEL: yes
+1900.1.1:
+  pops: 
+    kongo-bantu_religion: 0
+    kongo-catholic: 1
+1960.7.1:
+  owner: DRCO
+  controller: DRCO
+  cores:
+    BEL: no
+    KON: no
+    DRCO: yes

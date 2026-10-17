@@ -1,0 +1,44 @@
+#imported from EU4 file: history/provinces/749 - Maranhao.txt
+2.1.1:
+  pops: 
+    akwe_culture-muisca_religion: 1
+1612.1.1:
+  pops: 
+    akwe_culture-muisca_religion: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: tropical_wood
+1615.1.1:
+  pops: 
+    french-catholic: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+  cores:
+    FRA: no
+    POR: yes
+1641.1.1:
+  pops: 
+    portuguese-catholic: 0
+    low_franconian-calvinist: 1
+  owner: NED
+  controller: NED
+1644.1.1:
+  pops: 
+    low_franconian-calvinist: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+1780.1.1:
+  pops: 
+    portuguese-catholic: 0
+    brazilian-catholic: 1
+1822.9.7:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    POR: no
+    BRAZ: yes

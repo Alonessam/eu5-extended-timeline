@@ -1,0 +1,234 @@
+bny_rikidu_babiito:
+  1420.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: rikidu
+    dynasty: babiito_dynasty
+    adm: 45
+    dip: 45
+    mil: 60
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1480.1.1:
+    death: yes
+bny_ocaki_babiito:
+  1444.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: ocaki
+    dynasty: babiito_dynasty
+    adm: 30
+    dip: 30
+    mil: 15
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1530.1.1:
+    death: yes
+bny_winyi_i_babiito:
+  1480.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: winyi
+    dynasty: babiito_dynasty
+    adm: 30
+    dip: 30
+    mil: 45
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1560.1.1:
+    death: yes
+bny_olimi_i_babiito:
+  1510.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: olimi
+    dynasty: babiito_dynasty
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1580.1.1:
+    death: yes
+bny_winyi_ii_babiito:
+  1550.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: winyi
+    dynasty: babiito_dynasty
+    adm: 15
+    dip: 15
+    mil: 30
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1630.1.1:
+    death: yes
+bny_olimi_ii_babiito:
+  1580.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: olimi
+    dynasty: babiito_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1650.1.1:
+    death: yes
+bny_nyarwa_babiito:
+  1620.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: nyarwa
+    dynasty: babiito_dynasty
+    adm: 45
+    dip: 45
+    mil: 45
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1665.1.1:
+    death: yes
+bny_cwamali_babiito:
+  1650.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: cwamali
+    dynasty: babiito_dynasty
+    adm: 60
+    dip: 45
+    mil: 60
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1690.1.1:
+    death: yes
+bny_masamba_babiito:
+  1665.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: masamba
+    dynasty: babiito_dynasty
+    adm: 30
+    dip: 30
+    mil: 60
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1720.1.1:
+    death: yes
+bny_anabwani_i_babiito:
+  1670.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: anabwani
+    dynasty: babiito_dynasty
+    adm: 30
+    dip: 30
+    mil: 30
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1695.1.1:
+    death: yes
+bny_kyebambe_i_babiito:
+  1675.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: kyebambe
+    dynasty: babiito_dynasty
+    adm: 30
+    dip: 15
+    mil: 30
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1700.1.1:
+    death: yes
+bny_winyi_iii_babiito:
+  1682.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: winyi
+    dynasty: babiito_dynasty
+    adm: 30
+    dip: 15
+    mil: 30
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1705.1.1:
+    death: yes
+bny_nyaika_babiito:
+  1685.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: nyaika
+    dynasty: babiito_dynasty
+    adm: 45
+    dip: 45
+    mil: 30
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1706.1.1:
+    death: yes
+bny_kyebambe_ii_babiito:
+  1688.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: kyebambe
+    dynasty: babiito_dynasty
+    adm: 45
+    dip: 45
+    mil: 30
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1710.1.1:
+    death: yes
+bny_olimi_iii_babiito:
+  1685.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: olimi
+    dynasty: babiito_dynasty
+    adm: 45
+    dip: 60
+    mil: 45
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1731.1.1:
+    death: yes
+bny_duhaga_babiito:
+  1700.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: duhaga
+    dynasty: babiito_dynasty
+    adm: 45
+    dip: 60
+    mil: 45
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1782.1.1:
+    death: yes
+bny_olimi_iv_babiito:
+  1750.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: olimi
+    dynasty: babiito_dynasty
+    adm: 15
+    dip: 15
+    mil: 15
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  1786.1.1:
+    death: yes
+bny_nyamutukura_babiito:
+  1770.1.1:
+    birth: kibengo #TODO: Date and location guessed, check if better data is available
+    first_name: nyamutukura
+    dynasty: babiito_dynasty
+    adm: 60
+    dip: 60
+    mil: 45
+    religion: bantu_religion
+    culture: baganda_culture
+    tag: BNY
+  3000.1.1:
+    death: yes

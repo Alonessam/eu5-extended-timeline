@@ -1,0 +1,13 @@
+#imported from EU4
+2.1.1:
+  government: et_ancient_monarchy
+  color: rgb { 190  190  80 }
+  government_rank: rank_duchy
+  ruler: adul_zoskales_adulis
+  religion: south_arabian_polytheism
+  primary_culture: tigrinya
+  capital: massawa
+325.1.1:
+  religion: chalcedonism
+451.11.1:
+  religion: miaphysite

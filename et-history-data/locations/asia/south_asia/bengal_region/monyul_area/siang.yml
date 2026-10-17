@@ -1,0 +1,24 @@
+#imported from EU4 file: history/provinces/1788 - Arunachal.txt
+2.1.1:
+  pops: 
+    utsang_culture-bon: 1
+750.1.1:
+  pops: 
+    utsang_culture-bon: 0
+    utsang_culture-tibetan_buddhism: 1
+1850.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+    AHO: yes
+  resource: wool
+1930.1.1:
+  cores:
+    AHO: no
+    INDI: yes
+1947.8.15:
+  owner: INDI
+  controller: INDI
+  cores:
+    GBR: no

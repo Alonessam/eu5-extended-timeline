@@ -1,0 +1,61 @@
+#imported from EU4 file: history/provinces/1229 - Berber.txt
+2.1.1:
+  pops: 
+    beja_culture-egyptian: 1
+  owner: MERO
+  controller: MERO
+  cores:
+    MERO: yes
+  resource: livestock
+350.1.1:
+  pops: 
+    beja_culture-egyptian: 0
+    beja_culture-chalcedonism: 1
+  owner: MAK
+  controller: MAK
+  cores:
+    MERO: no
+    MAK: yes
+451.11.1:
+  pops: 
+    beja_culture-chalcedonism: 0
+    beja_culture-miaphysite: 1
+1276.1.1:
+  owner: ABW
+  controller: ABW
+  cores:
+    MAK: no
+    ABW: yes
+1480.1.1:
+  pops: 
+    beja_culture-miaphysite: 0
+    beja_culture-sunni: 1
+1503.1.1:
+  owner: FUNJ
+  controller: FUNJ
+  cores:
+    FUNJ: yes
+1821.6.14:
+  owner: EGY
+  controller: EGY
+  cores:
+    EGY: yes
+    TUR: yes
+1882.9.13:
+  owner: GBR
+  controller: GBR
+  cores:
+    TUR: no
+    GBR: yes
+1883.6.1:
+  cores:
+    FUNJ: no
+    SUDA: yes
+1898.4.8:
+  controller: GBR
+1956.1.1:
+  owner: SUDA
+  controller: SUDA
+  cores:
+    GBR: no
+    EGY: no

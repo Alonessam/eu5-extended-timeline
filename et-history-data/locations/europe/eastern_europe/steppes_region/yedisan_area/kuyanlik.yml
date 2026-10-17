@@ -1,0 +1,161 @@
+#imported from EU4 file: history/provinces/282 - Yedisan.txt
+2.1.1:
+  pops: 
+    sarmatian-: 1
+  owner: SARM
+  controller: SARM
+  cores:
+    SARM: yes
+  resource: livestock
+220.1.1:
+  pops: 
+    gothic-: 1
+  owner: OSTR
+  controller: OSTR
+  cores:
+    SARM: no
+    OSTR: yes
+370.1.1:
+  pops: 
+    hunnic-: 1
+  owner: HUNS
+  controller: HUNS
+  cores:
+    OSTR: no
+    HUNS: yes
+469.1.1:
+  pops: 
+    avar_culture-: 1
+  owner: AVR
+  controller: AVR
+  cores:
+    HUNS: no
+    AVR: yes
+567.1.1:
+  pops: 
+    bolghar_culture-: 1
+  owner: KUTR
+  controller: KUTR
+  cores:
+    AVR: no
+    KUTR: yes
+632.1.1:
+  owner: BUL
+  controller: BUL
+  cores:
+    KUTR: no
+    BUL: yes
+770.1.1:
+  pops: 
+    hungarian-: 1
+  owner: HUN
+  controller: HUN
+  cores:
+    BUL: no
+    HUN: yes
+870.1.1:
+  pops: 
+    pecheneg-: 1
+  owner: PECH
+  controller: PECH
+  cores:
+    HUN: no
+    PECH: yes
+1094.1.1:
+  owner: CUMA
+  controller: CUMA
+  cores:
+    PECH: no
+    CUMA: yes
+1220.1.1:
+  pops: 
+    ruthenian-orthodox: 1
+1241.1.1:
+  owner: MGE
+  controller: MGE
+  cores:
+    CUMA: no
+    MGE: yes
+1260.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    MGE: no
+    WHHO: yes
+1372.1.1:
+  owner: BLHO
+  controller: BLHO
+  cores:
+    BLHO: yes
+1374.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    BLHO: no
+1378.1.1:
+  owner: GLH
+  controller: GLH
+1380.1.1:
+  owner: LIT
+  controller: LIT
+  cores:
+    LIT: yes
+1441.1.1:
+  cores:
+    CRI: yes
+1475.6.1:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1737.7.2:
+  controller: RUS
+1739.9.29:
+  controller: TUR
+1770.9.30:
+  controller: RUS
+1774.7.21:
+  controller: TUR
+1783.4.8:
+  cores:
+    CRI: no
+1788.12.17:
+  controller: RUS
+1792.1.9:
+  owner: RUS
+  controller: RUS
+  cores:
+    TUR: no
+    RUS: yes
+1820.1.1:
+1850.1.1:
+  cores:
+    CRI: no
+1860.1.1:
+1918.1.22:
+  owner: UKR
+  controller: UKR
+  cores:
+    UKR: yes
+1921.3.18:
+  owner: RUS
+  controller: RUS
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1941.10.16:
+  owner: RMN
+  controller: RMN
+1944.4.10:
+  controller: SOVI
+1944.8.23:
+  owner: SOVI
+1991.8.24:
+  owner: UKR
+  controller: UKR
+  cores:
+    SOVI: no
+    UKR: yes

@@ -1,0 +1,36 @@
+#imported from EU4 file: history/provinces/1979 - Faroes.txt
+2.1.1:
+  pops: 
+    uninhabited-norse: 1
+400.1.1:
+  pops: 
+    uninhabited-norse: 0
+    norwegian-norse: 1
+800.1.1:
+  owner: VEST
+  controller: VEST
+  cores:
+    VEST: yes
+  resource: fish
+872.1.1:
+  owner: NOR
+  controller: NOR
+  cores:
+    VEST: no
+    NOR: yes
+900.1.1:
+  pops: 
+    norwegian-norse: 0
+    icelandic-norse: 1
+1060.1.1:
+  pops: 
+    icelandic-norse: 0
+    icelandic-catholic: 1
+1536.1.1:
+  pops: 
+    icelandic-catholic: 0
+    icelandic-lutheran: 1
+  owner: DAN
+  controller: DAN
+  cores:
+    DAN: yes

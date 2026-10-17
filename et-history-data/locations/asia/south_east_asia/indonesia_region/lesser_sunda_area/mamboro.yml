@@ -1,0 +1,27 @@
+#imported from EU4 file: history/provinces/634 - Sumba.txt
+2.1.1:
+  pops: 
+    tetum_culture-bimoism: 1
+1866.1.1:
+  pops: 
+    tetum_culture-bimoism: 0
+    tetum_culture-calvinist: 1
+  owner: NED
+  controller: NED
+  cores:
+    NED: yes
+  resource: spices
+1912.9.10:
+  cores:
+    INDN: yes
+1942.3.9:
+  owner: JAP
+  controller: JAP
+1945.8.15:
+  owner: NED
+1945.8.17:
+  owner: INDN
+  controller: INDN
+1949.12.27:
+  cores:
+    NED: no

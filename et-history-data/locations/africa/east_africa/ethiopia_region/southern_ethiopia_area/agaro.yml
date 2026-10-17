@@ -1,0 +1,41 @@
+#imported from EU4 file: history/provinces/2758 - Illubabor.txt
+2.1.1:
+  pops: 
+    sidama_culture-bantu_religion: 1
+1180.1.1:
+  owner: ENN
+  controller: ENN
+  cores:
+    ENN: yes
+  resource: slaves
+1510.1.1:
+  pops: 
+    sidama_culture-bantu_religion: 0
+    sidama_culture-miaphysite: 1
+1650.1.1:
+  pops: 
+    sidama_culture-miaphysite: 0
+    oromo_culture-miaphysite: 1
+1710.1.1:
+  owner: ETH
+  controller: ETH
+  cores:
+    ETH: yes
+1790.1.1:
+  owner: JIMM
+  controller: JIMM
+  cores:
+    JIMM: yes
+1860.1.1:
+  resource: wool
+1889.1.1:
+  owner: ETH
+  controller: ETH
+  cores:
+    ETH: yes
+1936.5.9:
+  owner: ITA
+  controller: ITA
+1941.11.27:
+  owner: ETH
+  controller: ETH

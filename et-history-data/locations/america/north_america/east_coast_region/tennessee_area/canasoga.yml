@@ -1,0 +1,35 @@
+#imported from EU4 file: history/provinces/935 - Cherokee.txt
+2.1.1:
+  pops: 
+    tsoyaha_culture-iroquoian_totemism: 1
+  owner: CHIA
+  controller: CHIA
+  cores:
+    CHIA: yes
+  resource: naval_supplies
+1610.1.1:
+  pops: 
+    tsoyaha_culture-iroquoian_totemism: 0
+    cherokee_culture-iroquoian_totemism: 1
+  owner: CHRK
+  controller: CHRK
+  cores:
+    CHRK: yes
+1791.7.2:
+  pops: 
+    cherokee_culture-iroquoian_totemism: 0
+    british_louisianan-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1861.5.7:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

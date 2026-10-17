@@ -1,0 +1,115 @@
+#imported from EU4 file: history/provinces/4125 - Szolnok.txt
+2.1.1:
+  pops: 
+    sarmatian-: 1
+  owner: IAZY
+  controller: IAZY
+  cores:
+    IAZY: yes
+  resource: livestock
+300.1.1:
+  pops: 
+    southern_bavarian-: 1
+  owner: RUGI
+  controller: RUGI
+  cores:
+    IAZY: no
+    RUGI: yes
+325.1.1:
+  pops: 
+    southern_bavarian-arianism: 1
+450.1.1:
+  pops: 
+    southern_bavarian-arianism: 0
+    gepid-arianism: 1
+  owner: GEPI
+  controller: GEPI
+  cores:
+    RUGI: no
+    GEPI: yes
+567.1.1:
+  pops: 
+    gepid-arianism: 0
+    avar_culture-arianism: 1
+  owner: AVR
+  controller: AVR
+  cores:
+    GEPI: no
+    AVR: yes
+570.1.1:
+  pops: 
+    avar_culture-arianism: 0
+    avar_culture-: 1
+804.1.1:
+  owner: BUL
+  controller: BUL
+  cores:
+    AVR: no
+    BUL: yes
+884.1.1:
+  owner: MVA
+  controller: MVA
+  cores:
+    BUL: no
+    MVA: yes
+897.1.1:
+  pops: 
+    hungarian-: 1
+  owner: HUN
+  controller: HUN
+  cores:
+    MVA: no
+    HUN: yes
+1010.1.1:
+  pops: 
+    hungarian-catholic: 1
+1507.1.1:
+  controller: HUN
+1515.1.1:
+  controller: HUN
+1518.1.1:
+  controller: HUN
+1526.8.30:
+  owner: HAB
+  controller: HAB
+  cores:
+    HAB: yes
+1540.1.1:
+  pops: 
+    hungarian-catholic: 0
+    hungarian-calvinist: 1
+1542.1.1:
+  controller: TRA
+1545.8.1:
+  owner: TRA
+  cores:
+    HAB: no
+    TRA: yes
+1551.7.19:
+  owner: HAB
+  controller: HAB
+  cores:
+    HAB: yes
+1556.10.1:
+  owner: TRA
+  controller: TRA
+1567.1.1:
+1570.1.1:
+  owner: HAB
+  controller: HAB
+  cores:
+    TRA: no
+1620.1.1:
+  controller: HAB
+1690.1.1:
+  owner: HAB
+  controller: HAB
+1800.1.1:
+  pops: 
+    hungarian-calvinist: 0
+    hungarian-catholic: 1
+1918.10.31:
+  owner: HUN
+  controller: HUN
+  cores:
+    HAB: no

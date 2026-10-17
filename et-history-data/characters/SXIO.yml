@@ -1,0 +1,143 @@
+sxio_bi_xiongnu:
+  18.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: bi
+    dynasty: xiongnu_dynasty
+    adm: 30
+    dip: 60
+    mil: 30
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  90.1.1:
+    death: yes
+sxio_anguo_xiongnu:
+  60.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: anguo
+    dynasty: xiongnu_dynasty
+    adm: 30
+    dip: 45
+    mil: 60
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  179.1.1:
+    death: yes
+sxio_kyankyui_xiongnu:
+  149.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: kyankyui
+    dynasty: xiongnu_dynasty
+    adm: 45
+    dip: 45
+    mil: 45
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  188.1.1:
+    death: yes
+sxio_chizhishizhuhou_xiongnu:
+  158.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: chizhishizhuhou
+    dynasty: xiongnu_dynasty
+    adm: 30
+    dip: 60
+    mil: 15
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  195.1.1:
+    death: yes
+sxio_huchuquan_xiongnu:
+  165.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: huchuquan
+    dynasty: xiongnu_dynasty
+    adm: 30
+    dip: 15
+    mil: 30
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  215.1.1:
+    death: yes
+sxio_kyuibi_xiongnu:
+  185.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: kyuibi
+    dynasty: xiongnu_dynasty
+    adm: 15
+    dip: 15
+    mil: 60
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  260.1.1:
+    death: yes
+sxio_liu_qubei_han_zhao:
+  230.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: liu_qubei
+    dynasty: han_zhao_dynasty
+    adm: 60
+    dip: 30
+    mil: 45
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  290.1.1:
+    death: yes
+sxio_liu_yuan_han_zhao:
+  260.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: liu_yuan
+    dynasty: han_zhao_dynasty
+    adm: 45
+    dip: 30
+    mil: 60
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  310.1.1:
+    death: yes
+sxio_liu_cong_han_zhao:
+  280.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: liu_cong
+    dynasty: han_zhao_dynasty
+    adm: 45
+    dip: 30
+    mil: 45
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  318.1.1:
+    death: yes
+sxio_liu_yao_han_zhao:
+  288.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: liu_yao
+    dynasty: han_zhao_dynasty
+    adm: 45
+    dip: 60
+    mil: 30
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  329.1.1:
+    death: yes
+sxio_liu_xi_han_zhao:
+  299.1.1:
+    birth: ordos #TODO: Date and location guessed, check if better data is available
+    first_name: liu_xi
+    dynasty: han_zhao_dynasty
+    adm: 45
+    dip: 30
+    mil: 30
+    religion: tengri
+    culture: mongolian_culture
+    tag: SXIO
+  3000.1.1:
+    death: yes

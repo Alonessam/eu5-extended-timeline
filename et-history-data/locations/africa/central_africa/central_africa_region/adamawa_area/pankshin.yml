@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/1161 - Bauchi.txt
+2.1.1:
+  pops: 
+    hausa-bantu_religion: 1
+1400.1.1:
+  owner: KWAR
+  controller: KWAR
+  cores:
+    KWAR: yes
+  resource: grain
+1807.1.1:
+  owner: SOKO
+  controller: SOKO
+  cores:
+    SOKO: yes
+1830.1.1:
+  pops: 
+    hausa-bantu_religion: 0
+    hausa-sunni: 1
+1903.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1960.10.1:
+  owner: NIGR
+  controller: NIGR
+  cores:
+    GBR: no
+    SOKO: no
+    NIGR: yes

@@ -1,0 +1,7 @@
+#imported from EU4
+2.1.1:
+  government: eurasian_horde_no_muslim
+  color: rgb { 220  193  88 }
+  religion: tengri
+  primary_culture: khitan
+  capital: naiman

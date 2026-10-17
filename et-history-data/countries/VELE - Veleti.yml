@@ -1,0 +1,12 @@
+#imported from EU4
+2.1.1:
+  government: et_tribal_federation
+  color: rgb { 160  180  120 }
+  religion: slavic_polytheism
+  primary_culture: polabian
+  capital: wittenberg
+740.1.1:
+  ruler: vele_dragowit_veleti
+831.1.1:
+  government: eurasian_tribe
+  government_rank: rank_duchy

@@ -1,0 +1,41 @@
+#imported from EU4 file: history/provinces/3103 - Woleu-Ntem.txt
+2.1.1:
+  pops: 
+    fang_gabun-bantu_religion: 1
+1880.6.13:
+  pops: 
+    fang_gabun-bantu_religion: 0
+    fang_gabun-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: grain
+1911.11.4:
+  owner: GER
+  controller: GER
+  cores:
+    FRA: no
+    GER: yes
+1919.6.28:
+  owner: FRA
+  controller: FRA
+  cores:
+    GER: no
+    FRA: yes
+1940.6.14:
+  owner: VFRA
+  controller: VFRA
+  cores:
+    VFRA: yes
+1940.11.12:
+  owner: FRA
+  controller: FRA
+  cores:
+    VFRA: no
+1960.8.17:
+  owner: GABO
+  controller: GABO
+  cores:
+    FRA: no
+    GABO: yes

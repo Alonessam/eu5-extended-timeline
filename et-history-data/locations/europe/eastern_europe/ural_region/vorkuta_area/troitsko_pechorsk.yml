@@ -1,0 +1,25 @@
+#imported from EU4 file: history/provinces/1780 - Komi.txt
+2.1.1:
+  pops: 
+    nenets_culture-muinaisusko: 1
+1850.1.1:
+  pops: 
+    nenets_culture-muinaisusko: 0
+    nenets_culture-orthodox: 1
+  owner: RUS
+  controller: RUS
+  cores:
+    RUS: yes
+  resource: fur
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

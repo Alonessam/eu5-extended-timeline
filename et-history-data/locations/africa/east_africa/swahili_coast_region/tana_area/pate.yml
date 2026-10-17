@@ -1,0 +1,37 @@
+#imported from EU4 file: history/provinces/2796 - Pate.txt
+2.1.1:
+  pops: 
+    somali_culture-bantu_religion: 1
+200.1.1:
+  pops: 
+    somali_culture-bantu_religion: 0
+    swahili_culture-bantu_religion: 1
+850.1.1:
+  owner: PTE
+  controller: PTE
+  cores:
+    PTE: yes
+  resource: cloth
+1000.1.1:
+  pops: 
+    swahili_culture-bantu_religion: 0
+    swahili_culture-sunni: 1
+1870.1.1:
+  owner: ZZB
+  controller: ZZB
+  cores:
+    PTE: no
+    ZZB: yes
+1895.7.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    ZZB: no
+    GBR: yes
+1963.12.12:
+  owner: KENY
+  controller: KENY
+  cores:
+    GBR: no
+    MLI: no
+    KENY: yes

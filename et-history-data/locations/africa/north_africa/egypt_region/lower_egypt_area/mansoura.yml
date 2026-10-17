@@ -1,0 +1,126 @@
+#imported from EU4 file: history/provinces/2316 - Al Gharbia.txt
+2.1.1:
+  pops: 
+    old_egyptian-hellenism_religion: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: grain
+395.1.17:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    ROM: no
+    BYZ: yes
+420.1.1:
+  pops: 
+    old_egyptian-hellenism_religion: 0
+    old_egyptian-chalcedonism: 1
+451.11.1:
+  pops: 
+    old_egyptian-chalcedonism: 0
+    old_egyptian-miaphysite: 1
+618.1.1:
+  controller: ERA
+628.1.1:
+  controller: BYZ
+641.1.1:
+  owner: RASH
+  controller: RASH
+  cores:
+    BYZ: no
+    RASH: yes
+661.7.28:
+  owner: UMAY
+  controller: UMAY
+  cores:
+    RASH: no
+    UMAY: yes
+750.8.6:
+  owner: ABBA
+  controller: ABBA
+  cores:
+    UMAY: no
+    ABBA: yes
+868.9.15:
+  owner: EGY
+  controller: EGY
+  cores:
+    ABBA: no
+    EGY: yes
+905.1.10:
+  owner: ABBA
+  controller: ABBA
+  cores:
+    ABBA: yes
+935.8.26:
+  owner: EGY
+  controller: EGY
+  cores:
+    ABBA: no
+    EGY: yes
+969.6.1:
+  owner: FATI
+  controller: FATI
+  cores:
+    FATI: yes
+980.1.1:
+  pops: 
+    old_egyptian-miaphysite: 0
+    lower_egyptian_culture-shia: 1
+1171.1.1:
+  owner: EGY
+  controller: EGY
+  cores:
+    FATI: no
+    EGY: yes
+1180.1.1:
+  pops: 
+    lower_egyptian_culture-shia: 0
+    lower_egyptian_culture-sunni: 1
+1250.5.2:
+  owner: MAM
+  controller: MAM
+  cores:
+    EGY: no
+    MAM: yes
+1517.1.1:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1521.1.1:
+  controller: TUR
+1798.8.3:
+  controller: FRA
+1801.9.2:
+  controller: TUR
+1805.5.17:
+  owner: EGY
+  cores:
+    MAM: no
+    EGY: yes
+1811.6.1:
+  controller: EGY
+1882.9.13:
+  owner: GBR
+  controller: GBR
+  cores:
+    TUR: no
+    GBR: yes
+1914.12.19:
+  owner: EGY
+  controller: EGY
+  cores:
+    GBR: no
+1958.2.22:
+  owner: AIA
+  controller: AIA
+  cores:
+    AIA: yes
+1971.9.2:
+  owner: EGY
+  controller: EGY
+  cores:
+    AIA: no

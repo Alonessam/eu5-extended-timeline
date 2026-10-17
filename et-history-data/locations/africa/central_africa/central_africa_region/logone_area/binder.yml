@@ -1,0 +1,38 @@
+#imported from EU4 file: history/provinces/2286 - Logone.txt
+2.1.1:
+  pops: 
+    sara_culture-bantu_religion: 1
+1893.1.1:
+  owner: KBO
+  controller: KBO
+  cores:
+    KBO: yes
+  resource: ivory
+1900.4.22:
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+1910.1.1:
+  pops: 
+    sara_culture-bantu_religion: 0
+    sara_culture-lutheran: 1
+1911.11.4:
+  owner: GER
+  controller: GER
+  cores:
+    FRA: no
+    GER: yes
+1919.6.28:
+  owner: FRA
+  controller: FRA
+  cores:
+    GER: no
+    FRA: yes
+1960.8.11:
+  owner: CHAD
+  controller: CHAD
+  cores:
+    FRA: no
+    KBO: no
+    CHAD: yes

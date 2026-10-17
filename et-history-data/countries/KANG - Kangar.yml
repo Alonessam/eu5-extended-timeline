@@ -1,0 +1,7 @@
+#imported from EU4
+2.1.1:
+  government: et_nomadic_horde
+  color: rgb { 170  130  50 }
+  religion: tengri
+  primary_culture: pecheneg
+  capital: aybas

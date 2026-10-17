@@ -1,0 +1,41 @@
+#imported from EU4 file: history/provinces/4142 - Aarhus.txt
+2.1.1:
+  pops: 
+    jute-norse: 1
+  owner: JUTE
+  controller: JUTE
+  cores:
+    JUTE: yes
+  resource: naval_supplies
+650.1.1:
+  owner: DAN
+  controller: DAN
+  cores:
+    JUTE: no
+    DAN: yes
+660.1.1:
+  pops: 
+    jute-norse: 0
+    danish-norse: 1
+900.1.1:
+  pops: 
+    danish-norse: 0
+    danish-catholic: 1
+1534.11.2:
+  controller: DAN
+1536.1.1:
+  pops: 
+    danish-catholic: 0
+    danish-lutheran: 1
+1627.8.1:
+  controller: HAB
+1629.5.22:
+  controller: DAN
+1644.1.25:
+  controller: SWE
+1645.8.13:
+  controller: DAN
+1940.4.9:
+  controller: GER
+1945.5.4:
+  controller: DAN

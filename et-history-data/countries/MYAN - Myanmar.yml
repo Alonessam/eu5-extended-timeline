@@ -1,0 +1,26 @@
+#imported from EU4
+2.1.1:
+  government: south_east_asia_monarchy
+  color: rgb { 185  181  80 }
+  religion: theravada
+  primary_culture: burmese_culture
+  capital: dagon
+1920.1.1:
+  government: et_modern_republic
+1988.9.18:
+  ruler: myan_saw_maung
+1992.4.23:
+  ruler: myan_than_shwe
+2005.11.6:
+  capital: nyaungyan
+2011.3.30:
+  government: et_modern_republic
+  ruler: myan_thein_sein
+2016.3.30:
+  ruler: myan_htin_kyaw
+2018.3.21:
+  ruler: myan_myint_swe
+2018.3.30:
+  ruler: myan_win_myint
+2021.2.1:
+  ruler: myan_myint_swe_1

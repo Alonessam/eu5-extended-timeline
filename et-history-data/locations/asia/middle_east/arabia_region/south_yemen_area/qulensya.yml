@@ -1,0 +1,62 @@
+#imported from EU4 file: history/provinces/1099 - Socotra.txt
+2.1.1:
+  pops: 
+    mehri_culture-bimoism: 1
+  resource: fish
+52.1.1:
+  pops: 
+    mehri_culture-bimoism: 0
+    mehri_culture-chalcedonism: 1
+431.7.1:
+  pops: 
+    mehri_culture-chalcedonism: 0
+    mehri_culture-nestorianism: 1
+525.1.1:
+  owner: YEM
+  controller: YEM
+  cores:
+    YEM: yes
+628.1.1:
+  owner: RASH
+  controller: RASH
+  cores:
+    RASH: yes
+661.7.28:
+  owner: UMAY
+  controller: UMAY
+  cores:
+    RASH: no
+    UMAY: yes
+750.8.6:
+  owner: ABBA
+  controller: ABBA
+  cores:
+    UMAY: no
+    ABBA: yes
+847.1.1:
+  owner: MAHR
+  controller: MAHR
+  cores:
+    ABBA: no
+    MAHR: yes
+1507.1.1:
+  owner: POR
+  controller: POR
+1511.1.1:
+  owner: MAHR
+  controller: MAHR
+1550.1.1:
+  pops: 
+    mehri_culture-nestorianism: 0
+    mehri_culture-sunni: 1
+1967.11.30:
+  owner: ADEN
+  controller: ADEN
+  cores:
+    ADEN: yes
+1990.5.22:
+  owner: YEM
+  controller: YEM
+  cores:
+    ADEN: no
+    YEM: yes

@@ -1,0 +1,29 @@
+#imported from EU4 file: history/provinces/4059 - Shaga.txt
+2.1.1:
+  pops: 
+    maasai_culture-bantu_religion: 1
+200.1.1:
+  pops: 
+    maasai_culture-bantu_religion: 0
+    luhya_culture-bantu_religion: 1
+1895.1.1:
+  pops: 
+    luhya_culture-bantu_religion: 0
+    luhya_culture-lutheran: 1
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+  resource: fish
+1919.6.28:
+  owner: GBR
+  controller: GBR
+  cores:
+    GER: no
+    GBR: yes
+1961.12.9:
+  owner: TANZ
+  controller: TANZ
+  cores:
+    GBR: no
+    TANZ: yes

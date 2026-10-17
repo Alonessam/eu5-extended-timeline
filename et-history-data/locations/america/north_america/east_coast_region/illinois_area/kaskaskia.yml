@@ -1,0 +1,32 @@
+#imported from EU4 file: history/provinces/4904 - Espeminkia.txt
+2.1.1:
+  pops: 
+    cahokia_culture-iroquoian_totemism: 1
+  resource: grain
+1703.1.1:
+  pops: 
+    cahokia_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: fur
+1763.2.10:
+  pops: 
+    french-catholic: 0
+    english-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1778.7.4:
+  pops: 
+    english-lutheran: 0
+    american-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    GBR: no
+    USA: yes

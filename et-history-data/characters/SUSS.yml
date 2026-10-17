@@ -1,0 +1,173 @@
+suss_aelle_of_sussex:
+  450:
+    birth: hastings #unknown
+    first_name: aelle
+    dynasty: of_sussex_dynasty
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: SUSS
+  514:
+    death: yes
+suss_cissa_of_sussex:
+  490:
+    birth: hastings #unknown
+    first_name: cissa
+    dynasty: of_sussex_dynasty
+    father: suss_aelle_of_sussex
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: SUSS
+  567:
+    death: yes
+suss_aethelwealh_of_sussex:
+  620:
+    birth: hastings #unknown
+    first_name: aethelwealh
+    dynasty: of_sussex_dynasty
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: SUSS
+  682:
+    religion: chalcedonism
+  685:
+    death: yes
+suss_ecgwald_of_sussex:
+  650:
+    birth: hastings #unknown
+    first_name: ecgwald
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  685:
+    death: yes
+suss_berthun_of_sussex:
+  655.1.1:
+    birth: hastings #unknown
+    first_name: berthun
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  685:
+    death: yes
+suss_anhun_of_sussex:
+  655.1.1:
+    birth: hastings #unknown
+    first_name: anhun
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  692:
+    death: yes
+suss_nothhelm_of_sussex:
+  660:
+    birth: hastings #unknown
+    first_name: nothhelm
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  715:
+    death: yes
+suss_watt_of_sussex:
+  670:
+    birth: hastings #unknown
+    first_name: watt
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  710:
+    death: yes
+suss_bryni_of_sussex:
+  670:
+    birth: hastings #unknown
+    first_name: bryni
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  710:
+    death: yes
+suss_osric_of_sussex:
+  670:
+    birth: hastings #unknown
+    first_name: osric
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  715:
+    death: yes
+suss_aethelstan_of_sussex:
+  680:
+    birth: hastings #unknown
+    first_name: aethelstan
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  740:
+    death: yes
+suss_aethelberht_of_sussex:
+  710:
+    birth: hastings #unknown
+    first_name: aethelberht
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  760:
+    death: yes
+suss_oswald_of_sussex:
+  730:
+    birth: hastings #unknown
+    first_name: oswald
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  780:
+    death: yes
+suss_osmund_of_sussex:
+  730:
+    birth: hastings #unknown
+    first_name: osmund
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  772:
+    death: yes
+suss_oslac_of_sussex:
+  740:
+    birth: hastings #unknown
+    first_name: oslac
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  780:
+    death: yes
+suss_aelfwald_of_sussex:
+  740:
+    birth: hastings #unknown
+    first_name: aelfwald
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  772:
+    death: yes
+suss_ealdwulf_of_sussex:
+  750:
+    birth: hastings #unknown
+    first_name: ealdwulf
+    dynasty: of_sussex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: SUSS
+  827:
+    death: yes

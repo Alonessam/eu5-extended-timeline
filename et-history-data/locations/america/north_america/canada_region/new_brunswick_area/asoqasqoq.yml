@@ -1,0 +1,23 @@
+#imported from EU4 file: history/provinces/2571 - Madawaska.txt
+2.1.1:
+  pops: 
+    wolastoqiyik_culture-iroquoian_totemism: 1
+  owner: MLS
+  controller: MLS
+  cores:
+    MLS: yes
+  resource: fur
+1791.1.1:
+  pops: 
+    wolastoqiyik_culture-iroquoian_totemism: 0
+    british_canadian-catholic: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

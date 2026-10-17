@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/4905 - Tapouaro.txt
+2.1.1:
+  pops: 
+    cahokia_culture-iroquoian_totemism: 1
+1680.6.1:
+  owner: PEO
+  controller: PEO
+  cores:
+    PEO: yes
+  resource: grain
+1808.1.1:
+  pops: 
+    cahokia_culture-iroquoian_totemism: 0
+    american-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1830.1.1:
+  cores:
+    USA: yes

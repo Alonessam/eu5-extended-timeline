@@ -1,0 +1,51 @@
+#imported from EU4 file: history/provinces/1189 - Shangwe.txt
+2.1.1:
+  pops: 
+    shuar_culture-bantu_religion: 1
+300.1.1:
+  pops: 
+    shuar_culture-bantu_religion: 0
+    shona_culture-bantu_religion: 1
+1350.1.1:
+  owner: TONG
+  controller: TONG
+  cores:
+    TONG: yes
+  resource: livestock
+1430.1.1:
+  owner: MUTA
+  controller: MUTA
+  cores:
+    MUTA: yes
+1630.1.1:
+  owner: RZW
+  controller: RZW
+  cores:
+    RZW: yes
+1866.1.1:
+  owner: MATB
+  controller: MATB
+  cores:
+    RZW: no
+    MATB: yes
+1894.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1910.1.1:
+  pops: 
+    shona_culture-bantu_religion: 0
+    shona_culture-lutheran: 1
+1965.11.11:
+  owner: RHOD
+  controller: RHOD
+  cores:
+    GBR: no
+    RHOD: yes
+1980.4.18:
+  owner: ZMW
+  controller: ZMW
+  cores:
+    RHOD: no
+    ZMW: yes

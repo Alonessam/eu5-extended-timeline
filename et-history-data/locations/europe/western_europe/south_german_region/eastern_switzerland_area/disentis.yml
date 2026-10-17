@@ -1,0 +1,85 @@
+#imported from EU4 file: history/provinces/4722 - Illanz.txt
+2.1.1:
+  pops: 
+    romansh-druidism: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: livestock
+360.1.1:
+  pops: 
+    romansh-druidism: 0
+    romansh-chalcedonism: 1
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+476.9.4:
+  owner: BCH
+  controller: BCH
+  cores:
+    BCH: yes
+480.6.1:
+  cores:
+    ROMW: no
+489.1.1:
+  owner: OSTR
+  controller: OSTR
+  cores:
+    OSTR: yes
+553.1.1:
+  owner: LOMB
+  controller: LOMB
+  cores:
+    OSTR: no
+    LOMB: yes
+610.1.1:
+  owner: BCH
+  controller: BCH
+  cores:
+    LOMB: no
+    BCH: yes
+836.1.1:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    FRAN: yes
+840.6.21:
+  owner: EFRA
+  controller: EFRA
+  cores:
+    FRAN: no
+    EFRA: yes
+867.1.1:
+  pops: 
+    romansh-chalcedonism: 0
+    romansh-catholic: 1
+911.11.10:
+  owner: BCH
+  controller: BCH
+  cores:
+    EFRA: no
+    BCH: yes
+1367.1.29:
+  owner: SGL
+  controller: SGL
+  cores:
+    BCH: no
+    SGL: yes
+1500.1.1:
+  pops: 
+    romansh-catholic: 0
+    high_alemannic-catholic: 1
+1524.1.1:
+  pops: 
+    high_alemannic-catholic: 0
+    high_alemannic-calvinist: 1
+1799.4.21:
+  owner: SWI
+  controller: SWI
+  cores:
+    SGL: no
+    SWI: yes

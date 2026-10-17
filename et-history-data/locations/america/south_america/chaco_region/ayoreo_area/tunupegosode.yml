@@ -1,0 +1,32 @@
+#imported from EU4 file: history/provinces/2882 - Fuerte Borbon.txt
+2.1.1:
+  pops: 
+    guaikuru_culture-muisca_religion: 1
+1565.1.1:
+  pops: 
+    guaikuru_culture-muisca_religion: 0
+    guaikuru_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  resource: wool
+1590.1.1:
+  cores:
+    SPA: yes
+1825.8.6:
+  owner: BOLI
+  controller: BOLI
+  cores:
+    BOLI: yes
+1836.10.28:
+  owner: PERU
+  controller: PERU
+  cores:
+    PERU: yes
+1839.8.25:
+  owner: BOLI
+  controller: BOLI
+  cores:
+    PERU: no
+1847.7.21:
+  cores:
+    SPA: no

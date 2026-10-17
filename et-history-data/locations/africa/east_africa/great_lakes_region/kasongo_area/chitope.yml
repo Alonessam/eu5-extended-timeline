@@ -1,0 +1,29 @@
+#imported from EU4 file: history/provinces/4103 - Tabwa.txt
+2.1.1:
+  pops: 
+    twa_culture-bantu_religion: 1
+300.1.1:
+  pops: 
+    twa_culture-bantu_religion: 0
+    luba-bantu_religion: 1
+1350.1.1:
+  owner: KAZE
+  controller: KAZE
+  cores:
+    KAZE: yes
+  resource: copper
+1894.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1960.1.1:
+  pops: 
+    luba-bantu_religion: 0
+    luba-lutheran: 1
+1964.10.24:
+  owner: ZAMB
+  controller: ZAMB
+  cores:
+    GBR: no
+    ZAMB: yes

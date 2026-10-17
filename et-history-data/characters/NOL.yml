@@ -1,0 +1,490 @@
+nol_oswiu_of_northumbria:
+  612:
+    birth: alnwick #unknown
+    first_name: oswiu
+    dynasty: iding_dynasty
+    father: bern_aethelfrith_iding
+    mother: bern_acha_of_deira
+    adm: 70
+    dip: 60
+    mil: 60
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: BERN
+  654:
+    tag: NOL
+  670.2.15:
+    death: yes
+nol_rhiainfellt:
+  612:
+    birth: lancaster #unknown
+    first_name: rhiainfellt
+    female: yes
+    religion: chalcedonism
+    culture: cumbric
+    tag: RHEG
+  628:
+    spouse: nol_oswiu_of_northumbria
+    tag: BERN
+  636:
+    death: yes
+nol_eanflaed:
+  626.4.19:
+    birth: york #unknown
+    first_name: eanflaed
+    dynasty: yffing_dynasty
+    female: yes
+    father: deir_edwin_yffing
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: DEIR
+  644:
+    spouse: nol_oswiu_of_northumbria
+    tag: BERN
+  654:
+    tag: NOL
+  655:
+    spouse: ---
+  685:
+    death: yes
+nol_fin:
+  630:
+    birth: belfast #unknown
+    first_name: fin
+    female: yes
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  658:
+    spouse: nol_oswiu_of_northumbria
+    tag: NOL
+  690:
+    death: yes
+nol_aethelthryth:
+  636.3.4:
+    birth: norwich #unknown
+    first_name: aethelthryth
+    dynasty: wuffinga_dynasty
+    female: yes
+    father: eang_anna_wuffinga
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: EANG
+  660:
+    spouse: nol_ecgfrith_of_northumbria
+    tag: NOL
+  679.6.23:
+    death: yes
+nol_ecgfrith_of_northumbria:
+  645:
+    birth: york #unknown
+    first_name: ecgfrith
+    dynasty: iding_dynasty
+    father: nol_oswiu_of_northumbria
+    mother: nol_eanflaed
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: BERN
+  654:
+    tag: NOL
+  685.5.20:
+    death: yes
+nol_cuthwin_iding:
+  650:
+    birth: york #unknown
+    first_name: cuthwine
+    dynasty: iding_dynasty
+    father: bern_leoldwald_iding
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: BERN
+  654:
+    tag: NOL
+  700:
+    death: yes
+nol_aelfflaed_of_northumbria:
+  654:
+    birth: york #unknown
+    first_name: aelfflaed
+    dynasty: iding_dynasty
+    female: yes
+    father: nol_oswiu_of_northumbria
+    mother: nol_eanflaed
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  714:
+    death: yes
+nol_eata_iding:
+  660:
+    birth: york #unknown
+    first_name: eata
+    dynasty: iding_dynasty
+    father: bern_leoldwald_iding
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  700:
+    death: yes
+nol_aldfrith_of_northumbria:
+  660:
+    birth: york #unknown
+    first_name: aldfrith
+    dynasty: iding_dynasty
+    father: nol_oswiu_of_northumbria
+    mother: nol_fin
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  704.12.14:
+    death: yes
+nol_cuthburh_cerdicing:
+  665:
+    birth: winchester #unknown
+    first_name: cuthburh
+    dynasty: wessex_dynasty
+    father: wess_cenred_cerdicing
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  680:
+    spouse: nol_aldfrith_of_northumbria
+    tag: NOL
+  725.8.31:
+    death: yes
+nol_cutha_iding:
+  670:
+    birth: york #unknown
+    first_name: cutha
+    dynasty: iding_dynasty
+    father: nol_cuthwin_iding
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  710:
+    death: yes
+nol_eadwulf_of_northumbria:
+  670:
+    birth: york #unknown
+    first_name: eadwulf
+    dynasty: northumbria_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  717:
+    death: yes
+nol_coenred_of_northumbria:
+  690:
+    birth: york #unknown
+    first_name: coenred
+    dynasty: iding_dynasty
+    father: nol_cutha_iding
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  718:
+    death: yes
+nol_osred_i_of_northumbria:
+  697:
+    birth: york #unknown
+    first_name: osred
+    dynasty: iding_dynasty
+    father: nol_aldfrith_of_northumbria
+    mother: nol_cuthburh_cerdicing
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  716:
+    death: yes
+nol_osric_of_northumbria:
+  700:
+    birth: york #unknown
+    first_name: osric
+    dynasty: iding_dynasty
+    father: nol_aldfrith_of_northumbria
+    mother: nol_cuthburh_cerdicing
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  729.5.29:
+    death: yes
+nol_ceolwulf_of_northumbria:
+  700:
+    birth: york #unknown
+    first_name: ceolwulf
+    dynasty: iding_dynasty
+    father: nol_cutha_iding
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  765:
+    death: yes
+nol_eadberht_of_northumbria:
+  700:
+    birth: york #unknown
+    first_name: eadberht
+    dynasty: iding_dynasty
+    father: nol_eata_iding
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  768.8.20:
+    death: yes
+nol_oswulf_of_northumbria:
+  730:
+    birth: york #unknown
+    first_name: oswulf
+    dynasty: iding_dynasty
+    father: nol_eadberht_of_northumbria
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  759.7.24:
+    death: yes
+nol_aethelwald_moll_of_northumbria:
+  730:
+    birth: york #unknown
+    first_name: aethelwald
+    nickname: moll
+    dynasty: aethelwalding_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  765.10.30:
+    death: yes
+nol_alhred_of_northumbria:
+  735:
+    birth: york #unknown
+    first_name: alhred
+    dynasty: iding_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  774:
+    death: yes
+nol_aelfwald_i_of_northumbria:
+  760:
+    birth: york #unknown
+    first_name: aelfwald
+    dynasty: iding_dynasty
+    father: nol_oswulf_of_northumbria
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  788.9.23:
+    death: yes
+nol_osred_ii_of_northumbria:
+  760:
+    birth: york #unknown
+    first_name: osred
+    dynasty: iding_dynasty
+    father: nol_alhred_of_northumbria
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  792:
+    death: yes
+nol_aethelred_i_of_northumbria:
+  762:
+    birth: york #unknown
+    first_name: aethelred
+    dynasty: aethelwalding_dynasty
+    father: nol_aethelwald_moll_of_northumbria
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  796.4.18:
+    death: yes
+nol_osbald_of_northumbria:
+  770:
+    birth: york #unknown
+    first_name: osbald
+    dynasty: northumbria_dynasty
+    adm: 0
+    dip: 0
+    mil: 10
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  799:
+    death: yes
+nol_eardwulf_i_of_northumbria:
+  770:
+    birth: york #unknown
+    first_name: eardwulf
+    dynasty: eardwulfing_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  809:
+    death: yes
+nol_aelfwald_ii_of_northumbria:
+  780:
+    birth: york #unknown
+    first_name: aelfwald
+    dynasty: northumbria_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  810:
+    death: yes
+nol_aelf_of_northumbria:
+  780:
+    birth: york #unknown
+    first_name: aelf
+    dynasty: iding_dynasty
+    father: nol_aelfwald_i_of_northumbria
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  791:
+    death: yes
+nol_aelfwine_of_northumbria:
+  782:
+    birth: york #unknown
+    first_name: aelfwine
+    dynasty: iding_dynasty
+    father: nol_aelfwald_i_of_northumbria
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  791:
+    death: yes
+nol_eanred_i_of_northumbria:
+  790:
+    birth: york #unknown
+    first_name: eanred
+    dynasty: eardwulfing_dynasty
+    father: nol_eardwulf_i_of_northumbria
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  841:
+    death: yes
+nol_aethelred_ii_of_northumbria:
+  810:
+    birth: york #unknown
+    first_name: aethelred
+    dynasty: eardwulfing_dynasty
+    father: nol_eanred_i_of_northumbria
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  849:
+    death: yes
+nol_osberht_i_of_northumbria:
+  820:
+    birth: york #unknown
+    first_name: osberht
+    dynasty: northumbria_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  867.3.21:
+    death: yes
+nol_aelle_ii_of_northumbria:
+  830:
+    birth: york #unknown
+    first_name: aella
+    dynasty: northumbria_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  867:
+    religion: catholic
+  867.3.21:
+    death: yes
+nol_ecgberht_i_of_northumbria:
+  840:
+    birth: york #unknown
+    first_name: ecgberht
+    dynasty: northumbria_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  867:
+    religion: catholic
+  872:
+    death: yes
+nol_ricsige_i_of_northumbria:
+  845:
+    birth: york #unknown
+    first_name: ricsige
+    dynasty: northumbria_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  867:
+    religion: catholic
+  876:
+    death: yes
+bern_ecgberht_ii_of_northumbria:
+  850:
+    birth: york #unknown
+    first_name: ecgberht
+    dynasty: northumbria_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  867:
+    religion: catholic
+  895:
+    death: yes
+nol_aethelthryth_of_northumbria:
+  850:
+    birth: york #unknown
+    first_name: aethelthryth
+    dynasty: northumbria_dynasty
+    female: yes
+    father: nol_aelle_ii_of_northumbria
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: NOL
+  867:
+    religion: catholic
+  900:
+    death: yes
+nol_eadwulf_ii_of_northumbria:
+  870:
+    birth: york #unknown
+    first_name: eadwulf
+    dynasty: eadwulfing_dynasty
+    mother: nol_aethelthryth_of_northumbria
+    religion: catholic
+    culture: anglo_saxon
+    tag: NOL
+  913.1.1:
+    death: yes
+nol_ealdred_i_of_northumbria:
+  890:
+    birth: alnwick #unknown
+    first_name: ealdred
+    dynasty: eadwulfing_dynasty
+    father: nol_eadwulf_ii_of_northumbria
+    religion: catholic
+    culture: anglo_saxon
+    tag: NOL
+  933:
+    death: yes
+nol_adulf_i_of_northumbria:
+  910:
+    birth: alnwick #unknown
+    first_name: adulf
+    dynasty: eadwulfing_dynasty
+    father: nol_ealdred_i_of_northumbria
+    religion: catholic
+    culture: anglo_saxon
+    tag: NOL
+  934.1.1:
+    death: yes
+nol_oswulf_of_bamburgh:
+  915:
+    birth: alnwick #unknown
+    first_name: oswulf
+    dynasty: eadwulfing_dynasty
+    father: nol_ealdred_i_of_northumbria
+    religion: catholic
+    culture: anglo_saxon
+    tag: NOL
+  960:
+    death: yes

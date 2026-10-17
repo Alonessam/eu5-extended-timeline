@@ -1,0 +1,45 @@
+#imported from EU4 file: history/provinces/886 - Waco.txt
+2.1.1:
+  pops: 
+    kitikitish_culture-iroquoian_totemism: 1
+  owner: KTK
+  controller: KTK
+  cores:
+    KTK: yes
+  resource: grain
+1836.3.2:
+  pops: 
+    kitikitish_culture-iroquoian_totemism: 0
+    british_louisianan-catholic: 1
+  owner: TEXA
+  controller: TEXA
+  cores:
+    TEXA: yes
+    MEX: yes
+1845.12.29:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1848.2.2:
+  cores:
+    MEX: no
+1850.1.1:
+  pops: 
+    british_louisianan-catholic: 0
+    british_louisianan-lutheran: 1
+1861.2.1:
+  owner: TEXA
+  controller: TEXA
+  cores:
+    TEXA: yes
+1861.3.2:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

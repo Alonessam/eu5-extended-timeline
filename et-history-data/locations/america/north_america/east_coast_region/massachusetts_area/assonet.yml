@@ -1,0 +1,30 @@
+#imported from EU4 file: history/provinces/2561 - Wampanoag.txt
+2.1.1:
+  pops: 
+    massachusett_culture-iroquoian_totemism: 1
+1620.11.21:
+  pops: 
+    massachusett_culture-iroquoian_totemism: 0
+    english-calvinist: 1
+  owner: ENG
+  controller: ENG
+  resource: fish
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    ENG: no
+    GBR: yes
+1764.7.1:
+  pops: 
+    english-calvinist: 0
+    american-calvinist: 1
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1782.11.1:
+  cores:
+    GBR: no
+1910.1.1:

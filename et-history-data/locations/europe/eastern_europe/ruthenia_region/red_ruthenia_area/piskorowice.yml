@@ -1,0 +1,110 @@
+#imported from EU4 file: history/provinces/4538 - Chelm.txt
+2.1.1:
+  pops: 
+    lesser_polish-slavic: 1
+  owner: VEND
+  controller: VEND
+  cores:
+    VEND: yes
+  resource: wool
+150.1.1:
+  pops: 
+    lesser_polish-slavic: 0
+    gothic-germanic: 1
+  owner: GOTH
+  controller: GOTH
+  cores:
+    VEND: no
+    GOTH: yes
+220.1.1:
+  pops: 
+    gothic-germanic: 0
+    lesser_polish-slavic: 1
+  owner: VEND
+  controller: VEND
+  cores:
+    GOTH: no
+    VEND: yes
+550.1.1:
+  owner: LEDN
+  controller: LEDN
+  cores:
+    VEND: no
+    LEDN: yes
+900.1.1:
+  owner: VIST
+  controller: VIST
+  cores:
+    LEDN: no
+    VIST: yes
+940.1.1:
+  owner: POL
+  controller: POL
+  cores:
+    POL: yes
+981.1.1:
+  owner: KIEV
+  controller: KIEV
+  cores:
+    KIEV: yes
+1018.7.1:
+  owner: POL
+  controller: POL
+  cores:
+    KIEV: no
+    POL: yes
+1031.1.1:
+  owner: KIEV
+  controller: KIEV
+  cores:
+    KIEV: yes
+1050.1.1:
+  pops: 
+    lesser_polish-slavic: 0
+    lesser_polish-catholic: 1
+1054.2.20:
+  owner: HAL
+  controller: HAL
+  cores:
+    KIEV: no
+    HAL: yes
+    KIE: yes
+1340.1.1:
+  owner: POL
+  controller: POL
+  cores:
+    POL: yes
+1569.7.1:
+  owner: PLC
+  controller: PLC
+  cores:
+    PLC: yes
+1570.1.1:
+1657.7.1:
+  controller: SWE
+1660.1.1:
+  controller: RUS
+1661.1.1:
+  controller: PLC
+1795.10.24:
+  owner: RUS
+  controller: RUS
+  cores:
+    RUS: yes
+1915.8.1:
+  controller: GER
+1918.3.3:
+  owner: POL
+  controller: POL
+  cores:
+    RUS: no
+1939.9.27:
+  controller: SOVI
+1939.10.6:
+  owner: GER
+  controller: GER
+1944.7.24:
+  controller: SOVI
+1945.5.8:
+  owner: POL
+  controller: POL

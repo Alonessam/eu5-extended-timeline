@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/2594 - Quennebigon.txt
+2.1.1:
+  pops: 
+    ilili_culture-iroquoian_totemism: 1
+1790.1.1:
+  pops: 
+    ilili_culture-iroquoian_totemism: 0
+    ilili_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: fur
+1870.7.15:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

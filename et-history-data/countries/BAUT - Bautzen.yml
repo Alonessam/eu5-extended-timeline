@@ -1,0 +1,7 @@
+#imported from EU4
+2.1.1:
+  government: catholic_monarchy
+  color: rgb { 58  174  161 }
+  religion: catholic
+  primary_culture: saxon
+  capital: bautzen

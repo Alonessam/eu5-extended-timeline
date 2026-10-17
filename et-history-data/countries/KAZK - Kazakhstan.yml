@@ -1,0 +1,15 @@
+#imported from EU4
+2.1.1:
+  government: et_ancient_monarchy
+  color: rgb { 138  180  219 }
+  religion: sunni
+  primary_culture: khazak
+  capital: almaty
+1900.1.1:
+  government: et_modern_republic
+1910.1.1:
+  religion: secularism
+1991.12.16:
+  ruler: kazk_nursultan_nazarbayev
+1997.12.10:
+  capital: tengiz

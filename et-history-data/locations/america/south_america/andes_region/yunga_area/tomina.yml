@@ -1,0 +1,41 @@
+#imported from EU4 file: history/provinces/2941 - Caracara.txt
+2.1.1:
+  pops: 
+    aimara_culture-inti: 1
+1200.1.1:
+  owner: CRA
+  controller: CRA
+  cores:
+    CRA: yes
+  resource: gold
+1476.1.1:
+  owner: INC
+  controller: INC
+  cores:
+    INC: yes
+1533.8.29:
+  pops: 
+    aimara_culture-inti: 0
+    aimara_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1825.8.6:
+  owner: BOLI
+  controller: BOLI
+  cores:
+    BOLI: yes
+1836.10.28:
+  owner: PERU
+  controller: PERU
+  cores:
+    PERU: yes
+1839.8.25:
+  owner: BOLI
+  controller: BOLI
+  cores:
+    PERU: no
+1847.7.21:
+  cores:
+    SPA: no

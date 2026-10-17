@@ -1,0 +1,24 @@
+#imported from EU4 file: history/provinces/4873 - Pegwaki.txt
+2.1.1:
+  pops: 
+    eastern_abenaki_culture-iroquoian_totemism: 1
+1761.1.1:
+  pops: 
+    eastern_abenaki_culture-iroquoian_totemism: 0
+    english-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1764.7.1:
+  pops: 
+    english-lutheran: 0
+    american-lutheran: 1
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    GBR: no
+    USA: yes
+1794.2.1:
+  resource: grain

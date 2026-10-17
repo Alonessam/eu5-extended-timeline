@@ -1,0 +1,92 @@
+#imported from EU4 file: history/provinces/62 - Leipzig.txt
+2.1.1:
+  pops: 
+    east_franconian-germanic: 1
+  owner: HERM
+  controller: HERM
+  cores:
+    HERM: yes
+  resource: wool
+260.1.1:
+  pops: 
+    east_franconian-germanic: 0
+    saxon-germanic: 1
+  owner: WARI
+  controller: WARI
+  cores:
+    HERM: no
+    WARI: yes
+453.1.1:
+  pops: 
+    saxon-germanic: 0
+    east_franconian-germanic: 1
+  owner: THU
+  controller: THU
+  cores:
+    WARI: no
+    THU: yes
+600.1.1:
+  pops: 
+    east_franconian-germanic: 0
+    sorbian-slavic: 1
+  owner: SORB
+  controller: SORB
+  cores:
+    THU: no
+    SORB: yes
+804.1.1:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    VELE: no
+    FRAN: yes
+820.1.1:
+  pops: 
+    sorbian-slavic: 0
+    saxon-chalcedonism: 1
+840.6.21:
+  owner: EFRA
+  controller: EFRA
+  cores:
+    FRAN: no
+    EFRA: yes
+867.1.1:
+  pops: 
+    saxon-chalcedonism: 0
+    saxon-catholic: 1
+911.11.10:
+  owner: SAX
+  controller: SAX
+  cores:
+    EFRA: no
+    SAX: yes
+1539.1.1:
+  pops: 
+    saxon-catholic: 0
+    saxon-lutheran: 1
+1871.1.18:
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+1900.1.1:
+  cores:
+    PRU: no
+1930.1.1:
+  resource: cars
+1945.4.18:
+  controller: USA
+1945.5.8:
+  owner: EGER
+  controller: EGER
+  cores:
+    EGER: yes
+1970.1.1:
+  pops: 
+    saxon-lutheran: 0
+    saxon-irreligious: 1
+1990.10.3:
+  owner: GER
+  controller: GER
+  cores:
+    EGER: no

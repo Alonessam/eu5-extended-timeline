@@ -1,0 +1,52 @@
+orq_bahabu_udege:
+  1414.1.1:
+    birth: imanka #TODO: Date and location guessed, check if better data is available
+    first_name: bahabu
+    dynasty: udege_dynasty
+    adm: 30
+    dip: 15
+    mil: 45
+    religion: tengri
+    culture: jurchen_culture
+    tag: ORQ
+  1480.1.1:
+    death: yes
+orq_icengge_udege:
+  1450.1.1:
+    birth: imanka #TODO: Date and location guessed, check if better data is available
+    first_name: icengge
+    dynasty: udege_dynasty
+    adm: 30
+    dip: 15
+    mil: 45
+    religion: tengri
+    culture: jurchen_culture
+    tag: ORQ
+  1520.1.1:
+    death: yes
+orq_selmin_udege:
+  1490.1.1:
+    birth: imanka #TODO: Date and location guessed, check if better data is available
+    first_name: selmin
+    dynasty: udege_dynasty
+    adm: 30
+    dip: 15
+    mil: 45
+    religion: tengri
+    culture: jurchen_culture
+    tag: ORQ
+  1560.1.1:
+    death: yes
+orq_yolo_udege:
+  1530.1.1:
+    birth: imanka #TODO: Date and location guessed, check if better data is available
+    first_name: yolo
+    dynasty: udege_dynasty
+    adm: 30
+    dip: 15
+    mil: 45
+    religion: tengri
+    culture: jurchen_culture
+    tag: ORQ
+  3000.1.1:
+    death: yes

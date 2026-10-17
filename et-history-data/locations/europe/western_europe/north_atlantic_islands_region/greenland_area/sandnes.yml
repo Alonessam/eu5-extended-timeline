@@ -1,0 +1,36 @@
+#imported from EU4 file: history/provinces/1105 - Vestbygden.txt
+2.1.1:
+  pops: 
+    uninhabited-mari_paganism: 1
+1000.1.1:
+  pops: 
+    uninhabited-mari_paganism: 0
+    norwegian-norse: 1
+  owner: NOR
+  controller: NOR
+  cores:
+    NOR: yes
+1050.1.1:
+  pops: 
+    norwegian-norse: 0
+    norwegian-catholic: 1
+  resource: grain
+1408.1.1:
+  pops: 
+    norwegian-catholic: 0
+    inuit_culture-mari_paganism: 1
+  owner: ---
+  controller: ---
+  cores:
+    NOR: no
+1721.1.1:
+  pops: 
+    inuit_culture-mari_paganism: 0
+    inuit_culture-lutheran: 1
+  owner: DAN
+  controller: DAN
+1746.1.1:
+  cores:
+    DAN: yes
+1800.1.1:
+  resource: fur

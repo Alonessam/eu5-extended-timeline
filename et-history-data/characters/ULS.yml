@@ -1,0 +1,1183 @@
+uls_eochaid_ulster:
+  10.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: eochaid
+    dynasty: ulster_dynasty
+    adm: 60
+    dip: 15
+    mil: 75
+    religion: druidism
+    culture: irish
+    tag: ULS
+  60.1.1:
+    death: yes
+uls_fergus_ulster:
+  30.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fergus
+    dynasty: ulster_dynasty
+    adm: 15
+    dip: 60
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  80.1.1:
+    death: yes
+uls_conchobar_ulster:
+  50.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: conchobar
+    dynasty: ulster_dynasty
+    adm: 75
+    dip: 15
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  100.1.1:
+    death: yes
+uls_caaoscraid_ulster:
+  70.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: caaoscraid
+    dynasty: ulster_dynasty
+    adm: 15
+    dip: 45
+    mil: 15
+    religion: druidism
+    culture: irish
+    tag: ULS
+  120.1.1:
+    death: yes
+uls_fiatach_ulster:
+  90.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fiatach
+    dynasty: ulster_dynasty
+    adm: 60
+    dip: 45
+    mil: 30
+    religion: druidism
+    culture: irish
+    tag: ULS
+  140.1.1:
+    death: yes
+uls_ellim_ulster:
+  110.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: ellim
+    dynasty: ulster_dynasty
+    adm: 60
+    dip: 60
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  160.1.1:
+    death: yes
+uls_mal_ulster:
+  130.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: mal
+    dynasty: ulster_dynasty
+    adm: 45
+    dip: 15
+    mil: 15
+    religion: druidism
+    culture: irish
+    tag: ULS
+  180.1.1:
+    death: yes
+uls_tipraiti_tireach_ulster:
+  150.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: tipraiti_tireach
+    dynasty: ulster_dynasty
+    adm: 45
+    dip: 45
+    mil: 75
+    religion: druidism
+    culture: irish
+    tag: ULS
+  200.1.1:
+    death: yes
+uls_aengus_goibnenn_ulster:
+  170.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: aengus_goibnenn
+    dynasty: ulster_dynasty
+    adm: 15
+    dip: 60
+    mil: 75
+    religion: druidism
+    culture: irish
+    tag: ULS
+  220.1.1:
+    death: yes
+uls_fergus_dubdetach_ulster:
+  190.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fergus_dubdetach
+    dynasty: ulster_dynasty
+    adm: 45
+    dip: 60
+    mil: 75
+    religion: druidism
+    culture: irish
+    tag: ULS
+  240.1.1:
+    death: yes
+uls_aengus_finn_ulster:
+  210.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: aengus_finn
+    dynasty: ulster_dynasty
+    adm: 75
+    dip: 30
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  260.1.1:
+    death: yes
+uls_lugaid_lorc_ulster:
+  230.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: lugaid_lorc
+    dynasty: ulster_dynasty
+    adm: 45
+    dip: 60
+    mil: 15
+    religion: druidism
+    culture: irish
+    tag: ULS
+  280.1.1:
+    death: yes
+uls_dub_ulster:
+  250.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: dub
+    dynasty: ulster_dynasty
+    adm: 15
+    dip: 75
+    mil: 75
+    religion: druidism
+    culture: irish
+    tag: ULS
+  300.1.1:
+    death: yes
+uls_fiachu_araide_ulster:
+  270.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fiachu_araide
+    dynasty: ulster_dynasty
+    adm: 15
+    dip: 75
+    mil: 30
+    religion: druidism
+    culture: irish
+    tag: ULS
+  320.1.1:
+    death: yes
+uls_fedlimid_ulster:
+  290.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fedlimid
+    dynasty: ulster_dynasty
+    adm: 45
+    dip: 15
+    mil: 75
+    religion: druidism
+    culture: irish
+    tag: ULS
+  340.1.1:
+    death: yes
+uls_imchad_ulster:
+  310.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: imchad
+    dynasty: ulster_dynasty
+    adm: 60
+    dip: 60
+    mil: 15
+    religion: druidism
+    culture: irish
+    tag: ULS
+  360.1.1:
+    death: yes
+uls_ros_ulster:
+  330.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: ros
+    dynasty: ulster_dynasty
+    adm: 30
+    dip: 30
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  380.1.1:
+    death: yes
+uls_cronn_badrui_ulster:
+  350.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: cronn_badrui
+    dynasty: ulster_dynasty
+    adm: 15
+    dip: 45
+    mil: 60
+    religion: druidism
+    culture: irish
+    tag: ULS
+  400.1.1:
+    death: yes
+uls_fergus_foga_ulster:
+  370.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fergus_foga
+    dynasty: ulster_dynasty
+    adm: 15
+    dip: 60
+    mil: 15
+    religion: druidism
+    culture: irish
+    tag: ULS
+  420.1.1:
+    death: yes
+uls_caelbad_ulster:
+  390.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: caelbad
+    dynasty: ulster_dynasty
+    adm: 45
+    dip: 60
+    mil: 15
+    religion: druidism
+    culture: irish
+    tag: ULS
+  440.1.1:
+    death: yes
+uls_saran_ulster:
+  410.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: saran
+    dynasty: ulster_dynasty
+    adm: 15
+    dip: 60
+    mil: 75
+    religion: druidism
+    culture: irish
+    tag: ULS
+  465.1.1:
+    death: yes
+uls_muiredach_muinderg_macdonlevy:
+  435.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: muiredach_muinderg
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  489.1.1:
+    death: yes
+uls_eochaid_mac_muiredach_muinderg_macdonlevy:
+  459.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: eochaid_mac_muiredach_muinderg
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 15
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  509.1.1:
+    death: yes
+uls_cairell_mac_muiredach_muinderg_macdonlevy:
+  479.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: cairell_mac_muiredach_muinderg
+    dynasty: macdonlevy_dynasty
+    adm: 15
+    dip: 45
+    mil: 60
+    religion: druidism
+    culture: irish
+    tag: ULS
+  532.1.1:
+    death: yes
+uls_eochaid_mac_condlai_macdonlevy:
+  502.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: eochaid_mac_condlai
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: druidism
+    culture: irish
+    tag: ULS
+  553.1.1:
+    death: yes
+uls_fergnae_mac_oenguso_ibdaig_macdonlevy:
+  523.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fergnae_mac_oenguso_ibdaig
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 75
+    religion: druidism
+    culture: irish
+    tag: ULS
+  557.1.1:
+    death: yes
+uls_demman_mac_cairell_macdonlevy:
+  527.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: demman_mac_cairell
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: druidism
+    culture: irish
+    tag: ULS
+  572.1.1:
+    death: yes
+uls_baetan_mac_cairill_macdonlevy:
+  542.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: baetan_mac_cairill
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  581.1.1:
+    death: yes
+uls_aed_dub_mac_suibni_macdonlevy:
+  551.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: aed_dub_mac_suibni
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  588.1.1:
+    death: yes
+uls_fiachnae_mac_sgannail_macdonlevy:
+  558.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fiachnae_mac_sgannail
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  626.1.1:
+    death: yes
+uls_fiachnae_mac_demmain_macdonlevy:
+  596.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fiachnae_mac_demmain
+    dynasty: macdonlevy_dynasty
+    adm: 45
+    dip: 60
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  627.1.1:
+    death: yes
+uls_congal_caech_macdonlevy:
+  597.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: congal_caech
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  637.1.1:
+    death: yes
+uls_daaonchad_mac_fiachnai_macdonlevy:
+  607.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: daaonchad_mac_fiachnai
+    dynasty: macdonlevy_dynasty
+    adm: 15
+    dip: 15
+    mil: 30
+    religion: druidism
+    culture: irish
+    tag: ULS
+  644.1.1:
+    death: yes
+uls_mael_cobo_mac_fiachnai_macdonlevy:
+  614.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: mael_cobo_mac_fiachnai
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  647.1.1:
+    death: yes
+uls_blathmac_mac_maele_cobo_macdonlevy:
+  617.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: blathmac_mac_maele_cobo
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 75
+    religion: druidism
+    culture: irish
+    tag: ULS
+  670.1.1:
+    death: yes
+uls_congal_cennfota_mac_daaonchada_macdonlevy:
+  640.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: congal_cennfota_mac_daaonchada
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: druidism
+    culture: irish
+    tag: ULS
+  674.1.1:
+    death: yes
+uls_fergus_mac_aedain_macdonlevy:
+  644.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fergus_mac_aedain
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: druidism
+    culture: irish
+    tag: ULS
+  692.1.1:
+    death: yes
+uls_becc_bairrche_mac_blathmaic_macdonlevy:
+  662.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: becc_bairrche_mac_blathmaic
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  707.1.1:
+    death: yes
+uls_caao_chuaran_mac_daaongal_eilni_macdonlevy:
+  677.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: caao_chuaran_mac_daaongal_eilni
+    dynasty: macdonlevy_dynasty
+    adm: 45
+    dip: 60
+    mil: 45
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  708.1.1:
+    death: yes
+uls_aed_roin_mac_becc_bairrche_macdonlevy:
+  678.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: aed_roin_mac_becc_bairrche
+    dynasty: macdonlevy_dynasty
+    adm: 15
+    dip: 30
+    mil: 45
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  735.1.1:
+    death: yes
+uls_cathussach_mac_ailello_macdonlevy:
+  705.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: cathussach_mac_ailello
+    dynasty: macdonlevy_dynasty
+    adm: 45
+    dip: 15
+    mil: 45
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  749.1.1:
+    death: yes
+uls_bressal_mac_aedo_roin_macdonlevy:
+  719.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: bressal_mac_aedo_roin
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  750.1.1:
+    death: yes
+uls_fiachnae_mac_aedo_roin_macdonlevy:
+  720.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: fiachnae_mac_aedo_roin
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 15
+    mil: 45
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  789.1.1:
+    death: yes
+uls_tommaltach_mac_indrechtaig_macdonlevy:
+  759.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: tommaltach_mac_indrechtaig
+    dynasty: macdonlevy_dynasty
+    adm: 15
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  790.1.1:
+    death: yes
+uls_eochaid_mac_fiachnai_macdonlevy:
+  760.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: eochaid_mac_fiachnai
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  810.1.1:
+    death: yes
+uls_cairell_mac_fiachnai_macdonlevy:
+  780.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: cairell_mac_fiachnai
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 75
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  819.1.1:
+    death: yes
+uls_mael_bressail_mac_ailillo_macdonlevy:
+  789.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: mael_bressail_mac_ailillo
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  825.1.1:
+    death: yes
+uls_muiredach_mac_eochada_macdonlevy:
+  795.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: muiredach_mac_eochada
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  839.1.1:
+    death: yes
+uls_matudan_mac_muiredaig_macdonlevy:
+  809.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: matudan_mac_muiredaig
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: chalcedonism
+    culture: irish
+    tag: ULS
+  857.1.1:
+    death: yes
+uls_lethlobar_mac_loingsig_macdonlevy:
+  827.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: lethlobar_mac_loingsig
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  873.1.1:
+    death: yes
+uls_ainbaath_mac_aedo_macdonlevy:
+  843.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: ainbaath_mac_aedo
+    dynasty: macdonlevy_dynasty
+    adm: 45
+    dip: 60
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  882.1.1:
+    death: yes
+uls_airemon_mac_aedo_macdonlevy:
+  852.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: airemon_mac_aedo
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  886.1.1:
+    death: yes
+uls_becc_mac_airemoin_macdonlevy:
+  856.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: becc_mac_airemoin
+    dynasty: macdonlevy_dynasty
+    adm: 15
+    dip: 15
+    mil: 30
+    religion: catholic
+    culture: irish
+    tag: ULS
+  893.1.1:
+    death: yes
+uls_muiredach_mac_eochocain_macdonlevy:
+  863.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: muiredach_mac_eochocain
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  896.1.1:
+    death: yes
+uls_aitaath_mac_laigni_macdonlevy:
+  866.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: aitaath_mac_laigni
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 75
+    religion: catholic
+    culture: irish
+    tag: ULS
+  898.1.1:
+    death: yes
+uls_aed_mac_eochocain_macdonlevy:
+  868.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: aed_mac_eochocain
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: catholic
+    culture: irish
+    tag: ULS
+  919.1.1:
+    death: yes
+uls_dubgall_mac_aeda_macdonlevy:
+  889.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: dubgall_mac_aeda
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  925.1.1:
+    death: yes
+uls_loingsech_mac_cinn_etig_macdonlevy:
+  895.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: loingsech_mac_cinn_etig
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  932.1.1:
+    death: yes
+uls_eochaid_mac_conaill_macdonlevy:
+  902.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: eochaid_mac_conaill
+    dynasty: macdonlevy_dynasty
+    adm: 45
+    dip: 60
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  937.1.1:
+    death: yes
+uls_matudan_mac_aeda_macdonlevy:
+  907.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: matudan_mac_aeda
+    dynasty: macdonlevy_dynasty
+    adm: 15
+    dip: 30
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  950.1.1:
+    death: yes
+uls_ardgal_mac_matudain_macdonlevy:
+  920.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: ardgal_mac_matudain
+    dynasty: macdonlevy_dynasty
+    adm: 45
+    dip: 15
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  970.1.1:
+    death: yes
+uls_niall_mac_aeda_macdonlevy:
+  940.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: niall_mac_aeda
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  971.1.1:
+    death: yes
+uls_aed_mac_loingsig_macdonlevy:
+  941.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: aed_mac_loingsig
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 15
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  972.1.1:
+    death: yes
+uls_eochad_mac_ardgail_macdonlevy:
+  942.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: eochad_mac_ardgail
+    dynasty: macdonlevy_dynasty
+    adm: 15
+    dip: 45
+    mil: 60
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1004.1.1:
+    death: yes
+uls_gilla_comgaill_mac_ardgail_macdonlevy:
+  974.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: gilla_comgaill_mac_ardgail
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1005.1.1:
+    death: yes
+uls_mael_ruanaid_mac_ardgail_macdonlevy:
+  975.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: mael_ruanaid_mac_ardgail
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 75
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1007.1.1:
+    death: yes
+uls_niall_mac_duib_thuinne_macdonlevy:
+  977.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: niall_mac_duib_thuinne
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1016.1.1:
+    death: yes
+uls_niall_mac_eochada_macdonlevy:
+  986.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: niall_mac_eochada
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1063.1.1:
+    death: yes
+uls_donnchad_ua_mathgamna_macdonlevy:
+  1033.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: donnchad_ua_mathgamna
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1065.1.1:
+    death: yes
+uls_caao_ulad_ua_flaithraa_macdonlevy:
+  1035.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: caao_ulad_ua_flaithraa
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1071.1.1:
+    death: yes
+uls_donn_sleibe_mac_eochada_macdonlevy:
+  1041.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: donn_sleibe_mac_eochada
+    dynasty: macdonlevy_dynasty
+    adm: 45
+    dip: 60
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1078.1.1:
+    death: yes
+uls_aed_meranach_ua_heochada_macdonlevy:
+  1048.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: aed_meranach_ua_heochada
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1080.1.1:
+    death: yes
+uls_goll_na_gorta_ua_mathgamna_macdonlevy:
+  1050.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: goll_na_gorta_ua_mathgamna
+    dynasty: macdonlevy_dynasty
+    adm: 15
+    dip: 15
+    mil: 30
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1081.1.1:
+    death: yes
+uls_donn_sleibe_mac_eochada_macdonlevy_1:
+  1051.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: donn_sleibe_mac_eochada
+    dynasty: macdonlevy_dynasty
+    adm: 45
+    dip: 60
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1091.1.1:
+    death: yes
+uls_donnchad_mac_duinn_sleibe_macdonlevy:
+  1061.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: donnchad_mac_duinn_sleibe
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1095.1.1:
+    death: yes
+uls_eochaid_mac_duinn_sleibe_macdonlevy:
+  1065.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: eochaid_mac_duinn_sleibe
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 75
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1108.1.1:
+    death: yes
+uls_donnchad_mac_duinn_sleibe_macdonlevy_1:
+  1078.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: donnchad_mac_duinn_sleibe
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1113.1.1:
+    death: yes
+uls_aed_mac_duinn_sleibe_macdonlevy:
+  1083.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: aed_mac_duinn_sleibe
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1127.1.1:
+    death: yes
+uls_ragnall_ua_heochada_macdonlevy:
+  1097.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: ragnall_ua_heochada
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1131.1.1:
+    death: yes
+uls_caao_ulad_mac_conchobair_chisenaig_macdonlevy:
+  1101.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: caao_ulad_mac_conchobair_chisenaig
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1157.1.1:
+    death: yes
+uls_aed_mac_con_ulad_macdonlevy:
+  1127.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: aed_mac_con_ulad
+    dynasty: macdonlevy_dynasty
+    adm: 45
+    dip: 60
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1158.1.1:
+    death: yes
+uls_eochaid_mac_con_ulad_macdonlevy:
+  1128.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: eochaid_mac_con_ulad
+    dynasty: macdonlevy_dynasty
+    adm: 15
+    dip: 30
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1166.1.1:
+    death: yes
+uls_magnus_mac_con_ulad_macdonlevy:
+  1136.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: magnus_mac_con_ulad
+    dynasty: macdonlevy_dynasty
+    adm: 45
+    dip: 15
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1171.1.1:
+    death: yes
+uls_donn_sleibe_mac_con_ulad_macdonlevy:
+  1141.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: donn_sleibe_mac_con_ulad
+    dynasty: macdonlevy_dynasty
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1172.1.1:
+    death: yes
+uls_ruaidraa_mac_con_ulad_macdonlevy:
+  1142.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: ruaidraa_mac_con_ulad
+    dynasty: macdonlevy_dynasty
+    adm: 60
+    dip: 15
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1333.6.6:
+    death: yes
+uls_donal_magennis:
+  1303.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: donal
+    dynasty: magennis_dynasty
+    adm: 30
+    dip: 30
+    mil: 15
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1360.1.1:
+    death: yes
+uls_hugh_magennis:
+  1330.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: hugh
+    dynasty: magennis_dynasty
+    adm: 30
+    dip: 30
+    mil: 15
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1400.1.1:
+    death: yes
+uls_bryan_magennis:
+  1370.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: bryan
+    dynasty: magennis_dynasty
+    adm: 15
+    dip: 30
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1444.1.1:
+    death: yes
+uls_art_roe_magennis:
+  1414.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: art_roe
+    dynasty: magennis_dynasty
+    adm: 30
+    dip: 30
+    mil: 30
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1480.1.1:
+    death: yes
+uls_donal_magennis_1:
+  1450.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: donal
+    dynasty: magennis_dynasty
+    adm: 30
+    dip: 30
+    mil: 45
+    religion: catholic
+    culture: irish
+    tag: ULS
+  1500.1.1:
+    death: yes
+uls_arthur_magennis:
+  1470.1.1:
+    birth: belfast #TODO: Date and location guessed, check if better data is available
+    first_name: arthur
+    dynasty: magennis_dynasty
+    adm: 30
+    dip: 30
+    mil: 15
+    religion: catholic
+    culture: irish
+    tag: ULS
+  3000.1.1:
+    death: yes

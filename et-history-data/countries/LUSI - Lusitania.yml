@@ -1,0 +1,14 @@
+#imported from EU4
+2.1.1:
+  government: et_tribal_federation
+  color: rgb { 73  191  128 }
+  religion: druidism
+  primary_culture: lusitanian
+  capital: castelo_branco
+420.1.1:
+  religion: chalcedonism
+600.1.1:
+  government: iberian_monarchy
+  government_rank: rank_duchy
+867.1.1:
+  religion: catholic

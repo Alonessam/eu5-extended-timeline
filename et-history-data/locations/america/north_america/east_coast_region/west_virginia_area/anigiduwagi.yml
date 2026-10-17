@@ -1,0 +1,37 @@
+#imported from EU4 file: history/provinces/2548 - Tutelo.txt
+2.1.1:
+  pops: 
+    tsoyaha_culture-iroquoian_totemism: 1
+1610.1.1:
+  pops: 
+    tsoyaha_culture-iroquoian_totemism: 0
+    cherokee_culture-iroquoian_totemism: 1
+  owner: CHRK
+  controller: CHRK
+  cores:
+    CHRK: yes
+  resource: fur
+1774.10.19:
+  pops: 
+    cherokee_culture-iroquoian_totemism: 0
+    british_louisianan-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    GBR: no
+    USA: yes
+1861.4.17:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

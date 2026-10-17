@@ -1,0 +1,26 @@
+#imported from EU4
+2.1.1:
+  government: et_european_pagan_monarchy
+  color: rgb { 166  231  160 }
+  religion: chalcedonism
+  primary_culture: polatskian_culture
+  capital: minsk
+867.1.1:
+  religion: orthodox
+1910.1.1:
+  religion: secularism
+1918.3.25:
+  ruler: bela_jan_sierada
+1919.1.5:
+  government: et_modern_republic
+1920.8.9:
+  ruler: bela_vilgelm_knorinsh
+1990.11.30:
+  ruler: bela_yefrem_sokolov
+1991.8.15:
+  ruler: bela_stanislau_shushkevich
+1994.1.28:
+  ruler: bela_myechyslaw_hryb
+1994.7.20:
+  government: et_modern_republic
+  ruler: bela_alexander_lukashenko

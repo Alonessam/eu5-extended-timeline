@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/2505 - Tsisistas.txt
+2.1.1:
+  pops: 
+    tsawi_culture-iroquoian_totemism: 1
+1760.1.1:
+  pops: 
+    tsawi_culture-iroquoian_totemism: 0
+    tsetsehesahese_culture-iroquoian_totemism: 1
+  owner: CHEY
+  controller: CHEY
+  cores:
+    CHEY: yes
+  resource: fur
+1874.1.1:
+  pops: 
+    tsetsehesahese_culture-iroquoian_totemism: 0
+    british_californian-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes

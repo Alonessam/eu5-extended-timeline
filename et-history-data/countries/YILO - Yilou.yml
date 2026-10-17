@@ -1,0 +1,7 @@
+#imported from EU4
+2.1.1:
+  government: eurasian_horde_no_muslim
+  color: rgb { 66  66  66 }
+  religion: tengri
+  primary_culture: jurchen_culture
+  capital: yiman

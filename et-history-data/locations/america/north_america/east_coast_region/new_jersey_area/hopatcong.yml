@@ -1,0 +1,65 @@
+#imported from EU4 file: history/provinces/2639 - Rankan.txt
+2.1.1:
+  pops: 
+    unami_culture-iroquoian_totemism: 1
+1629.1.1:
+  pops: 
+    unami_culture-iroquoian_totemism: 0
+    low_franconian-calvinist: 1
+  owner: NED
+  controller: NED
+  cores:
+    NED: yes
+  resource: fur
+1665.6.1:
+  controller: ENG
+1667.7.31:
+  pops: 
+    low_franconian-calvinist: 0
+    english-calvinist: 1
+  owner: ENG
+  cores:
+    NED: no
+    ENG: yes
+1673.1.1:
+  pops: 
+    english-calvinist: 0
+    low_franconian-calvinist: 1
+  owner: NED
+  controller: NED
+  cores:
+    ENG: no
+    NED: yes
+1674.11.1:
+  pops: 
+    low_franconian-calvinist: 0
+    english-lutheran: 1
+  owner: ENG
+  controller: ENG
+  cores:
+    ENG: yes
+    NED: no
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    ENG: no
+    GBR: yes
+1764.7.1:
+  pops: 
+    english-lutheran: 0
+    american-lutheran: 1
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1782.11.1:
+  cores:
+    GBR: no
+1895.1.1:
+  pops: 
+    american-lutheran: 0
+    american-catholic: 1
+1970.1.1:
+  resource: electronics

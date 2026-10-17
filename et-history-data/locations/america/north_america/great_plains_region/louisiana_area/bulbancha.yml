@@ -1,0 +1,59 @@
+#imported from EU4 file: history/provinces/893 - Chitimacha.txt
+2.1.1:
+  pops: 
+    natchez_culture-iroquoian_totemism: 1
+1700.1.1:
+  pops: 
+    natchez_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: cotton
+1762.1.1:
+  owner: SPA
+  controller: SPA
+  cores:
+    FRA: no
+1770.1.1:
+  pops: 
+    french-catholic: 0
+    french_louisianan-catholic: 1
+1787.1.1:
+  cores:
+    SPA: yes
+1800.10.1:
+  owner: FRA
+  controller: FRA
+  cores:
+    SPA: no
+    FRA: yes
+1803.4.3:
+  owner: USA
+  controller: USA
+  cores:
+    FRA: no
+    USA: yes
+1861.1.26:
+  owner: LOUI
+  controller: LOUI
+  cores:
+    LOUI: yes
+1861.2.8:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    LOUI: no
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no
+1890.1.1:
+  pops: 
+    french_louisianan-catholic: 0
+    british_louisianan-catholic: 1
+1940.1.1:
+  resource: oil

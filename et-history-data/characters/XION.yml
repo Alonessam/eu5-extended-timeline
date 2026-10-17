@@ -1,0 +1,65 @@
+xion_uchjulu_xiongnu:
+  -28.1.1:
+    birth: onon #TODO: Date and location guessed, check if better data is available
+    first_name: uchjulu
+    dynasty: xiongnu_dynasty
+    adm: 60
+    dip: 45
+    mil: 60
+    religion: tengri
+    culture: mongolian_culture
+    tag: XION
+  13.1.1:
+    death: yes
+xion_ulei_hyan_xiongnu:
+  -17.1.1:
+    birth: onon #TODO: Date and location guessed, check if better data is available
+    first_name: ulei_hyan
+    dynasty: xiongnu_dynasty
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: tengri
+    culture: mongolian_culture
+    tag: XION
+  18.1.1:
+    death: yes
+xion_huduershi_xiongnu:
+  -12.1.1:
+    birth: onon #TODO: Date and location guessed, check if better data is available
+    first_name: huduershi
+    dynasty: xiongnu_dynasty
+    adm: 60
+    dip: 45
+    mil: 90
+    religion: tengri
+    culture: mongolian_culture
+    tag: XION
+  46.1.1:
+    death: yes
+xion_punu_xiongnu:
+  16.1.1:
+    birth: onon #TODO: Date and location guessed, check if better data is available
+    first_name: punu
+    dynasty: xiongnu_dynasty
+    adm: 45
+    dip: 45
+    mil: 60
+    religion: tengri
+    culture: mongolian_culture
+    tag: XION
+  89.1.1:
+    death: yes
+xion_pei_xiongnu:
+  59.1.1:
+    birth: onon #TODO: Date and location guessed, check if better data is available
+    first_name: pei
+    dynasty: xiongnu_dynasty
+    adm: 30
+    dip: 45
+    mil: 15
+    religion: tengri
+    culture: mongolian_culture
+    tag: XION
+  3000.1.1:
+    death: yes

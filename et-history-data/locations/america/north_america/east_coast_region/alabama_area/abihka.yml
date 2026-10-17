@@ -1,0 +1,27 @@
+#imported from EU4 file: history/provinces/2531 - Napochi.txt
+2.1.1:
+  pops: 
+    muscogee_culture-iroquoian_totemism: 1
+  owner: ABIH
+  controller: ABIH
+  cores:
+    ABIH: yes
+  resource: tobacco
+1786.1.10:
+  pops: 
+    muscogee_culture-iroquoian_totemism: 0
+    british_louisianan-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1861.1.11:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

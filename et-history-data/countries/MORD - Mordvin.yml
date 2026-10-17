@@ -1,0 +1,8 @@
+#imported from EU4
+2.1.1:
+  government: et_tribal_federation
+  color: rgb { 18  70  30 }
+  government_rank: rank_duchy
+  religion: tengri
+  primary_culture: moksha_culture
+  capital: penza

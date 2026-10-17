@@ -1,0 +1,13 @@
+#imported from EU4
+2.1.1:
+  government: et_ancient_monarchy
+  color: rgb { 190  80  40 }
+  religion: south_arabian_polytheism
+  primary_culture: yemeni_culture
+  capital: marib
+160.1.1:
+  ruler: saba_rab_shams_namran_sabaean
+200.1.1:
+  ruler: saba_il_ez_nawfan_yuhasdiq_sabaean
+240.1.1:
+  ruler: saba_sad_um_namran_sabaean

@@ -1,0 +1,26 @@
+#imported from EU4 file: history/provinces/2283 - Bedde.txt
+2.1.1:
+  pops: 
+    kanembu_culture-bantu_religion: 1
+523.1.1:
+  owner: KBO
+  controller: KBO
+  cores:
+    KBO: yes
+  resource: grain
+1820.1.1:
+  pops: 
+    kanembu_culture-bantu_religion: 0
+    kanembu_culture-sunni: 1
+1902.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1960.10.1:
+  owner: NIGR
+  controller: NIGR
+  cores:
+    GBR: no
+    SOKO: no
+    NIGR: yes

@@ -1,0 +1,499 @@
+visg_cannabas_goth:
+  241.1.1:
+    birth: targu_mures #TODO: Date and location guessed, check if better data is available
+    first_name: cannabas
+    dynasty: goth_dynasty
+    adm: 60
+    dip: 75
+    mil: 30
+    religion: germanic_polytheism
+    culture: gothic
+    tag: VISG
+  320.1.1:
+    death: yes
+visg_fritigern_terving:
+  290.1.1:
+    birth: tarnovo #TODO: Date and location guessed, check if better data is available
+    first_name: fritigern
+    dynasty: terving_dynasty
+    adm: 30
+    dip: 60
+    mil: 15
+    religion: germanic_polytheism
+    culture: gothic
+    tag: VISG
+  370.1.1:
+    death: yes
+visg_athanaric_terving:
+  340.1.1:
+    birth: tarnovo #TODO: Date and location guessed, check if better data is available
+    first_name: athanaric
+    dynasty: terving_dynasty
+    adm: 30
+    dip: 75
+    mil: 75
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  395.1.1:
+    death: yes
+visg_alaric_i_balti:
+  365.1.1:
+    birth: tarnovo #TODO: Date and location guessed, check if better data is available
+    first_name: alaric
+    dynasty: balti_dynasty
+    adm: 90
+    dip: 75
+    mil: 90
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  410.1.1:
+    death: yes
+visg_athaulf_balti:
+  380.1.1:
+    birth: toulouse #TODO: Date and location guessed, check if better data is available
+    first_name: athaulf
+    dynasty: balti_dynasty
+    adm: 75
+    dip: 60
+    mil: 45
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  415.1.1:
+    death: yes
+visg_sigeric_balti:
+  385.1.1:
+    birth: toulouse #TODO: Date and location guessed, check if better data is available
+    first_name: sigeric
+    dynasty: balti_dynasty
+    adm: 75
+    dip: 60
+    mil: 45
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  415.6.1:
+    death: yes
+visg_wallia_balti:
+  385.1.1:
+    birth: toulouse #TODO: Date and location guessed, check if better data is available
+    first_name: wallia
+    dynasty: balti_dynasty
+    adm: 75
+    dip: 60
+    mil: 45
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  419.1.1:
+    death: yes
+visg_theodoric_i_balti:
+  389.1.1:
+    birth: toulouse #TODO: Date and location guessed, check if better data is available
+    first_name: theodoric
+    dynasty: balti_dynasty
+    adm: 75
+    dip: 60
+    mil: 45
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  451.1.1:
+    death: yes
+visg_thorismund_balti:
+  421.1.1:
+    birth: toulouse #TODO: Date and location guessed, check if better data is available
+    first_name: thorismund
+    dynasty: balti_dynasty
+    adm: 75
+    dip: 60
+    mil: 45
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  453.6.1:
+    death: yes
+visg_theodoric_ii_balti:
+  423.1.1:
+    birth: toulouse #TODO: Date and location guessed, check if better data is available
+    first_name: theodoric
+    dynasty: balti_dynasty
+    adm: 60
+    dip: 90
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  466.6.1:
+    death: yes
+visg_euric_balti:
+  436.1.1:
+    birth: toulouse #TODO: Date and location guessed, check if better data is available
+    first_name: euric
+    dynasty: balti_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  484.6.1:
+    death: yes
+visg_alaric_ii_balti:
+  454.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: alaric
+    dynasty: balti_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  507.6.1:
+    death: yes
+visg_gesalec_balti:
+  477.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: gesalec
+    dynasty: balti_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  526.6.1:
+    death: yes
+visg_amalaric_balti:
+  496.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: amalaric
+    dynasty: balti_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  531.6.1:
+    death: yes
+visg_theudis:
+  501.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: theudis
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  548.6.1:
+    death: yes
+visg_theudigisel:
+  518.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: theudigisel
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  549.6.1:
+    death: yes
+visg_agila_i:
+  519.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: agila
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  554.6.1:
+    death: yes
+visg_athanagild:
+  524.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: athanagild
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  568.6.1:
+    death: yes
+visg_liuva_i_liuving:
+  538.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: liuva
+    dynasty: liuving_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  569.6.1:
+    death: yes
+visg_liugivild_liuving:
+  539.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: liugivild
+    dynasty: liuving_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: arianism
+    culture: gothic
+    tag: VISG
+  586.6.1:
+    death: yes
+visg_reccared_i_liuving:
+  556.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: reccared
+    dynasty: liuving_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  601.6.1:
+    death: yes
+visg_liuva_ii_liuving:
+  571.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: liuva
+    dynasty: liuving_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  603.6.1:
+    death: yes
+visg_witteric:
+  573.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: witteric
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  610.6.1:
+    death: yes
+visg_gundemar:
+  580.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: gundemar
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  612.6.1:
+    death: yes
+visg_sisebut_sisebuting_swinthilung:
+  582.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: sisebut
+    dynasty: sisebuting_swinthilung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  621.4.1:
+    death: yes
+visg_reccared_ii_sisebuting_swinthilung:
+  591.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: reccared
+    dynasty: sisebuting_swinthilung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  621.8.1:
+    death: yes
+visg_suintila_sisebuting_swinthilung:
+  591.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: suintila
+    dynasty: sisebuting_swinthilung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  631.6.1:
+    death: yes
+visg_sisenand:
+  601.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: sisenand
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  636.6.1:
+    death: yes
+visg_chintila_chintilung:
+  606.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: chintila
+    dynasty: chintilung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  640.6.1:
+    death: yes
+visg_tulga_chintilung:
+  610.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: tulga
+    dynasty: chintilung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  641.6.1:
+    death: yes
+visg_chindaswinth_chindaswintung:
+  611.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: chindaswinth
+    dynasty: chindaswintung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  653.6.1:
+    death: yes
+visg_recceswinth_chindaswintung:
+  623.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: recceswinth
+    dynasty: chindaswintung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  672.6.1:
+    death: yes
+visg_wamba_chindaswintung:
+  642.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: wamba
+    dynasty: chindaswintung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  680.6.1:
+    death: yes
+visg_erwig_chindaswintung:
+  650.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: erwig
+    dynasty: chindaswintung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  687.6.1:
+    death: yes
+visg_egica_chindaswintung:
+  657.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: egica
+    dynasty: chindaswintung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  702.6.1:
+    death: yes
+visg_wittiza_chindaswintung:
+  672.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: wittiza
+    dynasty: chindaswintung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  710.6.1:
+    death: yes
+visg_roderic_chindaswintung:
+  680.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: roderic
+    dynasty: chindaswintung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  711.6.1:
+    death: yes
+visg_agila_ii_chindaswintung:
+  681.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: agila
+    dynasty: chindaswintung_dynasty
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  714.6.1:
+    death: yes
+visg_ardo:
+  684.1.1:
+    birth: narbonne #TODO: Date and location guessed, check if better data is available
+    first_name: ardo
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: chalcedonism
+    culture: gothic
+    tag: VISG
+  3000.1.1:
+    death: yes

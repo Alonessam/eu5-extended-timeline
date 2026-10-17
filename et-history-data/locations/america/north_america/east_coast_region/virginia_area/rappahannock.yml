@@ -1,0 +1,45 @@
+#imported from EU4 file: history/provinces/952 - Powhatan.txt
+2.1.1:
+  pops: 
+    powhatan_culture-iroquoian_totemism: 1
+  owner: POWH
+  controller: POWH
+  cores:
+    POWH: yes
+  resource: tobacco
+1646.1.1:
+  pops: 
+    powhatan_culture-iroquoian_totemism: 0
+    english-lutheran: 1
+  owner: ENG
+  controller: ENG
+  cores:
+    ENG: yes
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    ENG: no
+    GBR: yes
+1764.7.1:
+  pops: 
+    english-lutheran: 0
+    british_louisianan-lutheran: 1
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1782.11.1:
+  cores:
+    GBR: no
+1861.4.17:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

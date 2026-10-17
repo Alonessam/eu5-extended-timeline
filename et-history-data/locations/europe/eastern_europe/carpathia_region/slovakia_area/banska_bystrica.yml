@@ -1,0 +1,139 @@
+#imported from EU4 file: history/provinces/154 - Szepes.txt
+2.1.1:
+  pops: 
+    pannonian-druidism: 1
+  owner: GOTI
+  controller: GOTI
+  cores:
+    GOTI: yes
+  resource: gold
+395.1.1:
+  pops: 
+    pannonian-druidism: 0
+    quadian-germanic: 1
+  owner: QUAD
+  controller: QUAD
+  cores:
+    GOTI: no
+    QUAD: yes
+454.1.1:
+  pops: 
+    quadian-germanic: 0
+    southern_bavarian-germanic: 1
+  owner: MARC
+  controller: MARC
+  cores:
+    QUAD: no
+    MARC: yes
+500.1.1:
+  pops: 
+    southern_bavarian-germanic: 0
+    langobardi-germanic: 1
+  owner: LOMB
+  controller: LOMB
+  cores:
+    MARC: no
+    LOMB: yes
+568.1.1:
+  pops: 
+    langobardi-germanic: 0
+    langobardi-: 1
+  owner: AVR
+  controller: AVR
+  cores:
+    HERU: no
+    AVR: yes
+580.1.1:
+  pops: 
+    slovak-: 1
+623.1.1:
+  owner: SAMO
+  controller: SAMO
+  cores:
+    HERU: no
+    SAMO: yes
+659.1.1:
+  owner: NITR
+  controller: NITR
+  cores:
+    SAMO: no
+    NITR: yes
+833.1.1:
+  owner: MVA
+  controller: MVA
+  cores:
+    NITR: no
+    MVA: yes
+902.1.1:
+  owner: NITR
+  controller: NITR
+  cores:
+    MVA: no
+    NITR: yes
+925.1.1:
+  owner: HUN
+  controller: HUN
+  cores:
+    HUN: yes
+950.1.1:
+  pops: 
+    slovak-catholic: 1
+1001.1.1:
+  owner: POL
+  controller: POL
+  cores:
+    POL: yes
+1018.1.1:
+  owner: HUN
+  controller: HUN
+  cores:
+    POL: no
+1490.1.1:
+  controller: HAB
+1491.11.7:
+  controller: HUN
+1526.8.30:
+  owner: HAB
+  controller: HAB
+  cores:
+    HAB: yes
+1606.1.1:
+  pops: 
+    slovak-catholic: 0
+    slovak-calvinist: 1
+  controller: HAB
+1626.1.1:
+  controller: HAB
+1664.8.1:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1685.1.1:
+  controller: HAB
+1699.1.26:
+  owner: HAB
+  cores:
+    TUR: no
+1711.1.1:
+  controller: HAB
+1918.10.28:
+  owner: CZES
+  controller: CZES
+  cores:
+    HAB: no
+    HUN: no
+    CZES: yes
+1939.3.14:
+  owner: SLOK
+  controller: SLOK
+  cores:
+    SLOK: yes
+1945.5.8:
+  owner: CZES
+  controller: CZES
+1992.12.31:
+  owner: SLOK
+  controller: SLOK
+  cores:
+    CZES: no

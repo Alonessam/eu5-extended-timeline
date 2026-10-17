@@ -1,0 +1,112 @@
+#imported from EU4 file: history/provinces/131 - Zagorje.txt
+2.1.1:
+  pops: 
+    illyrian-hellenism_religion: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: cloth
+340.1.1:
+  pops: 
+    illyrian-hellenism_religion: 0
+    illyrian-chalcedonism: 1
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+455.1.1:
+  owner: OSTR
+  controller: OSTR
+  cores:
+    ROMW: no
+    OSTR: yes
+460.1.1:
+  pops: 
+    illyrian-chalcedonism: 0
+    gothic-arianism: 1
+540.1.1:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    OSTR: no
+    BYZ: yes
+550.1.1:
+  pops: 
+    gothic-arianism: 0
+    gothic-chalcedonism: 1
+620.1.1:
+  pops: 
+    gothic-chalcedonism: 0
+    croatian-slavic: 1
+  cores:
+    CRO: yes
+630.1.1:
+  owner: CRO
+  controller: CRO
+  cores:
+    BYZ: no
+790.1.1:
+  owner: PANO
+  controller: PANO
+  cores:
+    CRO: no
+    PANO: yes
+870.1.1:
+  pops: 
+    croatian-slavic: 0
+    croatian-catholic: 1
+897.1.1:
+  owner: CRO
+  controller: CRO
+  cores:
+    PANO: no
+    CRO: yes
+1526.8.30:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1573.2.9:
+  controller: TUR
+1699.1.1:
+  owner: HAB
+  controller: HAB
+  cores:
+    TUR: no
+    HAB: yes
+1805.12.26:
+  owner: FRA
+  controller: FRA
+  cores:
+    HAB: no
+    FRA: yes
+1813.9.20:
+  controller: HAB
+1814.4.6:
+  owner: HAB
+  cores:
+    FRA: no
+    HAB: yes
+1918.12.1:
+  owner: YUGO
+  controller: YUGO
+  cores:
+    HAB: no
+    YUGO: yes
+1941.4.6:
+  owner: GER
+  controller: GER
+1941.4.10:
+  owner: CRO
+  controller: CRO
+1945.5.8:
+  owner: YUGO
+  controller: YUGO
+1991.6.25:
+  owner: CRO
+  controller: CRO
+  cores:
+    YUGO: no

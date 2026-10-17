@@ -1,0 +1,35 @@
+#imported from EU4 file: history/provinces/949 - Monacan.txt
+2.1.1:
+  pops: 
+    tsoyaha_culture-iroquoian_totemism: 1
+1750.1.1:
+  pops: 
+    tsoyaha_culture-iroquoian_totemism: 0
+    english-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: naval_supplies
+1764.7.1:
+  pops: 
+    english-lutheran: 0
+    british_louisianan-lutheran: 1
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1782.11.1:
+  cores:
+    GBR: no
+1861.4.17:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

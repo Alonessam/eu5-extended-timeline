@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/985 - Micmac.txt
+2.1.1:
+  pops: 
+    mikmaq_culture-iroquoian_totemism: 1
+1700.1.1:
+  pops: 
+    mikmaq_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: fish
+1763.2.10:
+  pops: 
+    french-catholic: 0
+    english-catholic: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1790.1.1:
+  pops: 
+    english-catholic: 0
+    british_canadian-catholic: 1
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

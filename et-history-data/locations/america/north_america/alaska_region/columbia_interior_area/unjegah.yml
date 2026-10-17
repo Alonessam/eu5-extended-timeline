@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/2603 - Sekani.txt
+2.1.1:
+  pops: 
+    tlingit_culture-iroquoian_totemism: 1
+1793.1.1:
+  pops: 
+    tlingit_culture-iroquoian_totemism: 0
+    tlingit_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: fur
+1870.7.15:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

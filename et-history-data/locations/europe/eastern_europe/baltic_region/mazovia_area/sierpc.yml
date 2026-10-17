@@ -1,0 +1,108 @@
+#imported from EU4 file: history/provinces/256 - Plock.txt
+2.1.1:
+  pops: 
+    yotvingian-romuva: 1
+  owner: NEUR
+  controller: NEUR
+  cores:
+    NEUR: yes
+  resource: grain
+140.1.1:
+  pops: 
+    yotvingian-romuva: 0
+    scirian-germanic: 1
+  owner: SCIR
+  controller: SCIR
+  cores:
+    NEUR: no
+    SCIR: yes
+150.1.1:
+  pops: 
+    scirian-germanic: 0
+    yotvingian-romuva: 1
+  owner: NEUR
+  controller: NEUR
+  cores:
+    SCIR: no
+    NEUR: yes
+450.1.1:
+  pops: 
+    yotvingian-romuva: 0
+    lesser_polish-slavic: 1
+  owner: MAZ
+  controller: MAZ
+  cores:
+    NEUR: no
+    MAZ: yes
+940.1.1:
+  owner: POL
+  controller: POL
+  cores:
+    POL: yes
+1034.5.11:
+  owner: MAZ
+  controller: MAZ
+  cores:
+    MAZ: yes
+1047.1.1:
+  owner: POL
+  controller: POL
+1080.1.1:
+  pops: 
+    lesser_polish-slavic: 0
+    lesser_polish-catholic: 1
+1138.10.28:
+  owner: MAZ
+  controller: MAZ
+  cores:
+    MAZ: yes
+1495.2.16:
+  owner: POL
+  controller: POL
+  cores:
+    MAZ: no
+    POL: yes
+1569.7.1:
+  owner: PLC
+  controller: PLC
+  cores:
+    PLC: yes
+    POL: no
+1589.1.1:
+  controller: PLC
+1655.1.1:
+  controller: SWE
+1660.1.1:
+  controller: PLC
+1793.1.23:
+  owner: PRU
+  controller: PRU
+  cores:
+    PRU: yes
+1807.7.9:
+  owner: POL
+  controller: POL
+  cores:
+    PRU: no
+    POL: yes
+1812.12.12:
+  controller: RUS
+1814.4.11:
+  owner: RUS
+  cores:
+    RUS: yes
+1915.8.1:
+  controller: GER
+1918.3.3:
+  owner: POL
+  controller: POL
+  cores:
+    RUS: no
+1939.10.6:
+  owner: GER
+  controller: GER
+1945.1.17:
+  controller: SOVI
+1945.5.8:
+  owner: POL
+  controller: POL

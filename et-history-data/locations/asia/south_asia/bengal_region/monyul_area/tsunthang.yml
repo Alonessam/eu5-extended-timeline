@@ -1,0 +1,33 @@
+#imported from EU4 file: history/provinces/4482 - Sikkim.txt
+2.1.1:
+  pops: 
+    newar_culture-mahayana: 1
+  owner: LWA
+  controller: LWA
+  cores:
+    LWA: yes
+  resource: wool
+625.1.1:
+  owner: TIB
+  controller: TIB
+  cores:
+    TIB: yes
+640.1.1:
+  pops: 
+    newar_culture-mahayana: 0
+    newar_culture-tibetan_buddhism: 1
+820.1.1:
+  owner: LWA
+  controller: LWA
+  cores:
+    TIB: no
+    LWA: yes
+1609.1.1:
+  owner: SKK
+  controller: SKK
+1975.5.16:
+  owner: INDI
+  controller: INDI
+  cores:
+    KMA: no
+    INDI: yes

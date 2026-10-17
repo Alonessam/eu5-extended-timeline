@@ -1,0 +1,28 @@
+#imported from EU4 file: history/provinces/4896 - Meductic.txt
+2.1.1:
+  pops: 
+    wolastoqiyik_culture-iroquoian_totemism: 1
+1631.1.1:
+  pops: 
+    wolastoqiyik_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: fur
+1763.2.10:
+  pops: 
+    french-catholic: 0
+    british_canadian-catholic: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

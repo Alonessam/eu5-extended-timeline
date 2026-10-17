@@ -1,0 +1,24 @@
+#imported from EU4 file: history/provinces/2859 - Itapua.txt
+2.1.1:
+  pops: 
+    ava_culture-muisca_religion: 1
+1609.1.1:
+  pops: 
+    ava_culture-muisca_religion: 0
+    ava_culture-catholic: 1
+  owner: GUAR
+  controller: GUAR
+  cores:
+    GUAR: yes
+  resource: tea
+1756.2.1:
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1811.5.17:
+  owner: PARA
+  controller: PARA
+  cores:
+    SPA: no
+    PARA: yes

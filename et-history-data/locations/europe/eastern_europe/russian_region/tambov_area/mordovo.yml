@@ -1,0 +1,105 @@
+#imported from EU4 file: history/provinces/302 - Tambow.txt
+2.1.1:
+  pops: 
+    hungarian-: 1
+600.1.1:
+  owner: HUN
+  controller: HUN
+  cores:
+    HUN: yes
+  resource: iron
+750.1.1:
+  pops: 
+    moksha_culture-: 1
+  owner: BURT
+  controller: BURT
+  cores:
+    HUN: no
+    BURT: yes
+940.1.1:
+  pops: 
+    cuman_culture-: 1
+969.1.1:
+  owner: PECH
+  controller: PECH
+  cores:
+    BURT: no
+    PECH: yes
+1055.1.1:
+  owner: CUMA
+  controller: CUMA
+  cores:
+    PECH: no
+    CUMA: yes
+1220.1.1:
+  pops: 
+    cuman_culture-sunni: 1
+1237.1.1:
+  pops: 
+    cuman_culture-sunni: 0
+    mishar-sunni: 1
+  owner: MGE
+  controller: MGE
+  cores:
+    CUMA: no
+    MGE: yes
+1260.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    MGE: no
+    WHHO: yes
+1372.1.1:
+  owner: BLHO
+  controller: BLHO
+  cores:
+    BLHO: yes
+1374.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    BLHO: no
+1378.1.1:
+  owner: GLH
+  controller: GLH
+  cores:
+    GLH: yes
+1441.1.1:
+  cores:
+    CRI: yes
+1442.1.1:
+  owner: GRHO
+  controller: GRHO
+  cores:
+    GLH: no
+    GRHO: yes
+1502.6.1:
+  owner: CRI
+  controller: CRI
+  cores:
+    GRHO: no
+1572.8.2:
+  owner: RUS
+  controller: RUS
+  cores:
+    CRI: no
+    RUS: yes
+1650.1.1:
+  pops: 
+    mishar-sunni: 0
+    muscovite-orthodox: 1
+1850.1.1:
+  cores:
+    CRI: no
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

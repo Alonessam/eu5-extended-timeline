@@ -1,0 +1,35 @@
+#imported from EU4 file: history/provinces/756 - Bahia.txt
+2.1.1:
+  pops: 
+    tupinamba_culture-muisca_religion: 1
+1549.3.29:
+  pops: 
+    tupinamba_culture-muisca_religion: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+  resource: sugar
+1624.5.1:
+  pops: 
+    portuguese-catholic: 0
+    low_franconian-calvinist: 1
+  owner: NED
+  controller: NED
+1625.4.1:
+  pops: 
+    low_franconian-calvinist: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+1780.1.1:
+  pops: 
+    portuguese-catholic: 0
+    brazilian-catholic: 1
+1822.9.7:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    POR: no
+    BRAZ: yes

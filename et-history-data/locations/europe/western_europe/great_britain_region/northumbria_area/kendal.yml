@@ -1,0 +1,110 @@
+#imported from EU4 file: history/provinces/247 - Cumbria.txt
+2.1.1:
+  pops: 
+    cumbric-druidism: 1
+  owner: DAMN
+  controller: DAMN
+  cores:
+    DAMN: yes
+  resource: wool
+78.1.1:
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+380.1.1:
+  cores:
+    PICT: no
+    RHEG: yes
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+410.1.1:
+  owner: RHEG
+  controller: RHEG
+  cores:
+    ROM: no
+    BRIG: no
+    RHEG: yes
+450.1.1:
+  pops: 
+    cumbric-druidism: 0
+    cumbric-chalcedonism: 1
+480.6.1:
+  cores:
+    ROMW: no
+573.1.1:
+  owner: STRA
+  controller: STRA
+  cores:
+    RHEG: no
+    STRA: yes
+867.1.1:
+  pops: 
+    cumbric-chalcedonism: 0
+    cumbric-catholic: 1
+945.1.1:
+  owner: SCO
+  controller: SCO
+  cores:
+    STRA: no
+    SCO: yes
+1066.12.25:
+  pops: 
+    cumbric-catholic: 0
+    scottish-catholic: 1
+1092.1.1:
+  pops: 
+    scottish-catholic: 0
+    english-catholic: 1
+  owner: ENG
+  controller: ENG
+  cores:
+    ENG: yes
+1136.1.1:
+  owner: SCO
+  controller: SCO
+1157.1.1:
+  owner: ENG
+  controller: ENG
+  cores:
+    SCO: no
+1351.3.6: # creation of the Palatine of Lancaster
+  owner: LANC
+  controller: LANC
+  cores:
+    LANC: yes
+1361.3.23: # death of Henry Grosemont
+  owner: ENG
+  controller: ENG
+1377.2.28: # recreation of the Palatine of Lancaster
+  owner: LANC
+  controller: LANC
+1399.9.30: # Henry IV comes to the throne
+  owner: ENG
+  controller: ENG
+1399.11.10: # recreation of the Palatine of Lancaster
+  owner: LANC
+  controller: LANC
+1413.3.21: # Henry V comes to the throne.
+  owner: ENG
+  controller: ENG
+1585.1.1:
+  pops: 
+    english-catholic: 0
+    english-lutheran: 1
+1645.6.28:
+  controller: SCO
+1646.5.5:
+  controller: ENG
+1648.8.25:
+  controller: ENG
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    ENG: no
+    GBR: yes

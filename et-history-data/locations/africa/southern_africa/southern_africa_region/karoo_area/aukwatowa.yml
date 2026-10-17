@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/1175 - Lesser Namaqualand.txt
+2.1.1:
+  pops: 
+    khoemana_culture-bantu_religion: 1
+1835.1.1:
+  pops: 
+    khoemana_culture-bantu_religion: 0
+    khoemana_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: grain
+1880.1.1:
+  resource: gold
+1910.3.31:
+  owner: SAFR
+  controller: SAFR
+  cores:
+    GBR: no
+    SAFR: yes

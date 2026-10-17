@@ -1,0 +1,7 @@
+#imported from EU4
+2.1.1:
+  government: et_tribal_federation
+  color: rgb { 65  135  65 }
+  religion: bantu_religion
+  primary_culture: mandinka
+  capital: dakadjalan

@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/3023 - Bangui.txt
+2.1.1:
+  pops: 
+    gbaya_culture-bantu_religion: 1
+1889.1.1:
+  pops: 
+    gbaya_culture-bantu_religion: 0
+    gbaya_culture-lutheran: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: grain
+1960.8.13:
+  owner: CAFR
+  controller: CAFR
+  cores:
+    FRA: no
+    CAFR: yes

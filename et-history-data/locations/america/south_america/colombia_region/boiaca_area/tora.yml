@@ -1,0 +1,30 @@
+#imported from EU4 file: history/provinces/4603 - Moniquira.txt
+2.1.1:
+  pops: 
+    muisca_culture-muisca_religion: 1
+  owner: ZIP
+  controller: ZIP
+  cores:
+    ZIP: yes
+  resource: salt
+1539.1.1:
+  pops: 
+    muisca_culture-muisca_religion: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+  resource: gems
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    iberian_colombian-catholic: 1
+1810.7.20:
+  owner: COLO
+  controller: COLO
+  cores:
+    COLO: yes
+1819.8.7:
+  cores:
+    SPA: no

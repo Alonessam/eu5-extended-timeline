@@ -1,0 +1,66 @@
+#imported from EU4 file: history/provinces/1075 - Tyumen.txt
+2.1.1:
+  pops: 
+    sakha_culture-mari_paganism: 1
+1236.1.1:
+  pops: 
+    sakha_culture-mari_paganism: 0
+    sakha_culture-: 1
+  owner: MGE
+  controller: MGE
+  cores:
+    MGE: yes
+    SIBI: yes
+  resource: fur
+1260.1.1:
+  owner: BLHO
+  controller: BLHO
+  cores:
+    MGE: no
+    BLHO: yes
+1378.1.1:
+  owner: GLH
+  controller: GLH
+  cores:
+    GLH: yes
+    SIBI: yes
+1390.1.1:
+  pops: 
+    sakha_culture-sunni: 1
+1428.1.1:
+  owner: SHAY
+  controller: SHAY
+  cores:
+    GLH: no
+1468.1.1:
+  owner: SIBI
+  controller: SIBI
+1582.10.23:
+  owner: RUS
+  controller: RUS
+  cores:
+    RUS: yes
+1610.1.1:
+  pops: 
+    sakha_culture-sunni: 0
+    muscovite-orthodox: 1
+1620.1.1:
+  cores:
+    SIBI: no
+1917.12.13:
+  cores:
+    KAZA: no
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1970.1.1:
+  resource: oil
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

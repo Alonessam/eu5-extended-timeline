@@ -1,0 +1,7 @@
+#imported from EU4
+2.1.1:
+  government: et_chinese_monarchy
+  color: rgb { 132  207  191 }
+  religion: sanjiao
+  primary_culture: huizhou_hakka_culture
+  capital: bouar

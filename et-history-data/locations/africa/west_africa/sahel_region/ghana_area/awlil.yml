@@ -1,0 +1,52 @@
+#imported from EU4 file: history/provinces/1112 - Trarza.txt
+2.1.1:
+  pops: 
+    wolof-bantu_religion: 1
+800.1.1:
+  owner: TKR
+  controller: TKR
+  cores:
+    TKR: yes
+  resource: salt
+1350.1.1:
+  owner: JOL
+  controller: JOL
+  cores:
+    TKR: no
+    JOL: yes
+1820.1.1:
+  pops: 
+    wolof-bantu_religion: 0
+    wolof-sunni: 1
+1875.1.1:
+  owner: SEGU
+  controller: SEGU
+  cores:
+    SEGU: yes
+1880.1.1:
+  pops: 
+    wolof-sunni: 0
+    masmuda-sunni: 1
+1890.1.1:
+  owner: FRA
+  controller: FRA
+  cores:
+    SEGU: no
+    FRA: yes
+1940.6.14:
+  owner: VFRA
+  controller: VFRA
+  cores:
+    VFRA: yes
+1942.11.16:
+  owner: FRA
+  controller: FRA
+  cores:
+    VFRA: no
+1960.11.28:
+  owner: MAUR
+  controller: MAUR
+  cores:
+    FRA: no
+    JOL: no
+    MAUR: yes

@@ -1,0 +1,170 @@
+#imported from EU4 file: history/provinces/4777 - Forez.txt
+2.1.1:
+  pops: 
+    gallian-druidism: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: livestock
+360.1.1:
+  pops: 
+    gallian-druidism: 0
+    gallian-chalcedonism: 1
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+450.1.1:
+  pops: 
+    gallian-chalcedonism: 0
+    gallian-arianism: 1
+455.1.1:
+  pops: 
+    gallian-arianism: 0
+    burgundione-germanic: 1
+  owner: BUR
+  controller: BUR
+  cores:
+    BUR: yes
+458.1.1:
+  owner: ROMW
+  controller: ROMW
+461.8.2:
+  owner: BUR
+  controller: BUR
+  cores:
+    ROMW: no
+486.6.1:
+  pops: 
+    burgundione-germanic: 0
+    burgundian-germanic: 1
+500.1.1:
+  pops: 
+    burgundian-germanic: 0
+    burgundian-chalcedonism: 1
+534.1.1:
+  owner: NEUS
+  controller: NEUS
+  cores:
+    NEUS: yes
+558.12.23:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    NEUS: no
+    FRAN: yes
+561.11.29:
+  owner: ORL
+  controller: ORL
+  cores:
+    ORL: yes
+592.3.28:
+  owner: ASTS
+  controller: ASTS
+  cores:
+    ASTS: yes
+595.1.1:
+  owner: ORL
+  controller: ORL
+  cores:
+    ASTS: no
+600.1.1:
+  pops: 
+    burgundian-chalcedonism: 0
+    arpitan-chalcedonism: 1
+612.1.1:
+  owner: ASTS
+  controller: ASTS
+  cores:
+    ORL: no
+    ASTS: yes
+613.10.10:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    ASTS: no
+    FRAN: yes
+634.1.1:
+  owner: NEUS
+  controller: NEUS
+  cores:
+    NEUS: yes
+679.12.23:
+  owner: FRAN
+  controller: FRAN
+840.6.21:
+  owner: MFRA
+  controller: MFRA
+  cores:
+    FRAN: no
+    MFRA: yes
+855.9.30:
+  owner: PRO
+  controller: PRO
+  cores:
+    MFRA: no
+    PRO: yes
+863.1.24:
+  owner: ITA
+  controller: ITA
+  cores:
+    PRO: no
+    ITA: yes
+867.1.1:
+  pops: 
+    arpitan-chalcedonism: 0
+    arpitan-catholic: 1
+888.1.1:
+  owner: BUR
+  controller: BUR
+  cores:
+    ITA: no
+1040.1.1:
+  cores:
+    DAU: yes
+1157.1.1:
+  owner: LYON
+  controller: LYON
+  cores:
+    BUR: no
+    LYON: yes
+1312.1.1:
+  owner: FRA
+  controller: FRA
+  cores:
+    LYON: no
+    FRA: yes
+1417.9.22:
+  owner: BOU
+  controller: BOU
+  cores:
+    BOU: yes
+1537.1.1:
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+1651.4.1:
+  controller: FRA
+1850.1.1:
+  pops: 
+    arpitan-catholic: 0
+    french-catholic: 1
+1870.9.4:
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+1940.6.14:
+  owner: VFRA
+  controller: VFRA
+  cores:
+    VFRA: yes
+1944.8.25:
+  owner: FRA
+  controller: FRA
+  cores:
+    VFRA: no

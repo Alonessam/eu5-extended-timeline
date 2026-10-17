@@ -1,0 +1,15 @@
+#imported from EU4 file: history/provinces/1806 - Weagamow.txt
+2.1.1:
+  pops: 
+    ilili_culture-iroquoian_totemism: 1
+1928.1.1:
+  pops: 
+    ilili_culture-iroquoian_totemism: 0
+    british_canadian-lutheran: 1
+  owner: CAN
+  controller: CAN
+  cores:
+    CAN: yes
+  resource: gold
+1995.1.1:
+  resource: fur

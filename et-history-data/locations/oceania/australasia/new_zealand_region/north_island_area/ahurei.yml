@@ -1,0 +1,33 @@
+#imported from EU4 file: history/provinces/2739 - Kirikiriroa.txt
+2.1.1:
+  pops: 
+    uninhabited-bimoism: 1
+1200.1.1:
+  pops: 
+    uninhabited-bimoism: 0
+    maori_culture-bimoism: 1
+  owner: TNI
+  controller: TNI
+  cores:
+    TNI: yes
+  resource: grain
+1858.6.1:
+  owner: AOTE
+  controller: AOTE
+  cores:
+    AOTE: yes
+1863.1.1:
+  pops: 
+    maori_culture-bimoism: 0
+    british_oceanian-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    AOTE: no
+    GBR: yes
+1907.9.26:
+  owner: NZEA
+  controller: NZEA
+  cores:
+    GBR: no
+    NZEA: yes

@@ -1,0 +1,94 @@
+#imported from EU4 file: history/provinces/4272 - Al Jawf.txt
+2.1.1:
+  pops: 
+    najdi_culture-nabataean: 1
+220.1.1:
+  owner: GHAS
+  controller: GHAS
+  cores:
+    GHAS: yes
+  resource: livestock
+230.1.1:
+  pops: 
+    najdi_culture-nabataean: 0
+    najdi_culture-chalcedonism: 1
+460.1.1:
+  owner: KIND
+  controller: KIND
+  cores:
+    GHAS: no
+    KIND: yes
+480.1.1:
+  pops: 
+    najdi_culture-chalcedonism: 0
+    najdi_culture-south_arabian: 1
+530.1.1:
+  owner: ANZ
+  controller: ANZ
+  cores:
+    KIND: no
+    ANZ: yes
+633.1.1:
+  pops: 
+    najdi_culture-south_arabian: 0
+    najdi_culture-islam: 1
+  owner: RASH
+  controller: RASH
+  cores:
+    RASH: yes
+661.7.28:
+  pops: 
+    najdi_culture-islam: 0
+    najdi_culture-sunni: 1
+  owner: UMAY
+  controller: UMAY
+  cores:
+    RASH: no
+    UMAY: yes
+750.8.6:
+  owner: ABBA
+  controller: ABBA
+  cores:
+    UMAY: no
+    ABBA: yes
+890.1.1:
+  owner: NAJD
+  controller: NAJD
+  cores:
+    ABBA: no
+    NAJD: yes
+906.1.1:
+  owner: ABBA
+  controller: ABBA
+  cores:
+    NAJD: no
+    ABBA: yes
+935.8.26:
+  owner: FDL
+  controller: FDL
+  cores:
+    ABBA: no
+    FDL: yes
+976.1.1:
+  owner: ANZ
+  controller: ANZ
+  cores:
+    FDL: no
+    ANZ: yes
+1832.1.1:
+  owner: SHM
+  controller: SHM
+  cores:
+    SHM: yes
+1921.11.2:
+  owner: NAJD
+  controller: NAJD
+  cores:
+    SHM: no
+    NAJD: yes
+1932.9.23:
+  owner: SAUD
+  controller: SAUD
+  cores:
+    NAJD: no
+    SAUD: yes

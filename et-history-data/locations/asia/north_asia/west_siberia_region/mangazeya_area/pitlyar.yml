@@ -1,0 +1,27 @@
+#imported from EU4 file: history/provinces/1073 - Berezov.txt
+2.1.1:
+  pops: 
+    khanty_culture-mari_paganism: 1
+1593.1.1:
+  pops: 
+    khanty_culture-mari_paganism: 0
+    muscovite-orthodox: 1
+  owner: RUS
+  controller: RUS
+  cores:
+    RUS: yes
+  resource: salt
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1980.1.1:
+  resource: oil
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

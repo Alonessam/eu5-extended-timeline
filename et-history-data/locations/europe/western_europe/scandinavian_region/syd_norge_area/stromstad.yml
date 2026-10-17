@@ -1,0 +1,55 @@
+#imported from EU4 file: history/provinces/16 - Bohuslan.txt
+2.1.1:
+  pops: 
+    gutnish-norse: 1
+350.1.1:
+  owner: WGEA
+  controller: WGEA
+  cores:
+    WGEA: yes
+  resource: fish
+872.1.1:
+  owner: NOR
+  controller: NOR
+  cores:
+    VEST: no
+    NOR: yes
+900.1.1:
+  pops: 
+    gutnish-norse: 0
+    norwegian-norse: 1
+1030.1.1:
+  pops: 
+    norwegian-norse: 0
+    norwegian-catholic: 1
+1523.3.15:
+  owner: SWE
+  controller: SWE
+1532.5.17:
+  owner: NOR
+  controller: NOR
+1536.1.1:
+  pops: 
+    norwegian-catholic: 0
+    norwegian-lutheran: 1
+  owner: DAN
+  controller: DAN
+  cores:
+    DAN: yes
+1658.2.26:
+  owner: SWE
+  controller: SWE
+  cores:
+    SWE: yes
+1677.11.1:
+  controller: DAN
+1679.8.23:
+  controller: SWE
+1680.1.1:
+  pops: 
+    norwegian-lutheran: 0
+    swedish-lutheran: 1
+1850.1.1:
+  cores:
+    DAN: no
+    NOR: no

@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/1306 - Sao Tome.txt
+2.1.1:
+  pops: 
+    uninhabited-bimoism: 1
+1485.1.1:
+  pops: 
+    uninhabited-bimoism: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+  resource: sugar
+1860.1.1:
+  resource: coffee
+1958.1.1:
+  cores:
+    STPR: yes
+1975.7.12:
+  owner: STPR
+  controller: STPR
+  cores:
+    POR: no

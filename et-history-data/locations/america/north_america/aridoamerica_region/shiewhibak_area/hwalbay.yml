@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/2491 - Hualapai.txt
+2.1.1:
+  pops: 
+    pima_culture-iroquoian_totemism: 1
+1731.1.1:
+  owner: PIM
+  controller: PIM
+  cores:
+    PIM: yes
+  resource: wool
+1863.1.1:
+  pops: 
+    pima_culture-iroquoian_totemism: 0
+    british_californian-lutheran: 1
+  owner: USA
+  controller: USA
+  cores:
+    PIM: no
+    USA: yes

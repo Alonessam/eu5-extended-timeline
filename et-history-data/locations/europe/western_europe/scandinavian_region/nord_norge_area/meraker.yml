@@ -1,0 +1,52 @@
+#imported from EU4 file: history/provinces/20 - Trondelag.txt
+2.1.1:
+  pops: 
+    norwegian-norse: 1
+700.1.1:
+  owner: HALO
+  controller: HALO
+  cores:
+    HALO: yes
+  resource: fish
+872.1.1:
+  owner: NOR
+  controller: NOR
+  cores:
+    HALO: no
+    NOR: yes
+997.1.1:
+  pops: 
+    norwegian-norse: 0
+    norwegian-catholic: 1
+1536.1.1:
+  pops: 
+    norwegian-catholic: 0
+    norwegian-lutheran: 1
+  owner: DAN
+  controller: DAN
+  cores:
+    DAN: yes
+1564.3.3:
+  controller: SWE
+1564.5.21:
+  controller: DAN
+1658.2.26:
+  owner: SWE
+  controller: SWE
+  cores:
+    SWE: yes
+1658.12.1:
+  controller: DAN
+1660.5.27:
+  owner: DAN
+1814.1.14:
+  owner: SWE
+  cores:
+    DAN: no
+1814.5.17:
+  owner: NOR
+  controller: NOR
+1940.4.9:
+  controller: GER
+1945.5.8:
+  controller: NOR

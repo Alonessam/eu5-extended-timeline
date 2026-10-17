@@ -1,0 +1,80 @@
+#imported from EU4 file: history/provinces/4723 - Opole.txt
+2.1.1:
+  pops: 
+    vandal-germanic: 1
+  owner: VAND
+  controller: VAND
+  cores:
+    VAND: yes
+  resource: grain
+395.1.1:
+  owner: NAHA
+  controller: NAHA
+  cores:
+    VAND: no
+    NAHA: yes
+550.1.1:
+  pops: 
+    vandal-germanic: 0
+    silesian-slavic: 1
+  owner: SIL
+  controller: SIL
+  cores:
+    NAHA: no
+    SIL: yes
+940.1.1:
+  owner: BOH
+  controller: BOH
+  cores:
+    BOH: yes
+980.1.1:
+  pops: 
+    silesian-slavic: 0
+    silesian-catholic: 1
+990.1.1:
+  owner: POL
+  controller: POL
+  cores:
+    BOH: no
+    POL: yes
+1163.1.1:
+  owner: OPL
+  controller: OPL
+  cores:
+    OPL: yes
+1523.1.1:
+  pops: 
+    silesian-catholic: 0
+    silesian-lutheran: 1
+1675.11.21:
+  owner: HAB
+  controller: HAB
+  cores:
+    HAB: yes
+1740.1.1:
+  cores:
+    PRU: yes
+1745.1.1:
+  owner: PRU
+  controller: PRU
+1763.1.1:
+  cores:
+    HAB: no
+1870.1.1:
+  resource: coal
+1871.1.18:
+  owner: GER
+  controller: GER
+  cores:
+    PRU: no
+    SIL: no
+    GER: yes
+1930.1.1:
+  resource: cars
+1945.5.8:
+  owner: POL
+  controller: POL
+  cores:
+    GER: no
+    POL: yes
+1950.1.1:

@@ -1,0 +1,131 @@
+#imported from EU4 file: history/provinces/156 - Temes.txt
+2.1.1:
+  pops: 
+    dacian-zamolxism: 1
+  owner: DACI
+  controller: DACI
+  cores:
+    DACI: yes
+  resource: wool
+106.1.1:
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+160.1.1:
+  cores:
+    DACI: no
+273.1.1:
+  pops: 
+    dacian-zamolxism: 0
+    gothic-germanic: 1
+  owner: VISG
+  controller: VISG
+  cores:
+    ROM: no
+    VISG: yes
+376.1.1:
+  owner: HUNS
+  controller: HUNS
+  cores:
+    VISG: no
+    HUNS: yes
+469.1.1:
+  pops: 
+    gothic-germanic: 0
+    gepid-germanic: 1
+  owner: GEPI
+  controller: GEPI
+  cores:
+    HUNS: no
+    GEPI: yes
+567.1.1:
+  pops: 
+    gepid-germanic: 0
+    gepid-: 1
+  owner: AVR
+  controller: AVR
+  cores:
+    GEPI: no
+    AVR: yes
+804.1.1:
+  pops: 
+    wallachian-: 1
+  owner: BUL
+  controller: BUL
+  cores:
+    AVR: no
+    BUL: yes
+890.1.1:
+  pops: 
+    wallachian-orthodox: 1
+930.1.1:
+  owner: BANT
+  controller: BANT
+  cores:
+    BUL: no
+    BANT: yes
+1003.1.1:
+  owner: HUN
+  controller: HUN
+  cores:
+    HUN: yes
+1010.1.1:
+  pops: 
+    wallachian-orthodox: 0
+    wallachian-catholic: 1
+1514.6.1:
+  controller: HUN
+1526.8.30:
+  owner: TRA
+  cores:
+    TRA: yes
+1551.7.19:
+  owner: HAB
+  controller: HAB
+  cores:
+    HAB: yes
+    TUR: yes
+1552.7.17:
+  controller: TUR
+1556.10.1:
+  owner: TRA
+  controller: TRA
+1562.6.1:
+  cores:
+    HAB: no
+1567.1.1:
+  pops: 
+    wallachian-catholic: 0
+    wallachian-calvinist: 1
+1570.1.1:
+  owner: TUR
+  controller: TUR
+  cores:
+    TRA: no
+    HAB: yes
+1700.1.1:
+  pops: 
+    wallachian-calvinist: 0
+    wallachian-orthodox: 1
+1718.1.1:
+  owner: HAB
+  controller: HAB
+  cores:
+    TUR: no
+1739.1.1:
+  controller: HAB
+1770.1.1:
+  controller: HAB
+1918.10.31:
+  owner: HUN
+  controller: HUN
+  cores:
+    HAB: no
+    HUN: yes
+1920.6.4:
+  owner: RMN
+  controller: RMN
+  cores:
+    HUN: no
+    RMN: yes

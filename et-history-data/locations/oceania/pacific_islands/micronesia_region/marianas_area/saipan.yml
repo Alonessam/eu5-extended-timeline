@@ -1,0 +1,24 @@
+#imported from EU4 file: history/provinces/1235 - Guam.txt
+2.1.1:
+  pops: 
+    kajoor_ri_majel_culture-bimoism: 1
+1668.1.1:
+  pops: 
+    kajoor_ri_majel_culture-bimoism: 0
+    kajoor_ri_majel_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  resource: fish
+1693.1.1:
+  cores:
+    SPA: yes
+1898.8.12:
+  owner: USA
+  controller: USA
+  cores:
+    SPA: no
+    USA: yes
+1941.12.8:
+  controller: JAP
+1944.8.10:
+  controller: USA

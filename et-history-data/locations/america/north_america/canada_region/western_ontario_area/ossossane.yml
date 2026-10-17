@@ -1,0 +1,37 @@
+#imported from EU4 file: history/provinces/988 - Huron.txt
+2.1.1:
+  pops: 
+    attigneenongnahac_culture-iroquoian_totemism: 1
+  owner: AGW
+  controller: AGW
+  cores:
+    AGW: yes
+  resource: fur
+1650.1.1:
+  pops: 
+    attigneenongnahac_culture-iroquoian_totemism: 0
+    ojibwe_culture-iroquoian_totemism: 1
+  owner: ---
+  controller: ---
+  cores:
+    AGW: no
+1790.1.1:
+  pops: 
+    ojibwe_culture-iroquoian_totemism: 0
+    british_canadian-iroquoian_totemism: 1
+1815.1.1:
+  pops: 
+    british_canadian-iroquoian_totemism: 0
+    british_canadian-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1850.1.1:
+  resource: paper
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

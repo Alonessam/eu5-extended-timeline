@@ -1,0 +1,135 @@
+#imported from EU4 file: history/provinces/288 - Cherkassk.txt
+2.1.1:
+  pops: 
+    sarmatian-: 1
+  owner: SARM
+  controller: SARM
+  cores:
+    SARM: yes
+  resource: livestock
+370.1.1:
+  pops: 
+    hunnic-: 1
+  owner: HUNS
+  controller: HUNS
+  cores:
+    SARM: no
+    HUNS: yes
+420.1.1:
+  pops: 
+    bolghar_culture-: 1
+  cores:
+    ONOG: yes
+469.1.1:
+  owner: ONOG
+  controller: ONOG
+  cores:
+    HUNS: no
+632.1.1:
+  owner: BUL
+  controller: BUL
+  cores:
+    ONOG: no
+    BUL: yes
+720.1.1:
+  pops: 
+    khazar-: 1
+  owner: KHAZ
+  controller: KHAZ
+  cores:
+    BUL: no
+    KHAZ: yes
+969.1.1:
+  pops: 
+    cuman_culture-: 1
+  owner: PECH
+  controller: PECH
+  cores:
+    KHAZ: no
+    PECH: yes
+1055.1.1:
+  owner: CUMA
+  controller: CUMA
+  cores:
+    PECH: no
+    CUMA: yes
+    ZAZ: yes
+1237.1.1:
+  pops: 
+    mishar-: 1
+  owner: MGE
+  controller: MGE
+  cores:
+    CUMA: no
+    MGE: yes
+    GLH: yes
+1250.1.1:
+  pops: 
+    mishar-sunni: 1
+1260.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    MGE: no
+    WHHO: yes
+1372.1.1:
+  owner: BLHO
+  controller: BLHO
+  cores:
+    BLHO: yes
+1374.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    BLHO: no
+1378.1.1:
+  owner: GLH
+  controller: GLH
+  cores:
+    GLH: yes
+1442.1.1:
+  owner: GRHO
+  controller: GRHO
+  cores:
+    GLH: no
+    GRHO: yes
+1502.6.1:
+  owner: ATR
+  controller: ATR
+  cores:
+    GRHO: no
+    ATR: yes
+1556.6.2:
+  owner: RUS
+  controller: RUS
+  cores:
+    ATR: no
+    RUS: yes
+1570.1.1:
+  pops: 
+    mishar-sunni: 0
+    muscovite-orthodox: 1
+1671.4.14:
+  controller: RUS
+1775.2.1:
+  controller: RUS
+1850.1.1:
+  cores:
+    CRI: no
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1942.7.24:
+  controller: GER
+1943.2.13:
+  controller: SOVI
+1945.1.1:
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

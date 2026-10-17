@@ -1,0 +1,22 @@
+#imported from EU4 file: history/provinces/4082 - Kasanje.txt
+2.1.1:
+  pops: 
+    mbangala-bantu_religion: 1
+1350.1.1:
+  cores:
+    ???: yes
+  resource: slaves
+1910.1.1:
+  pops: 
+    mbangala-bantu_religion: 0
+    mbangala-lutheran: 1
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+1975.11.11:
+  owner: ANGO
+  controller: ANGO
+  cores:
+    POR: no
+    ANGO: yes

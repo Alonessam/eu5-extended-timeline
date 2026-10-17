@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/3068 - Huambo.txt
+2.1.1:
+  pops: 
+    ambundu-bantu_religion: 1
+1912.8.8:
+  pops: 
+    ambundu-bantu_religion: 0
+    ambundu-catholic: 1
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+  resource: wool
+1975.11.11:
+  owner: ANGO
+  controller: ANGO
+  cores:
+    POR: no
+    ANGO: yes

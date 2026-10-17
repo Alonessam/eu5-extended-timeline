@@ -1,0 +1,50 @@
+#imported from EU4 file: history/provinces/29 - Tavastland.txt
+2.1.1:
+  pops: 
+    finnish-muinaisusko: 1
+750.1.1:
+  owner: TAV
+  controller: TAV
+  cores:
+    TAV: yes
+  resource: fur
+1239.1.1:
+  pops: 
+    finnish-muinaisusko: 0
+    finnish-catholic: 1
+  owner: SWE
+  controller: SWE
+  cores:
+    TAV: no
+    SWE: yes
+    FIN: yes
+1527.6.1:
+  pops: 
+    finnish-catholic: 0
+    finnish-lutheran: 1
+1598.8.1:
+  controller: PLC
+1599.7.15:
+  controller: SWE
+1600.1.1:
+  resource: naval_supplies
+1713.10.6:
+  controller: RUS
+1721.8.30:
+  controller: SWE
+1742.10.30:
+  controller: RUS
+1743.8.7:
+  controller: SWE
+1808.2.21:
+  controller: RUS
+1809.9.17:
+  owner: RUS
+  cores:
+    SWE: no
+    RUS: yes
+1917.12.6:
+  owner: FIN
+  controller: FIN
+  cores:
+    RUS: no

@@ -1,0 +1,127 @@
+#imported from EU4 file: history/provinces/83 - Nassau.txt
+2.1.1:
+  pops: 
+    frankish-germanic: 1
+  owner: SICA
+  controller: SICA
+  cores:
+    SICA: yes
+  resource: copper
+290.1.1:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    FRAN: yes
+500.1.1:
+  pops: 
+    frankish-germanic: 0
+    rhine_franconian-germanic: 1
+511.11.27:
+  owner: ASTS
+  controller: ASTS
+  cores:
+    ASTS: yes
+555.1.1:
+  owner: SOIS
+  controller: SOIS
+  cores:
+    SOIS: yes
+558.12.23:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    SOIS: no
+    FRAN: yes
+561.11.29:
+  owner: ASTS
+  controller: ASTS
+613.10.10:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    FRAN: yes
+623.1.1:
+  owner: ASTS
+  controller: ASTS
+629.10.18:
+  owner: FRAN
+  controller: FRAN
+634.1.1:
+  owner: ASTS
+  controller: ASTS
+679.12.23:
+  owner: FRAN
+  controller: FRAN
+700.1.1:
+  pops: 
+    rhine_franconian-germanic: 0
+    rhine_franconian-chalcedonism: 1
+840.6.21:
+  owner: EFRA
+  controller: EFRA
+  cores:
+    FRAN: no
+    EFRA: yes
+867.1.1:
+  pops: 
+    rhine_franconian-chalcedonism: 0
+    rhine_franconian-catholic: 1
+911.11.10:
+  owner: FKN
+  controller: FKN
+  cores:
+    EFRA: no
+    FKN: yes
+    NSA: yes
+1031.1.1:
+  owner: THU
+  controller: THU
+  cores:
+    THU: yes
+1125.1.1:
+  owner: NSA
+  controller: NSA
+  cores:
+    THU: no
+    NSA: yes
+1536.1.1:
+  pops: 
+    rhine_franconian-catholic: 0
+    rhine_franconian-lutheran: 1
+1807.7.9:
+  owner: WES
+  controller: WES
+  cores:
+    WES: yes
+1813.10.13:
+  owner: NSA
+  controller: NSA
+  cores:
+    NSA: no
+1866.8.23:
+  owner: PRU
+  controller: PRU
+  cores:
+    PRU: yes
+1871.1.18:
+  owner: GER
+  controller: GER
+  cores:
+    PRU: no
+    GER: yes
+1900.1.1:
+  cores:
+    NSA: no
+    HES: no
+1944.3.28:
+  controller: USA
+1945.5.8:
+  owner: WGER
+  controller: WGER
+  cores:
+    WGER: yes
+1990.10.3:
+  owner: GER
+  controller: GER
+  cores:
+    WGER: no

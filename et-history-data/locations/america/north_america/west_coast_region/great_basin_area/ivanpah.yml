@@ -1,0 +1,13 @@
+#imported from EU4 file: history/provinces/4635 - Taaqlam.txt
+2.1.1:
+  pops: 
+    pima_culture-iroquoian_totemism: 1
+1848.2.2:
+  pops: 
+    pima_culture-iroquoian_totemism: 0
+    british_californian-catholic: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+  resource: gold

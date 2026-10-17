@@ -1,0 +1,46 @@
+#imported from EU4 file: history/provinces/4573 - Acambaro.txt
+2.1.1:
+  pops: 
+    otomanguean_culture-nahuatl: 1
+  owner: OTO
+  controller: OTO
+  cores:
+    OTO: yes
+  resource: wool
+567.1.1:
+  owner: TOLT
+  controller: TOLT
+  cores:
+    TOLT: yes
+1122.1.1:
+  owner: OTO
+  controller: OTO
+  cores:
+    TOLT: no
+    OTO: yes
+1470.1.1:
+  owner: TAR
+  controller: TAR
+  cores:
+    TAR: yes
+1530.1.1:
+  pops: 
+    otomanguean_culture-nahuatl: 0
+    otomanguean_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1770.1.1:
+  pops: 
+    otomanguean_culture-catholic: 0
+    mexican-catholic: 1
+1810.9.16:
+  owner: MEX
+  controller: MEX
+  cores:
+    MEX: yes
+1821.9.27:
+  controller: MEX
+  cores:
+    SPA: no

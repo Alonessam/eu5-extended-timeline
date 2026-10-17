@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/3064 - Owando.txt
+2.1.1:
+  pops: 
+    kongo-bantu_religion: 1
+1889.1.1:
+  pops: 
+    kongo-bantu_religion: 0
+    kongo-lutheran: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: naval_supplies
+1960.8.15:
+  owner: CONG
+  controller: CONG
+  cores:
+    FRA: no
+    CONG: yes

@@ -1,0 +1,20 @@
+#imported from EU4
+2.1.1:
+  government: eurasian_tribe
+  color: rgb { 30  160  190 }
+  religion: germanic_polytheism
+  primary_culture: western_pomeranian
+  capital: stralsund
+300.1.1:
+  primary_culture: southern_bavarian
+395.1.1:
+  capital: prague
+454.1.1:
+  ruler: rugi_flaccitheus_rugii
+  religion: arianism
+467.1.1:
+  government: catholic_monarchy
+  primary_culture: danube_bavarian
+  capital: vienna
+475.1.1:
+  ruler: rugi_feletheus_rugii

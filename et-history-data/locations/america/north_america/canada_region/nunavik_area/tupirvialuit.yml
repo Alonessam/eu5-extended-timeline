@@ -1,0 +1,22 @@
+#imported from EU4 file: history/provinces/998 - Ungava.txt
+2.1.1:
+  pops: 
+    inuit_culture-mari_paganism: 1
+1830.1.1:
+  pops: 
+    inuit_culture-mari_paganism: 0
+    inuit_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: fur
+1870.7.15:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes
+1980.5.20:
+  cores:
+    QUEB: yes

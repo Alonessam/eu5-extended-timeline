@@ -1,0 +1,52 @@
+#imported from EU4 file: history/provinces/1029 - Kai.txt
+2.1.1:
+  pops: 
+    saeki-shinto: 1
+  owner: KENO
+  controller: KENO
+  cores:
+    KENO: yes
+  resource: livestock
+500.1.1:
+  pops: 
+    saeki-shinto: 0
+    saigoku_culture-shinto: 1
+  owner: YMT
+  controller: YMT
+  cores:
+    KENO: no
+    YMT: yes
+607.1.1:
+  pops: 
+    saigoku_culture-shinto: 0
+    saigoku_culture-mahayana: 1
+712.1.1:
+  pops: 
+    saigoku_culture-mahayana: 0
+    saigoku_culture-shinto: 1
+794.1.1:
+  owner: JAP
+  controller: JAP
+  cores:
+    YMT: no
+    JAP: yes
+1130.1.1:
+  owner: TKD
+  controller: TKD
+  cores:
+    JAP: no
+    TKD: yes
+1498.1.1:
+  resource: gold
+1582.4.3:
+  owner: TOKU
+  controller: TOKU
+  cores:
+    TKD: no
+    TOKU: yes
+1868.1.3:
+  owner: JAP
+  controller: JAP
+  cores:
+    TOKU: no
+    JAP: yes

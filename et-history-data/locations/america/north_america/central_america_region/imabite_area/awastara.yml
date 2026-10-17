@@ -1,0 +1,39 @@
+#imported from EU4 file: history/provinces/838 - Mosquito.txt
+2.1.1:
+  pops: 
+    miskito_culture-muisca_religion: 1
+  cores:
+    ???: yes
+  resource: coffee
+1740.1.1:
+  pops: 
+    miskito_culture-muisca_religion: 0
+    miskito_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  resource: coffee
+1765.1.1:
+  cores:
+    GBR: yes
+1823.7.1:
+  cores:
+    UPCA: yes
+    NICR: yes
+1838.5.31:
+  cores:
+    UPCA: no
+1894.11.20:
+  owner: NICR
+  controller: NICR
+  cores:
+    GBR: no
+1896.9.15:
+  owner: UPCA
+  controller: UPCA
+  cores:
+    UPCA: yes
+1898.11.21:
+  owner: NICR
+  controller: NICR
+  cores:
+    UPCA: no

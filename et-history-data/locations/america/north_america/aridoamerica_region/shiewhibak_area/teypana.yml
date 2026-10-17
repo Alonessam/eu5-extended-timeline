@@ -1,0 +1,51 @@
+#imported from EU4 file: history/provinces/2495 - Acoma.txt
+2.1.1:
+  pops: 
+    ancestral_pueblo_culture-iroquoian_totemism: 1
+  owner: ACO
+  controller: ACO
+  cores:
+    ACO: yes
+  resource: grain
+1598.1.1:
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+  resource: wool
+1680.8.21:
+  owner: TST
+  controller: TST
+1692.9.13:
+  pops: 
+    ancestral_pueblo_culture-iroquoian_totemism: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    TST: no
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    mexican-catholic: 1
+1810.9.16:
+  owner: MEX
+  controller: SPA
+  cores:
+    MEX: yes
+1821.9.27:
+  controller: MEX
+  cores:
+    SPA: no
+1846.12.16:
+  controller: USA
+1848.2.2:
+  owner: USA
+  cores:
+    MEX: no
+    USA: yes
+1862.2.1:
+  controller: CSAM
+1862.4.8:
+  controller: USA
+1900.1.1:

@@ -1,0 +1,13 @@
+#imported from EU4 file: history/provinces/2490 - Goshute.txt
+2.1.1:
+  pops: 
+    tukudeka_culture-iroquoian_totemism: 1
+1848.2.2:
+  pops: 
+    tukudeka_culture-iroquoian_totemism: 0
+    british_californian-mormon: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+  resource: salt

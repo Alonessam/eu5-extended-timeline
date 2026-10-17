@@ -1,0 +1,263 @@
+bern_morcant_bulc_bryneich:
+  380.1.1:
+    birth: alnwick #unknown
+    first_name: morcant_bulc
+    dynasty: bryneich_dynasty
+    adm: 60
+    dip: 45
+    mil: 90
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  547.1.1:
+    death: yes
+bern_oesa_iding:
+  470:
+    birth: alnwick #unknown
+    first_name: oesa
+    dynasty: iding_dynasty
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  520:
+    death: yes
+bern_eoppa_iding:
+  490:
+    birth: alnwick #unknown
+    first_name: eoppa
+    dynasty: iding_dynasty
+    father: bern_oesa_iding
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  520:
+    death: yes
+bern_ida_iding:
+  510:
+    birth: alnwick #unknown
+    first_name: ida
+    dynasty: iding_dynasty
+    father: bern_eoppa_iding
+    adm: 75
+    dip: 45
+    mil: 60
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  559:
+    death: yes
+bern_bearnoch:
+  510:
+    birth: alnwick #unknown
+    first_name: bearnoch
+    female: yes
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  525:
+    spouse: bern_ida_iding
+  560:
+    death: yes
+bern_glappa_iding:
+  515:
+    birth: alnwick #unknown
+    first_name: glappa
+    dynasty: bernicia_dynasty
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  560:
+    death: yes
+bern_adda_iding:
+  530:
+    birth: alnwick #unknown
+    first_name: adda
+    dynasty: iding_dynasty
+    father: bern_ida_iding
+    mother: bern_bearnoch
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  568:
+    death: yes
+bern_aethelric_iding:
+  535:
+    birth: alnwick #unknown
+    first_name: aethelric
+    dynasty: iding_dynasty
+    father: bern_ida_iding
+    mother: bern_bearnoch
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  572:
+    death: yes
+bern_theodric_iding:
+  540:
+    birth: alnwick #unknown
+    first_name: name_theodoric
+    dynasty: iding_dynasty
+    father: bern_ida_iding
+    mother: bern_bearnoch
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  579:
+    death: yes
+bern_ocga_iding:
+  545:
+    birth: alnwick #unknown
+    first_name: ocga
+    dynasty: iding_dynasty
+    father: bern_ida_iding
+    mother: bern_bearnoch
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  600:
+    death: yes
+bern_frithuwald_iding:
+  545:
+    birth: alnwick #unknown
+    first_name: frithuwald
+    dynasty: bernicia_dynasty
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  585:
+    death: yes
+bern_hussa_iding:
+  550:
+    birth: alnwick #unknown
+    first_name: hussa
+    dynasty: bernicia_dynasty
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  593:
+    death: yes
+bern_aethelfrith_iding:
+  555:
+    birth: alnwick #unknown
+    first_name: aethelfrith
+    dynasty: iding_dynasty
+    father: bern_aethelric_iding
+    adm: 65
+    dip: 60
+    mil: 90
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  616:
+    death: yes
+bern_acha_of_deira:
+  560:
+    birth: york #unknown
+    first_name: acha
+    dynasty: yffing_dynasty
+    female: yes
+    father: deir_aella_yffing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: DEIR
+  570:
+    spouse: bern_aethelfrith_iding
+    tag: BERN
+  620:
+    death: yes
+bern_aldhelm_iding:
+  570:
+    birth: alnwick #unknown
+    first_name: aldhelm
+    dynasty: iding_dynasty
+    father: bern_ocga_iding
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  620:
+    death: yes
+bern_eanfrith_bernicia:
+  580:
+    birth: alnwick #unknown
+    first_name: eanfrith
+    dynasty: iding_dynasty
+    father: bern_aethelfrith_iding
+    mother: bern_acha_of_deira
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  634:
+    death: yes
+bern_egwald_iding:
+  600:
+    birth: alnwick #unknown
+    first_name: egwald
+    dynasty: iding_dynasty
+    father: bern_aldhelm_iding
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  660:
+    death: yes
+bern_oswald_bernicia:
+  604:
+    birth: alnwick #unknown
+    first_name: oswald
+    dynasty: iding_dynasty
+    father: bern_aethelfrith_iding
+    mother: bern_acha_of_deira
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  616:
+    religion: chalcedonism
+  642.8.5:
+    death: yes
+bern_cyneburg_of_wessex:
+  615:
+    birth: southampton #unknown
+    first_name: cyneburg
+    dynasty: wessex_dynasty
+    female: yes
+    father: wess_cynegils_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: DEIR
+  635:
+    spouse: bern_oswald_bernicia
+    religion: chalcedonism
+    tag: BERN
+  654:
+    tag: NOL
+  660:
+    death: yes
+bern_aebbe_bernicia:
+  615:
+    birth: alnwick #unknown
+    first_name: aebbe
+    dynasty: iding_dynasty
+    female: yes
+    father: bern_aethelfrith_iding
+    mother: bern_acha_of_deira
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: BERN
+  617:
+    religion: chalcedonism
+  654:
+    tag: NOL
+  683:
+    death: yes
+bern_leoldwald_iding:
+  630:
+    birth: alnwick #unknown
+    first_name: leoldwald
+    dynasty: iding_dynasty
+    father: bern_egwald_iding
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: BERN
+  654:
+    tag: NOL
+  680:
+    death: yes

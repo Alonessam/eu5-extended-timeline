@@ -1,0 +1,30 @@
+#imported from EU4 file: history/provinces/1794 - Central Sahara.txt
+2.1.1:
+  pops: 
+    toubou_culture-bantu_religion: 1
+1200.1.1:
+  pops: 
+    toubou_culture-bantu_religion: 0
+    toubou_culture-sunni: 1
+1843.1.1:
+  owner: CYRE
+  controller: CYRE
+  cores:
+    CYRE: yes
+  resource: grain
+1912.10.18:
+  cores:
+    ITA: yes
+1922.1.1:
+  owner: ITA
+  controller: ITA
+  cores:
+    LIBY: yes
+1943.9.8:
+  owner: GBR
+  controller: GBR
+  cores:
+    ITA: no
+1951.12.24:
+  owner: LIBY
+  controller: LIBY

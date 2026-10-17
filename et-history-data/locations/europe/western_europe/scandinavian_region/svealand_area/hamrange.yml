@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/9 - Halsingland.txt
+2.1.1:
+  pops: 
+    swedish-norse: 1
+350.1.1:
+  owner: SVEA
+  controller: SVEA
+  cores:
+    SVEA: yes
+  resource: fish
+970.1.1:
+  owner: SWE
+  controller: SWE
+  cores:
+    SVEA: no
+    SWE: yes
+1080.1.1:
+  pops: 
+    swedish-norse: 0
+    swedish-catholic: 1
+1527.6.1:

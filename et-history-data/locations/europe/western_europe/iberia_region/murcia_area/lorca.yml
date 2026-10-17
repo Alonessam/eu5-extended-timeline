@@ -1,0 +1,160 @@
+#imported from EU4 file: history/provinces/221 - Murcia.txt
+2.1.1:
+  pops: 
+    iberi-bimoism: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: grain
+200.1.1:
+  pops: 
+    iberi-bimoism: 0
+    iberi-hellenism_religion: 1
+340.1.1:
+  pops: 
+    iberi-hellenism_religion: 0
+    iberi-chalcedonism: 1
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+448.1.1:
+  pops: 
+    iberi-chalcedonism: 0
+    iberi-arianism: 1
+  owner: SUEB
+  controller: SUEB
+  cores:
+    SUEB: yes
+453.1.1:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    SUEB: no
+456.1.1:
+  owner: VISG
+  controller: VISG
+  cores:
+    VISG: yes
+458.10.1:
+  owner: ROMW
+  controller: ROMW
+461.8.2:
+  owner: VISG
+  controller: VISG
+  cores:
+    ROMW: no
+552.1.1:
+  pops: 
+    iberi-arianism: 0
+    iberi-chalcedonism: 1
+  owner: BYZ
+  controller: BYZ
+  cores:
+    BYZ: yes
+620.1.1:
+  owner: VISG
+  controller: VISG
+  cores:
+    BYZ: no
+711.1.1:
+  owner: UMAY
+  controller: UMAY
+  cores:
+    VISG: no
+    UMAY: yes
+750.8.6:
+  owner: CRDB
+  controller: CRDB
+  cores:
+    UMAY: no
+    CRDB: yes
+780.1.1:
+  pops: 
+    iberi-chalcedonism: 0
+    iberi-sunni: 1
+800.1.1:
+  pops: 
+    iberi-sunni: 0
+    andalusi-sunni: 1
+1011.1.1:
+  owner: MURC
+  controller: MURC
+  cores:
+    CRDB: no
+    MURC: yes
+1014.1.1:
+  owner: ALME
+  controller: ALME
+  cores:
+    ALME: yes
+1038.1.1:
+  owner: VAL
+  controller: VAL
+  cores:
+    ALME: no
+    VAL: yes
+1065.1.1:
+  owner: MURC
+  controller: MURC
+  cores:
+    VAL: no
+    MURC: yes
+1078.1.1:
+  owner: SEVI
+  controller: SEVI
+  cores:
+    SEVI: yes
+1091.1.1:
+  owner: MOR
+  controller: MOR
+  cores:
+    SEVI: no
+    MOR: yes
+1145.1.1:
+  owner: VAL
+  controller: VAL
+  cores:
+    MOR: no
+    VAL: yes
+1147.1.1:
+  owner: MOR
+  controller: MOR
+  cores:
+    VAL: no
+    MOR: yes
+1229.1.1:
+  owner: MURC
+  controller: MURC
+  cores:
+    MOR: no
+    MURC: yes
+1245.1.1:
+  owner: CAS
+  controller: CAS
+  cores:
+    MURC: no
+    CAS: yes
+1280.1.1:
+  pops: 
+    andalusi-sunni: 0
+    andalusi-catholic: 1
+1516.1.23:
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1566.1.1:
+  pops: 
+    andalusi-catholic: 0
+    castilian-catholic: 1
+1713.4.11:
+  cores:
+    CAS: no
+1811.1.1:
+  controller: SPA
+1813.12.11:
+  controller: SPA

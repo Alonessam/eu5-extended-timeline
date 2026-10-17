@@ -1,0 +1,37 @@
+#imported from EU4 file: history/provinces/1149 - Katsina.txt
+2.1.1:
+  pops: 
+    hausa-bantu_religion: 1
+523.1.1:
+  owner: HABA
+  controller: HABA
+  cores:
+    HABA: yes
+  resource: cloth
+999.1.1:
+  owner: KTS
+  controller: KTS
+  cores:
+    HABA: no
+    KTS: yes
+1348.1.1:
+  pops: 
+    hausa-bantu_religion: 0
+    hausa-sunni: 1
+1807.1.1:
+  owner: SOKO
+  controller: SOKO
+  cores:
+    SOKO: yes
+1903.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1960.10.1:
+  owner: NIGR
+  controller: NIGR
+  cores:
+    GBR: no
+    SOKO: no
+    NIGR: yes

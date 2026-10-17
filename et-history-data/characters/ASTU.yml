@@ -1,0 +1,307 @@
+lon_pedro_cantabria:
+  680:
+    birth: san_vicente_barquera #unknown
+    first_name: name_peter
+    dynasty: asturleonesa_dynasty
+    religion: chalcedonism
+    culture: leonese
+    tag: LON
+    estate: nobles_estate
+  730:
+    death: yes
+lon_pelagio_asturias:
+  685:
+    birth: villaviciosa #unknown
+    first_name: name_pelagius
+    dynasty: pelagia_dynasty
+    adm: 39
+    dip: 28
+    mil: 69
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    traits:
+      zealot: yes
+  737:
+    death: yes
+lon_alfonso_i_asturias:
+  693:
+    birth: san_vicente_barquera #unknown
+    first_name: name_alphonse
+    dynasty: asturleonesa_dynasty
+    father: lon_pedro_cantabria
+    adm: 29
+    dip: 27
+    mil: 45
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    estate: nobles_estate
+    traits:
+      expansionist: yes
+  739:
+    estate: ---
+    nickname: nick_the_catholic
+  757:
+    death: yes
+astu_gaudiosa:
+  695:
+    birth: villaviciosa #unknown
+    first_name: gaudiosa
+    female: yes
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+  709:
+    spouse: lon_pelagio_asturias
+  760:
+    death: yes
+lon_fruela_cantabria:
+  708:
+    birth: san_vicente_barquera #unknown
+    first_name: name_froila
+    dynasty: asturleonesa_dynasty
+    father: lon_pedro_cantabria
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    estate: nobles_estate
+  756:
+    death: yes
+lon_favila_asturias:
+  710:
+    birth: villaviciosa #unknown
+    first_name: name_favila
+    dynasty: pelagia_dynasty
+    father: lon_pelagio_asturias
+    mother: astu_gaudiosa
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+  739:
+    death: yes
+lon_ermesinda_asturias:
+  712:
+    birth: villaviciosa #unknown
+    first_name: name_ermesinde
+    dynasty: pelagia_dynasty
+    female: yes
+    father: lon_pelagio_asturias
+    mother: astu_gaudiosa
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+  770:
+    death: yes
+lon_fruela_i_asturias:
+  722:
+    birth: villaviciosa #unknown
+    first_name: name_froila
+    dynasty: asturleonesa_dynasty
+    father: lon_alfonso_i_asturias
+    mother: lon_ermesinda_asturias
+    adm: 56
+    dip: 43
+    mil: 25
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    traits:
+      cruel: yes
+  765:
+    nickname: Cruel
+  768.1.14:
+    death: yes
+astu_vimarano:
+  725:
+    birth: villaviciosa #unknown
+    first_name: vimarano
+    dynasty: asturleonesa_dynasty
+    father: lon_alfonso_i_asturias
+    mother: lon_ermesinda_asturias
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+  765:
+    death: yes
+lon_silo_asturias:
+  730:
+    birth: oviedo #unknown
+    first_name: name_silo
+    dynasty: silo_asturias_dynasty
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    estate: nobles_estate
+    traits:
+      calm: yes
+  774:
+    estate: ---
+  783:
+    death: yes
+lon_mauregato_asturias:
+  730: #unknown
+    birth: villaviciosa #unknown
+    first_name: name_mauregatus
+    dynasty: asturleonesa_dynasty
+    father: lon_alfonso_i_asturias
+    adm: 35
+    dip: 35
+    mil: 52
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    traits:
+      sinner: yes
+      bastard: yes
+  783:
+    nickname: nick_the_usurper
+  789:
+    death: yes
+lon_adosinda_asturias:
+  735:
+    birth: villaviciosa #unknown
+    first_name: name_adosinda
+    dynasty: asturleonesa_dynasty
+    female: yes
+    father: lon_alfonso_i_asturias
+    mother: lon_ermesinda_asturias
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+  750:
+    spouse: lon_silo_asturias
+  790:
+    death: yes
+astu_munia:
+  740:
+    birth: villaviciosa #TODO: Alava
+    first_name: name_munia
+    female: yes
+    religion: chalcedonism
+    culture: basque
+    tag: ASTU
+  755:
+    spouse: lon_fruela_i_asturias
+  790:
+    death: yes
+lon_aurelio_asturias:
+  740:
+    birth: villaviciosa #unknown
+    first_name: name_aurelius
+    dynasty: asturleonesa_dynasty
+    father: lon_fruela_cantabria
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    estate: nobles_estate
+  768:
+    estate: ---
+  774:
+    death: yes
+lon_bermudo_i_asturias:
+  750:
+    birth: villaviciosa #unknown
+    first_name: name_bermund
+    dynasty: asturleonesa_dynasty
+    father: lon_fruela_cantabria
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    estate: nobles_estate
+  789:
+    nickname: nick_the_deacon
+    estate: ---
+  797:
+    death: yes
+lon_alfonso_ii_asturias:
+  760.1.1:
+    birth: oviedo #unknown
+    first_name: name_alphonse
+    nickname: nick_the_chaste
+    dynasty: asturleonesa_dynasty
+    father: lon_fruela_i_asturias
+    mother: astu_munia
+    adm: 69
+    dip: 62
+    mil: 25
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    estate: nobles_estate
+    traits:
+      zealot: yes
+      pious: yes
+  791:
+    nickname: nick_the_chaste
+    estate: ---
+  842.3.20:
+    death: yes
+lon_ramiro_i_asturias:
+  790:
+    birth: oviedo #unknown
+    first_name: name_ramiro
+    dynasty: asturleonesa_dynasty
+    father: lon_bermudo_i_asturias
+    adm: 41
+    dip: 24
+    mil: 38
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    traits:
+      righteous: yes
+  850.2.1:
+    death: yes
+lon_ordono_i_asturias:
+  821:
+    birth: oviedo #unknown
+    first_name: name_ordono
+    dynasty: asturleonesa_dynasty
+    father: lon_ramiro_i_asturias
+    adm: 58
+    dip: 39
+    mil: 31
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    traits:
+      architectural_visionary: yes
+  866.5.27:
+    death: yes
+lon_alfonso_iii_asturias:
+  852:
+    birth: oviedo #unknown
+    first_name: name_alphonse
+    dynasty: asturleonesa_dynasty
+    father: lon_ordono_i_asturias
+    adm: 70
+    dip: 66
+    mil: 61
+    religion: chalcedonism
+    culture: leonese
+    tag: ASTU
+    traits:
+      architectural_visionary: yes
+      scholar: yes
+      expansionist: yes
+  866.5.27:
+    nickname: nick_the_great
+  867:
+    religion: catholic
+  910.12.20:
+    death: yes
+astu_jimena:
+  855:
+    birth: pamplona
+    first_name: name_ximena
+    female: yes
+    religion: chalcedonism
+    culture: basque
+    tag: ASTU
+  867:
+    religion: catholic
+  870:
+    spouse: lon_alfonso_iii_asturias
+  912:
+    death: yes

@@ -1,0 +1,38 @@
+#imported from EU4 file: history/provinces/956 - Lenape.txt
+2.1.1:
+  pops: 
+    unami_culture-iroquoian_totemism: 1
+  owner: UNA
+  controller: UNA
+  cores:
+    UNA: yes
+  resource: fur
+1682.1.1:
+  pops: 
+    unami_culture-iroquoian_totemism: 0
+    english-lutheran: 1
+  owner: ENG
+  controller: ENG
+1700.1.1:
+  resource: fur
+1707.1.1:
+  cores:
+    ENG: yes
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    ENG: no
+    GBR: yes
+1764.7.1:
+  pops: 
+    english-lutheran: 0
+    american-lutheran: 1
+1776.7.4:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+1782.11.1:
+  cores:
+    GBR: no

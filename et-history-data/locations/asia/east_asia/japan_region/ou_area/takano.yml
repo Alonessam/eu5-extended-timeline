@@ -1,0 +1,52 @@
+#imported from EU4 file: history/provinces/1026 - Mutsu.txt
+2.1.1:
+  pops: 
+    emishi-mari_paganism: 1
+  owner: EMIS
+  controller: EMIS
+  cores:
+    EMIS: yes
+  resource: grain
+607.1.1:
+  pops: 
+    emishi-mari_paganism: 0
+    emishi-mahayana: 1
+712.1.1:
+  pops: 
+    emishi-mahayana: 0
+    emishi-shinto: 1
+802.1.1:
+  owner: JAP
+  controller: JAP
+  cores:
+    EMIS: no
+    JAP: yes
+950.1.1:
+  pops: 
+    emishi-shinto: 0
+    saigoku_culture-shinto: 1
+1040.1.1:
+  owner: FUJI
+  controller: FUJI
+  cores:
+    JAP: no
+    FUJI: yes
+1189.8.22:
+  owner: MINM
+  controller: MINM
+  cores:
+    MINM: yes
+1192.7.12:
+  owner: DTE
+  controller: DTE
+  cores:
+    MINM: no
+    DTE: yes
+1868.1.3:
+  owner: JAP
+  controller: JAP
+  cores:
+    DTE: no
+    JAP: yes
+1930.1.1:
+  resource: cars

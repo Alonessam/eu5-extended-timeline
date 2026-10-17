@@ -1,0 +1,518 @@
+wess_cerdic_cerdicing:
+  480:
+    birth: winchester #unknown
+    first_name: cerdic
+    dynasty: wessex_dynasty
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  534:
+    death: yes
+wess_cynric_cerdicing:
+  510:
+    birth: winchester #unknown
+    first_name: cynric
+    dynasty: wessex_dynasty
+    father: wess_cerdic_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  560:
+    death: yes
+wess_ceawlin_cerdicing:
+  530:
+    birth: winchester #unknown
+    first_name: ceawlin
+    dynasty: wessex_dynasty
+    father: wess_cynric_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  593:
+    death: yes
+wess_cutha_cerdicing:
+  535:
+    birth: winchester #unknown
+    first_name: cutha
+    dynasty: wessex_dynasty
+    father: wess_cynric_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  590:
+    death: yes
+wess_ceol_cerdicing:
+  555:
+    birth: winchester #unknown
+    first_name: ceol
+    dynasty: wessex_dynasty
+    father: wess_cutha_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  597:
+    death: yes
+wess_ceolwulf_cerdicing:
+  560:
+    birth: winchester #unknown
+    first_name: ceolwulf
+    dynasty: wessex_dynasty
+    father: wess_cutha_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  611:
+    death: yes
+wess_cuthwine_cerdicing:
+  565:
+    birth: winchester #unknown
+    first_name: cuthwine
+    dynasty: wessex_dynasty
+    father: wess_ceawlin_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  620:
+    death: yes
+wess_cynegils_cerdicing:
+  580:
+    birth: winchester #unknown
+    first_name: cynegils
+    dynasty: wessex_dynasty
+    father: wess_ceolwulf_cerdicing #relationship uncertain
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  636:
+    religion: chalcedonism
+  642:
+    death: yes
+wess_cuthgils_cerdicing:
+  585:
+    birth: winchester #unknown
+    first_name: cuthgils
+    dynasty: wessex_dynasty
+    father: wess_ceolwulf_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  630:
+    death: yes
+wess_cedda_cerdicing:
+  590:
+    birth: winchester #unknown
+    first_name: cedda
+    dynasty: wessex_dynasty
+    father: wess_cuthwine_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  650:
+    death: yes
+wess_cuthwulf_cerdicing:
+  592:
+    birth: winchester #unknown
+    first_name: cuthwulf
+    dynasty: wessex_dynasty
+    father: wess_cuthwine_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  635:
+    religion: chalcedonism
+  648:
+    death: yes
+wess_cwichelm_cerdicing:
+  600:
+    birth: winchester #unknown
+    first_name: cwichelm
+    dynasty: wessex_dynasty
+    father: wess_cynegils_cerdicing #relationship uncertain
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  636:
+    religion: chalcedonism
+    death: yes
+wess_cenwalh_cerdicing:
+  610:
+    birth: winchester #unknown
+    first_name: cenwalh
+    dynasty: wessex_dynasty
+    father: wess_cynegils_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  646:
+    religion: chalcedonism
+  672:
+    death: yes
+wess_cenferth_cerdicing:
+  610:
+    birth: winchester #unknown
+    first_name: cenferth
+    dynasty: wessex_dynasty
+    father: wess_cuthgils_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  636:
+    religion: chalcedonism
+  660:
+    death: yes
+wess_centwine_cerdicing:
+  620:
+    birth: winchester #unknown
+    first_name: centwine
+    dynasty: wessex_dynasty
+    father: wess_cynegils_cerdicing #disputed
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  636:
+    religion: chalcedonism
+  685:
+    death: yes
+wess_seaxburh:
+  620:
+    birth: winchester #unknown
+    first_name: seaxburh
+    female: yes
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  650:
+    spouse: wess_cenwalh_cerdicing
+    dynasty: wessex_dynasty #by marriage
+  674:
+    death: yes
+wess_ceolwald_cerdicing:
+  622:
+    birth: winchester #unknown
+    first_name: ceolwald
+    dynasty: wessex_dynasty
+    father: wess_cuthwulf_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  635:
+    religion: chalcedonism
+  688.6.12:
+    death: yes
+wess_cenberht_cerdicing:
+  625:
+    birth: winchester #unknown
+    first_name: cenberht
+    dynasty: wessex_dynasty
+    father: wess_cedda_cerdicing
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  640:
+    religion: chalcedonism
+  661:
+    death: yes
+wess_cenfus_cerdicing:
+  630:
+    birth: winchester #unknown
+    first_name: cenfus
+    father: wess_cenferth_cerdicing
+    dynasty: wessex_dynasty
+    religion: germanic_polytheism
+    culture: anglo_saxon
+    tag: WESS
+  640:
+    religion: chalcedonism
+  674:
+    death: yes
+wess_cenred_cerdicing:
+  644:
+    birth: winchester #unknown
+    first_name: cenred
+    dynasty: wessex_dynasty
+    father: wess_ceolwald_cerdicing
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  698:
+    death: yes
+wess_aescwine_cerdicing:
+  650:
+    birth: winchester #unknown
+    first_name: aescwine
+    dynasty: wessex_dynasty
+    father: wess_cenfus_cerdicing
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  676:
+    death: yes
+wess_caedwalla_cerdicing:
+  659:
+    birth: winchester #unknown
+    first_name: caedwalla
+    dynasty: wessex_dynasty
+    father: wess_cenberht_cerdicing
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  689.4.20:
+    death: yes
+wess_ine_cerdicing:
+  670:
+    birth: winchester #unknown
+    first_name: ine
+    dynasty: wessex_dynasty
+    father: wess_cenred_cerdicing
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  726:
+    death: yes
+wess_aethelburg:
+  673:
+    birth: winchester #unknown
+    first_name: aethelburg
+    female: yes
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  690:
+    spouse: wess_ine_cerdicing
+  740:
+    death: yes
+wess_aethelheard_cerdicing:
+  690:
+    birth: winchester #unknown
+    first_name: aethelheard
+    dynasty: wessex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  740:
+    death: yes
+wess_frithugyth:
+  690:
+    birth: winchester #unknown
+    first_name: frithugyth
+    female: yes
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  710:
+    spouse: wess_aethelheard_cerdicing
+  740:
+    death: yes
+wess_cuthred_cerdicing:
+  710:
+    birth: winchester #unknown
+    first_name: cuthred
+    dynasty: wessex_dynasty
+    adm: 60
+    dip: 40
+    mil: 70
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  756:
+    death: yes
+wess_sigebert_cerdicing:
+  720:
+    birth: winchester #unknown
+    first_name: sigeberht
+    dynasty: wessex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  756:
+    death: yes
+wess_cynewulf_cerdicing:
+  720:
+    birth: winchester #unknown
+    first_name: cynewulf
+    dynasty: wessex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  786:
+    death: yes
+wess_beorthtic_cerdicing:
+  740:
+    birth: winchester #unknown
+    first_name: beorhtric
+    dynasty: wessex_dynasty
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  802:
+    death: yes
+wess_eadburh:
+  772:
+    birth: winchester #unknown
+    first_name: eadburh
+    dynasty: icling_dynasty
+    father: merc_offa_icling
+    mother: merc_cynethryth
+    female: yes
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: MERC
+  789:
+    spouse: wess_beorthtic_cerdicing
+    tag: WESS
+  802:
+    death: yes
+wess_egbert_cerdicing:
+  770:
+    birth: winchester #unknown
+    first_name: ecgberht
+    dynasty: wessex_dynasty
+    father: kent_ealhmund_cerdicing
+    adm: 55
+    dip: 40
+    mil: 75
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  839:
+    death: yes
+wess_aethelwulf_cerdicing:
+  800:
+    birth: winchester #unknown
+    first_name: aethelwulf
+    dynasty: wessex_dynasty
+    father: wess_egbert_cerdicing
+    adm: 75
+    dip: 50
+    mil: 50
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  858.1.13:
+    death: yes
+wess_osburh:
+  800:
+    birth: winchester #unknown
+    first_name: osburh
+    female: yes
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  820:
+    spouse: wess_aethelwulf_cerdicing
+  855:
+    death: yes
+wess_aethelstan_cerdicing:
+  820:
+    birth: winchester #unknown
+    first_name: aethelstan
+    dynasty: wessex_dynasty
+    father: wess_aethelwulf_cerdicing
+    mother: wess_osburh
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  852:
+    death: yes
+wess_aethelbald_cerdicing:
+  830:
+    birth: winchester #unknown
+    first_name: aethelbald
+    dynasty: wessex_dynasty
+    father: wess_aethelwulf_cerdicing
+    mother: wess_osburh
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  860.7:
+    death: yes
+wess_aethelberht_cerdicing:
+  836:
+    birth: winchester #unknown
+    first_name: aethelberht
+    dynasty: wessex_dynasty
+    father: wess_aethelwulf_cerdicing
+    mother: wess_osburh
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  865.10:
+    death: yes
+wess_judith_of_flanders:
+  844:
+    birth: ghent #unknown
+    first_name: name_judith
+    dynasty: carolingian_dynasty
+    female: yes
+    religion: chalcedonism
+    culture: walloon
+    tag: FLA
+  856:
+    spouse: wess_aethelwulf_cerdicing
+    tag: WESS
+  858.4:
+    spouse: wess_aethelbald_cerdicing
+  867:
+    religion: catholic
+  870:
+    death: yes
+wess_aethelred_cerdicing:
+  845:
+    birth: winchester #unknown
+    first_name: name_ethelred
+    dynasty: wessex_dynasty
+    father: wess_aethelwulf_cerdicing
+    mother: wess_osburh
+    religion: catholic
+    culture: anglo_saxon
+    tag: WESS
+  867:
+    religion: catholic
+  871.4.23:
+    death: yes
+wess_wulfthryth:
+  845:
+    birth: winchester #unknown
+    first_name: wulfthryth
+    female: yes
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  860:
+    spouse: wess_aethelred_cerdicing
+  867:
+    religion: catholic
+  880:
+    death: yes
+wess_aethelhelm_cerdicing:
+  865:
+    birth: winchester #unknown
+    first_name: aethelhelm
+    dynasty: wessex_dynasty
+    father: wess_aethelred_cerdicing
+    mother: wess_wulfthryth
+    religion: chalcedonism
+    culture: anglo_saxon
+    tag: WESS
+  867:
+    religion: catholic
+  886:
+    tag: ENG
+  890:
+    death: yes
+wess_aethelwold_cerdicing:
+  868:
+    birth: winchester #unknown
+    first_name: aethelwold
+    dynasty: wessex_dynasty
+    father: wess_aethelred_cerdicing
+    mother: wess_wulfthryth
+    religion: catholic
+    culture: anglo_saxon
+    tag: WESS
+  886:
+    tag: ENG
+  900.6:
+    tag: JORV
+  902.12.13:
+    death: yes

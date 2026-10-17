@@ -1,0 +1,7 @@
+#imported from EU4
+2.1.1:
+  government: indian_hindu_monarchy
+  color: rgb { 5  119  53 }
+  religion: theravada
+  primary_culture: sinhalese
+  capital: kotte

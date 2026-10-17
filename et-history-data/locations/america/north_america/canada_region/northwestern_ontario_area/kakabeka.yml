@@ -1,0 +1,32 @@
+#imported from EU4 file: history/provinces/1007 - Ojibwa.txt
+2.1.1:
+  pops: 
+    ojibwe_culture-iroquoian_totemism: 1
+1717.1.1:
+  pops: 
+    ojibwe_culture-iroquoian_totemism: 0
+    french-catholic: 1
+  owner: FRA
+  controller: FRA
+  cores:
+    FRA: yes
+  resource: fur
+1763.2.10:
+  pops: 
+    french-catholic: 0
+    english-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    FRA: no
+    GBR: yes
+1790.1.1:
+  pops: 
+    english-lutheran: 0
+    british_canadian-lutheran: 1
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

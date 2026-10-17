@@ -1,0 +1,69 @@
+#imported from EU4 file: history/provinces/1764 - Burgas.txt
+2.1.1:
+  pops: 
+    thracian-hellenism_religion: 1
+  owner: ODRY
+  controller: ODRY
+  cores:
+    ODRY: yes
+  resource: salt
+46.1.1:
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+80.1.1:
+  cores:
+    ODRY: no
+260.1.1:
+  pops: 
+    thracian-hellenism_religion: 0
+    thracian-chalcedonism: 1
+395.1.17:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    ROM: no
+    BYZ: yes
+680.1.1:
+  pops: 
+    thracian-chalcedonism: 0
+    bolghar_culture-chalcedonism: 1
+  owner: BUL
+  controller: BUL
+  cores:
+    BUL: yes
+864.1.1:
+  pops: 
+    bolghar_culture-chalcedonism: 0
+    bulgarian-chalcedonism: 1
+867.1.1:
+  pops: 
+    bulgarian-chalcedonism: 0
+    bulgarian-orthodox: 1
+1014.1.1:
+  owner: BYZ
+  controller: BYZ
+1201.1.1:
+  owner: BUL
+  controller: BUL
+1389.1.1:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1403.2.1:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    TUR: no
+1453.5.29:
+  owner: TUR
+  controller: TUR
+  cores:
+    TUR: yes
+1885.9.6:
+  owner: BUL
+  controller: BUL
+  cores:
+    TUR: no

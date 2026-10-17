@@ -1,0 +1,10 @@
+#imported from EU4
+2.1.1:
+  government: amerindian_tribe_northwestern
+  color: rgb { 96 57 19 }
+  government_rank: rank_duchy
+  religion: iroquoian_totemism
+  primary_culture: tukudeka_culture
+  capital: wotapio
+1710.1.1:
+  capital: hupenuu

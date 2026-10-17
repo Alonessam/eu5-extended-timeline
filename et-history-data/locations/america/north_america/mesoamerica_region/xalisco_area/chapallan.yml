@@ -1,0 +1,39 @@
+#imported from EU4 file: history/provinces/2621 - Tizapan.txt
+2.1.1:
+  pops: 
+    tepic-nahuatl: 1
+  owner: MMM
+  controller: MMM
+  cores:
+    MMM: yes
+  resource: grain
+1460.1.1:
+  owner: TAR
+  controller: TAR
+  cores:
+    TAR: yes
+1523.1.1:
+  pops: 
+    tepic-nahuatl: 0
+    tepic-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1541.1.1:
+  pops: 
+    tepic-catholic: 0
+    castilian-catholic: 1
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    mexican-catholic: 1
+1810.9.16:
+  owner: MEX
+  controller: MEX
+  cores:
+    MEX: yes
+1821.9.27:
+  controller: MEX
+  cores:
+    SPA: no

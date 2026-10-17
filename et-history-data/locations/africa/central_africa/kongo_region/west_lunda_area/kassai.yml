@@ -1,0 +1,29 @@
+#imported from EU4 file: history/provinces/4092 - Rund.txt
+2.1.1:
+  pops: 
+    lunda-bantu_religion: 1
+1350.1.1:
+  owner: LND
+  controller: LND
+  cores:
+    LND: yes
+  resource: ivory
+1887.1.1:
+  owner: CHO
+  controller: CHO
+  cores:
+    CHO: yes
+1892.1.1:
+  pops: 
+    lunda-bantu_religion: 0
+    lunda-catholic: 1
+  owner: BEL
+  controller: BEL
+  cores:
+    BEL: yes
+1960.7.1:
+  owner: DRCO
+  controller: DRCO
+  cores:
+    BEL: no
+    DRCO: yes

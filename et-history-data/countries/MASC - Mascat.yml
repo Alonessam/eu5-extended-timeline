@@ -1,0 +1,9 @@
+#imported from EU4
+2.1.1:
+  government: et_ancient_monarchy
+  color: rgb { 180  60  160 }
+  religion: south_arabian_polytheism
+  primary_culture: omani_culture
+  capital: masqat
+250.1.1:
+  ruler: masc_imran_bin_amr_azd

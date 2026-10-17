@@ -1,0 +1,165 @@
+#imported from EU4 file: history/provinces/1863 - Graz.txt
+2.1.1:
+  pops: 
+    noric-druidism: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: grain
+340.1.1:
+  pops: 
+    noric-druidism: 0
+    noric-chalcedonism: 1
+395.1.17:
+  owner: ROMW
+  controller: ROMW
+  cores:
+    ROM: no
+    ROMW: yes
+420.1.1:
+  pops: 
+    noric-chalcedonism: 0
+    danube_bavarian-germanic: 1
+476.9.4:
+  owner: ITA
+  controller: ITA
+  cores:
+    ITA: yes
+480.1.1:
+  cores:
+    ROMW: no
+489.1.1:
+  owner: OSTR
+  controller: OSTR
+  cores:
+    ITA: no
+    OSTR: yes
+500.1.1:
+  pops: 
+    danube_bavarian-germanic: 0
+    danube_bavarian-arianism: 1
+553.1.1:
+  owner: LOMB
+  controller: LOMB
+  cores:
+    OSTR: no
+    LOMB: yes
+591.1.1:
+  pops: 
+    danube_bavarian-arianism: 0
+    slovene-slavic: 1
+  owner: AVR
+  controller: AVR
+  cores:
+    LOMB: no
+    AVR: yes
+623.1.1:
+  owner: SAMO
+  controller: SAMO
+  cores:
+    AVR: no
+    SAMO: yes
+659.1.1:
+  owner: CRH
+  controller: CRH
+  cores:
+    SAMO: no
+    CRH: yes
+660.1.1:
+  pops: 
+    slovene-slavic: 0
+    slovene-chalcedonism: 1
+745.1.1:
+  owner: BAV
+  controller: BAV
+  cores:
+    CRH: no
+    BAV: yes
+750.1.1:
+  pops: 
+    slovene-chalcedonism: 0
+    danube_bavarian-chalcedonism: 1
+788.1.1:
+  owner: FRAN
+  controller: FRAN
+  cores:
+    BAV: no
+    FRAN: yes
+817.1.1:
+  owner: BAV
+  controller: BAV
+  cores:
+    FRAN: no
+    BAV: yes
+867.1.1:
+  pops: 
+    danube_bavarian-chalcedonism: 0
+    danube_bavarian-catholic: 1
+880.3.22:
+  owner: EFRA
+  controller: EFRA
+  cores:
+    EFRA: yes
+911.11.10:
+  owner: BAV
+  controller: BAV
+  cores:
+    EFRA: no
+    BAV: yes
+962.2.2:
+  owner: CRH
+  controller: CRH
+  cores:
+    BAV: no
+    CRH: yes
+1180.1.1:
+  owner: STY
+  controller: STY
+  cores:
+    STY: yes
+1192.1.1:
+  owner: HAB
+  controller: HAB
+  cores:
+    HAB: yes
+1254.1.1:
+  owner: HUN
+  controller: HUN
+  cores:
+    HUN: yes
+1260.7.1:
+  owner: BOH
+  controller: BOH
+  cores:
+    HUN: no
+    BOH: yes
+1278.8.26:
+  owner: HAB
+  controller: HAB
+  cores:
+    BOH: no
+1452.1.1:
+  owner: STY
+  controller: STY
+  cores:
+    STY: yes
+1457.11.24:
+  owner: HAB
+  controller: HAB
+  cores:
+    STY: no
+1900.1.1:
+  cores:
+    STY: no
+    CRH: no
+1938.3.12:
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+1945.5.8:
+  owner: HAB
+  controller: HAB
+  cores:
+    GER: no

@@ -1,0 +1,21 @@
+#imported from EU4 file: history/provinces/775 - Itenines.txt
+2.1.1:
+  pops: 
+    ava_culture-muisca_religion: 1
+1537.8.15:
+  pops: 
+    ava_culture-muisca_religion: 0
+    ava_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+  resource: tobacco
+1732.1.1:
+  controller: SPA
+1811.5.17:
+  owner: PARA
+  controller: PARA
+  cores:
+    SPA: no
+    PARA: yes

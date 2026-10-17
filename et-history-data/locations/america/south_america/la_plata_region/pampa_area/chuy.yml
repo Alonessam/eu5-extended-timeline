@@ -1,0 +1,41 @@
+#imported from EU4 file: history/provinces/2857 - Patos.txt
+2.1.1:
+  pops: 
+    ava_culture-muisca_religion: 1
+1737.2.19:
+  pops: 
+    ava_culture-muisca_religion: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+  cores:
+    POR: yes
+  resource: tobacco
+1763.4.1:
+  owner: SPA
+  controller: SPA
+1767.1.1:
+  owner: POR
+  controller: POR
+1780.1.1:
+  pops: 
+    portuguese-catholic: 0
+    brazilian-catholic: 1
+1822.9.7:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    POR: no
+    BRAZ: yes
+1836.9.11:
+  owner: RIOG
+  controller: RIOG
+  cores:
+    RIOG: yes
+1845.3.1:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    BRAZ: yes
+1960.1.1:
+  resource: cars

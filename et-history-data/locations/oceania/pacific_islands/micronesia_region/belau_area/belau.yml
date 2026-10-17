@@ -1,0 +1,32 @@
+#imported from EU4 file: history/provinces/1996 - Palau.txt
+2.1.1:
+  pops: 
+    kajoor_ri_majel_culture-bimoism: 1
+1885.1.1:
+  pops: 
+    kajoor_ri_majel_culture-bimoism: 0
+    kajoor_ri_majel_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  resource: fish
+1899.2.12:
+  owner: GER
+  controller: GER
+1914.9.1:
+  controller: JAP
+1919.6.28:
+  owner: JAP
+1945.9.2:
+  owner: GBR
+  controller: GBR
+1979.5.10:
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+    PALU: yes
+1981.1.1:
+  owner: PALU
+  controller: PALU
+  cores:
+    USA: no

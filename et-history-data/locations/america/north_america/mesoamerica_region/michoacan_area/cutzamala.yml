@@ -1,0 +1,61 @@
+#imported from EU4 file: history/provinces/2623 - Cutzamala.txt
+2.1.1:
+  pops: 
+    matlatzinca_culture-nahuatl: 1
+  owner: CHUP
+  controller: CHUP
+  cores:
+    CHUP: yes
+  resource: sugar
+200.1.1:
+  owner: TEOT
+  controller: TEOT
+  cores:
+    TEOT: yes
+800.1.1:
+  owner: TOLT
+  controller: TOLT
+  cores:
+    TEOT: no
+    TOLT: yes
+1200.1.1:
+  owner: MAT
+  controller: MAT
+  cores:
+    TOLT: no
+    MAT: yes
+1474.1.1:
+  owner: AZTE
+  controller: AZTE
+  cores:
+    AZTE: yes
+1476.1.1:
+  owner: TAR
+  controller: TAR
+  cores:
+    TAR: yes
+1530.1.1:
+  pops: 
+    matlatzinca_culture-nahuatl: 0
+    matlatzinca_culture-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1541.1.1:
+  pops: 
+    matlatzinca_culture-catholic: 0
+    castilian-catholic: 1
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    mexican-catholic: 1
+1810.9.16:
+  owner: MEX
+  controller: MEX
+  cores:
+    MEX: yes
+1821.9.27:
+  controller: MEX
+  cores:
+    SPA: no

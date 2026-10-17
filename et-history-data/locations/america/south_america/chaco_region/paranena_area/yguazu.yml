@@ -1,0 +1,28 @@
+#imported from EU4 file: history/provinces/2855 - Misiones.txt
+2.1.1:
+  pops: 
+    ava_culture-muisca_religion: 1
+1609.1.1:
+  pops: 
+    ava_culture-muisca_religion: 0
+    ava_culture-catholic: 1
+  owner: GUAR
+  controller: GUAR
+  cores:
+    GUAR: yes
+  resource: tea
+1756.2.1:
+  owner: SPA
+  controller: SPA
+  cores:
+    SPA: yes
+1770.1.1:
+  pops: 
+    ava_culture-catholic: 0
+    iberian_la_platan-catholic: 1
+1816.7.9:
+  owner: ARGE
+  controller: ARGE
+  cores:
+    SPA: no
+    ARGE: yes

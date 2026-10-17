@@ -1,0 +1,43 @@
+#imported from EU4 file: history/provinces/2852 - Salta.txt
+2.1.1:
+  pops: 
+    charrua_culture-muisca_religion: 1
+1680.1.1:
+  pops: 
+    charrua_culture-muisca_religion: 0
+    portuguese-catholic: 1
+  owner: POR
+  controller: POR
+  resource: livestock
+1705.1.1:
+  cores:
+    POR: yes
+1724.1.1:
+  pops: 
+    portuguese-catholic: 0
+    castilian-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    POR: no
+1749.1.1:
+  cores:
+    SPA: yes
+1770.1.1:
+  pops: 
+    castilian-catholic: 0
+    iberian_la_platan-catholic: 1
+1822.9.7:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    BRAZ: yes
+1825.8.25:
+  owner: URUG
+  controller: URUG
+  cores:
+    SPA: no
+    URUG: yes
+1828.8.28:
+  cores:
+    BRAZ: no

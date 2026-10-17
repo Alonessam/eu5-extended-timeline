@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/3234 - Ituri.txt
+2.1.1:
+  pops: 
+    mongo-bantu_religion: 1
+1886.1.1:
+  pops: 
+    mongo-bantu_religion: 0
+    mongo-catholic: 1
+  owner: BEL
+  controller: BEL
+  cores:
+    BEL: yes
+  resource: grain
+1960.7.1:
+  owner: DRCO
+  controller: DRCO
+  cores:
+    BEL: no
+    DRCO: yes

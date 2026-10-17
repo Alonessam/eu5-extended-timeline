@@ -1,0 +1,70 @@
+#imported from EU4 file: history/provinces/159 - Silistria.txt
+2.1.1:
+  pops: 
+    thracian-zamolxism: 1
+  owner: ROM
+  controller: ROM
+  cores:
+    ROM: yes
+  resource: fish
+388.1.1:
+  pops: 
+    thracian-zamolxism: 0
+    thracian-chalcedonism: 1
+395.1.17:
+  owner: BYZ
+  controller: BYZ
+  cores:
+    ROM: no
+    BYZ: yes
+680.1.1:
+  pops: 
+    thracian-chalcedonism: 0
+    bolghar_culture-chalcedonism: 1
+  owner: BUL
+  controller: BUL
+  cores:
+    BUL: yes
+864.1.1:
+  pops: 
+    bolghar_culture-chalcedonism: 0
+    bulgarian-chalcedonism: 1
+867.1.1:
+  pops: 
+    bulgarian-chalcedonism: 0
+    bulgarian-orthodox: 1
+969.1.1:
+  controller: KIEV
+971.1.1:
+  owner: BYZ
+  controller: BYZ
+976.1.1:
+  owner: BUL
+  controller: BUL
+1001.1.1:
+  owner: BYZ
+  controller: BYZ
+1185.1.1:
+  owner: BUL
+  controller: BUL
+1396.1.1:
+  owner: TUR
+  controller: TUR
+  cores:
+    BYZ: no
+    TUR: yes
+1878.7.13:
+  owner: BUL
+  controller: BUL
+  cores:
+    TUR: no
+1913.8.10:
+  owner: RMN
+  controller: RMN
+  cores:
+    RMN: yes
+1940.9.7:
+  owner: BUL
+  controller: BUL
+  cores:
+    RMN: no

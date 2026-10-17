@@ -1,0 +1,496 @@
+khm_bosakak_reach_khmer:
+  724.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: bosakak_reach
+    dynasty: khmer_dynasty
+    adm: 30
+    dip: 30
+    mil: 45
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  802.1.1:
+    death: yes
+khm_jayavarman_ii_varman:
+  772.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: jayavarman
+    dynasty: varman_khm_dynasty
+    adm: 60
+    dip: 75
+    mil: 45
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  850.1.1:
+    death: yes
+khm_jayavarman_iii_varman:
+  820.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: jayavarman
+    dynasty: varman_khm_dynasty
+    father: khm_jayavarman_ii_varman
+    adm: 60
+    dip: 45
+    mil: 60
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  877.1.1:
+    death: yes
+khm_indravarman_i_varman:
+  847.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: indravarman
+    dynasty: varman_khm_dynasty
+    adm: 60
+    dip: 30
+    mil: 60
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  889.1.1:
+    death: yes
+khm_yasovarman_i_varman:
+  859.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: yasovarman
+    dynasty: varman_khm_dynasty
+    father: khm_indravarman_i_varman
+    adm: 60
+    dip: 30
+    mil: 75
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  900.1.1:
+    death: yes
+khm_harshavarman_i_varman:
+  870.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: harshavarman
+    dynasty: varman_khm_dynasty
+    father: khm_yasovarman_i_varman
+    adm: 30
+    dip: 75
+    mil: 60
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  925.1.1:
+    death: yes
+khm_ishanavarman_ii_varman:
+  895.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: ishanavarman
+    dynasty: varman_khm_dynasty
+    father: khm_yasovarman_i_varman
+    adm: 75
+    dip: 60
+    mil: 15
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  928.1.1:
+    death: yes
+khm_jayavarman_iv_varman:
+  898.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: jayavarman
+    dynasty: varman_khm_dynasty
+    adm: 45
+    dip: 45
+    mil: 30
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  941.1.1:
+    death: yes
+khm_harshavarman_ii_varman:
+  911.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: harshavarman
+    dynasty: varman_khm_dynasty
+    father: khm_jayavarman_iv_varman
+    adm: 30
+    dip: 45
+    mil: 45
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  944.1.1:
+    death: yes
+khm_rajendravarman_ii_varman:
+  914.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: rajendravarman
+    dynasty: varman_khm_dynasty
+    adm: 60
+    dip: 75
+    mil: 15
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  968.1.1:
+    death: yes
+khm_jayavarman_v_varman:
+  938.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: jayavarman
+    dynasty: varman_khm_dynasty
+    father: khm_rajendravarman_ii_varman
+    adm: 15
+    dip: 75
+    mil: 60
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1001.6.1:
+    death: yes
+khm_udayadityavarman_i_varman:
+  971.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: udayadityavarman
+    dynasty: varman_khm_dynasty
+    adm: 30
+    dip: 45
+    mil: 30
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1002.1.1:
+    death: yes
+khm_jayavirahvarman_i_varman:
+  972.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: jayavirahvarman
+    dynasty: varman_khm_dynasty
+    adm: 75
+    dip: 60
+    mil: 75
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1006.1.1:
+    death: yes
+khm_suryavarman_i_varman:
+  976.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: suryavarman
+    dynasty: varman_khm_dynasty
+    adm: 75
+    dip: 60
+    mil: 30
+    religion: mahayana
+    culture: khmer_culture
+    tag: KHM
+  1050.1.1:
+    death: yes
+khm_udayadityavarman_ii_varman:
+  1020.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: udayadityavarman
+    dynasty: varman_khm_dynasty
+    adm: 60
+    dip: 45
+    mil: 15
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1066.1.1:
+    death: yes
+khm_harshavarman_iii_varman:
+  1036.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: harshavarman
+    dynasty: varman_khm_dynasty
+    adm: 45
+    dip: 15
+    mil: 60
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1080.1.1:
+    death: yes
+khm_jayavarman_vi_varman:
+  1050.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: jayavarman
+    dynasty: varman_khm_dynasty
+    adm: 60
+    dip: 45
+    mil: 15
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1107.1.1:
+    death: yes
+khm_dharanindravarman_i_varman:
+  1077.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: dharanindravarman
+    dynasty: varman_khm_dynasty
+    adm: 75
+    dip: 75
+    mil: 60
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1113.1.1:
+    death: yes
+khm_suryavarman_ii_varman:
+  1083.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: suryavarman
+    dynasty: varman_khm_dynasty
+    adm: 75
+    dip: 15
+    mil: 75
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1150.1.1:
+    death: yes
+khm_dharanindravarman_ii_varman:
+  1120.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: dharanindravarman
+    dynasty: varman_khm_dynasty
+    adm: 75
+    dip: 60
+    mil: 60
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1156.1.1:
+    death: yes
+khm_yasovarman_ii_varman:
+  1126.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: yasovarman
+    dynasty: varman_khm_dynasty
+    adm: 60
+    dip: 60
+    mil: 60
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1165.1.1:
+    death: yes
+khm_tribhuvanidityavarman_i_varman:
+  1135.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: tribhuvanidityavarman
+    dynasty: varman_khm_dynasty
+    adm: 60
+    dip: 30
+    mil: 45
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1181.1.1:
+    death: yes
+khm_jayavarman_vii_varman:
+  1151.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: jayavarman
+    nickname: the_great
+    dynasty: varman_khm_dynasty
+    father: khm_dharanindravarman_ii_varman
+    adm: 75
+    dip: 15
+    mil: 75
+    religion: mahayana
+    culture: khmer_culture
+    tag: KHM
+  1218.1.1:
+    death: yes
+khm_indravarman_ii_varman:
+  1188.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: indravarman
+    dynasty: varman_khm_dynasty
+    father: khm_jayavarman_vii_varman
+    adm: 30
+    dip: 15
+    mil: 30
+    religion: mahayana
+    culture: khmer_culture
+    tag: KHM
+  1243.1.1:
+    death: yes
+khm_jayavarman_viii_varman:
+  1213.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: jayavarman
+    dynasty: varman_khm_dynasty
+    father: khm_indravarman_ii_varman
+    adm: 60
+    dip: 15
+    mil: 30
+    religion: hinduism
+    culture: khmer_culture
+    tag: KHM
+  1295.1.1:
+    death: yes
+khm_indravarman_iii_varman:
+  1265.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: indravarman
+    dynasty: varman_khm_dynasty
+    adm: 75
+    dip: 15
+    mil: 15
+    religion: theravada
+    culture: khmer_culture
+    tag: KHM
+  1307.1.1:
+    death: yes
+khm_indrajayavarman_i_varman:
+  1277.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: indrajayavarman
+    dynasty: varman_khm_dynasty
+    adm: 60
+    dip: 30
+    mil: 60
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1327.1.1:
+    death: yes
+khm_jayavarman_ix_varman:
+  1297.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: jayavarman
+    dynasty: varman_khm_dynasty
+    father: khm_indrajayavarman_i_varman
+    adm: 15
+    dip: 75
+    mil: 30
+    religion: hindu
+    culture: khmer_culture
+    tag: KHM
+  1336.1.1:
+    death: yes
+khm_trasak_peam_reachea:
+  1306.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: reachea_peam
+    dynasty: reachea_dynasty
+    adm: 60
+    dip: 60
+    mil: 30
+    religion: theravada
+    culture: khmer_culture
+    tag: KHM
+  1340.1.1:
+    death: yes
+khm_nippean_bat_reachea:
+  1310.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: nippean_bat
+    dynasty: reachea_dynasty
+    father: khm_trasak_peam_reachea
+    adm: 60
+    dip: 60
+    mil: 60
+    religion: theravada
+    culture: khmer_culture
+    tag: KHM
+  1346.1.1:
+    death: yes
+khm_sithean_reachea_reachea:
+  1313.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: sithean_reachea
+    dynasty: reachea_dynasty
+    father: khm_trasak_peam_reachea
+    adm: 75
+    dip: 30
+    mil: 30
+    religion: theravada
+    culture: khmer_culture
+    tag: KHM
+  1357.1.1:
+    death: yes
+khm_lompong_reachea_reachea:
+  1316.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: lompong_reachea
+    dynasty: reachea_dynasty
+    adm: 75
+    dip: 30
+    mil: 30
+    religion: theravada
+    culture: khmer_culture
+    tag: KHM
+  1357.1.1:
+    death: yes
+khm_soryavong_reachea:
+  1327.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: soryavong
+    dynasty: reachea_dynasty
+    adm: 30
+    dip: 75
+    mil: 30
+    religion: theravada
+    culture: khmer_culture
+    tag: KHM
+  1363.1.1:
+    death: yes
+khm_thomma_saok_reachea:
+  1343.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: thomma_saok
+    dynasty: reachea_dynasty
+    adm: 75
+    dip: 15
+    mil: 15
+    religion: theravada
+    culture: khmer_culture
+    tag: KHM
+  1389.1.1:
+    death: yes
+khm_barom_reachea_reachea:
+  1359.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: barom_reachea
+    dynasty: reachea_dynasty
+    father: khm_in_reachea_varman_1 #TODO: check if this makes sense
+    adm: 60
+    dip: 45
+    mil: 15
+    religion: theravada
+    culture: khmer_culture
+    tag: KHM
+  1404.1.1:
+    death: yes
+khm_in_reachea_reachea:
+  1354.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: in_reachea
+    dynasty: reachea_dynasty
+    father: khm_thomma_saok_varman #TODO: check if this makes sense
+    adm: 30
+    dip: 30
+    mil: 15
+    religion: theravada
+    culture: khmer_culture
+    tag: KHM
+  1421.1.1:
+    death: yes
+khm_borom_reachea_i_reachea:
+  1375.1.1:
+    birth: angkor #TODO: Date and location guessed, check if better data is available
+    first_name: borom_reachea
+    dynasty: reachea_dynasty
+    adm: 60
+    dip: 45
+    mil: 15
+    religion: theravada
+    culture: khmer_culture
+    tag: KHM
+  3000.1.1:
+    death: yes

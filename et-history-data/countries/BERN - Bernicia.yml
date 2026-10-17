@@ -1,0 +1,39 @@
+1:
+  government: et_european_pagan_monarchy
+  color: rgb { 80  139  185 }
+  government_rank: rank_duchy
+  religion: germanic_polytheism
+  primary_culture: anglo_saxon
+  capital: alnwick #Bamburgh
+500:
+  ruler: bern_oesa_iding
+520:
+  ruler: bern_eoppa_iding
+547:
+  ruler: bern_ida_iding
+559:
+  ruler: bern_glappa_iding
+560:
+  ruler: bern_adda_iding
+568:
+  ruler: bern_aethelric_iding
+572:
+  ruler: bern_theodric_iding
+579:
+  ruler: bern_frithuwald_iding
+585:
+  ruler: bern_hussa_iding
+593:
+  ruler: bern_aethelfrith_iding
+616:
+  ruler: deir_edwin_yffing
+632.10.14:
+  ruler: bern_eanfrith_bernicia
+634:
+  ruler: bern_oswald_bernicia
+  government: et_european_pagan_monarchy
+  religion: chalcedonism
+642.8.5:
+  ruler: nol_oswiu_of_northumbria
+867:
+  religion: catholic

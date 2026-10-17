@@ -1,0 +1,31 @@
+#imported from EU4 file: history/provinces/2574 - Sikumiut.txt
+2.1.1:
+  pops: 
+    inuit_culture-mari_paganism: 1
+1771.1.1:
+  pops: 
+    inuit_culture-mari_paganism: 0
+    inuit_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: fish
+1907.9.26:
+  owner: NEWF
+  controller: NEWF
+  cores:
+    GBR: no
+    NEWF: yes
+1934.2.16:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1949.3.31:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    NEWF: no
+    CAN: yes

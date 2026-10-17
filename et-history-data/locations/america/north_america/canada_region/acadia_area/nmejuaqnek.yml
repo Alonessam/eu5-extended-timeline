@@ -1,0 +1,23 @@
+#imported from EU4 file: history/provinces/2568 - Kespukwitk.txt
+2.1.1:
+  pops: 
+    mikmaq_culture-iroquoian_totemism: 1
+1753.1.1:
+  pops: 
+    mikmaq_culture-iroquoian_totemism: 0
+    scottish-catholic: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: fish
+1800.1.1:
+  pops: 
+    scottish-catholic: 0
+    british_canadian-catholic: 1
+1867.7.1:
+  owner: CAN
+  controller: CAN
+  cores:
+    GBR: no
+    CAN: yes

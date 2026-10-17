@@ -1,0 +1,43 @@
+#imported from EU4 file: history/provinces/3035 - Acre.txt
+2.1.1:
+  pops: 
+    moxo_culture-muisca_religion: 1
+1750.1.1:
+  pops: 
+    moxo_culture-muisca_religion: 0
+    iberian_peruvian-catholic: 1
+  owner: SPA
+  controller: SPA
+  cores:
+    BOLI: yes
+  resource: coffee
+1775.1.1:
+  cores:
+    SPA: yes
+1825.8.6:
+  owner: BOLI
+  controller: BOLI
+1836.10.28:
+  owner: PERU
+  controller: PERU
+  cores:
+    PERU: yes
+1839.8.25:
+  owner: BOLI
+  controller: BOLI
+  cores:
+    PERU: no
+1847.7.21:
+  cores:
+    SPA: no
+1899.1.1:
+  pops: 
+    iberian_peruvian-catholic: 0
+    brazilian-catholic: 1
+  cores:
+    BRAZ: yes
+1903.11.17:
+  owner: BRAZ
+  controller: BRAZ
+  cores:
+    BOLI: no

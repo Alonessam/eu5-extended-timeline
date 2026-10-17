@@ -1,0 +1,23 @@
+#imported from EU4 file: history/provinces/2536 - Mayaimi.txt
+2.1.1:
+  pops: 
+    arawak_culture-iroquoian_totemism: 1
+1825.1.1:
+  pops: 
+    arawak_culture-iroquoian_totemism: 0
+    british_louisianan-catholic: 1
+  owner: USA
+  controller: USA
+  cores:
+    USA: yes
+  resource: fish
+1861.1.10:
+  owner: CSAM
+  controller: CSAM
+  cores:
+    CSAM: yes
+1865.5.5:
+  owner: USA
+  controller: USA
+  cores:
+    CSAM: no

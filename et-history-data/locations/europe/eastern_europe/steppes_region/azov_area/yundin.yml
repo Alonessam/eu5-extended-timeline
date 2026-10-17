@@ -1,0 +1,123 @@
+#imported from EU4 file: history/provinces/468 - Khazaria.txt
+2.1.1:
+  pops: 
+    alan_culture-: 1
+  owner: ALN
+  controller: ALN
+  cores:
+    ALN: yes
+  resource: livestock
+420.1.1:
+  pops: 
+    bolghar_culture-: 1
+  owner: HUNS
+  controller: HUNS
+  cores:
+    ALN: no
+    HUNS: yes
+    UTIG: yes
+469.1.1:
+  owner: UTIG
+  controller: UTIG
+  cores:
+    HUNS: no
+632.1.1:
+  owner: BUL
+  controller: BUL
+  cores:
+    UTIG: no
+    BUL: yes
+720.1.1:
+  pops: 
+    khazar-: 1
+  owner: KHAZ
+  controller: KHAZ
+  cores:
+    BUL: no
+    KHAZ: yes
+969.1.1:
+  owner: PECH
+  controller: PECH
+  cores:
+    KHAZ: no
+    PECH: yes
+1000.1.1:
+  pops: 
+    khazar-sunni: 1
+1037.1.1:
+  owner: CUMA
+  controller: CUMA
+  cores:
+    PECH: no
+    CUMA: yes
+1236.1.1:
+  pops: 
+    khazar-sunni: 0
+    astrakhani-sunni: 1
+  owner: MGE
+  controller: MGE
+  cores:
+    CUMA: no
+    MGE: yes
+    ATR: yes
+1260.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    MGE: no
+    WHHO: yes
+1372.1.1:
+  owner: BLHO
+  controller: BLHO
+  cores:
+    BLHO: yes
+1374.1.1:
+  owner: WHHO
+  controller: WHHO
+  cores:
+    BLHO: no
+1378.1.1:
+  owner: GLH
+  controller: GLH
+  cores:
+    GLH: yes
+1442.1.1:
+  owner: GRHO
+  controller: GRHO
+  cores:
+    GLH: no
+    GRHO: yes
+1459.1.1:
+  owner: ATR
+  controller: ATR
+  cores:
+    GRHO: no
+    ATR: yes
+1556.6.2:
+  owner: RUS
+  controller: RUS
+  cores:
+    ATR: no
+    RUS: yes
+1600.1.1:
+  pops: 
+    astrakhani-sunni: 0
+    muscovite-orthodox: 1
+1671.4.14:
+  controller: RUS
+1922.12.30:
+  owner: SOVI
+  controller: SOVI
+  cores:
+    RUS: no
+    SOVI: yes
+1943.1.21:
+  controller: GER
+1943.2.14:
+  controller: SOVI
+1991.12.25:
+  owner: RUS
+  controller: RUS
+  cores:
+    SOVI: no
+    RUS: yes

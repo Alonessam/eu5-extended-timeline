@@ -1,0 +1,19 @@
+#imported from EU4 file: history/provinces/4053 - Turkana.txt
+2.1.1:
+  pops: 
+    maasai_culture-bantu_religion: 1
+1896.1.1:
+  pops: 
+    maasai_culture-bantu_religion: 0
+    maasai_culture-lutheran: 1
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+  resource: wool
+1963.12.12:
+  owner: KENY
+  controller: KENY
+  cores:
+    GBR: no
+    KENY: yes

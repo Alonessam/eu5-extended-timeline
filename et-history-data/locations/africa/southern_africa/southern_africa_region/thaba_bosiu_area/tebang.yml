@@ -1,0 +1,34 @@
+#imported from EU4 file: history/provinces/4781 - Gauteng.txt
+2.1.1:
+  pops: 
+    kung_culture-bantu_religion: 1
+400.1.1:
+  pops: 
+    kung_culture-bantu_religion: 0
+    nguni_culture-bantu_religion: 1
+1852.1.17:
+  pops: 
+    nguni_culture-bantu_religion: 0
+    nguni_culture-calvinist: 1
+  owner: SAFR
+  controller: SAFR
+  cores:
+    SAFR: yes
+  resource: grain
+1877.4.12:
+  owner: GBR
+  controller: GBR
+1880.12.20:
+  owner: SAFR
+  controller: SAFR
+1902.5.31:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1910.3.31:
+  owner: SAFR
+  controller: SAFR
+  cores:
+    GBR: no
+    SAFR: yes

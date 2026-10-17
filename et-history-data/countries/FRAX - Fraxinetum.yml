@@ -1,0 +1,14 @@
+#imported from EU4
+2.1.1:
+  government: et_ancient_monarchy
+  color: rgb { 0  135  65 }
+  government_rank: rank_duchy
+  religion: sunni
+  primary_culture: andalusi
+  capital: toulon
+889.1.1:
+  ruler: frax_said_farakh_shanit
+935.1.1:
+  ruler: frax_nasr_farakh_shanit
+980.1.1:
+  ruler: frax_ibn_nasr_farakh_shanit

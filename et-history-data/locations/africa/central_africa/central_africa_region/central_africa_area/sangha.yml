@@ -1,0 +1,25 @@
+#imported from EU4 file: history/provinces/3102 - Maka.txt
+2.1.1:
+  pops: 
+    gbaya_culture-bantu_religion: 1
+1888.1.1:
+  pops: 
+    gbaya_culture-bantu_religion: 0
+    gbaya_culture-lutheran: 1
+  owner: GER
+  controller: GER
+  cores:
+    GER: yes
+  resource: ivory
+1919.6.28:
+  owner: FRA
+  controller: FRA
+  cores:
+    GER: no
+    FRA: yes
+1960.1.1:
+  owner: CAME
+  controller: CAME
+  cores:
+    FRA: no
+    CAME: yes

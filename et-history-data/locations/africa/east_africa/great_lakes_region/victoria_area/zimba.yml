@@ -1,0 +1,24 @@
+#imported from EU4 file: history/provinces/4105 - Kusu.txt
+2.1.1:
+  pops: 
+    luba-bantu_religion: 1
+1350.1.1:
+  owner: LBA
+  controller: LBA
+  cores:
+    LBA: yes
+  resource: livestock
+1895.1.1:
+  pops: 
+    luba-bantu_religion: 0
+    luba-catholic: 1
+  owner: BEL
+  controller: BEL
+  cores:
+    BEL: yes
+1960.7.1:
+  owner: DRCO
+  controller: DRCO
+  cores:
+    BEL: no
+    DRCO: yes

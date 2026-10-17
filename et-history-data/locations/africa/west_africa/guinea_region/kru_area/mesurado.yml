@@ -1,0 +1,11 @@
+#imported from EU4 file: history/provinces/2242 - Karou.txt
+2.1.1:
+  pops: 
+    mandinka-bantu_religion: 1
+1822.1.7:
+  owner: LIBE
+  controller: LIBE
+  cores:
+    LIBE: yes
+  resource: grain
+1900.1.1:

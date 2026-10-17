@@ -1,0 +1,38 @@
+#imported from EU4 file: history/provinces/1155 - Kano.txt
+2.1.1:
+  pops: 
+    hausa-bantu_religion: 1
+523.1.1:
+  owner: HABA
+  controller: HABA
+  cores:
+    HABA: yes
+  resource: dyes
+999.1.1:
+  owner: KAN
+  controller: KAN
+  cores:
+    HABA: no
+    KAN: yes
+1355.1.1:
+  pops: 
+    hausa-bantu_religion: 0
+    hausa-sunni: 1
+1806.1.1:
+  owner: SOKO
+  controller: SOKO
+  cores:
+    SOKO: yes
+1903.1.1:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes
+1960.10.1:
+  owner: NIGR
+  controller: NIGR
+  cores:
+    GBR: no
+    SOKO: no
+    KAN: no
+    NIGR: yes

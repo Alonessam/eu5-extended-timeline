@@ -1,0 +1,76 @@
+#imported from EU4 file: history/provinces/2385 - Nongbua Lamphu.txt
+2.1.1:
+  pops: 
+    bru_culture-bimoism: 1
+550.1.1:
+  owner: CHTB
+  controller: CHTB
+  cores:
+    CHTB: yes
+  resource: grain
+650.1.1:
+  pops: 
+    bru_culture-bimoism: 0
+    bru_culture-mahayana: 1
+880.1.1:
+  owner: CAMB
+  controller: CAMB
+  cores:
+    CAMB: yes
+950.1.1:
+  pops: 
+    bru_culture-mahayana: 0
+    khmer_culture-mahayana: 1
+1050.1.1:
+  pops: 
+    khmer_culture-mahayana: 0
+    lao_culture-mahayana: 1
+  owner: CHTB
+  controller: CHTB
+  cores:
+    CAMB: no
+    CHTB: yes
+1185.1.1:
+  owner: CAMB
+  controller: CAMB
+  cores:
+    CAMB: yes
+1195.1.1:
+  owner: CHTB
+  controller: CHTB
+  cores:
+    CAMB: no
+    CHTB: yes
+1285.1.1:
+  owner: SUK
+  controller: SUK
+  cores:
+    SUK: yes
+1290.1.1:
+  pops: 
+    lao_culture-mahayana: 0
+    lao_culture-theravada: 1
+1354.1.1:
+  owner: LAXA
+  controller: LAXA
+  cores:
+    SUK: no
+    LAXA: yes
+1707.1.1:
+  owner: VTN
+  controller: VTN
+  cores:
+    LAXA: no
+    VTN: yes
+1828.11.12:
+  owner: RTP
+  controller: RTP
+  cores:
+    VTN: no
+    RTP: yes
+1932.7.24:
+  owner: SIA
+  controller: SIA
+  cores:
+    RTP: no
+    SIA: yes

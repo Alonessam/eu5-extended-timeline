@@ -1,0 +1,9 @@
+#imported from EU4
+2.1.1:
+  government: south_east_asia_monarchy
+  color: rgb { 165  25  49 }
+  religion: theravada
+  primary_culture: thai_culture
+  capital: chaisri
+1767.4.8:
+  ruler: thon_phraya_taksin_thonburi

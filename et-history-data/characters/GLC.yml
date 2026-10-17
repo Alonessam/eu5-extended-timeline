@@ -1,0 +1,62 @@
+glc_richimund_suebi:
+  427.1.1:
+    birth: santiago_compostela #TODO: Date and location guessed, check if better data is available
+    first_name: richimund
+    dynasty: suebi_dynasty
+    adm: 45
+    dip: 60
+    mil: 45
+    religion: catholic
+    culture: galician
+    tag: GLC
+  910.12.10:
+    death: yes
+glc_ordono_ii_beni_alfons:
+  880.1.1:
+    birth: santiago_compostela #TODO: Date and location guessed, check if better data is available
+    first_name: ordono
+    dynasty: beni_alfons_dynasty
+    adm: 45
+    dip: 45
+    mil: 45
+    religion: catholic
+    culture: galician
+    tag: GLC
+  1065.6.1:
+    death: yes
+glc_garcia_ii_jimena:
+  1043.4:
+    birth: leon
+    first_name: name_garcia
+    dynasty: jimena_dynasty
+    father: lon_fernando_i_jimena
+    mother: lon_sancha_leon
+    religion: catholic
+    culture: leonese
+    tag: LON
+  1065.12.24:
+    tag: GLC
+  1090.3.22:
+    death: yes
+glc_raymond_burgundy:
+  1070:
+    birth: besancon
+    first_name: name_raymond
+    dynasty: ivree_dynasty
+    father: fcb_guillaume_i_burgundy
+    adm: 36
+    dip: 50
+    mil: 58
+    religion: catholic
+    culture: franc_comtois
+    tag: BUR
+    traits:
+      intricate_web_weaver: yes
+  1086:
+    tag: LON
+  1093:
+    spouse: lon_urraca_i_jimena
+    dynasty: burgundy_castile_dynasty
+    tag: GLC
+  1107.5.24:
+    death: yes

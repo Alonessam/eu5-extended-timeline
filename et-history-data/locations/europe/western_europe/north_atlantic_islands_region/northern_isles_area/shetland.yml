@@ -1,0 +1,38 @@
+#imported from EU4 file: history/provinces/1978 - Shetlands.txt
+2.1.1:
+  pops: 
+    norwegian-norse: 1
+860.1.1:
+  owner: VEST
+  controller: VEST
+  cores:
+    VEST: yes
+  resource: fish
+872.1.1:
+  owner: NOR
+  controller: NOR
+  cores:
+    VEST: no
+    NOR: yes
+980.1.1:
+  pops: 
+    norwegian-norse: 0
+    norwegian-catholic: 1
+1472.2.20:
+  pops: 
+    norwegian-catholic: 0
+    scottish-catholic: 1
+  owner: SCO
+  controller: SCO
+  cores:
+    NOR: no
+    SCO: yes
+1609.1.1:
+  pops: 
+    scottish-catholic: 0
+    scottish-calvinist: 1
+1707.5.12:
+  owner: GBR
+  controller: GBR
+  cores:
+    GBR: yes

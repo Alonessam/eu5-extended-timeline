@@ -1,0 +1,45 @@
+#imported from EU4 file: history/provinces/602 - Chiang Rai.txt
+2.1.1:
+  pops: 
+    wa_culture-bimoism: 1
+500.1.1:
+  pops: 
+    wa_culture-bimoism: 0
+    wa_culture-mahayana: 1
+550.1.1:
+  owner: SIHV
+  controller: SIHV
+  cores:
+    SIHV: yes
+  resource: grain
+600.1.1:
+  pops: 
+    wa_culture-mahayana: 0
+    wa_culture-theravada: 1
+638.1.1:
+  pops: 
+    wa_culture-theravada: 0
+    khon_muang_culture-theravada: 1
+  owner: HIRA
+  controller: HIRA
+  cores:
+    SIHV: no
+    HIRA: yes
+1292.1.1:
+  owner: LNA
+  controller: LNA
+  cores:
+    HIRA: no
+    LNA: yes
+1884.1.1:
+  owner: RTP
+  controller: RTP
+  cores:
+    LNA: no
+    RTP: yes
+1932.7.24:
+  owner: SIA
+  controller: SIA
+  cores:
+    RTP: no
+    SIA: yes
