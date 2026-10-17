@@ -1,0 +1,30 @@
+﻿# Restore EU5 1.3 definitions hidden by ET's existing east_asia.txt override.
+# Source: installed EU5 1.3.10 in_game/common/cultures/east_asia.txt:132-165.
+haixi_culture = {
+	language = jurchen_language
+	color = map_haixi
+	tags = { east_asian_gfx tungusic_coa_gfx }
+	opinions = {
+		hurga_culture = kindred
+		jurchen_culture = kindred
+	}
+	culture_groups = {
+		jurchen_group
+		tungusic_group
+	}
+}
+
+hurga_culture = {
+	language = nanai_language
+	color = map_hurga
+	tags = { east_asian_gfx tungusic_coa_gfx }
+	opinions = {
+		haixi_culture = kindred
+		jurchen_culture = kindred
+		oroch_culture = kindred
+	}
+	culture_groups = {
+		jurchen_group
+		tungusic_group
+	}
+}
