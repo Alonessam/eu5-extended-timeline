@@ -1,9 +1,10 @@
 # Mısır Pilotu — Olay Tasarım Notu (Faz 1 / WS4)
 
 **Tarih:** 17 Ekim 2026 · **Hat:** Mısır (paralel pilot) · **Durum:** v1
-scriptlendi (oyun içi test bekliyor; `et_culture.1`–`.5` +
-`on_action/et_history_pulses.txt`). Numara mutabakatı sağlandı: Galya pilotu
-`.101`–`.103` olarak ayrıldı.
+scriptlendi; **Test A geçti** (17 Ekim 2026: `et_culture.9000` ve Galya `.101`
+oyun içinde ateşlendi, `error.log`'da mod satırı yok — kanıt bölüm 5). Zincir
+doğrulaması (Test B, console protokolü) sırada. Numara mutabakatı sağlandı:
+Galya pilotu `.101`–`.103` olarak ayrıldı.
 
 **Veri temeli:** `2026-10-17_egypt_culture_transition.yml` (11 kayıtlı geçiş).
 **Kalite kuralları:** `README.md` bölüm 6. **Doğrulama kaynağı:** kurulu EU5
@@ -191,7 +192,8 @@ kesri ayrılıp yeni din/kültüre geçer, kalan aynı kalır.
   (`flavor_MAM.txt:2661-2677`) `custom_tooltip` bloğunun **içine** yazıldı
   (görünüm + yürütme birebir vanilla).
 - **Nübya (`.6`/`.7`) bu sürümde yok** — bölüm 7 karar 3 bekliyor.
-- **`et_culture.9000`** test olayı, test A geçene dek dosyada kalır.
+- **`et_culture.9000`** test olayı: Test A (17 Ekim 2026) geçti; zincir
+  doğrulaması (Test B) geçince emekliye ayrılır.
 
 ### et_culture.1 — "Nil'de Yeni Bir Şafak" / "A New Dawn on the Nile"
 
@@ -332,15 +334,37 @@ geçtikten sonra kaldırılır.
 
 ## 5. Test planı
 
-- **Aşama A — şablon doğrulaması (kullanıcı):** EU5'te 58 başlangıcı
-  ROM; birkaç ay ilerlet; `et_culture.9000` görünmeli; `error.log` temiz
-  olmalı. *(Hâlâ bekliyor.)*
-- **Aşama B — zincir doğrulaması (scriptler yazıldı; sıradaki):** Öneri: yerel test
-  dalında pencereler geçici olarak `58.x`'e çekilir; olaylar sırayla (her biri
-  bir sonraki yıl) ateşlenir. Kontroller: dönüşüm payları `fraction` ile
-  uyumlu mu; değişken işaretleri kuruluyor mu; Kıptî kalıntısı kalıyor mu;
-  `error.log` temiz mi; kaydet/yükle sağlam mı. Tarih ilerletme/olay çağırma
-  için console komutları doğrulanacak (EU5 sözdizimi ayrıca teyit edilecek).
+- **Aşama A — şablon doğrulaması (kullanıcı):** ✓ **17 Ekim 2026'da geçti.**
+  Kanıt: 58 başlangıcı ROM oyununda test olayı `et_culture.9000` **ve** Galya
+  olayı `et_culture.101` ateşlendi (ortak iskelet: events dosyası + loc + DHE
+  penceresi). Aynı oturumun `error.log`'unda (`logs/error.log`, 477 KB,
+  17 Ekim 19:38) modumuza ait **tek satır yok**. Not: BOM uyarıları
+  `debug.log`'a yazılıyor; aynı turda 57 mod dosyasına eksik BOM eklendi.
+- **Aşama B — zincir doğrulaması (sıradaki; console protokolü hazır):** EU5
+  console komut listesi doğrulandı (wiki 1.3): `event`, `test_event_trigger`,
+  `event_probabilities` (yearly_country_pulse dökümü), `change_date`,
+  `tick_day`, `Log.ClearErrorLog`. Geçici pencere yaması gereksizleşti.
+  Protokol:
+  1. Kaydet; `Log.ClearErrorLog`; `event_probabilities yearly_country_pulse`
+     → `error.log`'da `et_egypt_yearly_pulse` dökümü (kanca kanıtı).
+  2. Pencere mantığı: 58'de `test_event_trigger et_culture.1` (beklenen:
+     FAIL, yıl < 200) → `change_date 250` → tekrar (beklenen: PASS).
+  3. Doğal ateşleme: 250'de yıl sınırını geçir (`tick_day`; gerekirse hız
+     5'te oynat) → `.1` popup → **tarihsel** (`christ_1`); ardından
+     `test_event_trigger et_culture.1` FAIL (immediate işaretçi —
+     tekilleştirme kanıtı).
+  4. `change_date 350`: `.2` doğal ateşlenir → **tarihsel** (`coptic`;
+     `old_egyptian`+`miaphysite` → `coptic_culture` panoda doğrulanır).
+     Ara kaydet/yükle: değişken kalıcılığı.
+  5. Sahip-kapısı: ROM pagan; `test_event_trigger et_culture.3` FAIL (muslim
+     grubu yok). Etkiler `event et_culture.3` ile zorlanır (**tarihsel**;
+     `islam_1`). Opsiyonel güçlü kanıt: console `religion islam` → `.3`
+     trigger'ı PASS (test kaydında; sonra geri alınır).
+  6. `change_date 1100` → `.4` **doğal** (islam_1 + pencere) → **tarihsel**
+     (`islam_2`); `change_date 1200` → `.5` **doğal** → **tarihsel**
+     (`arabized`). Kapanış: `event_probabilities` tekrarı (`.1`–`.5`
+     değillenmiş görünür), `error.log` temiz, panoda nihai görünüm (islam
+     çoğunluk + Kıptî azınlık + Mısır kültürleri).
 - **Aşama C — hızlandırılmış uzun gözlem (opsiyonel):** 58→700; Mısır
   panosunda kademeli değişim; başkaca ülkelerde yan etki yok; performans
   notu (yıllık pulse + bölgesel `every_pop` sınırlı — kalite kuralı 6).
@@ -358,7 +382,8 @@ geçtikten sonra kaldırılır.
 4. Test A → Test B → (gerekirse kalibrasyon) → Test C.
 5. Zincir doğrulanınca `et_culture.9000` emekli; README/backlog senkronu.
 
-**Durum:** 1–3 ✓ (17 Ekim 2026). 4–5 sırada.
+**Durum:** 1–3 ✓ (17 Ekim 2026). 4: Test A ✓; Test B (console protokolü)
+sırada. 5: Test B geçince (9000 emekliliği + kayıt senkronu).
 
 Numara rezervasyonu (Samet ile mutabakat — **sağlandı**): Mısır `.1`–`.49`,
 Galya `.100`–`.149` (Galya `.101`–`.103` yürürlükte), sonraki bölgeler `.150`+.

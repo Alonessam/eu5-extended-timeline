@@ -173,8 +173,11 @@ tasks:
       variables), with English and Turkish localization; the et_culture.9000 test event
       stays until in-game validation. The numbering agreement is realized: the Gaul pilot
       was renumbered to et_culture.101-103, leaving .1-.49 to Egypt (.100-.149 Gaul).
-      In-game tests are the next step: A (template event) and B (chain, with temporary
-      58.x windows).
+      TEST A PASSED (2026-10-17): the template event et_culture.9000 and the Gaul event
+      et_culture.101 both fired in a live 58 CE start, and the session's error.log holds
+      no mod-related line. Test B (chain) uses the verified EU5 console protocol
+      (event, test_event_trigger, event_probabilities, change_date, tick_day) instead of
+      temporary 58.x windows; protocol recorded in the design note, section 5.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient

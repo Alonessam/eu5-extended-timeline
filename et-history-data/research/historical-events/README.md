@@ -11,7 +11,9 @@ doğrulanmıştır; doğrulama notları bu dokümandadır.
 **Durum:** Plan yayında. **Faz 1 paralel iki pilotla sürüyor: Mısır ve Galya**
 (17 Ekim 2026 mutabakatı). Mısır hattında kaynaklı geçiş kayıtları, kültür
 grafiği düzeltmeleri ve **olay zinciri v1** hazır (`et_culture.1`–`.5` +
-`on_action/et_history_pulses.txt`; oyun içi test sırada). Galya hattında
+`on_action/et_history_pulses.txt`); **Test A geçti** (17 Ekim 2026:
+`et_culture.9000` + Galya `.101` oyun içinde ateşlendi; `error.log`'da mod
+satırı yok). Zincir doğrulaması (Test B) sırada. Galya hattında
 `gallo_roman` ara kimliği ve pilot olaylar (`.101`–`.103`) yazıldı (Samet);
 numara rezervasyonu mutabık: Mısır `.1`–`.49`, Galya `.100`–`.149`.
 
@@ -202,8 +204,11 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
 - [x] Mod iskeleti: `events/` + localization kuruldu (test olayı dahil)
 - [x] Olay zincirleri: Mısır `et_culture.1`–`.5` + `et_history_pulses.txt`
   (17 Ekim 2026) · Galya `et_culture.101`–`.103` + `gallo_roman` (Samet)
-- [ ] Oyun içi test ve log kontrolü — test A: `et_culture.9000` (ROM,
-  58.1–58.6); test B: zincir olayları (pencereler geçici `58.x`'e çekilerek)
+- [x] Oyun içi test A — `et_culture.9000` ve Galya `.101` ateşlendi;
+  oturumun `error.log`'u mod satırı içermiyor (17 Ekim 2026)
+- [ ] Oyun içi test B — Mısır zinciri `.1`–`.5`: console protokolü
+  (`event_probabilities`, `test_event_trigger`, `change_date`, `tick_day`;
+  ayrıntı: design note bölüm 5)
 
 ## 6. Bağlayıcı kalite kuralları
 

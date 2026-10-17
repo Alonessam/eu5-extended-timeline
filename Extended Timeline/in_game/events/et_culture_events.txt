@@ -16,7 +16,7 @@ namespace = et_culture
 
 # Template test event: verifies that the events file loads and that the
 # dynamic_historical_event window fires. Kept until the pilot chains pass
-# in-game validation (test A); retire afterwards.
+# in-game validation (tests A and B); retired in the same follow-up.
 et_culture.9000 = {
 	type = country_event
 	title = et_culture.9000.title
