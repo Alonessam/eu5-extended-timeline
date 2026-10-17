@@ -112,23 +112,3 @@ iberian_language = {
 	}
 
 }
-
-latin_language = {
-
-	color = rgb{ 180 160 120 }
-
-	male_names = {
-		#TODO
-	}
-	female_names = {
-		#TODO
-	}
-	
-	dynasty_names = {
-		#TODO
-	}
-	
-	lowborn = {
-	}
-
-}
