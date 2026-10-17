@@ -14,7 +14,7 @@ grafiği düzeltmeleri ve **olay zinciri v1** hazır (`et_culture.1`–`.5` +
 `on_action/et_history_pulses.txt`); **Test A geçti** (17 Ekim 2026:
 `et_culture.9000` + Galya `.101` oyun içinde ateşlendi; `error.log`'da mod
 satırı yok). Zincir doğrulaması (Test B) sırada. Samet'in inceleme commit'i (`f3d304d`) payları spec'e hizaladı; son-kimlik anahtar sahipliği ikinci incelemede (17 Ekim 2026) karara bağlandı — deltasız mod kopyaları geri alındı (vanilla içerik korunur), deltalılar vanilla birebir + delta olarak kaldı (design note §7, kararlar 7–8). Galya incelemesi (aynı gün): Samet'in `e271902` commit'i gözden geçirildi — boş `latin_language` kopyası geri alındı (vanilla `00_italy.txt` tanımı yüklenir); `french_group` kopyası vanilla'da da boş olduğundan zararsız bırakıldı (backlog UPDATE 4). Galya hattında
-`gallo_roman` ara kimliği ve pilot olaylar (`.101`–`.103`) yazıldı (Samet);
+`gallo_roman` ara kimliği ve pilot olaylar (`.101`–`.103`) yazıldı (Samet); Faz 2–3 olayları (`.104`–`.110`) incelendi — din/locasyon/efekt/prestij token'ları vanilla'ya göre düzeltildi (backlog UPDATE 5);
 numara rezervasyonu mutabık: Mısır `.1`–`.49`, Galya `.100`–`.149`.
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
