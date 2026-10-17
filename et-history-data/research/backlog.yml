@@ -140,7 +140,7 @@ tasks:
     period_id: ancient
     priority: 1
     state: in_progress
-    targets: [research/historical-events/README.md, research/historical-events/2026-10-17_egypt_culture_transition.yml]
+    targets: [research/historical-events/README.md, research/historical-events/2026-10-17_egypt_culture_transition.yml, research/historical-events/2026-10-17_egypt_event_design.md]
     source_refs: [wiki_islamization_egypt, wiki_coptic_language]
     question: Which region pilots the historical events and culture transition layer, and are intermediate identities (e.g. gallo_roman) needed between the 58 CE cultures and the modern keys?
     evidence: >-
@@ -163,6 +163,12 @@ tasks:
       (Egypt: records and WS3 fixes collected; pilot event scripts next) and Gaul
       (Galya: gallo_roman intermediate identity, sourced records to be collected).
       Neither track blocks the other; pilot event scripts follow this resolution.
+      UPDATE (2026-10-17): the Egypt pilot design note is published
+      (research/historical-events/2026-10-17_egypt_event_design.md): a five-event
+      chain (Christianization, Coptic identity, two Islamization waves,
+      Arabization) fired through a tag-agnostic yearly on_action pulse hooked
+      into vanilla yearly_country_pulse; fractions are first-draft and will be
+      calibrated in-game; event scripting is the next step.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient

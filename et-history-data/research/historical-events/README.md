@@ -10,8 +10,10 @@ doğrulanmıştır; doğrulama notları bu dokümandadır.
 
 **Durum:** Plan yayında. **Faz 1 paralel iki pilotla sürüyor: Mısır ve Galya**
 (17 Ekim 2026 mutabakatı). Mısır hattında kaynaklı geçiş kayıtları, kültür
-grafiği düzeltmeleri ve olay iskeleti hazır; Galya hattı `gallo_roman` ara
-kimliğiyle ayrı bir hatta yürütülüyor (kaynak toplama aşamasında).
+grafiği düzeltmeleri, olay iskeleti ve olay tasarım notu hazır
+(`2026-10-17_egypt_event_design.md`; sıradaki adım olay scriptleri); Galya
+hattı `gallo_roman` ara kimliğiyle ayrı bir hatta yürütülüyor (kaynak toplama
+aşamasında).
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
@@ -193,7 +195,9 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
 - [x] Kaynak seti toplama — `sources.yml`'e 5 yeni kaynak (coptic_language,
   islamization_egypt, arab_conquest_egypt, christianity_egypt, nobatia)
 - [x] Geçiş kayıtları — `2026-10-17_egypt_culture_transition.yml` (11 kayıt)
-- [ ] Olay tasarım notu (olaylar, pencereler, koşullar, localization anahtarları)
+- [x] Olay tasarım notu — `2026-10-17_egypt_event_design.md` (5 olaylık
+  çekirdek zincir + Nübya eki önerisi; sahip-bağımsız on_action pulse
+  mimarisi doğrulandı)
 - [x] Mod iskeleti: `events/` + localization kuruldu (test olayı dahil); pilot
   olay scriptleri tasarım notundan sonra
 - [ ] Oyun içi test (58 başlangıcı, hızlandırılmış gözlem) ve log kontrolü —
@@ -223,9 +227,11 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
   `coptic_culture` → `lower_egyptian_culture`/`upper_egyptian_culture` ve
   `kushite` → `nubian` zincirlerinin tamamı vanilla'da mevcut. Galya hattında
   `gallo_roman` ara kimliği kullanılır; diğer bölgeler için politika açık.
-- Railroad derecesi: sabit tarihler mi, koşullu pencereler mi?
+- Railroad derecesi: sabit tarihler mi, koşullu pencereler mi? (Öneri:
+  koşullu pencereler + sahiplik koşulu —
+  `2026-10-17_egypt_event_design.md` bölüm 7.)
 - Hangi olaylar AI'yı zorlar (fetih/göç dalgaları); hangileri serbest
-  simülasyona bırakılır?
+  simülasyona bırakılır? (Öneri: fetihler zorlanmaz; aynı not.)
 - Cabinet action erişimleri (`form_new_culture` / `merge_culture_group`)
   değiştirilecek mi?
 
@@ -237,6 +243,7 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
   (`historical_events_and_culture_transition`, `ancient_economy_roads_and_town_ranks` vb.).
 - Bu klasördeki veri dosyaları:
   `2026-10-17_egypt_culture_transition.yml` (pilot geçiş kayıtları),
+  `2026-10-17_egypt_event_design.md` (Mısır olay tasarım notu),
   `2026-10-17_culture_graph_audit.md` (WS3 denetimi).
 - `Extended Timeline/loading_screen/common/defines/00_defines.txt` — asimilasyon
   ve kültür sabitleri.
