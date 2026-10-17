@@ -1,0 +1,327 @@
+# ==============================================================================
+# Egyptian Polytheism & Atenism
+# ==============================================================================
+karnak_temple = {
+	location = qus
+	type = temple
+	importance = 5
+	religions = { egyptian_polytheism atenism }
+}
+
+memphis_ptah_temple = {
+	location = giza
+	type = temple
+	importance = 5
+	religions = { egyptian_polytheism }
+}
+
+philae_isis_temple = {
+	location = aswan
+	type = temple
+	importance = 4
+	religions = { egyptian_polytheism }
+}
+
+edfu_horus_temple = {
+	location = edfu
+	type = temple
+	importance = 4
+	religions = { egyptian_polytheism }
+}
+
+jebel_barkal_amun = {
+	location = karima
+	type = mountain
+	importance = 5
+	religions = { egyptian_polytheism }
+}
+
+alexandria_serapeum_egypt = {
+	location = alexandria
+	type = temple
+	importance = 4
+	religions = { egyptian_polytheism }
+}
+
+# ==============================================================================
+# Judaism & Samaritanism (58 AD Second Temple Era)
+# ==============================================================================
+jerusalem_second_temple = {
+	location = jerusalem
+	type = temple
+	importance = 5
+	religions = { judaism }
+}
+
+hebron_patriarchs_cave = {
+	location = hebron
+	type = shrine
+	importance = 4
+	religions = { judaism }
+}
+
+safed_galilee_sanctuary = {
+	location = safed
+	type = shrine
+	importance = 3
+	religions = { judaism }
+}
+
+mount_gerizim_sanctuary = {
+	location = nablus
+	type = mountain
+	importance = 5
+	religions = { samaritanism judaism }
+}
+
+# ==============================================================================
+# Zoroastrianism (The Three Great Royal Fires & Anahita Temples)
+# ==============================================================================
+adur_burzen_mihr = {
+	location = nishapur
+	type = temple
+	importance = 5
+	religions = { zoroastrian }
+}
+
+adur_farnbag = {
+	location = shiraz
+	type = temple
+	importance = 5
+	religions = { zoroastrian }
+}
+
+adur_gushnasp = {
+	location = maragheh
+	type = temple
+	importance = 5
+	religions = { zoroastrian }
+}
+
+balkh_anahita_temple = {
+	location = balkh
+	type = temple
+	importance = 4
+	religions = { zoroastrian }
+}
+
+ecbatana_anahita_temple = {
+	location = hamadan
+	type = temple
+	importance = 4
+	religions = { zoroastrian }
+}
+
+# ==============================================================================
+# Dacian Zamolxism
+# ==============================================================================
+sarmizegetusa_kogaionon = {
+	location = hunedoara
+	type = mountain
+	importance = 5
+	religions = { zamolxism }
+}
+
+apulum_zalmoxis_sanctuary = {
+	location = alba_iulia
+	type = polytheistic_holy_site
+	importance = 4
+	religions = { zamolxism }
+}
+
+# ==============================================================================
+# Mesopotamian Ashurism, Nabataean & South Arabian Polytheism
+# ==============================================================================
+assur_esharra_temple = {
+	location = tikrit
+	type = temple
+	importance = 5
+	religions = { ashurism }
+}
+
+nineveh_ishtar_temple = {
+	location = mosul
+	type = temple
+	importance = 4
+	religions = { ashurism }
+}
+
+harran_ehulhul_temple = {
+	location = harran
+	type = temple
+	importance = 5
+	religions = { ashurism }
+}
+
+arbela_ishtar_temple = {
+	location = erbil
+	type = temple
+	importance = 4
+	religions = { ashurism }
+}
+
+petra_dushara_temple = {
+	location = maan
+	type = temple
+	importance = 5
+	religions = { nabataean_religion }
+}
+
+hegra_dushara_sanctuary = {
+	location = al_ula
+	type = shrine
+	importance = 4
+	religions = { nabataean_religion }
+}
+
+marib_awwam_temple = {
+	location = marib
+	type = temple
+	importance = 5
+	religions = { south_arabian_polytheism }
+}
+
+shabwa_sayyin_temple = {
+	location = shabwa
+	type = temple
+	importance = 4
+	religions = { south_arabian_polytheism }
+}
+
+# ==============================================================================
+# Caucasian & Steppe Paganism (Armenian, Georgian, Alan/Scythian)
+# ==============================================================================
+garni_mihr_temple = {
+	location = yerevan
+	type = temple
+	importance = 5
+	religions = { armenian_religion }
+}
+
+bagavan_aramazd_altar = {
+	location = van
+	type = polytheistic_holy_site
+	importance = 4
+	religions = { armenian_religion }
+}
+
+mtskheta_armazi_idol = {
+	location = mtskheta
+	type = polytheistic_holy_site
+	importance = 5
+	religions = { georgian_religion }
+}
+
+tanais_seven_gods_shrine = {
+	location = tana
+	type = polytheistic_holy_site
+	importance = 4
+	religions = { alan_paganism }
+}
+
+# ==============================================================================
+# Berber Polytheism & Waaqeffanna (North Africa & Horn of Africa)
+# ==============================================================================
+siwa_ammon_oracle = {
+	location = siwa
+	type = oracle
+	importance = 5
+	religions = { berber_polytheism egyptian_polytheism }
+}
+
+carthage_baal_hammon = {
+	location = tunis
+	type = temple
+	importance = 5
+	religions = { berber_polytheism }
+}
+
+garama_gurzil_temple = {
+	location = murzuk
+	type = oracle
+	importance = 4
+	religions = { berber_polytheism }
+}
+
+axum_mahrem_temple = {
+	location = axum
+	type = temple
+	importance = 5
+	religions = { waaqeffanna_religion south_arabian_polytheism }
+}
+
+zeila_waaq_sanctuary = {
+	location = zeila
+	type = shrine
+	importance = 4
+	religions = { waaqeffanna_religion }
+}
+
+# ==============================================================================
+# Slavic, Baltic & Illyrian Polytheism
+# ==============================================================================
+rugen_arkona_svetovid = {
+	location = rugen
+	type = temple
+	importance = 5
+	religions = { slavic_polytheism }
+}
+
+kyiv_perun_hill = {
+	location = kyiv
+	type = polytheistic_holy_site
+	importance = 5
+	religions = { slavic_polytheism }
+}
+
+novgorod_peryn_shrine = {
+	location = novgorod
+	type = sacred_groves
+	importance = 4
+	religions = { slavic_polytheism }
+}
+
+romowe_perkunas_oak = {
+	location = konigsberg
+	type = sacred_groves
+	importance = 5
+	religions = { baltic_polytheism romuva prussian_polytheism }
+}
+
+vilnius_perkunas_temple = {
+	location = vilnius
+	type = polytheistic_holy_site
+	importance = 4
+	religions = { baltic_polytheism romuva latvian_polytheism }
+}
+
+epidamnos_redon_sanctuary = {
+	location = durres
+	type = polytheistic_holy_site
+	importance = 4
+	religions = { illyrian_polytheism }
+}
+
+# ==============================================================================
+# Bon & Tengri
+# ==============================================================================
+mount_kailash_yungdrung = {
+	location = purang
+	type = mountain
+	importance = 5
+	religions = { bon }
+}
+
+lhasa_bon_sanctuary = {
+	location = lhasa
+	type = shrine
+	importance = 4
+	religions = { bon }
+}
+
+otuken_sacred_mountain = {
+	location = karakorum
+	type = mountain
+	importance = 5
+	religions = { tengri }
+}

@@ -1,40 +1,40 @@
-﻿#Gaelic
+#Gaelic
 drogheda_passage_tomb = {
 	location = drogheda 
 	type = passage_tombs
 	importance = 3
-	religions = {gaelic_polytheism }
+	religions = { druidism }
 }
 connacht_rathcroghan = {
 	location = castlereagh
 	type = gateway 
 	importance = 3
-	religions = { gaelic_polytheism}
+	religions = { druidism }
 }
 
 kildare_well = {
 	location = kildare 
 	type = shrine
 	importance = 3
-	religions = {gaelic_polytheism} 
+	religions = { druidism } 
 }
 loughnavalley_uisneach = {
 	location = mullingar
 	type = gathering_place_druids 
 	importance = 5
-	religions = {gaelic_polytheism} 
+	religions = { druidism } 
 }
 emain_macha = {
 	location = armagh
 	type = temple
 	importance = 4
-	religions = {gaelic_polytheism} 
+	religions = { druidism } 
 }
 navan_tara = {
 	location = navan 
 	type = polytheistic_holy_site
 	importance = 5
-	religions = {gaelic_polytheism} 
+	religions = { druidism } 
 }
 #Brythonic
 anglesey_druid_place = {
