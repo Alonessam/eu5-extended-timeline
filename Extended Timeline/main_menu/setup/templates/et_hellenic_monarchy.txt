@@ -1,4 +1,4 @@
-﻿#Temp file, copy of eastern_european_monarchy
+#Temp file, copy of eastern_european_monarchy
 
 starting_technology_level = 3
 government = {
@@ -46,7 +46,6 @@ government = {
 		feudal_de_jure_law = by_tradition
 		medieval_levy_law = noble_levies
 		royal_court_customs_law = aristocratic_court_policy
-		patriarchate_law = separated_patriarchate_policy
 		censorship = limited_censorship
 		education_masses_law = basic_religious_education
 		administrative_system = feudal_administration
