@@ -1259,6 +1259,222 @@ et_culture.110 = {
 	}
 }
 
+# ===========================================================================
+# GAUL PHASE 4 EVENTS (WS4: et_culture.111 - et_culture.113)
+# Period: Language & Cultural Divergence — Oïl, Oc, Normans (MS 600-1000)
+# ===========================================================================
+
+# 11. North-South Divergence: Oïl vs Oc (MS 650-850)
+et_culture.111 = {
+	type = country_event
+	title = et_culture.111.title
+	desc = et_culture.111.desc
+	outcome = neutral
+	historical_info = et_culture.111.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 650.1.1
+		to = 850.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.111.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.111.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:paris
+						location = location:rouen
+						location = location:reims
+						location = location:orleans
+						location = location:tours
+					}
+				}
+				every_pop = {
+					limit = {
+						culture = culture:gallo_roman
+					}
+					change_pop_culture = culture:french
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:toulouse
+						location = location:bordeaux
+						location = location:nimes
+						location = location:arles
+						location = location:marseille
+					}
+				}
+				every_pop = {
+					limit = {
+						culture = culture:gallo_roman
+					}
+					change_pop_culture = culture:occitan
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:lyon
+						location = location:geneve
+					}
+				}
+				every_pop = {
+					limit = {
+						culture = culture:gallo_roman
+					}
+					change_pop_culture = culture:arpitan
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.111.b
+		add_stability = -5
+	}
+}
+
+# 12. Tours Council & Strasbourg Oaths (MS 813-842)
+et_culture.112 = {
+	type = country_event
+	title = et_culture.112.title
+	desc = et_culture.112.desc
+	outcome = good
+	historical_info = et_culture.112.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 813.1.1
+		to = 842.1.1
+		monthly_chance = 15
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:tours
+	}
+
+	option = {
+		name = et_culture.112.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.112.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:paris
+						location = location:rouen
+						location = location:reims
+						location = location:orleans
+						location = location:tours
+						location = location:strasbourg
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:gallo_roman
+							culture = culture:french
+							culture = culture:occitan
+							culture = culture:arpitan
+						}
+					}
+					change_language = language:french_language
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.112.b
+		add_prestige = -prestige_mild_bonus
+	}
+}
+
+# 13. Norman Settlement (MS 911-1000)
+et_culture.113 = {
+	type = country_event
+	title = et_culture.113.title
+	desc = et_culture.113.desc
+	outcome = neutral
+	historical_info = et_culture.113.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 911.1.1
+		to = 1000.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:caen
+	}
+
+	option = {
+		name = et_culture.113.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.113.tt
+			location:caen = {
+				add_pop = {
+					culture = culture:norman
+					religion = religion:catholic
+					type = pop_type:peasants
+					size = 2
+				}
+			}
+			location:cherbourg = {
+				add_pop = {
+					culture = culture:norman
+					religion = religion:catholic
+					type = pop_type:peasants
+					size = 2
+				}
+			}
+			location:bayeux = {
+				add_pop = {
+					culture = culture:norman
+					religion = religion:catholic
+					type = pop_type:peasants
+					size = 2
+				}
+			}
+			location:rouen = {
+				add_pop = {
+					culture = culture:norman
+					religion = religion:catholic
+					type = pop_type:peasants
+					size = 2
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.113.b
+		add_stability = -5
+	}
+}
+
 # ---- Copy-and-adapt template for region chains ----
 # et_culture.N = {
 # 	type = country_event
