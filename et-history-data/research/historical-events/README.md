@@ -1,4 +1,4 @@
-# Tarihsel Olaylar ve Kültür Dönüşümü Planı (M.S. 58 → 1837)
+# Tarihsel Olaylar ve Kültür Dönüşümü Planı (M.S. 58 → 2026)
 
 Bu doküman, 58 CE senaryosunda halkların, kültürlerin ve dinlerin tarihsel
 dönüşümünü sağlayacak **olay (script) katmanının** ve buna temel olacak **veri
@@ -16,6 +16,15 @@ grafiği düzeltmeleri ve **olay zinciri v1** hazır (`et_culture.1`–`.5` +
 satırı yok). Zincir doğrulaması (Test B) sırada. Samet'in inceleme commit'i (`f3d304d`) payları spec'e hizaladı; son-kimlik anahtar sahipliği ikinci incelemede (17 Ekim 2026) karara bağlandı — deltasız mod kopyaları geri alındı (vanilla içerik korunur), deltalılar vanilla birebir + delta olarak kaldı (design note §7, kararlar 7–8). Galya incelemesi (aynı gün): Samet'in `e271902` commit'i gözden geçirildi — boş `latin_language` kopyası geri alındı (vanilla `00_italy.txt` tanımı yüklenir); `french_group` kopyası vanilla'da da boş olduğundan zararsız bırakıldı (backlog UPDATE 4). Galya hattında
 `gallo_roman` ara kimliği ve pilot olaylar (`.101`–`.103`) yazıldı (Samet); Faz 2–3 olayları (`.104`–`.110`) incelendi — din/locasyon/efekt/prestij token'ları vanilla'ya göre düzeltildi (backlog UPDATE 5);
 numara rezervasyonu mutabık: Mısır `.1`–`.49`, Galya `.100`–`.149`.
+
+**Galya modern dönemi (Faz 7):** 18 Ekim 2026'da Galya zinciri `.119`–`.122` ile
+M.S. 2026'ya uzatıldı: Jules Ferry okul yasaları (1881-1882), Kilise-Devlet
+ayrılığı/laïcité (1905), Büyük Savaş ve Kutsal Birlik (1914-1918) ve Cumhuriyetin
+dili anayasal düzenlemesi (1992-2008). Yeni kaynaklar `wiki_jules_ferry_laws`,
+`wiki_separation_church_state_1905`, `wiki_sacred_union` ve `wiki_languages_of_france`
+olarak `sources.yml`'e eklendi; geçiş kayıtları
+`2026-10-17_gaul_culture_transition.yml` içinde `gaul_*` anahtarlarıyla yer alır.
+Test B (oyun içi zincir doğrulaması) hâlâ sırada.
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
@@ -188,6 +197,14 @@ Veri-önce kuralı, test protokolü, merge disiplini (bkz. bölüm 6).
 - **Faz 4 — Erken Modern ve Sanayi (1400–1837):** Kimlik konsolidasyonu ve
   sömürge dönemi; başlamadan önce vanilla sistemleriyle etkileşim incelemesi
   yapılır.
+
+**Galya zinciri (uygulama fazları):** Mısır hattından bağımsız yürüyen Galya olay
+zinciri şu uygulama fazlarına bölündü (numara rezervasyonu `.100`–`.149`):
+
+- **Faz 4 — Dil Ayrışması ve Normanlar (600–1000):** `et_culture.111`–`.113`
+- **Faz 5 — Yüksek Orta Çağ ve Fransız Krallığı (1000–1500):** `.114`–`.115`
+- **Faz 6 — Erken Modern ve Fransız Devrimi (1500–1837):** `.116`–`.118`
+- **Faz 7 — Modern ve Çağdaş Fransa (1837–2026):** `.119`–`.122`
 
 Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → oyun içi test
 → backlog senkronu.

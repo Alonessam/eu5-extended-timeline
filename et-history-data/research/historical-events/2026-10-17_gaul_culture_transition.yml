@@ -151,12 +151,67 @@ records:
     subject: modern_national_linguistic_homogenization
     finding: >-
       Through the Jules Ferry laws of 1881-1882, the French Third Republic establishes free,
-      mandatory, and strictly secular public primary education. The systematic prohibition
-      of regional languages and patois in schools turns regional peasant populations into
-      standard French speakers across France.
-    population: "All regional and provincial populations of France"
+      mandatory, and laic public primary education. Article 1 of the 1882 law makes "the
+      language and elements of French literature" a core subject, and provision expands
+      fastest in the least francophone regions (schooling in western Brittany grew by
+      nearly 200 percent between 1837 and 1906). Schooling, the railway, conscription and
+      the market together turn the regional peasant populations into standard French
+      speakers over the following two generations.
+    population: "All regional and provincial populations of France; Breton, Occitan, Arpitan and Norman speakers last"
     dating: {precision: period, date: "1881-1882", calendar: ce_year_normalized_to_et}
-    mechanism: universal compulsory primary education, linguistic centralism
-    source_refs: [{id: weber_peasants_into_frenchmen, locator: "Chapters 6, 18, 29"}]
+    mechanism: universal compulsory primary education, linguistic centralism, market and conscription integration
+    source_refs: [{id: weber_peasants_into_frenchmen, locator: "Chapters 6, 18, 29"}, {id: wiki_jules_ferry_laws, locator: "Laws of 1882, Article 1; History"}]
     confidence: high
-    integration: {status: pending, target: "events (Phase 4 modern consolidation layer)"}
+    integration: {status: applied, target: "events (et_culture.119)", note: "Partial shift - half of the remaining Breton-speaking population per firing; the war completes it."}
+
+  gaul_laicite_separation_1905:
+    entity: culture_french
+    subject: church_state_separation_and_secularization
+    finding: >-
+      The law of 9 December 1905 separates the churches from the state: the Republic no
+      longer recognises, funds or subsidises any religion, and church buildings become
+      public property. Laicite becomes a founding principle of the French state, though the
+      measure is divisive at the time (Pope Pius X condemns it in the 1906-1908
+      encyclicals, and reconciliation comes only in the 1920s). This is a state and
+      political-faith marker rather than a mass change of pop religion.
+    population: "French state and institutions; practising Catholic population most affected"
+    dating: {precision: year, date: "1905", calendar: ce_year_normalized_to_et}
+    mechanism: legislative separation of church and state (laicite)
+    source_refs: [{id: wiki_separation_church_state_1905, locator: "Article intro; History; Effects; Reactions by the Catholic Church"}]
+    confidence: high
+    integration: {status: applied, target: "events (et_culture.120)", note: "Modeled as a state policy choice; no direct pop religion conversion (no secular religion key exists)."}
+
+  gaul_great_war_union_sacree_1914_1918:
+    entity: culture_french
+    subject: national_identity_fusion_under_total_war
+    finding: >-
+      On 4 August 1914 President Raymond Poincare calls for a sacred union (union sacree)
+      of all Frenchmen against the German attack, and the left suspends its opposition and
+      strike pledges for the duration of the war. Men from every province serve side by
+      side in the trenches, completing the linguistic and national integration that the
+      republican school had begun; regional particularism fades further in the interwar
+      years.
+    population: "All French regions; the Breton-speaking interior last"
+    dating: {precision: period, date: "1914-1918", calendar: ce_year_normalized_to_et}
+    mechanism: mass mobilization, shared military service, wartime political truce
+    source_refs: [{id: wiki_sacred_union, locator: "Article intro; Poincare address of 4 August 1914"}, {id: weber_peasants_into_frenchmen, locator: "Chapters 18, 29"}]
+    confidence: medium
+    integration: {status: applied, target: "events (et_culture.121)", note: "Completes the Breton-to-French shift left open by the school event."}
+
+  gaul_language_of_the_republic_1992_2008:
+    entity: culture_french
+    subject: regional_language_recognition_and_jacobin_principle
+    finding: >-
+      The Fifth Republic fixes in article 2 of the constitution that the language of the
+      Republic is French (1992). The 1999 Cerquiglini report identifies 75 languages
+      eligible for recognition under the European Charter for Regional or Minority
+      Languages, but the Constitutional Council blocks ratification; the 2008 revision adds
+      only that regional languages belong to the patrimony of France (art. 75-1). Regional
+      languages (Breton, Occitan, Alsatian, Basque, Corsican) survive as minority and
+      patrimonial speech, not as everyday majorities.
+    population: "Regional-language speakers; a shrinking share of the national population"
+    dating: {precision: period, date: "1992-2008", calendar: ce_year_normalized_to_et}
+    mechanism: constitutional entrenchment of French, limited recognition of regional languages
+    source_refs: [{id: wiki_languages_of_france, locator: "Status (constitution art. 2; 1999 report; 2008 art. 75-1); Statistics (INSEE 1999)"}]
+    confidence: high
+    integration: {status: applied, target: "events (et_culture.122)", note: "Slow late window; a policy choice rather than a pop change."}

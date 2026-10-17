@@ -1742,6 +1742,169 @@ et_culture.118 = {
 	}
 }
 
+# ===========================================================================
+# GAUL PHASE 7 EVENTS (WS4: et_culture.119 - et_culture.122)
+# Period: Modern & Contemporary France (MS 1837-2026)
+# Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
+# ===========================================================================
+
+# 19. The Ferry Laws & the Republican School (MS 1881-1882)
+et_culture.119 = {
+	type = country_event
+	title = et_culture.119.title
+	desc = et_culture.119.desc
+	outcome = good
+	historical_info = et_culture.119.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = FRA
+		from = 1881.1.1
+		to = 1883.1.1
+		monthly_chance = 25
+	}
+
+	trigger = {
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.119.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.119.tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:breton
+					}
+					split_pop = {
+						fraction = 0.5
+						culture = culture:french
+					}
+				}
+			}
+		}
+		add_prestige = prestige_extreme_bonus
+	}
+
+	option = {
+		name = et_culture.119.b
+		add_stability = -10
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 20. The Separation of Church and State (MS 1905)
+et_culture.120 = {
+	type = country_event
+	title = et_culture.120.title
+	desc = et_culture.120.desc
+	outcome = neutral
+	historical_info = et_culture.120.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = FRA
+		from = 1905.1.1
+		to = 1906.1.1
+		monthly_chance = 20
+	}
+
+	trigger = {
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.120.a
+		historical_option = yes
+		add_prestige = prestige_mild_bonus
+		add_stability = -5
+	}
+
+	option = {
+		name = et_culture.120.b
+		add_stability = 10
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 21. The Great War & the Union Sacrée (MS 1914-1918)
+et_culture.121 = {
+	type = country_event
+	title = et_culture.121.title
+	desc = et_culture.121.desc
+	outcome = good
+	historical_info = et_culture.121.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = FRA
+		from = 1914.1.1
+		to = 1919.1.1
+		monthly_chance = 15
+	}
+
+	trigger = {
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.121.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.121.tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:breton
+					}
+					change_pop_culture = culture:french
+				}
+			}
+		}
+		add_prestige = prestige_extreme_bonus
+	}
+
+	option = {
+		name = et_culture.121.b
+		add_stability = -10
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 22. The Language of the Republic (MS 1992-2008)
+et_culture.122 = {
+	type = country_event
+	title = et_culture.122.title
+	desc = et_culture.122.desc
+	outcome = neutral
+	historical_info = et_culture.122.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = FRA
+		from = 1992.1.1
+		to = 2000.1.1
+		monthly_chance = 8
+	}
+
+	trigger = {
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.122.a
+		historical_option = yes
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.122.b
+		add_stability = -5
+	}
+}
+
 # ---- Copy-and-adapt template for region chains ----
 # et_culture.N = {
 # 	type = country_event

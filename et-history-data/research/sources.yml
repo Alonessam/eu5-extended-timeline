@@ -480,3 +480,31 @@ sources:
     type: monograph
     url: https://en.wikipedia.org/wiki/Peasants_into_Frenchmen
     locator: Chapters 6, 18, 29 (Linguistic unification and schooling)
+  wiki_jules_ferry_laws:
+    title: Jules Ferry laws
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Jules_Ferry_laws
+    locator: Article intro; History; Laws of 1881 and 1882 (Article 1 curriculum)
+    caveat: The 1881-1882 laws made primary schooling free, mandatory and laic; the suppression of regional languages in school was a practice of the period rather than an explicit clause of the laws.
+  wiki_separation_church_state_1905:
+    title: 1905 French law on the Separation of the Churches and the State
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/1905_French_law_on_the_Separation_of_the_Churches_and_the_State
+    locator: Article intro; History; Effects; Reactions by the Catholic Church
+    caveat: The law did not apply in Alsace-Moselle (then German); public acceptance grew only gradually after the papal condemnations of 1906-1908.
+  wiki_sacred_union:
+    title: Sacred Union (Union sacrée)
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Sacred_Union
+    locator: Article intro; Poincare address of 4 August 1914
+    caveat: A wartime political truce; its contribution to national identity is a historiographical argument, not a measured population change.
+  wiki_languages_of_france:
+    title: Languages of France
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Languages_of_France
+    locator: Article intro; Status (constitution art. 2; 1999 report; 2008 art. 75-1); Statistics (INSEE 1999)
+    caveat: Speaker figures are survey estimates; the 1789 and 1871 French-speaker shares are scholarly reconstruction.

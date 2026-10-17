@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: "2026-10-17"
+updated_on: "2026-10-18"
 tasks:
   roman_succession_dates:
     period_id: ancient
@@ -257,6 +257,25 @@ tasks:
       culture uses the undefined iberian_gfx tag, and the french_* colonial
       cultures use the malformed color = color = rgb {...} (filed under
       invalid_culture_gfx_tags and script_token_audit).
+      UPDATE 7 (2026-10-18, Gaul Phase 7): the closing Gaul phase
+      (et_culture.119-122, Modern & Contemporary France 1837-2026) was added
+      data-first: four sourced records (gaul_jules_ferry_modern_unification_1881
+      updated to applied; gaul_laicite_separation_1905;
+      gaul_great_war_union_sacree_1914_1918;
+      gaul_language_of_the_republic_1992_2008) plus four new sources in
+      sources.yml (wiki_jules_ferry_laws, wiki_separation_church_state_1905,
+      wiki_sacred_union, wiki_languages_of_france), each verified as a live
+      en.wikipedia article. The Gaul chain now runs to MS 2026: the Ferry laws
+      shift half of the remaining Breton-speaking population to french via
+      split_pop.fraction with a culture argument (verified vanilla pattern
+      settle_the_frontier.txt:150) as the Republican school spreads; the 1905
+      separation of church and state is modeled as a state policy choice (no
+      secular religion key exists, so no pop conversion is attempted); the Great
+      War completes the breton -> french shift (change_pop_culture); and the
+      1992-2008 constitutional language settlement is a late, slow choice.
+      English and Turkish localization were added for all four events. The Gaul
+      event phases are now documented in the plan README (Faz 4-7), which was
+      retitled 58 -> 2026 to match the extended campaign. Test B remains pending.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -331,3 +350,18 @@ tasks:
       field names and scope links, using the vanilla script corpus as ground
       truth.
     acceptance: Each scanned script either uses only tokens verified against vanilla data or carries a documented mod-defined token; findings are fixed or filed as tasks with the offending token and source line.
+  gaul_postwar_immigration_layer:
+    period_id: contemporary
+    priority: 3
+    state: pending
+    targets: [research/historical-events/2026-10-17_gaul_culture_transition.yml, "Extended Timeline/in_game/events/et_culture_events.txt"]
+    source_refs: [wiki_languages_of_france]
+    question: Should the postwar immigration wave (1945-1975; Maghrebi, Portuguese, Italian and other labour migration into French cities) receive a culture or religion event in the Gaul chain?
+    evidence: >-
+      The Languages of France record lists Arabic (about 3.6 percent of mother
+      tongues), Berber, Portuguese, Spanish, Italian and Turkish as the main
+      immigrant languages of modern France, but the Gaul chain has no event for
+      the demographic change itself. Adding one needs valid immigrant culture
+      keys and a scoped add_pop pattern; the 1905 laicite event already notes
+      that no secular religion key exists.
+    acceptance: Only add if a source-backed culture-key path exists; do not invent immigrant culture or religion keys.
