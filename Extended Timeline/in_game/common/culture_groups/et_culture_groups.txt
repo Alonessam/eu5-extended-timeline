@@ -12,3 +12,6 @@ western_balkan_group = {
 
 continental_celtic_group = {
 }
+
+french_group = {
+}
