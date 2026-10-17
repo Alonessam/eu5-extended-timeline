@@ -201,6 +201,15 @@ tasks:
       + language = coptic_language); the .5 upper-Egypt resistance returns to the
       spec value 0.15. Invalid gfx tags from the removed blocks dropped with them;
       the remainder stays in invalid_culture_gfx_tags. Test B remains the next step.
+      UPDATE 4 (2026-10-17, Gaul-side review): Samet's e271902 (french_group and
+      latin_language additions for the Gaul pilot) was reviewed under the same
+      ownership rule. The empty latin_language copy in 00_et_celtic.txt would
+      shadow the vanilla definition (00_italy.txt: Latin name pools, romance
+      family, greek fallback and the roman/church dialects referenced elsewhere)
+      and was removed so the vanilla definition loads; the french_group addition
+      in et_culture_groups.txt is a harmless duplicate (vanilla's french_group
+      body is empty too) and was left in place. The recurring mod-internal
+      key-closure pattern now has a dedicated task, vanilla_key_shadow_review.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -233,3 +242,24 @@ tasks:
       Valid neighbours include middle_east_gfx, arabian_gfx, maghrebi_gfx,
       persian_gfx and egyptian_gfx.
     acceptance: Replace only with tags verified in the vanilla list; keep regional intent reviewed by maintainers; graphics fallback is the expected current effect.
+  vanilla_key_shadow_review:
+    period_id: ancient
+    priority: 3
+    state: pending
+    targets: [Extended Timeline/in_game/common]
+    source_refs: []
+    question: Which additive (et_-prefixed) mod files redefine keys that already exist in vanilla, and does any redefinition drop vanilla content instead of carrying a deliberate, documented delta?
+    evidence: >-
+      The 2026-10-17 reviews established the delta-vs-shadow rule after two
+      incidents: f3d304d materialized empty or simplified copies of vanilla-owned
+      keys (arabic/coptic language, lower/upper egyptian culture, miaphysite),
+      resolved the same day per the historical_events task, UPDATE 3; e271902
+      added an empty latin_language copy in 00_et_celtic.txt, removed the same
+      day, plus a harmless empty french_group duplicate (vanilla body is empty
+      too). The key_overlap scan lists raw intersections only and is dominated by
+      deliberate same-name file replacements (east_asia.txt, british.txt,
+      baltic.txt, ...), so the audit must exclude same-named files first and then
+      judge each remaining additive redefinition; the pre-existing
+      hellenism_religion, alan_paganism, aramaic_language and gothic_language
+      redefinitions are believed intentional but are unreviewed under this rule.
+    acceptance: Every remaining additive redefinition is kept only as a verbatim vanilla copy plus a documented delta, or removed so the vanilla definition loads; the audit note lists each kept redefinition and its delta.
