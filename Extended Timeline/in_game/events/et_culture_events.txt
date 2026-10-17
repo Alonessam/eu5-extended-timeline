@@ -819,6 +819,249 @@ et_culture.103 = {
 	}
 }
 
+# ===========================================================================
+# GAUL PHASE 2 EVENTS (WS4: et_culture.104 - et_culture.107)
+# Period: Crisis of the Third Century & Christianization (MS 250-500)
+# Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
+# ===========================================================================
+
+# 4. Imperium Galliarum (MS 260-274)
+et_culture.104 = {
+	type = country_event
+	title = et_culture.104.title
+	desc = et_culture.104.desc
+	outcome = neutral
+	historical_info = et_culture.104.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 260.1.1
+		to = 274.1.1
+		monthly_chance = 20
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:lyon
+	}
+
+	option = {
+		name = et_culture.104.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.104.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:lyon
+						location = location:paris
+						location = location:bordeaux
+						location = location:toulouse
+						location = location:nimes
+						location = location:arles
+						location = location:marseille
+						location = location:reims
+						location = location:rouen
+					}
+				}
+				every_pop = {
+					limit = {
+						culture = culture:gallian
+						OR = {
+							pop_type = pop_type:nobles
+							pop_type = pop_type:clergy
+							pop_type = pop_type:burghers
+						}
+					}
+					change_pop_culture = culture:gallo_roman
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.104.b
+		add_stability = -10
+		add_prestige = -prestige_mild_bonus
+	}
+}
+
+# 5. Lugdunum Martyrs & Urban Christianization (MS 177-350)
+et_culture.105 = {
+	type = country_event
+	title = et_culture.105.title
+	desc = et_culture.105.desc
+	outcome = good
+	historical_info = et_culture.105.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 177.1.1
+		to = 350.1.1
+		monthly_chance = 15
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:lyon
+	}
+
+	option = {
+		name = et_culture.105.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.105.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:lyon
+						location = location:paris
+						location = location:bordeaux
+						location = location:toulouse
+						location = location:nimes
+						location = location:arles
+						location = location:marseille
+						location = location:reims
+						location = location:rouen
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							pop_type = pop_type:nobles
+							pop_type = pop_type:clergy
+							pop_type = pop_type:burghers
+						}
+					}
+					change_pop_religion = religion:chalcedonism
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.105.b
+		add_stability = -5
+		add_prestige = -prestige_mild_bonus
+	}
+}
+
+# 6. Martin of Tours & Rural Christianization (MS 371-400)
+et_culture.106 = {
+	type = country_event
+	title = et_culture.106.title
+	desc = et_culture.106.desc
+	outcome = good
+	historical_info = et_culture.106.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 371.1.1
+		to = 400.1.1
+		monthly_chance = 15
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:lyon
+	}
+
+	option = {
+		name = et_culture.106.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.106.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:lyon
+						location = location:paris
+						location = location:bordeaux
+						location = location:toulouse
+						location = location:nimes
+						location = location:arles
+						location = location:marseille
+						location = location:reims
+						location = location:rouen
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							pop_type = pop_type:craftsmen
+							pop_type = pop_type:peasants
+						}
+					}
+					change_pop_religion = religion:chalcedonism
+				}
+			}
+		}
+		add_stability = 10
+	}
+
+	option = {
+		name = et_culture.106.b
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+# 7. Breton Migration to Armorica (MS 380-500)
+et_culture.107 = {
+	type = country_event
+	title = et_culture.107.title
+	desc = et_culture.107.desc
+	outcome = neutral
+	historical_info = et_culture.107.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 380.1.1
+		to = 500.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:nantes
+	}
+
+	option = {
+		name = et_culture.107.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.107.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:rennes
+						location = location:nantes
+						location = location:brest
+						location = location:saint_malo
+					}
+				}
+				every_pop = {
+					limit = {
+						culture = culture:gallian
+					}
+					change_pop_culture = culture:breton
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.107.b
+		add_stability = -5
+	}
+}
+
 # ---- Copy-and-adapt template for region chains ----
 # et_culture.N = {
 # 	type = country_event
