@@ -232,6 +232,31 @@ tasks:
       records (christianization, Clovis) are still marked pending and the
       Rhine-crossing event has no record yet - record upkeep stays with the Gaul
       track; the new script_token_audit task covers the remaining scripts.
+      UPDATE 6 (2026-10-18, Gaul Phase 4/5/6 review): the Gaul Phases 4-6 chain
+      (et_culture.111-118; Phases 4 and 5 pushed as 2ca31cc and f980839, Phase 6
+      still local) was reviewed line by line against vanilla data and five defect
+      classes were fixed. (1) Six invalid prestige negations
+      (add_prestige = -prestige_mild_bonus / -prestige_mild_penalty): named
+      constants cannot be negated (default_values.txt defines the values and
+      vanilla only writes add_prestige = -<number>), so all six became
+      add_prestige = prestige_mild_penalty. (2) Events .112 and .116 used
+      change_language on pop scope with a language: argument; vanilla
+      (000_johan_debug.txt:233, flavor_NAV.txt:216) shows change_language is a
+      culture-scope effect taking dialect:<key>, so both now use
+      culture:<key> = { change_language = dialect:french_language } and the
+      tooltips were aligned. (3) et_french.txt shadowed the vanilla-owned french,
+      arpitan and norman cultures (common/cultures/french.txt defines all three)
+      with stripped copies that also referenced the non-existent
+      arpitan_language / norman_language keys; the three blocks were removed so
+      the vanilla definitions load, and only the new occitan key remains.
+      (4) occitan carried the undefined southern_european_gfx tag, replaced with
+      the vanilla occitan_gfx tag set. (5) Turkish localization grammar/typos
+      fixed (.113.a, .115.desc, .116.desc kanziye->kançılaryası, .118.desc,
+      .118.historical_info, .112.tt). Residual pre-existing issues found while
+      reviewing et_french.txt are left for the audit tasks: the aquitanian
+      culture uses the undefined iberian_gfx tag, and the french_* colonial
+      cultures use the malformed color = color = rgb {...} (filed under
+      invalid_culture_gfx_tags and script_token_audit).
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -251,7 +276,7 @@ tasks:
     period_id: ancient
     priority: 3
     state: pending
-    targets: [Extended Timeline/in_game/common/cultures/et_egypt.txt, Extended Timeline/in_game/common/cultures/et_missing.txt]
+    targets: [Extended Timeline/in_game/common/cultures/et_egypt.txt, Extended Timeline/in_game/common/cultures/et_missing.txt, Extended Timeline/in_game/common/cultures/et_french.txt]
     source_refs: []
     question: Which mod culture files use gfx tags that are not defined in the vanilla graphical culture types list?
     evidence: >-
@@ -262,7 +287,9 @@ tasks:
       and steppe_gfx (et_missing.txt:156) are absent as well (the arabic_gfx
       usages were removed on 2026-10-17 together with the shadow culture blocks).
       Valid neighbours include middle_east_gfx, arabian_gfx, maghrebi_gfx,
-      persian_gfx and egyptian_gfx.
+      persian_gfx and egyptian_gfx. The 2026-10-18 Gaul Phase 4/5/6 review fixed
+      southern_european_gfx (et_french.txt, occitan -> occitan_gfx) and flagged
+      iberian_gfx (et_french.txt:42, aquitanian) as a further undefined tag.
     acceptance: Replace only with tags verified in the vanilla list; keep regional intent reviewed by maintainers; graphics fallback is the expected current effect.
   vanilla_key_shadow_review:
     period_id: ancient

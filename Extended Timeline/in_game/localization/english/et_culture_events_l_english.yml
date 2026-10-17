@@ -122,7 +122,7 @@
  et_culture.112.a: "Let the word be spoken in the people's tongue."
  et_culture.112.b: "Latin is the language of God."
  et_culture.112.historical_info: "The Council of Tours (813) mandated preaching in the vernacular Romance language. The Strasbourg Oaths (842) are the earliest written document in a Romance vernacular distinct from Latin, marking the birth of French as a literary language."
- et_culture.112.tt: "The Gallo-Roman, French, Occitan, and Arpitan populations adopt the French language."
+ et_culture.112.tt: "The Gallo-Roman population adopts the French tongue."
 
  et_culture.113.title: "The Northmen in Normandy"
  et_culture.113.desc: "By the treaty of Saint-Clair-sur-Epte (911), the Viking leader Rollo kneels before King Charles the Simple and receives the lands that will become Normandy. Within two generations, the Northmen speak French, worship Christ, and become the most formidable warriors of the Frankish realm."
@@ -144,3 +144,24 @@
  et_culture.115.b: "The old provincial identities must endure."
  et_culture.115.historical_info: "The Hundred Years' War (1337-1453) between England and France forged a unified French national identity. Joan of Arc's campaigns (1429) turned the tide, and by the war's end, the French language and identity had supplanted regional particularisms."
  et_culture.115.tt: "The Norman and Arpitan populations adopt the French culture and identity."
+
+ et_culture.116.title: "The Edict of Villers-Cotterêts"
+ et_culture.116.desc: "King Francis I decrees that all legal documents, court records, and royal charters shall be written in French, not Latin. The chancery of the realm turns from the language of the Roman Empire to the language of the French people. Henceforth, justice, administration, and law shall speak the tongue of Paris."
+ et_culture.116.a: "French is the language of the realm."
+ et_culture.116.b: "Latin is the language of law."
+ et_culture.116.historical_info: "The Edict of Villers-Cotterêts (1539), signed by Francis I, mandated the use of French (langue françoise) instead of Latin in all legal and administrative documents, establishing French as the official language of the French state."
+ et_culture.116.tt: "The French, Occitan, Arpitan, and Norman populations adopt the French language."
+
+ et_culture.117.title: "The Wars of Religion"
+ et_culture.117.desc: "France bleeds. Calvinist Huguenot and Catholic armies tear the kingdom apart in an endless cycle of massacre and reprisal — St. Bartholomew's Day, the Wars of Religion. At last Henry IV issues the Edict of Nantes granting toleration, and after his assassination, Louis XIV tears it up. The Protestants flee; the kingdom is one faith again."
+ et_culture.117.a: "One king, one law, one faith."
+ et_culture.117.b: "Let the Huguenots keep their faith."
+ et_culture.117.historical_info: "The French Wars of Religion (1562-1598) between Catholics and Huguenots (Calvinists) devastated France. The Edict of Nantes (1598) granted toleration, but Louis XIV's Edict of Fontainebleau (1685) revoked it, leading to mass Protestant emigration."
+ et_culture.117.tt: "The Calvinist population adopts Catholicism."
+
+ et_culture.118.title: "The One and Indivisible Republic"
+ et_culture.118.desc: "The Revolution proclaims a nation that is one and indivisible. Abbé Grégoire presents his report on the need to destroy the regional dialects — Breton, Occitan, Basque, Alsatian — which are condemned as feudal relics. French alone shall be spoken in the schools of the Republic. The last provincial identities are melted into the universal citizen."
+ et_culture.118.a: "One nation, one language: French."
+ et_culture.118.b: "The provinces must keep their tongues."
+ et_culture.118.historical_info: "The French Revolution (1789-1799) pursued linguistic unification. Abbé Henri Grégoire's 1794 report 'On the necessity and means of annihilating the patois and universalizing the French language' called for the suppression of regional languages. Universal education spread standard French at the expense of local identities."
+ et_culture.118.tt: "The Occitan, Arpitan, and Norman populations adopt the French culture."

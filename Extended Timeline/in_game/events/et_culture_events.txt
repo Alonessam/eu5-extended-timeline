@@ -1374,36 +1374,16 @@ et_culture.112 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.112.tt
-			every_owned_location = {
-				limit = {
-					OR = {
-						location = location:paris
-						location = location:rouen
-						location = location:reims
-						location = location:orleans
-						location = location:tours
-						location = location:strasbourg
-					}
-				}
-				every_pop = {
-					limit = {
-						OR = {
-							culture = culture:gallo_roman
-							culture = culture:french
-							culture = culture:occitan
-							culture = culture:arpitan
-						}
-					}
-					change_language = language:french_language
-				}
-			}
+		}
+		culture:gallo_roman = {
+			change_language = dialect:french_language
 		}
 		add_prestige = prestige_mild_bonus
 	}
 
 	option = {
 		name = et_culture.112.b
-		add_prestige = -prestige_mild_bonus
+		add_prestige = prestige_mild_penalty
 	}
 }
 
@@ -1529,7 +1509,7 @@ et_culture.114 = {
 	option = {
 		name = et_culture.114.b
 		add_stability = -10
-		add_prestige = -prestige_mild_bonus
+		add_prestige = prestige_mild_penalty
 	}
 }
 
@@ -1586,7 +1566,179 @@ et_culture.115 = {
 	option = {
 		name = et_culture.115.b
 		add_stability = -10
-		add_prestige = -prestige_mild_penalty
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# ===========================================================================
+# GAUL PHASE 6 EVENTS (WS4: et_culture.116 - et_culture.118)
+# Period: Early Modern & French Revolution (MS 1500-1837)
+# ===========================================================================
+
+# 16. Villers-Cotterêts Edict (MS 1539)
+et_culture.116 = {
+	type = country_event
+	title = et_culture.116.title
+	desc = et_culture.116.desc
+	outcome = good
+	historical_info = et_culture.116.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = FRA
+		from = 1539.1.1
+		to = 1540.1.1
+		monthly_chance = 25
+	}
+
+	trigger = {
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.116.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.116.tt
+		}
+		culture:gallo_roman = {
+			change_language = dialect:french_language
+		}
+		culture:occitan = {
+			change_language = dialect:french_language
+		}
+		culture:arpitan = {
+			change_language = dialect:french_language
+		}
+		culture:norman = {
+			change_language = dialect:french_language
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.116.b
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 17. Wars of Religion & the Edict of Nantes (MS 1562-1685)
+et_culture.117 = {
+	type = country_event
+	title = et_culture.117.title
+	desc = et_culture.117.desc
+	outcome = neutral
+	historical_info = et_culture.117.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = FRA
+		from = 1562.1.1
+		to = 1685.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.117.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.117.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:paris
+						location = location:rouen
+						location = location:orleans
+						location = location:tours
+						location = location:nantes
+						location = location:bordeaux
+						location = location:toulouse
+					}
+				}
+				every_pop = {
+					limit = {
+						religion = religion:calvinist
+					}
+					change_pop_religion = religion:catholic
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.117.b
+		add_stability = -10
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 18. French Revolution & Abbé Grégoire's Report (MS 1789-1794)
+et_culture.118 = {
+	type = country_event
+	title = et_culture.118.title
+	desc = et_culture.118.desc
+	outcome = good
+	historical_info = et_culture.118.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = FRA
+		from = 1789.1.1
+		to = 1794.1.1
+		monthly_chance = 15
+	}
+
+	trigger = {
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.118.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.118.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:paris
+						location = location:rouen
+						location = location:reims
+						location = location:orleans
+						location = location:tours
+						location = location:caen
+						location = location:nantes
+						location = location:toulouse
+						location = location:bordeaux
+						location = location:lyon
+						location = location:marseille
+						location = location:nimes
+						location = location:arles
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:occitan
+							culture = culture:arpitan
+							culture = culture:norman
+						}
+					}
+					change_pop_culture = culture:french
+				}
+			}
+		}
+		add_prestige = prestige_extreme_bonus
+	}
+
+	option = {
+		name = et_culture.118.b
+		add_stability = -10
+		add_prestige = prestige_mild_penalty
 	}
 }
 
