@@ -530,14 +530,14 @@ records:
     source_refs: [{id: wiki_han_economy, locator: "Urbanization and population"}, {id: wiki_urban_sizes, locator: "Luoyang rows"}]
     confidence: high
     integration: {status: applied, target: locations/asia/east_asia/north_china_region/henan_area/luoyang.yml, note: "City and market flags added to the 58.2.1 block."}
-  xianyang_city_58ce:
-    entity: loc_xianyang
+  jingzhao_city_58ce:
+    entity: loc_jingzhao
     subject: city_and_market_58ce
     finding: Chang'an, the Western Han imperial capital, with approximately 250,000 inhabitants; among the largest cities in the world at the time.
     dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
     source_refs: [{id: wiki_han_economy, locator: "Urbanization and population"}, {id: wiki_urban_sizes, locator: "Chang'an/Xi'an row"}]
     confidence: high
-    integration: {status: applied, target: locations/asia/east_asia/west_china_region/shaanxi_area/xianyang.yml, note: "Tile named Xianyang (the Qin capital adjacent to the Han capital site); Xi'an does not exist as a separate tile. City and market flags added to the 58.2.1 block."}
+    integration: {status: applied, target: locations/asia/east_asia/west_china_region/shaanxi_area/jingzhao.yml, note: "Tile audit 2026-10-17: the Han capital site is the jingzhao tile (metropolis pop profile in 06_pops); the changan key belongs to a Guangxi homonym village. City and market flags relocated here from xianyang (the separate Qin-capital city tile); the xianyang 58.2.1 block was removed."}
   chengdu_city_58ce:
     entity: loc_chengdu
     subject: city_and_market_58ce
