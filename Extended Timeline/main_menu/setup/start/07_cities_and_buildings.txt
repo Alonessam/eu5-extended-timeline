@@ -8,8 +8,7 @@ locations={
 	antioch = { rank = megalopolis town_setup = levant_city } # Queen of the East, Roman Syria provincial capital (~400k pop)
 	baghdad = { rank = megalopolis town_setup = central_asian_city } # Seleucia-on-Tigris & Ctesiphon, Parthian dual capital (~500k pop)
 	luoyang = { rank = megalopolis town_setup = chinese_city } # Imperial Capital of Eastern Han Dynasty under Emperor Ming (~500k pop)
-	changan = { rank = megalopolis town_setup = chinese_city } # Former Western Han capital, great Silk Road terminus (~400k pop)
-	# TODO(dual-tile): confirm changan vs xianyang targeting for the Han capital (58 AD data).
+	xianyang = { rank = megalopolis town_setup = chinese_city } # Chang'an & Xianyang, Western Han imperial metropolis & Silk Road terminus (~400k pop)
 	patna = { rank = megalopolis town_setup = indian_city } # Pataliputra, ancient imperial metropolis on the Ganges (~400k pop)
 
 	# ==============================================================================
@@ -83,8 +82,7 @@ locations={
 	karima = { rank = city town_setup = sahel_city } # Napata, ancient sacred royal Kushite city at Jebel Barkal
 
 	# Parthia, Mesopotamia & Iranian Plateau
-	susa = { rank = city town_setup = central_asian_city } # Susa, ancient Elamite and Persian royal residence
-	# TODO(dual-tile): confirm Susa mapping (shush twin tile left without rank).
+	shush = { rank = city town_setup = central_asian_city } # Susa (Shush), ancient Elamite and Persian royal metropolis of Elymais
 	hamadan = { rank = city town_setup = central_asian_city } # Ecbatana, Arsacid Parthian royal summer capital
 	rey = { rank = city town_setup = central_asian_city } # Rhages / Rayy, key northern Iranian Silk Road hub
 	merv = { rank = city town_setup = central_asian_city } # Antiochia Margiana, pearl of Central Asian trade
@@ -116,10 +114,8 @@ locations={
 
 	# East Asia & Americas
 	chengdu = { rank = city town_setup = chinese_city } # Shu brocade, lacquer & iron metropolis of Sichuan
-	suzhou = { rank = city town_setup = chinese_coastal_city } # Wu, premier textile & canal hub of lower Yangtze
-	# TODO(dual-tile): confirm Wu/Suzhou mapping (wuxian twin tile left without rank).
-	guangzhou = { rank = city town_setup = chinese_coastal_city } # Panyu, southern maritime gateway of the Han Empire
-	# TODO(dual-tile): confirm ancient Panyu mapping (panyu twin tile left without rank).
+	wuxian = { rank = city town_setup = chinese_coastal_city } # Wu (Wuxian / Suzhou), premier textile, silk & canal hub of lower Yangtze
+	guangzhou = { rank = city town_setup = chinese_coastal_city } # Panyu (Guangzhou), southern maritime gateway of the Han Empire
 	thang_long = { rank = city town_setup = chinese_city } # Longbian / Jiaozhi, administrative center of Han Vietnam
 	handan = { rank = city town_setup = chinese_city } # Major northern iron & commercial center of Han China
 	linzhang = { rank = city town_setup = chinese_city } # Ye, major city of the Hebei plain (late Han 120k-140k)
@@ -164,7 +160,6 @@ locations={
 	najran = { rank = town town_setup = levant_town } # Ancient oasis emporium on the Frankincense trail
 	damghan = { rank = town town_setup = central_asian_town } # Hecatompylos, ancient Arsacid capital in Parthia
 	bukhara = { rank = town town_setup = central_asian_town } # Ancient Sogdian trading oasis
-	xianyang = { rank = town town_setup = chinese_town } # Ancient Qin capital satellite of Chang'an
 	kaifeng = { rank = town town_setup = chinese_town } # Commercial center on the Yellow River plain
 	youzhou = { rank = town town_setup = chinese_town } # Ji / Youzhou, northern frontier garrison hub
 	gwangju = { rank = town town_setup = korea_town } # Ancient Mahan proto-state center

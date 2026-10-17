@@ -140,7 +140,7 @@ development = {
 	alexandria = 14 # Hellenistic-Egyptian trade, science & naval metropolis (~600k pop)
 	luoyang = 14 # Capital of Eastern Han Empire (~500k pop)
 	antioch = 12 # Queen of the East, Syria (~400k pop)
-	changan = 12 # Great Silk Road imperial capital (~400k pop)
+	xianyang = 12 # Chang'an & Xianyang, Guanzhong imperial capital (~400k pop)
 	baghdad = 12 # Seleucia-on-Tigris & Ctesiphon (~500k pop)
 	patna = 12 # Pataliputra, Ganges imperial metropolis (~400k pop)
 
@@ -178,7 +178,7 @@ development = {
 	constantinople = 6 # Byzantium, Bosphorus strait trade
 
 	# Iranian Plateau, Central Asia & India
-	susa = 6 # Ancient Elamite/Persian royal city
+	shush = 6 # Susa (Shush), ancient Elamite/Persian royal city
 	hamadan = 6 # Ecbatana, Arsacid summer capital
 	rey = 5 # Rhages / Rayy
 	merv = 5 # Antiochia Margiana
@@ -202,7 +202,7 @@ development = {
 
 	# East Asia, Africa & Americas
 	chengdu = 6 # Shu iron, lacquer & brocade metropolis
-	suzhou = 6 # Wu canal & textile hub
+	wuxian = 6 # Wu (Wuxian), lower Yangtze canal & silk hub
 	guangzhou = 5 # Panyu, southern maritime gateway
 	thang_long = 5 # Longbian, Han Jiaozhi
 	handan = 5 # Han northern iron center

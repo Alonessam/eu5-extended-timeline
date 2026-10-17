@@ -17321,6 +17321,9 @@ locations={
 	tamentfoust = {
 		legalism = yes
 	}
+	tamluk = {
+		legalism = yes
+	}
 	tammisha = {
 		legalism = yes
 	}
