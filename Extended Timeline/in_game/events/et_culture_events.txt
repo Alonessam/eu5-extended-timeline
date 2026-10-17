@@ -1062,6 +1062,179 @@ et_culture.107 = {
 	}
 }
 
+# ===========================================================================
+# GAUL PHASE 3 EVENTS (WS4: et_culture.108 - et_culture.110)
+# Period: Migration Period & Frankish Supremacy (MS 406-600)
+# ===========================================================================
+
+# 8. Rhine Crossing & Germanic Settlement (MS 406-443)
+et_culture.108 = {
+	type = country_event
+	title = et_culture.108.title
+	desc = et_culture.108.desc
+	outcome = neutral
+	historical_info = et_culture.108.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 406.1.1
+		to = 443.1.1
+		monthly_chance = 15
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+	}
+
+	option = {
+		name = et_culture.108.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.108.tt
+			add_migration = {
+				culture = culture:burgundian
+				religion = religion:arianism
+				locations = {
+					location:geneva
+					location:lyon
+				}
+			}
+			add_migration = {
+				culture = culture:visigoth
+				religion = religion:arianism
+				locations = {
+					location:toulouse
+					location:bordeaux
+				}
+			}
+			add_migration = {
+				culture = culture:vandal
+				religion = religion:arianism
+				locations = {
+					location:marseille
+					location:nimes
+				}
+			}
+		}
+		add_stability = -5
+	}
+
+	option = {
+		name = et_culture.108.b
+		add_stability = -10
+	}
+}
+
+# 9. Fall of Soissons: End of Roman Gaul (MS 457-486)
+et_culture.109 = {
+	type = country_event
+	title = et_culture.109.title
+	desc = et_culture.109.desc
+	outcome = good
+	historical_info = et_culture.109.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 457.1.1
+		to = 486.1.1
+		monthly_chance = 20
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:soissons
+	}
+
+	option = {
+		name = et_culture.109.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.109.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:soissons
+						location = location:paris
+						location = location:reims
+						location = location:rouen
+					}
+				}
+				every_pop = {
+					limit = {
+						culture = culture:gallo_roman
+					}
+					change_pop_culture = culture:frankish
+				}
+			}
+		}
+		add_prestige = prestige_major_bonus
+	}
+
+	option = {
+		name = et_culture.109.b
+		add_stability = -10
+		add_prestige = -prestige_mild_bonus
+	}
+}
+
+# 10. Baptism of Clovis: Frankish-Gallo-Roman Fusion (MS 496-508)
+et_culture.110 = {
+	type = country_event
+	title = et_culture.110.title
+	desc = et_culture.110.desc
+	outcome = good
+	historical_info = et_culture.110.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 496.1.1
+		to = 508.1.1
+		monthly_chance = 20
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:soissons
+	}
+
+	option = {
+		name = et_culture.110.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.110.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:paris
+						location = location:soissons
+						location = location:reims
+						location = location:rouen
+						location = location:orleans
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:gallo_roman
+							culture = culture:frankish
+						}
+					}
+					change_pop_religion = religion:catholicism
+				}
+			}
+		}
+		add_prestige = prestige_major_bonus
+	}
+
+	option = {
+		name = et_culture.110.b
+		add_prestige = -prestige_mild_bonus
+	}
+}
+
 # ---- Copy-and-adapt template for region chains ----
 # et_culture.N = {
 # 	type = country_event

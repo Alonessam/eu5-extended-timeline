@@ -2395,6 +2395,7 @@ chateaulin = { topography = flatland vegetation = grasslands climate = oceanic r
 le_faou = { topography = flatland vegetation = grasslands climate = oceanic religion = gallo_roman_polytheism culture = gallian raw_material = wheat natural_harbor_suitability = 0.60}
 quimperle = { topography = flatland vegetation = grasslands climate = oceanic religion = gallo_roman_polytheism culture = gallian raw_material = livestock natural_harbor_suitability = 0.60}
 nantes = { topography = flatland vegetation = farmland climate = oceanic religion = gallo_roman_polytheism culture = gallian raw_material = wine natural_harbor_suitability = 0.50}
+geneva = { topography = hills vegetation = forest climate = continental religion = gallo_roman_polytheism culture = gallian raw_material = iron}
 blain = { topography = flatland vegetation = grasslands climate = oceanic religion = gallo_roman_polytheism culture = gallian raw_material = livestock natural_harbor_suitability = 0.00}
 chateaubriant = { topography = flatland vegetation = grasslands climate = oceanic religion = gallo_roman_polytheism culture = gallian raw_material = iron}
 guerande = { topography = wetlands vegetation = grasslands climate = oceanic religion = gallo_roman_polytheism culture = gallian raw_material = salt natural_harbor_suitability = 0.00}

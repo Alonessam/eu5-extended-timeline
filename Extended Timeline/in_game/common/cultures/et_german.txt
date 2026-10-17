@@ -379,4 +379,34 @@ ubian = {
 	culture_groups = {
 		german_group
 	}
+}
+
+burgundian = {
+	language = central_german_dialect
+	
+	color = rgb{ 100 50 150 }
+	
+	tags = { german_gfx western_european_gfx european_gfx }
+
+	opinions = {
+	}
+	
+	culture_groups = {
+		german_group
+	}
+}
+
+visigoth = {
+	language = gothic_language
+	
+	color = rgb{ 150 50 50 }
+	
+	tags = { german_gfx western_european_gfx mediterranean_gfx european_gfx }
+
+	opinions = {
+	}
+	
+	culture_groups = {
+		german_group
+	}
 }
