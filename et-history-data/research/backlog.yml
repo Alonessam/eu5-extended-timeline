@@ -159,9 +159,10 @@ tasks:
       historical-events/2026-10-17_egypt_culture_transition.yml; the culture graph gaps
       for old_egyptian, kushite and gallian were fixed in the mod the same day. The
       Mısır pilot needs no new culture keys.
-      TODO (reconciliation): the Gaul and Mısır pilot decisions conflict; maintainers
-      must pick one before pilot event scripts are written. Neither pilot has event
-      scripts yet, so both data sets and the WS3 fixes stay valid either way.
+      RESOLVED (2026-10-17): the two decisions run as parallel Phase 1 tracks — Mısır
+      (Egypt: records and WS3 fixes collected; pilot event scripts next) and Gaul
+      (Galya: gallo_roman intermediate identity, sourced records to be collected).
+      Neither track blocks the other; pilot event scripts follow this resolution.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient

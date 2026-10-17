@@ -8,10 +8,10 @@ olay scriptleri yalnızca bu kayıtlara dayanılarak yazılır. Planın teknik
 kısımları 17 Ekim 2026'da incelenen kurulu EU5 1.3.x dosyalarından
 doğrulanmıştır; doğrulama notları bu dokümandadır.
 
-**Durum:** Plan yayında. **Pilot bölge: Mısır** (17 Ekim 2026 kararı). İlk
-kaynaklı geçiş kayıtları, kültür grafiği düzeltmeleri ve olay iskeleti
-hazırlandı (Faz 1 sürüyor). Ara kimlik politikası Mısır dışı bölgeler için
-açık.
+**Durum:** Plan yayında. **Faz 1 paralel iki pilotla sürüyor: Mısır ve Galya**
+(17 Ekim 2026 mutabakatı). Mısır hattında kaynaklı geçiş kayıtları, kültür
+grafiği düzeltmeleri ve olay iskeleti hazır; Galya hattı `gallo_roman` ara
+kimliğiyle ayrı bir hatta yürütülüyor (kaynak toplama aşamasında).
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
@@ -172,9 +172,10 @@ Veri-önce kuralı, test protokolü, merge disiplini (bkz. bölüm 6).
 ## 5. Fazlar
 
 - **Faz 0 (bu dosya):** Plan yayında. ✓
-- **Faz 1 — Pilot: Mısır** (17 Ekim 2026 kararı; Galya sonraki aday) →
-  kaynaklı geçiş kayıtları ✓ → 3–5 olaylık zincir → oyun içi test → şablon
-  çıkarma.
+- **Faz 1 — Pilotlar: Mısır + Galya (paralel)** (17 Ekim 2026 mutabakatı).
+  Mısır hattı: kaynaklı geçiş kayıtları ✓ → 3–5 olaylık zincir → oyun içi
+  test → şablon çıkarma. Galya hattı: `gallo_roman` ara kimliği + kaynaklı
+  kayıtlar → aynı akış.
 - **Faz 2 — Geç Antik ve Kavimler Göçü (200–700):** Roma çöküşü sonrası
   Latin/Romance ayrışması; Germen ve Slav yayılımı; `add_migration` dalgaları.
 - **Faz 3 — Postklasik (700–1400):** Arap fetihleri ve Arapçalaşma; Türk
@@ -197,6 +198,8 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
   olay scriptleri tasarım notundan sonra
 - [ ] Oyun içi test (58 başlangıcı, hızlandırılmış gözlem) ve log kontrolü —
   test olayı hazır: `et_culture.9000` (ROM, 58.1–58.6)
+- [ ] Galya hattı (paralel): `gallo_roman` ara kimliği + kaynaklı kayıtlar →
+  olay zinciri
 
 ## 6. Bağlayıcı kalite kuralları
 
@@ -214,12 +217,12 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
 
 ## 7. Açık kararlar (maintainer)
 
-- ~~Pilot bölge: Galya mı, Mısır mı?~~ → **Mısır seçildi** (17 Ekim 2026);
-  Galya sonraki aday olarak duruyor.
+- ~~Pilot bölge: Galya mı, Mısır mı?~~ → **İkisi paralel pilot** (17 Ekim 2026
+  mutabakatı): Mısır ve Galya hatları birbirini bloklamadan yürütülür.
 - Ara kimlikler: **Mısır hattı yeni anahtar gerektirmiyor** — `old_egyptian` →
   `coptic_culture` → `lower_egyptian_culture`/`upper_egyptian_culture` ve
-  `kushite` → `nubian` zincirlerinin tamamı vanilla'da mevcut. `gallo_roman`
-  benzeri ara kimlikler Mısır dışı bölgeler için hâlâ açık.
+  `kushite` → `nubian` zincirlerinin tamamı vanilla'da mevcut. Galya hattında
+  `gallo_roman` ara kimliği kullanılır; diğer bölgeler için politika açık.
 - Railroad derecesi: sabit tarihler mi, koşullu pencereler mi?
 - Hangi olaylar AI'yı zorlar (fetih/göç dalgaları); hangileri serbest
   simülasyona bırakılır?
