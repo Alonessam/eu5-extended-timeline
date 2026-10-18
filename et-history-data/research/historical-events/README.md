@@ -70,6 +70,27 @@ tam nüfus kaymaları; beş kaynaksız ve dokuz eksik kayıt; TR/EN metinleri) y
 `gaul_history_audit_followups` göreviyle `gaul_record_backfill` ve
 `gaul_dhe_tag_binding_review` yanında izleniyor (backlog UPDATE 10). Test B hâlâ sırada.
 
+**Galya zincir mantığı (§2, 18 Ekim 2026):** `.109`, `.114` ve `.118` artık
+`change_pop_culture` yerine `split_pop` kullanıyor (`0.25`/`0.30`/`0.50`), böylece
+Frenk, Oksitan, Arpitan ve Norman nüfusları tek seferde değil kademeli olarak kayıyor
+(Frenkler Romance çoğunluk içinde eriyen küçük bir seçkin tabakaydı; Albigens Haçlı
+Seferi Languedoc'u ilhak etti ama halkını Fransızlaştırmadı; Devrim'in okulu ve
+yönetimi eyaletleri zorladı ama işi bitirmedi). `frankish`, `.115` ve `.118` dönüşüm
+kümelerine eklendi; böylece Frenk kültürü artık `french`'e asimile oluyor. `.109`'un
+Frenk yaptığı ama sonraki hiçbir olayın dokunmadığı `soissons`, `.111` ve `.115` konum
+listelerine eklendi. `.109`/`.114`/`.115`/`.118` araç ipuçları (EN/TR) yeni kademeli
+etkiye göre yazıldı. Açık kalan nokta: `.114` hâlâ İngiliz Gaskonyası olan `bordeaux`'yu
+içeriyor (`gaul_history_audit_followups`).
+
+**Galya yerelleştirme düzeltmeleri (§3, 18 Ekim 2026):** TR metinlerindeki yazım
+hataları giderildi (örn. `.105` "amfiatrosunda" → "amfiteatrosunda" ve "öncülenir" →
+"öncülük eder", `.105` "Galo-Romen" → "Gallo-Romen", `.107` "kutsal kahramanlarını" →
+"azizlerini", `.110` "Aryanist/Aryanizm" → "Ariusçu/Ariusçuluk", `.112` "doğum ebeveyni"
+→ "ebesi", `.120` "ansiklikleriyle" → "ansiklikalarıyla", `.122` "Otuz Şanlı Yıl" →
+"Şanlı Otuz Yıl"). EN metinlerinde Fransızca terimler aksanlandı (`laïcité`, `Poincaré`,
+`union sacrée`) ve `.120` ansiklik aralığı 1906-1907'ye çekildi (kayıt ve `sources.yml`
+uyarısı dahil). EN/TR anahtar eşliği 165/165. Ayrıntı: backlog UPDATE 12.
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,
@@ -255,7 +276,7 @@ Zincirin etiket katmanları: `.101`–`.109` → `ROM` (Roma dönemi), `.110`–
 `FRAN` (Frenk krallığı), `.114`–`.123` → `FRA` (Fransa). Katman sınırı, II. Philippe
 dönemindeki `rex Francorum` → `rex Franciae` geçişine (1190; 1204'ten itibaren
 yerleşik) dayanır; DHE tek etiketle çalıştığı için zincir tek bir devlette değil,
-dönemin aktöründe ateşlenir (karar: `gaul_dhe_tag_binding_review`, UPDATE 11).
+dönemin aktöründe ateşlenir (karar: `gaul_dhe_tag_binding_review`, UPDATE 13).
 
 Faz 7/Faz 8 sınırı, projenin kendi dönem sınıflarına dayanır
 (`docs/Period Classes.md`: `industrial` 1800–1945, `contemporary` 1945+); bu yüzden

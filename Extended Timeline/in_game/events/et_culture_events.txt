@@ -1217,7 +1217,10 @@ et_culture.109 = {
 					limit = {
 						culture = culture:gallo_roman
 					}
-					change_pop_culture = culture:frankish
+					split_pop = {
+						fraction = 0.25
+						culture = culture:frankish
+					}
 				}
 			}
 		}
@@ -1336,6 +1339,7 @@ et_culture.111 = {
 						location = location:tours
 						location = location:rennes
 						location = location:nantes
+						location = location:soissons
 					}
 				}
 				every_pop = {
@@ -1553,7 +1557,10 @@ et_culture.114 = {
 					limit = {
 						culture = culture:occitan
 					}
-					change_pop_culture = culture:french
+					split_pop = {
+						fraction = 0.30
+						culture = culture:french
+					}
 				}
 			}
 		}
@@ -1606,6 +1613,7 @@ et_culture.115 = {
 						location = location:orleans
 						location = location:tours
 						location = location:caen
+						location = location:soissons
 					}
 				}
 				every_pop = {
@@ -1613,6 +1621,7 @@ et_culture.115 = {
 						OR = {
 							culture = culture:norman
 							culture = culture:arpitan
+							culture = culture:frankish
 						}
 					}
 					change_pop_culture = culture:french
@@ -1800,9 +1809,13 @@ et_culture.118 = {
 							culture = culture:occitan
 							culture = culture:arpitan
 							culture = culture:norman
+							culture = culture:frankish
 						}
 					}
-					change_pop_culture = culture:french
+					split_pop = {
+						fraction = 0.50
+						culture = culture:french
+					}
 				}
 			}
 		}
