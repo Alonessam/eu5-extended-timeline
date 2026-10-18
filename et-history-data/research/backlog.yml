@@ -282,6 +282,34 @@ tasks:
       plus the postwar immigration layer, filed as gaul_postwar_immigration_layer
       below). Event IDs and localization keys are unchanged; only the phase
       labels moved. Test B remains pending.
+      UPDATE 8 (2026-10-18, Gaul Phase 4-7 review of 2ca31cc..9c7d2b3):
+      the four new phases were checked line by line against vanilla and the
+      game database. Verified: change_language is a culture-scope effect and
+      dialect:french_language is a real dialect (common/languages/00_france.txt,
+      nested dialect of french_language); split_pop takes fraction + culture
+      (events/colonization/settle_the_frontier.txt:150); calvinist, catholic,
+      arpitan, norman and all location keys used by the new block exist;
+      occitan is a genuinely new culture key (no vanilla shadow) after the
+      Phase 4/5 review removed the french/arpitan/norman copies in c6d6bd5;
+      all 169 event localization keys are present in both EN and TR; braces
+      are 0/0 and the YAML linter exits 0. Fixed in this review: the new
+      occitan culture had no name localization (occitan/occitan_ADJ added in
+      EN and TR; arpitan/norman already had vanilla keys); event .113 added
+      Norman pops to Cherbourg, Bayeux and Rouen without requiring ownership
+      of those locations (the trigger now requires all four); Turkish typos in
+      .110 (selenek -> geleneksel olarak), .117 (Henry -> Henri), .118
+      (partikulyerizm -> bolgesel ayrilikcilik) and .119 (patois'nin,
+      Fransizcanin en az konusuldugu bolgeler). Open items: (a) data-first
+      gaps - .112 and .114-.118 have no sourced records yet, and five Phase 2/3
+      records are still pending/in_progress although their events exist (filed
+      as gaul_record_backfill); (b) the whole chain is DHE-bound to the ROM tag
+      (.101-.113) and the FRA tag (.114-.122), so an owner of Paris that is
+      neither never runs it and no single country spans both halves - the
+      Egypt design note rejected DHE for this exact reason (filed as
+      gaul_dhe_tag_binding_review); (c) the four Faz 7/8 records are marked
+      applied before Test B, so their statuses are provisional until the
+      in-game gate. The 01:33 game logs predate these commits (02:28-02:59),
+      so Test B must be rerun to cover the new blocks.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -373,3 +401,42 @@ tasks:
       gap: after the 2026-10-18 Faz 7/8 split, Faz 8 holds only .122, so this
       task is what would flesh the phase out.
     acceptance: Only add if a source-backed culture-key path exists; do not invent immigrant culture or religion keys.
+  gaul_record_backfill:
+    period_id: medieval
+    priority: 2
+    state: pending
+    targets: [research/historical-events/2026-10-17_gaul_culture_transition.yml]
+    source_refs: [weber_peasants_into_frenchmen, wiki_languages_of_france]
+    question: Which sourced records are still missing for the Gaul events et_culture.104-118, and which pending records should be promoted after Test B?
+    evidence: >-
+      The 2026-10-18 review of 2ca31cc..9c7d2b3 found events without sourced
+      records: .104 Gallic Empire, .105/.106 martyrs and Martin (partly covered
+      by gaul_christianization_martin_tours), .108 Rhine crossing, .109
+      Syagrius, .112 Tours/Strasbourg Oaths, .114 Albigensian Crusade, .115
+      Hundred Years' War, .116 Villers-Cotterets, .117 Wars of Religion/Nantes
+      and .118 Revolution/Gregoire. The existing records for christianization,
+      Armorica, Clovis, the oil/oc split and the Norman genesis are still
+      pending or in_progress although their events exist. Backfill follows the
+      data-first rule (source before script) and the Gaul track's sourcing
+      style; do not mark records applied before Test B.
+    acceptance: Every Gaul event maps to a sourced record (or a documented reason why it does not); statuses reflect the shared Test B gate.
+  gaul_dhe_tag_binding_review:
+    period_id: medieval
+    priority: 2
+    state: pending
+    targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/common/on_action/et_history_pulses.txt"]
+    source_refs: []
+    question: Should the Gaul chain keep the dynamic_historical_event tag binding (ROM for .101-.113, FRA for .114-.122) or move to the owner-agnostic yearly-pulse pattern used by the Egypt chain?
+    evidence: >-
+      All 22 Gaul events are DHE-bound: .101-.113 require ROM, .114-.122
+      require FRA. A country that owns Paris but is neither ROM nor FRA (for
+      example a Gallic tag, a surviving Roman successor or a player-formed
+      state) never receives the chain, and no single country spans both halves
+      because ROM does not form FRA. The Egypt design note
+      (2026-10-17_egypt_event_design.md, section 2.1) rejected DHE for
+      owner-dependent regions and uses a narrow yearly_country_pulse instead.
+      Decide before Test B: either document that the Gaul chain is a historical
+      world layer for ROM/FRA and add that test case, or move the events to a
+      date-guarded yearly pulse (the DHE windows must become explicit date
+      triggers) so any owner of Paris runs the chain.
+    acceptance: Decision recorded in the design note/README; Test B includes an owner-switch or non-ROM/FRA case; no double firing.

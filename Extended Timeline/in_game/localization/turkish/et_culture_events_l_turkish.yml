@@ -107,7 +107,7 @@
  et_culture.110.desc: "Frenk kralı Clovis, Reims piskoposu Remigius'un elinden vaftiz oluyor. Aryanist Cermen krallarından farklı olarak, Gallo-Roman çoğunluğunun Katolik inancına kabul ediliyor. Frenk ve Gallo-Roman halkları tek bir Hristiyan millette kaynaşıyor."
  et_culture.110.a: "Frenkler ve Gallo-Romenler tek halk oluyor."
  et_culture.110.b: "Frenkler atalara ait geleneklerini korusun."
- et_culture.110.historical_info: "Salian Frenkleri'nin kralı I. Clovis, Reims Piskoposu Remigius tarafından vaftiz edildi (selenek 496 veya 508). Diğer Cermen yöneticilerin Aryanizminden farklı olarak, Katolik Hristiyanlığı benimsemesi Frenk ile Gallo-Roman nüfusunu kaynaştırdı."
+ et_culture.110.historical_info: "Salian Frenkleri'nin kralı I. Clovis, Reims Piskoposu Remigius tarafından vaftiz edildi (geleneksel olarak 496 veya 508). Diğer Cermen yöneticilerin Aryanizminden farklı olarak, Katolik Hristiyanlığı benimsemesi Frenk ile Gallo-Roman nüfusunu kaynaştırdı."
  et_culture.110.tt: "Frenk ve Gallo-Roman nüfusu Katolikliği benimser."
 
  et_culture.111.title: "Galya'nın İki Dili"
@@ -142,18 +142,18 @@
  et_culture.115.desc: "Yüzyılı aşkın bir süredir İngiltere ve Fransa kralları taht için savaşıyor. Ancak bu savaşın ocağında yeni bir şey doğuyor: Fransız milleti. Domrémy'li köylü kız orduları harekete geçiriyor ve Loire'den Ren'e kadar kendilerini Norman, Breton ya da Burgonyalı sayan erkekler ve kadınlar artık Fransız diyorlar. Paris lehçesi krallığın diline dönüşüyor."
  et_culture.115.a: "Tek kral, tek yasa, tek dil."
  et_culture.115.b: "Eski eyalet kimlikleri sürdürülmeli."
- et_culture.115.historical_info: "Yüzyıl Savaşları (1337–1453), İngiltere ile Fransa arasında birleşik bir Fransız milli kimliği yarattı. Jeanne d'Arc'nın seferleri (1429) dengeleri değiştirdi ve savaşın sonunda Fransız dil ve kimlik, bölgesel partikülyerizmlerin yerini aldı."
+ et_culture.115.historical_info: "Yüzyıl Savaşları (1337–1453), İngiltere ile Fransa arasında birleşik bir Fransız milli kimliği yarattı. Jeanne d'Arc'nın seferleri (1429) dengeleri değiştirdi ve savaşın sonunda Fransız dil ve kimlik, bölgesel ayrılıkçılıkların yerini aldı."
  et_culture.115.tt: "Norman ve Arpitan nüfusu Fransız kültürüne ve kimliğine geçer."
 
  et_culture.116.title: "Villers-Cotterêts Fermanı"
  et_culture.116.desc: "Kral François I, tüm yasal belgelerin, mahkeme kayıtlarının ve kraliyet fermanlarının Latince değil Fransızca yazılmasını emreder. Krallığın kançılaryası Roma İmparatorluğu'nun dilinden Fransız halkının diline geçer. Bundan böyle adalet, yönetim ve yasa Paris'in konuştuğu dili konuşacak."
  et_culture.116.a: "Fransızca krallığın dilidir."
  et_culture.116.b: "Latin hukukun dilidir."
- et_culture.116.historical_info: "Villers-Cotterêts Fermanı (1539), Kral François I tarafından imzalanarak tüm yasal ve idari belgelerde Latince yerine Fransızca (langue Françoise) kullanılmasını zorunlu kıldı; Fransız devletinin resmî dili olarak Fransızca'yı belirledi."
+ et_culture.116.historical_info: "Villers-Cotterêts Fermanı (1539), Kral François I tarafından imzalanarak tüm yasal ve idari belgelerde Latince yerine Fransızca (langue françoise) kullanılmasını zorunlu kıldı; Fransız devletinin resmî dili olarak Fransızca'yı belirledi."
  et_culture.116.tt: "Fransız, Oksitan, Arpitan ve Norman nüfusu Fransızca dilini benimser."
 
  et_culture.117.title: "Din Savaşları"
- et_culture.117.desc: "Fransa kan ağlıyor. Kalvinist Huguenot ve Katolik ordular krallığı sonsuz bir katliam ve intikam döngüsünde parçalıyor — St. Barthélemy Katliamı, Din Savaşları. Sonunda IV. Henry Nantes Fermanı ile hoşgörüyü ilan ediyor ve öldürülmesinin ardından XIV. Louis fermanı yırtıyor. Protestanlar kaçıyor; krallık tek inançta birleşiyor."
+ et_culture.117.desc: "Fransa kan ağlıyor. Kalvinist Huguenot ve Katolik ordular krallığı sonsuz bir katliam ve intikam döngüsünde parçalıyor — St. Barthélemy Katliamı, Din Savaşları. Sonunda IV. Henri Nantes Fermanı ile hoşgörüyü ilan ediyor ve öldürülmesinin ardından XIV. Louis fermanı yırtıyor. Protestanlar kaçıyor; krallık tek inançta birleşiyor."
  et_culture.117.a: "Tek kral, tek yasa, tek inanç."
  et_culture.117.b: "Huguenotlar inançlarını korusun."
  et_culture.117.historical_info: "Fransa Din Savaşları (1562–1598), Katolikler ile Huguenotlar (Kalvinistler) arasında Fransa'ya yıkım getirdi. Nantes Fermanı (1598) hoşgörüyü garanti etti ancak XIV. Louis'un Fontainebleau Fermanı (1685) fermanı iptal ederek kitlesel Protestan göçüne yol açtı."
@@ -167,10 +167,10 @@
  et_culture.118.tt: "Oksitan, Arpitan ve Norman nüfusu Fransız kültürüne geçer."
 
  et_culture.119.title: "Cumhuriyetin Okulu"
- et_culture.119.desc: "Fransa'nın her köyünde bir okul olacak. Jules Ferry yasalarıyla ilköğretim önce 1881'de parasız, ardından 1882'de zorunlu ve laik kılınır: Cumhuriyet okulu, kırsalın çocuklarını kilisenin ve patois'nın elinden alıp onlara dili, tarihi ve milleti verir. Bretonya'da okul binaları çoğalır; sınıfta yalnızca Fransızca duyulur. Eski Galya'nın son dilleri tek bir halkta eriyecektir."
+ et_culture.119.desc: "Fransa'nın her köyünde bir okul olacak. Jules Ferry yasalarıyla ilköğretim önce 1881'de parasız, ardından 1882'de zorunlu ve laik kılınır: Cumhuriyet okulu, kırsalın çocuklarını kilisenin ve patois'nin elinden alıp onlara dili, tarihi ve milleti verir. Bretonya'da okul binaları çoğalır; sınıfta yalnızca Fransızca duyulur. Eski Galya'nın son dilleri tek bir halkta eriyecektir."
  et_culture.119.a: "Eğitim Fransa'yı tek millet yapsın."
  et_culture.119.b: "Kilise ve patois yeter."
- et_culture.119.historical_info: "Jules Ferry yasaları (1881-1882) parasız, zorunlu ve laik ilköğretimi kurdu. 1882 yasasının 1. maddesi Fransız dilini ve edebiyatını temel ders yaptı; okullaşma en az Frankofon bölgelerde en hızlı arttı ve Cumhuriyet okulu dil birliğinin başlıca motoru oldu. Kaynak kayıt: gaul_jules_ferry_modern_unification_1881 (weber_peasants_into_frenchmen; wiki_jules_ferry_laws)."
+ et_culture.119.historical_info: "Jules Ferry yasaları (1881-1882) parasız, zorunlu ve laik ilköğretimi kurdu. 1882 yasasının 1. maddesi Fransız dilini ve edebiyatını temel ders yaptı; okullaşma Fransızcanın en az konuşulduğu bölgelerde en hızlı arttı ve Cumhuriyet okulu dil birliğinin başlıca motoru oldu. Kaynak kayıt: gaul_jules_ferry_modern_unification_1881 (weber_peasants_into_frenchmen; wiki_jules_ferry_laws)."
  et_culture.119.tt: "Cumhuriyet okulu yayılırken kalan Bretonca konuşan nüfusun yarısı Fransız kültürünü benimser."
 
  et_culture.120.title: "Ayrılık"

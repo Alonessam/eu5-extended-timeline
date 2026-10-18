@@ -1406,6 +1406,9 @@ et_culture.113 = {
 	trigger = {
 		has_or_had_tag = ROM
 		owns = location:caen
+		owns = location:cherbourg
+		owns = location:bayeux
+		owns = location:rouen
 	}
 
 	option = {

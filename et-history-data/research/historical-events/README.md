@@ -31,6 +31,22 @@ ayrıldı: **Faz 7 — Modern Fransa (1837–1945)** = `.119`–`.121` ve
 (backlog: `gaul_postwar_immigration_layer`). Test B (oyun içi zincir doğrulaması)
 hâlâ sırada.
 
+**Galya Faz 4-7 incelemesi (18 Ekim 2026):** Samet'in `2ca31cc`–`9c7d2b3`
+commit'leri vanilla'ya karşı denetlendi. Doğrulananlar: `change_language` kültür
+kapsamlı bir efekt ve `dialect:french_language` gerçek bir lehçe
+(`00_france.txt`); `split_pop` `.fraction` + `culture` vanilla deseni;
+`calvinist`/`catholic`, `arpitan`/`norman` ve kullanılan tüm lokasyon anahtarları
+geçerli; `occitan` gerçekten yeni bir kültür anahtarı (vanilla gölgesi değil);
+169 olay lokalizasyon anahtarı EN/TR'de tam. Bu turda düzeltilenler: yeni
+`occitan` kültürünün eksik isim lokalizasyonu (EN/TR), `.113`'ün
+Rouen/Cherbourg/Bayeux sahiplik koruması ve birkaç TR yazım hatası. Açık
+kalanlar: `.112` ve `.114`–`.118` için kaynaklı kayıt yok (backlog:
+`gaul_record_backfill`); zincirin tamamı DHE ile ROM/FRA tag'ine bağlı, bu
+yüzden Paris'i elinde tutan diğer devletler zinciri çalıştıramıyor (backlog:
+`gaul_dhe_tag_binding_review`). 01:33 oyun logları Faz 4-7 commit'lerinden
+(02:28–02:59) önce alındı; Test B yeni blokları kapsayacak şekilde yeniden
+çalıştırılmalı.
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,
