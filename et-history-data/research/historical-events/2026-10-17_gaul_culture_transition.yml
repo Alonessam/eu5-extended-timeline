@@ -214,4 +214,26 @@ records:
     mechanism: constitutional entrenchment of French, limited recognition of regional languages
     source_refs: [{id: wiki_languages_of_france, locator: "Status (constitution art. 2; 1999 report; 2008 art. 75-1); Statistics (INSEE 1999)"}]
     confidence: high
-    integration: {status: applied, target: "events (et_culture.122)", note: "Slow late window; a policy choice rather than a pop change."}
+    integration: {status: applied, target: "events (et_culture.123)", note: "Slow late window; a policy choice rather than a pop change."}
+
+  gaul_postwar_labour_immigration_1945_1975:
+    entity: culture_french
+    subject: postwar_labour_immigration_and_settlement
+    finding: >-
+      Postwar reconstruction and the Trente Glorieuses (1945-1975) drew millions of
+      foreign workers into France through the National Immigration Office. Portuguese
+      peasants fleeing the Salazar dictatorship and colonial conscription became the
+      largest foreign community, their emigration peaking at 135,667 arrivals in 1970;
+      Algerians moved freely before independence in 1962, after which their community in
+      France grew from about 350,000 to 700,000; Moroccans, Tunisians, Turks and Berbers
+      from Kabylia followed in the 1960s, alongside Italians and Spaniards. Immigrants
+      concentrated in the Paris region, Lyon and Marseille and filled about two-thirds of
+      the jobs in mining, steel, construction and the automotive industry. After the 1974
+      oil shock new entry was restricted, but family reunification settled these
+      communities permanently.
+    population: "Foreign labour migrants and their descendants in the French industrial cities"
+    dating: {precision: period, date: "1945-1975", calendar: ce_year_normalized_to_et}
+    mechanism: state labour recruitment, economic migration, chain migration and family settlement
+    source_refs: [{id: wiki_immigration_to_france, locator: "History (1945-1974; 1974-present); Maghrebis; By country of origin"}, {id: wiki_portuguese_in_france, locator: "History (Great Portuguese emigration 1957-1974); Demographics"}]
+    confidence: high
+    integration: {status: applied, target: "events (et_culture.122)", note: "Modeled as add_pop of Portuguese, Algerian, Moroccan, Kabyle and Turkish labourers plus Piedmontese and Neapolitan (Italian) and Castilian (Spanish) ones; EU5 1.3.x has no umbrella italian or spanish culture key, so the regional cultures stand in for those migrant streams. The historical option also carries a small stability cost, since mass immigration was socially divisive."}

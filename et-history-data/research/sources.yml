@@ -508,3 +508,17 @@ sources:
     url: https://en.wikipedia.org/wiki/Languages_of_France
     locator: Article intro; Status (constitution art. 2; 1999 report; 2008 art. 75-1); Statistics (INSEE 1999)
     caveat: Speaker figures are survey estimates; the 1789 and 1871 French-speaker shares are scholarly reconstruction.
+  wiki_immigration_to_france:
+    title: Immigration to France
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Immigration_to_France
+    locator: History (1945-1974; 1974-present); Maghrebis; By country of origin
+    caveat: Figures are compiled from UN, INSEE and INED estimates; "immigrant" (foreign-born) and "foreigner" (non-citizen) are distinct and the 1945-1975 numbers are rounded.
+  wiki_portuguese_in_france:
+    title: Portuguese in France
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Portuguese_in_France
+    locator: History (Great Portuguese emigration 1957-1974); Demographics table
+    caveat: Emigration peaks and community totals combine Portuguese and French census and scholarly estimates and are approximate.

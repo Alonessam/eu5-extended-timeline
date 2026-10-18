@@ -759,7 +759,7 @@ et_culture.102 = {
 					limit = {
 						culture = culture:gallian
 						OR = {
-							pop_type = pop_type:craftsmen
+							pop_type = pop_type:laborers
 							pop_type = pop_type:peasants
 						}
 					}
@@ -993,7 +993,7 @@ et_culture.106 = {
 				every_pop = {
 					limit = {
 						OR = {
-							pop_type = pop_type:craftsmen
+							pop_type = pop_type:laborers
 							pop_type = pop_type:peasants
 						}
 					}
@@ -1746,8 +1746,8 @@ et_culture.118 = {
 }
 
 # ===========================================================================
-# GAUL PHASE 7 EVENTS (WS4: et_culture.119 - et_culture.122)
-# Period: Modern & Contemporary France (MS 1837-2026)
+# GAUL PHASE 7 EVENTS (WS4: et_culture.119 - et_culture.121)
+# Period: Modern France (MS 1837-1945)
 # Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
 # ===========================================================================
 
@@ -1876,13 +1876,152 @@ et_culture.121 = {
 	}
 }
 
-# 22. The Language of the Republic (MS 1992-2008)
+# ===========================================================================
+# GAUL PHASE 8 EVENTS (WS4: et_culture.122 - et_culture.123)
+# Period: Contemporary France (MS 1945-2026)
+# Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
+# ===========================================================================
+
+# 22. The Trente Glorieuses: Labour Immigration (MS 1945-1975)
 et_culture.122 = {
 	type = country_event
 	title = et_culture.122.title
 	desc = et_culture.122.desc
 	outcome = neutral
 	historical_info = et_culture.122.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = FRA
+		from = 1945.1.1
+		to = 1975.1.1
+		monthly_chance = 15
+	}
+
+	trigger = {
+		owns = location:paris
+	}
+
+	option = {
+		name = et_culture.122.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.122.tt
+			location:paris = {
+				add_pop = {
+					culture = culture:portuguese
+					religion = religion:catholic
+					type = pop_type:laborers
+					size = 3
+				}
+				add_pop = {
+					culture = culture:algerian
+					religion = religion:sunni
+					type = pop_type:laborers
+					size = 3
+				}
+				add_pop = {
+					culture = culture:turkish_culture
+					religion = religion:sunni
+					type = pop_type:laborers
+					size = 2
+				}
+			}
+			location:lyon = {
+				add_pop = {
+					culture = culture:portuguese
+					religion = religion:catholic
+					type = pop_type:laborers
+					size = 2
+				}
+				add_pop = {
+					culture = culture:algerian
+					religion = religion:sunni
+					type = pop_type:laborers
+					size = 2
+				}
+				add_pop = {
+					culture = culture:piedmontese
+					religion = religion:catholic
+					type = pop_type:laborers
+					size = 2
+				}
+			}
+			location:marseille = {
+				add_pop = {
+					culture = culture:algerian
+					religion = religion:sunni
+					type = pop_type:laborers
+					size = 3
+				}
+				add_pop = {
+					culture = culture:moroccan
+					religion = religion:sunni
+					type = pop_type:laborers
+					size = 2
+				}
+				add_pop = {
+					culture = culture:kabyle
+					religion = religion:sunni
+					type = pop_type:laborers
+					size = 2
+				}
+				add_pop = {
+					culture = culture:neapolitan
+					religion = religion:catholic
+					type = pop_type:laborers
+					size = 2
+				}
+			}
+			location:lille = {
+				add_pop = {
+					culture = culture:portuguese
+					religion = religion:catholic
+					type = pop_type:laborers
+					size = 2
+				}
+				add_pop = {
+					culture = culture:castilian
+					religion = religion:catholic
+					type = pop_type:laborers
+					size = 2
+				}
+			}
+			location:bordeaux = {
+				add_pop = {
+					culture = culture:portuguese
+					religion = religion:catholic
+					type = pop_type:laborers
+					size = 2
+				}
+			}
+			location:toulouse = {
+				add_pop = {
+					culture = culture:castilian
+					religion = religion:catholic
+					type = pop_type:laborers
+					size = 2
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+		add_stability = -5
+	}
+
+	option = {
+		name = et_culture.122.b
+		add_stability = 10
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 23. The Language of the Republic (MS 1992-2008)
+et_culture.123 = {
+	type = country_event
+	title = et_culture.123.title
+	desc = et_culture.123.desc
+	outcome = neutral
+	historical_info = et_culture.123.historical_info
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -1897,13 +2036,13 @@ et_culture.122 = {
 	}
 
 	option = {
-		name = et_culture.122.a
+		name = et_culture.123.a
 		historical_option = yes
 		add_prestige = prestige_mild_bonus
 	}
 
 	option = {
-		name = et_culture.122.b
+		name = et_culture.123.b
 		add_stability = -5
 	}
 }
