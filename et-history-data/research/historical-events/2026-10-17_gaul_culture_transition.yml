@@ -35,7 +35,7 @@ records:
     mechanism: senatorial integration, municipal urbanization, elite Latinization
     source_refs: [{id: tacitus_annales_claudius, locator: "Tacitus, Annales 11.23-25; CIL XIII 1668"}]
     confidence: high
-    integration: {status: in_progress, target: "events (et_culture.101)", note: "Pilot event et_culture.101 triggers for ROM c. 58-100 CE."}
+    integration: {status: applied, target: "events (et_culture.101)", note: "Urban gallian nobles, clergy and burghers become gallo_roman for ROM c. 58-100 CE."}
 
   gaul_interpretatio_romana_and_syncretism:
     entity: culture_gallian
@@ -51,7 +51,7 @@ records:
     mechanism: syncretic religious practice, villa economy, road infrastructure
     source_refs: [{id: caesar_de_bello_gallico, locator: "Book 6 (Deities of the Gauls)"}]
     confidence: high
-    integration: {status: in_progress, target: "events (et_culture.102)", note: "Pilot event et_culture.102 triggers for ROM c. 100-180 CE."}
+    integration: {status: applied, target: "events (et_culture.102)", note: "Rural gallian laborers and peasants become gallo_roman for ROM c. 100-180 CE."}
 
   gaul_constitutio_antoniniana_212:
     entity: culture_gallian
@@ -67,7 +67,7 @@ records:
     mechanism: imperial edict, universal legal franchise
     source_refs: [{id: caracalla_constitutio_antoniniana, locator: "P.Giss. 40, col. I; Cassius Dio 78.9"}]
     confidence: high
-    integration: {status: in_progress, target: "events (et_culture.103)", note: "Pilot event et_culture.103 triggers for ROM c. 212-230 CE."}
+    integration: {status: applied, target: "events (et_culture.103)", note: "All remaining gallian pops become gallo_roman for ROM c. 212-230 CE."}
 
   gaul_gallic_empire_260_274:
     entity: culture_gallian
@@ -83,7 +83,7 @@ records:
     mechanism: military usurpation, frontier-army autonomy, negotiated reabsorption
     source_refs: [{id: wiki_gallic_empire, locator: "Lead; History (Postumus 260; Aurelian 274)"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.104)", note: "DHE layer for the Roman holder of Gaul; the event window follows the empire's lifespan."}
+    integration: {status: applied, target: "events (et_culture.104)", note: "ROM 260-274; the nobles, clergy and burghers of the nine city locations become gallo_roman. The window follows the empire's lifespan, so the conversion completes before the Roman restoration."}
 
   gaul_christianization_martin_tours:
     entity: culture_gallo_roman

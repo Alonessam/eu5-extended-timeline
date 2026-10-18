@@ -60,8 +60,8 @@ et_culture.1 = { # Christianization I (record: egypt_christianization_rise)
 	historical_info = et_culture.1.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	trigger = {
@@ -165,8 +165,8 @@ et_culture.2 = { # Coptic identity (records: egypt_coptic_emergence_and_continui
 	historical_info = et_culture.2.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	trigger = {
@@ -297,8 +297,8 @@ et_culture.3 = { # Islamization I (record: egypt_islamization_waves)
 	historical_info = et_culture.3.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	trigger = {
@@ -424,8 +424,8 @@ et_culture.4 = { # Islamization II (record: egypt_islamization_waves, Fatimid-Ma
 	historical_info = et_culture.4.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	trigger = {
@@ -551,8 +551,8 @@ et_culture.5 = { # Arabization (record: egypt_coptic_spoken_decline)
 	historical_info = et_culture.5.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	trigger = {
@@ -674,8 +674,8 @@ et_culture.101 = {
 	historical_info = et_culture.101.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -742,8 +742,8 @@ et_culture.102 = {
 	historical_info = et_culture.102.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -795,8 +795,8 @@ et_culture.103 = {
 	historical_info = et_culture.103.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -849,8 +849,8 @@ et_culture.104 = {
 	historical_info = et_culture.104.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -917,8 +917,8 @@ et_culture.105 = {
 	historical_info = et_culture.105.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -984,8 +984,8 @@ et_culture.106 = {
 	historical_info = et_culture.106.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1049,8 +1049,8 @@ et_culture.107 = {
 	historical_info = et_culture.107.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1114,8 +1114,8 @@ et_culture.108 = {
 	historical_info = et_culture.108.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1182,8 +1182,8 @@ et_culture.109 = {
 	historical_info = et_culture.109.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1243,8 +1243,8 @@ et_culture.110 = {
 	historical_info = et_culture.110.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1308,8 +1308,8 @@ et_culture.111 = {
 	historical_info = et_culture.111.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1399,8 +1399,8 @@ et_culture.112 = {
 	historical_info = et_culture.112.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1420,8 +1420,13 @@ et_culture.112 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.112.tt
-			culture:gallo_roman = {
-				change_language = dialect:french_language
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:gallo_roman
+					}
+					change_language = dialect:french_language
+				}
 			}
 		}
 		add_prestige = prestige_mild_bonus
@@ -1442,8 +1447,8 @@ et_culture.113 = {
 	historical_info = et_culture.113.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1522,8 +1527,8 @@ et_culture.114 = {
 	historical_info = et_culture.114.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1547,7 +1552,6 @@ et_culture.114 = {
 				limit = {
 					OR = {
 						location = location:toulouse
-						location = location:bordeaux
 						location = location:nimes
 						location = location:arles
 						location = location:marseille
@@ -1583,8 +1587,8 @@ et_culture.115 = {
 	historical_info = et_culture.115.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1652,8 +1656,8 @@ et_culture.116 = {
 	historical_info = et_culture.116.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1673,17 +1677,18 @@ et_culture.116 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.116.tt
-			culture:gallo_roman = {
-				change_language = dialect:french_language
-			}
-			culture:occitan = {
-				change_language = dialect:french_language
-			}
-			culture:arpitan = {
-				change_language = dialect:french_language
-			}
-			culture:norman = {
-				change_language = dialect:french_language
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:gallo_roman
+							culture = culture:occitan
+							culture = culture:arpitan
+							culture = culture:norman
+						}
+					}
+					change_language = dialect:french_language
+				}
 			}
 		}
 		add_prestige = prestige_mild_bonus
@@ -1704,8 +1709,8 @@ et_culture.117 = {
 	historical_info = et_culture.117.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1764,8 +1769,8 @@ et_culture.118 = {
 	historical_info = et_culture.118.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1844,8 +1849,8 @@ et_culture.119 = {
 	historical_info = et_culture.119.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1896,8 +1901,8 @@ et_culture.120 = {
 	historical_info = et_culture.120.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1935,8 +1940,8 @@ et_culture.121 = {
 	historical_info = et_culture.121.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -1990,8 +1995,8 @@ et_culture.122 = {
 	historical_info = et_culture.122.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -2011,7 +2016,8 @@ et_culture.122 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.122.tt
-			location:paris = {
+			every_owned_location = {
+				limit = { location = location:paris }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2031,7 +2037,8 @@ et_culture.122 = {
 					size = 2
 				}
 			}
-			location:lyon = {
+			every_owned_location = {
+				limit = { location = location:lyon }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2051,7 +2058,8 @@ et_culture.122 = {
 					size = 2
 				}
 			}
-			location:marseille = {
+			every_owned_location = {
+				limit = { location = location:marseille }
 				add_pop = {
 					culture = culture:algerian
 					religion = religion:sunni
@@ -2077,7 +2085,8 @@ et_culture.122 = {
 					size = 2
 				}
 			}
-			location:lille = {
+			every_owned_location = {
+				limit = { location = location:lille }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2091,7 +2100,8 @@ et_culture.122 = {
 					size = 2
 				}
 			}
-			location:bordeaux = {
+			every_owned_location = {
+				limit = { location = location:bordeaux }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2099,7 +2109,8 @@ et_culture.122 = {
 					size = 2
 				}
 			}
-			location:toulouse = {
+			every_owned_location = {
+				limit = { location = location:toulouse }
 				add_pop = {
 					culture = culture:castilian
 					religion = religion:catholic
@@ -2128,8 +2139,8 @@ et_culture.123 = {
 	historical_info = et_culture.123.historical_info
 
 	illustration_tags = {
-		10 = regular
-		10 = interior
+		0 = regular
+		1 = interior
 	}
 
 	fire_only_once = yes
@@ -2177,8 +2188,8 @@ et_culture.123 = {
 # 	}
 #
 # 	illustration_tags = {
-# 		10 = regular
-# 		10 = interior
+# 		0 = regular
+# 		1 = interior
 # 	}
 #
 # 	option = {
