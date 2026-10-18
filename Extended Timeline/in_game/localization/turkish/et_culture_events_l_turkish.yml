@@ -142,7 +142,7 @@
  et_culture.115.desc: "Yüzyılı aşkın bir süredir İngiltere ve Fransa kralları taht için savaşıyor. Ancak bu savaşın ocağında yeni bir şey doğuyor: Fransız milleti. Domrémy'li köylü kız orduları harekete geçiriyor ve Loire'den Ren'e kadar kendilerini Norman, Breton ya da Burgonyalı sayan erkekler ve kadınlar artık Fransız diyorlar. Paris lehçesi krallığın diline dönüşüyor."
  et_culture.115.a: "Tek kral, tek yasa, tek dil."
  et_culture.115.b: "Eski eyalet kimlikleri sürdürülmeli."
- et_culture.115.historical_info: "Yüzyıl Savaşları (1337–1453), İngiltere ile Fransa arasında birleşik bir Fransız milli kimliği yarattı. Jeanne d'Arc'nın seferleri (1429) dengeleri değiştirdi ve savaşın sonunda Fransız dil ve kimlik, bölgesel ayrılıkçılıkların yerini aldı."
+ et_culture.115.historical_info: "Yüzyıl Savaşları (1337–1453), İngiltere ile Fransa arasında birleşik bir Fransız milli kimliği yarattı. Jeanne d'Arc'ın seferleri (1429) dengeleri değiştirdi ve savaşın sonunda Fransız dil ve kimlik, bölgesel hususiyetlerin yerini aldı."
  et_culture.115.tt: "Norman ve Arpitan nüfusu Fransız kültürüne ve kimliğine geçer."
 
  et_culture.116.title: "Villers-Cotterêts Fermanı"
@@ -167,7 +167,7 @@
  et_culture.118.tt: "Oksitan, Arpitan ve Norman nüfusu Fransız kültürüne geçer."
 
  et_culture.119.title: "Cumhuriyetin Okulu"
- et_culture.119.desc: "Fransa'nın her köyünde bir okul olacak. Jules Ferry yasalarıyla ilköğretim önce 1881'de parasız, ardından 1882'de zorunlu ve laik kılınır: Cumhuriyet okulu, kırsalın çocuklarını kilisenin ve patois'nin elinden alıp onlara dili, tarihi ve milleti verir. Bretonya'da okul binaları çoğalır; sınıfta yalnızca Fransızca duyulur. Eski Galya'nın son dilleri tek bir halkta eriyecektir."
+ et_culture.119.desc: "Fransa'nın her köyünde bir okul olacak. Jules Ferry yasalarıyla ilköğretim önce 1881'de parasız, ardından 1882'de zorunlu ve laik kılınır: Cumhuriyet okulu, kırsalın çocuklarını kilisenin ve patois'in elinden alıp onlara dili, tarihi ve milleti verir. Bretonya'da okul binaları çoğalır; sınıfta yalnızca Fransızca duyulur. Eski Galya'nın son dilleri tek bir halkta eriyecektir."
  et_culture.119.a: "Eğitim Fransa'yı tek millet yapsın."
  et_culture.119.b: "Kilise ve patois yeter."
  et_culture.119.historical_info: "Jules Ferry yasaları (1881-1882) parasız, zorunlu ve laik ilköğretimi kurdu. 1882 yasasının 1. maddesi Fransız dilini ve edebiyatını temel ders yaptı; okullaşma Fransızcanın en az konuşulduğu bölgelerde en hızlı arttı ve Cumhuriyet okulu dil birliğinin başlıca motoru oldu. Kaynak kayıt: gaul_jules_ferry_modern_unification_1881 (weber_peasants_into_frenchmen; wiki_jules_ferry_laws)."
