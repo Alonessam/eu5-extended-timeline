@@ -90,11 +90,11 @@
  et_culture.107.tt: "Armorika'nın batısındaki nüfus, Breton kültürüne geçer."
 
  et_culture.108.title: "Ren Geçidi"
- et_culture.108.desc: "406 yılının son gecesi, donmuş Ren Vandallar, Alanlar ve Süevlerin kitlesi önünde çöküyor. Sınır çözülüyor. Burgundlar Yukarı Ren'e yerleşiyor, Vizigotlar Akdeniz'e, Vandallar güneye doğru ilerliyor. Galya'daki Roma nizamı Cermen halkları kendi anavatanlarını kurarken parçalanıyor."
+ et_culture.108.desc: "406 yılının son gecesi, donmuş Ren Vandallar, Alanlar ve Süevlerin kitlesi önünde çöküyor. Sınır çözülüyor. Burgundlar Yukarı Ren'e yerleşiyor, Vizigotlar Akitanya'ya, Vandallar Akdeniz'e doğru ilerliyor. Galya'daki Roma nizamı Cermen halkları kendi anavatanlarını kurarken parçalanıyor."
  et_culture.108.a: "Sınır kırıldı; halklar hareket ediyor."
  et_culture.108.b: "Roma Ren'i koruyacak."
- et_culture.108.historical_info: "MS 406 yılının 31 Aralık gecesi, Vandallar, Alanlar ve Süevler donmuş Ren'i geçerek Ren sınırını çöktü. Burgundlar Yukarı Ren'e (413), Vizigotlar Akdeniz'e (418), Vandallar Hispanya'ya doğru ilerledi."
- et_culture.108.tt: "Burgund, Vizigot ve Vandall göçleri Galya eyaletlerine giriyor."
+ et_culture.108.historical_info: "MS 406 yılının 31 Aralık gecesi, Vandallar, Alanlar ve Süevler donmuş Ren'i geçerek Ren sınırını çöktü. Burgundlar Yukarı Ren'e (413), Vizigotlar Akitanya'ya (418), Vandallar Hispanya'ya doğru ilerledi."
+ et_culture.108.tt: "Burgund ve Vizigot yerleşimciler Galya eyaletlerine yerleşiyor."
 
  et_culture.109.title: "Galya'nın Son Romalısı"
  et_culture.109.desc: "Aegidius'un oğlu Syagrius, Soissons çevresindeki son Roma topraklarını koruyor — Frenklerin "Romalıların Krallığı" dediği yer. Clovis 486'da Soissons'da onu yendiğinde, Roma Galya'sı sona eriyor. Frenk çağı başlıyor."
@@ -142,7 +142,7 @@
  et_culture.115.desc: "Yüzyılı aşkın bir süredir İngiltere ve Fransa kralları taht için savaşıyor. Ancak bu savaşın ocağında yeni bir şey doğuyor: Fransız milleti. Domrémy'li köylü kız orduları harekete geçiriyor ve Loire'den Ren'e kadar kendilerini Norman, Breton ya da Burgonyalı sayan erkekler ve kadınlar artık Fransız diyorlar. Paris lehçesi krallığın diline dönüşüyor."
  et_culture.115.a: "Tek kral, tek yasa, tek dil."
  et_culture.115.b: "Eski eyalet kimlikleri sürdürülmeli."
- et_culture.115.historical_info: "Yüzyıl Savaşları (1337–1453), İngiltere ile Fransa arasında birleşik bir Fransız milli kimliği yarattı. Jeanne d'Arc'nın seferleri (1429) dengeleri değiştirdi ve savaşın sonunda Fransız dil ve kimlik, bölgesel ayrılıkçılıkların yerini aldı."
+ et_culture.115.historical_info: "Yüzyıl Savaşları (1337–1453), İngiltere ile Fransa arasında birleşik bir Fransız milli kimliği yarattı. Jeanne d'Arc'ın seferleri (1429) dengeleri değiştirdi ve savaşın sonunda Fransız dil ve kimlik, bölgesel hususiyetlerin yerini aldı."
  et_culture.115.tt: "Norman ve Arpitan nüfusu Fransız kültürüne ve kimliğine geçer."
 
  et_culture.116.title: "Villers-Cotterêts Fermanı"
@@ -167,7 +167,7 @@
  et_culture.118.tt: "Oksitan, Arpitan ve Norman nüfusu Fransız kültürüne geçer."
 
  et_culture.119.title: "Cumhuriyetin Okulu"
- et_culture.119.desc: "Fransa'nın her köyünde bir okul olacak. Jules Ferry yasalarıyla ilköğretim önce 1881'de parasız, ardından 1882'de zorunlu ve laik kılınır: Cumhuriyet okulu, kırsalın çocuklarını kilisenin ve patois'nin elinden alıp onlara dili, tarihi ve milleti verir. Bretonya'da okul binaları çoğalır; sınıfta yalnızca Fransızca duyulur. Eski Galya'nın son dilleri tek bir halkta eriyecektir."
+ et_culture.119.desc: "Fransa'nın her köyünde bir okul olacak. Jules Ferry yasalarıyla ilköğretim önce 1881'de parasız, ardından 1882'de zorunlu ve laik kılınır: Cumhuriyet okulu, kırsalın çocuklarını kilisenin ve patois'in elinden alıp onlara dili, tarihi ve milleti verir. Bretonya'da okul binaları çoğalır; sınıfta yalnızca Fransızca duyulur. Eski Galya'nın son dilleri tek bir halkta eriyecektir."
  et_culture.119.a: "Eğitim Fransa'yı tek millet yapsın."
  et_culture.119.b: "Kilise ve patois yeter."
  et_culture.119.historical_info: "Jules Ferry yasaları (1881-1882) parasız, zorunlu ve laik ilköğretimi kurdu. 1882 yasasının 1. maddesi Fransız dilini ve edebiyatını temel ders yaptı; okullaşma Fransızcanın en az konuşulduğu bölgelerde en hızlı arttı ve Cumhuriyet okulu dil birliğinin başlıca motoru oldu. Kaynak kayıt: gaul_jules_ferry_modern_unification_1881 (weber_peasants_into_frenchmen; wiki_jules_ferry_laws)."
@@ -186,8 +186,15 @@
  et_culture.121.historical_info: "4 Ağustos 1914'te Cumhurbaşkanı Poincaré union sacrée'yi (kutsal birlik) ilan etti ve sol, savaş süresince muhalefetini askıya aldı. Kitlesel askerlik ordusu her bölgeden insanı bir araya getirerek Cumhuriyet okulunun başlattığı dilsel ve ulusal bütünleşmeyi tamamladı. Kaynak kayıt: gaul_great_war_union_sacree_1914_1918 (wiki_sacred_union; weber_peasants_into_frenchmen)."
  et_culture.121.tt: "Millet siperlerde dövülürken kalan Breton nüfusu Fransız kültürünü benimser."
 
- et_culture.122.title: "Cumhuriyetin Dili"
- et_culture.122.desc: "Beşinci Cumhuriyet, anayasasına Cumhuriyetin dilinin Fransızca olduğunu yazar. Hükümet Bölgesel veya Azınlık Dilleri Avrupa Şartı'nı onaylamaya hazırlanırken Anayasa Konseyi reddeder: bölünmez Cumhuriyet tek dil bilir. 2008'de anayasa yalnızca bölgesel dillerin Fransa'nın mirasına ait olduğunu kabul eder. Bretonca, Oksitanca ve Alsasça pazarın değil, hafızanın sesleri olarak yaşar."
- et_culture.122.a: "Tek Cumhuriyet, tek dil."
- et_culture.122.b: "Eski diller Fransa'nın mirasıdır."
- et_culture.122.historical_info: "Anayasanın 2. maddesi (1992) Fransızcayı Cumhuriyetin dili olarak sabitledi; 1999 Cerquiglini raporunun ardından Şart'ın onayı Anayasa Konseyi tarafından engellendi ve 2008 değişikliği bölgesel dilleri yalnızca miras olarak tanıdı (75-1. madde). Kaynak kayıt: gaul_language_of_the_republic_1992_2008 (wiki_languages_of_france)."
+ et_culture.122.title: "Otuz Şanlı Yıl"
+ et_culture.122.desc: "Savaşın yıkıntıları arasında Fransa'nın işgücüne ihtiyacı var ve bu ihtiyaç acil. Devlet kapıları açar: Portekizli köylüler Salazar'dan kaçıp Pireneleri aşar, Cezayirliler bağımsızlıktan önce ve sonra yüz binlerce gelir, İtalyanlar ve İspanyollar Alpleri ve Pireneleri geçer, Faslılar, Tunuslular, Berberiler ve Türkler onların ardından gelir. Banliyölerin kulelerini onlar diker, kömürü onlar kazar, çeliği onlar döker ve Otuz Şanlı Yıl'ın yollarını onlar döşer. 1975'e gelindiğinde bu yeni gelenler Fransa'nın atölyelerini ve madenlerini doldurur ve Cumhuriyet onları tutup tutmayacağına karar vermelidir."
+ et_culture.122.a: "Avrupa'nın ve Mağrip'in işçilerini getir."
+ et_culture.122.b: "Kapıları kapat: Fransa Fransızlarındır."
+ et_culture.122.historical_info: "Savaş sonrası yeniden inşa ve Otuz Şanlı Yıl (1945-1975), Ulusal Göç Bürosu aracılığıyla toplanan milyonlarca yabancı işçiyi Fransa'ya çekti. Cezayirliler 1962'deki bağımsızlığa kadar serbestçe göç etti; sonrasında toplulukları yaklaşık 350 binden 700 bine çıktı; Portekiz göçü 1970'te 135.667 kişiyle zirve yaptı; Faslılar, Tunuslular ve Türkler 1960'larda onları izledi. Bu göçmenlerin yaklaşık üçte ikisi madencilik, çelik, inşaat ve otomotiv sektöründe çalıştı. Kaynak kayıt: gaul_postwar_labour_immigration_1945_1975 (wiki_immigration_to_france; wiki_portuguese_in_france)."
+ et_culture.122.tt: "Portekizli, Cezayirli, Faslı, Berberi, Türk, İtalyan ve İspanyol işçiler Fransa'nın sanayi kentlerine yerleşir."
+
+ et_culture.123.title: "Cumhuriyetin Dili"
+ et_culture.123.desc: "Beşinci Cumhuriyet, anayasasına Cumhuriyetin dilinin Fransızca olduğunu yazar. Hükümet Bölgesel veya Azınlık Dilleri Avrupa Şartı'nı onaylamaya hazırlanırken Anayasa Konseyi reddeder: bölünmez Cumhuriyet tek dil bilir. 2008'de anayasa yalnızca bölgesel dillerin Fransa'nın mirasına ait olduğunu kabul eder. Bretonca, Oksitanca ve Alsasça pazarın değil, hafızanın sesleri olarak yaşar."
+ et_culture.123.a: "Tek Cumhuriyet, tek dil."
+ et_culture.123.b: "Eski diller Fransa'nın mirasıdır."
+ et_culture.123.historical_info: "Anayasanın 2. maddesi (1992) Fransızcayı Cumhuriyetin dili olarak sabitledi; 1999 Cerquiglini raporunun ardından Şart'ın onayı Anayasa Konseyi tarafından engellendi ve 2008 değişikliği bölgesel dilleri yalnızca miras olarak tanıdı (75-1. madde). Kaynak kayıt: gaul_language_of_the_republic_1992_2008 (wiki_languages_of_france)."
