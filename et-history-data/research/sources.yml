@@ -648,3 +648,59 @@ sources:
     url: https://en.wikipedia.org/wiki/Portuguese_in_France
     locator: History (Great Portuguese emigration 1957-1974); Demographics table
     caveat: Emigration peaks and community totals combine Portuguese and French census and scholarly estimates and are approximate.
+  wiki_caracalla:
+    title: Caracalla
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Caracalla
+    locator: Reign as sole emperor - provincial tour (Alexandria, winter 215/216); Caracalla and Serapis
+    caveat: The massacre narrative rests on Cassius Dio and Herodian, both hostile; no reliable casualty figure exists.
+  wiki_sasanian_conquest_egypt:
+    title: Sasanian conquest of Egypt
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Sasanian_conquest_of_Egypt
+    locator: Lead and campaign sections (618-621; Alexandria June 619; ten-year rule; evacuation 629)
+    caveat: The invasion's start is given as 617 or 618 and the evacuation as 628 or 629 depending on the source; the conventional 618-629 span is kept.
+  wiki_fustat:
+    title: Fustat
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Fustat
+    locator: Lead and capital timeline (founded 641; capital 641-750 and 905-973)
+    caveat: Fustat's capital status was interrupted by al-Askar (750-868) and al-Qata'i (868-905).
+  wiki_bashmurian_revolts:
+    title: Bashmurian revolts
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Bashmurian_revolts
+    locator: Lead and chronology (c. 720-832; 749 under Marwan II; 767; 831-832 under al-Afshin)
+    caveat: The dating of the early risings is uncertain; the article notes that the chronology cannot be fixed precisely.
+  wiki_tulunid_dynasty:
+    title: Tulunid dynasty
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Tulunid_dynasty
+    locator: Lead and infobox (868-905; Ahmad ibn Tulun 868-884; Abbasid reconquest 905)
+    caveat: The article labels the Tulunid army "mamluk"; the dynasty remained nominally under Abbasid suzerainty.
+  wiki_ikhshidid_dynasty:
+    title: Ikhshidid dynasty
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Ikhshidid_dynasty
+    locator: Lead and infobox (935-969; Muhammad ibn Tughj 935-946; Kafur 966-968)
+    caveat: The "dynasty" label glosses a fragmented military regime with sub-kings and the Kafur interregnum.
+  wiki_fatimid_conquest_egypt:
+    title: Fatimid conquest of Egypt
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Fatimid_conquest_of_Egypt
+    locator: Lead (6 February - 9 July 969; Jawhar's aman); Cairo sections
+    caveat: The foundation of al-Qahira is dated 969-971 and al-Muizz's arrival 973; the conquest article and the Cairo/Fustat articles round differently.
+  wiki_al_walid_i:
+    title: al-Walid I
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Al-Walid_I
+    locator: Caliphate - provincial affairs (Egypt; 705/706 diwan reform; Abd Allah ibn Abd al-Malik)
+    caveat: The Egyptian diwan reform is dated 705 or 706, and Coptic-language scholarship attributes the underlying chancery arabization to Abd al-Malik around 700.

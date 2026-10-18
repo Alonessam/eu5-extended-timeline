@@ -1,0 +1,151 @@
+schema_version: 1
+period_id: ancient
+collected_on: "2026-10-18"
+records:
+  egypt_caracalla_alexandria_215:
+    entity: polity_rome
+    subject: imperial_visit_and_urban_massacre
+    finding: >-
+      Caracalla spent the winter of 215/216 in Alexandria on his way east.
+      Provoked by the citizens' mockery of his official account of Geta's
+      death, he had the delegation of leading men massacred on their arrival
+      and let the troops plunder the city for days. The episode broke the
+      city's Greek elite and deepened Alexandria's reputation for
+      turbulence; the emperor had earlier advertised his devotion to
+      Serapis.
+    dating: {precision: year, date: "215", calendar: ce_year_normalized_to_et}
+    mechanism: imperial autocracy and urban reprisal
+    source_refs:
+      - {id: wiki_caracalla, locator: "Reign as sole emperor - provincial tour (Alexandria, winter 215/216); Caracalla and Serapis"}
+    confidence: high
+    integration: {status: pending, target: "events (WS4 political layer)", note: "Scripted as et_culture.8 (ROM; window 214-217; anchored on alexandria); Test B pending."}
+  egypt_sasanian_occupation_618_629:
+    entity: polity_eranshahr
+    subject: occupation_of_the_diocese_of_egypt
+    finding: >-
+      The Sasanian conquest of Egypt (618-621) ended Byzantine rule on the
+      Nile: Alexandria fell in June 619 after a long siege, and the province
+      was ruled for about ten years by Shahrbaraz's administration from
+      Alexandria. The occupation was evacuated in the summer of 629 after
+      the fall of Khosrow II; Heraclius restored Byzantine rule.
+    dating: {precision: period, date: "618-629", calendar: ce_year_normalized_to_et}
+    mechanism: conquest and occupation (control rather than ownership)
+    source_refs:
+      - {id: wiki_sasanian_conquest_egypt, locator: "Lead; background and course (618-621; Alexandria June 619; ten-year rule; evacuation 629)"}
+    confidence: high
+    integration: {status: pending, target: "events (WS4 political layer)", note: "Scripted as et_culture.9 (ERA; window 618-630; et_egypt_occupier_pulse; needs the state layer's control window); Test B pending."}
+  egypt_arab_conquest_and_fustat_641:
+    entity: polity_rashidun
+    subject: conquest_and_foundation_of_the_garrison_capital
+    finding: >-
+      Amr ibn al-As crossed into Egypt in December 639; the fortress of
+      Babylon fell in April 641 and Alexandria was evacuated by treaty in
+      642 (a Byzantine counterattack in 645-646 was driven back). The army
+      settled at Fustat beside Babylon, which became the seat of government
+      (641-750, and again 905-973). The dhimma settlement left the churches
+      to the Christians against the jizya, and the exiled Coptic patriarch
+      Benjamin I returned in 644.
+    dating: {precision: period, date: "639-642", calendar: ce_year_normalized_to_et}
+    mechanism: conquest, garrison settlement and treaty (dhimma)
+    source_refs:
+      - {id: wiki_arab_conquest_egypt, locator: "Lead and campaign sections (639-642; counterattack 645-646)"}
+      - {id: wiki_fustat, locator: "Lead and capital timeline (founded 641; capital 641-750 and 905-973)"}
+    confidence: high
+    integration: {status: pending, target: "events (WS4 political layer)", note: "Scripted as et_culture.10 (RASH; window 639-650); political companion to the population record egypt_arab_conquest_639_642; Test B pending."}
+  egypt_arabic_chancery_reform_706:
+    entity: polity_umayyad
+    subject: administrative_language_reform
+    finding: >-
+      In 705 or 706, during the reign of al-Walid I, Arabic replaced Greek
+      and Coptic in the Egyptian diwan; the change was carried out by the
+      caliph's half-brother Abd Allah ibn Abd al-Malik, governor of Egypt.
+      The reform completed the chancery arabization that Abd al-Malik
+      (685-705) had ordered around 700, and it progressively narrowed
+      Coptic's public role to the church.
+    dating: {precision: period, date: "700-706", calendar: ce_year_normalized_to_et}
+    mechanism: fiscal-administrative centralization
+    source_refs:
+      - {id: wiki_al_walid_i, locator: "Caliphate - provincial affairs (Egypt; 705/706 diwan reform)"}
+      - {id: wiki_coptic_language, locator: "Islamic period (Arab conquest; chancery attribution to Abd al-Malik)"}
+    confidence: high
+    integration: {status: pending, target: "events (WS4 political layer)", note: "Scripted as et_culture.11 (UMAY; window 700-712); companion to the population record egypt_arabic_administration_700; Test B pending."}
+  egypt_bashmurite_revolts_831_832:
+    entity: polity_abbasid
+    subject: tax_revolt_in_the_delta_marshes
+    finding: >-
+      The Bashmurites, the Copts of the northern Delta marshes, rose against
+      taxation repeatedly from c. 720 (749 under Marwan II, 767 under Yazid
+      ibn Hatim). The final revolt was crushed in 831-832 by al-Ma'mun's
+      forces under al-Afshin: the marshes were burned and the communities
+      scattered, followed by conversion pressure. The risings mark the end
+      of organised Coptic resistance to Abbasid fiscal policy.
+    dating: {precision: period, date: "c. 720-832", calendar: ce_year_normalized_to_et}
+    mechanism: fiscal pressure, insurgency and repression
+    source_refs:
+      - {id: wiki_bashmurian_revolts, locator: "Lead and chronology"}
+    confidence: medium
+    integration: {status: pending, target: "events (WS4 political layer)", note: "Scripted as et_culture.12 (ABBA; window 825-835); the dating of the early risings is uncertain; Test B pending."}
+  egypt_tulunid_autonomy_868_905:
+    entity: polity_tulunid
+    subject: autonomous_military_fiscal_rule
+    finding: >-
+      Ahmad ibn Tulun, sent to Egypt as the caliph's deputy in 868, built a
+      personally loyal army and kept the province's revenues: al-Qata'i was
+      laid out in 870 (his mosque completed in 879) and Syria was annexed in
+      878. His son Khumarawayh and his successors held Egypt until the
+      Abbasid reconquest of 905. Tulunid rule remained formally under
+      Abbasid suzerainty but acted as a dynasty in everything but name.
+    dating: {precision: period, date: "868-905", calendar: ce_year_normalized_to_et}
+    mechanism: military patronage and fiscal autonomy
+    source_refs:
+      - {id: wiki_tulunid_dynasty, locator: "Lead and infobox (868-905; Ahmad ibn Tulun 868-884; Abbasid reconquest 905)"}
+    confidence: high
+    integration: {status: pending, target: "events (WS4 political layer)", note: "Scripted as et_culture.13 (EGY; window 866-880); Test B pending."}
+  egypt_ikhshidid_rule_935_969:
+    entity: polity_ikhshidid
+    subject: turkic_military_governorship
+    finding: >-
+      Muhammad ibn Tughj entered Fustat in August 935, drove back a Fatimid
+      incursion near Alexandria in 936 and received the title al-Ikhshid
+      from the caliph in 939. His house - with the eunuch Kafur as viceroy
+      from the 960s and sole ruler in 966-968 - governed Egypt for
+      thirty-four years amid factional strife and the famine of the 960s,
+      until the Fatimid army entered Fustat in 969.
+    dating: {precision: period, date: "935-969", calendar: ce_year_normalized_to_et}
+    mechanism: military governorship under declining Abbasid authority
+    source_refs:
+      - {id: wiki_ikhshidid_dynasty, locator: "Lead and infobox (935-969; Muhammad ibn Tughj 935-946; Kafur 966-968)"}
+    confidence: high
+    integration: {status: pending, target: "events (WS4 political layer)", note: "Scripted as et_culture.14 (EGY; window 933-945); Test B pending."}
+  egypt_fatimid_conquest_and_cairo_969_973:
+    entity: polity_fatimid
+    subject: conquest_and_foundation_of_the_caliphal_capital
+    finding: >-
+      Jawhar al-Siqilli set out from Ifriqiya in February 969 and entered
+      Fustat in July; his aman guaranteed the population's safety. North of
+      Fustat he founded the palace city al-Qahira (969-971; al-Azhar begun
+      in 970), and in 973 the caliph al-Muizz transferred the Fatimid court
+      from Mahdia, making Cairo the seat of the Ismaili caliphate and of
+      Egypt's government thereafter.
+    dating: {precision: period, date: "969-973", calendar: ce_year_normalized_to_et}
+    mechanism: conquest, treaty (aman) and new capital foundation
+    source_refs:
+      - {id: wiki_fatimid_conquest_egypt, locator: "Lead (6 February - 9 July 969; Jawhar's aman); Cairo sections"}
+      - {id: wiki_fustat, locator: "Lead and capital timeline (Fustat until 973)"}
+    confidence: high
+    integration: {status: pending, target: "events (WS4 political layer)", note: "Scripted as et_culture.15 (FATI; window 968-978); Test B pending."}
+  egypt_byzantine_counterattack_645_646:
+    entity: polity_byzantium
+    subject: failed_reconquest_of_egypt
+    finding: >-
+      In 645 a Byzantine fleet under Manuel recovered Alexandria and parts
+      of the Delta. Caliph Uthman reinstated Amr ibn al-As; the Byzantines
+      were defeated at Nikiou in 646, Alexandria was stormed and Manuel was
+      killed in the fighting. It was the last serious Byzantine attempt to
+      retake Egypt for some five hundred years.
+    dating: {precision: period, date: "645-646", calendar: ce_year_normalized_to_et}
+    mechanism: amphibious counter-offensive and defeat
+    source_refs:
+      - {id: wiki_arab_conquest_egypt, locator: "Byzantine counterattack sections (645-646)"}
+    confidence: high
+    integration: {status: pending, target: "events (WS4 political layer)", note: "Scripted as et_culture.16 (BYZ; window 644-647; et_egypt_occupier_pulse; needs the state layer's control window); Test B pending."}

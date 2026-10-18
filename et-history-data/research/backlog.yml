@@ -420,6 +420,31 @@ tasks:
       nubia_state_layer_543_707 below. Kushite pops in Darfur and west of the two
       areas stay outside this v1 scope. Test B now spans .1-.7 (Nubia turn
       separate); records remain pending until it passes.
+      UPDATE 15 (2026-10-18, Egypt political chain, batch 1): the first
+      political batch (et_culture.8-.16; records in
+      historical-events/2026-10-18_egypt_political_timeline.yml, design note
+      2026-10-18_egypt_political_chain_design.md) covers every polity that
+      held Egypt between 215 and 969: Rome (Caracalla's Alexandria, .8), the
+      Sasanian occupation (.9, ERA), the Arab conquest and Fustat (.10,
+      RASH), the 705/706 diwan arabization (.11, UMAY), the Bashmurite
+      revolts (.12, ABBA), Tulunid autonomy (.13, EGY), the Ikhshidid
+      settlement (.14, EGY), the Fatimid conquest and al-Qahira (.15, FATI)
+      and the Byzantine 645-646 counterattack (.16, BYZ). The chain keeps
+      the owner-agnostic pulse architecture: .8 and .10-.15 ride
+      et_egypt_yearly_pulse, while the new controls-based
+      et_egypt_occupier_pulse carries the controller-only events .9 and
+      .16; both are hooked into yearly_country_pulse. Eight sources were
+      added (wiki_caracalla, wiki_sasanian_conquest_egypt, wiki_fustat,
+      wiki_bashmurian_revolts, wiki_tulunid_dynasty, wiki_ikhshidid_dynasty,
+      wiki_fatimid_conquest_egypt, wiki_al_walid_i). Same day: the literal
+      '?' mojibake in the Nubia blocks of both localization files (Meroe and
+      the Turkish letters), introduced with the Nubia extension (580708c),
+      was repaired (bcfe27f, no wording changes). Records remain pending
+      until Test B, which must now also cover .8 under ROM (214-217),
+      .10-.15 as the tags take Egypt, and - with the state layer - .9
+      (618-630) and .16 (644-647) on the occupier pulse. Open gaps are
+      filed as egypt_state_layer_palmyra_270_272 and
+      egypt_political_chain_batch2.
 
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   nubia_state_layer_543_707:
@@ -626,3 +651,51 @@ tasks:
       UPDATE 12 (2026-10-18) resolved (b) and (c): the tr/en copy defects are fixed
       and the .120 encyclical range is now 1906-1907. All three items are closed.
     acceptance: Each item is decided and applied with the chain's historical options in mind; the frankish path and each partial flip are documented; Turkish and English strings are corrected without breaking key parity.
+  egypt_state_layer_palmyra_270_272:
+    period_id: ancient
+    priority: 3
+    state: pending
+    targets: [locations, research/historical-events/2026-10-18_egypt_political_timeline.yml]
+    source_refs: [wiki_palmyra]
+    question: Should Palmyra's occupation of Egypt (269/270-272) get a PALM controller window in the Egypt location history, and with it a sourced event?
+    evidence: >-
+      Zenobia's forces took Egypt in 269/270 and held it until Aurelian's
+      reconquest in 272, but no Egypt location file carries a PALM controller
+      layer, so political batch 1 skipped the episode rather than script an
+      event without a state-layer mechanism; the design note records the gap
+      and the political timeline files it. If the window is added, a sourced
+      event can join et_egypt_occupier_pulse (tag PALM, window 269-273,
+      control anchor) with the same one-shot guard pattern.
+    acceptance: Decision recorded; if modelled, the controller window is data-first (location history), sourced in the political timeline and covered by Test B; any event is listed in exactly one pulse.
+  egypt_political_chain_batch2:
+    period_id: medieval
+    priority: 2
+    state: pending
+    targets: [research/historical-events/2026-10-18_egypt_political_timeline.yml, "Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/common/on_action/et_history_pulses.txt"]
+    source_refs: []
+    question: Which polities and episodes should the second political batch (969-2026) cover, with which sources, and does the FRA occupation (1798-1801) join et_egypt_occupier_pulse?
+    evidence: >-
+      Batch 1 stops at the Fatimid conquest (969). Candidate windows from the
+      design note: Ayyubid 1171, Mamluk 1250, Ottoman 1517, French occupation
+      1798-1801 (controller-only: joins the occupier pulse), Muhammad Ali
+      1805, British occupation 1882, 1919, 1952 and the republic. The AIA
+      (1958-1971) versus EGYP tag question (cairo.yml uses AIA while the
+      country file is "AIA - Arabia.yml"; "EGYP - Egypt.yml" is unexamined)
+      must be resolved as part of the data work.
+    acceptance: Batch 2 is scoped with sourced records before any script; each event is listed in exactly one pulse; the FRA and AIA/EGYP cases are covered by Test B.
+  et_culture_outcome_token_normalization:
+    period_id: medieval
+    priority: 3
+    state: pending
+    targets: ["Extended Timeline/in_game/events/et_culture_events.txt"]
+    source_refs: []
+    question: Should the non-vanilla outcome tokens in et_culture_events.txt (outcome = good in 13 events) be normalized to the vanilla set (positive/negative/neutral)?
+    evidence: >-
+      The installed vanilla event corpus uses outcome = positive / negative /
+      neutral (checked in DHE, culture and character event files). The mod
+      uses outcome = good in 13 Gaul events (.101-.123) alongside neutral;
+      Test A passed with it, so the token is tolerated, but it sits outside
+      the verified vanilla set and should be normalized (or kept with a
+      documented decision) when the Gaul chain is next touched. The Egypt
+      political events .8-.16 use the vanilla tokens from the start.
+    acceptance: The 13 occurrences are either normalized to positive or carry a documented decision to keep good; the change lands in one commit that leaves the file's other pending edits untouched.
