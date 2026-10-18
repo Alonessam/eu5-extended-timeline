@@ -609,7 +609,7 @@ et_culture.55 = {
 				}
 				every_pop = {
 					limit = { religion = religion:islam }
-					split_pop = { fraction = 0.05 religion = religion:shia }
+					split_pop = { fraction = 0.166667 religion = religion:shia }
 				}
 			}
 			every_owned_location = {
@@ -632,7 +632,7 @@ et_culture.55 = {
 				}
 				every_pop = {
 					limit = { religion = religion:islam }
-					split_pop = { fraction = 0.20 religion = religion:sunni }
+					split_pop = { fraction = 0.444444 religion = religion:sunni }
 				}
 			}
 			every_owned_location = {
@@ -643,7 +643,7 @@ et_culture.55 = {
 				}
 				every_pop = {
 					limit = { religion = religion:islam }
-					split_pop = { fraction = 0.15 religion = religion:shia }
+					split_pop = { fraction = 0.333333 religion = religion:shia }
 				}
 			}
 			every_owned_location = {
@@ -654,7 +654,7 @@ et_culture.55 = {
 				}
 				every_pop = {
 					limit = { religion = religion:islam }
-					split_pop = { fraction = 0.15 religion = religion:sunni }
+					split_pop = { fraction = 0.428571 religion = religion:sunni }
 				}
 			}
 		}
@@ -676,7 +676,7 @@ et_culture.55 = {
 				}
 				every_pop = {
 					limit = { religion = religion:islam }
-					split_pop = { fraction = 0.025 religion = religion:shia }
+					split_pop = { fraction = 0.038462 religion = religion:shia }
 				}
 			}
 			every_owned_location = {
@@ -699,7 +699,7 @@ et_culture.55 = {
 				}
 				every_pop = {
 					limit = { religion = religion:islam }
-					split_pop = { fraction = 0.10 religion = religion:sunni }
+					split_pop = { fraction = 0.137931 religion = religion:sunni }
 				}
 			}
 			every_owned_location = {
@@ -710,7 +710,7 @@ et_culture.55 = {
 				}
 				every_pop = {
 					limit = { religion = religion:islam }
-					split_pop = { fraction = 0.075 religion = religion:shia }
+					split_pop = { fraction = 0.103448 religion = religion:shia }
 				}
 			}
 			every_owned_location = {
@@ -721,7 +721,7 @@ et_culture.55 = {
 				}
 				every_pop = {
 					limit = { religion = religion:islam }
-					split_pop = { fraction = 0.075 religion = religion:sunni }
+					split_pop = { fraction = 0.111111 religion = religion:sunni }
 				}
 			}
 		}
@@ -818,7 +818,7 @@ et_culture.56 = {
 							culture = culture:nabataean_culture
 						}
 					}
-					split_pop = { fraction = 0.25 culture = culture:hadhrami_culture }
+					split_pop = { fraction = 0.50 culture = culture:yemeni_culture }
 				}
 				every_pop = {
 					limit = {
@@ -828,7 +828,7 @@ et_culture.56 = {
 							culture = culture:nabataean_culture
 						}
 					}
-					split_pop = { fraction = 0.50 culture = culture:yemeni_culture }
+					split_pop = { fraction = 0.50 culture = culture:hadhrami_culture }
 				}
 			}
 			every_owned_location = {

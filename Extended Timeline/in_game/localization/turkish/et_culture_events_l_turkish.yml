@@ -244,7 +244,7 @@
  et_culture.55.a: "Ekoller yerleşsin."
  et_culture.55.b: "Cemaati bölünmez tut."
  et_culture.55.historical_info: "Zeydi Şii imamlar 9.-10. yüzyıldan itibaren Yemen yaylalarında kök saldı; Uman'da İbadi imamlar 8. yüzyıldan beri vardı; Hicaz ve Necid'de Sünni İslam egemendi. Kaynak kayıt: arabia_sectarian_consolidation (wiki_zaydism; wiki_ibadi_islam)."
- et_culture.55.a.tt: "Mezhep payları: Hicaz'da %70 Sünni ve %5 Şii; Necid'de %80 Sünni; kuzey Yemen'de %55 Şii ve %20 Sünni; güney Yemen'de %55 Sünni ve %15 Şii; Uman'da %65 İbadi ve %15 Sünni (kalan Müslüman popların içinden)."
+ et_culture.55.a.tt: "Kalan Müslüman nüfusun mezhep payları: Hicaz'da %70 Sünni ve %5 Şii; Necid'de %80 Sünni; kuzey Yemen'de %55 Şii ve %20 Sünni; güney Yemen'de %55 Sünni ve %15 Şii; Uman'da %65 İbadi ve %15 Sünni."
  et_culture.55.b.tt: "Daha küçük mezhep bölünmeleri; daha fazla Müslüman birleşik kalır ve istikrar artar."
 
  et_culture.56.title: "Bölgesel Kimlikler"
@@ -252,7 +252,7 @@
  et_culture.56.a: "Kabileler topraklarına yerleşir."
  et_culture.56.b: "Çöl halkını korur."
  et_culture.56.historical_info: "Hicazi, Necdi, Yemeni, Umani ve Hadrami kimlikleri Orta Çağ'dan erken modern döneme kadar coğrafya, kabile yerleşimi, ticaret ve bölgesel devletlerle kristalleşti. Modern kültür anahtarları modda zaten vardır. Kaynak kayıt: arabia_regional_identities (wiki_history_of_arabia; wiki_arabian_peninsula)."
- et_culture.56.a.tt: "Antik bedevi ve Nebati poplarının %60'ı bölgesel kültürlere döner: Hicazi, Necdi, Yemeni, Umani veya Hadrami; güney Yemen'de %25 Hadrami, kalanın %50'si Yemeni olur."
+ et_culture.56.a.tt: "Antik bedevi ve Nebati poplarının %60'ı bölgesel kültürlere döner: Hicazi, Necdi, Yemeni, Umani veya Hadrami; güney Yemen'de %50 Yemeni, kalanın %50'si (toplamın %25'i) Hadrami olur."
  et_culture.56.b.tt: "Daha küçük kültür kaymaları (%30, güney Yemen'de %25); çöl kimliği daha güçlü kalır ve istikrar artar."
 
  et_culture.57.title: "Petrol ve Modern Körfez"

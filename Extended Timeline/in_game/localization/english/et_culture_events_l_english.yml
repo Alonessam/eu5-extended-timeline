@@ -244,7 +244,7 @@
  et_culture.55.a: "Let the schools settle."
  et_culture.55.b: "Keep the community undivided."
  et_culture.55.historical_info: "Zaydi Shia imams took root in the Yemeni highlands from the 9th-10th century, Ibadi imams in Oman from the 8th, and Sunni Islam dominated the Hejaz and Najd. Source record: arabia_sectarian_consolidation (wiki_zaydism; wiki_ibadi_islam)."
- et_culture.55.a.tt: "Sectarian shares: 70% Sunni and 5% Shia in the Hejaz; 80% Sunni in Najd; 55% Shia and 20% Sunni in northern Yemen; 55% Sunni and 15% Shia in southern Yemen; 65% Ibadi and 15% Sunni in Oman (of the remaining Muslim pops)."
+ et_culture.55.a.tt: "Sectarian shares of the remaining Muslim population: 70% Sunni and 5% Shia in the Hejaz; 80% Sunni in Najd; 55% Shia and 20% Sunni in northern Yemen; 55% Sunni and 15% Shia in southern Yemen; 65% Ibadi and 15% Sunni in Oman."
  et_culture.55.b.tt: "Smaller sectarian splits; more Muslims remain unaffiliated and stability rises."
 
  et_culture.56.title: "The Regional Identities"
@@ -252,7 +252,7 @@
  et_culture.56.a: "The tribes settle into their lands."
  et_culture.56.b: "The desert keeps its people."
  et_culture.56.historical_info: "Hijazi, Najdi, Yemeni, Omani and Hadhrami identities crystallized from the medieval to the early modern period through geography, tribal settlement, trade and regional states. The modern culture keys already exist in the mod. Source record: arabia_regional_identities (wiki_history_of_arabia; wiki_arabian_peninsula)."
- et_culture.56.a.tt: "60% of the ancient bedouin and Nabataean pops become regional cultures: Hijazi, Najdi, Yemeni, Omani or Hadhrami; in southern Yemen 25% become Hadhrami and 50% of the remainder become Yemeni."
+ et_culture.56.a.tt: "60% of the ancient bedouin and Nabataean pops become regional cultures: Hijazi, Najdi, Yemeni, Omani or Hadhrami; in southern Yemen 50% become Yemeni and 50% of the remainder (25% of the original) become Hadhrami."
  et_culture.56.b.tt: "Smaller culture shifts (30%, or 25% in southern Yemen); the desert identity remains stronger and stability rises."
 
  et_culture.57.title: "Oil and the Modern Gulf"

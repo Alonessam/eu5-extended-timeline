@@ -108,13 +108,14 @@ kabul edilir. `.56` kültür kaymasıdır ve din koşulundan bağımsızdır.
 - **`.54`:** Hicaz %50; Yemen %40; Necid/Hail %30; Uman %30; alternatif
   %25/%20/%15/%15. Yahudi, Hristiyan ve Zerdüşt azınlıklar limit içindedir;
   tamamen yok edilmez.
-- **`.55`:** Hicaz'da kalan `islam` poplarının %70'i Sünni, %5'i Şii;
-  Necid/Hail %80 Sünni; kuzey Yemen %55 Şii + %20 Sünni; güney Yemen %55
-  Sünni + %15 Şii; Uman %65 İbadi + %15 Sünni. Alternatifte oranlar yarıya
-  iner. Art arda `split_pop` nedeniyle nihai paylar nominalden düşüktür.
+- **`.55`:** Hicaz'da %70 Sünni, %5 Şii, %25 islam; Necid/Hail %80 Sünni,
+  %20 islam; kuzey Yemen %55 Şii, %20 Sünni, %25 islam; güney Yemen %55
+  Sünni, %15 Şii, %30 islam; Uman %65 İbadi, %15 Sünni, %20 islam.
+  Alternatifte nihai oranlar yarıya iner; ikinci `split_pop` oranları kalan
+  pop üzerinden hesaplanır.
 - **`.56`:** Hicaz'da antik popların %60'ı Hicazi; Necid/Hail %60 Necdi;
-  kuzey Yemen %60 Yemeni; güney Yemen'de önce %25 Hadrami, sonra kalanın
-  %50'si Yemeni; Uman %60 Umani. Alternatif: %30/%25.
+  kuzey Yemen %60 Yemeni; güney Yemen'de %50 Yemeni, kalanın %50'si (toplamın
+  %25'i) Hadrami; Uman %60 Umani. Alternatif: %30/%25.
 - **`.57`:** Pop etkisi yok; prestij + istikrar. Körfez'e yabancı işgücü
   göçü v1'de modellenmez (`arabia_modern_migration_layer`).
 
