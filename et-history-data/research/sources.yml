@@ -508,3 +508,129 @@ sources:
     url: https://en.wikipedia.org/wiki/Languages_of_France
     locator: Article intro; Status (constitution art. 2; 1999 report; 2008 art. 75-1); Statistics (INSEE 1999)
     caveat: Speaker figures are survey estimates; the 1789 and 1871 French-speaker shares are scholarly reconstruction.
+  wiki_gallic_empire:
+    title: Gallic Empire
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Gallic_Empire
+    locator: Lead; History (Postumus 260; Tetrici; Aurelian's reconquest 274)
+    caveat: The reabsorption is dated 273-274 depending on the source; the mod normalizes the empire to 260-274.
+  wiki_battle_of_soissons_486:
+    title: Battle of Soissons (486)
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Battle_of_Soissons_(486)
+    locator: Lead; Background (Syagrius; Domain of Soissons)
+    caveat: The narrative rests mainly on Gregory of Tours, writing a century later; the battle is dated 486 by convention.
+  wiki_crossing_of_the_rhine:
+    title: Crossing of the Rhine
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Crossing_of_the_Rhine
+    locator: Lead; Invasion (Vandals, Alans and Suebi; 31 December 406)
+    caveat: The winter of 405/406 and the exact crossing point are debated.
+  wiki_kingdom_of_the_burgundians:
+    title: Kingdom of the Burgundians
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Kingdom_of_the_Burgundians
+    locator: Lead; History (Rhine settlement; Sapaudia 443 after the defeat of 436-437)
+    caveat: The chronology is reconstructed from fragmentary sources; the Sapaudia settlement is dated around 443.
+  wiki_visigothic_kingdom:
+    title: Visigothic Kingdom
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Visigothic_Kingdom
+    locator: Lead; Aquitaine settlement as foederati (418); Toulouse as capital
+    caveat: The 418 settlement terms (hospitalitas arrangements) are debated.
+  wiki_treaty_of_saint_clair_sur_epte:
+    title: Treaty of Saint-Clair-sur-Epte
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Treaty_of_Saint-Clair-sur-Epte
+    locator: Lead; Terms (Rollo; Neustria; conversion to Christianity)
+    caveat: Known mainly through Dudo of Saint-Quentin's later Norman chronicle.
+  wiki_albigensian_crusade:
+    title: Albigensian Crusade
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Albigensian_Crusade
+    locator: Lead; Aftermath (Languedoc; Treaty of Paris 1229)
+    caveat: Campaign phases and casualty figures are contested; the Britannica article was also consulted (2026-10-18).
+  wiki_hundred_years_war:
+    title: Hundred Years' War
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Hundred_Years%27_War
+    locator: Lead; Overview (1337-1453; Joan of Arc 1429; Castillon 1453)
+    caveat: A later label for an intermittent conflict; major fighting ends in 1453, the settlement follows in 1475.
+  wiki_ordinance_of_villers_cotterets:
+    title: Ordonnance du 25 août 1539 (Villers-Cotterêts)
+    publisher: Légifrance
+    type: primary_source
+    url: https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000501354
+    locator: Articles 110-111 (judicial acts in "langage maternel françois"); registered 6 September 1539
+    caveat: The text governs judicial and notarial acts; the later "official language of France" framing is retrospective and anachronistic.
+  wiki_edict_of_nantes:
+    title: Edict of Nantes
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Edict_of_Nantes
+    locator: Lead; Terms; Revocation (1685)
+    caveat: Application varied by locality and period; the edict was a negotiated settlement, not full equality.
+  wiki_edict_of_fontainebleau:
+    title: Edict of Fontainebleau
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Edict_of_Fontainebleau
+    locator: Lead (revocation of the Edict of Nantes; Huguenot exodus)
+    caveat: Commonly called the Revocation; its demographic impact is an estimate.
+  wiki_gregoire_report:
+    title: Rapport du représentant Grégoire sur la nécessité d'établir l'uniformité de la langue française (16 prairial an II / 4 June 1794)
+    publisher: Archives parlementaires de la Révolution française (ARCPA/Persée)
+    type: primary_source
+    url: https://archives-parlementaires.persee.fr/prt/3b540175-93bb-42b5-8b82-fec8bf8647ec
+    locator: Séance du 16 prairial an II (4 June 1794); report text (pp. 318-326)
+    caveat: A programmatic revolutionary report; its linguistic program was enforced unevenly over the following decades.
+  wiki_style_of_the_french_sovereign:
+    title: Style of the French sovereign
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Style_of_the_French_sovereign
+    locator: France - "Rex Francorum" to "Rex Franciae" (Philip II, 1190; official use from 1204)
+    caveat: Some recent scholarship argues that original acts kept "Francorum rex" longer; the 1190-1204 dating is the common account and the mod's design boundary.
+  wiki_baptism_of_clovis:
+    title: Baptism of Clovis
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Baptism_of_Clovis
+    locator: Lead; Date (496 or 508, debated); Reims, Bishop Remigius
+    caveat: Gregory of Tours is the main narrative source; 496 vs 508 is unresolved.
+  wiki_brittany:
+    title: Brittany
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Brittany
+    locator: History - Breton settlement from Britain; Frankish marches; Gallo and Breton linguistic line
+    caveat: Settlement chronology is reconstructed from archaeology and later chronicles; dates are approximate.
+  wiki_council_of_tours:
+    title: Council of Tours (813)
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Council_of_Tours
+    locator: Canon 17 (preaching in rusticam romanam linguam or Theodiscam)
+    caveat: The canons are transmitted through Carolingian collections; the "rustic Romance" wording is a translation.
+  wiki_oaths_of_strasbourg:
+    title: Oaths of Strasbourg (842)
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Oaths_of_Strasbourg
+    locator: Text (earliest surviving Romance/Old French attestation)
+    caveat: Preserved in Nithard's later transcription; the "Old French" label is retrospective.
+  wiki_martin_of_tours:
+    title: Martin of Tours
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Martin_of_Tours
+    locator: Lead; Life (rural Christianization in Gaul)
+    caveat: The Vita by Sulpicius Severus is hagiography rather than a neutral account.

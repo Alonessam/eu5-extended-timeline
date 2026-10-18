@@ -34,27 +34,10 @@ occitan = {
 	}
 }
 
-aquitanian = { 
-	language = basque_language
-	
-	color = rgb { 92 13 116 }
-	
-	tags = { basque_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
-
-	opinions = {
-	}
-	
-	use_patronym = yes
-	
-	culture_groups = {
-		pyrenean_group
-	}	
-}
-
 french_canadian = {
 	language = french_language
 	
-	color = color = rgb { 92 13 16 }
+	color = rgb { 92 13 16 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -69,7 +52,7 @@ french_canadian = {
 french_east_american  = {
 	language = french_language
 	
-	color = color = rgb { 192 13 116 }
+	color = rgb { 192 13 116 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -84,7 +67,7 @@ french_east_american  = {
 french_louisianan  = {
 	language = french_language
 	
-	color = color = rgb { 92 113 116 }
+	color = rgb { 92 113 116 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -99,7 +82,7 @@ french_louisianan  = {
 french_californian  = {
 	language = french_language
 	
-	color = color = rgb { 92 213 116 }
+	color = rgb { 92 213 116 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -114,7 +97,7 @@ french_californian  = {
 french_mexican  = {
 	language = french_language
 	
-	color = color = rgb { 92 213 16 }
+	color = rgb { 92 213 16 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -129,7 +112,7 @@ french_mexican  = {
 french_caribbean  = {
 	language = french_language
 	
-	color = color = rgb { 192 213 116 }
+	color = rgb { 192 213 116 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -144,7 +127,7 @@ french_caribbean  = {
 french_colombian  = {
 	language = french_language
 	
-	color = color = rgb { 192 113 16 }
+	color = rgb { 192 113 16 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -159,7 +142,7 @@ french_colombian  = {
 french_peruvian  = {
 	language = french_language
 	
-	color = color = rgb { 192 213 16 }
+	color = rgb { 192 213 16 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -174,7 +157,7 @@ french_peruvian  = {
 french_la_platan  = {
 	language = french_language
 	
-	color = color = rgb { 2 113 116 }
+	color = rgb { 2 113 116 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -189,7 +172,7 @@ french_la_platan  = {
 french_brazilian  = {
 	language = french_language
 	
-	color = color = rgb { 2 13 116 }
+	color = rgb { 2 13 116 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -204,7 +187,7 @@ french_brazilian  = {
 french_australian  = {
 	language = french_language
 	
-	color = color = rgb { 2 13 216 }
+	color = rgb { 2 13 216 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
@@ -219,7 +202,7 @@ french_australian  = {
 french_oceanian = {
 	language = french_language
 	
-	color = color = rgb { 2 213 116 }
+	color = rgb { 2 213 116 }
 
 	tags = { french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 

@@ -87,7 +87,7 @@
  et_culture.107.a: "Welcome the British refugees to Armorica."
  et_culture.107.b: "The peninsula must remain Gallo-Roman."
  et_culture.107.historical_info: "Between the 4th and 6th centuries, Brythonic-speaking Britons migrated to Armorica fleeing Anglo-Saxon invasions, establishing the region that would become Brittany (Breizh), preserving Celtic language and culture in the northwest of Gaul."
- et_culture.107.tt: "The population of Armorica adopts the Breton culture."
+ et_culture.107.tt: "The population of western Armorica adopts the Breton culture."
 
  et_culture.108.title: "The Rhine Crossing"
  et_culture.108.desc: "On the last night of 406, the frozen Rhine gives way before the mass of Vandals, Alans, and Suebi. The frontier collapses. Burgundians settle the upper Rhine, Visigoths move south toward Aquitaine, and Vandals push toward the Mediterranean. The Roman order in Gaul fractures as Germanic peoples carve out homelands."
@@ -146,11 +146,11 @@
  et_culture.115.tt: "The Norman and Arpitan populations adopt the French culture and identity."
 
  et_culture.116.title: "The Edict of Villers-Cotterêts"
- et_culture.116.desc: "King Francis I decrees that all legal documents, court records, and royal charters shall be written in French, not Latin. The chancery of the realm turns from the language of the Roman Empire to the language of the French people. Henceforth, justice, administration, and law shall speak the tongue of Paris."
+ et_culture.116.desc: "King Francis I decrees that all court rulings, court records, and notarial contracts shall be written in French, not Latin. The chancery of the realm turns from the language of the Roman Empire to the language of the French people. Henceforth, justice and the law shall speak the tongue of Paris."
  et_culture.116.a: "French is the language of the realm."
  et_culture.116.b: "Latin is the language of law."
- et_culture.116.historical_info: "The Edict of Villers-Cotterêts (1539), signed by Francis I, mandated the use of French (langue françoise) instead of Latin in all legal and administrative documents, establishing French as the official language of the French state."
- et_culture.116.tt: "The French, Occitan, Arpitan, and Norman populations adopt the French language."
+ et_culture.116.historical_info: "The Edict of Villers-Cotterêts (1539), signed by Francis I, mandated the use of French (langue françoise) instead of Latin in judicial acts and notarial records; a landmark in the rise of French as the language of the state."
+ et_culture.116.tt: "The Gallo-Roman, Occitan, Arpitan, and Norman populations adopt the French language."
 
  et_culture.117.title: "The Wars of Religion"
  et_culture.117.desc: "France bleeds. Calvinist Huguenot and Catholic armies tear the kingdom apart in an endless cycle of massacre and reprisal — St. Bartholomew's Day, the Wars of Religion. At last Henry IV issues the Edict of Nantes granting toleration, and after his assassination, Louis XIV tears it up. The Protestants flee; the kingdom is one faith again."

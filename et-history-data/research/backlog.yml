@@ -310,6 +310,35 @@ tasks:
       applied before Test B, so their statuses are provisional until the
       in-game gate. The 01:33 game logs predate these commits (02:28-02:59),
       so Test B must be rerun to cover the new blocks.
+      UPDATE 9 (2026-10-18, Gaul historical-reality fixes): the second review
+      of the Gaul chain applied the following fixes. Tag layers: .101-.109 stay
+      ROM, .110-.113 moved from ROM to FRAN (the Frankish-kingdom layer; the
+      has_or_had_tag=ROM trigger lines were dropped so the DHE binding alone
+      gates them), .114-.122 stay FRA. The boundary follows the rex Francorum
+      -> rex Franciae shift under Philip II (1190, in use by 1204) and is the
+      decision recorded for gaul_dhe_tag_binding_review. Event fixes: .107 now
+      converts only the western peninsula (brest, saint_malo; gallo_roman
+      caught by an OR with the gallian fallback) and rennes/nantes moved to the
+      .111 northern list; .108's add_pops are wrapped in every_owned_location
+      guards while keeping the Burgundian/Visigothic/Vandal set (the desc
+      already frames the Vandals as the Mediterranean migration wave); .112
+      and .116 effects sit inside their custom_tooltips; .116's tooltips now
+      name the four cultures the code shifts (Gallo-Roman, Occitan, Arpitan,
+      Norman) and the desc/historical_info drop the "royal charters" and
+      "official language" overstatements; .122's DHE window extends to
+      to=2009.1.1 so the 2008 article 75-1 revision is inside the 1992-2008
+      label; all 22 Gaul events received illustration_tags; the Phase 7 header
+      now covers .119-.121 with a separate Phase 8 header for .122.
+      Data/consistency: et_french.txt's twelve "color = color = rgb" lines
+      were corrected and the duplicate aquitanian block was removed (et_iberian
+      keeps the single definition; the flagged et_french.txt iberian_gfx use
+      goes with it); burgundian/visigoth names (+ADJ) and main_menu occitan
+      were added to both languages; eight sourced records (.104, .108, .109,
+      .114-.118) were added and the five pending Phase 2/3 records re-targeted
+      and sourced - all still pending until Test B; eighteen source entries
+      were added. Open: Test B must be rerun and must cover the ROM -> FRAN
+      hand-off; the gallo_roman coverage outside the city lists remains an
+      accepted abstraction (normal assimilation continues after the seeds).
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -419,13 +448,17 @@ tasks:
       pending or in_progress although their events exist. Backfill follows the
       data-first rule (source before script) and the Gaul track's sourcing
       style; do not mark records applied before Test B.
+      UPDATE 9 (2026-10-18): the records for .104, .108, .109 and .114-.118
+      were added (status pending) with source_refs; the five Phase 2/3 records
+      were re-targeted to their events and sourced. Promotion to applied still
+      waits for Test B.
     acceptance: Every Gaul event maps to a sourced record (or a documented reason why it does not); statuses reflect the shared Test B gate.
   gaul_dhe_tag_binding_review:
     period_id: medieval
     priority: 2
-    state: pending
+    state: in_progress
     targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/common/on_action/et_history_pulses.txt"]
-    source_refs: []
+    source_refs: [wiki_style_of_the_french_sovereign]
     question: Should the Gaul chain keep the dynamic_historical_event tag binding (ROM for .101-.113, FRA for .114-.122) or move to the owner-agnostic yearly-pulse pattern used by the Egypt chain?
     evidence: >-
       All 22 Gaul events are DHE-bound: .101-.113 require ROM, .114-.122
@@ -439,4 +472,12 @@ tasks:
       world layer for ROM/FRA and add that test case, or move the events to a
       date-guarded yearly pulse (the DHE windows must become explicit date
       triggers) so any owner of Paris runs the chain.
+      UPDATE 9 (2026-10-18, decision): the chain stays a DHE-held historical
+      world layer, but the binding now follows the historical actors: ROM
+      (.101-.109), FRAN (.110-.113) and FRA (.114-.122). DHE is single-tag by
+      construction (Egypt design note 2.1); rebinding .110-.113 to FRAN gives
+      the Frankish kingdom its own layer and ends the ROM->FRA mismatch.
+      The FRAN/FRA boundary follows the rex Francorum -> rex Franciae shift
+      (Philip II, 1190/1204). Remaining: Test B must include the ROM -> FRAN
+      hand-off case; .109 and .110 sit on different tags, so no double firing.
     acceptance: Decision recorded in the design note/README; Test B includes an owner-switch or non-ROM/FRA case; no double firing.

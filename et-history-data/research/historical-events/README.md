@@ -89,7 +89,7 @@ bölüm 6'daki kalite kurallarına bağlıdır.
 | `change_language` | Bir kültürün dilini değiştirir | efekt listesi (wiki) |
 | `form_new_culture` | Cabinet action (adm, 10 yıl): ana kültürden yeni kültür oluşturur | `common/cabinet_actions/form_new_culture.txt` |
 | `merge_culture_group` | Cabinet action (10 yıl): ana kültürün grubunu birleştirir | `common/cabinet_actions/merge_culture_group.txt` |
-| `add_migration` / `remove_migration` | Kültür ve din parametreli göç kurar | `in_game/events/culture/culture_greek.txt:2945` |
+| `add_migration` / `remove_migration` | Kültür ve din parametreli göç kurar (Galya zinciri doğrudan `add_pop` + `change_pop_culture` kullanır) | `in_game/events/culture/culture_greek.txt:2945` |
 | `add_cultural_influence` / `add_cultural_tradition` | Kültür savaşı ivmesi | efekt listesi (wiki) |
 | `force_refresh_culture_and_religion` | Lokasyonun baskın kültür/dinini yeniden hesaplar | efekt listesi (wiki) |
 
@@ -228,6 +228,12 @@ zinciri şu uygulama fazlarına bölündü (numara rezervasyonu `.100`–`.149`)
 - **Faz 7 — Modern Fransa (1837–1945):** `.119`–`.121`
 - **Faz 8 — Çağdaş Fransa (1945–2026):** `.122` + savaş sonrası göç katmanı
   (backlog: `gaul_postwar_immigration_layer`)
+
+Zincirin etiket katmanları: `.101`–`.109` → `ROM` (Roma dönemi), `.110`–`.113` →
+`FRAN` (Frenk krallığı), `.114`–`.122` → `FRA` (Fransa). Katman sınırı, II. Philippe
+dönemindeki `rex Francorum` → `rex Franciae` geçişine (1190; 1204'ten itibaren
+yerleşik) dayanır; DHE tek etiketle çalıştığı için zincir tek bir devlette değil,
+dönemin aktöründe ateşlenir (karar: `gaul_dhe_tag_binding_review`, UPDATE 9).
 
 Faz 7/Faz 8 sınırı, projenin kendi dönem sınıflarına dayanır
 (`docs/Period Classes.md`: `industrial` 1800–1945, `contemporary` 1945+); bu yüzden
