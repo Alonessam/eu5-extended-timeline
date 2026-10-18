@@ -174,16 +174,16 @@
  et_culture.119.tt: "Half of the remaining Breton-speaking population adopts the French culture as the Republican school spreads."
 
  et_culture.120.title: "The Separation"
- et_culture.120.desc: "After a century of struggle between the altar and the Republic, the Chamber passes the law of 9 December 1905: the state no longer recognises, funds or guards any religion. Church property becomes public, the crucifix is taken from the courtroom and the school, and laicite becomes a founding principle of the Republic. Rome thunders against the 'nefarious law', and France is divided again - but the secular state is here to stay."
- et_culture.120.a: "The Republic is secular: laicite."
+ et_culture.120.desc: "After a century of struggle between the altar and the Republic, the Chamber passes the law of 9 December 1905: the state no longer recognises, funds or guards any religion. Church property becomes public, the crucifix is taken from the courtroom and the school, and laïcité becomes a founding principle of the Republic. Rome thunders against the 'nefarious law', and France is divided again - but the secular state is here to stay."
+ et_culture.120.a: "The Republic is secular: laïcité."
  et_culture.120.b: "Concord with the Church."
- et_culture.120.historical_info: "The 1905 law on the Separation of the Churches and the State ended state funding and recognition of religion and established laicite; it did not apply in German-ruled Alsace-Moselle. Pope Pius X condemned it in the 1906-1908 encyclicals, and reconciliation came only in the 1920s. Source record: gaul_laicite_separation_1905 (wiki_separation_church_state_1905)."
+ et_culture.120.historical_info: "The 1905 law on the Separation of the Churches and the State ended state funding and recognition of religion and established laïcité; it did not apply in German-ruled Alsace-Moselle. Pope Pius X condemned it in the 1906-1907 encyclicals, and reconciliation came only in the 1920s. Source record: gaul_laicite_separation_1905 (wiki_separation_church_state_1905)."
 
  et_culture.121.title: "The Sacred Union"
  et_culture.121.desc: "In August 1914 the call goes out: all Frenchmen, of every party and every province, are summoned to the defence of the patrie. The trenches of the Great War grind together men from Paris and Brittany, from Provence and Flanders; they bleed, and they learn to speak to one another. When the survivors return, they are no longer Bretons or Provencaux but Frenchmen."
  et_culture.121.a: "A sacred union of all Frenchmen."
  et_culture.121.b: "This war is not ours."
- et_culture.121.historical_info: "On 4 August 1914 President Poincare proclaimed the union sacree, and the left suspended its opposition for the duration of the war. The mass conscript army brought together men of every region, completing the linguistic and national integration begun by the Republican school. Source record: gaul_great_war_union_sacree_1914_1918 (wiki_sacred_union; weber_peasants_into_frenchmen)."
+ et_culture.121.historical_info: "On 4 August 1914 President Poincaré proclaimed the union sacrée, and the left suspended its opposition for the duration of the war. The mass conscript army brought together men of every region, completing the linguistic and national integration begun by the Republican school. Source record: gaul_great_war_union_sacree_1914_1918 (wiki_sacred_union; weber_peasants_into_frenchmen)."
  et_culture.121.tt: "The remaining Breton population adopts the French culture as the nation is forged in the trenches."
 
  et_culture.122.title: "The Trente Glorieuses"

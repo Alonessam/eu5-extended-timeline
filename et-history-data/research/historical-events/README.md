@@ -82,6 +82,15 @@ listelerine eklendi. `.109`/`.114`/`.115`/`.118` araç ipuçları (EN/TR) yeni k
 etkiye göre yazıldı. Açık kalan nokta: `.114` hâlâ İngiliz Gaskonyası olan `bordeaux`'yu
 içeriyor (`gaul_history_audit_followups`).
 
+**Galya yerelleştirme düzeltmeleri (§3, 18 Ekim 2026):** TR metinlerindeki yazım
+hataları giderildi (örn. `.105` "amfiatrosunda" → "amfiteatrosunda" ve "öncülenir" →
+"öncülük eder", `.105` "Galo-Romen" → "Gallo-Romen", `.107` "kutsal kahramanlarını" →
+"azizlerini", `.110` "Aryanist/Aryanizm" → "Ariusçu/Ariusçuluk", `.112` "doğum ebeveyni"
+→ "ebesi", `.120` "ansiklikleriyle" → "ansiklikalarıyla", `.122` "Otuz Şanlı Yıl" →
+"Şanlı Otuz Yıl"). EN metinlerinde Fransızca terimler aksanlandı (`laïcité`, `Poincaré`,
+`union sacrée`) ve `.120` ansiklik aralığı 1906-1907'ye çekildi (kayıt ve `sources.yml`
+uyarısı dahil). EN/TR anahtar eşliği 165/165. Ayrıntı: backlog UPDATE 12.
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,

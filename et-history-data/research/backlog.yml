@@ -365,6 +365,21 @@ tasks:
       were rewritten to match the gradual effect. Still open from section 2: .114
       lists bordeaux, which was English Gascony and outside the Albigensian
       Crusade's reach.
+      UPDATE 12 (2026-10-18, Gaul localization, audit section 3): the tr/en copy
+      defects are fixed. Turkish: .105 "amfiatrosunda" -> "amfiteatrosunda" and
+      "oncuelenir" -> "onculuk eder" (the verb oncuelenmek does not exist), .105
+      "Galo-Romen" -> "Gallo-Romen", .106 "pagan kutsal pinarlarindan" -> "pagan
+      pinarlarindan" (the English says "pagan springs", so kutsal was redundant),
+      .107 "kutsal kahramanlarini" -> "azizlerini" (English "saints"), .110
+      "Aryanist"/"Aryanizm" -> "Ariuscu"/"Ariusculuk" (Arianism, not Aryan), .112
+      "dogum ebeveyni" -> "ebesi" (English "midwife"), .120 "ansiklikleriyle" ->
+      "ansiklikalariyla" (the Turkish noun is ansiklika), and .122 "Otuz Sanli Yil"
+      -> "Sanli Otuz Yil" (3 places). English: laicite/Poincare/union sacree now
+      carry their French accents (3 prose places; the gaul_laicite_separation_1905
+      record id stays ASCII), and the .120 encyclicals "1906-1908" -> "1906-1907"
+      (the last encyclical, Une Fois Encore, is January 1907); the same off-by-one
+      is fixed in the record finding and the sources.yml caveat. en/tr key parity
+      stays 165/165.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -511,7 +526,7 @@ tasks:
   gaul_history_audit_followups:
     period_id: contemporary
     priority: 2
-    state: in_progress
+    state: completed
     targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/localization/english/et_culture_events_l_english.yml", "Extended Timeline/in_game/localization/turkish/et_culture_events_l_turkish.yml"]
     source_refs: [weber_peasants_into_frenchmen, wiki_languages_of_france]
     question: How should the non-critical Gaul audit findings be resolved - the frankish culture that never becomes french, the full-population culture flips in .109/.114/.118, and the Turkish and English copy defects?
@@ -538,4 +553,6 @@ tasks:
       UPDATE 11 (2026-10-18) resolved item (a): .109/.114/.118 use split_pop
       (0.25/0.30/0.50), frankish was added to the .115/.118 conversion sets, and
       the orphaned soissons was added to .111 and .115. Items (b) and (c) remain.
+      UPDATE 12 (2026-10-18) resolved (b) and (c): the tr/en copy defects are fixed
+      and the .120 encyclical range is now 1906-1907. All three items are closed.
     acceptance: Each item is decided and applied with the chain's historical options in mind; the frankish path and each partial flip are documented; Turkish and English strings are corrected without breaking key parity.

@@ -170,13 +170,13 @@ records:
     finding: >-
       The law of 9 December 1905 separates the churches from the state: the Republic no
       longer recognises, funds or subsidises any religion, and church buildings become
-      public property. Laicite becomes a founding principle of the French state, though the
-      measure is divisive at the time (Pope Pius X condemns it in the 1906-1908
+      public property. Laïcité becomes a founding principle of the French state, though the
+      measure is divisive at the time (Pope Pius X condemns it in the 1906-1907
       encyclicals, and reconciliation comes only in the 1920s). This is a state and
       political-faith marker rather than a mass change of pop religion.
     population: "French state and institutions; practising Catholic population most affected"
     dating: {precision: year, date: "1905", calendar: ce_year_normalized_to_et}
-    mechanism: legislative separation of church and state (laicite)
+    mechanism: legislative separation of church and state (laïcité)
     source_refs: [{id: wiki_separation_church_state_1905, locator: "Article intro; History; Effects; Reactions by the Catholic Church"}]
     confidence: high
     integration: {status: applied, target: "events (et_culture.120)", note: "Modeled as a state policy choice; no direct pop religion conversion (no secular religion key exists)."}
