@@ -159,7 +159,7 @@ records:
     mechanism: state collapse, Aksumite campaign, elite replacement by the Nobatae
     source_refs: [{id: wiki_meroe, locator: "Fourth Meroitic Period"}, {id: wiki_nobatia, locator: "History"}]
     confidence: medium
-    integration: {status: pending, target: "culture chain kushite -> nubian", note: "Nubian successor cultures and the nilosahelian_group wiring are now in place."}
+    integration: {status: pending, target: "events (WS2 culture layer)", note: "Scripted as et_culture.6 (60% historical / 20% resistance in butana_area + nubia_proper_area); Test B pending. The Kushite state is not destroyed by script."}
   nubia_christianization_543:
     entity: culture_kushite
     subject: pop_religion_and_culture_change
@@ -175,4 +175,4 @@ records:
     mechanism: royal conversion, missionary activity, temple conversions
     source_refs: [{id: wiki_nobatia, locator: "Article intro; History and Christianity sections"}]
     confidence: medium
-    integration: {status: pending, target: "events (WS2 religion layer)", note: "Christianization window c. 536-900 with town-then-village pacing."}
+    integration: {status: pending, target: "events (WS2 religion layer)", note: "Scripted as et_culture.7 (60% historical / 20% resistance in nubia_proper_area; 35% / 10% in butana_area); Test B pending. Royal/state conversion and the Makuria absorption are not modeled in v1 (backlog nubia_state_layer_543_707)."}

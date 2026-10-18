@@ -328,7 +328,37 @@ tasks:
       burghers, laborers, soldiers, peasants, tribesmen and slaves), both replaced
       with pop_type:laborers; the script_token_audit task remains for the rest of
       the corpus. Test B remains pending.
+      UPDATE 10 (2026-10-18, Egypt track Nubia extension): the last unblocked
+      data-first step, the Nubia chain, was implemented as et_culture.6
+      ("The Silence of Meroe", 300-450; kushite -> nubian, 0.60 historical /
+      0.20 resistance in butana_area + nubia_proper_area) and et_culture.7
+      ("The Baptism of Nobatia", 536-900; nubian + egyptian_polytheism ->
+      miaphysite, 0.60 / 0.35 historical and 0.20 / 0.10 resistance in
+      nubia_proper_area / butana_area). The chain runs on the new owner-agnostic
+      et_nubia_yearly_pulse (anchors faras, dongola, kerma, shendi, soba) hooked
+      into yearly_country_pulse; EN/TR localization added. The Nubian state/royal
+      layer (Nobatia's court conversion, Makuria's absorption of Nobatia by 707)
+      is deliberately not forced - only pops change - and is filed as
+      nubia_state_layer_543_707 below. Kushite pops in Darfur and west of the two
+      areas stay outside this v1 scope. Test B now spans .1-.7 (Nubia turn
+      separate); records remain pending until it passes.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
+  nubia_state_layer_543_707:
+    period_id: ancient
+    priority: 3
+    state: pending
+    targets: [Extended Timeline/in_game/events/et_culture_events.txt, research/historical-events/2026-10-17_egypt_culture_transition.yml]
+    source_refs: [wiki_nobatia, wiki_meroe]
+    question: Should the Nubian extension model Nobatia's royal conversion and Makuria's absorption of Nobatia as state/ownership changes, or remain a population-only layer?
+    evidence: >-
+      et_culture.7 models the Christianization of Nubian pops in the nubia proper
+      and butana areas, but does not change the owner's state religion, create
+      Nobatia/Makuria/Alodia tags, or script Makuria's absorption of Nobatia by
+      707. At the 58 CE start the MERO tag owns both regions. A state layer needs
+      verified tags, ownership transitions and its own source/design pass; forcing
+      it through the pop event would conflate ruler change with population change
+      (the Egypt design note's quality rules).
+    acceptance: Decision recorded; if modeled, state changes are data-first, sourced and tested for owner switches; if not, the population-only abstraction stays explicit in the design note and record integration notes.
   culture_group_gaps_remaining:
     period_id: ancient
     priority: 3

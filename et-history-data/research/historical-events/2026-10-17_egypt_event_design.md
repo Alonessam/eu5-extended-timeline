@@ -1,9 +1,10 @@
 # Mısır Pilotu — Olay Tasarım Notu (Faz 1 / WS4)
 
-**Tarih:** 17 Ekim 2026 · **Hat:** Mısır (paralel pilot) · **Durum:** v1
-scriptlendi; **Test A geçti** (17 Ekim 2026: `et_culture.9000` ve Galya `.101`
-oyun içinde ateşlendi, `error.log`'da mod satırı yok — kanıt bölüm 5). Zincir
-doğrulaması (Test B, console protokolü) sırada. Samet'in inceleme commit'i (`f3d304d`) payları spec'e hizaladı; son-kimlik anahtarlarının sahipliği **ikinci incelemede karara bağlandı** (17 Ekim 2026): vanilla içerik korunur, deltasız mod kopyaları geri alındı (bölüm 7, kararlar 7–8). Numara mutabakatı sağlandı:
+**Tarih:** 17 Ekim 2026; Nübya eki 18 Ekim 2026 · **Hat:** Mısır (paralel
+pilot) · **Durum:** v1 + Nübya eki (`et_culture.6`–`.7`) scriptlendi;
+**Test A geçti** (17 Ekim 2026: `et_culture.9000` ve Galya `.101` oyun içinde
+ateşlendi, `error.log`'da mod satırı yok — kanıt bölüm 5). Zincir
+doğrulaması (Test B `.1`–`.7`, console protokolü) sırada. Samet'in inceleme commit'i (`f3d304d`) payları spec'e hizaladı; son-kimlik anahtarlarının sahipliği **ikinci incelemede karara bağlandı** (17 Ekim 2026): vanilla içerik korunur, deltasız mod kopyaları geri alındı (bölüm 7, kararlar 7–8). Numara mutabakatı sağlandı:
 Galya pilotu `.101`–`.103` olarak ayrıldı.
 
 **Veri temeli:** `2026-10-17_egypt_culture_transition.yml` (11 kayıtlı geçiş).
@@ -192,7 +193,8 @@ kesri ayrılıp yeni din/kültüre geçer, kalan aynı kalır.
 - **custom_tooltip deseni:** dönüşüm efektleri, vanilla MAM/SWE deseniyle
   (`flavor_MAM.txt:2661-2677`) `custom_tooltip` bloğunun **içine** yazıldı
   (görünüm + yürütme birebir vanilla).
-- **Nübya (`.6`/`.7`) bu sürümde yok** — bölüm 7 karar 3 bekliyor.
+- **Nübya eki (`.6`/`.7`) 18 Ekim 2026'da eklendi** — ayrı
+  `et_nubia_yearly_pulse` ile çalışır; ayrıntılar bölüm 3 ek ve bölüm 7 karar 3.
 - **`et_culture.9000`** test olayı: Test A (17 Ekim 2026) geçti; zincir
   doğrulaması (Test B) geçince emekliye ayrılır.
 
@@ -291,17 +293,37 @@ kesri ayrılıp yeni din/kültüre geçer, kalan aynı kalır.
   hedef 1837 görünümü: Kıptî azınlık + Müslüman Arap-Mısırlı çoğunluk.
   Kalan Müslüman-Kopt poplar dil geçişinin kuşak aldığını temsil eder.
 
-### Ek: Nübya (stretch — ayrı onayla, bölüm 7 karar 3)
+### Ek: Nübya (`.6`–`.7`, 18 Ekim 2026)
 
-- **et_culture.6 — "Meroë'nin Sessizliği"** (pencere 300–450):
-  `kushite` → `nubian` `fraction = 0.60`. Kayıt:
-  `kush_meroe_collapse_and_nubian_successors`.
-- **et_culture.7 — "Nobatia'nın Vaftizi"** (pencere 536–900):
-  `nubian` poplarda `miaphysite` `fraction = 0.60`; kasaba→köy kademesi.
-  Kayıt: `nubia_christianization_543`.
-- Nübya kendi alt-pulse'ını ister: `et_nubia_yearly_pulse`
-  (çapa lokasyonları — Faras/Dongola hattı — `definitions.txt`'ten
-  belirlenecek; not: çapa anahtarları henüz doğrulanmadı).
+Nübya, Mısır çekirdeğinden ayrı bir `et_nubia_yearly_pulse` ile çalışır
+(çapalar: `faras`, `dongola`, `kerma`, `shendi`, `soba`). Olaylar DHE/tag
+bağlamaz; her sahip kendi zincirini yürütür. Nübya'da state/royal katman
+v1'de modellenmez — yalnız pop kültürü/dini değişir (backlog:
+`nubia_state_layer_543_707`).
+
+- **et_culture.6 — "Meroë'nin Sessizliği" / "The Silence of Meroë"**
+  (pencere 300–450; kayıt: `kush_meroe_collapse_and_nubian_successors`).
+  Trigger: `current_year` 300–450, Nübya çapalarından biri,
+  `NOT = { has_variable = et_nubia_6_fired }`.
+  Tarihsel: `kushite` poplarında `butana_area` + `nubia_proper_area`
+  için `fraction = 0.60` → `culture = culture:nubian`;
+  `et_nubia_meroe`. Direniş: `fraction = 0.20`;
+  `et_nubia_meroe_resist`. Devlet yıkımı/ilhak zorlanmaz; yalnız kimlik
+  kayması işlenir.
+- **et_culture.7 — "Nobatia'nın Vaftizi" / "The Baptism of Nobatia"**
+  (pencere 536–900; kayıt: `nubia_christianization_543`).
+  Trigger: `current_year` 536–900, aynı çapalar,
+  `NOT = { has_variable = et_nubia_7_fired }`.
+  Tarihsel: `nubian` + `egyptian_polytheism` poplarında
+  `nubia_proper_area` `fraction = 0.60`, `butana_area` `fraction = 0.35`
+  → `religion = religion:miaphysite`; `et_nubia_christian`.
+  Direniş: `0.20` / `0.10`; `et_nubia_christian_resist`.
+  Kraliyet/state dönüşümü v1'de yok; kayıt ve backlog bunu açıkça belirtir.
+  Butana/Alodia payı Nobatia'dan düşüktür (dönüşümün daha geç ve kısmi
+  olduğunu temsil eder).
+- **Kapsam notu:** `butana_area` + `nubia_proper_area` kullanılır; Darfur
+  ve batı çölündeki `kushite` popları bu v1 olayının dışındadır (alan
+  yaklaşımı; ayrı bir kayıt/olay gerekir).
 
 ### Kapsam dışı (bilinçli)
 
@@ -328,7 +350,8 @@ ve `.../turkish/et_culture_events_l_turkish.yml`.
 Taslak başlıklar (EN/TR): .1 "A New Dawn on the Nile" / "Nil'de Yeni Bir
 Şafak" · .2 "The Coptic Identity" / "Kıptî Kimliği" · .3 "The Years of the
 Dhimma" / "Zimmi Yılları" · .4 "Ten to One" / "On Kala Bir" · .5 "The Quiet
-Language Shift" / "Dilin Sessiz Değişimi".
+Language Shift" / "Dilin Sessiz Değişimi" · .6 "The Silence of Meroë" /
+"Meroë'nin Sessizliği" · .7 "The Baptism of Nobatia" / "Nobatia'nın Vaftizi".
 
 `et_culture.9000` test olayı ve loc anahtarları, zincir oyun içi doğrulamayı
 geçtikten sonra kaldırılır.
@@ -347,7 +370,8 @@ geçtikten sonra kaldırılır.
   `tick_day`, `Log.ClearErrorLog`. Geçici pencere yaması gereksizleşti.
   Protokol:
   1. Kaydet; `Log.ClearErrorLog`; `event_probabilities yearly_country_pulse`
-     → `error.log`'da `et_egypt_yearly_pulse` dökümü (kanca kanıtı).
+     → `error.log`'da `et_egypt_yearly_pulse` ve `et_nubia_yearly_pulse`
+     dökümleri (kanca kanıtı).
   2. Pencere mantığı: 58'de `test_event_trigger et_culture.1` (beklenen:
      FAIL, yıl < 200) → `change_date 250` → tekrar (beklenen: PASS).
   3. Doğal ateşleme: 250'de yıl sınırını geçir (`tick_day`; gerekirse hız
@@ -366,25 +390,36 @@ geçtikten sonra kaldırılır.
      (`arabized`). Kapanış: `event_probabilities` tekrarı (`.1`–`.5`
      değillenmiş görünür), `error.log` temiz, panoda nihai görünüm (islam
      çoğunluk + Kıptî azınlık + Mısır kültürleri).
-- **Aşama C — hızlandırılmış uzun gözlem (opsiyonel):** 58→700; Mısır
-  panosunda kademeli değişim; başkaca ülkelerde yan etki yok; performans
-  notu (yıllık pulse + bölgesel `every_pop` sınırlı — kalite kuralı 6).
-- **Kabul kriterleri:** 5 olay ateşlenir; din ve kültür zincirleri hedeflenen
-  yönlerde ilerler; direniş dalı zinciri durdurur; hiçbir seçenek sessizce
-  zorlanmaz; localization görünür; log temiz.
+  7. Nübya turu (ayrı): 58'de `test_event_trigger et_culture.6` FAIL
+     (yıl < 300) ve `.7` FAIL (yıl < 536); `change_date 350` → `.6` PASS →
+     `event` ile **tarihsel**; `kushite` → `nubian` `fraction = 0.60`
+     (Butana/Nübya proper) + `et_nubia_6_fired`. `change_date 600` → `.7`
+     PASS → **tarihsel**; `nubian` + `egyptian_polytheism` → `miaphysite`
+     `0.60` (Nübya proper) / `0.35` (Butana) + `et_nubia_7_fired`.
+     `error.log` temiz; `event_probabilities` içinde `et_nubia_yearly_pulse`
+     görünür.
+- **Aşama C — hızlandırılmış uzun gözlem (opsiyonel):** 58→700; Mısır ve
+  Nübya panolarında kademeli değişim; başkaca ülkelerde yan etki yok;
+  performans notu (yıllık pulse + bölgesel `every_pop` sınırlı — kalite
+  kuralı 6).
+- **Kabul kriterleri:** 7 olay ateşlenir (Mısır `.1`–`.5` + Nübya `.6`–`.7`);
+  din ve kültür zincirleri hedeflenen yönlerde ilerler; direniş dalı zinciri
+  durdurur; Nübya'da state/royal katman zorlanmaz (yalnız pop katmanı);
+  hiçbir seçenek sessizce zorlanmaz; localization görünür; log temiz.
 
 ## 6. Uygulama dosya planı (iş sırası)
 
 1. **YENİ** `Extended Timeline/in_game/common/on_action/et_history_pulses.txt`
    (bölüm 2.3 iskeleti).
 2. **GÜNCELLE** `Extended Timeline/in_game/events/et_culture_events.txt` —
-   `et_culture.1`–`.5` (+ onaylanırsa `.6`–`.7`).
+   `et_culture.1`–`.7`.
 3. **GÜNCELLE** localization EN/TR (bölüm 4).
 4. Test A → Test B → (gerekirse kalibrasyon) → Test C.
 5. Zincir doğrulanınca `et_culture.9000` emekli; README/backlog senkronu.
 
-**Durum:** 1–3 ✓ (17 Ekim 2026). 4: Test A ✓; Test B (console protokolü)
-sırada. 5: Test B geçince (9000 emekliliği + kayıt senkronu).
+**Durum:** 1–3 ✓ (17 Ekim 2026; Nübya eki 18 Ekim 2026). 4: Test A ✓;
+Test B `.1`–`.7` (console protokolü) sırada. 5: Test B geçince
+(9000 emekliliği + kayıt senkronu).
 
 Numara rezervasyonu (Samet ile mutabakat — **sağlandı**): Mısır `.1`–`.49`,
 Galya `.100`–`.149` (Galya `.101`–`.103` yürürlükte), sonraki bölgeler `.150`+.
@@ -396,7 +431,10 @@ Galya `.100`–`.149` (Galya `.101`–`.103` yürürlükte), sonraki bölgeler `
    ilgili dalı hiç ateşlenmez; diverjinans bilinçli). Onay gerekir.
 2. **Oyuncu seçeneği deseni:** Her olayda tarihsel + direniş; direniş zinciri
    durdurur. AI tarihsel seçer. Onay gerekir.
-3. **Nübya eki:** Faz 1 içinde mi, Mısır yeşile döndükten sonraya mı?
+3. **Nübya eki — KARAR VERİLDİ (18 Ekim 2026):** Faz 1 kapsamına alındı;
+   `et_culture.6`–`.7` + `et_nubia_yearly_pulse` eklendi. State/royal katman
+   (Nobatia'nın vaftizi, Makuria'nın 707'de ilhakı) v1'de yok; backlog
+   `nubia_state_layer_543_707`. Test B `.1`–`.7` kapsayacak.
 4. **Oran kalibrasyonu:** İlk taslak paylar; test verisiyle ayar. İslamlaşma
    için ikinci dalga yeterli olmazsa `.4b` denge dalgası eklenir.
 5. **Hellno kaydı:** Sağlam kaynak bulunana kadar script yok (`pending`).
@@ -431,17 +469,20 @@ Galya `.100`–`.149` (Galya `.101`–`.103` yürürlükte), sonraki bölgeler `
 | Kayıt | Olay | Durum |
 |---|---|---|
 | `egypt_58ce_population_baseline` | (zincirin başlangıç varsayımı) | applied (zaten) |
-| `egypt_christianization_rise` | `et_culture.1` | planlandı |
-| `egypt_coptic_emergence_and_continuity` | `et_culture.2` | planlandı |
+| `egypt_christianization_rise` | `et_culture.1` | scriptlendi; Test B bekliyor |
+| `egypt_coptic_emergence_and_continuity` | `et_culture.2` | scriptlendi; Test B bekliyor |
 | `egypt_chalcedon_split_451` | `.1`/`.2` metin (`historical_info`); doğrudan pop etkisi yok | metin düzeyi |
 | `egypt_arab_conquest_639_642` | zorlanmaz — devlet katmanı (Faz 3 fetih politikası) | kapsam dışı |
-| `egypt_arabic_administration_700` | `.5` kademesi ("şehirler önce") + metin | planlandı |
-| `egypt_islamization_waves` | `.3` + `.4` | planlandı |
-| `egypt_coptic_spoken_decline` | `.5` | planlandı |
+| `egypt_arabic_administration_700` | `.5` kademesi ("şehirler önce") + metin | scriptlendi; Test B bekliyor |
+| `egypt_islamization_waves` | `.3` + `.4` | scriptlendi; Test B bekliyor |
+| `egypt_coptic_spoken_decline` | `.5` | scriptlendi; Test B bekliyor |
 | `egypt_helleno_egyptian_absorption` | — (kaynak zayıf) | bekliyor |
-| `kush_meroe_collapse_and_nubian_successors` | `.6` (ek) | öneri |
-| `nubia_christianization_543` | `.7` (ek) | öneri |
+| `kush_meroe_collapse_and_nubian_successors` | `.6` (ek) | scriptlendi; Test B bekliyor |
+| `nubia_christianization_543` | `.7` (ek) | scriptlendi; Test B bekliyor |
 
+Nübya'da state/royal katman (Nobatia sarayının vaftizi, Makuria'nın 707'de
+Nobatia'yı ilhakı) v1'de modellenmez; kayıt entegrasyon notu ve
+`nubia_state_layer_543_707` backlog görevi bu sınırı açıkça belgeler.
 Scriptler yazılıp test geçince ilgili kayıtların `integration.status` alanları
 `pending → applied`'a çekilir (hedef dosya: `events/et_culture_events.txt` +
 `on_action/et_history_pulses.txt`).
@@ -460,6 +501,11 @@ Scriptler yazılıp test geçince ilgili kayıtların `integration.status` alanl
   `type = pop_type:clergy`; `:1185-1196` lokasyon kapsamı.
 - `in_game/map_data/definitions.txt:5337-5352` — Mısır alt/üst bölge ve
   lokasyon anahtarları.
+- `map_data/definitions.txt:5041-5067` — `nubia_region`, `butana_area` ve
+  `nubia_proper_area`; Nübya çapaları `faras`/`dongola`/`kerma`/`shendi`/`soba`.
+- `main_menu/setup/start/10_countries.txt:7790` — `MERO` başlangıç sahibi;
+  `06_pops.txt:73058-73187` — `kushite`/`nubian` + `egyptian_polytheism`
+  başlangıç popları.
 - `in_game/common/religions/christian.txt:365-399` — `miaphysite`
   (`enable` yok → 58'den itibaren).
 - EU5 Wiki, "On action" — modlama kuralı: mevcut on action'a yalnız yeni

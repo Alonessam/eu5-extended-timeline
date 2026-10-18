@@ -10,10 +10,11 @@ doğrulanmıştır; doğrulama notları bu dokümandadır.
 
 **Durum:** Plan yayında. **Faz 1 paralel iki pilotla sürüyor: Mısır ve Galya**
 (17 Ekim 2026 mutabakatı). Mısır hattında kaynaklı geçiş kayıtları, kültür
-grafiği düzeltmeleri ve **olay zinciri v1** hazır (`et_culture.1`–`.5` +
-`on_action/et_history_pulses.txt`); **Test A geçti** (17 Ekim 2026:
-`et_culture.9000` + Galya `.101` oyun içinde ateşlendi; `error.log`'da mod
-satırı yok). Zincir doğrulaması (Test B) sırada. Samet'in inceleme commit'i (`f3d304d`) payları spec'e hizaladı; son-kimlik anahtar sahipliği ikinci incelemede (17 Ekim 2026) karara bağlandı — deltasız mod kopyaları geri alındı (vanilla içerik korunur), deltalılar vanilla birebir + delta olarak kaldı (design note §7, kararlar 7–8). Galya incelemesi (aynı gün): Samet'in `e271902` commit'i gözden geçirildi — boş `latin_language` kopyası geri alındı (vanilla `00_italy.txt` tanımı yüklenir); `french_group` kopyası vanilla'da da boş olduğundan zararsız bırakıldı (backlog UPDATE 4). Galya hattında
+grafiği düzeltmeleri ve **olay zinciri v1 + Nübya eki** hazır
+(`et_culture.1`–`.7` + `on_action/et_history_pulses.txt`); **Test A geçti**
+(17 Ekim 2026: `et_culture.9000` + Galya `.101` oyun içinde ateşlendi;
+`error.log`'da mod satırı yok). Zincir doğrulaması (Test B `.1`–`.7`)
+sırada. Samet'in inceleme commit'i (`f3d304d`) payları spec'e hizaladı; son-kimlik anahtar sahipliği ikinci incelemede (17 Ekim 2026) karara bağlandı — deltasız mod kopyaları geri alındı (vanilla içerik korunur), deltalılar vanilla birebir + delta olarak kaldı (design note §7, kararlar 7–8). Galya incelemesi (aynı gün): Samet'in `e271902` commit'i gözden geçirildi — boş `latin_language` kopyası geri alındı (vanilla `00_italy.txt` tanımı yüklenir); `french_group` kopyası vanilla'da da boş olduğundan zararsız bırakıldı (backlog UPDATE 4). Galya hattında
 `gallo_roman` ara kimliği ve pilot olaylar (`.101`–`.103`) yazıldı (Samet); Faz 2–3 olayları (`.104`–`.110`) incelendi — din/locasyon/efekt/prestij token'ları vanilla'ya göre düzeltildi (backlog UPDATE 5);
 numara rezervasyonu mutabık: Mısır `.1`–`.49`, Galya `.100`–`.149`.
 
@@ -148,14 +149,16 @@ option = {
   `ASSIMILATION_*`): aynı dil/aile/grup ve pazar dili etkileri. Olay tasarımı bu
   ivmelerle birlikte düşünülmelidir.
 
-## 3. Mevcut durum (17 Ekim 2026)
+## 3. Mevcut durum (18 Ekim 2026)
 
 - **Olay katmanı kuruldu** (17 Ekim 2026): `in_game/events/`
   (`et_culture_events.txt`: `et_culture` namespace'i; `et_culture.9000` test
-  olayı; Mısır zinciri `.1`–`.5`; Galya pilotu `.101`–`.103`) ve localization
+  olayı; Mısır zinciri `.1`–`.5` + Nübya eki `.6`–`.7`; Galya pilotu
+  `.101`–`.103`) ve localization
   dosyaları (`in_game/localization/{english,turkish}/et_culture_events_l_*.yml`).
   `on_action/et_history_pulses.txt` eklendi: `yearly_country_pulse`'a bağlı,
-  sahip-bağımsız `et_egypt_yearly_pulse` (ileriki bölge zincirleri için desen);
+  sahip-bağımsız `et_egypt_yearly_pulse` ve `et_nubia_yearly_pulse`
+  (ileriki bölge zincirleri için desen);
   Galya olayları DHE pencereleriyle yürüyor. `decisions/` henüz yok.
 - **Başlangıç pop verisi** (`main_menu/setup/start/06_pops.txt`, ~50 bin pop
   bloğu): örnek — `gallian` ~1.000, `old_egyptian` ~300, modern `french` 0. Bu
@@ -211,8 +214,8 @@ Veri-önce kuralı, test protokolü, merge disiplini (bkz. bölüm 6).
 
 - **Faz 0 (bu dosya):** Plan yayında. ✓
 - **Faz 1 — Pilotlar: Mısır + Galya (paralel)** (17 Ekim 2026 mutabakatı).
-  Mısır hattı: kaynaklı geçiş kayıtları ✓ → zincir `.1`–`.5` ✓ → oyun içi
-  test (sırada) → şablon çıkarma. Galya hattı: `gallo_roman` kimliği +
+  Mısır hattı: kaynaklı geçiş kayıtları ✓ → zincir `.1`–`.5` + Nübya eki
+  `.6`–`.7` ✓ → oyun içi test (sırada) → şablon çıkarma. Galya hattı: `gallo_roman` kimliği +
   kayıtlar + olaylar `.101`–`.103` ✓ → test (sırada).
 - **Faz 2 — Geç Antik ve Kavimler Göçü (200–700):** Roma çöküşü sonrası
   Latin/Romance ayrışması; Germen ve Slav yayılımı; `add_migration` dalgaları.
@@ -248,14 +251,14 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
   islamization_egypt, arab_conquest_egypt, christianity_egypt, nobatia)
 - [x] Geçiş kayıtları — `2026-10-17_egypt_culture_transition.yml` (11 kayıt)
 - [x] Olay tasarım notu — `2026-10-17_egypt_event_design.md` (5 olaylık
-  çekirdek zincir + Nübya eki önerisi; sahip-bağımsız on_action pulse
+  çekirdek zincir + Nübya eki `.6`–`.7`; sahip-bağımsız on_action pulse
   mimarisi doğrulandı)
 - [x] Mod iskeleti: `events/` + localization kuruldu (test olayı dahil)
-- [x] Olay zincirleri: Mısır `et_culture.1`–`.5` + `et_history_pulses.txt`
-  (17 Ekim 2026) · Galya `et_culture.101`–`.103` + `gallo_roman` (Samet)
+- [x] Olay zincirleri: Mısır `et_culture.1`–`.7` (Nübya eki 18 Ekim 2026) +
+  `et_history_pulses.txt` · Galya `et_culture.101`–`.103` + `gallo_roman` (Samet)
 - [x] Oyun içi test A — `et_culture.9000` ve Galya `.101` ateşlendi;
   oturumun `error.log`'u mod satırı içermiyor (17 Ekim 2026)
-- [ ] Oyun içi test B — Mısır zinciri `.1`–`.5`: console protokolü
+- [ ] Oyun içi test B — Mısır zinciri `.1`–`.7` (Nübya turu ayrı): console protokolü
   (`event_probabilities`, `test_event_trigger`, `change_date`, `tick_day`;
   ayrıntı: design note bölüm 5)
 
