@@ -406,6 +406,23 @@ tasks:
       entries were added. Open: Test B must be rerun and must cover the ROM ->
       FRAN hand-off; the gallo_roman coverage outside the city lists remains an
       accepted abstraction (normal assimilation continues after the seeds).
+      UPDATE 14 (2026-10-18, Gaul script fixes and data-layer close-out):
+      commit 8c8279a landed the script-side fixes - the duplicate
+      illustration_tags key "10" became "0"/"1" in all 29 events, .122 wrapped
+      its six city conversions in every_owned_location guards, .114 dropped
+      bordeaux (Gascony was English in 1209-1229), and .112/.116 replaced the
+      culture-scoped change_language with the every_owned_location/every_pop
+      pattern. The data-layer pass that closed the record task checked the
+      record layer against the script: 22 records, every one carrying populated
+      source_refs, all 27 cited source ids resolving in sources.yml (100
+      entries). No record was missing and no source_refs was empty, so the
+      backfill item closed without new sourcing. The 12 integration statuses
+      that UPDATE 13 had left pending (.105-.118) now read applied and their
+      notes describe the implemented mechanics - windows, pop filters,
+      split_pop fractions and city lists - including the UPDATE 14 changes.
+      Open: Test B in-game validation still gates the chain; the pending ->
+      applied flip records the implemented script, not an in-game
+      confirmation, and et_culture.9000 retires after it.
 
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:

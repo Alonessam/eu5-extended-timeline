@@ -91,6 +91,18 @@ hataları giderildi (örn. `.105` "amfiatrosunda" → "amfiteatrosunda" ve "önc
 `union sacrée`) ve `.120` ansiklik aralığı 1906-1907'ye çekildi (kayıt ve `sources.yml`
 uyarısı dahil). EN/TR anahtar eşliği 165/165. Ayrıntı: backlog UPDATE 12.
 
+**Galya veri katmanı kapanışı (§4, 18 Ekim 2026):** Kayıt katmanı script'e göre
+doğrulandı: 22 kaydın tamamında dolu `source_refs` var ve `sources.yml` içindeki
+100 kaynağın hepsi (27 benzersiz kimlik) çözülüyor — eksik kayıt ya da boş
+`source_refs` çıkmadı, bu yüzden backfill kalemi yeni kaynak araştırması olmadan
+kapatıldı. UPDATE 13'ün `pending` bıraktığı 12 entegrasyon durumu (`.105`–`.118`)
+artık `applied`; notları pencere, pop filtreleri, `split_pop` oranları ve şehir
+listeleri dahil uygulanan mekaniği anlatıyor. Script tarafındaki düzeltmeler
+(`illustration_tags` tekilleştirme, `.122` sahip korumaları, `.114` Bordeaux
+çıkışı, `.112`/`.116` `change_language` sözdizimi) commit `8c8279a` ile geldi.
+Test B zinciri hâlâ bekliyor; `pending` → `applied` dönüşümü script'in
+uygulanmış halini kaydeder, oyun içi doğrulamayı değil. Ayrıntı: backlog UPDATE 14.
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,

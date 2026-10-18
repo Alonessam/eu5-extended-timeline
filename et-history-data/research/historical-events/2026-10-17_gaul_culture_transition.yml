@@ -98,7 +98,7 @@ records:
     mechanism: monastic evangelism, destruction of rural pagan shrines, episcopal parish system
     source_refs: [{id: wiki_martin_of_tours, locator: "Life (rural Christianization in Gaul)"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.105-.106)", note: "Religion layer: late-antique conversions use chalcedonism; catholic begins with .110 (decision kept in the 2026-10-18 review)."}
+    integration: {status: applied, target: "events (et_culture.105, et_culture.106)", note: "ROM: .105 (177-350) turns the nobles, clergy and burghers of the nine city locations chalcedonist and .106 (371-400) their laborers and peasants. Rural Gaul is left alone; catholic begins with .110 (kept in the 2026-10-18 review)."}
 
   gaul_armorica_breton_migration:
     entity: culture_gallo_roman
@@ -113,7 +113,7 @@ records:
     mechanism: trans-marine migration, language replacement
     source_refs: [{id: wiki_brittany, locator: "History - Breton settlement; the Gallo/Breton linguistic line"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.107)", note: "Western Armorica only (brest, saint_malo); Rennes and Nantes stay Gallo-Romance and join the northern French list in .111 (2026-10-18 fix)."}
+    integration: {status: applied, target: "events (et_culture.107)", note: "ROM 380-500; the gallian and gallo_roman pops of brest and saint_malo become breton. Western Armorica only: Rennes and Nantes stay Gallo-Romance and join the northern French list in .111 (2026-10-18 fix)."}
 
   gaul_rhine_crossing_and_germanic_settlement_406_443:
     entity: culture_gallo_roman
@@ -130,7 +130,7 @@ records:
     mechanism: frontier collapse, migration, foederati (hospitalitas) settlement
     source_refs: [{id: wiki_crossing_of_the_rhine, locator: "Lead; Invasion (31 December 406)"}, {id: wiki_visigothic_kingdom, locator: "Aquitaine settlement 418"}, {id: wiki_kingdom_of_the_burgundians, locator: "Sapaudia 443"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.108)", note: "add_pops go to owned locations only; the Burgundian and Visigothic settler set remains (the Vandal blocks were removed by the UPDATE 10 audit - the migration only passed through Gaul toward Hispania)."}
+    integration: {status: applied, target: "events (et_culture.108)", note: "ROM 406-443; adds arian burgundian pops at geneve and lyon and arian visigoth ones at toulouse and bordeaux, on owned locations only. No Vandal pops: the Vandals only passed through Gaul toward Hispania and Africa (UPDATE 10 audit)."}
 
   gaul_fall_of_soissons_486:
     entity: culture_gallo_roman
@@ -146,7 +146,7 @@ records:
     mechanism: military conquest, absorption of the Roman rump state
     source_refs: [{id: wiki_battle_of_soissons_486, locator: "Lead; Background (Syagrius; Domain of Soissons)"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.109)", note: "Ownership-guarded city list; the last event of the ROM layer."}
+    integration: {status: applied, target: "events (et_culture.109)", note: "ROM 457-486; a quarter of the gallo_roman pops at soissons, paris, reims and rouen becomes frankish (split_pop 0.25), modeling the small Frankish warrior elite rather than a population replacement. The last event of the ROM layer; the city list is ownership-guarded."}
 
   gaul_clovis_conversion_and_franco_roman_synthesis:
     entity: culture_gallo_roman
@@ -162,7 +162,7 @@ records:
     mechanism: conquest, dynastic baptism, elite intermarriage, bilingual linguistic contact
     source_refs: [{id: wiki_baptism_of_clovis, locator: "Lead; Date (496 or 508); Reims, Bishop Remigius"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.110)", note: "Frankish layer: the DHE was rebound from ROM to FRAN in the 2026-10-18 review."}
+    integration: {status: applied, target: "events (et_culture.110)", note: "FRAN 496-508; the gallo_roman and frankish pops of soissons, paris, reims, rouen and orleans become catholic. First event of the Frankish layer; the DHE was rebound from ROM to FRAN in the 2026-10-18 review."}
 
   gaul_oil_oc_dialect_divergence:
     entity: culture_gallo_roman
@@ -178,7 +178,7 @@ records:
     mechanism: phonetic divergence, substrate/superstrate differentiation, administrative vernacularization
     source_refs: [{id: wiki_council_of_tours, locator: "Canon 17 (rusticam romanam linguam)"}, {id: wiki_oaths_of_strasbourg, locator: "Text (earliest Romance attestation)"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.111-.112)", note: "FRAN-bound after the 2026-10-18 tag rebind; city-list coverage, the rest follows normal assimilation."}
+    integration: {status: applied, target: "events (et_culture.111, et_culture.112)", note: "FRAN 650-850; .111 splits the city gallo_roman into french, occitan and arpitan by region, and .112 (813-842) changes the language of the remaining gallo_roman to french_language (trigger requires tours; effect runs on every owned location after the UPDATE 14 syntax fix). FRAN-bound after the 2026-10-18 tag rebind; the city list carries the shift, the rest follows normal assimilation."}
 
   gaul_norman_genesis_911:
     entity: culture_french
@@ -193,7 +193,7 @@ records:
     mechanism: feudal cession, conversion, rapid linguistic assimilation
     source_refs: [{id: wiki_treaty_of_saint_clair_sur_epte, locator: "Terms (Rollo; conversion to Christianity)"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.113)", note: "FRAN-bound after the 2026-10-18 tag rebind; the trigger already requires all four Norman locations."}
+    integration: {status: applied, target: "events (et_culture.113)", note: "FRAN 911-1000; adds catholic norman pops at rouen, caen, cherbourg and bayeux. FRAN-bound after the 2026-10-18 tag rebind; the trigger already requires all four Norman locations."}
 
   gaul_albigensian_crusade_1209_1229:
     entity: culture_occitan
@@ -209,7 +209,7 @@ records:
     mechanism: religious crusade, conquest, annexation (Treaty of Paris 1229)
     source_refs: [{id: wiki_albigensian_crusade, locator: "Lead; Aftermath (Treaty of Paris 1229)"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.114)", note: "FRA-bound; the first event of the France layer."}
+    integration: {status: applied, target: "events (et_culture.114)", note: "FRA 1209-1229; thirty percent of the occitan pops of toulouse, nimes, arles and marseille becomes french (split_pop 0.30). The first event of the France layer; bordeaux was removed by the UPDATE 14 audit since Gascony was under English rule in this window."}
 
   gaul_hundred_years_war_1337_1453:
     entity: culture_french
@@ -225,7 +225,7 @@ records:
     mechanism: dynastic war, fiscal-military state building, identity consolidation
     source_refs: [{id: wiki_hundred_years_war, locator: "Lead; Overview (1337-1453)"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.115)", note: "FRA-bound historical layer."}
+    integration: {status: applied, target: "events (et_culture.115)", note: "FRA 1337-1453; the norman, arpitan and frankish pops of paris, reims, rouen, caen, orleans, tours and soissons become french. FRA-bound historical layer."}
 
   gaul_villers_cotterets_edict_1539:
     entity: culture_french
@@ -242,7 +242,7 @@ records:
     mechanism: royal ordinance, judicial vernacularization
     source_refs: [{id: wiki_ordinance_of_villers_cotterets, locator: "Articles 110-111; registered 6 September 1539"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.116)", note: "Culture-scope change_language for gallo_roman, occitan, arpitan and norman; tooltip and desc aligned in the 2026-10-18 review."}
+    integration: {status: applied, target: "events (et_culture.116)", note: "FRA 1539-1540; the gallo_roman, occitan, arpitan and norman pops change their language to french_language (trigger requires paris; effect runs on every owned location after the UPDATE 14 syntax fix)."}
 
   gaul_wars_of_religion_and_edict_of_nantes_1562_1685:
     entity: culture_french
@@ -258,7 +258,7 @@ records:
     mechanism: confessional civil war, edicts of toleration and revocation, emigration
     source_refs: [{id: wiki_edict_of_nantes, locator: "Terms; Revocation (1685)"}, {id: wiki_edict_of_fontainebleau, locator: "Revocation of the Edict of Nantes"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.117)", note: "Event window and label span the wars to the revocation; conversions run on owned locations."}
+    integration: {status: applied, target: "events (et_culture.117)", note: "FRA 1562-1685; the calvinist pops of paris, rouen, orleans, tours, nantes, bordeaux and toulouse return to catholic on owned locations. The window and the label span the first civil war to the revocation of Nantes."}
 
   gaul_revolution_gregoire_1789_1794:
     entity: culture_french
@@ -274,7 +274,7 @@ records:
     mechanism: revolutionary centralization, language policy, schooling
     source_refs: [{id: wiki_gregoire_report, locator: "Séance du 16 prairial an II (4 June 1794); report text"}]
     confidence: high
-    integration: {status: pending, target: "events (et_culture.118)", note: "City-list conversions to French; the report is the record's anchor."}
+    integration: {status: applied, target: "events (et_culture.118)", note: "FRA 1789-1794; half of the occitan, arpitan, norman and frankish pops of the thirteen city locations becomes french (split_pop 0.50). The Grégoire report is the record's anchor."}
 
   gaul_jules_ferry_modern_unification_1881:
     entity: culture_french
