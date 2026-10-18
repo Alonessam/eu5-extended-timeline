@@ -297,13 +297,14 @@ tasks:
       EN and TR; arpitan/norman already had vanilla keys); event .113 added
       Norman pops to Cherbourg, Bayeux and Rouen without requiring ownership
       of those locations (the trigger now requires all four); Turkish typos in
-      .110 (selenek -> geleneksel olarak), .117 (Henry -> Henri), .118
-      (partikulyerizm -> bolgesel ayrilikcilik) and .119 (patois'nin,
-      Fransizcanin en az konusuldugu bolgeler). Open items: (a) data-first
+      .110 (selenek -> geleneksel olarak), .115 (partikulyerizmlerin ->
+      ayrilikciliklarin), .116 (Francoise -> francoise), .117 (Henry -> Henri)
+      and .119 (patois'nin, Fransizcanin en az konusuldugu bolgeler). Open
+      items: (a) data-first
       gaps - .112 and .114-.118 have no sourced records yet, and five Phase 2/3
       records are still pending/in_progress although their events exist (filed
       as gaul_record_backfill); (b) the whole chain is DHE-bound to the ROM tag
-      (.101-.113) and the FRA tag (.114-.122), so an owner of Paris that is
+      (.101-.113) and the FRA tag (.114-.123), so an owner of Paris that is
       neither never runs it and no single country spans both halves - the
       Egypt design note rejected DHE for this exact reason (filed as
       gaul_dhe_tag_binding_review); (c) the four Faz 7/8 records are marked
@@ -328,7 +329,84 @@ tasks:
       burghers, laborers, soldiers, peasants, tribesmen and slaves), both replaced
       with pop_type:laborers; the script_token_audit task remains for the rest of
       the corpus. Test B remains pending.
-      UPDATE 10 (2026-10-18, Egypt track Nubia extension): the last unblocked
+      UPDATE 10 (2026-10-18, Gaul historical audit .101-.123): a full source-to-script
+      audit of the Gaul chain fixed the critical historical errors. (a) .107 converted
+      culture:gallian to breton, but .102/.103 already convert every gallian pop to
+      gallo_roman, so with the historical options the event was a no-op; Armorica in
+      380-500 was Gallo-Roman, so the limit now accepts gallian OR gallo_roman and the
+      record entity was corrected to culture_gallo_roman. (b) .108 planted permanent
+      vandal peasant pops in marseille and nimes, but the Vandals only crossed Gaul
+      (406-409) toward Hispania; the two add_pop blocks were removed and the en/tr
+      tooltip now names only the Burgundian and Visigothic settlements. (c) the .108
+      Turkish desc and historical_info sent the Visigoths to the Mediterranean and the
+      Vandals south; corrected to Aquitaine (418) and the Mediterranean, matching the
+      English. (d) the 58 CE baseline record claimed celtic_paganism, a key that exists
+      nowhere in the mod; the start setup (main_menu/setup/start/06_pops.txt, 1,039
+      gallian blocks) uses gallo_roman_polytheism (et_roman.txt) and the record was
+      corrected. (e) the .123 DHE window ended at 2000.1.1 while the record and the
+      text describe the 1992-2008 settlement, so to is now 2009.1.1. The remaining
+      audit findings (frankish never converts to french; the full-pop flips in
+      .109/.114/.118; the five unsourced and nine missing records; the Turkish and
+      English copy defects) are filed as gaul_history_audit_followups alongside
+      gaul_record_backfill and gaul_dhe_tag_binding_review. Test B still pending.
+      UPDATE 11 (2026-10-18, Gaul chain logic, audit section 2): the culture shifts
+      are now gradual. .109 (gallo_roman -> frankish), .114 (occitan -> french) and
+      .118 (occitan/arpitan/norman -> french) use split_pop instead of
+      change_pop_culture, so those populations shift in stages rather than flipping
+      wholesale. Fractions: .109 0.25 (the Franks were a small elite that
+      assimilated into a Romance majority), .114 0.30 (the Albigensian Crusade
+      annexed Languedoc but did not turn its population French), .118 0.50 (the
+      Revolution's school and administration pressed the provinces hard but did not
+      finish the work). frankish was added to the .115 and .118 conversion sets, so
+      the Frankish culture now assimilates into french instead of persisting
+      forever. soissons was added to the .111 and .115 location lists: .109 had made
+      it frankish (and its gallo_roman was never converted) but no later event
+      touched it, so it was orphaned. The en/tr .tt strings for .109/.114/.115/.118
+      were rewritten to match the gradual effect. Still open from section 2: .114
+      lists bordeaux, which was English Gascony and outside the Albigensian
+      Crusade's reach.
+      UPDATE 12 (2026-10-18, Gaul localization, audit section 3): the tr/en copy
+      defects are fixed. Turkish: .105 "amfiatrosunda" -> "amfiteatrosunda" and
+      "oncuelenir" -> "onculuk eder" (the verb oncuelenmek does not exist), .105
+      "Galo-Romen" -> "Gallo-Romen", .106 "pagan kutsal pinarlarindan" -> "pagan
+      pinarlarindan" (the English says "pagan springs", so kutsal was redundant),
+      .107 "kutsal kahramanlarini" -> "azizlerini" (English "saints"), .110
+      "Aryanist"/"Aryanizm" -> "Ariuscu"/"Ariusculuk" (Arianism, not Aryan), .112
+      "dogum ebeveyni" -> "ebesi" (English "midwife"), .120 "ansiklikleriyle" ->
+      "ansiklikalariyla" (the Turkish noun is ansiklika), and .122 "Otuz Sanli Yil"
+      -> "Sanli Otuz Yil" (3 places). English: laicite/Poincare/union sacree now
+      carry their French accents (3 prose places; the gaul_laicite_separation_1905
+      record id stays ASCII), and the .120 encyclicals "1906-1908" -> "1906-1907"
+      (the last encyclical, Une Fois Encore, is January 1907); the same off-by-one
+      is fixed in the record finding and the sources.yml caveat. en/tr key parity
+      stays 165/165.
+      UPDATE 13 (2026-10-18, Gaul historical-reality fixes merged into main):
+      the branch-local review of the Gaul chain was integrated on top of
+      UPDATE 9-12. Tag layers: .101-.109 stay ROM, .110-.113 moved from ROM to
+      FRAN (the Frankish-kingdom layer; the has_or_had_tag=ROM trigger lines were
+      dropped so the DHE binding alone gates them), .114-.123 stay FRA. The
+      boundary follows the rex Francorum -> rex Franciae shift under Philip II
+      (1190, in use by 1204) and is the decision recorded for
+      gaul_dhe_tag_binding_review. Event fixes: .107 now converts only the
+      western peninsula (brest, saint_malo; gallo_roman caught by an OR with the
+      gallian fallback) and rennes/nantes moved to the .111 northern list (which also carries the soissons addition from UPDATE 11); .108's
+      add_pops are wrapped in every_owned_location guards (the Vandal blocks this
+      branch had kept were removed by the UPDATE 10 audit; the Burgundian and
+      Visigothic set remains); .112 and .116 effects sit inside their
+      custom_tooltips; .116's tooltips now name the four cultures the code shifts
+      (Gallo-Roman, Occitan, Arpitan, Norman) and the desc/historical_info drop
+      the "royal charters" and "official language" overstatements; all Gaul
+      events received illustration_tags, including .122-.123 after the merge.
+      Data/consistency: et_french.txt's twelve "color = color = rgb" lines were
+      corrected and the duplicate aquitanian block was removed (et_iberian keeps
+      the single definition); burgundian/visigoth names (+ADJ) and main_menu
+      occitan were added to both languages; eight sourced records (.104, .108,
+      .109, .114-.118) were added and the five pending Phase 2/3 records
+      re-targeted and sourced - all still pending until Test B; eighteen source
+      entries were added. Open: Test B must be rerun and must cover the ROM ->
+      FRAN hand-off; the gallo_roman coverage outside the city lists remains an
+      accepted abstraction (normal assimilation continues after the seeds).
+      UPDATE 14 (2026-10-18, Egypt track Nubia extension): the last unblocked
       data-first step, the Nubia chain, was implemented as et_culture.6
       ("The Silence of Meroe", 300-450; kushite -> nubian, 0.60 historical /
       0.20 resistance in butana_area + nubia_proper_area) and et_culture.7
@@ -342,6 +420,7 @@ tasks:
       nubia_state_layer_543_707 below. Kushite pops in Darfur and west of the two
       areas stay outside this v1 scope. Test B now spans .1-.7 (Nubia turn
       separate); records remain pending until it passes.
+
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   nubia_state_layer_543_707:
     period_id: ancient
@@ -480,17 +559,22 @@ tasks:
       pending or in_progress although their events exist. Backfill follows the
       data-first rule (source before script) and the Gaul track's sourcing
       style; do not mark records applied before Test B.
+      UPDATE 9 (2026-10-18): the records for .104, .108, .109 and .114-.118
+      were added (status pending) with source_refs; the five Phase 2/3 records
+      were re-targeted to their events and sourced. Promotion to applied still
+      waits for Test B.
     acceptance: Every Gaul event maps to a sourced record (or a documented reason why it does not); statuses reflect the shared Test B gate.
   gaul_dhe_tag_binding_review:
     period_id: medieval
     priority: 2
-    state: pending
+    state: in_progress
     targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/common/on_action/et_history_pulses.txt"]
-    source_refs: []
-    question: Should the Gaul chain keep the dynamic_historical_event tag binding (ROM for .101-.113, FRA for .114-.122) or move to the owner-agnostic yearly-pulse pattern used by the Egypt chain?
+    source_refs: [wiki_style_of_the_french_sovereign]
+    question: Should the Gaul chain keep the dynamic_historical_event tag binding (ROM for .101-.109, FRAN for .110-.113, FRA for .114-.123) or move to the owner-agnostic yearly-pulse pattern used by the Egypt chain?
     evidence: >-
-      All 22 Gaul events are DHE-bound: .101-.113 require ROM, .114-.122
-      require FRA. A country that owns Paris but is neither ROM nor FRA (for
+      All 23 Gaul events are DHE-bound: .101-.109 require ROM, .110-.113
+      require FRAN and .114-.123 FRA (all-ROM/all-FRA before the UPDATE 13
+      decision). A country that owns Paris but is none of these (for
       example a Gallic tag, a surviving Roman successor or a player-formed
       state) never receives the chain, and no single country spans both halves
       because ROM does not form FRA. The Egypt design note
@@ -500,4 +584,45 @@ tasks:
       world layer for ROM/FRA and add that test case, or move the events to a
       date-guarded yearly pulse (the DHE windows must become explicit date
       triggers) so any owner of Paris runs the chain.
-    acceptance: Decision recorded in the design note/README; Test B includes an owner-switch or non-ROM/FRA case; no double firing.
+      UPDATE 9 (2026-10-18, decision): the chain stays a DHE-held historical
+      world layer, but the binding now follows the historical actors: ROM
+      (.101-.109), FRAN (.110-.113) and FRA (.114-.123). DHE is single-tag by
+      construction (Egypt design note 2.1); rebinding .110-.113 to FRAN gives
+      the Frankish kingdom its own layer and ends the ROM->FRA mismatch.
+      The FRAN/FRA boundary follows the rex Francorum -> rex Franciae shift
+      (Philip II, 1190/1204). Remaining: Test B must include the ROM -> FRAN
+      hand-off case; .109 and .110 sit on different tags, so no double firing.
+    acceptance: Decision recorded in the design note/README; Test B includes an owner-switch or non-ROM/FRAN/FRA case; no double firing.
+  gaul_history_audit_followups:
+    period_id: contemporary
+    priority: 2
+    state: completed
+    targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/localization/english/et_culture_events_l_english.yml", "Extended Timeline/in_game/localization/turkish/et_culture_events_l_turkish.yml"]
+    source_refs: [weber_peasants_into_frenchmen, wiki_languages_of_france]
+    question: How should the non-critical Gaul audit findings be resolved - the frankish culture that never becomes french, the full-population culture flips in .109/.114/.118, and the Turkish and English copy defects?
+    evidence: >-
+      The 2026-10-18 audit of .101-.123 (UPDATE 10) left the following.
+      (a) Chain logic: .109 flips every gallo_roman pop in paris, reims, rouen
+      and soissons to frankish, but no later event converts frankish to french
+      (.111 covers gallo_roman, .115 covers norman/arpitan, .118 covers
+      occitan/arpitan/norman), so with the historical options northern France
+      ends the chain as frankish even though the Franks were a small elite that
+      assimilated into a Romance population; .114 (1209-1229) and .118
+      (1789-1794) likewise flip entire populations (Occitan/Arpitan/Norman) to
+      french decades or centuries before the gradual linguistic unification
+      documented by Weber. The accepted fix is a partial split_pop instead of a
+      total change_pop_culture, with frankish added to the .115/.118 conversion
+      set. (b) Turkish copy: .105 amfiatrosunda (should be amfiteatrosunda) and
+      oncuelenir (non-word), Galo-Romen vs Gallo-Romen, .107 kutsal
+      kahramanlarini (EN saints -> azizlerini), .112 dogum ebeveyni (EN midwife
+      -> ebe), .120 ansiklikleriyle (-> ansiklikalariyla), .106 pagan kutsal
+      pinarlarindan. (c) English copy: laicite/Poincare/union sacree are
+      unaccented while Chalons, oil, Domremy, Gregoire and Villers-Cotterets
+      carry accents, and the .120 "1906-1908 encyclicals" should be 1906-1907
+      (the source caveat at sources.yml:496 carries the same off-by-one).
+      UPDATE 11 (2026-10-18) resolved item (a): .109/.114/.118 use split_pop
+      (0.25/0.30/0.50), frankish was added to the .115/.118 conversion sets, and
+      the orphaned soissons was added to .111 and .115. Items (b) and (c) remain.
+      UPDATE 12 (2026-10-18) resolved (b) and (c): the tr/en copy defects are fixed
+      and the .120 encyclical range is now 1906-1907. All three items are closed.
+    acceptance: Each item is decided and applied with the chain's historical options in mind; the frankish path and each partial flip are documented; Turkish and English strings are corrected without breaking key parity.

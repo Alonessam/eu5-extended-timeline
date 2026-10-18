@@ -51,6 +51,47 @@ yüzden Paris'i elinde tutan diğer devletler zinciri çalıştıramıyor (backl
 (02:28–02:59) önce alındı; Test B yeni blokları kapsayacak şekilde yeniden
 çalıştırılmalı.
 
+**Galya tarihsel denetimi (18 Ekim 2026):** Zincirin tamamı (`.101`–`.123`) kaynak
+kayıtlara ve vanilla/mod tanımlarına karşı harf harf denetlendi. Mekanik doğrulama:
+kullanılan tüm kültür, din, lokasyon ve `pop_type` anahtarları (göçmen kültürler
+dahil) ile kaynak id'leri geçerli. Düzeltilen kritik hatalar: (a) `.107` `culture:gallian`
+hedefliyordu ama `.102`/`.103` zaten tüm `gallian`'ı `gallo_roman`'a çevirdiği için
+tarihsel seçeneklerle olay boş çalışıyordu; sınır artık `gallian` VEYA `gallo_roman`
+kabul ediyor ve kaydın `entity` alanı `culture_gallo_roman` yapıldı (Armorika 380-500'de
+Gallo-Romen'di). (b) `.108` Marsilya ve Nîmes'e kalıcı `vandal` pop'u yerleştiriyordu;
+Vandallar Galya'dan yalnızca geçti (406-409, Hispania'ya), iki `add_pop` bloğu kaldırıldı
+ve araç ipucu artık yalnız Burgund/Vizigot yerleşimini anıyor. (c) `.108` TR açıklaması
+ve `historical_info`'su Vizigotları Akdeniz'e, Vandalları güneye gönderiyordu; Akitanya
+(418) ve Akdeniz'e düzeltildi (EN ile uyumlu). (d) 58 CE temel kaydı modda hiç
+tanımlı olmayan `celtic_paganism`'i yazıyordu; başlangıç kurulumu (06_pops.txt, 1.039
+gallian bloğu) `gallo_roman_polytheism` kullanıyor ve kayıt düzeltildi. (e) `.123`
+DHE penceresi 2000'de bitip kayıt/metin 1992-2008'i anlatıyordu; `to` artık 2009.1.1.
+Kalan denetim bulguları (frankish'in hiç french'e dönüşmemesi; `.109`/`.114`/`.118`
+tam nüfus kaymaları; beş kaynaksız ve dokuz eksik kayıt; TR/EN metinleri) yeni
+`gaul_history_audit_followups` göreviyle `gaul_record_backfill` ve
+`gaul_dhe_tag_binding_review` yanında izleniyor (backlog UPDATE 10). Test B hâlâ sırada.
+
+**Galya zincir mantığı (§2, 18 Ekim 2026):** `.109`, `.114` ve `.118` artık
+`change_pop_culture` yerine `split_pop` kullanıyor (`0.25`/`0.30`/`0.50`), böylece
+Frenk, Oksitan, Arpitan ve Norman nüfusları tek seferde değil kademeli olarak kayıyor
+(Frenkler Romance çoğunluk içinde eriyen küçük bir seçkin tabakaydı; Albigens Haçlı
+Seferi Languedoc'u ilhak etti ama halkını Fransızlaştırmadı; Devrim'in okulu ve
+yönetimi eyaletleri zorladı ama işi bitirmedi). `frankish`, `.115` ve `.118` dönüşüm
+kümelerine eklendi; böylece Frenk kültürü artık `french`'e asimile oluyor. `.109`'un
+Frenk yaptığı ama sonraki hiçbir olayın dokunmadığı `soissons`, `.111` ve `.115` konum
+listelerine eklendi. `.109`/`.114`/`.115`/`.118` araç ipuçları (EN/TR) yeni kademeli
+etkiye göre yazıldı. Açık kalan nokta: `.114` hâlâ İngiliz Gaskonyası olan `bordeaux`'yu
+içeriyor (`gaul_history_audit_followups`).
+
+**Galya yerelleştirme düzeltmeleri (§3, 18 Ekim 2026):** TR metinlerindeki yazım
+hataları giderildi (örn. `.105` "amfiatrosunda" → "amfiteatrosunda" ve "öncülenir" →
+"öncülük eder", `.105` "Galo-Romen" → "Gallo-Romen", `.107` "kutsal kahramanlarını" →
+"azizlerini", `.110` "Aryanist/Aryanizm" → "Ariusçu/Ariusçuluk", `.112` "doğum ebeveyni"
+→ "ebesi", `.120` "ansiklikleriyle" → "ansiklikalarıyla", `.122` "Otuz Şanlı Yıl" →
+"Şanlı Otuz Yıl"). EN metinlerinde Fransızca terimler aksanlandı (`laïcité`, `Poincaré`,
+`union sacrée`) ve `.120` ansiklik aralığı 1906-1907'ye çekildi (kayıt ve `sources.yml`
+uyarısı dahil). EN/TR anahtar eşliği 165/165. Ayrıntı: backlog UPDATE 12.
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,
@@ -93,7 +134,7 @@ bölüm 6'daki kalite kurallarına bağlıdır.
 | `change_language` | Bir kültürün dilini değiştirir | efekt listesi (wiki) |
 | `form_new_culture` | Cabinet action (adm, 10 yıl): ana kültürden yeni kültür oluşturur | `common/cabinet_actions/form_new_culture.txt` |
 | `merge_culture_group` | Cabinet action (10 yıl): ana kültürün grubunu birleştirir | `common/cabinet_actions/merge_culture_group.txt` |
-| `add_migration` / `remove_migration` | Kültür ve din parametreli göç kurar | `in_game/events/culture/culture_greek.txt:2945` |
+| `add_migration` / `remove_migration` | Kültür ve din parametreli göç kurar (Galya zinciri doğrudan `add_pop` + `change_pop_culture` kullanır) | `in_game/events/culture/culture_greek.txt:2945` |
 | `add_cultural_influence` / `add_cultural_tradition` | Kültür savaşı ivmesi | efekt listesi (wiki) |
 | `force_refresh_culture_and_religion` | Lokasyonun baskın kültür/dinini yeniden hesaplar | efekt listesi (wiki) |
 
@@ -233,6 +274,12 @@ zinciri şu uygulama fazlarına bölündü (numara rezervasyonu `.100`–`.149`)
 - **Faz 6 — Erken Modern ve Fransız Devrimi (1500–1837):** `.116`–`.118`
 - **Faz 7 — Modern Fransa (1837–1945):** `.119`–`.121`
 - **Faz 8 — Çağdaş Fransa (1945–2026):** `.122`–`.123`
+
+Zincirin etiket katmanları: `.101`–`.109` → `ROM` (Roma dönemi), `.110`–`.113` →
+`FRAN` (Frenk krallığı), `.114`–`.123` → `FRA` (Fransa). Katman sınırı, II. Philippe
+dönemindeki `rex Francorum` → `rex Franciae` geçişine (1190; 1204'ten itibaren
+yerleşik) dayanır; DHE tek etiketle çalıştığı için zincir tek bir devlette değil,
+dönemin aktöründe ateşlenir (karar: `gaul_dhe_tag_binding_review`, UPDATE 13).
 
 Faz 7/Faz 8 sınırı, projenin kendi dönem sınıflarına dayanır
 (`docs/Period Classes.md`: `industrial` 1800–1945, `contemporary` 1945+); bu yüzden

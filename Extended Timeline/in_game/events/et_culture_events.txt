@@ -875,6 +875,11 @@ et_culture.101 = {
 	outcome = good
 	historical_info = et_culture.101.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = ROM
@@ -938,6 +943,11 @@ et_culture.102 = {
 	outcome = good
 	historical_info = et_culture.102.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = ROM
@@ -985,6 +995,11 @@ et_culture.103 = {
 	desc = et_culture.103.desc
 	outcome = good
 	historical_info = et_culture.103.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -1034,6 +1049,11 @@ et_culture.104 = {
 	desc = et_culture.104.desc
 	outcome = neutral
 	historical_info = et_culture.104.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -1098,6 +1118,11 @@ et_culture.105 = {
 	outcome = good
 	historical_info = et_culture.105.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = ROM
@@ -1160,6 +1185,11 @@ et_culture.106 = {
 	outcome = good
 	historical_info = et_culture.106.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = ROM
@@ -1220,6 +1250,11 @@ et_culture.107 = {
 	outcome = neutral
 	historical_info = et_culture.107.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = ROM
@@ -1230,7 +1265,7 @@ et_culture.107 = {
 
 	trigger = {
 		has_or_had_tag = ROM
-		owns = location:nantes
+		owns = location:brest
 	}
 
 	option = {
@@ -1238,18 +1273,21 @@ et_culture.107 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.107.tt
+			# Western settlement zone only (the historical Breton/Gallo boundary);
+			# Rennes and Nantes stay Gallo-Romance and join the northern French list in .111.
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:rennes
-						location = location:nantes
 						location = location:brest
 						location = location:saint_malo
 					}
 				}
 				every_pop = {
 					limit = {
-						culture = culture:gallian
+						OR = {
+							culture = culture:gallian
+							culture = culture:gallo_roman
+						}
 					}
 					change_pop_culture = culture:breton
 				}
@@ -1277,6 +1315,11 @@ et_culture.108 = {
 	outcome = neutral
 	historical_info = et_culture.108.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = ROM
@@ -1294,7 +1337,13 @@ et_culture.108 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.108.tt
-			location:geneve = {
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:geneve
+						location = location:lyon
+					}
+				}
 				add_pop = {
 					culture = culture:burgundian
 					religion = religion:arianism
@@ -1302,41 +1351,15 @@ et_culture.108 = {
 					size = 2
 				}
 			}
-			location:lyon = {
-				add_pop = {
-					culture = culture:burgundian
-					religion = religion:arianism
-					type = pop_type:peasants
-					size = 2
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:toulouse
+						location = location:bordeaux
+					}
 				}
-			}
-			location:toulouse = {
 				add_pop = {
 					culture = culture:visigoth
-					religion = religion:arianism
-					type = pop_type:peasants
-					size = 2
-				}
-			}
-			location:bordeaux = {
-				add_pop = {
-					culture = culture:visigoth
-					religion = religion:arianism
-					type = pop_type:peasants
-					size = 2
-				}
-			}
-			location:marseille = {
-				add_pop = {
-					culture = culture:vandal
-					religion = religion:arianism
-					type = pop_type:peasants
-					size = 2
-				}
-			}
-			location:nimes = {
-				add_pop = {
-					culture = culture:vandal
 					religion = religion:arianism
 					type = pop_type:peasants
 					size = 2
@@ -1359,6 +1382,11 @@ et_culture.109 = {
 	desc = et_culture.109.desc
 	outcome = good
 	historical_info = et_culture.109.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -1391,7 +1419,10 @@ et_culture.109 = {
 					limit = {
 						culture = culture:gallo_roman
 					}
-					change_pop_culture = culture:frankish
+					split_pop = {
+						fraction = 0.25
+						culture = culture:frankish
+					}
 				}
 			}
 		}
@@ -1413,16 +1444,20 @@ et_culture.110 = {
 	outcome = good
 	historical_info = et_culture.110.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
-		tag = ROM
+		tag = FRAN
 		from = 496.1.1
 		to = 508.1.1
 		monthly_chance = 20
 	}
 
 	trigger = {
-		has_or_had_tag = ROM
 		owns = location:soissons
 	}
 
@@ -1474,16 +1509,20 @@ et_culture.111 = {
 	outcome = neutral
 	historical_info = et_culture.111.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
-		tag = ROM
+		tag = FRAN
 		from = 650.1.1
 		to = 850.1.1
 		monthly_chance = 10
 	}
 
 	trigger = {
-		has_or_had_tag = ROM
 		owns = location:paris
 	}
 
@@ -1500,6 +1539,9 @@ et_culture.111 = {
 						location = location:reims
 						location = location:orleans
 						location = location:tours
+						location = location:rennes
+						location = location:nantes
+						location = location:soissons
 					}
 				}
 				every_pop = {
@@ -1558,16 +1600,20 @@ et_culture.112 = {
 	outcome = good
 	historical_info = et_culture.112.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
-		tag = ROM
+		tag = FRAN
 		from = 813.1.1
 		to = 842.1.1
 		monthly_chance = 15
 	}
 
 	trigger = {
-		has_or_had_tag = ROM
 		owns = location:tours
 	}
 
@@ -1576,9 +1622,9 @@ et_culture.112 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.112.tt
-		}
-		culture:gallo_roman = {
-			change_language = dialect:french_language
+			culture:gallo_roman = {
+				change_language = dialect:french_language
+			}
 		}
 		add_prestige = prestige_mild_bonus
 	}
@@ -1597,16 +1643,20 @@ et_culture.113 = {
 	outcome = neutral
 	historical_info = et_culture.113.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
-		tag = ROM
+		tag = FRAN
 		from = 911.1.1
 		to = 1000.1.1
 		monthly_chance = 10
 	}
 
 	trigger = {
-		has_or_had_tag = ROM
 		owns = location:caen
 		owns = location:cherbourg
 		owns = location:bayeux
@@ -1673,6 +1723,11 @@ et_culture.114 = {
 	outcome = neutral
 	historical_info = et_culture.114.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = FRA
@@ -1704,7 +1759,10 @@ et_culture.114 = {
 					limit = {
 						culture = culture:occitan
 					}
-					change_pop_culture = culture:french
+					split_pop = {
+						fraction = 0.30
+						culture = culture:french
+					}
 				}
 			}
 		}
@@ -1725,6 +1783,11 @@ et_culture.115 = {
 	desc = et_culture.115.desc
 	outcome = good
 	historical_info = et_culture.115.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -1752,6 +1815,7 @@ et_culture.115 = {
 						location = location:orleans
 						location = location:tours
 						location = location:caen
+						location = location:soissons
 					}
 				}
 				every_pop = {
@@ -1759,6 +1823,7 @@ et_culture.115 = {
 						OR = {
 							culture = culture:norman
 							culture = culture:arpitan
+							culture = culture:frankish
 						}
 					}
 					change_pop_culture = culture:french
@@ -1788,6 +1853,11 @@ et_culture.116 = {
 	outcome = good
 	historical_info = et_culture.116.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = FRA
@@ -1805,18 +1875,18 @@ et_culture.116 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.116.tt
-		}
-		culture:gallo_roman = {
-			change_language = dialect:french_language
-		}
-		culture:occitan = {
-			change_language = dialect:french_language
-		}
-		culture:arpitan = {
-			change_language = dialect:french_language
-		}
-		culture:norman = {
-			change_language = dialect:french_language
+			culture:gallo_roman = {
+				change_language = dialect:french_language
+			}
+			culture:occitan = {
+				change_language = dialect:french_language
+			}
+			culture:arpitan = {
+				change_language = dialect:french_language
+			}
+			culture:norman = {
+				change_language = dialect:french_language
+			}
 		}
 		add_prestige = prestige_mild_bonus
 	}
@@ -1834,6 +1904,11 @@ et_culture.117 = {
 	desc = et_culture.117.desc
 	outcome = neutral
 	historical_info = et_culture.117.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -1890,6 +1965,11 @@ et_culture.118 = {
 	outcome = good
 	historical_info = et_culture.118.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = FRA
@@ -1931,9 +2011,13 @@ et_culture.118 = {
 							culture = culture:occitan
 							culture = culture:arpitan
 							culture = culture:norman
+							culture = culture:frankish
 						}
 					}
-					change_pop_culture = culture:french
+					split_pop = {
+						fraction = 0.50
+						culture = culture:french
+					}
 				}
 			}
 		}
@@ -1960,6 +2044,11 @@ et_culture.119 = {
 	desc = et_culture.119.desc
 	outcome = good
 	historical_info = et_culture.119.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -2008,6 +2097,11 @@ et_culture.120 = {
 	outcome = neutral
 	historical_info = et_culture.120.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = FRA
@@ -2041,6 +2135,11 @@ et_culture.121 = {
 	desc = et_culture.121.desc
 	outcome = good
 	historical_info = et_culture.121.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -2091,6 +2190,11 @@ et_culture.122 = {
 	desc = et_culture.122.desc
 	outcome = neutral
 	historical_info = et_culture.122.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -2225,11 +2329,16 @@ et_culture.123 = {
 	outcome = neutral
 	historical_info = et_culture.123.historical_info
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = FRA
 		from = 1992.1.1
-		to = 2000.1.1
+		to = 2009.1.1
 		monthly_chance = 8
 	}
 

@@ -8,7 +8,7 @@ records:
     finding: >-
       At the 58 CE start the population of Gaul (modern France, Belgium, and the
       Rhineland) is overwhelmingly recorded as gallian (~1,000 pop blocks),
-      practicing celtic_paganism. Aquitanian pops in the southwest speak basque_language,
+      practicing gallo_roman_polytheism. Aquitanian pops in the southwest speak basque_language,
       Belgae in the north are recorded under continental Celtic traditions, and Roman
       administrative, military, and merchant minorities exist in colonies such as
       Lugdunum, Narbo Martius, Nemausus, and Massilia. This baseline is the anchor
@@ -69,6 +69,22 @@ records:
     confidence: high
     integration: {status: in_progress, target: "events (et_culture.103)", note: "Pilot event et_culture.103 triggers for ROM c. 212-230 CE."}
 
+  gaul_gallic_empire_260_274:
+    entity: culture_gallian
+    subject: third_century_secession_and_gallic_identity
+    finding: >-
+      Postumus, a Batavian officer of the Rhine army, is proclaimed emperor in 260
+      after defeating the Franks and Alamanni; the Imperium Galliarum controls Gaul,
+      Britain and briefly Hispania for fourteen years, with Trier and Cologne as its
+      core. The usurpation is a frontier-army secession, not a national revolt; its
+      coinage, senate and consuls imitate Rome. Aurelian reabsorbs the empire in 274.
+    population: "Rhine legions, Gallic urban elites and the provincial aristocracy"
+    dating: {precision: period, date: "260-274", calendar: ce_year_normalized_to_et}
+    mechanism: military usurpation, frontier-army autonomy, negotiated reabsorption
+    source_refs: [{id: wiki_gallic_empire, locator: "Lead; History (Postumus 260; Aurelian 274)"}]
+    confidence: high
+    integration: {status: pending, target: "events (et_culture.104)", note: "DHE layer for the Roman holder of Gaul; the event window follows the empire's lifespan."}
+
   gaul_christianization_martin_tours:
     entity: culture_gallo_roman
     subject: pop_religion_christianization
@@ -80,12 +96,12 @@ records:
     population: "Rural and urban Gallo-Roman populations"
     dating: {precision: period, date: "c. 250-450", calendar: ce_year_normalized_to_et}
     mechanism: monastic evangelism, destruction of rural pagan shrines, episcopal parish system
-    source_refs: []
+    source_refs: [{id: wiki_martin_of_tours, locator: "Life (rural Christianization in Gaul)"}]
     confidence: high
-    integration: {status: pending, target: "events (WS2 religion layer)"}
+    integration: {status: pending, target: "events (et_culture.105-.106)", note: "Religion layer: late-antique conversions use chalcedonism; catholic begins with .110 (decision kept in the 2026-10-18 review)."}
 
   gaul_armorica_breton_migration:
-    entity: culture_gallian
+    entity: culture_gallo_roman
     subject: insular_celtic_migration_and_breton_genesis
     finding: >-
       Between the late 4th and 6th centuries, Brittonic-speaking Celts from southwestern
@@ -95,9 +111,42 @@ records:
     population: "Armorican peninsula population"
     dating: {precision: period, date: "c. 380-550", calendar: ce_year_normalized_to_et}
     mechanism: trans-marine migration, language replacement
-    source_refs: []
+    source_refs: [{id: wiki_brittany, locator: "History - Breton settlement; the Gallo/Breton linguistic line"}]
     confidence: high
-    integration: {status: pending, target: "events (add_migration / breton genesis)"}
+    integration: {status: pending, target: "events (et_culture.107)", note: "Western Armorica only (brest, saint_malo); Rennes and Nantes stay Gallo-Romance and join the northern French list in .111 (2026-10-18 fix)."}
+
+  gaul_rhine_crossing_and_germanic_settlement_406_443:
+    entity: culture_gallo_roman
+    subject: germanic_migration_and_foederati_settlement
+    finding: >-
+      On the last night of 406 the Rhine frontier gives way before Vandals, Alans
+      and Suebi; the migration passes through Gaul (406-409) toward Iberia and the
+      Mediterranean, while foederati settlements follow: Visigoths in Aquitaine
+      around Toulouse and Bordeaux (418), Burgundians in Sapaudia around Geneva and
+      up the Rhone to Lyon (443) after the defeat of 436-437. The event models Arian
+      migrant communities in these locations.
+    population: "Arian Germanic foederati and migrant groups in the Gallic provinces"
+    dating: {precision: period, date: "406-443", calendar: ce_year_normalized_to_et}
+    mechanism: frontier collapse, migration, foederati (hospitalitas) settlement
+    source_refs: [{id: wiki_crossing_of_the_rhine, locator: "Lead; Invasion (31 December 406)"}, {id: wiki_visigothic_kingdom, locator: "Aquitaine settlement 418"}, {id: wiki_kingdom_of_the_burgundians, locator: "Sapaudia 443"}]
+    confidence: high
+    integration: {status: pending, target: "events (et_culture.108)", note: "add_pops go to owned locations only; the Burgundian and Visigothic settler set remains (the Vandal blocks were removed by the UPDATE 10 audit - the migration only passed through Gaul toward Hispania)."}
+
+  gaul_fall_of_soissons_486:
+    entity: culture_gallo_roman
+    subject: end_of_roman_rule_in_northern_gaul
+    finding: >-
+      The Domain of Soissons, the last Roman authority in northern Gaul held by
+      Syagrius, falls to Clovis at the Battle of Soissons (486); Syagrius flees to
+      the Visigoths and is later handed over and executed. The conquest of the Seine
+      basin opens the Frankish phase; the event turns the northern Gallo-Roman city
+      populations toward the Frankish identity.
+    population: "Gallo-Roman towns of the Seine basin (Soissons, Paris, Reims, Rouen)"
+    dating: {precision: period, date: "457-486", calendar: ce_year_normalized_to_et}
+    mechanism: military conquest, absorption of the Roman rump state
+    source_refs: [{id: wiki_battle_of_soissons_486, locator: "Lead; Background (Syagrius; Domain of Soissons)"}]
+    confidence: high
+    integration: {status: pending, target: "events (et_culture.109)", note: "Ownership-guarded city list; the last event of the ROM layer."}
 
   gaul_clovis_conversion_and_franco_roman_synthesis:
     entity: culture_gallo_roman
@@ -111,9 +160,9 @@ records:
     population: "Northern Gaulish populations and Frankish warrior settlers"
     dating: {precision: period, date: "c. 486-530", calendar: ce_year_normalized_to_et}
     mechanism: conquest, dynastic baptism, elite intermarriage, bilingual linguistic contact
-    source_refs: []
+    source_refs: [{id: wiki_baptism_of_clovis, locator: "Lead; Date (496 or 508); Reims, Bishop Remigius"}]
     confidence: high
-    integration: {status: pending, target: "events (Phase 2 migration/Frankish layer)"}
+    integration: {status: pending, target: "events (et_culture.110)", note: "Frankish layer: the DHE was rebound from ROM to FRAN in the 2026-10-18 review."}
 
   gaul_oil_oc_dialect_divergence:
     entity: culture_gallo_roman
@@ -127,9 +176,9 @@ records:
     population: "All Romance-speaking populations across the former Gaul"
     dating: {precision: period, date: "c. 650-850", calendar: ce_year_normalized_to_et}
     mechanism: phonetic divergence, substrate/superstrate differentiation, administrative vernacularization
-    source_refs: []
+    source_refs: [{id: wiki_council_of_tours, locator: "Canon 17 (rusticam romanam linguam)"}, {id: wiki_oaths_of_strasbourg, locator: "Text (earliest Romance attestation)"}]
     confidence: high
-    integration: {status: pending, target: "events (Phase 3 divergence layer)"}
+    integration: {status: pending, target: "events (et_culture.111-.112)", note: "FRAN-bound after the 2026-10-18 tag rebind; city-list coverage, the rest follows normal assimilation."}
 
   gaul_norman_genesis_911:
     entity: culture_french
@@ -142,9 +191,90 @@ records:
     population: "Lower Seine / Normandy populations and Scandinavian settlers"
     dating: {precision: year, date: "911", calendar: ce_year_normalized_to_et}
     mechanism: feudal cession, conversion, rapid linguistic assimilation
-    source_refs: []
+    source_refs: [{id: wiki_treaty_of_saint_clair_sur_epte, locator: "Terms (Rollo; conversion to Christianity)"}]
     confidence: high
-    integration: {status: pending, target: "events (Phase 3 Norman layer)"}
+    integration: {status: pending, target: "events (et_culture.113)", note: "FRAN-bound after the 2026-10-18 tag rebind; the trigger already requires all four Norman locations."}
+
+  gaul_albigensian_crusade_1209_1229:
+    entity: culture_occitan
+    subject: albigensian_crusade_and_the_annexation_of_languedoc
+    finding: >-
+      Pope Innocent III launches the Albigensian Crusade (1209-1229) against the
+      Cathars of Languedoc; the northern French coalition and the Capetian crown
+      break the autonomy of the southern lords (Béziers, Carcassonne, Toulouse) and
+      annex the county of Toulouse by 1229. The region keeps its Occitan speech, but
+      its political elite and urban culture are realigned with the French crown.
+    population: "Occitan-speaking population and nobility of Languedoc"
+    dating: {precision: period, date: "1209-1229", calendar: ce_year_normalized_to_et}
+    mechanism: religious crusade, conquest, annexation (Treaty of Paris 1229)
+    source_refs: [{id: wiki_albigensian_crusade, locator: "Lead; Aftermath (Treaty of Paris 1229)"}]
+    confidence: high
+    integration: {status: pending, target: "events (et_culture.114)", note: "FRA-bound; the first event of the France layer."}
+
+  gaul_hundred_years_war_1337_1453:
+    entity: culture_french
+    subject: hundred_years_war_and_french_identity
+    finding: >-
+      The intermittent Anglo-French conflict (1337-1453) over the succession and the
+      English possessions runs from Crécy and Agincourt to the relief of Orléans
+      (Joan of Arc, 1429) and Castillon (1453). The war strengthens the Valois
+      state, a standing army and a proto-national identity; English claims except
+      Calais end, and French spreads in administration.
+    population: "The kingdom's elites, soldiery and taxpayers on both sides of the Channel"
+    dating: {precision: period, date: "1337-1453", calendar: ce_year_normalized_to_et}
+    mechanism: dynastic war, fiscal-military state building, identity consolidation
+    source_refs: [{id: wiki_hundred_years_war, locator: "Lead; Overview (1337-1453)"}]
+    confidence: high
+    integration: {status: pending, target: "events (et_culture.115)", note: "FRA-bound historical layer."}
+
+  gaul_villers_cotterets_edict_1539:
+    entity: culture_french
+    subject: vernacularization_of_law_and_the_rise_of_french
+    finding: >-
+      The ordinance of Villers-Cotterêts (August 1539, registered 6 September)
+      requires judicial acts and notarial records to be drawn up in the French
+      mother tongue rather than Latin. It is a milestone of judicial
+      vernacularization, but the later claim that it made French the official
+      language of France is retrospective: its scope is judicial and notarial, and
+      linguistic unification follows much later (1789-1914).
+    population: "Legal and notarial professionals; vernacular speakers of the realm"
+    dating: {precision: period, date: "1539", calendar: ce_year_normalized_to_et}
+    mechanism: royal ordinance, judicial vernacularization
+    source_refs: [{id: wiki_ordinance_of_villers_cotterets, locator: "Articles 110-111; registered 6 September 1539"}]
+    confidence: high
+    integration: {status: pending, target: "events (et_culture.116)", note: "Culture-scope change_language for gallo_roman, occitan, arpitan and norman; tooltip and desc aligned in the 2026-10-18 review."}
+
+  gaul_wars_of_religion_and_edict_of_nantes_1562_1685:
+    entity: culture_french
+    subject: confessional_wars_toleration_and_revocation
+    finding: >-
+      Eight civil wars (1562-1598) between Catholics and Huguenots culminate in
+      Henry IV's Edict of Nantes (1598), granting limited toleration and safe
+      places; the event's city list models the conflict's urban geography.
+      Toleration erodes under Louis XIII and Louis XIV and ends with the Edict of
+      Fontainebleau (1685), revoking Nantes and driving the Huguenot emigration.
+    population: "Urban populations of Paris, Rouen, Orléans, Tours, Nantes and Bordeaux"
+    dating: {precision: period, date: "1562-1685", calendar: ce_year_normalized_to_et}
+    mechanism: confessional civil war, edicts of toleration and revocation, emigration
+    source_refs: [{id: wiki_edict_of_nantes, locator: "Terms; Revocation (1685)"}, {id: wiki_edict_of_fontainebleau, locator: "Revocation of the Edict of Nantes"}]
+    confidence: high
+    integration: {status: pending, target: "events (et_culture.117)", note: "Event window and label span the wars to the revocation; conversions run on owned locations."}
+
+  gaul_revolution_gregoire_1789_1794:
+    entity: culture_french
+    subject: revolutionary_linguistic_unification
+    finding: >-
+      The Revolution ties citizenship to the French language; Abbé Grégoire's
+      report of 16 prairial an II (4 June 1794) calls for abolishing the patois
+      and universalizing French, estimating that millions still spoke only
+      regional languages. The event models the shift of the southern and
+      peripheral populations toward French as the language of the Republic.
+    population: "Occitan, Arpitan and Norman speakers; the new citizenry of the Republic"
+    dating: {precision: period, date: "1789-1794", calendar: ce_year_normalized_to_et}
+    mechanism: revolutionary centralization, language policy, schooling
+    source_refs: [{id: wiki_gregoire_report, locator: "Séance du 16 prairial an II (4 June 1794); report text"}]
+    confidence: high
+    integration: {status: pending, target: "events (et_culture.118)", note: "City-list conversions to French; the report is the record's anchor."}
 
   gaul_jules_ferry_modern_unification_1881:
     entity: culture_french
@@ -170,13 +300,13 @@ records:
     finding: >-
       The law of 9 December 1905 separates the churches from the state: the Republic no
       longer recognises, funds or subsidises any religion, and church buildings become
-      public property. Laicite becomes a founding principle of the French state, though the
-      measure is divisive at the time (Pope Pius X condemns it in the 1906-1908
+      public property. Laïcité becomes a founding principle of the French state, though the
+      measure is divisive at the time (Pope Pius X condemns it in the 1906-1907
       encyclicals, and reconciliation comes only in the 1920s). This is a state and
       political-faith marker rather than a mass change of pop religion.
     population: "French state and institutions; practising Catholic population most affected"
     dating: {precision: year, date: "1905", calendar: ce_year_normalized_to_et}
-    mechanism: legislative separation of church and state (laicite)
+    mechanism: legislative separation of church and state (laïcité)
     source_refs: [{id: wiki_separation_church_state_1905, locator: "Article intro; History; Effects; Reactions by the Catholic Church"}]
     confidence: high
     integration: {status: applied, target: "events (et_culture.120)", note: "Modeled as a state policy choice; no direct pop religion conversion (no secular religion key exists)."}
