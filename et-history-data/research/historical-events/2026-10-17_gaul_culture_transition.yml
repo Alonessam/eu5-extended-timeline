@@ -8,7 +8,7 @@ records:
     finding: >-
       At the 58 CE start the population of Gaul (modern France, Belgium, and the
       Rhineland) is overwhelmingly recorded as gallian (~1,000 pop blocks),
-      practicing celtic_paganism. Aquitanian pops in the southwest speak basque_language,
+      practicing gallo_roman_polytheism. Aquitanian pops in the southwest speak basque_language,
       Belgae in the north are recorded under continental Celtic traditions, and Roman
       administrative, military, and merchant minorities exist in colonies such as
       Lugdunum, Narbo Martius, Nemausus, and Massilia. This baseline is the anchor
@@ -85,7 +85,7 @@ records:
     integration: {status: pending, target: "events (WS2 religion layer)"}
 
   gaul_armorica_breton_migration:
-    entity: culture_gallian
+    entity: culture_gallo_roman
     subject: insular_celtic_migration_and_breton_genesis
     finding: >-
       Between the late 4th and 6th centuries, Brittonic-speaking Celts from southwestern

@@ -50,6 +50,26 @@ yüzden Paris'i elinde tutan diğer devletler zinciri çalıştıramıyor (backl
 (02:28–02:59) önce alındı; Test B yeni blokları kapsayacak şekilde yeniden
 çalıştırılmalı.
 
+**Galya tarihsel denetimi (18 Ekim 2026):** Zincirin tamamı (`.101`–`.123`) kaynak
+kayıtlara ve vanilla/mod tanımlarına karşı harf harf denetlendi. Mekanik doğrulama:
+kullanılan tüm kültür, din, lokasyon ve `pop_type` anahtarları (göçmen kültürler
+dahil) ile kaynak id'leri geçerli. Düzeltilen kritik hatalar: (a) `.107` `culture:gallian`
+hedefliyordu ama `.102`/`.103` zaten tüm `gallian`'ı `gallo_roman`'a çevirdiği için
+tarihsel seçeneklerle olay boş çalışıyordu; sınır artık `gallian` VEYA `gallo_roman`
+kabul ediyor ve kaydın `entity` alanı `culture_gallo_roman` yapıldı (Armorika 380-500'de
+Gallo-Romen'di). (b) `.108` Marsilya ve Nîmes'e kalıcı `vandal` pop'u yerleştiriyordu;
+Vandallar Galya'dan yalnızca geçti (406-409, Hispania'ya), iki `add_pop` bloğu kaldırıldı
+ve araç ipucu artık yalnız Burgund/Vizigot yerleşimini anıyor. (c) `.108` TR açıklaması
+ve `historical_info`'su Vizigotları Akdeniz'e, Vandalları güneye gönderiyordu; Akitanya
+(418) ve Akdeniz'e düzeltildi (EN ile uyumlu). (d) 58 CE temel kaydı modda hiç
+tanımlı olmayan `celtic_paganism`'i yazıyordu; başlangıç kurulumu (06_pops.txt, 1.039
+gallian bloğu) `gallo_roman_polytheism` kullanıyor ve kayıt düzeltildi. (e) `.123`
+DHE penceresi 2000'de bitip kayıt/metin 1992-2008'i anlatıyordu; `to` artık 2009.1.1.
+Kalan denetim bulguları (frankish'in hiç french'e dönüşmemesi; `.109`/`.114`/`.118`
+tam nüfus kaymaları; beş kaynaksız ve dokuz eksik kayıt; TR/EN metinleri) yeni
+`gaul_history_audit_followups` göreviyle `gaul_record_backfill` ve
+`gaul_dhe_tag_binding_review` yanında izleniyor (backlog UPDATE 10). Test B hâlâ sırada.
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,

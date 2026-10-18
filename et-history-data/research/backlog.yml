@@ -329,6 +329,26 @@ tasks:
       burghers, laborers, soldiers, peasants, tribesmen and slaves), both replaced
       with pop_type:laborers; the script_token_audit task remains for the rest of
       the corpus. Test B remains pending.
+      UPDATE 10 (2026-10-18, Gaul historical audit .101-.123): a full source-to-script
+      audit of the Gaul chain fixed the critical historical errors. (a) .107 converted
+      culture:gallian to breton, but .102/.103 already convert every gallian pop to
+      gallo_roman, so with the historical options the event was a no-op; Armorica in
+      380-500 was Gallo-Roman, so the limit now accepts gallian OR gallo_roman and the
+      record entity was corrected to culture_gallo_roman. (b) .108 planted permanent
+      vandal peasant pops in marseille and nimes, but the Vandals only crossed Gaul
+      (406-409) toward Hispania; the two add_pop blocks were removed and the en/tr
+      tooltip now names only the Burgundian and Visigothic settlements. (c) the .108
+      Turkish desc and historical_info sent the Visigoths to the Mediterranean and the
+      Vandals south; corrected to Aquitaine (418) and the Mediterranean, matching the
+      English. (d) the 58 CE baseline record claimed celtic_paganism, a key that exists
+      nowhere in the mod; the start setup (main_menu/setup/start/06_pops.txt, 1,039
+      gallian blocks) uses gallo_roman_polytheism (et_roman.txt) and the record was
+      corrected. (e) the .123 DHE window ended at 2000.1.1 while the record and the
+      text describe the 1992-2008 settlement, so to is now 2009.1.1. The remaining
+      audit findings (frankish never converts to french; the full-pop flips in
+      .109/.114/.118; the five unsourced and nine missing records; the Turkish and
+      English copy defects) are filed as gaul_history_audit_followups alongside
+      gaul_record_backfill and gaul_dhe_tag_binding_review. Test B still pending.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -458,9 +478,9 @@ tasks:
     state: pending
     targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/common/on_action/et_history_pulses.txt"]
     source_refs: []
-    question: Should the Gaul chain keep the dynamic_historical_event tag binding (ROM for .101-.113, FRA for .114-.122) or move to the owner-agnostic yearly-pulse pattern used by the Egypt chain?
+    question: Should the Gaul chain keep the dynamic_historical_event tag binding (ROM for .101-.113, FRA for .114-.123) or move to the owner-agnostic yearly-pulse pattern used by the Egypt chain?
     evidence: >-
-      All 22 Gaul events are DHE-bound: .101-.113 require ROM, .114-.122
+      All 23 Gaul events are DHE-bound: .101-.113 require ROM, .114-.123
       require FRA. A country that owns Paris but is neither ROM nor FRA (for
       example a Gallic tag, a surviving Roman successor or a player-formed
       state) never receives the chain, and no single country spans both halves
@@ -472,3 +492,31 @@ tasks:
       date-guarded yearly pulse (the DHE windows must become explicit date
       triggers) so any owner of Paris runs the chain.
     acceptance: Decision recorded in the design note/README; Test B includes an owner-switch or non-ROM/FRA case; no double firing.
+  gaul_history_audit_followups:
+    period_id: contemporary
+    priority: 2
+    state: pending
+    targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/localization/english/et_culture_events_l_english.yml", "Extended Timeline/in_game/localization/turkish/et_culture_events_l_turkish.yml"]
+    source_refs: [weber_peasants_into_frenchmen, wiki_languages_of_france]
+    question: How should the non-critical Gaul audit findings be resolved - the frankish culture that never becomes french, the full-population culture flips in .109/.114/.118, and the Turkish and English copy defects?
+    evidence: >-
+      The 2026-10-18 audit of .101-.123 (UPDATE 10) left the following.
+      (a) Chain logic: .109 flips every gallo_roman pop in paris, reims, rouen
+      and soissons to frankish, but no later event converts frankish to french
+      (.111 covers gallo_roman, .115 covers norman/arpitan, .118 covers
+      occitan/arpitan/norman), so with the historical options northern France
+      ends the chain as frankish even though the Franks were a small elite that
+      assimilated into a Romance population; .114 (1209-1229) and .118
+      (1789-1794) likewise flip entire populations (Occitan/Arpitan/Norman) to
+      french decades or centuries before the gradual linguistic unification
+      documented by Weber. The accepted fix is a partial split_pop instead of a
+      total change_pop_culture, with frankish added to the .115/.118 conversion
+      set. (b) Turkish copy: .105 amfiatrosunda (should be amfiteatrosunda) and
+      oncuelenir (non-word), Galo-Romen vs Gallo-Romen, .107 kutsal
+      kahramanlarini (EN saints -> azizlerini), .112 dogum ebeveyni (EN midwife
+      -> ebe), .120 ansiklikleriyle (-> ansiklikalariyla), .106 pagan kutsal
+      pinarlarindan. (c) English copy: laicite/Poincare/union sacree are
+      unaccented while Chalons, oil, Domremy, Gregoire and Villers-Cotterets
+      carry accents, and the .120 "1906-1908 encyclicals" should be 1906-1907
+      (the source caveat at sources.yml:496 carries the same off-by-one).
+    acceptance: Each item is decided and applied with the chain's historical options in mind; the frankish path and each partial flip are documented; Turkish and English strings are corrected without breaking key parity.

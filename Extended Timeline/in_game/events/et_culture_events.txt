@@ -1047,7 +1047,10 @@ et_culture.107 = {
 				}
 				every_pop = {
 					limit = {
-						culture = culture:gallian
+						OR = {
+							culture = culture:gallian
+							culture = culture:gallo_roman
+						}
 					}
 					change_pop_culture = culture:breton
 				}
@@ -1119,22 +1122,6 @@ et_culture.108 = {
 			location:bordeaux = {
 				add_pop = {
 					culture = culture:visigoth
-					religion = religion:arianism
-					type = pop_type:peasants
-					size = 2
-				}
-			}
-			location:marseille = {
-				add_pop = {
-					culture = culture:vandal
-					religion = religion:arianism
-					type = pop_type:peasants
-					size = 2
-				}
-			}
-			location:nimes = {
-				add_pop = {
-					culture = culture:vandal
 					religion = religion:arianism
 					type = pop_type:peasants
 					size = 2
@@ -2027,7 +2014,7 @@ et_culture.123 = {
 	dynamic_historical_event = {
 		tag = FRA
 		from = 1992.1.1
-		to = 2000.1.1
+		to = 2009.1.1
 		monthly_chance = 8
 	}
 
