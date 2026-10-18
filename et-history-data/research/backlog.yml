@@ -471,3 +471,110 @@ tasks:
       date-guarded yearly pulse (the DHE windows must become explicit date
       triggers) so any owner of Paris runs the chain.
     acceptance: Decision recorded in the design note/README; Test B includes an owner-switch or non-ROM/FRA case; no double firing.
+  arabia_event_chain_v1:
+    period_id: ancient
+    priority: 1
+    state: in_progress
+    targets:
+      - "Extended Timeline/in_game/events/et_arabia_events.txt"
+      - "Extended Timeline/in_game/common/on_action/et_history_pulses.txt"
+      - "Extended Timeline/in_game/localization/english/et_culture_events_l_english.yml"
+      - "Extended Timeline/in_game/localization/turkish/et_culture_events_l_turkish.yml"
+    source_refs: [wiki_nabataean_kingdom, wiki_himyarite_kingdom, wiki_aksumite_empire, wiki_muhammad, wiki_ridda_wars, wiki_early_muslim_conquests, wiki_islamization, wiki_zaydism, wiki_ibadi_islam, wiki_arab_revolt, wiki_unification_of_saudi_arabia, wiki_petroleum_industry_in_saudi_arabia, wiki_gulf_cooperation_council]
+    question: Does the owner-agnostic Arabia chain fire correctly in all four anchor regions and survive an owner change without double firing?
+    evidence: >-
+      The v1 chain reserves et_culture.50-.57 for Arabia and uses a narrow
+      yearly_country_pulse guard on mecca, medina, sana_yemen and masqat. The
+      Revelation/Ridda events are anchored to Mecca/Medina; the later
+      Islamization/sect events accept a Muslim or Islam-influenced owner of any
+      anchor, so a region that changes hands can continue the process. The
+      design deliberately avoids the DHE/tag binding that blocks non-ROM/FRA
+      owners in the Gaul chain. Test A/B have not yet been run.
+    acceptance: Test A and Test B pass; .50-.57 fire in the intended windows; owner-switch case is documented; error.log has no unknown tokens; records move from pending to applied.
+  arabia_bedouin_key_consistency:
+    period_id: ancient
+    priority: 2
+    state: pending
+    targets: ["Extended Timeline/in_game/common/cultures/et_missing.txt", "Extended Timeline/main_menu/setup/start/06_pops.txt", "Extended Timeline/in_game/map_data/location_templates.txt"]
+    source_refs: []
+    question: Should the ancient Arabian bedouin key replace vanilla bedouin_culture in Arabian pops and location templates, or should the two remain separate?
+    evidence: >-
+      bedouin is a mod key (et_missing.txt:121, arabic_language,
+      middle_eastern_gfx); bedouin_culture is vanilla (egypt.txt,
+      egyptian_dialect, egyptian_gfx). Both appear in Mecca/Sanaa/Muscat pops,
+      and location_templates use bedouin_culture for Mecca/Sanaa. The v1 chain
+      treats both as ancient Arab but does not normalise the setup because that
+      is a data migration, not an event-chain change.
+    acceptance: Decision recorded; if normalised, setup/pops/location templates are updated with a migration note and Test A is rerun; no accidental removal of the vanilla Egypt key.
+  arabia_area_approximation:
+    period_id: ancient
+    priority: 2
+    state: pending
+    targets: ["Extended Timeline/in_game/events/et_arabia_events.txt", "Extended Timeline/in_game/map_data/definitions.txt"]
+    source_refs: []
+    question: Should the v1 area-scoped conversions be refined to provinces or explicit locations for the UAE, Dhofar, Hadramawt and eastern Arabia?
+    evidence: >-
+      v1 uses hedjaz_area, najd_area, hail_area, north/south_yemen_area and
+      oman_area. oman_area includes the UAE, south_yemen_area includes
+      Hadramawt, and no separate Bahrain/al-Ahsa land area is used. Area
+      scoping keeps the script cheap and ownership-safe but over-approximates
+      the cultural and sectarian map.
+    acceptance: Province/location scopes are verified against definitions.txt; Test B spot-checks the UAE, Dhofar, Hadramawt and Bahrain; any change remains ownership-safe.
+  arabia_owner_transfer:
+    period_id: ancient
+    priority: 2
+    state: pending
+    targets: ["Extended Timeline/in_game/events/et_arabia_events.txt", "Extended Timeline/in_game/common/on_action/et_history_pulses.txt"]
+    source_refs: []
+    question: Do the per-country fired markers skip or duplicate events after an Arabian region changes owner?
+    evidence: >-
+      Each event is once per country (et_arabia_X_fired). A new owner can fire
+      the same historical process again for the locations it owns, while the
+      previous owner's marker is irrelevant. The time/anchor structure avoids
+      hard-chain stalls but does not provide a global one-shot guarantee. Test
+      B must include an owner-switch case before deciding whether location or
+      global variables, or regional modules, are needed.
+    acceptance: Owner-switch test documented; duplicate or skipped effects assessed; decision recorded in the design note or README.
+  arabia_modern_migration_layer:
+    period_id: contemporary
+    priority: 2
+    state: pending
+    targets: ["Extended Timeline/in_game/events/et_arabia_events.txt", "et-history-data/research/historical-events/2026-10-18_arabia_culture_transition.yml"]
+    source_refs: [wiki_demographics_of_saudi_arabia, wiki_gulf_cooperation_council]
+    question: Which verified culture and religion keys can represent South Asian, Egyptian, Filipino and other foreign workers in the Gulf oil states?
+    evidence: >-
+      et_culture.57 models the oil era with prestige and stability only. The
+      record arabia_modern_labor_migration documents the omission: foreign
+      labour was a majority of the workforce in several Gulf states by the 21st
+      century, but adding unverified culture keys or unguarded add_pop effects
+      would repeat the class of bug found in Gaul .122.
+    acceptance: Culture/religion keys verified against vanilla/mod; add_pop uses ownership-safe scopes; if no verified key path exists, the abstraction is documented instead of invented.
+  arabia_himyar_state_layer:
+    period_id: ancient
+    priority: 3
+    state: pending
+    targets: ["Extended Timeline/main_menu/setup/start/10_countries.txt", "Extended Timeline/in_game/setup/countries/et_countries.txt", "Extended Timeline/in_game/events/et_arabia_events.txt"]
+    source_refs: [wiki_himyarite_kingdom, wiki_aksumite_empire]
+    question: Should the Jewish YEM tag own a start location or receive a Himyarite state event, given that SABA owns Sanaa and is polytheist in the 58 CE setup?
+    evidence: >-
+      YEM is defined as yemeni_culture/judaism but has no owned locations in
+      the 58 CE start; SABA owns Sanaa, Marib and Najran and follows South
+      Arabian polytheism. et_culture.51 models the Himyarite book religions
+      from the polytheist owner's perspective and can change that state to
+      Judaism, but it does not create a Himyarite tag or a historical YEM
+      territory. The current solution is an abstraction, not a tag fix.
+    acceptance: Decision recorded; if YEM is given territory or a state event, the change is data-first, sourced and covered by Test B; if not, the abstraction is documented in the design note.
+  gaul_122_ownership_scope:
+    period_id: contemporary
+    priority: 2
+    state: pending
+    targets: ["Extended Timeline/in_game/events/et_culture_events.txt"]
+    source_refs: [wiki_immigration_to_france]
+    question: Should et_culture.122 require ownership of every city it adds pops to, or scope its add_pop effects to owned locations?
+    evidence: >-
+      The event requires only owns = location:paris, but adds labourer pops to
+      Paris, Lyon, Marseille, Lille, Bordeaux and Toulouse. A FRA that owns
+      Paris but not the other cities still adds pops to foreign locations. The
+      .113 fix already established the ownership-guard pattern for Gaul; .122
+      was added later and does not follow it.
+    acceptance: Add owns checks or wrap each city effect in an ownership-guarded scope; rerun Test B for .122; no pop is added to an unowned city.

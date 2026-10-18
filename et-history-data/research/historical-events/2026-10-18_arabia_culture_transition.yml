@@ -1,0 +1,194 @@
+schema_version: 1
+period_id: ancient
+collected_on: "2026-10-18"
+records:
+  arabia_58ce_population_baseline:
+    entity: culture_bedouin
+    subject: population_baseline_58ce
+    finding: >-
+      At the 58 CE start the peninsula has no unified Arab identity. The setup
+      divides it between Thamud in the Hejaz (Mecca, Taif, al-Hadhah), Nabataea
+      in the northern Hejaz (Medina, Khaybar, Tabuk, Maan), Saba in the Yemeni
+      highlands (Sanaa, Marib, Najran) and Mascat on the Omani coast (Muscat,
+      Suhar). Pops mix the mod key bedouin with vanilla bedouin_culture;
+      Nabataean culture and religion dominate the north, South Arabian
+      polytheism is the majority religion, Jewish teimani pops appear in Sanaa,
+      and the landless YEM tag is Jewish.
+    population: "Hejaz, Najd, Yemen, Oman and the Gulf coast"
+    dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
+    mechanism: start setup data (no transition claimed)
+    source_refs: []
+    confidence: high
+    integration: {status: applied, target: "Extended Timeline/main_menu/setup/start/06_pops.txt; 10_countries.txt; in_game/setup/countries/et_countries.txt", note: "Baseline only. The bedouin/bedouin_culture duplication is tracked as arabia_bedouin_key_consistency."}
+
+  arabia_nabataean_annexation_106:
+    entity: culture_nabataean
+    subject: ruler_change_not_mass_conversion
+    finding: >-
+      In 106 CE Trajan annexed the Nabataean Kingdom and formed the province of
+      Arabia Petraea, with Bostra as its capital. The annexation was a fiscal
+      and political change: the Nabataean caravan network and the Nabataean
+      cult continued, and the population was not replaced or converted
+      wholesale. The event chain therefore models a state and trade marker, not
+      a mass pop conversion.
+    population: "Nabataea, northern Hejaz and the Hauran"
+    dating: {precision: year, date: "106", calendar: ce_year_normalized_to_et}
+    mechanism: Roman annexation and provincialisation
+    source_refs: [{id: wiki_nabataean_kingdom, locator: "Article intro; Roman annexation"}]
+    confidence: high
+    integration: {status: pending, target: "event et_culture.50", note: "State/trade flavor event; no mass conversion by design."}
+
+  arabia_himyar_book_religions:
+    entity: culture_yemeni
+    subject: elite_and_minority_religion_change
+    finding: >-
+      The Himyarite kings of the Yemeni highlands adopted Judaism in the 4th
+      century (the precise chronology is debated), while Christian communities
+      existed in Najran and other towns. The Jewish and Christian presence was
+      an elite and urban minority phenomenon, not a conversion of the entire
+      South Arabian population. The event models a state conversion and partial
+      pop shares separately.
+    population: "Yemeni highlands and Najran"
+    dating: {precision: range, from: "300", to: "525", calendar: ce_year_normalized_to_et}
+    mechanism: royal patronage and monotheist missionary competition
+    source_refs: [{id: wiki_himyarite_kingdom, locator: "Judaism; Christianity; Aksumite conquest"}]
+    confidence: medium
+    integration: {status: pending, target: "event et_culture.51", note: "Partial shares; the state conversion is a game abstraction, not a population estimate."}
+
+  arabia_aksumite_yemen_525:
+    entity: culture_yemeni
+    subject: conquest_and_christianisation
+    finding: >-
+      The Aksumite king Kaleb invaded Himyar around 518-525, defeated the last
+      Himyarite king Yusuf, and installed a Christian regime. Christianity
+      became the main religion after about 530, although a Himyarite rump and
+      local resistance continued. The South Arabian kingdoms declined and the
+      peninsula's political centre shifted north.
+    population: "Yemeni highlands and the Red Sea coast"
+    dating: {precision: range, from: "518", to: "530", calendar: ce_year_normalized_to_et}
+    mechanism: Aksumite conquest and Christian patronage
+    source_refs: [{id: wiki_aksumite_empire, locator: "Yemen and Himyar"}, {id: wiki_himyarite_kingdom, locator: "Aksumite conquest"}]
+    confidence: high
+    integration: {status: pending, target: "event et_culture.51", note: "Christian minority in the south; no whole-population conversion."}
+
+  arabia_muhammad_revelation_610_632:
+    entity: culture_bedouin
+    subject: religious_awakening_and_state_formation
+    finding: >-
+      Muhammad's preaching began around 610 in Mecca; the hijra to Medina
+      followed in 622, and by his death in 632 much of Arabia was under Muslim
+      authority or allied to the Muslim community. The event models the
+      religious message, the conversion of part of the Hejazi population, and
+      the conversion of the Meccan state as separate layers.
+    population: "Mecca, Medina and the Hejaz"
+    dating: {precision: range, from: "610", to: "632", calendar: ce_year_normalized_to_et}
+    mechanism: prophetic movement, community building and political alliance
+    source_refs: [{id: wiki_muhammad, locator: "Article intro; Mecca and Medina; death in 632"}]
+    confidence: high
+    integration: {status: pending, target: "event et_culture.52", note: "The state conversion is a game abstraction; pop shares are partial."}
+
+  arabia_ridda_unification_632_634:
+    entity: culture_bedouin
+    subject: political_unification_after_revolt
+    finding: >-
+      After Muhammad's death, Abu Bakr's Ridda campaigns (632-633, some sources
+      extend them to 634) defeated tribal revolts and brought the Arabian
+      tribes under the caliphate. The unification was political and military;
+      conversion and submission varied by tribe and region, and the event does
+      not assume a single-day mass conversion.
+    population: "Arabian tribes from the Hejaz to Yemen and Oman"
+    dating: {precision: range, from: "632", to: "634", calendar: ce_year_normalized_to_et}
+    mechanism: Ridda wars and caliphal consolidation
+    source_refs: [{id: wiki_ridda_wars, locator: "Article intro; 632-633 campaigns"}]
+    confidence: high
+    integration: {status: pending, target: "event et_culture.53", note: "Partial conversions; no forced annexation scripted."}
+
+  arabia_islamization_and_arabization:
+    entity: culture_bedouin
+    subject: pop_religion_and_language_change
+    finding: >-
+      Conversion to Islam in the peninsula was gradual from the 7th to the
+      13th century and beyond, driven by conquest, fiscal incentives, social
+      mobility, trade and Arab migration. Non-Muslim communities (Jews,
+      Christians and Zoroastrians) survived, especially in Yemen and eastern
+      Arabia. Arabization is not the same process as conversion: Arabic spread
+      through administration, trade, migration and the prestige of the
+      conquerors while local languages survived in the highlands and on the
+      coasts.
+    population: "Peninsula-wide; urban and lowland populations convert earlier"
+    dating: {precision: range, from: "700", to: "1400", calendar: ce_year_normalized_to_et}
+    mechanism: gradual conversion, migration and language shift
+    source_refs: [{id: wiki_early_muslim_conquests, locator: "Article intro; Arabia and the conquests"}, {id: wiki_islamization, locator: "Article intro; conversion and Arabization"}]
+    confidence: medium
+    integration: {status: pending, target: "event et_culture.54", note: "Stepped partial shares; majority threshold is a game abstraction, not a census."}
+
+  arabia_regional_identities:
+    entity: culture_bedouin
+    subject: regional_culture_formation
+    finding: >-
+      Hijazi, Najdi, Yemeni, Omani and Hadhrami identities crystallized from
+      the medieval to the early modern period through geography, tribal
+      settlement, trade, pilgrimage and regional states. They are not ancient
+      tribes, and the mod's modern culture keys already exist at the 58 CE
+      start as country cultures and some pops. The chain therefore shifts
+      ancient bedouin, bedouin_culture and Nabataean pops into the existing
+      regional keys rather than inventing new cultures.
+    population: "Settled and semi-settled populations of the peninsula"
+    dating: {precision: range, from: "1000", to: "1600", calendar: ce_year_normalized_to_et}
+    mechanism: settlement, regional state formation and cultural consolidation
+    source_refs: [{id: wiki_history_of_arabia, locator: "Medieval and early modern Arabia"}, {id: wiki_arabian_peninsula, locator: "Geography and regional populations"}]
+    confidence: medium
+    integration: {status: pending, target: "event et_culture.56", note: "Area-scoped partial culture shifts; a bedouin minority remains."}
+
+  arabia_sectarian_consolidation:
+    entity: culture_bedouin
+    subject: religious_school_formation
+    finding: >-
+      Zaydi Shia imams took root in the Yemeni highlands from the 9th-10th
+      century, Ibadi imams in Oman from the 8th century, and Sunni Islam
+      dominated the Hejaz and Najd. The modern sectarian map is the result of
+      long processes of state patronage, tribal alliance and scholarly
+      networks, not a single event. The event models the consolidation as a
+      partial split of the existing Muslim population.
+    population: "Muslim populations of Hejaz, Najd, Yemen and Oman"
+    dating: {precision: range, from: "900", to: "1700", calendar: ce_year_normalized_to_et}
+    mechanism: imamate formation, scholarly networks and state patronage
+    source_refs: [{id: wiki_zaydism, locator: "Yemen and the Zaydi imamate"}, {id: wiki_ibadi_islam, locator: "Oman and the Ibadi imamate"}]
+    confidence: medium
+    integration: {status: pending, target: "event et_culture.55", note: "Partial shares; a unified islam remainder is left for later or for a tolerant path."}
+
+  arabia_oil_and_modern_states:
+    entity: culture_bedouin
+    subject: modern_state_formation_and_oil
+    finding: >-
+      The Arab Revolt (1916-1918), the unification of Saudi Arabia
+      (1902-1932), the Dammam No. 7 oil strike (1938) and the formation of the
+      Gulf Cooperation Council (1981) transformed the peninsula into modern
+      states. Oil, ports, labour migration and urbanization reshaped the
+      coast, while the interior and the highlands retained older social
+      structures. The v1 event marks the modern era with prestige and
+      stability and leaves foreign labour migration to a separate layer.
+    population: "Gulf coast, Hejaz, Yemen and Oman"
+    dating: {precision: range, from: "1900", to: "2026", calendar: ce_year_normalized_to_et}
+    mechanism: state formation, oil economy and urbanization
+    source_refs: [{id: wiki_arab_revolt, locator: "Article intro; 1916-1918"}, {id: wiki_unification_of_saudi_arabia, locator: "Article intro; 1902-1932"}, {id: wiki_petroleum_industry_in_saudi_arabia, locator: "Dammam No. 7; 1938"}, {id: wiki_gulf_cooperation_council, locator: "Article intro; 1981"}]
+    confidence: high
+    integration: {status: pending, target: "event et_culture.57", note: "No foreign culture pops in v1; see arabia_modern_migration_layer."}
+
+  arabia_modern_labor_migration:
+    entity: culture_bedouin
+    subject: modern_labour_migration
+    finding: >-
+      From the 1970s the Gulf states imported large numbers of foreign workers
+      from South Asia, Egypt, the Philippines and elsewhere; by the 21st
+      century non-nationals formed a majority of the labour force in several
+      states. The v1 chain does not add foreign culture pops because the
+      required culture keys and ownership-safe add_pop scopes need a separate
+      verification pass. The record exists so the omission is explicit rather
+      than silent.
+    population: "Gulf oil states and their migrant labour forces"
+    dating: {precision: range, from: "1970", to: "2026", calendar: ce_year_normalized_to_et}
+    mechanism: labour migration and demographic change
+    source_refs: [{id: wiki_demographics_of_saudi_arabia, locator: "Foreign workers and demographics"}, {id: wiki_gulf_cooperation_council, locator: "Member states and labour markets"}]
+    confidence: high
+    integration: {status: pending, target: "backlog: arabia_modern_migration_layer", note: "Documented omission; do not add unverified culture keys."}

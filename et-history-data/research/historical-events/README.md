@@ -8,14 +8,14 @@ olay scriptleri yalnızca bu kayıtlara dayanılarak yazılır. Planın teknik
 kısımları 17 Ekim 2026'da incelenen kurulu EU5 1.3.x dosyalarından
 doğrulanmıştır; doğrulama notları bu dokümandadır.
 
-**Durum:** Plan yayında. **Faz 1 paralel iki pilotla sürüyor: Mısır ve Galya**
+**Durum:** Plan yayında. **Faz 1 paralel üç pilotla sürüyor: Mısır, Galya ve Arabistan**
 (17 Ekim 2026 mutabakatı). Mısır hattında kaynaklı geçiş kayıtları, kültür
 grafiği düzeltmeleri ve **olay zinciri v1** hazır (`et_culture.1`–`.5` +
 `on_action/et_history_pulses.txt`); **Test A geçti** (17 Ekim 2026:
 `et_culture.9000` + Galya `.101` oyun içinde ateşlendi; `error.log`'da mod
 satırı yok). Zincir doğrulaması (Test B) sırada. Samet'in inceleme commit'i (`f3d304d`) payları spec'e hizaladı; son-kimlik anahtar sahipliği ikinci incelemede (17 Ekim 2026) karara bağlandı — deltasız mod kopyaları geri alındı (vanilla içerik korunur), deltalılar vanilla birebir + delta olarak kaldı (design note §7, kararlar 7–8). Galya incelemesi (aynı gün): Samet'in `e271902` commit'i gözden geçirildi — boş `latin_language` kopyası geri alındı (vanilla `00_italy.txt` tanımı yüklenir); `french_group` kopyası vanilla'da da boş olduğundan zararsız bırakıldı (backlog UPDATE 4). Galya hattında
 `gallo_roman` ara kimliği ve pilot olaylar (`.101`–`.103`) yazıldı (Samet); Faz 2–3 olayları (`.104`–`.110`) incelendi — din/locasyon/efekt/prestij token'ları vanilla'ya göre düzeltildi (backlog UPDATE 5);
-numara rezervasyonu mutabık: Mısır `.1`–`.49`, Galya `.100`–`.149`.
+numara rezervasyonu mutabık: Mısır `.1`–`.49`, Arabistan `.50`–`.99`, Galya `.100`–`.149`.
 
 **Galya modern dönemi (Faz 7-8):** 18 Ekim 2026'da Galya zinciri M.S. 2026'ya
 uzatıldı. **Faz 7 — Modern Fransa (1837–1945):** Jules Ferry okul yasaları
@@ -49,6 +49,20 @@ yüzden Paris'i elinde tutan diğer devletler zinciri çalıştıramıyor (backl
 `gaul_dhe_tag_binding_review`). 01:33 oyun logları Faz 4-7 commit'lerinden
 (02:28–02:59) önce alındı; Test B yeni blokları kapsayacak şekilde yeniden
 çalıştırılmalı.
+
+**Arabistan pilotu (18 Ekim 2026):** 58 CE yarımadası için kaynaklı veri
+katmanı kuruldu: `2026-10-18_arabia_culture_transition.yml` (11 kayıt) ve
+`2026-10-18_arabia_event_design.md`. Yeni kaynaklar `sources.yml`'e eklendi
+(Nebati, Himyer, Aksum, Muhammed, Ridde, İslamlaşma, Zeydi/İbadi, modern
+Körfez). Numara rezervasyonu Arabistan `.50`–`.99`; v1 zinciri `.50`–`.57`
+ve sahip-bağımsız `et_arabia_yearly_pulse` ile çalışır. Zincir DHE/tag
+bağlamaz; `.52` Vahiy yalnızca Mekke sahibinde, `.54`–`.55` Müslüman/İslam
+etkisindeki liman sahiplerinde, `.56`–`.57` herhangi bir liman sahibinde
+tarih penceresiyle ateşlenir. `bedouin`/`bedouin_culture` çifti, alan
+yaklaşımları ve modern göç katmanı backlog'a yazıldı. Test A/B sırada.
+`54d463e` incelemesinde `.123` yeniden numaralandırması ve loc anahtarları
+doğrulandı; `.122` yalnızca Paris'i koşul alırken Lyon/Marsilya/Lille/
+Bordeaux/Toulouse'a pop eklediği için `gaul_122_ownership_scope` açıldı.
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
@@ -259,6 +273,16 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
   (`event_probabilities`, `test_event_trigger`, `change_date`, `tick_day`;
   ayrıntı: design note bölüm 5)
 
+**Arabistan pilotu kontrol listesi (18 Ekim 2026):**
+
+- [x] Kaynak seti + 11 geçiş kaydı —
+  `2026-10-18_arabia_culture_transition.yml`
+- [x] Olay tasarım notu — `2026-10-18_arabia_event_design.md` (8 olaylık
+  v1 + sahip-bağımsız pulse mimarisi)
+- [x] v1 zinciri — `et_culture.50`–`.57`, `et_arabia_yearly_pulse`, EN/TR
+  yerelleştirmeler
+- [ ] Test A/B — `.50`–`.57`; sahip değişimi ve `error.log` kontrolü
+
 ## 6. Bağlayıcı kalite kuralları
 
 1. Kaynaksız geçiş olayı yazılmaz; her kayıtta güven düzeyi ve belirsizlik
@@ -275,8 +299,9 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
 
 ## 7. Açık kararlar (maintainer)
 
-- ~~Pilot bölge: Galya mı, Mısır mı?~~ → **İkisi paralel pilot** (17 Ekim 2026
-  mutabakatı): Mısır ve Galya hatları birbirini bloklamadan yürütülür.
+- ~~Pilot bölge: Galya mı, Mısır mı?~~ → **Üç paralel pilot** (17 Ekim 2026
+  Mısır/Galya mutabakatı; 18 Ekim 2026 Arabistan eklendi): üç hat birbirini
+  bloklamadan yürütülür.
 - Ara kimlikler: **Mısır hattı yeni anahtar gerektirmiyor** — `old_egyptian` →
   `coptic_culture` → `lower_egyptian_culture`/`upper_egyptian_culture` ve
   `kushite` → `nubian` zincirlerinin tamamı vanilla'da mevcut. Galya hattında
@@ -299,6 +324,8 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
   `2026-10-17_egypt_culture_transition.yml` (Mısır geçiş kayıtları),
   `2026-10-17_egypt_event_design.md` (Mısır olay tasarım notu),
   `2026-10-17_gaul_culture_transition.yml` (Galya geçiş kayıtları),
+  `2026-10-18_arabia_culture_transition.yml` (Arabistan geçiş kayıtları),
+  `2026-10-18_arabia_event_design.md` (Arabistan olay tasarım notu),
   `2026-10-17_culture_graph_audit.md` (WS3 denetimi).
 - `Extended Timeline/loading_screen/common/defines/00_defines.txt` — asimilasyon
   ve kültür sabitleri.

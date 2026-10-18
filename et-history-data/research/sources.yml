@@ -522,3 +522,115 @@ sources:
     url: https://en.wikipedia.org/wiki/Portuguese_in_France
     locator: History (Great Portuguese emigration 1957-1974); Demographics table
     caveat: Emigration peaks and community totals combine Portuguese and French census and scholarly estimates and are approximate.
+  wiki_nabataean_kingdom:
+    title: Nabataean Kingdom
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Nabataean_Kingdom
+    locator: Article intro; Roman annexation
+    caveat: The 106 CE annexation date is conventional; the province's organisation and the survival of Nabataean culture are debated in detail.
+  wiki_himyarite_kingdom:
+    title: Himyarite Kingdom
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Himyarite_Kingdom
+    locator: Judaism; Christianity; Aksumite conquest
+    caveat: The date of the Himyarite adoption of Judaism and the Aksumite conquest (518-525 or 525-530) vary by source.
+  wiki_aksumite_empire:
+    title: Kingdom of Aksum
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Kingdom_of_Aksum
+    locator: Yemen and Himyar
+    caveat: The Yemenite campaigns are dated 518-525/530; the extent of Christianisation is debated.
+  wiki_muhammad:
+    title: Muhammad
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Muhammad
+    locator: Article intro; Mecca and Medina; death in 632
+    caveat: The 610 revelation date is traditional; the biographical chronology is reconstructed from later sources.
+  wiki_ridda_wars:
+    title: Ridda Wars
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Ridda_Wars
+    locator: Article intro; 632-633 campaigns
+    caveat: Dates are given as 632-633 or 632-634; the scale and nature of apostasy varied by tribe.
+  wiki_early_muslim_conquests:
+    title: Early Muslim conquests
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Early_Muslim_conquests
+    locator: Article intro; Arabia and the conquests
+    caveat: Arabisation was gradual and uneven; the article covers the conquests, not a population census.
+  wiki_islamization:
+    title: Islamization
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Islamization
+    locator: Article intro; conversion and Arabization
+    caveat: Conversion rates are scholarly estimates and vary by region; the article is a general survey.
+  wiki_history_of_arabia:
+    title: History of Arabia
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/History_of_Arabia
+    locator: Medieval and early modern Arabia
+    caveat: A survey article; regional identities are described broadly rather than statistically.
+  wiki_arabian_peninsula:
+    title: Arabian Peninsula
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Arabian_Peninsula
+    locator: Geography and regional populations
+    caveat: Geography and regional populations are described broadly; the article is not a source for exact shares.
+  wiki_zaydism:
+    title: Zaydism
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Zaydism
+    locator: Yemen and the Zaydi imamate
+    caveat: The Zaydi imamate chronology and the share of the Yemeni population are debated.
+  wiki_ibadi_islam:
+    title: Ibadi Islam
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Ibadi_Islam
+    locator: Oman and the Ibadi imamate
+    caveat: Ibadi origins and the Omani imamate chronology are debated.
+  wiki_arab_revolt:
+    title: Arab Revolt
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Arab_Revolt
+    locator: Article intro; 1916-1918
+    caveat: The revolt's territorial outcomes and Arab nationalist aims are debated.
+  wiki_unification_of_saudi_arabia:
+    title: Unification of Saudi Arabia
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Unification_of_Saudi_Arabia
+    locator: Article intro; 1902-1932
+    caveat: The 1902-1932 unification is a narrative frame; local chronologies differ.
+  wiki_petroleum_industry_in_saudi_arabia:
+    title: Petroleum industry in Saudi Arabia
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Petroleum_industry_in_Saudi_Arabia
+    locator: Dammam No. 7; 1938
+    caveat: Dammam No. 7 struck oil in 1938; commercial export and production expanded later.
+  wiki_gulf_cooperation_council:
+    title: Gulf Cooperation Council
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Gulf_Cooperation_Council
+    locator: Article intro; 1981
+    caveat: The article covers the organisation, not labour statistics.
+  wiki_demographics_of_saudi_arabia:
+    title: Demographics of Saudi Arabia
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Demographics_of_Saudi_Arabia
+    locator: Foreign workers and demographics
+    caveat: Foreign-worker shares vary by year and definition; figures are estimates.
