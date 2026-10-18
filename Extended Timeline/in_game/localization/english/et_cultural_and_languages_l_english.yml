@@ -171,9 +171,6 @@
  arosi_culture_ADJ: "Arosi"
  arpitan: "Arpitan"
  arpitan_ADJ: "Arpitan"
- occitan: "Occitan"
- occitan_ADJ: "Occitan"
-
  aru_culture: "Aru"
  aru_culture_ADJ: "Aru"
  arua_culture: "Arua"
@@ -2544,6 +2541,8 @@
  nyurmgan_culture_ADJ: "Nyurmgan"
  obgints_culture: "Obgints"
  obgints_culture_ADJ: "Obgints"
+ occitan: "Occitan"
+ occitan_ADJ: "Occitan"
  oconee_culture: "Oconee"
  oconee_culture_ADJ: "Oconee"
  odawa_culture: "Odawa"

@@ -297,9 +297,10 @@ tasks:
       EN and TR; arpitan/norman already had vanilla keys); event .113 added
       Norman pops to Cherbourg, Bayeux and Rouen without requiring ownership
       of those locations (the trigger now requires all four); Turkish typos in
-      .110 (selenek -> geleneksel olarak), .117 (Henry -> Henri), .118
-      (partikulyerizm -> bolgesel ayrilikcilik) and .119 (patois'nin,
-      Fransizcanin en az konusuldugu bolgeler). Open items: (a) data-first
+      .110 (selenek -> geleneksel olarak), .115 (partikulyerizmlerin ->
+      ayrilikciliklarin), .116 (Francoise -> francoise), .117 (Henry -> Henri)
+      and .119 (patois'nin, Fransizcanin en az konusuldugu bolgeler). Open
+      items: (a) data-first
       gaps - .112 and .114-.118 have no sourced records yet, and five Phase 2/3
       records are still pending/in_progress although their events exist (filed
       as gaul_record_backfill); (b) the whole chain is DHE-bound to the ROM tag
