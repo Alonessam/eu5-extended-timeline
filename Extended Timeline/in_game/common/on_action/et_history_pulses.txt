@@ -9,16 +9,20 @@
 #   et-history-data/research/historical-events/README.md
 # Egypt pilot design note:
 #   et-history-data/research/historical-events/2026-10-17_egypt_event_design.md
+# Egypt political chain design note:
+#   et-history-data/research/historical-events/2026-10-18_egypt_political_chain_design.md
 
 yearly_country_pulse = {
 	on_actions = {
 		et_egypt_yearly_pulse
+		et_egypt_occupier_pulse
 		et_nubia_yearly_pulse
 	}
 }
 
 # Cheap outer guard: does the country hold an Egyptian anchor location?
 # The expensive conditions live inside the events themselves.
+# Culture chain .1-.5; political chain .8, .10-.15.
 et_egypt_yearly_pulse = {
 	trigger = {
 		OR = {
@@ -33,6 +37,30 @@ et_egypt_yearly_pulse = {
 		et_culture.3
 		et_culture.4
 		et_culture.5
+		et_culture.8
+		et_culture.10
+		et_culture.11
+		et_culture.12
+		et_culture.13
+		et_culture.14
+		et_culture.15
+	}
+}
+
+# Controller-only political events: polities that hold an Egyptian anchor by
+# military control rather than ownership (Sasanian occupation 618-630,
+# Byzantine counterattack 644-647). One-shot guards live inside the events.
+et_egypt_occupier_pulse = {
+	trigger = {
+		OR = {
+			controls = location:alexandria
+			controls = location:cairo
+			controls = location:aswan
+		}
+	}
+	events = {
+		et_culture.9
+		et_culture.16
 	}
 }
 

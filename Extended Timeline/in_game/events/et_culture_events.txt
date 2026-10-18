@@ -862,6 +862,399 @@ et_culture.7 = {
 }
 
 # ===========================================================================
+# EGYPT POLITICAL EVENTS (WS4: et_culture.8 - et_culture.16)
+# Sourced records: et-history-data/research/historical-events/2026-10-18_egypt_political_timeline.yml
+# Design note: et-history-data/research/historical-events/2026-10-18_egypt_political_chain_design.md
+# Pulses: et_egypt_yearly_pulse (.8, .10-.15) + et_egypt_occupier_pulse (.9, .16).
+# Light effects only (prestige/stability + one-shot variables); no pop edits.
+# ===========================================================================
+
+# 8. Caracalla in Alexandria (MS 214-217)
+et_culture.8 = {
+	type = country_event
+	title = et_culture.8.title
+	desc = et_culture.8.desc
+	outcome = negative
+	historical_info = et_culture.8.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = ROM
+		current_year >= 214
+		current_year <= 217
+		owns = location:alexandria
+		NOT = { has_variable = et_egypt_polit_caracalla_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_polit_caracalla_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.8.a
+		historical_option = yes
+		add_stability = -5
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.8.b
+		add_stability = 5
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 9. The Sasanian occupation of Egypt (MS 618-630)
+et_culture.9 = {
+	type = country_event
+	title = et_culture.9.title
+	desc = et_culture.9.desc
+	outcome = neutral
+	historical_info = et_culture.9.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = ERA
+		current_year >= 618
+		current_year <= 630
+		OR = {
+			owns = location:alexandria
+			controls = location:alexandria
+			owns = location:cairo
+			controls = location:cairo
+			owns = location:aswan
+			controls = location:aswan
+		}
+		NOT = { has_variable = et_egypt_polit_sasanian_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_polit_sasanian_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.9.a
+		historical_option = yes
+		add_stability = -5
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.9.b
+		add_stability = 5
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 10. Amr ibn al-As and the Fustat settlement (MS 639-650)
+et_culture.10 = {
+	type = country_event
+	title = et_culture.10.title
+	desc = et_culture.10.desc
+	outcome = positive
+	historical_info = et_culture.10.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = RASH
+		current_year >= 639
+		current_year <= 650
+		OR = {
+			owns = location:alexandria
+			owns = location:cairo
+			owns = location:aswan
+		}
+		NOT = { has_variable = et_egypt_polit_arab_conquest_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_polit_arab_conquest_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.10.a
+		historical_option = yes
+		add_stability = 10
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.10.b
+		add_stability = -10
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+# 11. The registers speak Arabic (MS 700-712)
+et_culture.11 = {
+	type = country_event
+	title = et_culture.11.title
+	desc = et_culture.11.desc
+	outcome = neutral
+	historical_info = et_culture.11.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = UMAY
+		current_year >= 700
+		current_year <= 712
+		OR = {
+			owns = location:alexandria
+			owns = location:cairo
+			owns = location:aswan
+		}
+		NOT = { has_variable = et_egypt_polit_arabic_chancery_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_polit_arabic_chancery_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.11.a
+		historical_option = yes
+		add_stability = -5
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.11.b
+		add_stability = 5
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 12. The Bashmurite revolt (MS 825-835)
+et_culture.12 = {
+	type = country_event
+	title = et_culture.12.title
+	desc = et_culture.12.desc
+	outcome = negative
+	historical_info = et_culture.12.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = ABBA
+		current_year >= 825
+		current_year <= 835
+		OR = {
+			owns = location:alexandria
+			owns = location:cairo
+			owns = location:aswan
+		}
+		NOT = { has_variable = et_egypt_polit_bashmurite_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_polit_bashmurite_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.12.a
+		historical_option = yes
+		add_stability = 10
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.12.b
+		add_stability = 5
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 13. The Tulunid autonomy (MS 866-880)
+et_culture.13 = {
+	type = country_event
+	title = et_culture.13.title
+	desc = et_culture.13.desc
+	outcome = positive
+	historical_info = et_culture.13.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = EGY
+		current_year >= 866
+		current_year <= 880
+		OR = {
+			owns = location:alexandria
+			owns = location:cairo
+			owns = location:aswan
+		}
+		NOT = { has_variable = et_egypt_polit_tulunid_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_polit_tulunid_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.13.a
+		historical_option = yes
+		add_stability = 5
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.13.b
+		add_stability = 5
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 14. The Ikhshidid settlement (MS 933-945)
+et_culture.14 = {
+	type = country_event
+	title = et_culture.14.title
+	desc = et_culture.14.desc
+	outcome = positive
+	historical_info = et_culture.14.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = EGY
+		current_year >= 933
+		current_year <= 945
+		OR = {
+			owns = location:alexandria
+			owns = location:cairo
+			owns = location:aswan
+		}
+		NOT = { has_variable = et_egypt_polit_ikhshidid_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_polit_ikhshidid_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.14.a
+		historical_option = yes
+		add_stability = 5
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.14.b
+		add_stability = 5
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 15. Al-Qahira and the Fatimid conquest (MS 968-978)
+et_culture.15 = {
+	type = country_event
+	title = et_culture.15.title
+	desc = et_culture.15.desc
+	outcome = positive
+	historical_info = et_culture.15.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = FATI
+		current_year >= 968
+		current_year <= 978
+		OR = {
+			owns = location:alexandria
+			owns = location:cairo
+			owns = location:aswan
+		}
+		NOT = { has_variable = et_egypt_polit_fatimid_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_polit_fatimid_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.15.a
+		historical_option = yes
+		add_stability = 10
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.15.b
+		add_stability = -10
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+# 16. The last Byzantine attempt on Egypt (MS 644-647)
+et_culture.16 = {
+	type = country_event
+	title = et_culture.16.title
+	desc = et_culture.16.desc
+	outcome = negative
+	historical_info = et_culture.16.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = BYZ
+		current_year >= 644
+		current_year <= 647
+		OR = {
+			owns = location:alexandria
+			controls = location:alexandria
+		}
+		NOT = { has_variable = et_egypt_polit_byz_reconquest_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_polit_byz_reconquest_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.16.a
+		historical_option = yes
+		add_stability = -5
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.16.b
+		add_stability = 5
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# ===========================================================================
 # GAUL PILOT EVENTS (WS4: et_culture.101 - et_culture.103)
 # Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
 # Number reservation: Egypt .1-.49, Gaul .100-.149
