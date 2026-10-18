@@ -564,6 +564,24 @@ tasks:
       Judaism, but it does not create a Himyarite tag or a historical YEM
       territory. The current solution is an abstraction, not a tag fix.
     acceptance: Decision recorded; if YEM is given territory or a state event, the change is data-first, sourced and covered by Test B; if not, the abstraction is documented in the design note.
+  arabia_aksumite_christian_state:
+    period_id: ancient
+    priority: 3
+    state: pending
+    targets:
+      - "Extended Timeline/in_game/events/et_arabia_events.txt"
+      - "et-history-data/research/historical-events/2026-10-18_arabia_culture_transition.yml"
+    source_refs: [wiki_aksumite_empire, wiki_himyarite_kingdom]
+    question: Should the Aksumite conquest of Himyar (c. 518-530) add a separate Christian state layer or a second Yemen event after et_culture.51?
+    evidence: >-
+      et_culture.51 models the Himyarite book religions with a state conversion
+      to Judaism and a 5% Miaphysite minority in southern Yemen. The record
+      arabia_aksumite_yemen_525 documents the Aksumite conquest and the
+      Christianisation after c. 530, but v1 does not change the Yemeni state to
+      Miaphysite or add an Aksumite tag. The event is one-shot per country, so a
+      country that took the Jewish path around 300 has no later state-level
+      Christianisation step.
+    acceptance: Decision recorded; if modeled, a separate time/owner-agnostic event is data-first, sourced and covered by Test B; if not, the omission remains explicit in the design note and record integration note.
   gaul_122_ownership_scope:
     period_id: contemporary
     priority: 2

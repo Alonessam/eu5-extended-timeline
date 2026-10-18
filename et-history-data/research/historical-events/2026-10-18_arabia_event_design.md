@@ -177,6 +177,9 @@ durumlarını güncelle; `.57` için modern göç katmanı ayrı iş.
 - `arabia_modern_migration_layer` — Güney Asya, Mısır, Filipinler vb.
   işgücü için doğrulanmış kültür anahtarları ve sahiplik güvenli `add_pop`.
 - `arabia_himyar_state_layer` — topraksız `YEM` ve Yahudi Himyer devleti.
+- `arabia_aksumite_christian_state` — 518–530 Aksum fethi sonrası devlet
+  dininin Hristiyanlığa dönüşü; v1 yalnızca güneyde %5 Miaphysite popu ve
+  kaydı işler.
 - `gaul_122_ownership_scope` — Samet'in `.122` olayı yalnızca Paris'i
   koşul alıp Lyon/Marsilya/Lille/Bordeaux/Toulouse'a pop ekliyor; ayrı
   inceleme maddesi.
