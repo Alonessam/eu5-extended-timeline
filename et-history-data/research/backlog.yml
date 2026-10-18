@@ -423,6 +423,22 @@ tasks:
       Open: Test B in-game validation still gates the chain; the pending ->
       applied flip records the implemented script, not an in-game
       confirmation, and et_culture.9000 retires after it.
+      UPDATE 15 (2026-10-18, Gaul audit section 5 fixes): all seven minor
+      findings are resolved. Religion: chalcedonism was anachronistic for the
+      177 and 371-400 records (Chalcedon = 451), so .103 (Lugdunum martyrs,
+      formerly .105) and .106 (Martin of Tours) now convert to catholic, the
+      mod's Western Latin Nicene key; the .tt copy dropped the Chalcedon name
+      and the chalcedonism-vs-catholic split is gone. Window: .107 (Breton
+      migration) now runs 380-550 to match the record dating. Numbering: the
+      Roman-phase IDs ascend by start date - .103 = Lugdunum martyrs (177),
+      .104 = Caracalla (212), .105 = Imperium Galliarum (260); event text, en/tr
+      localization keys and integration targets follow. Scope: .113 (Norman
+      settlement) adds norman pops at rouen only, the 911 treaty lower-Seine
+      grant - the Cotentin, the Bessin and Caen were Normanized later and left
+      the 911 window. Copy: .115 desc names the cultures actually converted
+      (norman, arpitan, frankish) and the geography covered (Seine to Loire),
+      replacing the Breton/Burgundian and Loire-to-Rhine overstatement. en/tr
+      key parity holds; no chalcedonism token remains in the chain.
 
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:

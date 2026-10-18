@@ -67,7 +67,7 @@ records:
     mechanism: imperial edict, universal legal franchise
     source_refs: [{id: caracalla_constitutio_antoniniana, locator: "P.Giss. 40, col. I; Cassius Dio 78.9"}]
     confidence: high
-    integration: {status: applied, target: "events (et_culture.103)", note: "All remaining gallian pops become gallo_roman for ROM c. 212-230 CE."}
+    integration: {status: applied, target: "events (et_culture.104)", note: "All remaining gallian pops become gallo_roman for ROM c. 212-230 CE."}
 
   gaul_gallic_empire_260_274:
     entity: culture_gallian
@@ -83,7 +83,7 @@ records:
     mechanism: military usurpation, frontier-army autonomy, negotiated reabsorption
     source_refs: [{id: wiki_gallic_empire, locator: "Lead; History (Postumus 260; Aurelian 274)"}]
     confidence: high
-    integration: {status: applied, target: "events (et_culture.104)", note: "ROM 260-274; the nobles, clergy and burghers of the nine city locations become gallo_roman. The window follows the empire's lifespan, so the conversion completes before the Roman restoration."}
+    integration: {status: applied, target: "events (et_culture.105)", note: "ROM 260-274; the nobles, clergy and burghers of the nine city locations become gallo_roman. The window follows the empire's lifespan, so the conversion completes before the Roman restoration."}
 
   gaul_christianization_martin_tours:
     entity: culture_gallo_roman
@@ -98,7 +98,7 @@ records:
     mechanism: monastic evangelism, destruction of rural pagan shrines, episcopal parish system
     source_refs: [{id: wiki_martin_of_tours, locator: "Life (rural Christianization in Gaul)"}]
     confidence: high
-    integration: {status: applied, target: "events (et_culture.105, et_culture.106)", note: "ROM: .105 (177-350) turns the nobles, clergy and burghers of the nine city locations chalcedonist and .106 (371-400) their laborers and peasants. Rural Gaul is left alone; catholic begins with .110 (kept in the 2026-10-18 review)."}
+    integration: {status: applied, target: "events (et_culture.103, et_culture.106)", note: "ROM: .103 (177-350) turns the nobles, clergy and burghers of the nine city locations catholic and .106 (371-400) their laborers and peasants. Rural Gaul is left alone. The Latin Nicene faith is modeled with the catholic key throughout; the earlier chalcedonism key was dropped in the 2026-10-18 review as anachronistic for these dates (Chalcedon = 451)."}
 
   gaul_armorica_breton_migration:
     entity: culture_gallo_roman
@@ -113,7 +113,7 @@ records:
     mechanism: trans-marine migration, language replacement
     source_refs: [{id: wiki_brittany, locator: "History - Breton settlement; the Gallo/Breton linguistic line"}]
     confidence: high
-    integration: {status: applied, target: "events (et_culture.107)", note: "ROM 380-500; the gallian and gallo_roman pops of brest and saint_malo become breton. Western Armorica only: Rennes and Nantes stay Gallo-Romance and join the northern French list in .111 (2026-10-18 fix)."}
+    integration: {status: applied, target: "events (et_culture.107)", note: "ROM 380-550, the record's dating; the ROM tag plus the brest gate fires it while Rome still holds the peninsula. The gallian and gallo_roman pops of brest and saint_malo become breton. Western Armorica only: Rennes and Nantes stay Gallo-Romance and join the northern French list in .111 (2026-10-18 fix)."}
 
   gaul_rhine_crossing_and_germanic_settlement_406_443:
     entity: culture_gallo_roman
@@ -193,7 +193,7 @@ records:
     mechanism: feudal cession, conversion, rapid linguistic assimilation
     source_refs: [{id: wiki_treaty_of_saint_clair_sur_epte, locator: "Terms (Rollo; conversion to Christianity)"}]
     confidence: high
-    integration: {status: applied, target: "events (et_culture.113)", note: "FRAN 911-1000; adds catholic norman pops at rouen, caen, cherbourg and bayeux. FRAN-bound after the 2026-10-18 tag rebind; the trigger already requires all four Norman locations."}
+    integration: {status: applied, target: "events (et_culture.113)", note: "FRAN 911; adds catholic norman pops at rouen only, the treaty's lower-Seine grant. The Cotentin (Cherbourg), the Bessin (Bayeux) and Caen were Normanized later, so they are out of the 911 window (2026-10-18 review). FRAN-bound; the trigger requires rouen."}
 
   gaul_albigensian_crusade_1209_1229:
     entity: culture_occitan

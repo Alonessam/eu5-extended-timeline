@@ -660,7 +660,7 @@ et_culture.5 = { # Arabization (record: egypt_coptic_spoken_decline)
 }
 
 # ===========================================================================
-# GAUL PILOT EVENTS (WS4: et_culture.101 - et_culture.103)
+# GAUL PILOT EVENTS (WS4: et_culture.101 - et_culture.104)
 # Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
 # Number reservation: Egypt .1-.49, Gaul .100-.149
 # ===========================================================================
@@ -786,13 +786,80 @@ et_culture.102 = {
 	}
 }
 
-# 3. Constitutio Antoniniana - Edict of Caracalla (MS 212–230)
+# 3. Lugdunum Martyrs & Urban Christianization (MS 177-350)
 et_culture.103 = {
 	type = country_event
 	title = et_culture.103.title
 	desc = et_culture.103.desc
 	outcome = good
 	historical_info = et_culture.103.historical_info
+
+	illustration_tags = {
+		0 = regular
+		1 = interior
+	}
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 177.1.1
+		to = 350.1.1
+		monthly_chance = 15
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:lyon
+	}
+
+	option = {
+		name = et_culture.103.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.103.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						location = location:lyon
+						location = location:paris
+						location = location:bordeaux
+						location = location:toulouse
+						location = location:nimes
+						location = location:arles
+						location = location:marseille
+						location = location:reims
+						location = location:rouen
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							pop_type = pop_type:nobles
+							pop_type = pop_type:clergy
+							pop_type = pop_type:burghers
+						}
+					}
+					change_pop_religion = religion:catholic
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.103.b
+		add_stability = -5
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 4. Constitutio Antoniniana - Edict of Caracalla (MS 212–230)
+et_culture.104 = {
+	type = country_event
+	title = et_culture.104.title
+	desc = et_culture.104.desc
+	outcome = good
+	historical_info = et_culture.104.historical_info
 
 	illustration_tags = {
 		0 = regular
@@ -812,10 +879,10 @@ et_culture.103 = {
 	}
 
 	option = {
-		name = et_culture.103.a
+		name = et_culture.104.a
 		historical_option = yes
 		custom_tooltip = {
-			text = et_culture.103.tt
+			text = et_culture.104.tt
 			every_owned_location = {
 				every_pop = {
 					limit = {
@@ -829,24 +896,24 @@ et_culture.103 = {
 	}
 
 	option = {
-		name = et_culture.103.b
+		name = et_culture.104.b
 		add_prestige = prestige_mild_penalty
 	}
 }
 
 # ===========================================================================
-# GAUL PHASE 2 EVENTS (WS4: et_culture.104 - et_culture.107)
-# Period: Crisis of the Third Century & Christianization (MS 250-500)
+# GAUL PHASE 2 EVENTS (WS4: et_culture.105 - et_culture.107)
+# Period: Imperial Crisis, Christianization & Migration (MS 260-550)
 # Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
 # ===========================================================================
 
-# 4. Imperium Galliarum (MS 260-274)
-et_culture.104 = {
+# 5. Imperium Galliarum (MS 260-274)
+et_culture.105 = {
 	type = country_event
-	title = et_culture.104.title
-	desc = et_culture.104.desc
+	title = et_culture.105.title
+	desc = et_culture.105.desc
 	outcome = neutral
-	historical_info = et_culture.104.historical_info
+	historical_info = et_culture.105.historical_info
 
 	illustration_tags = {
 		0 = regular
@@ -859,74 +926,6 @@ et_culture.104 = {
 		from = 260.1.1
 		to = 274.1.1
 		monthly_chance = 20
-	}
-
-	trigger = {
-		has_or_had_tag = ROM
-		owns = location:lyon
-	}
-
-	option = {
-		name = et_culture.104.a
-		historical_option = yes
-		custom_tooltip = {
-			text = et_culture.104.tt
-			every_owned_location = {
-				limit = {
-					OR = {
-						location = location:lyon
-						location = location:paris
-						location = location:bordeaux
-						location = location:toulouse
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
-						location = location:reims
-						location = location:rouen
-					}
-				}
-				every_pop = {
-					limit = {
-						culture = culture:gallian
-						OR = {
-							pop_type = pop_type:nobles
-							pop_type = pop_type:clergy
-							pop_type = pop_type:burghers
-						}
-					}
-					change_pop_culture = culture:gallo_roman
-				}
-			}
-		}
-		add_prestige = prestige_mild_bonus
-	}
-
-	option = {
-		name = et_culture.104.b
-		add_stability = -10
-		add_prestige = prestige_mild_penalty
-	}
-}
-
-# 5. Lugdunum Martyrs & Urban Christianization (MS 177-350)
-et_culture.105 = {
-	type = country_event
-	title = et_culture.105.title
-	desc = et_culture.105.desc
-	outcome = good
-	historical_info = et_culture.105.historical_info
-
-	illustration_tags = {
-		0 = regular
-		1 = interior
-	}
-
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = ROM
-		from = 177.1.1
-		to = 350.1.1
-		monthly_chance = 15
 	}
 
 	trigger = {
@@ -955,13 +954,14 @@ et_culture.105 = {
 				}
 				every_pop = {
 					limit = {
+						culture = culture:gallian
 						OR = {
 							pop_type = pop_type:nobles
 							pop_type = pop_type:clergy
 							pop_type = pop_type:burghers
 						}
 					}
-					change_pop_religion = religion:chalcedonism
+					change_pop_culture = culture:gallo_roman
 				}
 			}
 		}
@@ -970,7 +970,7 @@ et_culture.105 = {
 
 	option = {
 		name = et_culture.105.b
-		add_stability = -5
+		add_stability = -10
 		add_prestige = prestige_mild_penalty
 	}
 }
@@ -1027,7 +1027,7 @@ et_culture.106 = {
 							pop_type = pop_type:peasants
 						}
 					}
-					change_pop_religion = religion:chalcedonism
+					change_pop_religion = religion:catholic
 				}
 			}
 		}
@@ -1040,7 +1040,7 @@ et_culture.106 = {
 	}
 }
 
-# 7. Breton Migration to Armorica (MS 380-500)
+# 7. Breton Migration to Armorica (MS 380-550)
 et_culture.107 = {
 	type = country_event
 	title = et_culture.107.title
@@ -1057,7 +1057,7 @@ et_culture.107 = {
 	dynamic_historical_event = {
 		tag = ROM
 		from = 380.1.1
-		to = 500.1.1
+		to = 550.1.1
 		monthly_chance = 10
 	}
 
@@ -1460,9 +1460,6 @@ et_culture.113 = {
 	}
 
 	trigger = {
-		owns = location:caen
-		owns = location:cherbourg
-		owns = location:bayeux
 		owns = location:rouen
 	}
 
@@ -1471,30 +1468,6 @@ et_culture.113 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.113.tt
-			location:caen = {
-				add_pop = {
-					culture = culture:norman
-					religion = religion:catholic
-					type = pop_type:peasants
-					size = 2
-				}
-			}
-			location:cherbourg = {
-				add_pop = {
-					culture = culture:norman
-					religion = religion:catholic
-					type = pop_type:peasants
-					size = 2
-				}
-			}
-			location:bayeux = {
-				add_pop = {
-					culture = culture:norman
-					religion = religion:catholic
-					type = pop_type:peasants
-					size = 2
-				}
-			}
 			location:rouen = {
 				add_pop = {
 					culture = culture:norman
