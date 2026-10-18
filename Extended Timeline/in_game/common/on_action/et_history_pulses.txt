@@ -13,6 +13,7 @@
 yearly_country_pulse = {
 	on_actions = {
 		et_egypt_yearly_pulse
+		et_nubia_yearly_pulse
 	}
 }
 
@@ -32,5 +33,24 @@ et_egypt_yearly_pulse = {
 		et_culture.3
 		et_culture.4
 		et_culture.5
+	}
+}
+
+# Cheap outer guard: does the country hold a Nubian anchor location?
+# Nubia extension (et_culture.6-.7); records:
+# kush_meroe_collapse_and_nubian_successors, nubia_christianization_543.
+et_nubia_yearly_pulse = {
+	trigger = {
+		OR = {
+			owns = location:faras
+			owns = location:dongola
+			owns = location:kerma
+			owns = location:shendi
+			owns = location:soba
+		}
+	}
+	events = {
+		et_culture.6
+		et_culture.7
 	}
 }
