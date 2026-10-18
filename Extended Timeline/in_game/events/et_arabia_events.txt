@@ -1,0 +1,976 @@
+﻿# Extended Timeline - Arabia culture and religion transition events (WS4).
+# Owner-agnostic regional pulse: in_game/common/on_action/et_history_pulses.txt
+# (et_arabia_yearly_pulse). No DHE/tag binding.
+# Event number reservation: et_culture.50-.99 (Egypt .1-.49, Gaul .100-.149).
+# Sourced records:
+#   et-history-data/research/historical-events/2026-10-18_arabia_culture_transition.yml
+# Design note:
+#   et-history-data/research/historical-events/2026-10-18_arabia_event_design.md
+# Localization keys:
+#   in_game/localization/{english,turkish}/et_culture_events_l_*.yml
+# Verified patterns: every_owned_location + area + every_pop + split_pop
+# (flavor_MAM.txt), change_religion (flavor_BEI.txt), custom_tooltip effects,
+# per-country set_variable/has_variable markers (flavor_MAM.txt).
+
+namespace = et_culture
+
+# .50 - Nabataea and the Roman shadow (record: arabia_nabataean_annexation_106)
+et_culture.50 = {
+	type = country_event
+	title = et_culture.50.title
+	desc = et_culture.50.desc
+	outcome = neutral
+	historical_info = et_culture.50.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		current_year >= 58
+		current_year <= 120
+		owns = location:medina
+		NOT = { has_variable = et_arabia_1_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_arabia_1_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.50.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.50.a.tt
+		}
+		add_prestige = prestige_mild_bonus
+		add_stability = -5
+	}
+
+	option = {
+		name = et_culture.50.b
+		custom_tooltip = {
+			text = et_culture.50.b.tt
+		}
+		add_stability = 10
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# .51 - Himyar and the People of the Book (records: arabia_himyar_book_religions,
+# arabia_aksumite_yemen_525)
+et_culture.51 = {
+	type = country_event
+	title = et_culture.51.title
+	desc = et_culture.51.desc
+	outcome = neutral
+	historical_info = et_culture.51.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		current_year >= 300
+		current_year <= 530
+		OR = {
+			owns = location:sana_yemen
+			owns = location:marib
+			owns = location:najran
+		}
+		NOT = { has_variable = et_arabia_2_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_arabia_2_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.51.a
+		historical_option = yes
+		set_variable = { name = et_arabia_book_religions value = 1 }
+		if = {
+			limit = {
+				OR = {
+					religion = religion:south_arabian_polytheism
+					religion = religion:nabataean_religion
+				}
+			}
+			change_religion = religion:judaism
+			change_religion_for_ruler_and_family = { country = ROOT religion = religion:judaism }
+		}
+		custom_tooltip = {
+			text = et_culture.51.a.tt
+			every_owned_location = {
+				limit = { area = area:north_yemen_area }
+				every_pop = {
+					limit = { religion = religion:south_arabian_polytheism }
+					split_pop = { fraction = 0.20 religion = religion:judaism }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:south_yemen_area }
+				every_pop = {
+					limit = { religion = religion:south_arabian_polytheism }
+					split_pop = { fraction = 0.05 religion = religion:miaphysite }
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+		add_stability = -5
+	}
+
+	option = {
+		name = et_culture.51.b
+		set_variable = { name = et_arabia_2_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.51.b.tt
+			every_owned_location = {
+				limit = { area = area:north_yemen_area }
+				every_pop = {
+					limit = { religion = religion:south_arabian_polytheism }
+					split_pop = { fraction = 0.05 religion = religion:judaism }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:south_yemen_area }
+				every_pop = {
+					limit = { religion = religion:south_arabian_polytheism }
+					split_pop = { fraction = 0.02 religion = religion:miaphysite }
+				}
+			}
+		}
+		add_stability = 10
+	}
+}
+
+# .52 - The Revelation at Mecca (record: arabia_muhammad_revelation_610_632)
+et_culture.52 = {
+	type = country_event
+	title = et_culture.52.title
+	desc = et_culture.52.desc
+	outcome = neutral
+	historical_info = et_culture.52.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		current_year >= 610
+		current_year <= 632
+		owns = location:mecca
+		NOT = { has_variable = et_arabia_3_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_arabia_3_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.52.a
+		historical_option = yes
+		set_variable = { name = et_arabia_islam_1 value = 1 }
+		set_variable = { name = et_arabia_islam_strong value = 1 }
+		if = {
+			limit = { NOT = { religion.group = religion_group:muslim } }
+			change_religion = religion:islam
+			change_religion_for_ruler_and_family = { country = ROOT religion = religion:islam }
+		}
+		custom_tooltip = {
+			text = et_culture.52.a.tt
+			every_owned_location = {
+				limit = { area = area:hedjaz_area }
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+						}
+					}
+					split_pop = { fraction = 0.30 religion = religion:islam }
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+		add_stability = -5
+	}
+
+	option = {
+		name = et_culture.52.b
+		set_variable = { name = et_arabia_islam_1 value = 1 }
+		set_variable = { name = et_arabia_3_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.52.b.tt
+			every_owned_location = {
+				limit = { area = area:hedjaz_area }
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+						}
+					}
+					split_pop = { fraction = 0.10 religion = religion:islam }
+				}
+			}
+		}
+		add_stability = 10
+	}
+}
+
+# .53 - The Ridda and the unification of the Arabs (record:
+# arabia_ridda_unification_632_634)
+et_culture.53 = {
+	type = country_event
+	title = et_culture.53.title
+	desc = et_culture.53.desc
+	outcome = neutral
+	historical_info = et_culture.53.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		current_year >= 632
+		current_year <= 700
+		OR = {
+			owns = location:mecca
+			owns = location:medina
+		}
+		NOT = { has_variable = et_arabia_4_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_arabia_4_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.53.a
+		historical_option = yes
+		set_variable = { name = et_arabia_unified value = 1 }
+		if = {
+			limit = { NOT = { religion.group = religion_group:muslim } }
+			change_religion = religion:islam
+			change_religion_for_ruler_and_family = { country = ROOT religion = religion:islam }
+		}
+		custom_tooltip = {
+			text = et_culture.53.a.tt
+			every_owned_location = {
+				limit = { area = area:hedjaz_area }
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+						}
+					}
+					split_pop = { fraction = 0.30 religion = religion:islam }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:najd_area
+						area = area:hail_area
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+						}
+					}
+					split_pop = { fraction = 0.15 religion = religion:islam }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:north_yemen_area
+						area = area:south_yemen_area
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+						}
+					}
+					split_pop = { fraction = 0.15 religion = religion:islam }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:oman_area }
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+						}
+					}
+					split_pop = { fraction = 0.15 religion = religion:islam }
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+		add_stability = -5
+	}
+
+	option = {
+		name = et_culture.53.b
+		set_variable = { name = et_arabia_unified value = 1 }
+		set_variable = { name = et_arabia_4_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.53.b.tt
+			every_owned_location = {
+				limit = { area = area:hedjaz_area }
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+						}
+					}
+					split_pop = { fraction = 0.15 religion = religion:islam }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:najd_area
+						area = area:hail_area
+						area = area:north_yemen_area
+						area = area:south_yemen_area
+						area = area:oman_area
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+						}
+					}
+					split_pop = { fraction = 0.05 religion = religion:islam }
+				}
+			}
+		}
+		add_stability = 10
+	}
+}
+
+# .54 - The age of conversion (record: arabia_islamization_and_arabization)
+et_culture.54 = {
+	type = country_event
+	title = et_culture.54.title
+	desc = et_culture.54.desc
+	outcome = neutral
+	historical_info = et_culture.54.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		current_year >= 700
+		current_year <= 1400
+		OR = {
+			religion.group = religion_group:muslim
+			has_variable = et_arabia_islam_1
+		}
+		OR = {
+			owns = location:mecca
+			owns = location:medina
+			owns = location:sana_yemen
+			owns = location:masqat
+		}
+		NOT = { has_variable = et_arabia_5_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_arabia_5_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.54.a
+		historical_option = yes
+		set_variable = { name = et_arabia_islamized value = 1 }
+		custom_tooltip = {
+			text = et_culture.54.a.tt
+			every_owned_location = {
+				limit = { area = area:hedjaz_area }
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+							religion = religion:judaism
+							religion = religion:miaphysite
+							religion = religion:zoroastrian
+						}
+					}
+					split_pop = { fraction = 0.50 religion = religion:islam }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:north_yemen_area
+						area = area:south_yemen_area
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+							religion = religion:judaism
+							religion = religion:miaphysite
+							religion = religion:zoroastrian
+						}
+					}
+					split_pop = { fraction = 0.40 religion = religion:islam }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:najd_area
+						area = area:hail_area
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+							religion = religion:judaism
+							religion = religion:miaphysite
+							religion = religion:zoroastrian
+						}
+					}
+					split_pop = { fraction = 0.30 religion = religion:islam }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:oman_area }
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+							religion = religion:judaism
+							religion = religion:miaphysite
+							religion = religion:zoroastrian
+						}
+					}
+					split_pop = { fraction = 0.30 religion = religion:islam }
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+		add_stability = -5
+	}
+
+	option = {
+		name = et_culture.54.b
+		set_variable = { name = et_arabia_islamized value = 1 }
+		set_variable = { name = et_arabia_5_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.54.b.tt
+			every_owned_location = {
+				limit = { area = area:hedjaz_area }
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+							religion = religion:judaism
+							religion = religion:miaphysite
+							religion = religion:zoroastrian
+						}
+					}
+					split_pop = { fraction = 0.25 religion = religion:islam }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:north_yemen_area
+						area = area:south_yemen_area
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+							religion = religion:judaism
+							religion = religion:miaphysite
+							religion = religion:zoroastrian
+						}
+					}
+					split_pop = { fraction = 0.20 religion = religion:islam }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:najd_area
+						area = area:hail_area
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+							religion = religion:judaism
+							religion = religion:miaphysite
+							religion = religion:zoroastrian
+						}
+					}
+					split_pop = { fraction = 0.15 religion = religion:islam }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:oman_area }
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:south_arabian_polytheism
+							religion = religion:nabataean_religion
+							religion = religion:judaism
+							religion = religion:miaphysite
+							religion = religion:zoroastrian
+						}
+					}
+					split_pop = { fraction = 0.15 religion = religion:islam }
+				}
+			}
+		}
+		add_stability = 10
+	}
+}
+
+# .55 - The schools of the peninsula (record: arabia_sectarian_consolidation)
+et_culture.55 = {
+	type = country_event
+	title = et_culture.55.title
+	desc = et_culture.55.desc
+	outcome = neutral
+	historical_info = et_culture.55.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		current_year >= 900
+		current_year <= 1700
+		OR = {
+			has_variable = et_arabia_islamized
+			religion.group = religion_group:muslim
+		}
+		OR = {
+			owns = location:mecca
+			owns = location:medina
+			owns = location:sana_yemen
+			owns = location:masqat
+		}
+		NOT = { has_variable = et_arabia_6_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_arabia_6_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.55.a
+		historical_option = yes
+		set_variable = { name = et_arabia_sects value = 1 }
+		custom_tooltip = {
+			text = et_culture.55.a.tt
+			every_owned_location = {
+				limit = { area = area:hedjaz_area }
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.70 religion = religion:sunni }
+				}
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.05 religion = religion:shia }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:najd_area
+						area = area:hail_area
+					}
+				}
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.80 religion = religion:sunni }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:north_yemen_area }
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.55 religion = religion:shia }
+				}
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.20 religion = religion:sunni }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:south_yemen_area }
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.55 religion = religion:sunni }
+				}
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.15 religion = religion:shia }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:oman_area }
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.65 religion = religion:ibadi }
+				}
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.15 religion = religion:sunni }
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+		add_stability = -5
+	}
+
+	option = {
+		name = et_culture.55.b
+		set_variable = { name = et_arabia_sects value = 1 }
+		set_variable = { name = et_arabia_6_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.55.b.tt
+			every_owned_location = {
+				limit = { area = area:hedjaz_area }
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.35 religion = religion:sunni }
+				}
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.025 religion = religion:shia }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:najd_area
+						area = area:hail_area
+					}
+				}
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.40 religion = religion:sunni }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:north_yemen_area }
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.275 religion = religion:shia }
+				}
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.10 religion = religion:sunni }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:south_yemen_area }
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.275 religion = religion:sunni }
+				}
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.075 religion = religion:shia }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:oman_area }
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.325 religion = religion:ibadi }
+				}
+				every_pop = {
+					limit = { religion = religion:islam }
+					split_pop = { fraction = 0.075 religion = religion:sunni }
+				}
+			}
+		}
+		add_stability = 10
+	}
+}
+
+# .56 - Regional identities (record: arabia_regional_identities)
+et_culture.56 = {
+	type = country_event
+	title = et_culture.56.title
+	desc = et_culture.56.desc
+	outcome = neutral
+	historical_info = et_culture.56.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		current_year >= 1000
+		current_year <= 1600
+		OR = {
+			owns = location:mecca
+			owns = location:medina
+			owns = location:sana_yemen
+			owns = location:masqat
+		}
+		NOT = { has_variable = et_arabia_7_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_arabia_7_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.56.a
+		historical_option = yes
+		set_variable = { name = et_arabia_regional value = 1 }
+		custom_tooltip = {
+			text = et_culture.56.a.tt
+			every_owned_location = {
+				limit = { area = area:hedjaz_area }
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:bedouin
+							culture = culture:bedouin_culture
+							culture = culture:nabataean_culture
+						}
+					}
+					split_pop = { fraction = 0.60 culture = culture:hijazi_culture }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:najd_area
+						area = area:hail_area
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:bedouin
+							culture = culture:bedouin_culture
+							culture = culture:nabataean_culture
+						}
+					}
+					split_pop = { fraction = 0.60 culture = culture:najdi_culture }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:north_yemen_area }
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:bedouin
+							culture = culture:bedouin_culture
+							culture = culture:nabataean_culture
+						}
+					}
+					split_pop = { fraction = 0.60 culture = culture:yemeni_culture }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:south_yemen_area }
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:bedouin
+							culture = culture:bedouin_culture
+							culture = culture:nabataean_culture
+						}
+					}
+					split_pop = { fraction = 0.25 culture = culture:hadhrami_culture }
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:bedouin
+							culture = culture:bedouin_culture
+							culture = culture:nabataean_culture
+						}
+					}
+					split_pop = { fraction = 0.50 culture = culture:yemeni_culture }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:oman_area }
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:bedouin
+							culture = culture:bedouin_culture
+							culture = culture:nabataean_culture
+						}
+					}
+					split_pop = { fraction = 0.60 culture = culture:omani_culture }
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+		add_stability = -5
+	}
+
+	option = {
+		name = et_culture.56.b
+		set_variable = { name = et_arabia_regional value = 1 }
+		set_variable = { name = et_arabia_7_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.56.b.tt
+			every_owned_location = {
+				limit = { area = area:hedjaz_area }
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:bedouin
+							culture = culture:bedouin_culture
+							culture = culture:nabataean_culture
+						}
+					}
+					split_pop = { fraction = 0.30 culture = culture:hijazi_culture }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:najd_area
+						area = area:hail_area
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:bedouin
+							culture = culture:bedouin_culture
+							culture = culture:nabataean_culture
+						}
+					}
+					split_pop = { fraction = 0.30 culture = culture:najdi_culture }
+				}
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:north_yemen_area
+						area = area:south_yemen_area
+					}
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:bedouin
+							culture = culture:bedouin_culture
+							culture = culture:nabataean_culture
+						}
+					}
+					split_pop = { fraction = 0.30 culture = culture:yemeni_culture }
+				}
+			}
+			every_owned_location = {
+				limit = { area = area:oman_area }
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:bedouin
+							culture = culture:bedouin_culture
+							culture = culture:nabataean_culture
+						}
+					}
+					split_pop = { fraction = 0.30 culture = culture:omani_culture }
+				}
+			}
+		}
+		add_stability = 10
+	}
+}
+
+# .57 - Oil and the modern Gulf (records: arabia_oil_and_modern_states,
+# arabia_modern_labor_migration)
+et_culture.57 = {
+	type = country_event
+	title = et_culture.57.title
+	desc = et_culture.57.desc
+	outcome = neutral
+	historical_info = et_culture.57.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		current_year >= 1900
+		current_year <= 2026
+		OR = {
+			owns = location:mecca
+			owns = location:medina
+			owns = location:sana_yemen
+			owns = location:masqat
+		}
+		NOT = { has_variable = et_arabia_8_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_arabia_8_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.57.a
+		historical_option = yes
+		set_variable = { name = et_arabia_modern value = 1 }
+		custom_tooltip = {
+			text = et_culture.57.a.tt
+		}
+		add_prestige = prestige_mild_bonus
+		add_stability = 5
+	}
+
+	option = {
+		name = et_culture.57.b
+		set_variable = { name = et_arabia_modern value = 1 }
+		set_variable = { name = et_arabia_8_resist value = 1 }
+		custom_tooltip = {
+			text = et_culture.57.b.tt
+		}
+		add_stability = 10
+		add_prestige = prestige_mild_penalty
+	}
+}

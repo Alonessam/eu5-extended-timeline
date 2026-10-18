@@ -13,6 +13,7 @@
 yearly_country_pulse = {
 	on_actions = {
 		et_egypt_yearly_pulse
+		et_arabia_yearly_pulse
 	}
 }
 
@@ -32,5 +33,28 @@ et_egypt_yearly_pulse = {
 		et_culture.3
 		et_culture.4
 		et_culture.5
+	}
+}
+
+# Cheap outer guard: does the country hold an Arabian anchor location?
+# The events are date-guarded and owner-agnostic; no DHE/tag binding.
+et_arabia_yearly_pulse = {
+	trigger = {
+		OR = {
+			owns = location:mecca
+			owns = location:medina
+			owns = location:sana_yemen
+			owns = location:masqat
+		}
+	}
+	events = {
+		et_culture.50
+		et_culture.51
+		et_culture.52
+		et_culture.53
+		et_culture.54
+		et_culture.55
+		et_culture.56
+		et_culture.57
 	}
 }
