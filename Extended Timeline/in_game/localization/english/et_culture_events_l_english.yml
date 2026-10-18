@@ -101,7 +101,7 @@
  et_culture.109.a: "The Roman order in Gaul has ended."
  et_culture.109.b: "Soissons must not fall."
  et_culture.109.historical_info: "Syagrius ruled the last Roman rump state around Soissons (464-486) until Clovis defeated him at the Battle of Soissons in 486, ending Roman rule in Gaul and establishing Frankish supremacy."
- et_culture.109.tt: "The Gallo-Roman population of the northern cities adopts the Frankish culture."
+ et_culture.109.tt: "A Frankish elite settles among the Gallo-Roman population of the northern cities."
 
  et_culture.110.title: "The Baptism of Clovis"
  et_culture.110.desc: "King Clovis, leader of the Salian Franks, kneels at the font of Reims and is baptized by Bishop Remigius. Unlike the Arian Germanic kings, he embraces the Catholic faith of the Gallo-Roman masses. The Frankish and Gallo-Roman peoples fuse into one Christian nation."
@@ -136,14 +136,14 @@
  et_culture.114.a: "The south must bend to Paris."
  et_culture.114.b: "Let the Occitans keep their faith."
  et_culture.114.historical_info: "The Albigensian Crusade (1209-1229) was launched by Pope Innocent III against the Cathar heresy in southern France. The northern French nobility crushed the Occitan resistance, leading to the annexation of Languedoc to the French crown and the decline of Occitan culture."
- et_culture.114.tt: "The Occitan population of southern Gaul adopts the French culture."
+ et_culture.114.tt: "Northern settlement and royal authority begin to draw the Occitan south toward French culture."
 
  et_culture.115.title: "The Hundred Years' War"
  et_culture.115.desc: "For over a century the kings of England and France have contested the throne. Yet out of this crucible of war a new thing emerges: a French nation. The peasant girl of Domrémy rallies the armies, and from the Loire to the Rhine, men and women who once called themselves Norman, Breton, or Burgundian now call themselves French. The dialect of Paris becomes the language of the realm."
  et_culture.115.a: "One king, one law, one language."
  et_culture.115.b: "The old provincial identities must endure."
  et_culture.115.historical_info: "The Hundred Years' War (1337-1453) between England and France forged a unified French national identity. Joan of Arc's campaigns (1429) turned the tide, and by the war's end, the French language and identity had supplanted regional particularisms."
- et_culture.115.tt: "The Norman and Arpitan populations adopt the French culture and identity."
+ et_culture.115.tt: "The Norman, Arpitan and Frankish populations adopt the French culture and identity."
 
  et_culture.116.title: "The Edict of Villers-Cotterêts"
  et_culture.116.desc: "King Francis I decrees that all legal documents, court records, and royal charters shall be written in French, not Latin. The chancery of the realm turns from the language of the Roman Empire to the language of the French people. Henceforth, justice, administration, and law shall speak the tongue of Paris."
@@ -164,7 +164,7 @@
  et_culture.118.a: "One nation, one language: French."
  et_culture.118.b: "The provinces must keep their tongues."
  et_culture.118.historical_info: "The French Revolution (1789-1799) pursued linguistic unification. Abbé Henri Grégoire's 1794 report 'On the necessity and means of annihilating the patois and universalizing the French language' called for the suppression of regional languages. Universal education spread standard French at the expense of local identities."
- et_culture.118.tt: "The Occitan, Arpitan, and Norman populations adopt the French culture."
+ et_culture.118.tt: "The Republican school presses much of the Occitan, Arpitan, Norman and Frankish population toward French culture."
 
  et_culture.119.title: "The School of the Republic"
  et_culture.119.desc: "Every village of France shall have its school. By the laws of Jules Ferry, primary education is made free in 1881, then mandatory and laic in 1882: the Republican school takes the children of the countryside from the parish and the patois and gives them the language, the history and the nation. In Brittany the schoolhouse multiplies; in the classroom, French alone is heard. The last tongues of Old Gaul are to be melted into a single people."

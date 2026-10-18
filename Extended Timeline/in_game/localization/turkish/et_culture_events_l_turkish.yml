@@ -101,7 +101,7 @@
  et_culture.109.a: "Galya'daki Roma nizamı sona erdi."
  et_culture.109.b: "Soissons düşmemeli."
  et_culture.109.historical_info: "Syagrius, Aegidius'un oğlu, Clovis'in 486'da Soissons Savaşı'nda yenmesine kadar Soissons çevresindeki son Roma devleti (464–486) yönetti. Bu, Galya'da Roma yönetiminin sona erdiği ve Frenk hâkimiyetinin başladığı anlamına gelir."
- et_culture.109.tt: "Kuzey şehirlerindeki Gallo-Romen nüfus, Frenk kültürüne geçer."
+ et_culture.109.tt: "Kuzey şehirlerindeki Gallo-Romen nüfus arasına bir Frenk seçkin tabakası yerleşir."
 
  et_culture.110.title: "Clovis'in Vaftizi"
  et_culture.110.desc: "Frenk kralı Clovis, Reims piskoposu Remigius'un elinden vaftiz oluyor. Aryanist Cermen krallarından farklı olarak, Gallo-Roman çoğunluğunun Katolik inancına kabul ediliyor. Frenk ve Gallo-Roman halkları tek bir Hristiyan millette kaynaşıyor."
@@ -136,14 +136,14 @@
  et_culture.114.a: "Güney Paris'e boyun eğmeli."
  et_culture.114.b: "Oksitanlar inançlarını korusun."
  et_culture.114.historical_info: "Albigens Haçlı Seferi (1209–1229), Papa III. Innocent'in güney Fransa'daki Kathar sapkınlığına karşı başlattığı bir seferdi. Kuzey Fransa soyluları Oksitan direnişini kırdı, Languedoc'un Fransa tacına bağlanmasına ve Oksitan kültürünün gerilemesine yol açtı."
- et_culture.114.tt: "Güney Galya'nın Oksitan nüfusu Fransız kültürüne geçer."
+ et_culture.114.tt: "Kuzeyli yerleşim ve kraliyet otoritesi, Oksitan güneyi yavaş yavaş Fransız kültürüne çeker."
 
  et_culture.115.title: "Yüzyıl Savaşları"
  et_culture.115.desc: "Yüzyılı aşkın bir süredir İngiltere ve Fransa kralları taht için savaşıyor. Ancak bu savaşın ocağında yeni bir şey doğuyor: Fransız milleti. Domrémy'li köylü kız orduları harekete geçiriyor ve Loire'den Ren'e kadar kendilerini Norman, Breton ya da Burgonyalı sayan erkekler ve kadınlar artık Fransız diyorlar. Paris lehçesi krallığın diline dönüşüyor."
  et_culture.115.a: "Tek kral, tek yasa, tek dil."
  et_culture.115.b: "Eski eyalet kimlikleri sürdürülmeli."
  et_culture.115.historical_info: "Yüzyıl Savaşları (1337–1453), İngiltere ile Fransa arasında birleşik bir Fransız milli kimliği yarattı. Jeanne d'Arc'ın seferleri (1429) dengeleri değiştirdi ve savaşın sonunda Fransız dil ve kimlik, bölgesel hususiyetlerin yerini aldı."
- et_culture.115.tt: "Norman ve Arpitan nüfusu Fransız kültürüne ve kimliğine geçer."
+ et_culture.115.tt: "Norman, Arpitan ve Frenk nüfusu Fransız kültürüne ve kimliğine geçer."
 
  et_culture.116.title: "Villers-Cotterêts Fermanı"
  et_culture.116.desc: "Kral François I, tüm yasal belgelerin, mahkeme kayıtlarının ve kraliyet fermanlarının Latince değil Fransızca yazılmasını emreder. Krallığın kançılaryası Roma İmparatorluğu'nun dilinden Fransız halkının diline geçer. Bundan böyle adalet, yönetim ve yasa Paris'in konuştuğu dili konuşacak."
@@ -164,7 +164,7 @@
  et_culture.118.a: "Tek millet, tek dil: Fransızca."
  et_culture.118.b: "Eyaletler dillerini korusun."
  et_culture.118.historical_info: "Fransız Devrimi (1789–1799) dilsel birliğin peşine düştü. Abbé Henri Grégoire'nin 1794 tarihli 'Patoislerin yok edilmesinin gerekliliği ve yolları ve Fransız dilinin evrenselleştirilmesi' adlı raporu, bölgesel dillerin bastırılması çağrısında bulundu. Evrensel eğitim, yerel kimliklerin aleyhine standart Fransızca'yı yaygınlaştırdı."
- et_culture.118.tt: "Oksitan, Arpitan ve Norman nüfusu Fransız kültürüne geçer."
+ et_culture.118.tt: "Cumhuriyet okulu, Oksitan, Arpitan, Norman ve Frenk nüfusunun büyük bölümünü Fransız kültürüne yöneltir."
 
  et_culture.119.title: "Cumhuriyetin Okulu"
  et_culture.119.desc: "Fransa'nın her köyünde bir okul olacak. Jules Ferry yasalarıyla ilköğretim önce 1881'de parasız, ardından 1882'de zorunlu ve laik kılınır: Cumhuriyet okulu, kırsalın çocuklarını kilisenin ve patois'in elinden alıp onlara dili, tarihi ve milleti verir. Bretonya'da okul binaları çoğalır; sınıfta yalnızca Fransızca duyulur. Eski Galya'nın son dilleri tek bir halkta eriyecektir."

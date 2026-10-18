@@ -70,6 +70,18 @@ tam nüfus kaymaları; beş kaynaksız ve dokuz eksik kayıt; TR/EN metinleri) y
 `gaul_history_audit_followups` göreviyle `gaul_record_backfill` ve
 `gaul_dhe_tag_binding_review` yanında izleniyor (backlog UPDATE 10). Test B hâlâ sırada.
 
+**Galya zincir mantığı (§2, 18 Ekim 2026):** `.109`, `.114` ve `.118` artık
+`change_pop_culture` yerine `split_pop` kullanıyor (`0.25`/`0.30`/`0.50`), böylece
+Frenk, Oksitan, Arpitan ve Norman nüfusları tek seferde değil kademeli olarak kayıyor
+(Frenkler Romance çoğunluk içinde eriyen küçük bir seçkin tabakaydı; Albigens Haçlı
+Seferi Languedoc'u ilhak etti ama halkını Fransızlaştırmadı; Devrim'in okulu ve
+yönetimi eyaletleri zorladı ama işi bitirmedi). `frankish`, `.115` ve `.118` dönüşüm
+kümelerine eklendi; böylece Frenk kültürü artık `french`'e asimile oluyor. `.109`'un
+Frenk yaptığı ama sonraki hiçbir olayın dokunmadığı `soissons`, `.111` ve `.115` konum
+listelerine eklendi. `.109`/`.114`/`.115`/`.118` araç ipuçları (EN/TR) yeni kademeli
+etkiye göre yazıldı. Açık kalan nokta: `.114` hâlâ İngiliz Gaskonyası olan `bordeaux`'yu
+içeriyor (`gaul_history_audit_followups`).
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,

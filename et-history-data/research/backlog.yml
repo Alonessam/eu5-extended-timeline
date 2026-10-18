@@ -349,6 +349,22 @@ tasks:
       .109/.114/.118; the five unsourced and nine missing records; the Turkish and
       English copy defects) are filed as gaul_history_audit_followups alongside
       gaul_record_backfill and gaul_dhe_tag_binding_review. Test B still pending.
+      UPDATE 11 (2026-10-18, Gaul chain logic, audit section 2): the culture shifts
+      are now gradual. .109 (gallo_roman -> frankish), .114 (occitan -> french) and
+      .118 (occitan/arpitan/norman -> french) use split_pop instead of
+      change_pop_culture, so those populations shift in stages rather than flipping
+      wholesale. Fractions: .109 0.25 (the Franks were a small elite that
+      assimilated into a Romance majority), .114 0.30 (the Albigensian Crusade
+      annexed Languedoc but did not turn its population French), .118 0.50 (the
+      Revolution's school and administration pressed the provinces hard but did not
+      finish the work). frankish was added to the .115 and .118 conversion sets, so
+      the Frankish culture now assimilates into french instead of persisting
+      forever. soissons was added to the .111 and .115 location lists: .109 had made
+      it frankish (and its gallo_roman was never converted) but no later event
+      touched it, so it was orphaned. The en/tr .tt strings for .109/.114/.115/.118
+      were rewritten to match the gradual effect. Still open from section 2: .114
+      lists bordeaux, which was English Gascony and outside the Albigensian
+      Crusade's reach.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -495,7 +511,7 @@ tasks:
   gaul_history_audit_followups:
     period_id: contemporary
     priority: 2
-    state: pending
+    state: in_progress
     targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/localization/english/et_culture_events_l_english.yml", "Extended Timeline/in_game/localization/turkish/et_culture_events_l_turkish.yml"]
     source_refs: [weber_peasants_into_frenchmen, wiki_languages_of_france]
     question: How should the non-critical Gaul audit findings be resolved - the frankish culture that never becomes french, the full-population culture flips in .109/.114/.118, and the Turkish and English copy defects?
@@ -519,4 +535,7 @@ tasks:
       unaccented while Chalons, oil, Domremy, Gregoire and Villers-Cotterets
       carry accents, and the .120 "1906-1908 encyclicals" should be 1906-1907
       (the source caveat at sources.yml:496 carries the same off-by-one).
+      UPDATE 11 (2026-10-18) resolved item (a): .109/.114/.118 use split_pop
+      (0.25/0.30/0.50), frankish was added to the .115/.118 conversion sets, and
+      the orphaned soissons was added to .111 and .115. Items (b) and (c) remain.
     acceptance: Each item is decided and applied with the chain's historical options in mind; the frankish path and each partial flip are documented; Turkish and English strings are corrected without breaking key parity.
