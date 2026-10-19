@@ -32,7 +32,7 @@ helleno_egyptian = {
 	
 	color = rgb{ 180 80 120 }
 	
-	tags = { greek_gfx middle_eastern_gfx }
+	tags = { greek_gfx egyptian_gfx }
 
 	opinions = {
 	}

@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: "2026-10-18"
+updated_on: "2026-10-19"
 tasks:
   roman_succession_dates:
     period_id: ancient
@@ -439,6 +439,23 @@ tasks:
       (norman, arpitan, frankish) and the geography covered (Seine to Loire),
       replacing the Breton/Burgundian and Loire-to-Rhine overstatement. en/tr
       key parity holds; no chalcedonism token remains in the chain.
+      UPDATE 16 (2026-10-19, offline token audit close-out): the remaining script
+      audit ran without a game launch over all 108 mod .txt files under in_game
+      and main_menu. It checked prefixed refs (location/culture/religion/
+      pop_type/area/language), country tags, script-value constants, outcome
+      enums, illustration tag values, define_pop culture/religion/type keys and
+      the event/on_action field names against the vanilla corpus. No unresolved
+      token remains. Two defects were fixed: (1) 13 Gaul events carried
+      outcome = good, but vanilla only uses neutral/negative/positive
+      (7353/126/51 uses), so all 13 became outcome = positive; (2) the UPDATE 14
+      illustration change from key 10 to 0/1 was reverted because vanilla writes
+      the repeated key 10 in 10246 illustration_tags entries and never 0/1 - all
+      28 active events and the commented region-chain template again read
+      10 = regular / 10 = interior, the pre-8c8279a format. The last undefined
+      gfx tags were replaced with vanilla-used tokens (see
+      invalid_culture_gfx_tags); iberian_gfx is retained because vanilla culture
+      files use it as an asset-lookup fallback. Post-fix scan: 0 unresolved
+      refs, tags, constants, fields, enum values, define_pop keys or gfx tags.
 
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
@@ -458,8 +475,8 @@ tasks:
   invalid_culture_gfx_tags:
     period_id: ancient
     priority: 3
-    state: pending
-    targets: [Extended Timeline/in_game/common/cultures/et_egypt.txt, Extended Timeline/in_game/common/cultures/et_missing.txt, Extended Timeline/in_game/common/cultures/et_french.txt]
+    state: completed
+    targets: [Extended Timeline/in_game/common/cultures/et_egypt.txt, Extended Timeline/in_game/common/cultures/et_missing.txt, Extended Timeline/in_game/common/cultures/et_iberian.txt]
     source_refs: []
     question: Which mod culture files use gfx tags that are not defined in the vanilla graphical culture types list?
     evidence: >-
@@ -474,6 +491,19 @@ tasks:
       southern_european_gfx (et_french.txt, occitan -> occitan_gfx) and flagged
       iberian_gfx (et_french.txt:42, aquitanian) as a further undefined tag.
     acceptance: Replace only with tags verified in the vanilla list; keep regional intent reviewed by maintainers; graphics fallback is the expected current effect.
+    resolution: >-
+      Completed 2026-10-19 (UPDATE 16). et_egypt.txt helleno_egyptian:
+      middle_eastern_gfx -> egyptian_gfx. et_missing.txt: tepic and
+      kanek_culture mesoamerican_gfx -> aztec_gfx american_gfx; bedouin
+      middle_eastern_gfx -> middle_east_gfx; berber north_african_gfx
+      middle_eastern_gfx -> amazigh_gfx middle_east_gfx; persian iranian_gfx
+      middle_eastern_gfx -> persian_gfx middle_east_gfx; alan steppe_gfx ->
+      caucasian_gfx eastern_european_gfx. iberian_gfx stays:
+      vanilla/common/cultures/iberian.txt (lines 27-129) and israelite.txt use
+      it as a fallback tag, and 00_graphical_culture_types.txt states fallbacks
+      need not match defined graphical cultures. The aquitanian block flagged at
+      et_french.txt:42 now lives in et_iberian.txt:284. A post-fix scan of all
+      108 mod scripts finds no undefined-and-unused gfx tag.
   vanilla_key_shadow_review:
     period_id: ancient
     priority: 3
@@ -498,7 +528,7 @@ tasks:
   script_token_audit:
     period_id: ancient
     priority: 3
-    state: pending
+    state: completed
     targets: [Extended Timeline/in_game/events, Extended Timeline/in_game/common]
     source_refs: []
     question: Which mod scripts still use effect, trigger, constant or scope tokens that exist nowhere in vanilla data, so the engine silently ignores them at runtime?
@@ -514,6 +544,21 @@ tasks:
       field names and scope links, using the vanilla script corpus as ground
       truth.
     acceptance: Each scanned script either uses only tokens verified against vanilla data or carries a documented mod-defined token; findings are fixed or filed as tasks with the offending token and source line.
+    resolution: >-
+      Completed 2026-10-19 offline (UPDATE 16). All 108 mod .txt files under
+      in_game and main_menu were scanned against the vanilla script and data
+      corpus: prefixed refs, country tags, script-value constants, outcome
+      enums, illustration tag values, define_pop culture/religion/type keys and
+      the event/on_action field names. The scan found no unresolved token; it
+      did catch two value-level defects fixed in the same pass - 13
+      outcome = good -> positive and the UPDATE 14 illustration key 0/1 ->
+      10/10 (vanilla uses only neutral/negative/positive and repeated key 10).
+      Mod-defined tokens are documented: the FRAN tag (in_game/setup/countries/
+      et_countries.txt:3777 and main_menu/setup/start/10_countries.txt) and the
+      et_egypt_yearly_pulse on_action (in_game/common/on_action/
+      et_history_pulses.txt); the prestige_* constants resolve in vanilla
+      main_menu/common/script_values/default_values.txt. The gfx findings are
+      closed under invalid_culture_gfx_tags.
   gaul_postwar_immigration_layer:
     period_id: contemporary
     priority: 3

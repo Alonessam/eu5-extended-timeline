@@ -60,8 +60,8 @@ et_culture.1 = { # Christianization I (record: egypt_christianization_rise)
 	historical_info = et_culture.1.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	trigger = {
@@ -165,8 +165,8 @@ et_culture.2 = { # Coptic identity (records: egypt_coptic_emergence_and_continui
 	historical_info = et_culture.2.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	trigger = {
@@ -297,8 +297,8 @@ et_culture.3 = { # Islamization I (record: egypt_islamization_waves)
 	historical_info = et_culture.3.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	trigger = {
@@ -424,8 +424,8 @@ et_culture.4 = { # Islamization II (record: egypt_islamization_waves, Fatimid-Ma
 	historical_info = et_culture.4.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	trigger = {
@@ -551,8 +551,8 @@ et_culture.5 = { # Arabization (record: egypt_coptic_spoken_decline)
 	historical_info = et_culture.5.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	trigger = {
@@ -670,12 +670,12 @@ et_culture.101 = {
 	type = country_event
 	title = et_culture.101.title
 	desc = et_culture.101.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.101.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -738,12 +738,12 @@ et_culture.102 = {
 	type = country_event
 	title = et_culture.102.title
 	desc = et_culture.102.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.102.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -791,12 +791,12 @@ et_culture.103 = {
 	type = country_event
 	title = et_culture.103.title
 	desc = et_culture.103.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.103.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -858,12 +858,12 @@ et_culture.104 = {
 	type = country_event
 	title = et_culture.104.title
 	desc = et_culture.104.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.104.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -916,8 +916,8 @@ et_culture.105 = {
 	historical_info = et_culture.105.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -980,12 +980,12 @@ et_culture.106 = {
 	type = country_event
 	title = et_culture.106.title
 	desc = et_culture.106.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.106.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1049,8 +1049,8 @@ et_culture.107 = {
 	historical_info = et_culture.107.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1114,8 +1114,8 @@ et_culture.108 = {
 	historical_info = et_culture.108.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1178,12 +1178,12 @@ et_culture.109 = {
 	type = country_event
 	title = et_culture.109.title
 	desc = et_culture.109.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.109.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1239,12 +1239,12 @@ et_culture.110 = {
 	type = country_event
 	title = et_culture.110.title
 	desc = et_culture.110.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.110.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1308,8 +1308,8 @@ et_culture.111 = {
 	historical_info = et_culture.111.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1395,12 +1395,12 @@ et_culture.112 = {
 	type = country_event
 	title = et_culture.112.title
 	desc = et_culture.112.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.112.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1447,8 +1447,8 @@ et_culture.113 = {
 	historical_info = et_culture.113.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1500,8 +1500,8 @@ et_culture.114 = {
 	historical_info = et_culture.114.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1556,12 +1556,12 @@ et_culture.115 = {
 	type = country_event
 	title = et_culture.115.title
 	desc = et_culture.115.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.115.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1625,12 +1625,12 @@ et_culture.116 = {
 	type = country_event
 	title = et_culture.116.title
 	desc = et_culture.116.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.116.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1682,8 +1682,8 @@ et_culture.117 = {
 	historical_info = et_culture.117.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1738,12 +1738,12 @@ et_culture.118 = {
 	type = country_event
 	title = et_culture.118.title
 	desc = et_culture.118.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.118.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1818,12 +1818,12 @@ et_culture.119 = {
 	type = country_event
 	title = et_culture.119.title
 	desc = et_culture.119.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.119.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1874,8 +1874,8 @@ et_culture.120 = {
 	historical_info = et_culture.120.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1909,12 +1909,12 @@ et_culture.121 = {
 	type = country_event
 	title = et_culture.121.title
 	desc = et_culture.121.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.121.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -1968,8 +1968,8 @@ et_culture.122 = {
 	historical_info = et_culture.122.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -2112,8 +2112,8 @@ et_culture.123 = {
 	historical_info = et_culture.123.historical_info
 
 	illustration_tags = {
-		0 = regular
-		1 = interior
+		10 = regular
+		10 = interior
 	}
 
 	fire_only_once = yes
@@ -2161,8 +2161,8 @@ et_culture.123 = {
 # 	}
 #
 # 	illustration_tags = {
-# 		0 = regular
-# 		1 = interior
+# 		10 = regular
+# 		10 = interior
 # 	}
 #
 # 	option = {

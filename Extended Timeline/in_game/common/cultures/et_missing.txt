@@ -72,7 +72,7 @@ garjati = {
 tepic = {
 	language = missing_language
 	color = rgb{ 130 90 70 }
-	tags = { mesoamerican_gfx }
+	tags = { aztec_gfx american_gfx }
 	opinions = {}
 	culture_groups = {}
 }
@@ -88,7 +88,7 @@ arvanite = {
 kanek_culture = {
 	language = missing_language
 	color = rgb{ 170 110 60 }
-	tags = { mesoamerican_gfx }
+	tags = { aztec_gfx american_gfx }
 	opinions = {}
 	culture_groups = {}
 }
@@ -121,7 +121,7 @@ germanic = {
 bedouin = {
 	language = arabic_language
 	color = rgb{ 210 180 120 }
-	tags = { middle_eastern_gfx }
+	tags = { middle_east_gfx }
 	opinions = {}
 	culture_groups = { arabic_group }
 }
@@ -129,7 +129,7 @@ bedouin = {
 berber = {
 	language = berber_language
 	color = rgb{ 190 150 90 }
-	tags = { north_african_gfx middle_eastern_gfx }
+	tags = { amazigh_gfx middle_east_gfx }
 	opinions = {}
 	culture_groups = { berber_group }
 }
@@ -145,7 +145,7 @@ ancient_greek = {
 persian = {
 	language = farsi_language
 	color = rgb{ 80 170 140 }
-	tags = { iranian_gfx middle_eastern_gfx }
+	tags = { persian_gfx middle_east_gfx }
 	opinions = {}
 	culture_groups = { iranian_group }
 }
@@ -153,7 +153,7 @@ persian = {
 alan = {
 	language = alanic_language
 	color = rgb{ 140 170 80 }
-	tags = { steppe_gfx eastern_european_gfx }
+	tags = { caucasian_gfx eastern_european_gfx }
 	opinions = {}
 	culture_groups = { iranian_group }
 }
