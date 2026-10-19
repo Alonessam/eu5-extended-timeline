@@ -558,7 +558,9 @@ tasks:
       et_egypt_yearly_pulse on_action (in_game/common/on_action/
       et_history_pulses.txt); the prestige_* constants resolve in vanilla
       main_menu/common/script_values/default_values.txt. The gfx findings are
-      closed under invalid_culture_gfx_tags.
+      closed under invalid_culture_gfx_tags. The scan is reproducible with
+      et-history-data/scripts/script-token-audit.py (stdlib only; --vanilla or
+      EU5_VANILLA selects the game directory; exit 1 when findings exist).
   gaul_postwar_immigration_layer:
     period_id: contemporary
     priority: 3
