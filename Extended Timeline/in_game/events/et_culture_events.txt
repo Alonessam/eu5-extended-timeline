@@ -1143,7 +1143,7 @@ et_culture.108 = {
 					}
 				}
 				add_pop = {
-					culture = culture:burgundian
+					culture = culture:burgundii
 					religion = religion:arianism
 					type = pop_type:peasants
 					size = 2

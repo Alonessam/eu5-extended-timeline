@@ -9,7 +9,7 @@ chalcedonism = {
 		
 	definition_modifier = {
 		global_max_literacy = 5
-		global_build_buildings_cost = -0.05
+		global_build_buildings_efficiency = 0.05
 		
 		monthly_religious_influence = 0.1
 
@@ -32,7 +32,7 @@ arianism = {
 		
 	definition_modifier = {
 		global_max_literacy = 5
-		global_build_buildings_cost = -0.05
+		global_build_buildings_efficiency = 0.05
 		
 		monthly_religious_influence = 0.1
 
@@ -53,7 +53,7 @@ presbyterian = {
 		
 	definition_modifier = {
 		global_max_literacy = 5
-		global_build_buildings_cost = -0.05
+		global_build_buildings_efficiency = 0.05
 		
 		monthly_religious_influence = 0.1
 
@@ -74,7 +74,7 @@ anabaptist = {
 		
 	definition_modifier = {
 		global_max_literacy = 5
-		global_build_buildings_cost = -0.05
+		global_build_buildings_efficiency = 0.05
 		
 		monthly_religious_influence = 0.1
 

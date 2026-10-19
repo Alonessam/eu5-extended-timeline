@@ -381,7 +381,7 @@ ubian = {
 	}
 }
 
-burgundian = {
+burgundii = {
 	language = central_german_dialect
 	
 	color = rgb{ 100 50 150 }

@@ -456,6 +456,18 @@ tasks:
       invalid_culture_gfx_tags); iberian_gfx is retained because vanilla culture
       files use it as an asset-lookup fallback. Post-fix scan: 0 unresolved
       refs, tags, constants, fields, enum values, define_pop keys or gfx tags.
+      UPDATE 17 (2026-10-19, vanilla-key shadow review): the additive
+      (et_-prefixed) files were compared key-by-key with vanilla, same-named
+      overrides excluded. Nine deliberate redefinitions remain, each now a
+      vanilla body plus a documented delta (see the shadow audit note);
+      french_group was removed and burgundian renamed burgundii so vanilla's
+      French culture loads for the medieval setup countries. The same scan fixed
+      the undefined folk_caucasian_group, three invalid modifier keys
+      (army_cavalry_power, global_build_buildings_cost x4, trade_efficiency x3),
+      berber's undefined berber_group and a stray BOM in et_uralic.txt. The
+      permanent audit now also checks religion groups, culture groups and
+      definition_modifier keys; the full 108-file scan reports no unresolved
+      token.
 
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
@@ -471,6 +483,10 @@ tasks:
       non-East-Asia entries are triaged in
       research/historical-events/2026-10-17_culture_graph_audit.md; the 26-entry
       East Asia cluster mirrors vanilla groupless isolates and is out of scope.
+      UPDATE 17 fixed the berber culture's undefined berber_group (now
+      amazigh_group maghrebi_group, matching vanilla eastern_amazigh); the
+      pannonian/illyrian/tocharian/pyu/pear calls and the groupless fallback set
+      remain open.
     acceptance: Assign only groups with a documented successor relation using vanilla group ids; leave intentionally isolate cultures groupless.
   invalid_culture_gfx_tags:
     period_id: ancient
@@ -507,7 +523,7 @@ tasks:
   vanilla_key_shadow_review:
     period_id: ancient
     priority: 3
-    state: pending
+    state: completed
     targets: [Extended Timeline/in_game/common]
     source_refs: []
     question: Which additive (et_-prefixed) mod files redefine keys that already exist in vanilla, and does any redefinition drop vanilla content instead of carrying a deliberate, documented delta?
@@ -525,6 +541,30 @@ tasks:
       hellenism_religion, alan_paganism, aramaic_language and gothic_language
       redefinitions are believed intentional but are unreviewed under this rule.
     acceptance: Every remaining additive redefinition is kept only as a verbatim vanilla copy plus a documented delta, or removed so the vanilla definition loads; the audit note lists each kept redefinition and its delta.
+    resolution: >-
+      Completed 2026-10-19. The additive-only shadow scan (48 files; the seven
+      same-named vanilla overrides excluded) left nine key redefinitions, each
+      kept with a documented delta and listed in
+      research/historical-events/2026-10-19_vanilla_key_shadow_audit.md:
+      hellenism_religion (enable = 9999.1.1 dropped so Hellenism is available at
+      the 58 CE start), miaphysite (language = coptic_language) and
+      coptic_culture (culture_groups = arabic_group) carry their UPDATE 3
+      deltas; haixi/hurga cultures are verbatim 1.3 restorations hidden by the
+      mod's east_asia.txt override; yearly_country_pulse is an additive
+      on_actions block; aramaic_language, gothic_language and alan_paganism were
+      rebuilt as vanilla bodies plus their ET deltas (ancient Aramaic names;
+      custom Gothic color with fallback = german_language restored; Caucasian
+      folk group). The empty french_group duplicate was removed, and the mod's
+      ancient Germanic culture was renamed burgundian -> burgundii so vanilla's
+      French burgundian loads again for the BAR/LOR/NEV/AUX/TON setup (event
+      .108 updated; en/tr loc in both trees). Same-pass fixes:
+      folk_caucasian_group defined (referenced by georgian_religion,
+      armenian_religion and alan_paganism; en/tr names added),
+      army_cavalry_power -> army_light_cavalry_power,
+      global_build_buildings_cost -> global_build_buildings_efficiency (x4),
+      trade_efficiency -> selling_efficiency (x3), berber_group ->
+      amazigh_group maghrebi_group, and et_uralic.txt's stray second BOM
+      removed.
   script_token_audit:
     period_id: ancient
     priority: 3

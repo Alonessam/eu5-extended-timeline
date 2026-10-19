@@ -131,7 +131,7 @@ berber = {
 	color = rgb{ 190 150 90 }
 	tags = { amazigh_gfx middle_east_gfx }
 	opinions = {}
-	culture_groups = { berber_group }
+	culture_groups = { amazigh_group maghrebi_group }
 }
 
 ancient_greek = {

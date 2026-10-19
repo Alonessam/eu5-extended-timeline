@@ -3,21 +3,7 @@ gothic_language = {
 	color = rgb{ 20 100 154 }
 	
 	family = germanic_language_family
-
-	male_names = {
-		#TODO
-	}
-	female_names = {
-		#TODO
-	}
-	
-	dynasty_names = {
-		#TODO
-	}
-	
-	lowborn = {
-	}
-	
+	fallback = german_language
 }
 
 vandalic_language = {

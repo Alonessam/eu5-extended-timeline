@@ -14,6 +14,7 @@ Checks:
   * illustration_tags values
   * define_pop type/culture/religion keys
   * change_language scope and dialect key
+  * religion groups, culture groups and definition_modifier keys
   * field names in event and on_action logic files
 
 Field-name checking is corpus-based: a token is accepted when it appears
@@ -69,6 +70,10 @@ CHANGE_LANGUAGE = re.compile(r"change_language\s*=\s*([a-z_]+):([a-z0-9_]+)")
 CHANGE_LANGUAGE_BARE = re.compile(
     r"change_language\s*=\s*([a-z_][a-z0-9_]*)\s*$", re.M
 )
+CULTURE_GROUPS = re.compile(r"culture_groups\s*=\s*\{([^}]*)\}")
+RELIGION_GROUP = re.compile(r"^\s*group\s*=\s*([a-z_][a-z0-9_]*)\s*$", re.M)
+DEFINITION_MODIFIER = re.compile(r"definition_modifier\s*=\s*\{([^}]*)\}", re.S)
+GROUP_KEY = re.compile(r"^([a-z_][a-z0-9_]*)\s*=\s*\{", re.M)
 
 OUTCOME_VALUES = {"neutral", "negative", "positive"}
 SKIP_ILLUSTRATION = {"10", "20"}
@@ -170,6 +175,32 @@ def collect_areas(vanilla: Path, mod: Path) -> set[str]:
     return areas
 
 
+def collect_group_keys(*roots: Path) -> set[str]:
+    keys: set[str] = set()
+    for root in roots:
+        for _, text in iter_txt(root):
+            keys.update(m.group(1) for m in GROUP_KEY.finditer(strip_comments(text)))
+    return keys
+
+
+def collect_modifier_keys(vanilla: Path, van_data: Path, mod: Path) -> set[str]:
+    keys: set[str] = set()
+    for base in (
+        vanilla / "main_menu" / "common" / "modifier_type_definitions",
+        mod / "main_menu" / "common" / "modifier_type_definitions",
+        vanilla / "main_menu" / "common" / "modifier_icons",
+        mod / "main_menu" / "common" / "modifier_icons",
+    ):
+        for _, text in iter_txt(base):
+            keys.update(m.group(1) for m in GROUP_KEY.finditer(strip_comments(text)))
+    for root in (van_data / "common", vanilla / "main_menu"):
+        for _, text in iter_txt(root):
+            clean = strip_comments(text)
+            for block in DEFINITION_MODIFIER.finditer(clean):
+                keys.update(m.group(1) for m in FIELD_LOW.finditer(block.group(1)))
+    return keys
+
+
 def resolve_vanilla(argument: str | None) -> Path | None:
     candidates: list[Path] = []
     if argument:
@@ -256,6 +287,15 @@ def main() -> int:
     areas = collect_areas(vanilla, mod)
     gfx_tags = collect_gfx(vanilla, mod)
     illustration_values = collect_illustration_values(vanilla)
+    religion_groups = collect_group_keys(
+        van_data / "common" / "religion_groups",
+        mod_data / "common" / "religion_groups",
+    )
+    culture_groups = collect_group_keys(
+        van_data / "common" / "culture_groups",
+        mod_data / "common" / "culture_groups",
+    )
+    modifier_keys = collect_modifier_keys(vanilla, van_data, mod)
 
     van_low, van_up = collect_fields(van_data / "events")
     for root in (
@@ -295,6 +335,7 @@ def main() -> int:
 
     for path, raw in targets:
         text = strip_comments(raw)
+        parts = set(path.parts)
 
         for match in REF.finditer(text):
             kind, value = match.group(1), match.group(2)
@@ -384,7 +425,38 @@ def main() -> int:
                 f"change_language = {match.group(1)} (expected dialect:<language>)",
             )
 
-        parts = set(path.parts)
+        if "religions" in parts:
+            for match in RELIGION_GROUP.finditer(text):
+                if match.group(1) not in religion_groups:
+                    add(
+                        "unknown religion group",
+                        path,
+                        text,
+                        match.start(),
+                        match.group(1),
+                    )
+        if "cultures" in parts:
+            for match in CULTURE_GROUPS.finditer(text):
+                for token in re.findall(r"[a-z_][a-z0-9_]*", match.group(1)):
+                    if token not in culture_groups:
+                        add(
+                            "unknown culture group",
+                            path,
+                            text,
+                            match.start(),
+                            token,
+                        )
+        for match in DEFINITION_MODIFIER.finditer(text):
+            for inner in FIELD_LOW.finditer(match.group(1)):
+                if inner.group(1) not in modifier_keys:
+                    add(
+                        "unknown modifier",
+                        path,
+                        text,
+                        match.start(1) + inner.start(),
+                        inner.group(1),
+                    )
+
         if "events" in parts or "on_action" in parts:
             for match in FIELD_LOW.finditer(text):
                 word = match.group(1)
@@ -418,7 +490,10 @@ def main() -> int:
         f"religions={len(religions)} pop_types={len(pop_types)} "
         f"areas={len(areas)} languages={len(languages)} tags={len(tags)} "
         f"script_values={len(script_values)} gfx={len(gfx_tags)} "
-        f"illustrations={len(illustration_values)}"
+        f"illustrations={len(illustration_values)} "
+        f"religion_groups={len(religion_groups)} "
+        f"culture_groups={len(culture_groups)} "
+        f"modifiers={len(modifier_keys)}"
     )
 
     if not problems:
