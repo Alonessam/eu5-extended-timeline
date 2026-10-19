@@ -15,6 +15,7 @@ Checks:
   * define_pop type/culture/religion keys
   * change_language scope and dialect key
   * religion groups, culture groups and definition_modifier keys
+  * groupless mod cultures (allowlisted intentional cases are skipped)
   * field names in event and on_action logic files
 
 Field-name checking is corpus-based: a token is accepted when it appears
@@ -77,6 +78,44 @@ GROUP_KEY = re.compile(r"^([a-z_][a-z0-9_]*)\s*=\s*\{", re.M)
 
 OUTCOME_VALUES = {"neutral", "negative", "positive"}
 SKIP_ILLUSTRATION = {"10", "20"}
+
+# Cultures that stay groupless on purpose. Any other groupless culture block
+# in the mod's culture files fails the audit until it is linked to a group or
+# added here with a reason. Sources:
+# research/historical-events/2026-10-17_culture_graph_audit.md and
+# research/historical-events/2026-10-19_culture_group_gaps.md.
+GROUPLESS_ALLOWED = {
+    # East Asia cluster: isolates and small language families with no grouped
+    # relative anywhere in the data (vanilla keeps ainu_culture and
+    # ryukyu_culture groupless too).
+    "ainu_culture",
+    "ryukyu_culture",
+    "hmong_culture",
+    "yao_china_culture",
+    "evesel_culture",
+    "sakkyryr_culture",
+    "nimchan_culture",
+    "chukchi_culture",
+    "alyutor_culture",
+    "kerek_culture",
+    "chuvan_culture",
+    "omok_culture",
+    "anauls_culture",
+    "vadul_culture",
+    "olyuben_culture",
+    "yandin_culture",
+    "shoromba_culture",
+    "kolyms_culture",
+    "yandyr_culture",
+    "onoid_culture",
+    "khoromboy_culture",
+    "koryak_culture",
+    "itelmen_culture",
+    "emishi",
+    # arvanite: the Albanian line has no vanilla culture group and the key is
+    # an unused placeholder.
+    "arvanite",
+}
 
 
 def read_text(path: Path) -> str:
@@ -181,6 +220,24 @@ def collect_group_keys(*roots: Path) -> set[str]:
         for _, text in iter_txt(root):
             keys.update(m.group(1) for m in GROUP_KEY.finditer(strip_comments(text)))
     return keys
+
+
+def top_level_blocks(text: str):
+    """Yield (key, start, body) for brace-balanced top-level blocks."""
+    for match in GROUP_KEY.finditer(text):
+        opening = text.find("{", match.start())
+        depth = 0
+        end = opening
+        while end < len(text):
+            char = text[end]
+            if char == "{":
+                depth += 1
+            elif char == "}":
+                depth -= 1
+                if depth == 0:
+                    break
+            end += 1
+        yield match.group(1), match.start(), text[opening + 1 : end]
 
 
 def collect_modifier_keys(vanilla: Path, van_data: Path, mod: Path) -> set[str]:
@@ -469,6 +526,26 @@ def main() -> int:
 
     for path, raw in iter_txt(mod_data / "common" / "cultures"):
         text = strip_comments(raw)
+        for key, start, body in top_level_blocks(text):
+            if key in GROUPLESS_ALLOWED:
+                continue
+            groups = CULTURE_GROUPS.search(body)
+            if groups is None:
+                add(
+                    "groupless culture",
+                    path,
+                    text,
+                    start,
+                    f"{key} (no culture_groups field)",
+                )
+            elif not groups.group(1).strip():
+                add(
+                    "groupless culture",
+                    path,
+                    text,
+                    start,
+                    f"{key} (empty culture_groups)",
+                )
         for block in CULTURE_TAGS.finditer(text):
             for token in re.findall(r"[a-z0-9_]+", block.group(1)):
                 if token.endswith("_gfx") and token not in gfx_tags:

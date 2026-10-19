@@ -468,13 +468,30 @@ tasks:
       permanent audit now also checks religion groups, culture groups and
       definition_modifier keys; the full 108-file scan reports no unresolved
       token.
+      UPDATE 18 (2026-10-19, culture group gaps close-out): the
+      culture_group_gaps_remaining task is complete. Fourteen groupless
+      cultures were linked to vanilla successor groups (pannonian ->
+      carpathian_group, illyrian -> slavic_group south_slavic_group, tocharian
+      -> turkic_group, pyu -> tibeto_burman_group, pear -> austroasiatic_group,
+      hunnic -> turkic_group steppe_group, jukun -> volta_niger_group, apache
+      -> nadene_group, bantu -> bantu_group, garjati -> indian_group
+      indo_aryan_group, tepic -> yutonahua_group, kanek_culture -> maya_group,
+      jinhan -> japanese_group, yupighyt_culture -> yupik_group) and arvanite
+      stays groupless on purpose. The 2026-10-17 scan had silently skipped the
+      first block of every file (jukun and hunnic were never triaged; the "37
+      remaining" was actually 39); the East Asia cluster was re-checked with a
+      language-sibling scan, which found the jinhan/yupighyt exceptions. The
+      permanent audit gained a groupless-culture check with the 25 intentional
+      cases allowlisted. The shadow audit note's religion count was corrected
+      to 480. Full record:
+      research/historical-events/2026-10-19_culture_group_gaps.md.
 
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
     priority: 3
-    state: pending
-    targets: [Extended Timeline/in_game/common/cultures/et_balkans.txt, Extended Timeline/in_game/common/cultures/et_persian.txt, Extended Timeline/in_game/common/cultures/et_south_east_asia.txt, Extended Timeline/in_game/common/cultures/et_missing.txt]
+    state: completed
+    targets: [Extended Timeline/in_game/common/cultures/et_balkans.txt, Extended Timeline/in_game/common/cultures/et_persian.txt, Extended Timeline/in_game/common/cultures/et_south_east_asia.txt, Extended Timeline/in_game/common/cultures/et_missing.txt, Extended Timeline/in_game/common/cultures/et_subsaharan.txt, Extended Timeline/in_game/common/cultures/et_turkic.txt, Extended Timeline/in_game/common/cultures/east_asia.txt]
     source_refs: []
     question: Which successor culture groups should the remaining groupless mod cultures receive (pannonian, illyrian, tocharian, pyu, pear, and the et_missing fallback set)?
     evidence: >-
@@ -487,7 +504,28 @@ tasks:
       amazigh_group maghrebi_group, matching vanilla eastern_amazigh); the
       pannonian/illyrian/tocharian/pyu/pear calls and the groupless fallback set
       remain open.
+      UPDATE (2026-10-19): the original scan had skipped the first block of
+      every file, so jukun (et_subsaharan.txt) and hunnic (et_turkic.txt) were
+      never triaged; the true remainder was 39 records, not 37. A
+      language-sibling scan of the East Asia cluster then found two exceptions
+      to its isolate rationale: jinhan (modelled as Peninsular Japonic) and
+      yupighyt_culture (Siberian Yupik).
     acceptance: Assign only groups with a documented successor relation using vanilla group ids; leave intentionally isolate cultures groupless.
+    resolution: >-
+      Completed 2026-10-19. Fourteen assignments, each traced to a vanilla
+      successor group: pannonian -> carpathian_group, illyrian -> slavic_group
+      south_slavic_group, tocharian -> turkic_group, pyu ->
+      tibeto_burman_group, pear -> austroasiatic_group, hunnic -> turkic_group
+      steppe_group, jukun -> volta_niger_group, apache -> nadene_group, bantu
+      -> bantu_group, garjati -> indian_group indo_aryan_group, tepic ->
+      yutonahua_group, kanek_culture -> maya_group, jinhan -> japanese_group,
+      yupighyt_culture -> yupik_group (all decisions confirmed with the
+      maintainer). arvanite stays groupless on purpose: the Albanian line has
+      no vanilla culture group and the key is unused. The remaining 24 East
+      Asia cultures have no grouped relative in their language family and stay
+      groupless. The permanent audit now fails on any groupless culture
+      outside the 25-entry allowlist. Full record:
+      research/historical-events/2026-10-19_culture_group_gaps.md.
   invalid_culture_gfx_tags:
     period_id: ancient
     priority: 3

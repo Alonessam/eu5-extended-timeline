@@ -78,3 +78,13 @@ Tarama mod dosyalarıyla sınırlıdır ve sezgisel bir blok ayrıştırıcı ku
 vanilla ardıl tanımları elle örneklendi. İki örnekle (ainu, ryukyu) Doğu Asya
 kümesinin grupsuzluğunun vanilla deseni olduğu doğrulandı; kümenin tamamı tek
 tek doğrulanmadı.
+
+## Güncelleme (19 Ekim 2026)
+
+Tarama her dosyanın ilk bloğunu atlamış: `et_subsaharan.txt`'in ilk bloğu
+`jukun` ve `et_turkic.txt`'in ilk bloğu `hunnic` bu notta hiç
+işaretlenmemişti (kalan sayısı 37 değil 39'du). Kapanış turunda 14 kültür
+vanilla ardıl gruplarına bağlandı; Doğu Asya kümesi dil-kardeş taramasıyla
+yeniden denetlendi ve iki istisna (`jinhan`, `yupighyt_culture`) bulundu.
+Kalan 25 kayıt (24 Doğu Asya izolesi + `arvanite`) kasıtlı grupsuzdur.
+Ayrıntılar: `2026-10-19_culture_group_gaps.md`.

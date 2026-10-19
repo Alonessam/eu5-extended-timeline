@@ -8,6 +8,7 @@
 	opinions = {
 	}
 	culture_groups = {
+		volta_niger_group
 	}
 }
 bozo = {

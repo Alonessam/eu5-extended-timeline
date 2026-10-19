@@ -50,6 +50,7 @@ pannonian = {
 	opinions = {
 	}
 	culture_groups = {
+		carpathian_group
 	}
 }
 illyrian = {
@@ -62,5 +63,7 @@ illyrian = {
 	opinions = {
 	}
 	culture_groups = {
+		slavic_group
+		south_slavic_group
 	}
 }

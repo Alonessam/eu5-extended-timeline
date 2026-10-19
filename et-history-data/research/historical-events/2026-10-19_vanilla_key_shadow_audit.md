@@ -76,7 +76,7 @@ tanımına çözülür — 58 CE kurulumunda bu etiketler yok.
   `definition_modifier` anahtarları artık taranıyor. Geçerli modifier kümesi
   `main_menu/common/modifier_type_definitions` (2436), ikon tanımları ve
   vanilla `definition_modifier` kullanımlarının birleşimidir (2453).
-- Tam tarama: 108 dosya, 0 çözülemeyen token (2267 kültür, 482 din, 214
+- Tam tarama: 108 dosya, 0 çözülemeyen token (2267 kültür, 480 din, 214
   kültür grubu, 32 din grubu).
 - Tüm düzenlenen dosyalar BOM + CRLF düzenini koruyor; `et_uralic.txt`
   BOM sayısı 1, `et_culture_groups.txt` ve `et_religion_groups.txt` yeni
