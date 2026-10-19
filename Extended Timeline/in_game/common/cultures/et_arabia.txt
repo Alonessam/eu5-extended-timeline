@@ -26,3 +26,18 @@ palestinian = {
 		arabic_group
 	}
 }
+
+jewish = {
+	language = hebrew_language
+	
+	color = religion_jewish
+	
+	tags = { jewish_gfx middle_east_gfx }
+	
+	opinions = {
+	}
+	culture_groups = {
+		jewish_group
+		arabic_group
+	}
+}

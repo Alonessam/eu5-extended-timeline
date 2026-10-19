@@ -485,6 +485,41 @@ tasks:
       cases allowlisted. The shadow audit note's religion count was corrected
       to 480. Full record:
       research/historical-events/2026-10-19_culture_group_gaps.md.
+      UPDATE 19 (2026-10-19, pre-Test-B data repairs): four defect classes
+      closed before the Test B launch. Script: et_culture_events.txt carried
+      103 "location = location:X" links, every one inside an
+      every_owned_location guard; each became the vanilla this = location:X
+      form (the 18 Oct debug.log logged exactly 103 "Invalid scope types"
+      lines for this file). The 13 outcome = good sites had already been
+      fixed to positive by UPDATE 16 - re-verified, no action. Cultures:
+      et_german.txt:286 "swiss_culture {" was missing its = and drove the
+      286-412 parse cascade plus 40 "Duplicated key" messages in the log;
+      fixed in place. A jewish culture was added to et_arabia.txt (language
+      = hebrew_language, color = religion_jewish, tags = jewish_gfx
+      middle_east_gfx, culture_groups = jewish_group arabic_group, the
+      documented mizrahi pattern; the en/tr name loc already existed). It
+      resolves the four location_templates "culture = jewish" refs
+      (Jerusalem, Gaza, Hebron, Jaffa; religion = judaism). Languages: the
+      five language keys referenced only by the et_missing cultures but
+      defined nowhere (farsi, ancient_greek, berber, old_church_slavonic,
+      proto_germanic) are now defined with the gothic pattern (color +
+      family where vanilla has one + fallback to the vanilla language, so
+      name pools come from vanilla): proto_germanic ->
+      00_et_germany.txt (germanic family, german fallback);
+      old_church_slavonic and ancient_greek -> 00_et_balkan.txt (slavic
+      family with church_slavonic fallback; greek has no vanilla family, so
+      fallback = greek_language only); berber -> 00_et_african.txt (fallback
+      tamazight_language); farsi -> 00_et_central_asia.txt (iranic family,
+      fallback persian_language). Turkish names went to all four TR loc
+      files (in_game + main_menu, normal + replace): Antik Grekçe,
+      Berberice, Farsça, Eski Kilise Slavcası, Proto-Germence. Environment:
+      the redundant game/mod/Extended Timeline junction was removed after
+      the mount analysis (the Documents junction is the actual load path and
+      the content was read once, so this only clears the second mount entry
+      from future logs). The 108-file token audit re-ran clean. Test B
+      (single launch; R1 Egypt, R2-R3 Gaul) still gates the class-1
+      language-reference mystery, gaul_record_backfill,
+      gaul_dhe_tag_binding_review and the et_culture.9000 retirement.
 
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:

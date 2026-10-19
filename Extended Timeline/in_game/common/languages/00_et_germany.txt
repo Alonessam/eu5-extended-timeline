@@ -6,6 +6,13 @@ gothic_language = {
 	fallback = german_language
 }
 
+proto_germanic_language = {
+	color = rgb{ 150 120 55 }
+	
+	family = germanic_language_family
+	fallback = german_language
+}
+
 vandalic_language = {
 	color = rgb{ 49 110 46 }
 	

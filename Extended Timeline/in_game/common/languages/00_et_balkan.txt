@@ -54,3 +54,20 @@ illyrian_language = {
 	}
 	
 }
+
+old_church_slavonic_language = {
+
+	color = rgb{ 125 100 170 }
+
+	family = slavic_language_family
+	fallback = church_slavonic_language
+
+}
+
+ancient_greek_language = {
+
+	color = rgb{ 70 125 190 }
+
+	fallback = greek_language
+
+}

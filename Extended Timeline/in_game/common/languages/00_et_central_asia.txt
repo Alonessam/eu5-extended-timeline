@@ -167,3 +167,12 @@ hunnic_language = {
 	}
 
 }
+
+farsi_language = {
+
+	color = rgb{ 95 175 145 }
+
+	family = iranic_language_family
+	fallback = persian_language
+
+}

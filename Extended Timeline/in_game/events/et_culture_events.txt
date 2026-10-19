@@ -699,15 +699,15 @@ et_culture.101 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:lyon
-						location = location:paris
-						location = location:bordeaux
-						location = location:toulouse
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
-						location = location:reims
-						location = location:rouen
+						this = location:lyon
+						this = location:paris
+						this = location:bordeaux
+						this = location:toulouse
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
+						this = location:reims
+						this = location:rouen
 					}
 				}
 				every_pop = {
@@ -820,15 +820,15 @@ et_culture.103 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:lyon
-						location = location:paris
-						location = location:bordeaux
-						location = location:toulouse
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
-						location = location:reims
-						location = location:rouen
+						this = location:lyon
+						this = location:paris
+						this = location:bordeaux
+						this = location:toulouse
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
+						this = location:reims
+						this = location:rouen
 					}
 				}
 				every_pop = {
@@ -941,15 +941,15 @@ et_culture.105 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:lyon
-						location = location:paris
-						location = location:bordeaux
-						location = location:toulouse
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
-						location = location:reims
-						location = location:rouen
+						this = location:lyon
+						this = location:paris
+						this = location:bordeaux
+						this = location:toulouse
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
+						this = location:reims
+						this = location:rouen
 					}
 				}
 				every_pop = {
@@ -1009,15 +1009,15 @@ et_culture.106 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:lyon
-						location = location:paris
-						location = location:bordeaux
-						location = location:toulouse
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
-						location = location:reims
-						location = location:rouen
+						this = location:lyon
+						this = location:paris
+						this = location:bordeaux
+						this = location:toulouse
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
+						this = location:reims
+						this = location:rouen
 					}
 				}
 				every_pop = {
@@ -1076,8 +1076,8 @@ et_culture.107 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:brest
-						location = location:saint_malo
+						this = location:brest
+						this = location:saint_malo
 					}
 				}
 				every_pop = {
@@ -1138,8 +1138,8 @@ et_culture.108 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:geneve
-						location = location:lyon
+						this = location:geneve
+						this = location:lyon
 					}
 				}
 				add_pop = {
@@ -1152,8 +1152,8 @@ et_culture.108 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:toulouse
-						location = location:bordeaux
+						this = location:toulouse
+						this = location:bordeaux
 					}
 				}
 				add_pop = {
@@ -1207,10 +1207,10 @@ et_culture.109 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:soissons
-						location = location:paris
-						location = location:reims
-						location = location:rouen
+						this = location:soissons
+						this = location:paris
+						this = location:reims
+						this = location:rouen
 					}
 				}
 				every_pop = {
@@ -1267,11 +1267,11 @@ et_culture.110 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:paris
-						location = location:soissons
-						location = location:reims
-						location = location:rouen
-						location = location:orleans
+						this = location:paris
+						this = location:soissons
+						this = location:reims
+						this = location:rouen
+						this = location:orleans
 					}
 				}
 				every_pop = {
@@ -1332,14 +1332,14 @@ et_culture.111 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:paris
-						location = location:rouen
-						location = location:reims
-						location = location:orleans
-						location = location:tours
-						location = location:rennes
-						location = location:nantes
-						location = location:soissons
+						this = location:paris
+						this = location:rouen
+						this = location:reims
+						this = location:orleans
+						this = location:tours
+						this = location:rennes
+						this = location:nantes
+						this = location:soissons
 					}
 				}
 				every_pop = {
@@ -1352,11 +1352,11 @@ et_culture.111 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:toulouse
-						location = location:bordeaux
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
+						this = location:toulouse
+						this = location:bordeaux
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
 					}
 				}
 				every_pop = {
@@ -1369,8 +1369,8 @@ et_culture.111 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:lyon
-						location = location:geneve
+						this = location:lyon
+						this = location:geneve
 					}
 				}
 				every_pop = {
@@ -1524,10 +1524,10 @@ et_culture.114 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:toulouse
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
+						this = location:toulouse
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
 					}
 				}
 				every_pop = {
@@ -1584,13 +1584,13 @@ et_culture.115 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:paris
-						location = location:rouen
-						location = location:reims
-						location = location:orleans
-						location = location:tours
-						location = location:caen
-						location = location:soissons
+						this = location:paris
+						this = location:rouen
+						this = location:reims
+						this = location:orleans
+						this = location:tours
+						this = location:caen
+						this = location:soissons
 					}
 				}
 				every_pop = {
@@ -1706,13 +1706,13 @@ et_culture.117 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:paris
-						location = location:rouen
-						location = location:orleans
-						location = location:tours
-						location = location:nantes
-						location = location:bordeaux
-						location = location:toulouse
+						this = location:paris
+						this = location:rouen
+						this = location:orleans
+						this = location:tours
+						this = location:nantes
+						this = location:bordeaux
+						this = location:toulouse
 					}
 				}
 				every_pop = {
@@ -1766,19 +1766,19 @@ et_culture.118 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:paris
-						location = location:rouen
-						location = location:reims
-						location = location:orleans
-						location = location:tours
-						location = location:caen
-						location = location:nantes
-						location = location:toulouse
-						location = location:bordeaux
-						location = location:lyon
-						location = location:marseille
-						location = location:nimes
-						location = location:arles
+						this = location:paris
+						this = location:rouen
+						this = location:reims
+						this = location:orleans
+						this = location:tours
+						this = location:caen
+						this = location:nantes
+						this = location:toulouse
+						this = location:bordeaux
+						this = location:lyon
+						this = location:marseille
+						this = location:nimes
+						this = location:arles
 					}
 				}
 				every_pop = {
@@ -1990,7 +1990,7 @@ et_culture.122 = {
 		custom_tooltip = {
 			text = et_culture.122.tt
 			every_owned_location = {
-				limit = { location = location:paris }
+				limit = { this = location:paris }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2011,7 +2011,7 @@ et_culture.122 = {
 				}
 			}
 			every_owned_location = {
-				limit = { location = location:lyon }
+				limit = { this = location:lyon }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2032,7 +2032,7 @@ et_culture.122 = {
 				}
 			}
 			every_owned_location = {
-				limit = { location = location:marseille }
+				limit = { this = location:marseille }
 				add_pop = {
 					culture = culture:algerian
 					religion = religion:sunni
@@ -2059,7 +2059,7 @@ et_culture.122 = {
 				}
 			}
 			every_owned_location = {
-				limit = { location = location:lille }
+				limit = { this = location:lille }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2074,7 +2074,7 @@ et_culture.122 = {
 				}
 			}
 			every_owned_location = {
-				limit = { location = location:bordeaux }
+				limit = { this = location:bordeaux }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2083,7 +2083,7 @@ et_culture.122 = {
 				}
 			}
 			every_owned_location = {
-				limit = { location = location:toulouse }
+				limit = { this = location:toulouse }
 				add_pop = {
 					culture = culture:castilian
 					religion = religion:catholic
