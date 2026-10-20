@@ -6,6 +6,19 @@ tanımlamadığı ve her yeniden tanımın vanilla içeriğini koruyup korumadı
 denetlendi. Yöntem, kalan kayıtlar ve uygulanan düzeltmeler bu dosyadadır.
 Kalıcı tarama: `et-history-data/scripts/script-token-audit.py`.
 
+> **Düzeltme (20 Ekim 2026):** Bu denetim tanımları statik olarak karşılaştırdı;
+> hangi kopyanın oyuna yüklendiğini doğrulamıyordu. Geçerli kural: aynı DB
+> içinde göreli dosya yolu alfabetik sırasında **önce gelen** tanım kazanır,
+> sonraki tanım oluşturulmaz; aynı adlı mod dosyası vanilla'yı birebir
+> değiştirir. Yükleme sırasını uygulayan offline denetim
+> (`scripts/shadow-audit.py`; rapor
+> `2026-10-20_vanilla_shadow_report.md`) dokuz kayıttan üçünün **ölü** olduğunu
+> gösterdi: `coptic_culture`, `miaphysite`, `aramaic_language`; bu deltalar
+> oyuna hiç girmiyor. Aşağıdaki tablonun karar sütunları buna göre
+> işaretlendi. Aynı kural `setup/countries` için de geçerli:
+> `et_countries.txt`'teki 174 tanım vanilla'ya yeniliyor ve 235 mod-içi çakışma
+> var (ayrıntı raporda).
+
 ## Yöntem
 
 - Kapsam: `Extended Timeline/in_game` ve `main_menu` altındaki tüm `.txt`
@@ -26,15 +39,15 @@ Kalıcı tarama: `et-history-data/scripts/script-token-audit.py`.
 
 | Anahtar | Mod dosyası | Karar | Delta / gerekçe |
 |---|---|---|---|
-| `coptic_culture` | `cultures/et_egypt.txt` | Korundu | `culture_groups = { arabic_group }` eklendi; ardıl Mısır kimlikleriyle aynı hat (UPDATE 3) |
-| `haixi_culture` | `cultures/et_1_3_east_asia.txt` | Korundu | Vanilla 1.3 tanımının birebir kopyası; aynı adlı `east_asia.txt` override'ı gizlediği için geri yüklendi |
-| `hurga_culture` | `cultures/et_1_3_east_asia.txt` | Korundu | Aynı gerekçe; birebir kopya |
-| `aramaic_language` | `languages/00_et_mesopotamian.txt` | Yeniden kuruldu | Vanilla gövde + `# ET ancient Aramaic (58 CE)` isimleri; eksik `color`, `family`, `dynasty_names`, `lowborn` geri geldi |
-| `gothic_language` | `languages/00_et_germany.txt` | Yeniden kuruldu | Vanilla gövde + özel `color = rgb{ 20 100 154 }`; `fallback = german_language` geri geldi; boş isim listeleri kaldırıldı |
-| `yearly_country_pulse` | `on_action/et_history_pulses.txt` | Korundu | Vanilla `yearly_country_pulse` on action'ına eklenen `on_actions = { et_egypt_yearly_pulse }` bloğu; vanilla kuralı (mod mevcut bir on action'a yalnızca blok ekleyebilir) dosya içinde not edilmiş |
-| `alan_paganism` | `religions/et_caucasus.txt` | Korundu | `group = folk_caucasian_group` (artık tanımlı); `army_cavalry_power` → `army_light_cavalry_power` düzeltmesi |
-| `hellenism_religion` | `religions/et_roman.txt` | Korundu | `enable = 9999.1.1` yok; 58 CE başlangıcında Helenizm'in açık olması bilinçli |
-| `miaphysite` | `religions/et_christianity.txt` | Korundu | `language = coptic_language` eklendi (UPDATE 3) |
+| `coptic_culture` | `cultures/et_egypt.txt` | ÖLÜ (20 Ekim) | `culture_groups = { arabic_group }` eklendi; ardıl Mısır kimlikleriyle aynı hat (UPDATE 3) — yüklemede vanilla `egypt.txt` kazanıyor |
+| `haixi_culture` | `cultures/et_1_3_east_asia.txt` | Korundu (tek tanım) | Vanilla 1.3 tanımının birebir kopyası; aynı adlı `east_asia.txt` override'ı gizlediği için geri yüklendi |
+| `hurga_culture` | `cultures/et_1_3_east_asia.txt` | Korundu (tek tanım) | Aynı gerekçe; birebir kopya |
+| `aramaic_language` | `languages/00_et_mesopotamian.txt` | ÖLÜ (20 Ekim) | Vanilla gövde + `# ET ancient Aramaic (58 CE)` isimleri; eksik `color`, `family`, `dynasty_names`, `lowborn` geri geldi — yüklemede vanilla `00_crescent.txt` kazanıyor |
+| `gothic_language` | `languages/00_et_germany.txt` | YAŞIYOR (doğrulandı) | Vanilla gövde + özel `color = rgb{ 20 100 154 }`; `fallback = german_language` geri geldi; boş isim listeleri kaldırıldı |
+| `yearly_country_pulse` | `on_action/et_history_pulses.txt` | Korundu (on_action istisnası) | Vanilla `yearly_country_pulse` on action'ına eklenen `on_actions = { et_egypt_yearly_pulse }` bloğu; vanilla kuralı (mod mevcut bir on action'a yalnızca blok ekleyebilir) dosya içinde not edilmiş |
+| `alan_paganism` | `religions/et_caucasus.txt` | YAŞIYOR (doğrulandı) | `group = folk_caucasian_group` (artık tanımlı); `army_cavalry_power` → `army_light_cavalry_power` düzeltmesi |
+| `hellenism_religion` | `religions/et_roman.txt` | YAŞIYOR (doğrulandı) | `enable = 9999.1.1` yok; 58 CE başlangıcında Helenizm'in açık olması bilinçli |
+| `miaphysite` | `religions/et_christianity.txt` | ÖLÜ (20 Ekim) | `language = coptic_language` eklendi (UPDATE 3) — yüklemede vanilla `christian.txt` kazanıyor |
 
 Kaldırılan ve yeniden adlandırılanlar:
 
@@ -83,6 +96,12 @@ tanımına çözülür — 58 CE kurulumunda bu etiketler yok.
   sonlarında da bu düzeni sürdürüyor.
 - Gölge taraması: 48 eklemeli dosya; yukarıdaki 9 kayıt dışında anahtar
   kesişmesi yok.
+- Yükleme sırası denetimi (20 Ekim 2026): `scripts/shadow-audit.py` dil,
+  kültür, din, gruplar, dil aileleri ve `setup/countries` DB'lerini kapsayacak
+  şekilde yazıldı; rapor `2026-10-20_vanilla_shadow_report.md`. Üç yeniden
+  tanım ölü çıktı (yukarıda işaretli); `haixi/hurga` tek tanım olduğu için
+  yükleniyor; `yearly_country_pulse` on_action blok birleşimi istisnası
+  (log'da çakışma satırı yok).
 
 ## Sınırlar
 

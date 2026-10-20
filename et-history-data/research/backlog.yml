@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: "2026-10-19"
+updated_on: "2026-10-20"
 tasks:
   roman_succession_dates:
     period_id: ancient
@@ -520,6 +520,30 @@ tasks:
       (single launch; R1 Egypt, R2-R3 Gaul) still gates the class-1
       language-reference mystery, gaul_record_backfill,
       gaul_dhe_tag_binding_review and the et_culture.9000 retirement.
+      UPDATE 20 (2026-10-20, offline delivery audit): the 18 Oct debug.log
+      duplicate-key lines showed that the 2026-10-19 audit had compared
+      definitions statically but never checked which copy the engine loads.
+      The confirmed rule (within one DB the earliest relative file path wins;
+      a same-path mod file replaces vanilla and is not a rival) was applied
+      offline by the new script scripts/shadow-audit.py across languages,
+      cultures, religions, culture/religion groups, language families and
+      setup/countries; report
+      research/historical-events/2026-10-20_vanilla_shadow_report.md. Of the
+      nine documented redefinitions, three deltas never reach the game:
+      coptic_culture (vanilla egypt.txt over et_egypt.txt), miaphysite
+      (christian.txt over et_christianity.txt) and aramaic_language
+      (00_crescent.txt over 00_et_mesopotamian.txt); gothic_language,
+      alan_paganism and hellenism_religion win, haixi/hurga have a single
+      live definition and yearly_country_pulse is the on_action merge
+      exception (no duplicate line in the log). setup/countries: 663
+      duplicated keys - 174 mod definitions dead (all et_countries.txt;
+      vanilla winners balkans/egypt/eastcoast etc.), 235 mod-internal
+      collisions with differing content, and 254 mod wins over vanilla region
+      files (north_germany 38, south_germany/west_africa 32, italy 30). The
+      four 18 Oct log lines match the computed winners. No data changed; the
+      fix path (move before the rival, same-path full override, drop the
+      delta) is tracked as vanilla_shadow_delivery_fix; Test B must keep
+      these lines in the info class.
 
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
@@ -637,7 +661,35 @@ tasks:
       global_build_buildings_cost -> global_build_buildings_efficiency (x4),
       trade_efficiency -> selling_efficiency (x3), berber_group ->
       amazigh_group maghrebi_group, and et_uralic.txt's stray second BOM
-      removed.
+      removed. Open follow-up: the 2026-10-20 offline delivery audit showed
+      that three of the redefinitions never load (coptic_culture, miaphysite
+      and aramaic_language lose the lexicographic order to vanilla
+      egypt.txt/christian.txt/00_crescent.txt) and found 174 dead setup
+      definitions plus 235 mod-internal collisions; tracked as
+      vanilla_shadow_delivery_fix.
+  vanilla_shadow_delivery_fix:
+    period_id: ancient
+    priority: 2
+    state: pending
+    targets: [Extended Timeline/in_game/common/languages/00_et_mesopotamian.txt, Extended Timeline/in_game/common/cultures/et_egypt.txt, Extended Timeline/in_game/common/religions/et_christianity.txt, Extended Timeline/in_game/setup/countries/et_countries.txt]
+    source_refs: []
+    question: How should the definitions that lose the lexicographic load order - the three language/culture/religion deltas and the 174 setup tag definitions - be delivered (moved before their vanilla rivals, converted to same-path overrides, or dropped as accepted vanilla behaviour)?
+    evidence: >-
+      The 2026-10-20 offline audit (scripts/shadow-audit.py; report
+      research/historical-events/2026-10-20_vanilla_shadow_report.md) computed
+      the winner for every duplicated top-level key. The three dead deltas:
+      coptic_culture (common/cultures/egypt.txt beats et_egypt.txt),
+      miaphysite (common/religions/christian.txt beats et_christianity.txt)
+      and aramaic_language (common/languages/00_crescent.txt beats
+      00_et_mesopotamian.txt). In setup/countries, 174 et_countries.txt
+      definitions lose to vanilla files (eastcoast 31, east_africa 30, balkans
+      19, anatolia 17, egypt 3 - MAM/FZA/TRP - and others) and 235 keys
+      collide between mod files with differing content (east_asia,
+      british_isles, bengal and caucasus vs et_countries; france,
+      horn_of_africa, india, lowlands, maghreb and south_east_asia vs
+      et_countries). The 18 Oct debug.log duplicate lines match the computed
+      winners exactly.
+    acceptance: Every dead definition is either delivered (the mod value actually loads) or deliberately dropped with the shadow audit, audit note and report updated; the report is regenerated after the fix and Test B classifies the remaining duplicate lines as expected info.
   script_token_audit:
     period_id: ancient
     priority: 3

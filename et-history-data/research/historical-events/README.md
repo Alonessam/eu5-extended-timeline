@@ -110,6 +110,20 @@ klasörü) ve `test-b-report.py` (mod filtreli log raporu + sınıf-1
 sınıflaması). Ham kanıt `et-history-data/tests/` altında tutulur (depo dışı).
 UPDATE 19 düzeltmeleri (`a718859`) bu koşumun ön koşuludur.
 
+**Vanilla gölge (yükleme sırası) raporu (20 Ekim 2026):** Aynı DB içinde aynı
+üst düzey anahtar birden fazla dosyada tanımlıysa, göreli dosya yolu alfabetik
+sırasında önce gelen tanım yüklenir; aynı adlı mod dosyası vanilla'yı birebir
+değiştirir. Bu kuralı tüm ilgili DB'lere (dil, kültür, din, gruplar, dil
+aileleri, `setup/countries`) uygulayan offline denetim
+`et-history-data/scripts/shadow-audit.py` ve raporu
+`2026-10-20_vanilla_shadow_report.md` yayında. Bulgu: dokuz yeniden tanımdan
+`coptic_culture`, `miaphysite` ve `aramaic_language` yüklemede vanilla'ya
+yeniliyor (deltalar oyuna girmiyor); `setup/countries` tarafında 174 mod tanımı
+ölü, 235 mod-içi çakışma var. Düzeltme yolu (tanımı rakibinden önce
+sıralanacak dosyaya taşımak / aynı adlı tam override / deltayı bırakmak)
+`vanilla_shadow_delivery_fix` kaydında izlenir; Test B bu satırları bilgi
+sınıfında tutmalı.
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,
