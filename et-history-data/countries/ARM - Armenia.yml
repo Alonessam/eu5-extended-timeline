@@ -40,11 +40,11 @@
 53.1.1:
   ruler: arm_tiridates_i_arsacid
   religion: zoroastrian
-58.7.1:
-  ruler: arm_tigranes_vi_herodian
+59.1.1:
+  ruler: arm_tigranes_vi_herodian # installed by Corbulo after Tigranocerta surrendered in 59
   religion: armenian_religion
-62.1.1:
-  ruler: arm_tiridates_i_arsacid
+63.1.1:
+  ruler: arm_tiridates_i_arsacid # restored by the treaty of Rhandeia after the winter 62 defeat
   religion: zoroastrian
 88.1.1:
   ruler: arm_sanatruk_arsacid

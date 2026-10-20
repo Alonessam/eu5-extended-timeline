@@ -118,7 +118,7 @@ records:
     dating: {precision: season, year: 58, season: spring}
     source_refs: [{id: iranica_armenia, locator: Paragraph beginning In the face of this Parthian coup}, {id: iranica_vologases, locator: Campaign chronology caveat}]
     confidence: medium
-    integration: {status: collected, target: wars/firstromanparthianwar.txt, note: This does not verify 58.2.1 as the overall war start or a July 58 accession by Tigranes.}
+    integration: {status: applied, target: wars/firstromanparthianwar.txt, note: "Applied on 20 Oct 2026 as the year-level war start 58.1.1, with the season documented in a comment - Corbulo entered Armenia in the spring of 58 and no source gives a day. The war no longer starts on a forced precise day, and the 59 surrender of Tigranocerta is covered by the Tigranes VI entry in the country file."}
   rhandeia_defeat:
     entity: firstromanparthianwar
     subject: military_campaign
@@ -126,7 +126,7 @@ records:
     dating: {precision: year, year: 62, qualifier: end_of_year}
     source_refs: [{id: iranica_vologases, locator: Rhandeia paragraph}]
     confidence: medium
-    integration: {status: collected, target: wars/firstromanparthianwar.txt, note: Do not invent a day or translate this into a country ownership transfer without local evidence.}
+    integration: {status: applied, target: wars/firstromanparthianwar.txt, note: "The war now runs from the year-level 58.1.1 to the 63.1.1 truce, so the winter 62 defeat falls inside the war and no ownership transfer is implied. The country file restores Tiridates on 63.1.1 by the treaty of Rhandeia, and the 66 coronation in Rome stays a separate legitimacy event."}
   armenian_investiture:
     entity: arm_tiridates_i_arsacid
     subject: diplomacy_and_legitimacy
@@ -134,4 +134,4 @@ records:
     dating: {precision: year, year: 66}
     source_refs: [{id: iranica_vologases, locator: Journey to Rome in 66}]
     confidence: high
-    integration: {status: collected, target: countries/ARM - Armenia.yml, note: "Investiture is not an automatic change of dynasty, religion or full territorial ownership."}
+    integration: {status: applied, target: countries/ARM - Armenia.yml, note: "The country file restores Tiridates on 63.1.1 with the treaty of Rhandeia; the investiture in Rome in 66 remains a legitimacy event and is not an automatic change of dynasty, religion or full territorial ownership."}

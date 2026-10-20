@@ -99,16 +99,30 @@ tasks:
   armenia_war_and_succession:
     period_id: ancient
     priority: 1
-    state: pending
-    targets: [wars/firstromanparthianwar.txt, countries/ARM - Armenia.yml]
+    state: completed
+    targets: ["et-history-data/wars/firstromanparthianwar.txt", "et-history-data/countries/ARM - Armenia.yml", research/ancient/2026-10-13_rome_and_east.yml]
     source_refs: [iranica_armenia, iranica_vologases]
     question: Which dates and war phases are supported for Corbulo's campaign and Tigranes' appointment?
     evidence: >-
-      The source places the campaign in spring 58 and Tigranocerta's surrender
-      in spring 59. Existing data uses 58.2.1 for the war and 58.7.1 for the
-      ruler change. These exact days have not been verified. Tigranes numbering
-      differs between scholarly accounts.
-    acceptance: Preserve year/season uncertainty and avoid forcing a precise game day without a documented conversion policy.
+      The sources support a chain of dated phases rather than single days:
+      Vologases installed his brother Tiridates in Armenia in 52/53; Corbulo
+      entered Greater Armenia in the spring of 58 and took Artaxata in the
+      summer; Tigranocerta surrendered in 59, after which the Romans
+      installed Tigranes VI at Tigranocerta with a garrison; Paetus
+      capitulated at Rhandeia in the winter of 62; the treaty of Rhandeia
+      restored Tiridates in 63; and Nero crowned him in Rome in 66. The
+      existing data forced two precise days that no source supports (the war
+      start 58.2.1 and the Tigranes accession 58.7.1) and dated the
+      restoration of Tiridates to 62, one year before the treaty.
+    resolution: >-
+      Resolved on 20 Oct 2026 with a year-level convention: the war now starts
+      on 58.1.1 and its truce is 63.1.1, both with a comment that names the
+      season or the treaty year and states that no day is sourced; the country
+      file installs Tigranes VI on 59.1.1 (the year of the surrender of
+      Tigranocerta) and restores Tiridates on 63.1.1 by the treaty. The 66
+      coronation in Rome stays a legitimacy event in the record and is not
+      turned into a dynasty, religion or ownership change.
+    acceptance: Preserve year/season uncertainty and avoid forcing a precise game day without a documented conversion policy. Met on 20 Oct 2026: every date is a year-level marker with the season or the treaty documented, and no forced day remains.
   abbassid_capital_mapping:
     period_id: medieval
     priority: 2
