@@ -35,7 +35,7 @@ sources:
     type: primary_text_translation
     edition: J. C. Rolfe, Loeb Classical Library, 1913
     url: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Caligula%2A.html
-    locator: Sections 7.1–2 and 8.1–5
+    locator: Sections 3–7 (the Germanicus affair), 7.1–2 and 8.1–5 (the father and the birthplace)
     caveat: Section 8 discusses conflicting birthplace traditions and favors Antium.
   suetonius_claudius:
     title: Suetonius, Life of Claudius
@@ -43,7 +43,7 @@ sources:
     type: primary_text_translation
     edition: J. C. Rolfe, Loeb Classical Library, 1913
     url: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Claudius%2A.html
-    locator: Sections 1.1, 1.6 and 2.1
+    locator: Sections 1.1 and 1.6 (Drusus), 2.1 (the birth at Lugdunum)
     caveat: The birth year is normalized from the named consular year, not from the altar-dedication footnote.
   suetonius_nero:
     title: Suetonius, Life of Nero

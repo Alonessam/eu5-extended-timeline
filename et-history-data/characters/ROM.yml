@@ -38,7 +38,8 @@ rom_caligula_julio_claudian:
     tag: ROM
   41.1.24:
     death: yes
-rom_caligula_julio_claudian_1:
+rom_caligula_julio_claud    father: rom_germanicus_julio_claudian
+ian_1:
   12.8.31: #Suetonius, Caligula 8.1; see caligula_birth research record
     birth: terracina # Antium (Anzio); same mapping as the non-suffixed ID; see antium_location_mapping
     first_name: caligula
@@ -50,6 +51,32 @@ rom_caligula_julio_claudian_1:
     culture: roman
     tag: ROM
   41.1.24:
+    death: yes
+rom_germanicus_julio_claudian:
+  -15.1.1: #Year-level marker, the sources give 15 or 14 BC
+    birth: rome
+    first_name: germanicus
+    dynasty: julio_claudian_dynasty
+    adm: 45
+    dip: 40
+    mil: 45
+    religion: hellenism_religion
+    culture: roman
+    tag: ROM
+  19.1.1:
+    death: yes
+rom_drusus_julio_claudian:
+  -38.1.1: #Year-level marker
+    birth: rome
+    first_name: drusus
+    dynasty: julio_claudian_dynasty
+    adm: 40
+    dip: 35
+    mil: 40
+    religion: hellenism_religion
+    culture: roman
+    tag: ROM
+  -9.1.1:
     death: yes
 rom_claudius_julio_claudian:
   -10.8.1: #Suetonius, Claudius 2.1; consular year normalized to ET
@@ -65,7 +92,8 @@ rom_claudius_julio_claudian:
     tag: ROM
   54.10.13:
     death: yes
-rom_claudius_julio_claudian_1:
+rom_claudius_ju    father: rom_drusus_julio_claudian
+lio_claudian_1:
   -10.8.1: #Suetonius, Claudius 2.1; consular year normalized to ET
     birth: lyon #Lugdunum; same emperor as the existing non-suffixed ID
     first_name: claudius

@@ -50,6 +50,35 @@ records:
     source_refs: [{id: suetonius_caligula, locator: "7.1–2 and 8"}]
     confidence: high
     integration: {status: applied, target: characters/ROM.yml, note: Removed the incorrect father link. No unsourced Germanicus character or ability ratings were generated.}
+  germanicus_life_and_death:
+    entity: Germanicus
+    subject: character_life_and_death
+    finding: >-
+      Germanicus, the son of Drusus and brother of Tiberius, was the commander
+      of the Rhine armies and the heir the Romans loved; he died in 19 CE on
+      the way back from the East, poisoned on the orders of the Emperor
+      Tiberius according to Suetonius, and his funeral in Rome drew the
+      people in crowds. He is the father of Caligula.
+    population: "not a population finding; a character record"
+    dating: {precision: year, year: 19, calendar: ce_year_normalized_to_et}
+    mechanism: "command and death, reported by Suetonius in the Life of Caligula"
+    source_refs: [{id: suetonius_caligula, locator: "Sections 3-7 (the Germanicus affair)"}]
+    confidence: medium
+    integration: {status: applied, target: characters/ROM.yml, note: "Applied on 20 Oct 2026 as the character rom_germanicus_julio_claudian with the year-level dates 15 BC and 19 CE, and as the father of Caligula, which replaces the false Tiberius link. The ability values are gameplay defaults and are not sourced."}
+  drusus_life_and_death:
+    entity: Drusus
+    subject: character_life_and_death
+    finding: >-
+      Drusus, the son of Livia and brother of Tiberius, was the general who
+      carried out the campaigns in Germania and Illyricum for Augustus and
+      died in 9 BCE. Suetonius gives his age as thirty and places his death in
+      the beginning of his fifth consulship. He is the father of Claudius.
+    population: "not a population finding; a character record"
+    dating: {precision: year, year: "-9", calendar: ce_year_normalized_to_et}
+    mechanism: "command and death, reported by Suetonius in the Life of Claudius"
+    source_refs: [{id: suetonius_claudius, locator: "Sections 1.1 and 1.6 (Drusus)"}]
+    confidence: medium
+    integration: {status: applied, target: characters/ROM.yml, note: "Applied on 20 Oct 2026 as the character rom_drusus_julio_claudian with the year-level dates 38 BC and 9 BCE, and as the father of Claudius, which replaces the false Caligula link. The ability values are gameplay defaults and are not sourced."}
   claudius_birth:
     entity: Claudius
     subject: character_birth

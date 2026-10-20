@@ -79,23 +79,31 @@ tasks:
   julio_claudian_parent_characters:
     period_id: ancient
     priority: 3
-    state: pending
-    targets: [et-history-data/characters/ROM.yml, "Extended Timeline/main_menu/setup/start/05_characters.txt"]
+    state: completed
+    targets: [et-history-data/characters/ROM.yml, "Extended Timeline/main_menu/setup/start/05_characters.txt", "Extended Timeline/in_game/localization/english/et_character_names_l_english.yml"]
     source_refs: [suetonius_caligula, suetonius_claudius]
     question: Should Germanicus (Caligula's father) and Drusus (Claudius's father) be added as characters, so the Julio-Claudian family tree stops at the emperors?
     evidence: >-
       The 20 Oct 2026 reconciliation removed the false father links instead of
-      inventing parents: Caligula's father was Germanicus (Suetonius, Caligula
-      7-8), not Tiberius, and Claudius's father was Drusus (Suetonius, Claudius
-      1.1 and 1.6), not Caligula. The research records caligula_father and
-      claudius_father already state that a character with its own verified
-      record is needed. Both men are attested (Germanicus died in 19 CE,
-      Drusus in 9 BCE), so the records can be written from Suetonius.
+      inventing parents, and the two records stated that a character with its
+      own verified record is needed. Both men are attested in the sources the
+      repository already holds: Suetonius, Caligula 3-7 for the Germanicus
+      affair and his death in 19 CE, and Suetonius, Claudius 1 and 1.6 for
+      Drusus and his death in 9 BCE at the age of thirty. The name audit of
+      the same day showed that the mod had no name key at all for Augustus,
+      Claudius, Nero, Galba, Otho, Vitellius, Vespasian, Titus, Domitian,
+      Trajan or Germanicus, so the new characters would have shown raw keys.
     resolution: >-
-      Pending. The data-first rule applies: each character needs a sourced
-      record (birth, death, titles, family links) before the father link can
-      be restored in the character files.
-    acceptance: Germanicus and Drusus each have a sourced record and the father links are restored in the research and mod character data.
+      Added on 20 Oct 2026 with two sourced records
+      (germanicus_life_and_death, drusus_life_and_death), the characters
+      rom_germanicus_julio_claudian and rom_drusus_julio_claudian in the
+      research file, the three generated character files and the mod's setup
+      file, and the restored father links (Caligula to Germanicus, Claudius to
+      Drusus). The dates are year-level markers, the ability values are
+      documented as gameplay defaults, and a new mod localization file
+      (et_character_names_l_english.yml and its Turkish twin) supplies the
+      eleven missing Roman name keys.
+    acceptance: Germanicus and Drusus each have a sourced record and the father links are restored in the research and mod character data. Met on 20 Oct 2026, both characters are in the data layer and the father links are correct.
   armenia_war_and_succession:
     period_id: ancient
     priority: 1
@@ -1163,6 +1171,29 @@ tasks:
       the baseline record to state that the Greek-speaking layer is not
       modelled.
     acceptance: Either the setup carries the Greek-speaking urban minority and the absorption event is scripted, or the baseline record is corrected to say the layer is not modelled.
+  character_name_localization:
+    period_id: ancient
+    priority: 2
+    state: pending
+    targets: ["Extended Timeline/main_menu/setup/start/05_characters.txt", "Extended Timeline/in_game/localization"]
+    source_refs: []
+    question: How are the names of the 415 mod characters that have no name key in the game corpus localized?
+    evidence: >-
+      The 20 Oct 2026 name audit compared every first_name in the mod's
+      character file with the vanilla character names in English and Turkish
+      and with the mod's own localization. The Roman characters are now
+      complete, but 303 distinct names of the other cultures' characters have
+      no key at all, so the game shows the raw identifier instead of a name
+      (examples: abgar, ailao, antenor, artavasdes, cartimandua, bhumaka). The
+      identifiers are transliterations of the names, so most can be written
+      mechanically, but a batch of them needs the character's record to get
+      the form right.
+    resolution: >-
+      Pending a batch. The plan is to write the names file per culture from
+      the character identifiers and the research records, keep the Latin and
+      the Turkish forms identical where the name is not translated, and check
+      every new key with the mod's own localization audit.
+    acceptance: Every character in the mod's character file resolves to a name in English and Turkish, and the localization audit stays clean.
   localization_key_audit:
     period_id: ancient
     priority: 2

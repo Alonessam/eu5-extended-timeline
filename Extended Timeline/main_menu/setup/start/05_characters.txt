@@ -2383,6 +2383,32 @@ character_db={
 		religion = theravada
 		tag = RAJA
 	}
+	rom_germanicus_julio_claudian = {
+		first_name = germanicus
+		dynasty = julio_claudian_dynasty
+		adm = 45
+		dip = 35
+		mil = 40
+		birth_date = -15.1.1
+		death_date = 19.1.1
+		birth = rome
+		culture = roman
+		religion = hellenism_religion
+		tag = ROM
+	}
+	rom_drusus_julio_claudian = {
+		first_name = drusus
+		dynasty = julio_claudian_dynasty
+		adm = 40
+		dip = 35
+		mil = 40
+		birth_date = -38.1.1
+		death_date = -9.1.1
+		birth = rome
+		culture = roman
+		religion = hellenism_religion
+		tag = ROM
+	}
 	rom_claudius_julio_claudian = {
 		first_name = { name = claudius }
 		dynasty = julio_claudian_dynasty
@@ -2401,7 +2427,8 @@ character_db={
 		dynasty = sicambri_dynasty
 		adm = 0
 		dip = 0
-		mil = 75
+		m		father = rom_drusus_julio_claudian
+il = 75
 		birth_date = 2.1.1
 		death_date = 51.1.1
 		birth = dortmund
@@ -3093,7 +3120,8 @@ character_db={
 		first_name = { name = cartimandua }
 		dynasty = brigante_dynasty
 		adm = 30
-		dip = 75
+		dip = 7		father = rom_germanicus_julio_claudian
+5
 		mil = 60
 		birth_date = 13.1.1
 		birth = newcastle
