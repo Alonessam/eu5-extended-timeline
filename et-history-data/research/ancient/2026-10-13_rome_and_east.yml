@@ -17,7 +17,7 @@ records:
     dating: {precision: day, date: "14.8.19", calendar: roman_civil_date_normalized_to_et}
     source_refs: [{id: suetonius_augustus, locator: "100.1"}]
     confidence: high
-    integration: {status: collected, target: characters/ROM.yml, note: Apply the death date together with a documented country succession policy; the current country and death keys both use 14.9.18.}
+    integration: {status: applied, target: characters/ROM.yml, note: Applied on 20 Oct 2026 together with the country succession key, the character death date and the country timeline both use 14.8.19, the sourced death day, so no dead ruler is left selected. Policy - the country timeline follows the de facto succession, which in both cases falls on the death day; a formal recognition that the engine cannot model (the Senate's acclamation of Caligula on 18 March 37) is recorded here instead of being kept in the timeline.}
   tiberius_birth:
     entity: rom_tiberius_julio_claudian
     subject: character_birth
@@ -33,7 +33,7 @@ records:
     dating: {precision: day, date: "37.3.16", calendar: roman_civil_date_normalized_to_et}
     source_refs: [{id: suetonius_tiberius, locator: "73.1"}]
     confidence: high
-    integration: {status: collected, target: characters/ROM.yml, note: Resolve death versus recognition and accession dates together; both current timeline keys use 37.3.18.}
+    integration: {status: applied, target: characters/ROM.yml, note: Resolved and applied on 20 Oct 2026, the character death date and the country ruler key both use 37.3.16, the sourced death day, so the dead emperor is never the selected ruler. The formal recognition on 18 March 37 (the Senate's acclamation of Caligula) is kept in this record and not in the timeline.}
   caligula_birth:
     entity: Caligula
     subject: character_birth

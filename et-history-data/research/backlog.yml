@@ -4,15 +4,29 @@ tasks:
   roman_succession_dates:
     period_id: ancient
     priority: 1
-    state: pending
-    targets: [characters/ROM.yml, countries/ROM - Rome.yml]
+    state: completed
+    targets: [et-history-data/characters/ROM.yml, "et-history-data/countries/ROM - Rome.yml", "Extended Timeline/main_menu/setup/start/05_characters.txt"]
     source_refs: [suetonius_augustus, suetonius_tiberius]
     question: Distinguish the ruler's death from de facto succession and formal recognition.
     evidence: >-
-      Augustus death is sourced to 14.8.19 while the existing character and
-      country transition use 14.9.18. Tiberius death is sourced to 37.3.16
-      while the existing character and country transition use 37.3.18.
-    acceptance: Apply linked timelines together with explicit dating and modeling notes; do not leave a dead ruler selected accidentally.
+      The sourced deaths - Augustus on 19 August 14 CE, Tiberius on 16 March 37 CE - were
+      left unapplied because the character death key and the country ruler key
+      are coupled: the mod used 14.9.18 and 37.3.18 in both places, so the
+      dates could not be changed in isolation. The 20 Oct 2026 audit also found
+      that the mod's 58 CE start state is ruled by Nero (government = {ruler =
+      rom_nero_julio_claudian}), so the generated country files carry no
+      historical ruler chain; only the research country file does.
+    resolution: >-
+      Applied together on 20 Oct 2026 with a documented policy: the country
+      timeline follows the de facto succession, which in both cases falls on
+      the death day, so the character death date and the country ruler key
+      both use 14.8.19 and 37.3.16 and no dead ruler is ever the selected one.
+      A formal recognition that the engine cannot model (the Senate's
+      acclamation of Caligula on 18 March 37) is kept in the research records
+      instead of the timeline. The change reached the research character and
+      country files and the three generated character files plus the mod's
+      setup file.
+    acceptance: Apply linked timelines together with explicit dating and modeling notes; do not leave a dead ruler selected accidentally. Met on 20 Oct 2026, both timelines carry the sourced death days and the policy is written into the records.
   antium_location_mapping:
     period_id: ancient
     priority: 1

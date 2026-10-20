@@ -9,7 +9,7 @@ rom_augustus_julio_claudian:
     religion: hellenism_religion
     culture: roman
     tag: ROM
-  14.9.18:
+  14.8.19:
     death: yes
 rom_tiberius_julio_claudian:
   -42.11.16: #Suetonius, Tiberius 5.1; preferred account, competing years noted
@@ -22,7 +22,7 @@ rom_tiberius_julio_claudian:
     religion: hellenism_religion
     culture: roman
     tag: ROM
-  37.3.18:
+  37.3.16:
     death: yes
 rom_caligula_julio_claudian:
   12.8.31:
