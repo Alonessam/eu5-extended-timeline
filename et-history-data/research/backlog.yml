@@ -571,6 +571,28 @@ tasks:
       research/historical-events/2026-10-20_setup_authority_report.md.
       Test B: the 663 setup duplicate lines remain but must all name vanilla
       losers; 0 lines may name 00_et_countries.txt or the deleted overrides.
+      UPDATE 24 (2026-10-20, Gaul chain audit): the Gaul track was audited
+      offline end to end. Records: 23/23 events (.101-.123) map to a sourced
+      record, the 27 source ids they use exist in sources.yml, every target
+      event id and culture key resolves, and no record misses a schema field,
+      so gaul_record_backfill is closed. DHE: the tag bands match the UPDATE 9
+      decision for all 23 events (ROM .101-.109, FRAN .110-.113, FRA
+      .114-.123), all 23 are fire_only_once, and the ROM -> FRAN hand-off has
+      no overlap, so gaul_dhe_tag_binding_review is closed with the accepted
+      limitation that a non-ROM/FRAN/FRA owner of Paris never runs the chain.
+      Effects: a chain-wide input/output scan found that .105 (Imperium
+      Galliarum) was the only inert historical option - .101 had already
+      converted the nine cities' elites to gallo_roman, so its limit matched
+      nothing. Because the record's mechanism is a political breakaway, .105
+      was rewritten as a political event (Aurelian's reconquest vs. a lasting
+      secession) and its EN/TR text was updated; no Gallic-Empire culture key
+      was invented. The 58 CE setup was verified as well: ROM owns 2,510
+      locations including every location the two chains use, and 06_pops.txt
+      holds 1,039 gallian + 1,039 gallo_roman_polytheism and 296 old_egyptian
+      pops, so both chains find their input populations. Note:
+      research/historical-events/2026-10-20_gaul_chain_audit.md. The only
+      YAML-invalid file in the mod (the Turkish .109 desc with unescaped
+      quotes) was fixed at the same time. Test B remains the gate.
 
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
@@ -898,7 +920,11 @@ tasks:
     resolution: >-
       Closed on 20 Oct 2026 with the verification above; note:
       research/historical-events/2026-10-20_gaul_chain_audit.md section 1.
-      The `gaul_gallic_empire_260_274` record was updated on the same day: the
+      The 58 CE baseline record was checked against the setup files as well:
+      ROM owns 2,510 locations including every location the chains use, and
+      06_pops.txt holds 1,039 gallian + 1,039 gallo_roman_polytheism and 296
+      old_egyptian pops (note section 5). The
+      `gaul_gallic_empire_260_274` record was updated on the same day: the
       .105 event is political, so its inert culture effect was replaced and
       the note now describes the political branch (see
       gaul_gallic_empire_effect_fix).

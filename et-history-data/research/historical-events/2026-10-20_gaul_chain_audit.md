@@ -153,7 +153,28 @@ Sonuç: `.105` dışında başka bir "tarihsel seçenek boş çalışıyor" örn
 tarafından üretilir. Etkisiz olan tek seçenek `.105`ti ve o da bu notta
 siyasi olaya çevrildi.
 
-## 5. Test B beklentisi
+## 5. 58 CE kurulum önkoşulları (çevrimdışı doğrulama)
+
+Zincirin girdi popülasyonu 58 CE kurulumundan gelir; iki zincirin de başlangıç
+koşulları dosyalardan doğrulandı.
+
+- `main_menu/setup/start/10_countries.txt`: ROM bloğu 58 CE'de 2.510 konumu
+  elinde tutuyor. Zincirin kullandığı tüm konumlar ROM'da: dokuz Galya şehri
+  (lyon, paris, bordeaux, toulouse, nimes, arles, marseille, reims, rouen),
+  `.110`–`.113` konumları (tours, soissons, orleans, caen, brest, saint_malo,
+  nantes, rennes) ve Mısır çapaları (alexandria, cairo, aswan).
+- `main_menu/setup/start/06_pops.txt`: 49.953 `define_pop` bloğu; 1.039
+  `gallian` + 1.039 `gallo_roman_polytheism` (Gaul), 296 `old_egyptian` ve 454
+  `egyptian_polytheism` (Mısır).
+- Konum bazında: dokuz Galya şehrinin her birinde 3-5 `gallian` pop var
+  (yanında az sayıda `ashkenazi`/`sephardi` Yahudi toplulukları); brest,
+  saint_malo, nantes, rennes, tours, soissons, orleans, caen `gallian`;
+  alexandria (10), cairo (8) ve aswan (5) `old_egyptian`.
+- Sonuç: `.101`in dokuz şehir limiti ve `.1`in Mısır alan limitleri başlangıçta
+  gerçek popülasyon buluyor; tetikleyiciler (`owns = location:lyon`,
+  `owns = location:alexandria|cairo|aswan`) karşılanabilir durumda.
+
+## 6. Test B beklentisi
 
 - Log: 0 `Invalid scope types`, 0 sınıf-1 `Failed to read key reference`,
   0 `et_german` satırı.
