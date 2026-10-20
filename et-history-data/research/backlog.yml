@@ -555,6 +555,22 @@ tasks:
       total = setup only; 260 alive, 235 mod-internal). setup/countries
       remains open: 174 et_countries.txt definitions still lose to vanilla
       and 235 mod-internal keys disagree.
+      UPDATE 22 (2026-10-20, setup authority fix): the 10 same-path region
+      overrides added in b9f6ab9 were vanilla copies; their only non-vanilla
+      content was 17 tag edits, and every edited value was already identical
+      in et_countries.txt. The 18 Oct log's 663 (key, loser) pairs matched
+      the audit exactly: 277 et_countries.txt + 254 vanilla + 132 override
+      losers. et_countries.txt was renamed 00_et_countries.txt so it sorts
+      before every vanilla file, and the 10 overrides were deleted. The
+      regenerated report shows setup/countries 663 shadowed = 663 alive,
+      0 dead, 0 mod-internal (total 669/0/669). Integrity check: 1753
+      blocks, 0 duplicate keys, 0 invalid culture/religion values (2242
+      cultures / 330 religions). Effective change: 277 tags now load the mod
+      definition (199 culture/religion corrections); no intended data is
+      lost. Report:
+      research/historical-events/2026-10-20_setup_authority_report.md.
+      Test B: the 663 setup duplicate lines remain but must all name vanilla
+      losers; 0 lines may name 00_et_countries.txt or the deleted overrides.
 
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
@@ -677,29 +693,35 @@ tasks:
       miaphysite and aramaic_language lost the lexicographic order to vanilla
       egypt.txt/christian.txt/00_crescent.txt); they were fixed the same day
       by moving the blocks to 00_et_egypt.txt, 00_et_christianity.txt and
-      00_aramaic.txt. 174 dead setup definitions plus 235 mod-internal
-      collisions remain; tracked as vanilla_shadow_delivery_fix.
+      00_aramaic.txt. The 174 dead setup definitions and 235 mod-internal
+      collisions were consolidated on 20 Oct into 00_et_countries.txt
+      (UPDATE 22); setup/countries now has 0 dead / 0 mod-internal.
   vanilla_shadow_delivery_fix:
     period_id: ancient
     priority: 2
-    state: pending
-    targets: [Extended Timeline/in_game/setup/countries/et_countries.txt, Extended Timeline/in_game/setup/countries/bengal.txt, Extended Timeline/in_game/setup/countries/british_isles.txt, Extended Timeline/in_game/setup/countries/caucasus.txt, Extended Timeline/in_game/setup/countries/east_asia.txt, Extended Timeline/in_game/setup/countries/france.txt, Extended Timeline/in_game/setup/countries/horn_of_africa.txt, Extended Timeline/in_game/setup/countries/india.txt, Extended Timeline/in_game/setup/countries/lowlands.txt, Extended Timeline/in_game/setup/countries/maghreb.txt, Extended Timeline/in_game/setup/countries/south_east_asia.txt]
+    state: in_progress
+    targets: [Extended Timeline/in_game/setup/countries/00_et_countries.txt]
     source_refs: []
     question: Which file should be authoritative for the 174 setup tags whose et_countries.txt definitions lose to vanilla region files and the 235 tags where et_countries.txt and a same-path region override disagree (moved, same-path override, or dropped)?
     evidence: >-
-      UPDATE 20/21 (2026-10-20): the offline shadow audit
+      UPDATE 20/21/22 (2026-10-20): the offline shadow audit
       (scripts/shadow-audit.py; report
       research/historical-events/2026-10-20_vanilla_shadow_report.md) fixed
       the three language/culture/religion deltas by moving them into
-      earlier-sorting files; the report now shows 0 dead outside
-      setup/countries. Remaining: 174 et_countries.txt definitions lose to
-      vanilla files (eastcoast 31, east_africa 30, balkans 19, anatolia 17,
-      egypt 3 - MAM/FZA/TRP - and others) and 235 keys collide between
-      et_countries.txt and the same-path region overrides with differing
-      content (east_asia, british_isles, bengal and caucasus; france,
-      horn_of_africa, india, lowlands, maghreb and south_east_asia). The
-      18 Oct debug.log duplicate lines match the computed winners exactly.
-    acceptance: For every setup tag the winning definition is the intended one, or the definition is moved or dropped with the shadow audit, audit note and report updated; the report is regenerated after the fix and Test B classifies the remaining duplicate lines as expected info.
+      earlier-sorting files. The setup decision (UPDATE 22): the 10 same-path
+      region overrides were vanilla copies whose only non-vanilla content was
+      17 tag edits, all already identical in et_countries.txt; the 18 Oct
+      log's 663 (key, loser) pairs matched the audit exactly (277
+      et_countries + 254 vanilla + 132 override). et_countries.txt was
+      renamed 00_et_countries.txt and the 10 overrides were deleted. Report:
+      research/historical-events/2026-10-20_setup_authority_report.md.
+      Static verification: setup 663/663 alive, 0 dead, 0 mod-internal; 1753
+      blocks, 0 duplicate keys, 0 invalid culture/religion (2242/330); 277
+      tags now load the mod definition (199 culture/religion corrections),
+      0 intended data lost. Test B (pending) must confirm that the 663 setup
+      duplicate lines all name vanilla losers and 0 name 00_et_countries.txt
+      or a deleted override.
+    acceptance: For every setup tag the winning definition is the intended one, or the definition is moved or dropped with the shadow audit, audit note and report updated; the report is regenerated after the fix and Test B classifies the remaining duplicate lines as expected info. Data side met 20 Oct 2026; Test B log confirmation remains.
   script_token_audit:
     period_id: ancient
     priority: 3
@@ -729,7 +751,7 @@ tasks:
       outcome = good -> positive and the UPDATE 14 illustration key 0/1 ->
       10/10 (vanilla uses only neutral/negative/positive and repeated key 10).
       Mod-defined tokens are documented: the FRAN tag (in_game/setup/countries/
-      et_countries.txt:3777 and main_menu/setup/start/10_countries.txt) and the
+      00_et_countries.txt:3777 and main_menu/setup/start/10_countries.txt) and the
       et_egypt_yearly_pulse on_action (in_game/common/on_action/
       et_history_pulses.txt); the prestige_* constants resolve in vanilla
       main_menu/common/script_values/default_values.txt. The gfx findings are

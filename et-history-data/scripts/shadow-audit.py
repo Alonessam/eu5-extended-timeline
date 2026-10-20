@@ -379,6 +379,16 @@ def render(report, on_action):
         "tek tanımlı; `yearly_country_pulse` on_action istisnası."
     )
     lines.append("")
+    lines.append(
+        "İkinci düzeltme (aynı gün, `setup/countries`): `et_countries.txt` "
+        "`00_et_countries.txt` olarak yeniden adlandırıldı ve 10 aynı-yol bölge "
+        "override'ı kaldırıldı. Override'lar vanilla kopyasıydı ve yalnızca 17 "
+        "etiket düzenlemesi taşıyordu; bu düzenlemelerin tamamı `et_countries` "
+        "ile birebir aynıydı. Böylece 663 setup tanımının tamamı moddan "
+        "yükleniyor, ölü ve mod-içi çakışma kalmadı. Ayrıntı: "
+        "`2026-10-20_setup_authority_report.md`."
+    )
+    lines.append("")
     lines.append("## Dil, kültür, din ve grup çakışmaları (tam liste)")
     lines.append("")
     detail_rows = []
@@ -409,12 +419,19 @@ def render(report, on_action):
 
     lines.append("## Setup: ölü kalan mod tanımları (vanilla kazandı)")
     lines.append("")
-    lines.append(
-        f"{len(dead)} anahtarda mod tanımı yüklenmiyor. Aşağıda kaybeden mod "
-        "dosyasına göre gruplanmıştır; parantez içi kazanan vanilla dosyasıdır. "
-        "`*` işaretli satırlarda kaybedilen tanım kazananla **birebir aynı** "
-        "(zararsız), işaretsizlerde içerik farklı (gerçek delta kaybı)."
-    )
+    if dead:
+        lines.append(
+            f"{len(dead)} anahtarda mod tanımı yüklenmiyor. Aşağıda kaybeden mod "
+            "dosyasına göre gruplanmıştır; parantez içi kazanan vanilla dosyasıdır. "
+            "`*` işaretli satırlarda kaybedilen tanım kazananla **birebir aynı** "
+            "(zararsız), işaretsizlerde içerik farklı (gerçek delta kaybı)."
+        )
+    else:
+        lines.append(
+            "Yok — tüm mod tanımları yükleniyor. (20 Ekim: `et_countries.txt` "
+            "`00_et_countries.txt` olarak yeniden adlandırıldı; 174 ölü tanım "
+            "canlandı.)"
+        )
     lines.append("")
     dead_groups = defaultdict(list)
     for row in dead:
@@ -444,12 +461,18 @@ def render(report, on_action):
         lines.append("")
     lines.append("## Setup: mod-içi çakışmalar")
     lines.append("")
-    lines.append(
-        f"{len(internal)} anahtarda modun iki dosyası aynı anahtarı tanımlıyor; "
-        "erken sıralanan kazanıyor, içerik modda kalıyor. `*` = kaybedilen "
-        "tanım kazananla birebir aynı; işaretsizlerde iki mod dosyası **farklı "
-        "değer** taşıyor (tekilleştirme gerekir)."
-    )
+    if internal:
+        lines.append(
+            f"{len(internal)} anahtarda modun iki dosyası aynı anahtarı tanımlıyor; "
+            "erken sıralanan kazanıyor, içerik modda kalıyor. `*` = kaybedilen "
+            "tanım kazananla birebir aynı; işaretsizlerde iki mod dosyası **farklı "
+            "değer** taşıyor (tekilleştirme gerekir)."
+        )
+    else:
+        lines.append(
+            "Yok — 10 aynı-yol bölge override'ı kaldırıldığından mod içi "
+            "çakışma kalmadı."
+        )
     lines.append("")
     internal_groups = defaultdict(list)
     for row in internal:
@@ -473,7 +496,7 @@ def render(report, on_action):
     lines.append("## Setup: mod lehine sonuçlanan çakışmalar (özet)")
     lines.append("")
     lines.append(
-        f"{len(alive)} anahtarda mod tanımı kazanıyor; kaybeden taraf çoğunlukla "
+        f"{len(alive)} anahtarda mod tanımı kazanıyor; kaybeden taraf her zaman "
         "alfabetik olarak sonra gelen vanilla bölge dosyası. Tam liste "
         "gerekmiyorsa bu tablo yeterli; ayrıntı için script'in `--out` çıktısı "
         "yeniden üretilebilir."
@@ -550,12 +573,13 @@ def render(report, on_action):
     lines.append("## Sonraki adım")
     lines.append("")
     lines.append(
-        "Dil, kültür ve din deltaları 20 Ekim'de taşıma yöntemiyle düzeltildi; "
-        "bu raporda ölü kalan tek sınıf `setup/countries` (174 tanım). Setup "
-        "için üç yol var: (1) tanımı rakipten önce sıralanacak dosyaya taşımak, "
-        "(2) aynı adlı tam override kullanmak, (3) tanımı silip vanilla "
-        "davranışını kabul etmek. Etiket bazında karar verilmeden veri "
-        "değiştirilmemeli; düzeltme `vanilla_shadow_delivery_fix` görevinde."
+        "Dil, kültür ve din deltaları 20 Ekim'de taşıma yöntemiyle düzeltildi. "
+        "`setup/countries` de aynı gün tek-otorite birleştirmesiyle düzeltildi: "
+        "`et_countries.txt` → `00_et_countries.txt`, 10 yedek override silindi. "
+        "Rapor artık 0 ölü ve 0 mod-içi çakışma gösteriyor. Kalan iş: Test B'nin "
+        "tek oturumda çalıştırılıp `Duplicated key` satırlarının bilgi sınıfında "
+        "doğrulanması ve `00_et_countries.txt` otoritesinin yeni log'da teyit "
+        "edilmesi."
     )
     lines.append("")
     return "\n".join(lines)

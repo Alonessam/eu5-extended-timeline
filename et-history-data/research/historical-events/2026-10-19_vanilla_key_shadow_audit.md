@@ -17,11 +17,14 @@ Kalıcı tarama: `et-history-data/scripts/script-token-audit.py`.
 > oyuna hiç girmiyordu. **Aynı gün uygulanan taşıma:** üç delta bloğu
 > rakibinden önce sıralanan dosyalara taşındı (`00_et_egypt.txt`,
 > `00_et_christianity.txt`, `00_aramaic.txt`) ve rapor yeniden üretildiğinde
-> üçü de YAŞIYOR; ölü kalan yalnızca `setup/countries` (174 tanım). Aşağıdaki
-> tablonun karar sütunları taşıma sonrası durumu gösterir. Aynı kural
-> `setup/countries` için de geçerli:
-> `et_countries.txt`'teki 174 tanım vanilla'ya yeniliyor ve 235 mod-içi çakışma
-> var (ayrıntı raporda).
+> üçü de YAŞIYOR. Aşağıdaki tablonun karar sütunları taşıma sonrası durumu
+> gösterir. Aynı kural `setup/countries` için de geçerliydi:
+> `et_countries.txt` 174 tanımda vanilla'ya, 103 tanımda erken sıralanan
+> aynı-yol override'a yeniliyordu; 132 override tanımı da `et_countries`'e
+> kaybediyordu. **20 Ekim ikinci düzeltme:** `et_countries.txt` →
+> `00_et_countries.txt` (tek otorite) ve 10 aynı-yol bölge override'ı silindi;
+> ayrıntı `2026-10-20_setup_authority_report.md`. Setup artık 0 ölü /
+> 0 mod-içi çakışma gösteriyor.
 
 ## Yöntem
 
@@ -60,7 +63,7 @@ Kaldırılan ve yeniden adlandırılanlar:
 | `french_group` | `culture_groups/et_culture_groups.txt` | Kaldırıldı | Vanilla'da zaten tanımlı boş grubun birebir yinelenmesi; mod tanımı silindi |
 | `burgundian` | `cultures/et_german.txt` | Yeniden adlandırıldı | `burgundii` oldu: antik Cermen kavmi. Vanilla Fransız `burgundian` yeniden yükleniyor; `et_culture.108` artık `culture:burgundii` kullanıyor; EN/TR loc eklendi (in_game + main_menu) |
 
-`burgundian` için mod kurulum referansları (`et_countries.txt`: BAR/LOR/NEV,
+`burgundian` için mod kurulum referansları (`00_et_countries.txt`: BAR/LOR/NEV,
 `france.txt`: AUX/NEV/TON) ortaçağ Fransız ülkeleridir ve artık vanilla
 tanımına çözülür — 58 CE kurulumunda bu etiketler yok.
 

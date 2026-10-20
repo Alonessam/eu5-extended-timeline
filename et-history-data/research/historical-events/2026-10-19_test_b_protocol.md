@@ -130,11 +130,15 @@ oturumundan gelir:
 - `Duplicated key ... will not be created`: 670 satır (et_german hariç;
   663 setup + 4 bilinen anahtar + 2 folk_european + 1 et_christianity).
   Taşıma sonrası aramaic/coptic/miaphysite satırlarında kaybeden dosya
-  vanilla olur; satır sayısı değişmez.
+  vanilla olur; satır sayısı değişmez. 20 Ekim setup fix'i sonrası 663 setup
+  satırının tamamında kaybeden vanilla bölge dosyasıdır;
+  `00_et_countries.txt` veya silinen override adı geçen setup satırı **0**
+  beklenir.
 - Kullanılmayan değişken uyarısı: 8 (`et_egypt_*` direnç/çoğunluk
   değişkenleri). Mısır zinciri bunları set ediyor, okumuyor; bilinçli kabul
   (18 Ekim analizi).
-- `could not be found in the database`: 1 (`ubian`, et_countries.txt:12849).
+- `could not be found in the database`: 1 (`ubian`, 18 Ekim:
+  `et_countries.txt:12849`; fix sonrası dosya `00_et_countries.txt`).
   `ubian` kültürü `et_german.txt:369`'da tanımlı; 18 Ekim satırı
   `swiss_culture {` sözdizimi hatasının alan çağlayanıydı (UPDATE 19:
   `swiss_culture = {`). Test B'de 0 beklenir.

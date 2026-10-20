@@ -120,10 +120,14 @@ aileleri, `setup/countries`) uygulayan offline denetim
 `coptic_culture`, `miaphysite` ve `aramaic_language` yüklemede vanilla'ya
 yeniliyordu; üçü de 20 Ekim'de taşıma yöntemiyle düzeltildi
 (`00_et_egypt.txt`, `00_et_christianity.txt`, `00_aramaic.txt`) ve rapor
-taşıma sonrası üretildiğinde yaşıyorlar. `setup/countries` tarafında 174 mod
-tanımı hâlâ ölü, 235 mod-içi çakışma var; etiket bazında uzlaştırma
-`vanilla_shadow_delivery_fix` kaydında izlenir. Test B bu satırları bilgi
-sınıfında tutmalı.
+taşıma sonrası üretildiğinde yaşıyorlar. `setup/countries` tarafında
+`et_countries.txt` 174 tanımda vanilla'ya yeniliyordu ve 10 aynı-yol bölge
+override'ı 235 mod-içi çakışma üretiyordu; 20 Ekim'de dosya
+`00_et_countries.txt` olarak yeniden adlandırıldı ve override'lar silindi
+(override'lar vanilla kopyasıydı; tek farkları `et_countries` ile aynı 17
+düzenlemeydi). Setup artık 663/663 yaşıyor; ayrıntı
+`2026-10-20_setup_authority_report.md`. Test B bu satırları bilgi sınıfında
+tutmalı; setup satırlarında kaybeden artık vanilla dosyasıdır.
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
