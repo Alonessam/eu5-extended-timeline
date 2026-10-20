@@ -77,13 +77,13 @@ sources:
     url: https://www.metmuseum.org/essays/the-art-of-the-abbasid-period-750-1258
     locator: Opening paragraph; Baghdad 762 and Samarra 836–892
   bl_eic:
-    title: IOR/B — East India Company administrative history
+    title: "IOR/B - Minutes of the East India Company's Directors and Proprietors"
     publisher: British Library Archives and Manuscripts Catalogue
     type: archival_catalogue
     url: https://searcharchives.bl.uk/catalog/032-000164862
-    locator: Administrative history, opening sentence, charter of 31 December 1600
-    access: search_index_excerpt
-    caveat: Catalogue excerpt was available; direct page fetch failed. Verify the full catalogue before territorial or monopoly-scope claims.
+    locator: "Administrative Context (charter of 31 December 1600, the 1698 and 1709 company names, the Charter Act of 1833), Scope and Content, the hierarchy of IOR/B/1-273 and IOR/Z/B, extent 275 volumes, date range 1599-1858"
+    access: full_catalogue_record
+    caveat: "The catalogue is an interim version issued while the service recovers from a cyber-attack; the record itself is complete, but the individual items are request-only and the enrolled charter text is not part of the catalogue record."
   nrm_stockton_darlington:
     title: Shildon, the Cradle of the Railways and Locomotion No.1
     publisher: National Railway Museum, Science Museum Group

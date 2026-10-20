@@ -9,7 +9,7 @@ records:
     dating: {precision: day, date: "1600.12.31", calendar: source_civil_date}
     source_refs: [{id: bl_eic, locator: "IOR/B administrative history, opening sentence"}]
     confidence: medium
-    integration: {status: collected, note: The archival search excerpt supports the date; full catalogue and organizational mapping need review before emission.}
+    integration: {status: applied, note: "Reviewed against the full catalogue record on 20 Oct 2026. The Administrative Context states that on 31 December 1600 Elizabeth I granted the charter to The Governor and Company of Merchants of London Trading into the East Indies and that it conferred the monopoly of English trade in the whole of Asia and the Pacific - a trade monopoly, not sovereignty. The record stays applied as a historical organization identity; no country tag, no territorial ownership and no event are created."}
   eic_charter_issuer:
     entity: English East India Company
     subject: organization_foundation
@@ -17,7 +17,7 @@ records:
     dating: {precision: day, date: "1600.12.31", calendar: source_civil_date}
     source_refs: [{id: bl_eic, locator: "IOR/B administrative history, opening sentence"}]
     confidence: medium
-    integration: {status: collected, note: Founding a trading corporation does not establish sovereignty over an Indian location.}
+    integration: {status: applied, note: "The catalogue names Elizabeth I as the grantor of the charter of 31 December 1600. Founding a trading corporation does not establish sovereignty over an Indian location, so no ownership, religion or tag change is derived from this record."}
   eic_original_name:
     entity: English East India Company
     subject: organization_identity
@@ -25,4 +25,43 @@ records:
     dating: {precision: day, date: "1600.12.31", calendar: source_civil_date}
     source_refs: [{id: bl_eic, locator: "IOR/B administrative history, opening sentence"}]
     confidence: medium
-    integration: {status: collected, note: Store as historical organization identity; no country tag or localization key has been invented.}
+    integration: {status: applied, note: "Stored as the historical organization identity with the exact chartered name. The catalogue adds the later names (1698 The English Company trading to the East Indies, 1709 The United Company of Merchants of England trading to the East Indies) and notes that East India Company was officially adopted only after the Charter Act of 1833. No country tag or localization key has been invented."}
+  eic_company_names:
+    entity: English East India Company
+    subject: organization_identity_over_time
+    finding: >-
+      The chartered corporation changed its name and legal form three times: the
+      charter of 31 December 1600 named The Governor and Company of Merchants
+      of London Trading into the East Indies; in 1698 a New Company was
+      chartered in opposition to the Old Company and adopted the name The
+      English Company trading to the East Indies; in 1709 the two companies were
+      amalgamated into The United Company of Merchants of England trading to
+      the East Indies; the name East India Company was officially adopted only
+      after the Charter Act of 1833 ended the commercial activities.
+    population: "not a population finding; a corporate identity sequence"
+    dating: {precision: year, year: 1600}
+    mechanism: "charter, amalgamation and statutory renaming recorded in the archival administrative history"
+    source_refs: [{id: bl_eic, locator: "Administrative Context, the 1698 and 1709 names and the Charter Act of 1833"}]
+    confidence: high
+    integration: {status: applied, target: research/early_modern/2026-10-13_eic.yml, note: "The name sequence is recorded as one finding with the three dates. Only the 1600 name is used for the organization identity; the later names are historical context, and no in-game tag or localization key is created for any of them."}
+  eic_court_structure:
+    entity: English East India Company
+    subject: organization_structure
+    finding: >-
+      The Old, New and United Companies operated with similar administrative
+      structures: a body of proprietors (stockholders) elected an executive
+      body, the Court, of 24 directors. The directors' meetings were known as
+      Courts of Committees until April 1699, after which a committee in that
+      sense was an individual director to whom day to day management was
+      committed, jointly with the Governor and 23 others. The minutes run on
+      an April to April administrative year, the General Court of Proprietors
+      minutes sit in the same volumes up to April 1833 and in a separate series
+      afterwards, and the series ends in 1858 when the executive functions
+      passed to a Secretary of State for India through the newly created India
+      Office.
+    population: "not a population finding; the corporate governance structure"
+    dating: {precision: year, year: 1600}
+    mechanism: "proprietors electing a Court of Directors, with a General Court of Proprietors"
+    source_refs: [{id: bl_eic, locator: "Administrative Context and Scope and Content, the Court of 24 directors, the April to April year, the 1833 and 1858 breaks"}]
+    confidence: high
+    integration: {status: applied, target: research/early_modern/2026-10-13_eic.yml, note: "The organizational representation is recorded as a finding: a chartered corporation with a Court of Directors and a General Court of Proprietors, ending in 1858 with the India Office. The record is not turned into a state, a country tag or a territorial change."}

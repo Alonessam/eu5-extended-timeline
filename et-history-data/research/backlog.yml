@@ -150,11 +150,34 @@ tasks:
   eic_full_archive_review:
     period_id: early_modern
     priority: 2
-    state: pending
-    targets: [research/early_modern/2026-10-13_eic.yml]
+    state: completed
+    targets: [research/early_modern/2026-10-13_eic.yml, et-history-data/research/sources.yml]
     source_refs: [bl_eic]
     question: Obtain the full IOR/B catalogue and charter text beyond the indexed excerpt.
-    acceptance: Verify charter scope and organizational representation; do not convert incorporation into territorial ownership.
+    evidence: >-
+      The full British Library catalogue record for IOR/B was retrieved on
+      20 Oct 2026 (Record Id 032-000164862, a fonds in ISAD(G), 275 volumes,
+      1599-1858) with its full hierarchy, the Scope and Content and the
+      Administrative Context. The charter of 31 December 1600 conferred the
+      monopoly of English trade in the whole of Asia and the Pacific - a trade
+      monopoly, not sovereignty - and the catalogue also gives the 1698 and
+      1709 company names, the Charter Act of 1833, the Court of 24 directors
+      elected by the proprietors, the April to April administrative year and
+      the 1858 transfer of the executive functions to the India Office. The
+      enrolled charter text itself is not in the catalogue record, and the
+      catalogue is an interim version issued while the service recovers from
+      a cyber-attack.
+    resolution: >-
+      Reviewed and documented on 20 Oct 2026 in
+      research/historical-events/2026-10-20_eic_catalogue_review.md. The three
+      existing records are now applied with the verified scope, and two new
+      records were added from the same catalogue: the name and legal form
+      sequence (1600, 1698, 1702, 1709, 1833) and the organizational
+      structure (proprietors, the Court of 24 directors, the General Court, the
+      committees, the 1858 break). The source entry now points at the full
+      record with the access level and the interim-catalogue caveat, and the
+      remaining limit - the enrolled charter text - is stated in the note.
+    acceptance: Verify charter scope and organizational representation; do not convert incorporation into territorial ownership. Met on 20 Oct 2026, the scope is the trade monopoly, the structure is recorded, and no territory, tag or religion is derived from the charter.
   railway_route_mapping:
     period_id: industrial
     priority: 2
