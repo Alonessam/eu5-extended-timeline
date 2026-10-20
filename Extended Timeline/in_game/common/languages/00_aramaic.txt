@@ -1,0 +1,57 @@
+﻿# Delivery fix (2026-10-20): aramaic_language lived in 00_et_mesopotamian.txt,
+# but that file sorts after vanilla 00_crescent.txt, so vanilla always won and
+# the ET ancient Aramaic names never reached the game. This file sorts before
+# 00_crescent.txt and holds the single live mod definition (vanilla body plus
+# the ET 58 CE names).
+
+aramaic_language = {
+	color = color_language_aramaic
+	family = semitic_language_family
+
+	male_names = {
+		Abba name_abraham Addai Ahudemmeh Aprahat Aphrem 
+		Babai Bardaisan Bartalan Behnam Butrus
+		name_cosmas
+		Eliya
+		Giwargi Griguriyus
+		Habib Henoch
+		Ishodad Ismail Iwannis
+		Mara Marqos Mikho Mushe
+		Narsai Nimatallah name_noah
+		Quriaqos
+		Shemun
+		Talmai Thaddai		
+		name_james Yawsep Yeshu Yulyanos
+		name_aram
+		#Assyrian
+		Betheil Daweska Dawis Diklat Febo Gewargis Malko Nona Rameel Ukba Yohanan Yohannan Yonan Yosip
+		# ET ancient Aramaic (58 CE)
+		Ma'nu Abgar Bakru Sanatruk Parthamaspates Paqor Aryu Abdu Fradhasht Wa'il Ezad Sumaqa Saphul Piqa Gebar'u Maz'ur
+	}
+	female_names = {
+		Asilah
+		Bruria
+		Idra
+		name_martha
+		Renda
+		Tabitha Talitha Thada
+		#Assyrian
+		Amirta Amirto Ator Ayana Batishwa Betheil Bredil Brula Diklat Il_shvai Imama Kasrin Khawa Nohara Nona
+		Shalita Shamiram
+		# ET ancient Aramaic (58 CE)
+		Anna Zenobia
+	}
+	dynasty_names = {
+		Bar_Abdoun Bar_Ebraya Bar_Gharib Bar_Kepha Bar_Khamoro Bar_Madani Bar_Mawdyono Bar_Qarya Bar_Qatra Bar_Sabuni Bar_Salibi Bar_Shinaya Bar_Shushan Bar_Wahbun Bar_Wahib
+	}
+	lowborn = {
+		Bar_Abdoun Bar_Ebraya Bar_Gharib Bar_Kepha Bar_Khamoro Bar_Madani Bar_Mawdyono Bar_Qarya Bar_Qatra Bar_Sabuni Bar_Salibi Bar_Shinaya Bar_Shushan Bar_Wahbun Bar_Wahib
+	}
+	
+	# to override the default adjective and noun database for cultural works
+	#adjective = {
+	#}
+	#noun = {
+	#}
+
+}

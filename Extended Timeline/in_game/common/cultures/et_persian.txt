@@ -25,6 +25,7 @@ tocharian = {
 	}
 	
 	culture_groups = {
+		turkic_group
 	}
 
 	use_patronym = yes

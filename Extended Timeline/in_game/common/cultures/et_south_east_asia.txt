@@ -9,6 +9,7 @@ pyu = {
 	opinions = {
 	}
 	culture_groups = {
+		tibeto_burman_group
 	}
 }
 
@@ -22,5 +23,6 @@ pear = {
 	opinions = {
 	}
 	culture_groups = {
+		austroasiatic_group
 	}
 }

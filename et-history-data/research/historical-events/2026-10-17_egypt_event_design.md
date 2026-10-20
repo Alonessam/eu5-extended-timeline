@@ -368,6 +368,7 @@ geçtikten sonra kaldırılır.
   console komut listesi doğrulandı (wiki 1.3): `event`, `test_event_trigger`,
   `event_probabilities` (yearly_country_pulse dökümü), `change_date`,
   `tick_day`, `Log.ClearErrorLog`. Geçici pencere yaması gereksizleşti.
+  Tek oturumluk koşum takımı: `2026-10-19_test_b_protocol.md`.
   Protokol:
   1. Kaydet; `Log.ClearErrorLog`; `event_probabilities yearly_country_pulse`
      → `error.log`'da `et_egypt_yearly_pulse` ve `et_nubia_yearly_pulse`
@@ -418,8 +419,8 @@ geçtikten sonra kaldırılır.
 5. Zincir doğrulanınca `et_culture.9000` emekli; README/backlog senkronu.
 
 **Durum:** 1–3 ✓ (17 Ekim 2026; Nübya eki 18 Ekim 2026). 4: Test A ✓;
-Test B `.1`–`.7` (console protokolü) sırada. 5: Test B geçince
-(9000 emekliliği + kayıt senkronu).
+Test B `.1`–`.7` koşum takımı hazır (`2026-10-19_test_b_protocol.md`),
+koşum sırada. 5: Test B geçince (9000 emekliliği + kayıt senkronu).
 
 Numara rezervasyonu (Samet ile mutabakat — **sağlandı**): Mısır `.1`–`.49`,
 Galya `.100`–`.149` (Galya `.101`–`.103` yürürlükte), sonraki bölgeler `.150`+.

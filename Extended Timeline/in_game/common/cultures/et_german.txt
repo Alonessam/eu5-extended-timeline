@@ -283,7 +283,7 @@ germanic_oceanian = {
 
 
 #in 1337 high_alemannic
-swiss_culture {
+swiss_culture = {
 	language = alemannic_dialect
 	
 	color = map_norwegian
@@ -381,7 +381,7 @@ ubian = {
 	}
 }
 
-burgundian = {
+burgundii = {
 	language = central_german_dialect
 	
 	color = rgb{ 100 50 150 }

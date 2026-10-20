@@ -1255,7 +1255,7 @@ et_culture.16 = {
 }
 
 # ===========================================================================
-# GAUL PILOT EVENTS (WS4: et_culture.101 - et_culture.103)
+# GAUL PILOT EVENTS (WS4: et_culture.101 - et_culture.104)
 # Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
 # Number reservation: Egypt .1-.49, Gaul .100-.149
 # ===========================================================================
@@ -1265,7 +1265,7 @@ et_culture.101 = {
 	type = country_event
 	title = et_culture.101.title
 	desc = et_culture.101.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.101.historical_info
 
 	illustration_tags = {
@@ -1294,15 +1294,15 @@ et_culture.101 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:lyon
-						location = location:paris
-						location = location:bordeaux
-						location = location:toulouse
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
-						location = location:reims
-						location = location:rouen
+						this = location:lyon
+						this = location:paris
+						this = location:bordeaux
+						this = location:toulouse
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
+						this = location:reims
+						this = location:rouen
 					}
 				}
 				every_pop = {
@@ -1333,7 +1333,7 @@ et_culture.102 = {
 	type = country_event
 	title = et_culture.102.title
 	desc = et_culture.102.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.102.historical_info
 
 	illustration_tags = {
@@ -1381,135 +1381,13 @@ et_culture.102 = {
 	}
 }
 
-# 3. Constitutio Antoniniana - Edict of Caracalla (MS 212–230)
+# 3. Lugdunum Martyrs & Urban Christianization (MS 177-350)
 et_culture.103 = {
 	type = country_event
 	title = et_culture.103.title
 	desc = et_culture.103.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.103.historical_info
-
-	illustration_tags = {
-		10 = regular
-		10 = interior
-	}
-
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = ROM
-		from = 212.1.1
-		to = 230.1.1
-		monthly_chance = 25
-	}
-
-	trigger = {
-		has_or_had_tag = ROM
-	}
-
-	option = {
-		name = et_culture.103.a
-		historical_option = yes
-		custom_tooltip = {
-			text = et_culture.103.tt
-			every_owned_location = {
-				every_pop = {
-					limit = {
-						culture = culture:gallian
-					}
-					change_pop_culture = culture:gallo_roman
-				}
-			}
-		}
-		add_prestige = prestige_extreme_bonus
-	}
-
-	option = {
-		name = et_culture.103.b
-		add_prestige = prestige_mild_penalty
-	}
-}
-
-# ===========================================================================
-# GAUL PHASE 2 EVENTS (WS4: et_culture.104 - et_culture.107)
-# Period: Crisis of the Third Century & Christianization (MS 250-500)
-# Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
-# ===========================================================================
-
-# 4. Imperium Galliarum (MS 260-274)
-et_culture.104 = {
-	type = country_event
-	title = et_culture.104.title
-	desc = et_culture.104.desc
-	outcome = neutral
-	historical_info = et_culture.104.historical_info
-
-	illustration_tags = {
-		10 = regular
-		10 = interior
-	}
-
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = ROM
-		from = 260.1.1
-		to = 274.1.1
-		monthly_chance = 20
-	}
-
-	trigger = {
-		has_or_had_tag = ROM
-		owns = location:lyon
-	}
-
-	option = {
-		name = et_culture.104.a
-		historical_option = yes
-		custom_tooltip = {
-			text = et_culture.104.tt
-			every_owned_location = {
-				limit = {
-					OR = {
-						location = location:lyon
-						location = location:paris
-						location = location:bordeaux
-						location = location:toulouse
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
-						location = location:reims
-						location = location:rouen
-					}
-				}
-				every_pop = {
-					limit = {
-						culture = culture:gallian
-						OR = {
-							pop_type = pop_type:nobles
-							pop_type = pop_type:clergy
-							pop_type = pop_type:burghers
-						}
-					}
-					change_pop_culture = culture:gallo_roman
-				}
-			}
-		}
-		add_prestige = prestige_mild_bonus
-	}
-
-	option = {
-		name = et_culture.104.b
-		add_stability = -10
-		add_prestige = prestige_mild_penalty
-	}
-}
-
-# 5. Lugdunum Martyrs & Urban Christianization (MS 177-350)
-et_culture.105 = {
-	type = country_event
-	title = et_culture.105.title
-	desc = et_culture.105.desc
-	outcome = good
-	historical_info = et_culture.105.historical_info
 
 	illustration_tags = {
 		10 = regular
@@ -1530,22 +1408,22 @@ et_culture.105 = {
 	}
 
 	option = {
-		name = et_culture.105.a
+		name = et_culture.103.a
 		historical_option = yes
 		custom_tooltip = {
-			text = et_culture.105.tt
+			text = et_culture.103.tt
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:lyon
-						location = location:paris
-						location = location:bordeaux
-						location = location:toulouse
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
-						location = location:reims
-						location = location:rouen
+						this = location:lyon
+						this = location:paris
+						this = location:bordeaux
+						this = location:toulouse
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
+						this = location:reims
+						this = location:rouen
 					}
 				}
 				every_pop = {
@@ -1556,7 +1434,129 @@ et_culture.105 = {
 							pop_type = pop_type:burghers
 						}
 					}
-					change_pop_religion = religion:chalcedonism
+					change_pop_religion = religion:catholic
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.103.b
+		add_stability = -5
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 4. Constitutio Antoniniana - Edict of Caracalla (MS 212–230)
+et_culture.104 = {
+	type = country_event
+	title = et_culture.104.title
+	desc = et_culture.104.desc
+	outcome = positive
+	historical_info = et_culture.104.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 212.1.1
+		to = 230.1.1
+		monthly_chance = 25
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+	}
+
+	option = {
+		name = et_culture.104.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.104.tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:gallian
+					}
+					change_pop_culture = culture:gallo_roman
+				}
+			}
+		}
+		add_prestige = prestige_extreme_bonus
+	}
+
+	option = {
+		name = et_culture.104.b
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# ===========================================================================
+# GAUL PHASE 2 EVENTS (WS4: et_culture.105 - et_culture.107)
+# Period: Imperial Crisis, Christianization & Migration (MS 260-550)
+# Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
+# ===========================================================================
+
+# 5. Imperium Galliarum (MS 260-274)
+et_culture.105 = {
+	type = country_event
+	title = et_culture.105.title
+	desc = et_culture.105.desc
+	outcome = neutral
+	historical_info = et_culture.105.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ROM
+		from = 260.1.1
+		to = 274.1.1
+		monthly_chance = 20
+	}
+
+	trigger = {
+		has_or_had_tag = ROM
+		owns = location:lyon
+	}
+
+	option = {
+		name = et_culture.105.a
+		historical_option = yes
+		custom_tooltip = {
+			text = et_culture.105.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						this = location:lyon
+						this = location:paris
+						this = location:bordeaux
+						this = location:toulouse
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
+						this = location:reims
+						this = location:rouen
+					}
+				}
+				every_pop = {
+					limit = {
+						culture = culture:gallian
+						OR = {
+							pop_type = pop_type:nobles
+							pop_type = pop_type:clergy
+							pop_type = pop_type:burghers
+						}
+					}
+					change_pop_culture = culture:gallo_roman
 				}
 			}
 		}
@@ -1565,7 +1565,7 @@ et_culture.105 = {
 
 	option = {
 		name = et_culture.105.b
-		add_stability = -5
+		add_stability = -10
 		add_prestige = prestige_mild_penalty
 	}
 }
@@ -1575,7 +1575,7 @@ et_culture.106 = {
 	type = country_event
 	title = et_culture.106.title
 	desc = et_culture.106.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.106.historical_info
 
 	illustration_tags = {
@@ -1604,15 +1604,15 @@ et_culture.106 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:lyon
-						location = location:paris
-						location = location:bordeaux
-						location = location:toulouse
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
-						location = location:reims
-						location = location:rouen
+						this = location:lyon
+						this = location:paris
+						this = location:bordeaux
+						this = location:toulouse
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
+						this = location:reims
+						this = location:rouen
 					}
 				}
 				every_pop = {
@@ -1622,7 +1622,7 @@ et_culture.106 = {
 							pop_type = pop_type:peasants
 						}
 					}
-					change_pop_religion = religion:chalcedonism
+					change_pop_religion = religion:catholic
 				}
 			}
 		}
@@ -1635,7 +1635,7 @@ et_culture.106 = {
 	}
 }
 
-# 7. Breton Migration to Armorica (MS 380-500)
+# 7. Breton Migration to Armorica (MS 380-550)
 et_culture.107 = {
 	type = country_event
 	title = et_culture.107.title
@@ -1652,7 +1652,7 @@ et_culture.107 = {
 	dynamic_historical_event = {
 		tag = ROM
 		from = 380.1.1
-		to = 500.1.1
+		to = 550.1.1
 		monthly_chance = 10
 	}
 
@@ -1671,8 +1671,8 @@ et_culture.107 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:brest
-						location = location:saint_malo
+						this = location:brest
+						this = location:saint_malo
 					}
 				}
 				every_pop = {
@@ -1733,12 +1733,12 @@ et_culture.108 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:geneve
-						location = location:lyon
+						this = location:geneve
+						this = location:lyon
 					}
 				}
 				add_pop = {
-					culture = culture:burgundian
+					culture = culture:burgundii
 					religion = religion:arianism
 					type = pop_type:peasants
 					size = 2
@@ -1747,8 +1747,8 @@ et_culture.108 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:toulouse
-						location = location:bordeaux
+						this = location:toulouse
+						this = location:bordeaux
 					}
 				}
 				add_pop = {
@@ -1773,7 +1773,7 @@ et_culture.109 = {
 	type = country_event
 	title = et_culture.109.title
 	desc = et_culture.109.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.109.historical_info
 
 	illustration_tags = {
@@ -1802,10 +1802,10 @@ et_culture.109 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:soissons
-						location = location:paris
-						location = location:reims
-						location = location:rouen
+						this = location:soissons
+						this = location:paris
+						this = location:reims
+						this = location:rouen
 					}
 				}
 				every_pop = {
@@ -1834,7 +1834,7 @@ et_culture.110 = {
 	type = country_event
 	title = et_culture.110.title
 	desc = et_culture.110.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.110.historical_info
 
 	illustration_tags = {
@@ -1862,11 +1862,11 @@ et_culture.110 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:paris
-						location = location:soissons
-						location = location:reims
-						location = location:rouen
-						location = location:orleans
+						this = location:paris
+						this = location:soissons
+						this = location:reims
+						this = location:rouen
+						this = location:orleans
 					}
 				}
 				every_pop = {
@@ -1927,14 +1927,14 @@ et_culture.111 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:paris
-						location = location:rouen
-						location = location:reims
-						location = location:orleans
-						location = location:tours
-						location = location:rennes
-						location = location:nantes
-						location = location:soissons
+						this = location:paris
+						this = location:rouen
+						this = location:reims
+						this = location:orleans
+						this = location:tours
+						this = location:rennes
+						this = location:nantes
+						this = location:soissons
 					}
 				}
 				every_pop = {
@@ -1947,11 +1947,11 @@ et_culture.111 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:toulouse
-						location = location:bordeaux
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
+						this = location:toulouse
+						this = location:bordeaux
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
 					}
 				}
 				every_pop = {
@@ -1964,8 +1964,8 @@ et_culture.111 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:lyon
-						location = location:geneve
+						this = location:lyon
+						this = location:geneve
 					}
 				}
 				every_pop = {
@@ -1990,7 +1990,7 @@ et_culture.112 = {
 	type = country_event
 	title = et_culture.112.title
 	desc = et_culture.112.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.112.historical_info
 
 	illustration_tags = {
@@ -2015,8 +2015,13 @@ et_culture.112 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.112.tt
-			culture:gallo_roman = {
-				change_language = dialect:french_language
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:gallo_roman
+					}
+					change_language = dialect:french_language
+				}
 			}
 		}
 		add_prestige = prestige_mild_bonus
@@ -2050,9 +2055,6 @@ et_culture.113 = {
 	}
 
 	trigger = {
-		owns = location:caen
-		owns = location:cherbourg
-		owns = location:bayeux
 		owns = location:rouen
 	}
 
@@ -2061,30 +2063,6 @@ et_culture.113 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.113.tt
-			location:caen = {
-				add_pop = {
-					culture = culture:norman
-					religion = religion:catholic
-					type = pop_type:peasants
-					size = 2
-				}
-			}
-			location:cherbourg = {
-				add_pop = {
-					culture = culture:norman
-					religion = religion:catholic
-					type = pop_type:peasants
-					size = 2
-				}
-			}
-			location:bayeux = {
-				add_pop = {
-					culture = culture:norman
-					religion = religion:catholic
-					type = pop_type:peasants
-					size = 2
-				}
-			}
 			location:rouen = {
 				add_pop = {
 					culture = culture:norman
@@ -2141,11 +2119,10 @@ et_culture.114 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:toulouse
-						location = location:bordeaux
-						location = location:nimes
-						location = location:arles
-						location = location:marseille
+						this = location:toulouse
+						this = location:nimes
+						this = location:arles
+						this = location:marseille
 					}
 				}
 				every_pop = {
@@ -2174,7 +2151,7 @@ et_culture.115 = {
 	type = country_event
 	title = et_culture.115.title
 	desc = et_culture.115.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.115.historical_info
 
 	illustration_tags = {
@@ -2202,13 +2179,13 @@ et_culture.115 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:paris
-						location = location:rouen
-						location = location:reims
-						location = location:orleans
-						location = location:tours
-						location = location:caen
-						location = location:soissons
+						this = location:paris
+						this = location:rouen
+						this = location:reims
+						this = location:orleans
+						this = location:tours
+						this = location:caen
+						this = location:soissons
 					}
 				}
 				every_pop = {
@@ -2243,7 +2220,7 @@ et_culture.116 = {
 	type = country_event
 	title = et_culture.116.title
 	desc = et_culture.116.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.116.historical_info
 
 	illustration_tags = {
@@ -2268,17 +2245,18 @@ et_culture.116 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.116.tt
-			culture:gallo_roman = {
-				change_language = dialect:french_language
-			}
-			culture:occitan = {
-				change_language = dialect:french_language
-			}
-			culture:arpitan = {
-				change_language = dialect:french_language
-			}
-			culture:norman = {
-				change_language = dialect:french_language
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:gallo_roman
+							culture = culture:occitan
+							culture = culture:arpitan
+							culture = culture:norman
+						}
+					}
+					change_language = dialect:french_language
+				}
 			}
 		}
 		add_prestige = prestige_mild_bonus
@@ -2323,13 +2301,13 @@ et_culture.117 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:paris
-						location = location:rouen
-						location = location:orleans
-						location = location:tours
-						location = location:nantes
-						location = location:bordeaux
-						location = location:toulouse
+						this = location:paris
+						this = location:rouen
+						this = location:orleans
+						this = location:tours
+						this = location:nantes
+						this = location:bordeaux
+						this = location:toulouse
 					}
 				}
 				every_pop = {
@@ -2355,7 +2333,7 @@ et_culture.118 = {
 	type = country_event
 	title = et_culture.118.title
 	desc = et_culture.118.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.118.historical_info
 
 	illustration_tags = {
@@ -2383,19 +2361,19 @@ et_culture.118 = {
 			every_owned_location = {
 				limit = {
 					OR = {
-						location = location:paris
-						location = location:rouen
-						location = location:reims
-						location = location:orleans
-						location = location:tours
-						location = location:caen
-						location = location:nantes
-						location = location:toulouse
-						location = location:bordeaux
-						location = location:lyon
-						location = location:marseille
-						location = location:nimes
-						location = location:arles
+						this = location:paris
+						this = location:rouen
+						this = location:reims
+						this = location:orleans
+						this = location:tours
+						this = location:caen
+						this = location:nantes
+						this = location:toulouse
+						this = location:bordeaux
+						this = location:lyon
+						this = location:marseille
+						this = location:nimes
+						this = location:arles
 					}
 				}
 				every_pop = {
@@ -2435,7 +2413,7 @@ et_culture.119 = {
 	type = country_event
 	title = et_culture.119.title
 	desc = et_culture.119.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.119.historical_info
 
 	illustration_tags = {
@@ -2526,7 +2504,7 @@ et_culture.121 = {
 	type = country_event
 	title = et_culture.121.title
 	desc = et_culture.121.desc
-	outcome = good
+	outcome = positive
 	historical_info = et_culture.121.historical_info
 
 	illustration_tags = {
@@ -2606,7 +2584,8 @@ et_culture.122 = {
 		historical_option = yes
 		custom_tooltip = {
 			text = et_culture.122.tt
-			location:paris = {
+			every_owned_location = {
+				limit = { this = location:paris }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2626,7 +2605,8 @@ et_culture.122 = {
 					size = 2
 				}
 			}
-			location:lyon = {
+			every_owned_location = {
+				limit = { this = location:lyon }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2646,7 +2626,8 @@ et_culture.122 = {
 					size = 2
 				}
 			}
-			location:marseille = {
+			every_owned_location = {
+				limit = { this = location:marseille }
 				add_pop = {
 					culture = culture:algerian
 					religion = religion:sunni
@@ -2672,7 +2653,8 @@ et_culture.122 = {
 					size = 2
 				}
 			}
-			location:lille = {
+			every_owned_location = {
+				limit = { this = location:lille }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2686,7 +2668,8 @@ et_culture.122 = {
 					size = 2
 				}
 			}
-			location:bordeaux = {
+			every_owned_location = {
+				limit = { this = location:bordeaux }
 				add_pop = {
 					culture = culture:portuguese
 					religion = religion:catholic
@@ -2694,7 +2677,8 @@ et_culture.122 = {
 					size = 2
 				}
 			}
-			location:toulouse = {
+			every_owned_location = {
+				limit = { this = location:toulouse }
 				add_pop = {
 					culture = culture:castilian
 					religion = religion:catholic

@@ -2627,6 +2627,9 @@ yupighyt_culture = {	#https://en.wikipedia.org/wiki/Siberian_Yupik
 	opinions = {
 
 	}
+	culture_groups = {
+		yupik_group
+	}
 }
 
 nanai_culture = { #https://en.wikipedia.org/wiki/Nanai_people
@@ -2906,6 +2909,7 @@ jinhan = { #Peninsular Japonic
 	opinions = {
 	}
 	culture_groups = {
+		japanese_group
 	}
 }
 

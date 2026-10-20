@@ -6,7 +6,7 @@
 
 	definition_modifier = {
 		global_defensive = 0.1
-		trade_efficiency = small_trade_efficiency_bonus
+		selling_efficiency = small_trade_efficiency_bonus
 		global_pop_food_consumption = -0.1
 	}
 	tags = {
@@ -22,7 +22,7 @@ atenism = {
 
 	definition_modifier = {
 		global_defensive = 0.1	
-		trade_efficiency = small_trade_efficiency_bonus
+		selling_efficiency = small_trade_efficiency_bonus
 		global_pop_food_consumption = -0.1
 	}
 

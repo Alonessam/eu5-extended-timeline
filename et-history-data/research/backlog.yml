@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: "2026-10-18"
+updated_on: "2026-10-20"
 tasks:
   roman_succession_dates:
     period_id: ancient
@@ -406,7 +406,156 @@ tasks:
       entries were added. Open: Test B must be rerun and must cover the ROM ->
       FRAN hand-off; the gallo_roman coverage outside the city lists remains an
       accepted abstraction (normal assimilation continues after the seeds).
-      UPDATE 14 (2026-10-18, Egypt track Nubia extension): the last unblocked
+      UPDATE 14 (2026-10-18, Gaul script fixes and data-layer close-out):
+      commit 8c8279a landed the script-side fixes - the duplicate
+      illustration_tags key "10" became "0"/"1" in all 29 events, .122 wrapped
+      its six city conversions in every_owned_location guards, .114 dropped
+      bordeaux (Gascony was English in 1209-1229), and .112/.116 replaced the
+      culture-scoped change_language with the every_owned_location/every_pop
+      pattern. The data-layer pass that closed the record task checked the
+      record layer against the script: 22 records, every one carrying populated
+      source_refs, all 27 cited source ids resolving in sources.yml (100
+      entries). No record was missing and no source_refs was empty, so the
+      backfill item closed without new sourcing. The 12 integration statuses
+      that UPDATE 13 had left pending (.105-.118) now read applied and their
+      notes describe the implemented mechanics - windows, pop filters,
+      split_pop fractions and city lists - including the UPDATE 14 changes.
+      Open: Test B in-game validation still gates the chain; the pending ->
+      applied flip records the implemented script, not an in-game
+      confirmation, and et_culture.9000 retires after it.
+      UPDATE 15 (2026-10-18, Gaul audit section 5 fixes): all seven minor
+      findings are resolved. Religion: chalcedonism was anachronistic for the
+      177 and 371-400 records (Chalcedon = 451), so .103 (Lugdunum martyrs,
+      formerly .105) and .106 (Martin of Tours) now convert to catholic, the
+      mod's Western Latin Nicene key; the .tt copy dropped the Chalcedon name
+      and the chalcedonism-vs-catholic split is gone. Window: .107 (Breton
+      migration) now runs 380-550 to match the record dating. Numbering: the
+      Roman-phase IDs ascend by start date - .103 = Lugdunum martyrs (177),
+      .104 = Caracalla (212), .105 = Imperium Galliarum (260); event text, en/tr
+      localization keys and integration targets follow. Scope: .113 (Norman
+      settlement) adds norman pops at rouen only, the 911 treaty lower-Seine
+      grant - the Cotentin, the Bessin and Caen were Normanized later and left
+      the 911 window. Copy: .115 desc names the cultures actually converted
+      (norman, arpitan, frankish) and the geography covered (Seine to Loire),
+      replacing the Breton/Burgundian and Loire-to-Rhine overstatement. en/tr
+      key parity holds; no chalcedonism token remains in the chain.
+      UPDATE 16 (2026-10-19, offline token audit close-out): the remaining script
+      audit ran without a game launch over all 108 mod .txt files under in_game
+      and main_menu. It checked prefixed refs (location/culture/religion/
+      pop_type/area/language), country tags, script-value constants, outcome
+      enums, illustration tag values, define_pop culture/religion/type keys and
+      the event/on_action field names against the vanilla corpus. No unresolved
+      token remains. Two defects were fixed: (1) 13 Gaul events carried
+      outcome = good, but vanilla only uses neutral/negative/positive
+      (7353/126/51 uses), so all 13 became outcome = positive; (2) the UPDATE 14
+      illustration change from key 10 to 0/1 was reverted because vanilla writes
+      the repeated key 10 in 10246 illustration_tags entries and never 0/1 - all
+      28 active events and the commented region-chain template again read
+      10 = regular / 10 = interior, the pre-8c8279a format. The last undefined
+      gfx tags were replaced with vanilla-used tokens (see
+      invalid_culture_gfx_tags); iberian_gfx is retained because vanilla culture
+      files use it as an asset-lookup fallback. Post-fix scan: 0 unresolved
+      refs, tags, constants, fields, enum values, define_pop keys or gfx tags.
+      UPDATE 17 (2026-10-19, vanilla-key shadow review): the additive
+      (et_-prefixed) files were compared key-by-key with vanilla, same-named
+      overrides excluded. Nine deliberate redefinitions remain, each now a
+      vanilla body plus a documented delta (see the shadow audit note);
+      french_group was removed and burgundian renamed burgundii so vanilla's
+      French culture loads for the medieval setup countries. The same scan fixed
+      the undefined folk_caucasian_group, three invalid modifier keys
+      (army_cavalry_power, global_build_buildings_cost x4, trade_efficiency x3),
+      berber's undefined berber_group and a stray BOM in et_uralic.txt. The
+      permanent audit now also checks religion groups, culture groups and
+      definition_modifier keys; the full 108-file scan reports no unresolved
+      token.
+      UPDATE 18 (2026-10-19, culture group gaps close-out): the
+      culture_group_gaps_remaining task is complete. Fourteen groupless
+      cultures were linked to vanilla successor groups (pannonian ->
+      carpathian_group, illyrian -> slavic_group south_slavic_group, tocharian
+      -> turkic_group, pyu -> tibeto_burman_group, pear -> austroasiatic_group,
+      hunnic -> turkic_group steppe_group, jukun -> volta_niger_group, apache
+      -> nadene_group, bantu -> bantu_group, garjati -> indian_group
+      indo_aryan_group, tepic -> yutonahua_group, kanek_culture -> maya_group,
+      jinhan -> japanese_group, yupighyt_culture -> yupik_group) and arvanite
+      stays groupless on purpose. The 2026-10-17 scan had silently skipped the
+      first block of every file (jukun and hunnic were never triaged; the "37
+      remaining" was actually 39); the East Asia cluster was re-checked with a
+      language-sibling scan, which found the jinhan/yupighyt exceptions. The
+      permanent audit gained a groupless-culture check with the 25 intentional
+      cases allowlisted. The shadow audit note's religion count was corrected
+      to 480. Full record:
+      research/historical-events/2026-10-19_culture_group_gaps.md.
+      UPDATE 19 (2026-10-19, pre-Test-B data repairs): four defect classes
+      closed before the Test B launch. Script: et_culture_events.txt carried
+      103 "location = location:X" links, every one inside an
+      every_owned_location guard; each became the vanilla this = location:X
+      form (the 18 Oct debug.log logged exactly 103 "Invalid scope types"
+      lines for this file). The 13 outcome = good sites had already been
+      fixed to positive by UPDATE 16 - re-verified, no action. Cultures:
+      et_german.txt:286 "swiss_culture {" was missing its = and drove the
+      286-412 parse cascade plus 40 "Duplicated key" messages in the log;
+      fixed in place. A jewish culture was added to et_arabia.txt (language
+      = hebrew_language, color = religion_jewish, tags = jewish_gfx
+      middle_east_gfx, culture_groups = jewish_group arabic_group, the
+      documented mizrahi pattern; the en/tr name loc already existed). It
+      resolves the four location_templates "culture = jewish" refs
+      (Jerusalem, Gaza, Hebron, Jaffa; religion = judaism). Languages: the
+      five language keys referenced only by the et_missing cultures but
+      defined nowhere (farsi, ancient_greek, berber, old_church_slavonic,
+      proto_germanic) are now defined with the gothic pattern (color +
+      family where vanilla has one + fallback to the vanilla language, so
+      name pools come from vanilla): proto_germanic ->
+      00_et_germany.txt (germanic family, german fallback);
+      old_church_slavonic and ancient_greek -> 00_et_balkan.txt (slavic
+      family with church_slavonic fallback; greek has no vanilla family, so
+      fallback = greek_language only); berber -> 00_et_african.txt (fallback
+      tamazight_language); farsi -> 00_et_central_asia.txt (iranic family,
+      fallback persian_language). Turkish names went to all four TR loc
+      files (in_game + main_menu, normal + replace): Antik Grekçe,
+      Berberice, Farsça, Eski Kilise Slavcası, Proto-Germence. Environment:
+      the redundant game/mod/Extended Timeline junction was removed after
+      the mount analysis (the Documents junction is the actual load path and
+      the content was read once, so this only clears the second mount entry
+      from future logs). The 108-file token audit re-ran clean. Test B
+      (single launch; R1 Egypt, R2-R3 Gaul) still gates the class-1
+      language-reference mystery, gaul_record_backfill,
+      gaul_dhe_tag_binding_review and the et_culture.9000 retirement.
+      UPDATE 20 (2026-10-20, offline delivery audit): the 18 Oct debug.log
+      duplicate-key lines showed that the 2026-10-19 audit had compared
+      definitions statically but never checked which copy the engine loads.
+      The confirmed rule (within one DB the earliest relative file path wins;
+      a same-path mod file replaces vanilla and is not a rival) was applied
+      offline by the new script scripts/shadow-audit.py across languages,
+      cultures, religions, culture/religion groups, language families and
+      setup/countries; report
+      research/historical-events/2026-10-20_vanilla_shadow_report.md. Of the
+      nine documented redefinitions, three deltas never reach the game:
+      coptic_culture (vanilla egypt.txt over et_egypt.txt), miaphysite
+      (christian.txt over et_christianity.txt) and aramaic_language
+      (00_crescent.txt over 00_et_mesopotamian.txt); gothic_language,
+      alan_paganism and hellenism_religion win, haixi/hurga have a single
+      live definition and yearly_country_pulse is the on_action merge
+      exception (no duplicate line in the log). setup/countries: 663
+      duplicated keys - 174 mod definitions dead (all et_countries.txt;
+      vanilla winners balkans/egypt/eastcoast etc.), 235 mod-internal
+      collisions with differing content, and 254 mod wins over vanilla region
+      files (north_germany 38, south_germany/west_africa 32, italy 30). The
+      four 18 Oct log lines match the computed winners. No data changed; the
+      fix path (move before the rival, same-path full override, drop the
+      delta) is tracked as vanilla_shadow_delivery_fix; Test B must keep
+      these lines in the info class.
+      UPDATE 21 (2026-10-20, delta delivery fix): the three dead deltas were
+      moved into files that sort before their vanilla rivals -
+      coptic_culture -> common/cultures/00_et_egypt.txt, miaphysite ->
+      common/religions/00_et_christianity.txt and aramaic_language ->
+      common/languages/00_aramaic.txt - with the old blocks removed from
+      et_egypt.txt, et_christianity.txt and 00_et_mesopotamian.txt (deltas
+      unchanged). The regenerated shadow report shows 0 dead outside
+      setup/countries: languages/cultures/religions are all alive (174 dead
+      total = setup only; 260 alive, 235 mod-internal). setup/countries
+      remains open: 174 et_countries.txt definitions still lose to vanilla
+      and 235 mod-internal keys disagree.
+      UPDATE 22 (2026-10-18, Egypt track Nubia extension; renumbered at the origin/main sync): the last unblocked
       data-first step, the Nubia chain, was implemented as et_culture.6
       ("The Silence of Meroe", 300-450; kushite -> nubian, 0.60 historical /
       0.20 resistance in butana_area + nubia_proper_area) and et_culture.7
@@ -420,7 +569,7 @@ tasks:
       nubia_state_layer_543_707 below. Kushite pops in Darfur and west of the two
       areas stay outside this v1 scope. Test B now spans .1-.7 (Nubia turn
       separate); records remain pending until it passes.
-      UPDATE 15 (2026-10-18, Egypt political chain, batch 1): the first
+      UPDATE 23 (2026-10-18, Egypt political chain, batch 1; renumbered at the origin/main sync): the first
       political batch (et_culture.8-.16; records in
       historical-events/2026-10-18_egypt_political_timeline.yml, design note
       2026-10-18_egypt_political_chain_design.md) covers every polity that
@@ -466,8 +615,8 @@ tasks:
   culture_group_gaps_remaining:
     period_id: ancient
     priority: 3
-    state: pending
-    targets: [Extended Timeline/in_game/common/cultures/et_balkans.txt, Extended Timeline/in_game/common/cultures/et_persian.txt, Extended Timeline/in_game/common/cultures/et_south_east_asia.txt, Extended Timeline/in_game/common/cultures/et_missing.txt]
+    state: completed
+    targets: [Extended Timeline/in_game/common/cultures/et_balkans.txt, Extended Timeline/in_game/common/cultures/et_persian.txt, Extended Timeline/in_game/common/cultures/et_south_east_asia.txt, Extended Timeline/in_game/common/cultures/et_missing.txt, Extended Timeline/in_game/common/cultures/et_subsaharan.txt, Extended Timeline/in_game/common/cultures/et_turkic.txt, Extended Timeline/in_game/common/cultures/east_asia.txt]
     source_refs: []
     question: Which successor culture groups should the remaining groupless mod cultures receive (pannonian, illyrian, tocharian, pyu, pear, and the et_missing fallback set)?
     evidence: >-
@@ -476,12 +625,37 @@ tasks:
       non-East-Asia entries are triaged in
       research/historical-events/2026-10-17_culture_graph_audit.md; the 26-entry
       East Asia cluster mirrors vanilla groupless isolates and is out of scope.
+      UPDATE 17 fixed the berber culture's undefined berber_group (now
+      amazigh_group maghrebi_group, matching vanilla eastern_amazigh); the
+      pannonian/illyrian/tocharian/pyu/pear calls and the groupless fallback set
+      remain open.
+      UPDATE (2026-10-19): the original scan had skipped the first block of
+      every file, so jukun (et_subsaharan.txt) and hunnic (et_turkic.txt) were
+      never triaged; the true remainder was 39 records, not 37. A
+      language-sibling scan of the East Asia cluster then found two exceptions
+      to its isolate rationale: jinhan (modelled as Peninsular Japonic) and
+      yupighyt_culture (Siberian Yupik).
     acceptance: Assign only groups with a documented successor relation using vanilla group ids; leave intentionally isolate cultures groupless.
+    resolution: >-
+      Completed 2026-10-19. Fourteen assignments, each traced to a vanilla
+      successor group: pannonian -> carpathian_group, illyrian -> slavic_group
+      south_slavic_group, tocharian -> turkic_group, pyu ->
+      tibeto_burman_group, pear -> austroasiatic_group, hunnic -> turkic_group
+      steppe_group, jukun -> volta_niger_group, apache -> nadene_group, bantu
+      -> bantu_group, garjati -> indian_group indo_aryan_group, tepic ->
+      yutonahua_group, kanek_culture -> maya_group, jinhan -> japanese_group,
+      yupighyt_culture -> yupik_group (all decisions confirmed with the
+      maintainer). arvanite stays groupless on purpose: the Albanian line has
+      no vanilla culture group and the key is unused. The remaining 24 East
+      Asia cultures have no grouped relative in their language family and stay
+      groupless. The permanent audit now fails on any groupless culture
+      outside the 25-entry allowlist. Full record:
+      research/historical-events/2026-10-19_culture_group_gaps.md.
   invalid_culture_gfx_tags:
     period_id: ancient
     priority: 3
-    state: pending
-    targets: [Extended Timeline/in_game/common/cultures/et_egypt.txt, Extended Timeline/in_game/common/cultures/et_missing.txt, Extended Timeline/in_game/common/cultures/et_french.txt]
+    state: completed
+    targets: [Extended Timeline/in_game/common/cultures/et_egypt.txt, Extended Timeline/in_game/common/cultures/et_missing.txt, Extended Timeline/in_game/common/cultures/et_iberian.txt]
     source_refs: []
     question: Which mod culture files use gfx tags that are not defined in the vanilla graphical culture types list?
     evidence: >-
@@ -496,10 +670,23 @@ tasks:
       southern_european_gfx (et_french.txt, occitan -> occitan_gfx) and flagged
       iberian_gfx (et_french.txt:42, aquitanian) as a further undefined tag.
     acceptance: Replace only with tags verified in the vanilla list; keep regional intent reviewed by maintainers; graphics fallback is the expected current effect.
+    resolution: >-
+      Completed 2026-10-19 (UPDATE 16). et_egypt.txt helleno_egyptian:
+      middle_eastern_gfx -> egyptian_gfx. et_missing.txt: tepic and
+      kanek_culture mesoamerican_gfx -> aztec_gfx american_gfx; bedouin
+      middle_eastern_gfx -> middle_east_gfx; berber north_african_gfx
+      middle_eastern_gfx -> amazigh_gfx middle_east_gfx; persian iranian_gfx
+      middle_eastern_gfx -> persian_gfx middle_east_gfx; alan steppe_gfx ->
+      caucasian_gfx eastern_european_gfx. iberian_gfx stays:
+      vanilla/common/cultures/iberian.txt (lines 27-129) and israelite.txt use
+      it as a fallback tag, and 00_graphical_culture_types.txt states fallbacks
+      need not match defined graphical cultures. The aquitanian block flagged at
+      et_french.txt:42 now lives in et_iberian.txt:284. A post-fix scan of all
+      108 mod scripts finds no undefined-and-unused gfx tag.
   vanilla_key_shadow_review:
     period_id: ancient
     priority: 3
-    state: pending
+    state: completed
     targets: [Extended Timeline/in_game/common]
     source_refs: []
     question: Which additive (et_-prefixed) mod files redefine keys that already exist in vanilla, and does any redefinition drop vanilla content instead of carrying a deliberate, documented delta?
@@ -517,10 +704,61 @@ tasks:
       hellenism_religion, alan_paganism, aramaic_language and gothic_language
       redefinitions are believed intentional but are unreviewed under this rule.
     acceptance: Every remaining additive redefinition is kept only as a verbatim vanilla copy plus a documented delta, or removed so the vanilla definition loads; the audit note lists each kept redefinition and its delta.
+    resolution: >-
+      Completed 2026-10-19. The additive-only shadow scan (48 files; the seven
+      same-named vanilla overrides excluded) left nine key redefinitions, each
+      kept with a documented delta and listed in
+      research/historical-events/2026-10-19_vanilla_key_shadow_audit.md:
+      hellenism_religion (enable = 9999.1.1 dropped so Hellenism is available at
+      the 58 CE start), miaphysite (language = coptic_language) and
+      coptic_culture (culture_groups = arabic_group) carry their UPDATE 3
+      deltas; haixi/hurga cultures are verbatim 1.3 restorations hidden by the
+      mod's east_asia.txt override; yearly_country_pulse is an additive
+      on_actions block; aramaic_language, gothic_language and alan_paganism were
+      rebuilt as vanilla bodies plus their ET deltas (ancient Aramaic names;
+      custom Gothic color with fallback = german_language restored; Caucasian
+      folk group). The empty french_group duplicate was removed, and the mod's
+      ancient Germanic culture was renamed burgundian -> burgundii so vanilla's
+      French burgundian loads again for the BAR/LOR/NEV/AUX/TON setup (event
+      .108 updated; en/tr loc in both trees). Same-pass fixes:
+      folk_caucasian_group defined (referenced by georgian_religion,
+      armenian_religion and alan_paganism; en/tr names added),
+      army_cavalry_power -> army_light_cavalry_power,
+      global_build_buildings_cost -> global_build_buildings_efficiency (x4),
+      trade_efficiency -> selling_efficiency (x3), berber_group ->
+      amazigh_group maghrebi_group, and et_uralic.txt's stray second BOM
+      removed. Open follow-up: the 2026-10-20 offline delivery audit found
+      that three of the redefinitions were not loading (coptic_culture,
+      miaphysite and aramaic_language lost the lexicographic order to vanilla
+      egypt.txt/christian.txt/00_crescent.txt); they were fixed the same day
+      by moving the blocks to 00_et_egypt.txt, 00_et_christianity.txt and
+      00_aramaic.txt. 174 dead setup definitions plus 235 mod-internal
+      collisions remain; tracked as vanilla_shadow_delivery_fix.
+  vanilla_shadow_delivery_fix:
+    period_id: ancient
+    priority: 2
+    state: pending
+    targets: [Extended Timeline/in_game/setup/countries/et_countries.txt, Extended Timeline/in_game/setup/countries/bengal.txt, Extended Timeline/in_game/setup/countries/british_isles.txt, Extended Timeline/in_game/setup/countries/caucasus.txt, Extended Timeline/in_game/setup/countries/east_asia.txt, Extended Timeline/in_game/setup/countries/france.txt, Extended Timeline/in_game/setup/countries/horn_of_africa.txt, Extended Timeline/in_game/setup/countries/india.txt, Extended Timeline/in_game/setup/countries/lowlands.txt, Extended Timeline/in_game/setup/countries/maghreb.txt, Extended Timeline/in_game/setup/countries/south_east_asia.txt]
+    source_refs: []
+    question: Which file should be authoritative for the 174 setup tags whose et_countries.txt definitions lose to vanilla region files and the 235 tags where et_countries.txt and a same-path region override disagree (moved, same-path override, or dropped)?
+    evidence: >-
+      UPDATE 20/21 (2026-10-20): the offline shadow audit
+      (scripts/shadow-audit.py; report
+      research/historical-events/2026-10-20_vanilla_shadow_report.md) fixed
+      the three language/culture/religion deltas by moving them into
+      earlier-sorting files; the report now shows 0 dead outside
+      setup/countries. Remaining: 174 et_countries.txt definitions lose to
+      vanilla files (eastcoast 31, east_africa 30, balkans 19, anatolia 17,
+      egypt 3 - MAM/FZA/TRP - and others) and 235 keys collide between
+      et_countries.txt and the same-path region overrides with differing
+      content (east_asia, british_isles, bengal and caucasus; france,
+      horn_of_africa, india, lowlands, maghreb and south_east_asia). The
+      18 Oct debug.log duplicate lines match the computed winners exactly.
+    acceptance: For every setup tag the winning definition is the intended one, or the definition is moved or dropped with the shadow audit, audit note and report updated; the report is regenerated after the fix and Test B classifies the remaining duplicate lines as expected info.
   script_token_audit:
     period_id: ancient
     priority: 3
-    state: pending
+    state: completed
     targets: [Extended Timeline/in_game/events, Extended Timeline/in_game/common]
     source_refs: []
     question: Which mod scripts still use effect, trigger, constant or scope tokens that exist nowhere in vanilla data, so the engine silently ignores them at runtime?
@@ -536,6 +774,23 @@ tasks:
       field names and scope links, using the vanilla script corpus as ground
       truth.
     acceptance: Each scanned script either uses only tokens verified against vanilla data or carries a documented mod-defined token; findings are fixed or filed as tasks with the offending token and source line.
+    resolution: >-
+      Completed 2026-10-19 offline (UPDATE 16). All 108 mod .txt files under
+      in_game and main_menu were scanned against the vanilla script and data
+      corpus: prefixed refs, country tags, script-value constants, outcome
+      enums, illustration tag values, define_pop culture/religion/type keys and
+      the event/on_action field names. The scan found no unresolved token; it
+      did catch two value-level defects fixed in the same pass - 13
+      outcome = good -> positive and the UPDATE 14 illustration key 0/1 ->
+      10/10 (vanilla uses only neutral/negative/positive and repeated key 10).
+      Mod-defined tokens are documented: the FRAN tag (in_game/setup/countries/
+      et_countries.txt:3777 and main_menu/setup/start/10_countries.txt) and the
+      et_egypt_yearly_pulse on_action (in_game/common/on_action/
+      et_history_pulses.txt); the prestige_* constants resolve in vanilla
+      main_menu/common/script_values/default_values.txt. The gfx findings are
+      closed under invalid_culture_gfx_tags. The scan is reproducible with
+      et-history-data/scripts/script-token-audit.py (stdlib only; --vanilla or
+      EU5_VANILLA selects the game directory; exit 1 when findings exist).
   gaul_postwar_immigration_layer:
     period_id: contemporary
     priority: 3
@@ -686,7 +941,7 @@ tasks:
   et_culture_outcome_token_normalization:
     period_id: medieval
     priority: 3
-    state: pending
+    state: completed
     targets: ["Extended Timeline/in_game/events/et_culture_events.txt"]
     source_refs: []
     question: Should the non-vanilla outcome tokens in et_culture_events.txt (outcome = good in 13 events) be normalized to the vanilla set (positive/negative/neutral)?
@@ -698,4 +953,9 @@ tasks:
       the verified vanilla set and should be normalized (or kept with a
       documented decision) when the Gaul chain is next touched. The Egypt
       political events .8-.16 use the vanilla tokens from the start.
+    resolution: >-
+      Completed 2026-10-19 (UPDATE 16, offline token audit): all 13 sites
+      became outcome = positive in the Gaul chain; the post-fix scan reports
+      no unresolved outcome enum. The Egypt political events .8-.16 already
+      used the vanilla tokens.
     acceptance: The 13 occurrences are either normalized to positive or carry a documented decision to keep good; the change lands in one commit that leaves the file's other pending edits untouched.

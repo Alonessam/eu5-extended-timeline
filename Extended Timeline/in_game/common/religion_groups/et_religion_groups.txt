@@ -10,3 +10,11 @@ secular_group = {
 	allow_slaves_of_same_group = no
 	convert_slaves_at_start = no
 }
+
+folk_caucasian_group = {
+	color = rgb {120 150 90}
+	convert_slaves_at_start = yes
+	modifier = {
+		allow_rgo_slave_demand = yes
+	}
+}

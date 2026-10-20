@@ -90,7 +90,7 @@ yöneten/elinde tutan aktörün siyasi kararlarını işler.
   onarıldı (commit bcfe27f).
 - Olaylar: `Extended Timeline/in_game/events/et_culture_events.txt`
   (`.7`'den sonraki blok); nabızlar: `on_action/et_history_pulses.txt`.
-- Backlog: UPDATE 15 + `egypt_state_layer_palmyra_270_272` +
-  `egypt_political_chain_batch2` + `et_culture_outcome_token_normalization`
-  (`research/backlog.yml`; üçüncüsü uygulama sırasında saptanan
-  `outcome = good` token denetimidir).
+- Backlog: UPDATE 23 (origin/main senkronu sonrası yeniden numaralandı) +
+  `egypt_state_layer_palmyra_270_272` + `egypt_political_chain_batch2`;
+  `et_culture_outcome_token_normalization` 19 Ekim'de UPDATE 16 ile kapandı
+  (13 `outcome = good` → `positive`; `research/backlog.yml`).

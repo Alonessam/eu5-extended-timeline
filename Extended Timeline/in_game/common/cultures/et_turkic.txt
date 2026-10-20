@@ -8,6 +8,8 @@
 	opinions = {
 	}
 	culture_groups = {
+		turkic_group
+		steppe_group
 	}
 }
 khazar = {

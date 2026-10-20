@@ -93,6 +93,40 @@ hataları giderildi (örn. `.105` "amfiatrosunda" → "amfiteatrosunda" ve "önc
 `union sacrée`) ve `.120` ansiklik aralığı 1906-1907'ye çekildi (kayıt ve `sources.yml`
 uyarısı dahil). EN/TR anahtar eşliği 165/165. Ayrıntı: backlog UPDATE 12.
 
+**Galya veri katmanı kapanışı (§4, 18 Ekim 2026):** Kayıt katmanı script'e göre
+doğrulandı: 22 kaydın tamamında dolu `source_refs` var ve `sources.yml` içindeki
+100 kaynağın hepsi (27 benzersiz kimlik) çözülüyor — eksik kayıt ya da boş
+`source_refs` çıkmadı, bu yüzden backfill kalemi yeni kaynak araştırması olmadan
+kapatıldı. UPDATE 13'ün `pending` bıraktığı 12 entegrasyon durumu (`.105`–`.118`)
+artık `applied`; notları pencere, pop filtreleri, `split_pop` oranları ve şehir
+listeleri dahil uygulanan mekaniği anlatıyor. Script tarafındaki düzeltmeler
+(`illustration_tags` tekilleştirme, `.122` sahip korumaları, `.114` Bordeaux
+çıkışı, `.112`/`.116` `change_language` sözdizimi) commit `8c8279a` ile geldi.
+Test B zinciri hâlâ bekliyor; `pending` → `applied` dönüşümü script'in
+uygulanmış halini kaydeder, oyun içi doğrulamayı değil. Ayrıntı: backlog UPDATE 14.
+
+**Test B koşum takımı (19 Ekim 2026):** Tek oturumluk zincir doğrulaması için
+protokol notu (`2026-10-19_test_b_protocol.md`) ve iki araç yayında:
+`et-history-data/scripts/test-b-prepare.py` (log yedeği + temizliği + koşum
+klasörü) ve `test-b-report.py` (mod filtreli log raporu + sınıf-1
+sınıflaması). Ham kanıt `et-history-data/tests/` altında tutulur (depo dışı).
+UPDATE 19 düzeltmeleri (`a718859`) bu koşumun ön koşuludur.
+
+**Vanilla gölge (yükleme sırası) raporu (20 Ekim 2026):** Aynı DB içinde aynı
+üst düzey anahtar birden fazla dosyada tanımlıysa, göreli dosya yolu alfabetik
+sırasında önce gelen tanım yüklenir; aynı adlı mod dosyası vanilla'yı birebir
+değiştirir. Bu kuralı tüm ilgili DB'lere (dil, kültür, din, gruplar, dil
+aileleri, `setup/countries`) uygulayan offline denetim
+`et-history-data/scripts/shadow-audit.py` ve raporu
+`2026-10-20_vanilla_shadow_report.md` yayında. Bulgu: dokuz yeniden tanımdan
+`coptic_culture`, `miaphysite` ve `aramaic_language` yüklemede vanilla'ya
+yeniliyordu; üçü de 20 Ekim'de taşıma yöntemiyle düzeltildi
+(`00_et_egypt.txt`, `00_et_christianity.txt`, `00_aramaic.txt`) ve rapor
+taşıma sonrası üretildiğinde yaşıyorlar. `setup/countries` tarafında 174 mod
+tanımı hâlâ ölü, 235 mod-içi çakışma var; etiket bazında uzlaştırma
+`vanilla_shadow_delivery_fix` kaydında izlenir. Test B bu satırları bilgi
+sınıfında tutmalı.
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,
@@ -310,10 +344,11 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
   `gallo_roman` (Samet)
 - [x] Oyun içi test A — `et_culture.9000` ve Galya `.101` ateşlendi;
   oturumun `error.log`'u mod satırı içermiyor (17 Ekim 2026)
-- [ ] Oyun içi test B — Mısır zinciri `.1`–`.16` (kültür + siyasi; Nübya turu
-  ayrı, işgalci pencereleri ERA/BYZ siyasi not bölüm 5): console protokolü
-  (`event_probabilities`, `test_event_trigger`, `change_date`, `tick_day`;
-  ayrıntı: design note bölüm 5)
+- [ ] Oyun içi test B — Mısır `.1`–`.16` (kültür + siyasi; Nübya turu ayrı,
+  işgalci pencereleri ERA/BYZ siyasi not bölüm 5) + Galya `.101`–`.123`:
+  koşum takımı `2026-10-19_test_b_protocol.md` (`event_probabilities`,
+  `test_event_trigger`, `change_date`, `tick_day`; Mısır ayrıntısı:
+  design note bölüm 5)
 
 ## 6. Bağlayıcı kalite kuralları
 

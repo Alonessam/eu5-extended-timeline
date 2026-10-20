@@ -57,3 +57,11 @@ jukun_language = {
 	}
 
 }
+
+berber_language = {
+
+	color = rgb{ 175 95 95 }
+
+	fallback = tamazight_language
+
+}

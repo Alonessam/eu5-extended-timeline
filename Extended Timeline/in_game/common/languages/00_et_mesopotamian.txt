@@ -23,15 +23,6 @@
 	
 }
 
-aramaic_language = {
-		male_names = {
-			Ma'nu Abgar Bakru Sanatruk Parthamaspates Paqor Aryu Abdu Fradhasht Wa'il Ezad Sumaqa Saphul Piqa Gebar'u Maz'ur
-		}
-		female_names = {
-			Anna Zenobia
-		}
-	}
-
 phoenician_language = {
     dynasty_names = {
 			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid 
