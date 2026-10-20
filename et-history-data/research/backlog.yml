@@ -174,7 +174,7 @@ tasks:
       Iran, HOL and NED, EGY, EGYP and MAM for Egypt, GBR for Great Britain)
       the modern tag is used and the other is named in the note. The research
       record un_founding_member_tags points at the table.
-    acceptance: Separate signature and ratification; do not assign every founding state membership on 24 October 1945. Met on 20 Oct 2026: the two dates are separate columns and the table states that 29 of 51 states held membership on 24 October 1945.
+    acceptance: Separate signature and ratification; do not assign every founding state membership on 24 October 1945. Met on 20 Oct 2026, the two dates are separate columns and the table states that 29 of 51 states held membership on 24 October 1945.
   geographic_coverage:
     period_id: ancient
     priority: 1
