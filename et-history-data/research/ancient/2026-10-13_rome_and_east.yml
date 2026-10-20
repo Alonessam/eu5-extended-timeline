@@ -140,6 +140,25 @@ records:
     source_refs: [{id: met_han, locator: Eastern Han paragraph}]
     confidence: high
     integration: {status: verified_existing, target: countries/HAN0 - Han.yml, location_id: luoyang, note: Does not independently verify the existing 25.1.1 transition day or Emperor Ming's birth date.}
+  eastern_han_ruler_dates:
+    entity: HAN0
+    subject: polity_ruler_chronology
+    finding: >-
+      The monarch list of the Eastern Han gives the accession and the death day
+      of every emperor from Guangwu to Xian, and the comparison with the
+      repository data found four corrections: Emperor An acceded on 23 September
+      106 (the data had given him the day his predecessor died), the
+      Marquess of Beixiang on 18 May 125, Emperor Shun on 16 December 125, and
+      the last emperor Xian acceded on 28 September 189 after the deposition
+      of his brother, while the country file had handed the throne to a figure
+      of the Li dynasty instead. The death dates of the emperor characters
+      were checked as well and all of them agree with the source.
+    population: "not a population finding; a ruler chronology correction"
+    dating: {precision: year, year: 58, calendar: ce_year_normalized_to_et}
+    mechanism: "accession and death days verified against the monarch list"
+    source_refs: [{id: wiki_han_monarchs, locator: "The Eastern Han table with the accession and death day of every emperor"}]
+    confidence: high
+    integration: {status: applied, target: "countries/HAN0 - Han.yml", note: "Applied on 20 Oct 2026: the three accession days were corrected and Xian now takes the throne on 28 September 189, while the 195.1.1 block keeps only the change of government and rank. The move of the capital to Chang'an in 190 (Dong Zhuo) was checked and left as it is."}
   corbulo_armenia_campaign:
     entity: firstromanparthianwar
     subject: military_campaign

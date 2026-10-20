@@ -23,11 +23,11 @@
   ruler: han0_zhao_liu
 106.2.13:
   ruler: han0_long_liu
-106.9.21:
+106.9.23:
   ruler: han0_hu_liu
-125.4.30:
+125.5.18:
   ruler: han0_yi_liu
-125.12.10:
+125.12.16:
   ruler: han0_bao_liu
 144.9.20:
   ruler: han0_bing_liu
@@ -39,12 +39,13 @@
   ruler: han0_hong_liu
 189.5.13:
   ruler: han0_bian_liu
+189.9.28:
+  ruler: han0_xie_liu
 190.4.9:
   capital: jingzhao
 195.1.1:
   government: chinese_monarchy
   government_rank: rank_duchy
-  ruler: han0_jue_li
 220.1.1:
   government: chinese_monarchy
   government_rank: rank_kingdom

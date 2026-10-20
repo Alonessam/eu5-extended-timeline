@@ -241,15 +241,33 @@ tasks:
   geographic_coverage:
     period_id: ancient
     priority: 1
-    state: pending
-    targets: [countries, characters, locations]
-    source_refs: [met_han, wiki_han_economy, wiki_urban_sizes, periplus_schoff]
+    state: in_progress
+    targets: [research/ancient/2026-10-17_58ce_cities_and_markets.yml, research/ancient/2026-10-13_rome_and_east.yml, "et-history-data/countries/HAN0 - Han.yml"]
+    source_refs: [wiki_urban_sizes, wiki_han_monarchs]
     question: Extend the 58 CE batch to South Asia, Africa and the Americas, and obtain stronger Eastern Han ruler sources.
     evidence: >-
-      Batch "2026-10-17 58ce cities and markets" added city rank and market
-      flags for 74 locations across Europe, Asia, Africa and Mesoamerica
-      (economy layer, batch 1). Eastern Han ruler sources are still pending.
-    acceptance: Add scoped sources and explicit uncertainties; this first batch does not establish global coverage.
+      Batch 1 added city rank and market flags for 74 locations across
+      Europe, Asia, Africa and Mesoamerica. The Eastern Han ruler part is
+      finished: the monarch list was added as a source and the comparison
+      against the country file found three accession days and one ruler
+      identity to correct (Emperor An on 23 September 106, the Marquess of
+      Beixiang on 18 May 125, Emperor Shun on 16 December 125 and the last
+      emperor Xian on 28 September 189, who had been replaced by a figure of
+      the Li dynasty); the death dates of the emperor characters were checked
+      and all agree. The city batch extension is a multi-session data
+      production: each city needs its urban-size row, its city rank and
+      setup, and its location file updated.
+    resolution: >-
+      The Han ruler sources are closed and applied (record
+      eastern_han_ruler_dates). The remaining city work is now scoped in
+      research/historical-events/2026-10-20_economy_layer_scope.md, which
+      fixes the method, the evidence-backed road networks, the explicit
+      exclusions (the Americas have no 58 CE road network; the Inca system is
+      15th century) and the order of the remaining slices: South Asia, then
+      Africa south of the Sahara, then the Maya and Teotihuacan cities, then
+      the remaining settled locations of the map. Note:
+      research/historical-events/2026-10-20_economy_layer_scope.md.
+    acceptance: Add scoped sources and explicit uncertainties; this first batch does not establish global coverage. The Han ruler part is met; the city extension continues by the scoped slices with the urban-size rows and the road network sources.
   han_capital_tile_mapping:
     period_id: ancient
     priority: 1
@@ -268,11 +286,30 @@ tasks:
   ancient_economy_roads_and_town_ranks:
     period_id: ancient
     priority: 2
-    state: pending
-    targets: [locations]
-    source_refs: [periplus_schoff, wiki_urban_sizes]
+    state: in_progress
+    targets: [research/ancient/2026-10-17_58ce_cities_and_markets.yml, "et-history-data/locations"]
+    source_refs: [wiki_urban_sizes]
     question: Which dated roads adjacency and town-level ranks belong to the 58 CE economy layer (batch 2)?
-    acceptance: Add only evidence-backed neighbor-name road maps and town ranks; re-read the Location Files doc before editing.
+    evidence: >-
+      The location file format was re-read (docs/Location Files.md): roads are
+      a list of neighbour location ids and the town rank is the city block's
+      rank plus a vanilla town_setup. The vanilla town_setup list has 114
+      values and the 38 used by the 58 CE city file are all vanilla values. The
+      road networks that are evidence-backed for 58 CE are now listed with
+      their sources, and the exclusions are explicit: the Americas have no
+      wheeled road network in 58 CE, and the Eurasian steppe has no permanent
+      one.
+    resolution: >-
+      The method, the criteria, the road network evidence and the remaining
+      slice order are fixed in
+      research/historical-events/2026-10-20_economy_layer_scope.md. The work
+      itself is a per-location data production (urban-size row, city rank and
+      setup, market flag, location file update, record) and continues by the
+      scoped slices. The town rank rule is now explicit: a market centre gets
+      at least a town rank, a settlement above the local threshold of the
+      compilation gets a city rank, and the setup value must exist in the
+      vanilla town_setups.
+    acceptance: Add only evidence-backed neighbor-name road maps and town ranks; re-read the Location Files doc before editing. The method and the evidence are in place; the per-location production continues in the scoped slices.
   ancient_city_setup_field:
     period_id: ancient
     priority: 3

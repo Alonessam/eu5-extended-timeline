@@ -405,6 +405,13 @@ sources:
     type: encyclopedia_article
     url: https://en.wikipedia.org/wiki/Hotan
     locator: Article intro
+  wiki_han_monarchs:
+    title: "List of Chinese monarchs"
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/List_of_Chinese_monarchs
+    locator: "The Eastern Han table, with the accession and death day of every emperor from Guangwu to Xian"
+    caveat: "The days follow the traditional Han chronology; the abdication of Xian is given as 11 December 220 with 25 November 220 also cited."
   wiki_hexi_corridor:
     title: Hexi Corridor
     publisher: Wikipedia
