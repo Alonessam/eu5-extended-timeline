@@ -113,7 +113,47 @@ olduğu gibi yer tutucu kullanılmadı) ve geçici bir kimlik için 274'te bir
 geri dönüş olayı gerekirdi; bu, olay ID'lerinin kronolojik sırasını bozardı
 (`.105` ile `.106` arasına yeni ID, sonraki 18 olayın yeniden numaralanması).
 
-## 4. Test B beklentisi
+## 4. Zincir genelinde etki (no-op) taraması
+
+Aynı denetim 23 Galya olayının tamamına uygulandı: her tarihsel seçeneğin
+etkisi, tükettiği pop (kültür/din) ve ürettiği pop çıkarıldı, zincir sırasıyla
+karşılaştırıldı.
+
+| Olay | Pencerede tüketilen | Üretilen | Durum |
+|---|---|---|---|
+| `.101` | gallian (dokuz şehrin elitleri) | gallo_roman | canlı girdi |
+| `.102` | gallian (köylü, işçi) | gallo_roman | canlı girdi |
+| `.103` | din sınırı yok | catholic | canlı girdi |
+| `.104` | kalan gallian | gallo_roman | canlı girdi (kırsal elit) |
+| `.105` | - | - | siyasi olay (bu not) |
+| `.106` | din sınırı yok | catholic | canlı girdi |
+| `.107` | gallian / gallo_roman | breton | canlı girdi |
+| `.108` | - | burgundii / visigoth popları | canlı girdi |
+| `.109` | gallo_roman / frankish | frankish (%25) | canlı girdi |
+| `.110` | din sınırı yok | catholic | canlı girdi |
+| `.111` | gallo_roman (şehir listesi) | french / occitan / arpitan | canlı girdi |
+| `.112` | gallo_roman | fransızca dil | canlı girdi |
+| `.113` | - | norman popu (Rouen) | canlı girdi |
+| `.114` | occitan / french | french (%30) | canlı girdi |
+| `.115` | norman / arpitan / frankish | french | canlı girdi |
+| `.116` | gallo_roman / occitan / arpitan / norman | fransızca dil | canlı girdi |
+| `.117` | calvinist | catholic | canlı girdi |
+| `.118` | occitan / arpitan / norman / frankish | french (%50) | canlı girdi |
+| `.119` | breton / french | french (%50) | canlı girdi |
+| `.120` | - | - | siyasi olay (tasarım) |
+| `.121` | breton / french | french | canlı girdi |
+| `.122` | - | göçmen popları | canlı girdi |
+| `.123` | - | - | siyasi olay (tasarım) |
+
+Sonuç: `.105` dışında başka bir "tarihsel seçenek boş çalışıyor" örneği yok.
+`.104`ün girdisi `.101`/`.102`den sonra kalan kırsal elittir (kayıt notu bunu
+"remaining gallian" diye belirtir), `.103`/`.106`/`.110`un din sınırı yoktur,
+`.111`in girdisi olan gallo_roman `.112`de tüketilir ama `.111` kendi
+şehir listesini üretir, `.115`/`.121`in girdileri ise `.114`/`.118`/`.119`
+tarafından üretilir. Etkisiz olan tek seçenek `.105`ti ve o da bu notta
+siyasi olaya çevrildi.
+
+## 5. Test B beklentisi
 
 - Log: 0 `Invalid scope types`, 0 sınıf-1 `Failed to read key reference`,
   0 `et_german` satırı.

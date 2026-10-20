@@ -919,7 +919,10 @@ tasks:
       .107 (fixed by widening the limit to gallian OR gallo_roman); widening
       cannot help here because the target culture is already the pops'
       culture. The record gaul_gallic_empire_260_274 describes the secession
-      as a frontier-army political breakaway, not a population change.
+      as a frontier-army political breakaway, not a population change. The
+      same scan was run over all 23 Gaul events: every other historical option
+      consumes a population that is still alive at its window, so .105 was the
+      only inert conversion (note section 4).
     resolution: >-
       The event was rewritten as a political event on 20 Oct 2026: option A
       (historical) ends the breakaway with Aurelian's reconquest (stability

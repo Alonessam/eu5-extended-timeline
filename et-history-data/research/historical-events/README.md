@@ -167,7 +167,8 @@ tarihsel seçeneği hiçbir popu değiştiremiyordu (`.101` aynı popları zaten
 siyasi mekanizmasına uygun olarak olay siyasi bir olaya çevrildi: Aurelian'ın
 geri alışı (huzur +10, prestij +) veya eyaletlerin kalıcı kopuşu (huzur −10,
 prestij −); etkisiz `custom_tooltip` bloğu ve `et_culture.105.tt` anahtarı
-kaldırıldı, EN/TR metinleri ve kayıt notu güncellendi. Ayrıntı:
+kaldırıldı, EN/TR metinleri ve kayıt notu güncellendi. Aynı tarama 23 olayın
+tamamına uygulandı: `.105` dışında başka bir boş çalışan dönüşüm yok. Ayrıntı:
 `2026-10-20_gaul_chain_audit.md` (backlog UPDATE 24).
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
