@@ -174,6 +174,14 @@ konumlar dahil) ve `06_pops.txt` 1.039 `gallian` + 296 `old_egyptian` pop
 içeriyor, yani iki zincir de girdi popülasyonunu buluyor. Ayrıntı:
 `2026-10-20_gaul_chain_audit.md` (backlog UPDATE 24).
 
+**Yerelleştirme anahtarı denetimi (20 Ekim 2026):** Olay yerelleştirmesi
+artık çevrimdışı denetleniyor: `et-history-data/scripts/loc-key-audit.py`
+scriptte anılan her `et_culture.*` anahtarının EN ve TR'de tanımlı olduğunu,
+tanımlı anahtarların yetim olmadığını, iki dilin anahtar kümesinin aynı
+olduğunu ve tüm yerelleştirme dosyalarının geçerli YAML olduğunu kontrol
+eder (negatif testler: eksik anahtar, yetim anahtar ve kaçışsız tırnaklar
+tespit edildi; gerçek veri 174/174 temiz).
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,

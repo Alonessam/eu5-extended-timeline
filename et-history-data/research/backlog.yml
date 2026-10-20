@@ -788,6 +788,30 @@ tasks:
       the 20 Oct changes (108 at the 19 Oct close-out; 10 setup overrides
       deleted, 3 delta files added). Parser-level malformed blocks (the
       18 Oct ubian cascade) are outside this check and remain on Test B.
+  localization_key_audit:
+    period_id: ancient
+    priority: 2
+    state: completed
+    targets: [et-history-data/scripts/loc-key-audit.py, "Extended Timeline/in_game/localization"]
+    source_refs: []
+    question: Do the mod's event localization keys match the scripts that reference them, in both English and Turkish, and are the localization files valid YAML?
+    evidence: >-
+      The 20 Oct 2026 Gaul audit rewrote et_culture.105 and removed its
+      et_culture.105.tt tooltip key; a manual check afterwards found 174 event
+      keys in EN and 174 in TR with 0 missing and 0 orphans. The same scan
+      found the only YAML-invalid file in the mod: the Turkish .109 desc used
+      unescaped ASCII quotes inside a double-quoted value (fixed with
+      typographic quotes on 20 Oct).
+    resolution: >-
+      A permanent offline audit was added:
+      et-history-data/scripts/loc-key-audit.py checks that every et_culture.*
+      key referenced by a mod script exists in EN and TR, that no defined
+      event key is an orphan, that the EN and TR event files define the same
+      key set, and that every mod localization file parses as YAML. Negative
+      tests: a removed key, an added orphan key and the restored unescaped
+      quotes were each detected and returned exit 1; the real corpus is clean
+      (174/174 in both languages).
+    acceptance: The script runs offline, reports missing, orphan, parity and YAML findings, exits 1 on any finding; the mod's corpus is clean.
   language_ref_addressability:
     period_id: ancient
     priority: 2
