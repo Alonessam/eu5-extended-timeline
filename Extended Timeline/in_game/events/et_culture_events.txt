@@ -660,143 +660,6 @@ et_culture.5 = { # Arabization (record: egypt_coptic_spoken_decline)
 }
 
 # ===========================================================================
-# EGYPT BALANCE WAVE (WS4: et_culture.9)
-# The Mamluk 14th-century wave: the last big conversion step that brings the
-# Muslim-to-Christian ratio close to the ten-to-one figure of the record.
-# ID note: the ID continues the Egypt chain (after the Nubia chain .6-.8).
-# Sourced record: et-history-data/research/historical-events/2026-10-17_egypt_culture_transition.yml
-# (egypt_islamization_waves)
-# ===========================================================================
-
-# 9. The Mamluk Wave (MS 1300-1500)
-et_culture.9 = {
-	type = country_event
-	title = et_culture.9.title
-	desc = et_culture.9.desc
-	outcome = neutral
-	historical_info = et_culture.9.historical_info
-
-	illustration_tags = {
-		10 = regular
-		10 = interior
-	}
-
-	trigger = {
-		has_variable = et_egypt_islam_2
-		current_year >= 1300
-		current_year <= 1500
-		NOT = { has_variable = et_egypt_9_fired }
-	}
-
-	immediate = {
-		set_variable = { name = et_egypt_9_fired value = 1 }
-	}
-
-	option = {
-		name = et_culture.9.a
-		historical_option = yes
-		set_variable = { name = et_egypt_9 value = 1 }
-		custom_tooltip = {
-			text = et_culture.9.a.tt
-			# The last large conversion wave: Lower Egypt first, Upper Egypt after.
-			every_owned_location = {
-				limit = {
-					area = area:lower_egypt_area
-				}
-				every_pop = {
-					limit = {
-						OR = {
-							culture = culture:old_egyptian
-							culture = culture:coptic_culture
-						}
-						OR = {
-							religion = religion:miaphysite
-							religion = religion:egyptian_polytheism
-						}
-					}
-					split_pop = {
-						fraction = 0.65
-						religion = religion:islam
-					}
-				}
-			}
-			every_owned_location = {
-				limit = {
-					area = area:upper_egypt_area
-				}
-				every_pop = {
-					limit = {
-						OR = {
-							culture = culture:old_egyptian
-							culture = culture:coptic_culture
-						}
-						OR = {
-							religion = religion:miaphysite
-							religion = religion:egyptian_polytheism
-						}
-					}
-					split_pop = {
-						fraction = 0.55
-						religion = religion:islam
-					}
-				}
-			}
-		}
-		add_prestige = prestige_mild_bonus
-	}
-
-	option = {
-		name = et_culture.9.b
-		custom_tooltip = {
-			text = et_culture.9.b.tt
-			every_owned_location = {
-				limit = {
-					area = area:lower_egypt_area
-				}
-				every_pop = {
-					limit = {
-						OR = {
-							culture = culture:old_egyptian
-							culture = culture:coptic_culture
-						}
-						OR = {
-							religion = religion:miaphysite
-							religion = religion:egyptian_polytheism
-						}
-					}
-					split_pop = {
-						fraction = 0.10
-						religion = religion:islam
-					}
-				}
-			}
-			every_owned_location = {
-				limit = {
-					area = area:upper_egypt_area
-				}
-				every_pop = {
-					limit = {
-						OR = {
-							culture = culture:old_egyptian
-							culture = culture:coptic_culture
-						}
-						OR = {
-							religion = religion:miaphysite
-							religion = religion:egyptian_polytheism
-						}
-					}
-					split_pop = {
-						fraction = 0.10
-						religion = religion:islam
-					}
-				}
-			}
-		}
-		add_stability = -5
-	}
-}
-
-# ===========================================================================
 # NUBIA STRETCH EVENTS (WS4: et_culture.6 - et_culture.8)
 # Period: Meroe collapse and the Christian Nubian kingdoms (MS 300-900)
 # Sourced records: et-history-data/research/historical-events/2026-10-17_egypt_culture_transition.yml
@@ -1029,6 +892,220 @@ et_culture.8 = {
 					split_pop = {
 						fraction = 0.10
 						religion = religion:miaphysite
+					}
+				}
+			}
+		}
+		add_stability = -5
+	}
+}
+
+# ===========================================================================
+# EGYPT BALANCE WAVE (WS4: et_culture.9)
+# The Mamluk 14th-century wave: the last big conversion step that brings the
+# Muslim-to-Christian ratio close to the ten-to-one figure of the record.
+# ID note: the ID continues the Egypt chain (after the Nubia chain .6-.8).
+# Sourced record: et-history-data/research/historical-events/2026-10-17_egypt_culture_transition.yml
+# (egypt_islamization_waves)
+# ===========================================================================
+
+# 9. The Mamluk Wave (MS 1300-1500)
+et_culture.9 = {
+	type = country_event
+	title = et_culture.9.title
+	desc = et_culture.9.desc
+	outcome = neutral
+	historical_info = et_culture.9.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		has_variable = et_egypt_islam_2
+		current_year >= 1300
+		current_year <= 1500
+		NOT = { has_variable = et_egypt_9_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_9_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.9.a
+		historical_option = yes
+		set_variable = { name = et_egypt_9 value = 1 }
+		custom_tooltip = {
+			text = et_culture.9.a.tt
+			# The last large conversion wave: Lower Egypt first, Upper Egypt after.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.65
+						religion = religion:islam
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.55
+						religion = religion:islam
+					}
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.9.b
+		custom_tooltip = {
+			text = et_culture.9.b.tt
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.10
+						religion = religion:islam
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.10
+						religion = religion:islam
+					}
+				}
+			}
+		}
+		add_stability = -5
+	}
+}
+
+# 10. The Quiet Disappearance of the Greek Tongue (MS 650-800)
+et_culture.10 = {
+	type = country_event
+	title = et_culture.10.title
+	desc = et_culture.10.desc
+	outcome = neutral
+	historical_info = et_culture.10.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		# The Greek-speaking layer only merges after the Coptic chain started.
+		has_variable = et_egypt_christ_1
+		current_year >= 650
+		current_year <= 800
+		NOT = { has_variable = et_egypt_10_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_10_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.10.a
+		historical_option = yes
+		set_variable = { name = et_egypt_10 value = 1 }
+		custom_tooltip = {
+			text = et_culture.10.a.tt
+			# The Greek-speaking households join the Coptic community of the valley.
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:helleno_egyptian
+					}
+					split_pop = {
+						fraction = 0.60
+						culture = culture:coptic_culture
+					}
+				}
+			}
+			# The newcomers share the Coptic church; Greek survives as a
+			# liturgical language of the Melkite church only.
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:coptic_culture
+					}
+					change_pop_religion = religion:miaphysite
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.10.b
+		custom_tooltip = {
+			text = et_culture.10.b.tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:helleno_egyptian
+					}
+					split_pop = {
+						fraction = 0.10
+						culture = culture:coptic_culture
 					}
 				}
 			}

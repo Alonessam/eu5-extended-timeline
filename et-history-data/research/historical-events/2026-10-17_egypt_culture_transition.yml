@@ -11,11 +11,10 @@ records:
       religion, and the Meroitic kushite state upstream of the First Cataract
       (33 pop blocks in the Nubia area, held by MERO). The Nile towns also
       carry Jewish minorities (mizrahi in Alexandria and Cairo, ashkenazi and
-      sephardi elsewhere in the empire). The Greek-speaking layer the records
-      describe is not in the start data: 06_pops.txt holds no helleno_egyptian
-      pop, and the helleno_egyptian culture stays defined but unused (see
-      egypt_helleno_egyptian_population). This baseline is the anchor that the
-      transition chains move from.
+      sephardi elsewhere in the empire). The Greek-speaking urban layer was
+      added to the start data on 20 Oct 2026 (17 pop blocks in eight towns, the
+      citizen class in Alexandria), and the helleno_egyptian culture is now
+      used. This baseline is the anchor that the transition chains move from.
     population: "Nile Valley rural majority; Jewish urban minorities; Meroitic kingdom upstream"
     dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
     mechanism: start setup data (no transition claimed)
@@ -152,7 +151,7 @@ records:
     mechanism: loss of administrative function, intermarriage, language shift
     source_refs: [{id: wiki_coptic_language, locator: "Article intro"}, {id: wiki_christianity_egypt, locator: "Under Muslim rule"}, {id: papaconstantinou_greek_in_egypt, locator: "Chapter 3, introduction and conclusion"}, {id: cromwell_egypt_language_policy, locator: "Discussion and conclusion sections"}]
     confidence: medium
-    integration: {status: pending, target: "not scripted (setup dependency)", note: "The source requirement of design note decision 5 is met: two scholarly sources were added, confidence rose from low to medium and the dating sharpened to c. 650-800. The event still cannot be scripted because the 58 CE setup has no Greek-speaking Egyptian population - 06_pops.txt holds 0 helleno_egyptian pops, so the mod's Egypt is old_egyptian plus Jewish minorities while the helleno_egyptian culture stays defined but unused. The setup decision is filed as egypt_helleno_egyptian_population. Test B gate: n/a."}
+    integration: {status: applied, target: "events (et_culture.10)", location_id: terracina, note: "The source requirement of design note decision 5 is met: two scholarly sources were added, confidence rose from low to medium and the dating sharpened to c. 650-800. On 20 Oct 2026 the setup was given the Greek-speaking urban layer it never had (17 pop blocks in eight Egyptian towns, with Alexandria holding the citizen class) and the event et_culture.10 was written for the 650-800 window, chained on the Christianization variable and converting three fifths of the Greek-speaking households into the Coptic community while the Melkite churches keep the tongue. The population sizes are modelled proportions, not census figures. Test B gate: runtime confirmation pending."}
   kush_meroe_collapse_and_nubian_successors:
     entity: culture_kushite
     subject: polity_collapse_and_identity_transition

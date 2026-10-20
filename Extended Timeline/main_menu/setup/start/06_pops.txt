@@ -75247,6 +75247,9 @@ alexandria = {
 	define_pop = {	type = slaves	size = 10.595	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 10.595	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 6.356	culture = mizrahi	religion = judaism }
+	define_pop = { type = nobles size = 0.012 culture = helleno_egyptian religion = hellenism_religion }
+	define_pop = { type = clergy size = 0.090 culture = helleno_egyptian religion = hellenism_religion }
+	define_pop = { type = burghers size = 1.300 culture = helleno_egyptian religion = hellenism_religion }
 }
 el_alamein = {
 	define_pop = {	type = clergy	size = 0.036	culture = old_egyptian	religion = egyptian_polytheism }
@@ -75272,12 +75275,16 @@ damanhur = {
 	define_pop = {	type = peasants	size = 95.148	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 11.101	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 5.045	culture = old_egyptian	religion = egyptian_polytheism }
+	define_pop = { type = clergy size = 0.016 culture = helleno_egyptian religion = hellenism_religion }
+	define_pop = { type = burghers size = 0.080 culture = helleno_egyptian religion = hellenism_religion }
 }
 ramsis = {
 	define_pop = {	type = clergy	size = 0.014	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = peasants	size = 120.790	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 7.791	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 1.298	culture = old_egyptian	religion = egyptian_polytheism }
+	define_pop = { type = clergy size = 0.016 culture = helleno_egyptian religion = hellenism_religion }
+	define_pop = { type = burghers size = 0.080 culture = helleno_egyptian religion = hellenism_religion }
 }
 kharibta = {
 	define_pop = {	type = clergy	size = 0.019	culture = old_egyptian	religion = egyptian_polytheism }
@@ -75290,6 +75297,8 @@ rashid = {
 	define_pop = {	type = peasants	size = 55.588	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 8.767	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 3.984	culture = old_egyptian	religion = egyptian_polytheism }
+	define_pop = { type = clergy size = 0.016 culture = helleno_egyptian religion = hellenism_religion }
+	define_pop = { type = burghers size = 0.080 culture = helleno_egyptian religion = hellenism_religion }
 }
 tarrana = {
 	define_pop = {	type = clergy	size = 0.019	culture = old_egyptian	religion = egyptian_polytheism }
@@ -75321,6 +75330,8 @@ damietta = {
 	define_pop = {	type = slaves	size = 3.308	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 12.525	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 3.578	culture = old_egyptian	religion = egyptian_polytheism }
+	define_pop = { type = clergy size = 0.030 culture = helleno_egyptian religion = hellenism_religion }
+	define_pop = { type = burghers size = 0.150 culture = helleno_egyptian religion = hellenism_religion }
 }
 mansoura = {
 	define_pop = {	type = nobles	size = 0.014	culture = old_egyptian	religion = egyptian_polytheism }
@@ -75330,12 +75341,16 @@ mansoura = {
 	define_pop = {	type = slaves	size = 3.452	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 12.028	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 3.436	culture = old_egyptian	religion = egyptian_polytheism }
+	define_pop = { type = clergy size = 0.030 culture = helleno_egyptian religion = hellenism_religion }
+	define_pop = { type = burghers size = 0.150 culture = helleno_egyptian religion = hellenism_religion }
 }
 tinnis = {
 	define_pop = {	type = clergy	size = 0.016	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = peasants	size = 121.553	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 10.925	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 4.096	culture = old_egyptian	religion = egyptian_polytheism }
+	define_pop = { type = clergy size = 0.020 culture = helleno_egyptian religion = hellenism_religion }
+	define_pop = { type = burghers size = 0.100 culture = helleno_egyptian religion = hellenism_religion }
 }
 ushmum_tannah = {
 	define_pop = {	type = clergy	size = 0.009	culture = old_egyptian	religion = egyptian_polytheism }
@@ -75395,6 +75410,8 @@ cairo = {
 	define_pop = {	type = slaves	size = 99.647	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 47.200	culture = old_egyptian	religion = egyptian_polytheism }
 	define_pop = {	type = slaves	size = 15.733	culture = mizrahi	religion = judaism }
+	define_pop = { type = clergy size = 0.050 culture = helleno_egyptian religion = hellenism_religion }
+	define_pop = { type = burghers size = 0.250 culture = helleno_egyptian religion = hellenism_religion }
 }
 atfih = {
 	define_pop = {	type = clergy	size = 0.009	culture = old_egyptian	religion = egyptian_polytheism }

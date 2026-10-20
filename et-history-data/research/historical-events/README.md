@@ -190,6 +190,17 @@ kurulumdaki 9 adet bitiş durumu sızıntısı (`upper_egyptian_culture`) ve 3
 kopyalanmış pop bloğu düzeltildi; iki zincirin kayıt statüsü tek olgusal
 konvansiyona geçti (Test B kapısı notlarda).
 
+**Mısır'da Yunanca konuşan kent tabakası (20 Ekim 2026):** 58 CE kurulumunda
+Grekçe konuşan Mısır tabakası yoktu; `helleno_egyptian` kültürü tanımlı ama
+kullanılmıyordu. Sekiz Mısır şehri için 17 `helleno_egyptian` pop bloğu eklendi
+(İskenderiye'de soylular, papazlar ve burjuvazi; Kahire ve Delta limanlarında
+küçük tüccar ve papaz katmanı) ve 650-800 penceresi için `et_culture.10`
+yazıldı: Hıristiyanlaşma değişkenine bağlı olarak Yunanca konuşan halkın üçte
+ikisini Kıptî topluluğuna taşır. Kayıt iki akademik kaynakla güçlendirildi
+(güven `medium`, tarihlendirme c. 650-800); boyutlar model oranıdır. Toplam 9
+kayıt kapatıldı, 2 veri üretim görevi (58 CE batch'inin coğrafi genişletmesi ve
+ekonomi yol/kasaba sıralaması) açık kaldı.
+
 **Yerelleştirme anahtarı denetimi (20 Ekim 2026):** Olay yerelleştirmesi
 artık çevrimdışı denetleniyor: `et-history-data/scripts/loc-key-audit.py`
 scriptte anılan her `et_culture.*` anahtarının EN ve TR'de tanımlı olduğunu,

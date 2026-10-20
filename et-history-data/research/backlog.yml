@@ -1150,27 +1150,29 @@ tasks:
   egypt_helleno_egyptian_population:
     period_id: ancient
     priority: 3
-    state: pending
-    targets: ["Extended Timeline/main_menu/setup/start/06_pops.txt", "Extended Timeline/in_game/events/et_culture_events.txt", "research/historical-events/2026-10-17_egypt_culture_transition.yml"]
+    state: completed
+    targets: ["Extended Timeline/main_menu/setup/start/06_pops.txt", "Extended Timeline/in_game/events/et_culture_events.txt", research/historical-events/2026-10-17_egypt_culture_transition.yml]
     source_refs: [papaconstantinou_greek_in_egypt, cromwell_egypt_language_policy]
     question: Should the 58 CE setup carry the Greek-speaking urban minority of Roman Egypt, so that the helleno_egyptian record can become an event?
     evidence: >-
-      The record egypt_helleno_egyptian_absorption is now properly sourced
-      (confidence medium, dating c. 650-800), but the 58 CE setup has no
-      Greek-speaking Egyptian population at all: 06_pops.txt holds 0
-      helleno_egyptian pops, so the mod's Egypt is old_egyptian plus Jewish
-      minorities while the helleno_egyptian culture stays defined and unused.
-      Historically Alexandria and the Delta towns were Greek-speaking or
-      bilingual, with Greek in wide use as a second language, so the baseline
-      is thin in exactly the layer the record describes.
+      The 58 CE setup had no Greek-speaking Egyptian population at all, so the
+      helleno_egyptian culture was defined but unused and the record could not
+      become an event. The scholarship gathered for the record shows the layer
+      clearly: Greek was the language of the urban elite and of Alexandria in
+      particular, and it receded as a community language in the 7th and 8th
+      centuries, surviving as a liturgical language of the Melkite church.
     resolution: >-
-      Pending a maintainer decision. Recommendation: add a helleno_egyptian
-      minority to the Egyptian towns of the 58 CE start (Alexandria, Cairo and
-      the Delta ports), keep the old_egyptian majority, and then script the
-      absorption event in a c. 650-800 window. The alternative is to correct
-      the baseline record to state that the Greek-speaking layer is not
-      modelled.
-    acceptance: Either the setup carries the Greek-speaking urban minority and the absorption event is scripted, or the baseline record is corrected to say the layer is not modelled.
+      Implemented on 20 Oct 2026. The 58 CE setup now carries 17
+      helleno_egyptian pop blocks in eight Egyptian towns (Alexandria with the
+      nobles, clergy and burgher citizen class, Cairo and the Delta ports with
+      smaller merchant and clergy layers), and the event et_culture.10 was
+      written for the 650-800 window: it is chained on the Christianization
+      variable, moves three fifths of the Greek-speaking households into the
+      Coptic community, gives the Coptic population the Miaphysite faith and
+      leaves the Melkite tongue in the resistance branch. The record is now
+      applied, the sizes are documented as modelled proportions, and the
+      English and Turkish texts were written for the event.
+    acceptance: Either the setup carries the Greek-speaking urban minority and the absorption event is scripted, or the baseline record is corrected to say the layer is not modelled. Met on 20 Oct 2026, the layer is in the setup, the event is scripted and the record is applied.
   character_name_localization:
     period_id: ancient
     priority: 2

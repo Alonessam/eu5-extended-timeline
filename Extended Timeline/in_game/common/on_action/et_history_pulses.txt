@@ -34,6 +34,7 @@ et_egypt_yearly_pulse = {
 		et_culture.4
 		et_culture.5
 		et_culture.9
+		et_culture.10
 	}
 }
 

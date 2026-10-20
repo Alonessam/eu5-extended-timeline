@@ -58,7 +58,9 @@ Ayrıntılı adımlar tasarım notu bölüm 5'te; özet kontrol listesi:
 5. **Direnç dalı:** `.1`'de direnç seçeneğini seç → `change_date 600` →
    `.2`–`.5` ateşlenmemeli (zincir burada durur).
 6. `et_test_b_egypt_choice` kaydını yükle → `.1`'de **tarihsel** seçenek →
-   `change_date 350` → `.2` doğal ateşlenir → `change_date 1100` → `.4` →
+   `change_date 350` → `.2` doğal ateşlenir → `change_date 700` → `.10`
+   (Yunanca konuşan Mısır halkı Kıptî topluluğuna karışır; `.1`de tarihsel
+   seçilmiş olmalı) → `change_date 1100` → `.4` →
    `change_date 1200` → `.5`. (`.3` sahip-kapısı: ROM putperestken trigger
    FAIL; etkiler `event et_culture.3` ile zorlanır — gerekçe bölüm 5.)
 7. Kapanış: panoda İslam çoğunluk + Kıptî azınlık + Mısır kültürleri;
