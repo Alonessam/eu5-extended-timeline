@@ -9,7 +9,7 @@ records:
     dating: {precision: day, date: "1825.9.27", calendar: source_civil_date}
     source_refs: [{id: nrm_stockton_darlington, locator: Opening paragraph dated 27 September 1825}]
     confidence: high
-    integration: {status: collected, note: Exact route-to-location edges and a compatible building or transport model are needed before applying.}
+    integration: {status: collected, location_id: stockton, note: "The route is mapped to the two endpoints stockton and darlington (durham_province), which are the actual ends of the 1825 line. The game models a railway as the railroad_advance (age_6_revolutions) unlocking the railroad road type, so an opening event can be a dated country event for the owner of the two endpoints, while nationwide adoption stays with the vanilla technology tree. The event is not written yet because the Gaul chain has no 19th-century slot. Note: research/historical-events/2026-10-20_railway_mapping.md."}
   locomotion_opening_engine:
     entity: Locomotion No.1
     subject: technology_and_transport
@@ -17,7 +17,7 @@ records:
     dating: {precision: day, date: "1825.9.27", calendar: source_civil_date}
     source_refs: [{id: nrm_stockton_darlington, locator: Opening train paragraph}]
     confidence: high
-    integration: {status: collected, note: One documented train is not evidence that every region had railway technology.}
+    integration: {status: collected, note: "One documented train is not evidence that every region had railway technology, so the record stays unscripted. The opening train is the same event as the line opening, with Stephenson at the controls."}
   rocket_manufacture:
     entity: Rocket locomotive
     subject: technology_and_industry
@@ -25,7 +25,7 @@ records:
     dating: {precision: year, year: 1829}
     source_refs: [{id: smg_rocket, locator: Made and maker fields; Details}]
     confidence: high
-    integration: {status: collected, note: "Source gives a manufacture year, not an exact completion day or production quantity."}
+    integration: {status: collected, location_id: newcastle, note: "Source gives a manufacture year, not an exact completion day or production quantity. The place is mapped: Rocket was made at Newcastle upon Tyne, the game location newcastle (northumberland_province)."}
   rocket_rainhill_trials:
     entity: Rocket locomotive
     subject: technology_demonstration
@@ -33,4 +33,4 @@ records:
     dating: {precision: year, year: 1829}
     source_refs: [{id: smg_rocket, locator: "Details, trials paragraph"}]
     confidence: high
-    integration: {status: collected, note: No national technology level or military modifier is inferred.}
+    integration: {status: collected, location_id: liverpool, note: "No national technology level or military modifier is inferred. The trials were held at Rainhill, which has no game location; the nearest tile is liverpool, an approximation of about 15 km."}

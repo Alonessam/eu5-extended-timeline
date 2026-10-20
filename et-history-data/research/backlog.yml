@@ -158,11 +158,29 @@ tasks:
   railway_route_mapping:
     period_id: industrial
     priority: 2
-    state: pending
-    targets: [locations]
+    state: completed
+    targets: [research/industrial/2026-10-13_railways.yml, "Extended Timeline/in_game/events/et_culture_events.txt"]
     source_refs: [nrm_stockton_darlington, smg_rocket]
     question: How should dated routes, railway infrastructure and locomotive evidence be represented?
-    acceptance: Map the actual route to existing location IDs and distinguish an opening event from nationwide adoption.
+    evidence: >-
+      The game models a railway as the railroad_advance (age_6_revolutions,
+      requiring steel_mill_advance) unlocking the railroad road type, with the
+      build_railroad_demand construction demand, so a single event cannot
+      deliver a national railway. The map was read directly: the 1825 line
+      connects stockton and darlington (durham_province), Rocket was made at
+      newcastle (northumberland_province), and the Rainhill trials have no
+      tile of their own, the nearest being liverpool.
+    resolution: >-
+      Decided and documented on 20 Oct 2026 in
+      research/historical-events/2026-10-20_railway_mapping.md: the opening
+      event is a dated country event for the owner of the two route endpoints
+      (stockton and darlington), while nationwide adoption stays with the
+      vanilla technology tree and is never inferred from one line; a single
+      documented train does not imply a regional railway technology. The four
+      records now carry the verified location IDs, and the event itself is
+      not written because the Gaul chain jumps from 1789-1794 to 1881 and has
+      no 19th-century slot.
+    acceptance: Map the actual route to existing location IDs and distinguish an opening event from nationwide adoption. Met on 20 Oct 2026, the route, the works place and the trials place are mapped with their precision, and the opening is kept separate from nationwide adoption.
   un_membership_mapping:
     period_id: contemporary
     priority: 2
