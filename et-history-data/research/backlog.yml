@@ -788,6 +788,37 @@ tasks:
       the 20 Oct changes (108 at the 19 Oct close-out; 10 setup overrides
       deleted, 3 delta files added). Parser-level malformed blocks (the
       18 Oct ubian cascade) are outside this check and remain on Test B.
+  egypt_record_status_convention:
+    period_id: ancient
+    priority: 2
+    state: pending
+    targets: [research/historical-events/2026-10-17_egypt_culture_transition.yml, research/historical-events/2026-10-17_gaul_culture_transition.yml]
+    source_refs: []
+    question: Should the Egypt records be marked applied like the Gaul records once their facts are in the mod, or should the Gaul side fall back to pending until Test B?
+    evidence: >-
+      The two chains use the status field differently. All 22 Gaul records are
+      applied; all 11 Egypt records are pending except the 58 CE baseline
+      (applied, the setup file). The backlog rule in gaul_record_backfill says
+      "do not mark records applied before Test B", but the research schema
+      defines applied as "the specified fact was incorporated into the
+      existing history file", which is a factual statement, not a runtime
+      gate. The Egypt records fall into four groups: effect-implemented
+      (egypt_christianization_rise in .1/.2, egypt_coptic_emergence_and_continuity
+      in .2, egypt_islamization_waves in .3/.4, egypt_coptic_spoken_decline in
+      .5); incorporated as text context only (egypt_arab_conquest_639_642 and
+      egypt_arabic_administration_700 are cited in the .3 historical_info,
+      while the conquest itself is deliberately not scripted as a state
+      change); not implemented (egypt_chalcedon_split_451, dropped as
+      anachronistic for the scripted dates; egypt_helleno_egyptian_absorption,
+      low confidence and waiting for a source; kush_meroe_collapse_and_nubian_successors
+      and nubia_christianization_543, the Nubia stretch that has no events).
+    resolution: >-
+      Pending a maintainer decision. Recommendation: keep the status factual
+      and promote the four effect-implemented Egypt records to applied, leave
+      the context-only and unimplemented ones pending, and record the Test B
+      runtime gate in the integration notes of both chains rather than in the
+      status field.
+    acceptance: One status convention is used by both chains and the backlog rule about the Test B gate is either kept in the notes or removed.
   localization_key_audit:
     period_id: ancient
     priority: 2
