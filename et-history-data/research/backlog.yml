@@ -726,7 +726,7 @@ tasks:
     period_id: ancient
     priority: 3
     state: completed
-    targets: [Extended Timeline/in_game/events, Extended Timeline/in_game/common]
+    targets: [Extended Timeline/in_game/events, Extended Timeline/in_game/common, Extended Timeline/in_game/setup/countries]
     source_refs: []
     question: Which mod scripts still use effect, trigger, constant or scope tokens that exist nowhere in vanilla data, so the engine silently ignores them at runtime?
     evidence: >-
@@ -758,6 +758,14 @@ tasks:
       closed under invalid_culture_gfx_tags. The scan is reproducible with
       et-history-data/scripts/script-token-audit.py (stdlib only; --vanilla or
       EU5_VANILLA selects the game directory; exit 1 when findings exist).
+      Extension (2026-10-20): setup country blocks are now also checked for
+      bare culture_definition/religion_definition values against top-level
+      culture/religion definition keys (not the field-name corpus). A
+      synthetic negative test with an invalid culture and religion caught
+      both and exited 1; the real scan is clean. Target count is 101 after
+      the 20 Oct changes (108 at the 19 Oct close-out; 10 setup overrides
+      deleted, 3 delta files added). Parser-level malformed blocks (the
+      18 Oct ubian cascade) are outside this check and remain on Test B.
   gaul_postwar_immigration_layer:
     period_id: contemporary
     priority: 3

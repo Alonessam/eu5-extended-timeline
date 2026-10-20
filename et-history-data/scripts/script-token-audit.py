@@ -13,6 +13,8 @@ Checks:
   * outcome enum values (neutral/negative/positive)
   * illustration_tags values
   * define_pop type/culture/religion keys
+  * setup country culture_definition/religion_definition keys (against
+    top-level culture/religion definition blocks, not the field-name corpus)
   * change_language scope and dialect key
   * religion groups, culture groups and definition_modifier keys
   * groupless mod cultures (allowlisted intentional cases are skipped)
@@ -75,6 +77,12 @@ CULTURE_GROUPS = re.compile(r"culture_groups\s*=\s*\{([^}]*)\}")
 RELIGION_GROUP = re.compile(r"^\s*group\s*=\s*([a-z_][a-z0-9_]*)\s*$", re.M)
 DEFINITION_MODIFIER = re.compile(r"definition_modifier\s*=\s*\{([^}]*)\}", re.S)
 GROUP_KEY = re.compile(r"^([a-z_][a-z0-9_]*)\s*=\s*\{", re.M)
+SETUP_CULTURE = re.compile(
+    r"^\s*culture_definition\s*=\s*([A-Za-z_][A-Za-z0-9_]*)\s*$", re.M
+)
+SETUP_RELIGION = re.compile(
+    r"^\s*religion_definition\s*=\s*([A-Za-z_][A-Za-z0-9_]*)\s*$", re.M
+)
 
 OUTCOME_VALUES = {"neutral", "negative", "positive"}
 SKIP_ILLUSTRATION = {"10", "20"}
@@ -240,6 +248,14 @@ def top_level_blocks(text: str):
         yield match.group(1), match.start(), text[opening + 1 : end]
 
 
+def top_level_keys(root: Path) -> set[str]:
+    """Return column-0 block keys (culture/religion definitions)."""
+    keys: set[str] = set()
+    for _, text in iter_txt(root):
+        keys.update(key for key, _, _ in top_level_blocks(strip_comments(text)))
+    return keys
+
+
 def collect_modifier_keys(vanilla: Path, van_data: Path, mod: Path) -> set[str]:
     keys: set[str] = set()
     for base in (
@@ -323,6 +339,12 @@ def main() -> int:
     religions = union_keys(
         van_data / "common" / "religions", mod_data / "common" / "religions"
     )
+    culture_defs = top_level_keys(
+        van_data / "common" / "cultures"
+    ) | top_level_keys(mod_data / "common" / "cultures")
+    religion_defs = top_level_keys(
+        van_data / "common" / "religions"
+    ) | top_level_keys(mod_data / "common" / "religions")
     pop_types = union_keys(
         van_data / "common" / "pop_types", mod_data / "common" / "pop_types"
     )
@@ -398,6 +420,28 @@ def main() -> int:
             kind, value = match.group(1), match.group(2)
             if value not in resolvers[kind]:
                 add("unresolved reference", path, text, match.start(), f"{kind}:{value}")
+
+        if "setup" in parts:
+            for match in SETUP_CULTURE.finditer(text):
+                value = match.group(1)
+                if value not in culture_defs:
+                    add(
+                        "unknown setup culture",
+                        path,
+                        text,
+                        match.start(),
+                        f"culture_definition = {value}",
+                    )
+            for match in SETUP_RELIGION.finditer(text):
+                value = match.group(1)
+                if value not in religion_defs:
+                    add(
+                        "unknown setup religion",
+                        path,
+                        text,
+                        match.start(),
+                        f"religion_definition = {value}",
+                    )
 
         for match in TAG_USE.finditer(text):
             tag = match.group(1)
