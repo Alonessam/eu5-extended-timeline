@@ -65,6 +65,10 @@ Ayrıntılı adımlar tasarım notu bölüm 5'te; özet kontrol listesi:
 
 - `list_dhe_for` → Galya pencerelerinin ROM için listelendiğini doğrula
   (etiket bağı kanıtı).
+- Beklenen ilk popup: `et_culture.9000` (şablon test olayı) 58 CE'nin ilk
+  aylarında ROM için ateşlenir (DHE 58.1.1-58.6.1, aylık %50). Hata değildir;
+  kurulumda DHE yolunun çalıştığının kanıtıdır. Test B geçince emekliye
+  ayrılacak (tasarım notu bölüm 6, adım 5).
 - Tarih atlamaları: her durakta birkaç ay akıt (DHE aylık zar;
   `monthly_chance` 10–25) ve pencereyi bekle; teyit: `event_counts`.
 
