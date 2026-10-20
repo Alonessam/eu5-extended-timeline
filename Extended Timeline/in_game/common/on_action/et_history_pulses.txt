@@ -13,6 +13,7 @@
 yearly_country_pulse = {
 	on_actions = {
 		et_egypt_yearly_pulse
+		et_nubia_yearly_pulse
 	}
 }
 
@@ -32,5 +33,20 @@ et_egypt_yearly_pulse = {
 		et_culture.3
 		et_culture.4
 		et_culture.5
+		et_culture.9
+	}
+}
+
+# Nubia (Meroe collapse and the Christian Nubian kingdoms, MS 300-900).
+# Same owner-agnostic pattern: the anchor location decides who fires it, so a
+# successor state that takes Nubia continues the chain.
+et_nubia_yearly_pulse = {
+	trigger = {
+		owns = location:faras
+	}
+	events = {
+		et_culture.6
+		et_culture.7
+		et_culture.8
 	}
 }

@@ -291,23 +291,56 @@ kesri ayrılıp yeni din/kültüre geçer, kalan aynı kalır.
   hedef 1837 görünümü: Kıptî azınlık + Müslüman Arap-Mısırlı çoğunluk.
   Kalan Müslüman-Kopt poplar dil geçişinin kuşak aldığını temsil eder.
 
-### Ek: Nübya (stretch — ayrı onayla, bölüm 7 karar 3)
+### N?bya eki (Faz 1'e al?nd? ? b?l?m 7 karar 3, 20 Ekim 2026)
 
-- **et_culture.6 — "Meroë'nin Sessizliği"** (pencere 300–450):
-  `kushite` → `nubian` `fraction = 0.60`. Kayıt:
-  `kush_meroe_collapse_and_nubian_successors`.
-- **et_culture.7 — "Nobatia'nın Vaftizi"** (pencere 536–900):
-  `nubian` poplarda `miaphysite` `fraction = 0.60`; kasaba→köy kademesi.
-  Kayıt: `nubia_christianization_543`.
-- Nübya kendi alt-pulse'ını ister: `et_nubia_yearly_pulse`
-  (çapa lokasyonları — Faras/Dongola hattı — `definitions.txt`'ten
-  belirlenecek; not: çapa anahtarları henüz doğrulanmadı).
+?nc?l do?rulamas? 20 Ekim 2026'da yap?ld?: harita alan? `nubia_proper_area`
+(nobatia/makuria/suakin eyaletleri) mevcut; 58 CE kurulumunda MERO bu alan? ve
+`faras`, `dongola`, `qasr_ibrim` ?apalar?n? tutuyor; kushite n?fus 23 konumda 195
+birimlik; `nubian` k?lt?r? vanilla, `kushite` k?lt?r? modun `et_egypt.txt`
+dosyas?nda (`nilosahelian_group` ba?l?); `meroitic_language` modda tan?ml?.
+
+- **et_culture.6 ? "Mero?'nin Sessizli?i"** (pencere 300?450):
+  `area:nubia_proper_area` i?inde `kushite` ? `nubian`, `fraction = 0.60`.
+  Direni? dal?: `fraction = 0.15` ve zincir de?i?keni yaz?lmaz.
+  Kay?t: `kush_meroe_collapse_and_nubian_successors`.
+- **et_culture.7 ? "Nobatia'n?n Vaftizi"** (pencere 536?700):
+  `nubian`/`kushite` + `egyptian_polytheism` ? `miaphysite`, `fraction = 0.60`
+  (kasaba dalgas?). Direni?: `fraction = 0.10`.
+- **et_culture.8 ? "Hristiyan K?yler"** (pencere 700?900):
+  kalan n?fustan `fraction = 0.80` ? `miaphysite` (k?y dalgas?). Direni?:
+  `fraction = 0.10`.
+- Pulse: `et_nubia_yearly_pulse`, ?apa `owns = location:faras` (M?s?r pulse'?
+  gibi sahibinden ba??ms?z; b?lgeyi devralan devlet zinciri s?rd?r?r).
+- Zincir de?i?kenleri: `et_nubia_6` ? `.7` ? `.8`; direni? dal? hi?bir zincir
+  de?i?keni yazmad??? i?in sonraki olay tetiklenmez (M?s?r'daki `_resist`
+  de?i?kenlerinden farkl? olarak okunmayan de?i?ken b?rakmaz).
+- Yerelle?tirme: EN/TR 21 yeni anahtar (`.6`/`.7`/`.8` ba?l?k, g?vde, tarih
+  notu, iki se?enek ad? ve iki ipucu).
+
+### M?s?r dengeleme dalgas? ? et_culture.9 (b?l?m 7 karar 4, 20 Ekim 2026)
+
+Statik hesap (58 CE kurulumundaki `old_egyptian` + `egyptian_polytheism` n?fusu:
+Delta 3.468, Yukar? M?s?r 1.309) ?imdiki dalgalar?n sonunda **1:3,2**
+M?sl?man-Hristiyan oran? veriyor; kayd?n hedefi (Meml?k d?nemi sonunda yakla??k
+10:1) i?in bir dengeleme ad?m? gerekiyor. Tasarlanan notta ?ng?r?len `.4b`
+dalgas? olarak uyguland?:
+
+- **et_culture.9 ? "The Mamluk Wave"** (pencere 1300?1500): kalan Hristiyan ve
+  putperest n?fustan Delta `fraction = 0.65`, Yukar? M?s?r `fraction = 0.55`
+  ? `islam`. Direni?: 0,10 / 0,10.
+- Zincir: `has_variable = et_egypt_islam_2` (yani `.4` tarihsel se?ene?i se?ilirse
+  ate?lenir; direni? dal? zinciri durdurur).
+- Tahmini sonu?: Delta %90 M?sl?man / %8,6 Hristiyan, Yukar? M?s?r %81 / %9,3;
+  birle?ik oran ? 1:9,7 ? kayd?n 10:1 hedefine yak?n. Paylar kalibrasyon
+  d??mesidir: Test B pano okumas? farkl? sonu? verirse yaln?zca bu iki say?
+  de?i?ir.
 
 ### Kapsam dışı (bilinçli)
 
-- **`egypt_helleno_egyptian_absorption`:** kayıt `confidence: low` ve
-  "scriptlemeden önce özel kaynak gerekir" notlu; sağlam kaynak gelene kadar
-  olay yazılmaz.
+- **`egypt_helleno_egyptian_absorption`:** kaynak ihtiyac? 20 Ekim 2026'da
+  kapand? (Papaconstantinou 2012, Cromwell 2021; `confidence: medium`, tarihlendirme
+  c. 650-800) ama olay yine yaz?lm?yor: 58 CE kurulumunda Grek?e konu?ulan M?s?r
+  n?fusu yok. Kurulum karar? `egypt_helleno_egyptian_population` g?revinde.
 - **Fetihlerin kendisi** (Roma → Arap dönemi devlet değişimleri): devlet
   katmanı; bu pilot pop dönüşümüne odaklanır (kalite kuralı 3).
 
@@ -384,23 +417,46 @@ geçtikten sonra kaldırılır.
 4. Test A → Test B → (gerekirse kalibrasyon) → Test C.
 5. Zincir doğrulanınca `et_culture.9000` emekli; README/backlog senkronu.
 
-**Durum:** 1–3 ✓ (17 Ekim 2026). 4: Test A ✓; Test B koşum takımı hazır
-(`2026-10-19_test_b_protocol.md`), koşum sırada. 5: Test B geçince (9000 emekliliği + kayıt senkronu).
+**Durum:** 1?3 ? (17 Ekim 2026). 4: Test A ?; Test B ko?um tak?m? haz?r
+(`2026-10-19_test_b_protocol.md`), ko?um s?rada. 5: Test B ge?ince (9000 emeklili?i + kay?t senkronu).
+6: 20 Ekim 2026 ? N?bya eki (`.6`?`.8`), M?sl?man dengeleme dalgas? (`.9`), kay?t
+status konvansiyonu ve 58 CE kurulum onar?m? (biti? durumu `upper_egyptian_culture`
+s?z?nt?s? + kopyalanm?? pop bloklar?) tamamland?; b?l?m 7'deki 1?5 numaral?
+kararlar kapand?.
 
 Numara rezervasyonu (Samet ile mutabakat — **sağlandı**): Mısır `.1`–`.49`,
 Galya `.100`–`.149` (Galya `.101`–`.103` yürürlükte), sonraki bölgeler `.150`+.
 
 ## 7. Açık kararlar (maintainer)
 
-1. **Railroad derecesi:** Öneri — koşullu pencereler + sahiplik koşulu;
-   fetihler ve Müslüman egemenliğin oluşması **zorlanmaz** (oluşmazsa zincirin
-   ilgili dalı hiç ateşlenmez; diverjinans bilinçli). Onay gerekir.
-2. **Oyuncu seçeneği deseni:** Her olayda tarihsel + direniş; direniş zinciri
-   durdurur. AI tarihsel seçer. Onay gerekir.
-3. **Nübya eki:** Faz 1 içinde mi, Mısır yeşile döndükten sonraya mı?
-4. **Oran kalibrasyonu:** İlk taslak paylar; test verisiyle ayar. İslamlaşma
-   için ikinci dalga yeterli olmazsa `.4b` denge dalgası eklenir.
-5. **Hellno kaydı:** Sağlam kaynak bulunana kadar script yok (`pending`).
+1. **Fetih derecesi ? KAPANDI (20 Ekim 2026):** Ko?ullu pencereler + sahiplik
+   ko?ulu; fetihler ve M?sl?man egemenli?in olu?mas? **zorlanmaz**. Gerek?e:
+   `.3`teki `religion.group = religion_group:muslim` kap?s? bilin?li bir sahip
+   ko?uludur (tasar?m notu b?l?m 3, `.3`); zincirin ilgili dal? o sahip
+   belirmedi?inde hi? ate?lenmez, diverjinans bilin?li bir tercihtir. Ayn?
+   mant?k Galya zincirinde de ge?erlidir (DHE band?: yaln?zca ROM/FRAN/FRA).
+2. **Oyuncu se?ene?i deseni ? KAPANDI (20 Ekim 2026):** Her olayda tarihsel +
+   direni?; direni? dal? zincir de?i?kenini **yazmaz**, b?ylece sonraki olay
+   tetiklenmez ve zincir orada durur (M?s?r'da ayn? desen; N?bya'da da ayn?
+   uygulama, okunmayan `_resist` de?i?keni b?rak?lmad?). AI tarihsel se?ene?i
+   oynar.
+3. **N?bya eki ? KAPANDI (20 Ekim 2026):** Faz 1'e al?nd? ve uyguland?
+   (`.6`/`.7`/`.8` + `et_nubia_yearly_pulse`); ?nc?l do?rulamas? yap?ld? (b?l?m 3,
+   N?bya eki).
+4. **Oran kalibrasyonu ? KAPANDI (20 Ekim 2026), paylar test verisiyle:** 58 CE
+   kurulumundan statik hesap yap?ld?: mevcut dalgalar 1:3,2 veriyor, hedef 10:1;
+   bu y?zden Meml?k dalgas? `et_culture.9` (1300?1500, 0,65 / 0,55) eklendi ve
+   tahmini oran ? 1:9,7'ye ??k?yor. **A??k paylar kalibrasyon d??mesidir:**
+   Test B pano okumas? farkl? sonu? verirse yaln?zca `.9`un iki say?s? de?i?ir,
+   zincirin yap?s? de?i?mez.
+5. **Hellno kayd? ? KAYNAK KAPANDI (20 Ekim 2026), script kurulum karar?
+   bekliyor:** ?ki akademik kaynak eklendi (Papaconstantinou 2012, Cromwell 2021);
+   g?ven art? `low` ? `medium`, tarihlendirme `c. 700-1100` ? `c. 650-800`
+   (Grek?e topluluk dili olarak 7.-8. y?zy?lda geriliyor; sonras?nda ayin ve
+   maliye dili olarak s?r?p kal?yor). Olay yine yaz?lm?yor: 58 CE kurulumunda
+   Grek?e konu?ulan M?s?r n?fusu **yok** (`06_pops.txt`te 0 `helleno_egyptian`;
+   M?s?r `old_egyptian` + Yahudi az?nl?k). Kurulum karar?
+   `egypt_helleno_egyptian_population` g?revinde.
 6. ~~Galya numaralandırma mutabakatı~~ **sağlandı** (17 Ekim 2026): Samet
    Galya olaylarını `.101`–`.103`'e taşıdı; Mısır `.1`–`.49`, Galya
    `.100`–`.149` fiilen yürürlükte.

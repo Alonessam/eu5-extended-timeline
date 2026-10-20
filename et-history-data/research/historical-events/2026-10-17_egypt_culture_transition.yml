@@ -7,17 +7,21 @@ records:
     subject: population_baseline_58ce
     finding: >-
       At the 58 CE start the Nile Valley population is recorded as old_egyptian
-      (about 300 pop blocks), with Greek-speaking helleno_egyptian communities
-      around Alexandria and the Ptolemaic foundations, Roman and Mediterranean
-      minorities in the administration and the ports, and the Meroitic kushite
-      state upstream of the First Cataract. This baseline is the anchor that the
+      (296 pop blocks, about 4,777 size units) with the egyptian_polytheism
+      religion, and the Meroitic kushite state upstream of the First Cataract
+      (33 pop blocks in the Nubia area, held by MERO). The Nile towns also
+      carry Jewish minorities (mizrahi in Alexandria and Cairo, ashkenazi and
+      sephardi elsewhere in the empire). The Greek-speaking layer the records
+      describe is not in the start data: 06_pops.txt holds no helleno_egyptian
+      pop, and the helleno_egyptian culture stays defined but unused (see
+      egypt_helleno_egyptian_population). This baseline is the anchor that the
       transition chains move from.
-    population: "Nile Valley rural majority; urban Greek-speaking minority; Roman administration layer"
+    population: "Nile Valley rural majority; Jewish urban minorities; Meroitic kingdom upstream"
     dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
     mechanism: start setup data (no transition claimed)
     source_refs: []
     confidence: high
-    integration: {status: applied, target: "Extended Timeline/main_menu/setup/start/06_pops.txt", note: "58.2.1 start blocks; counts are approximate."}
+    integration: {status: applied, target: "Extended Timeline/main_menu/setup/start/06_pops.txt", note: "58 CE start blocks; counts verified on 20 Oct 2026 (296 old_egyptian + 454 egyptian_polytheism entries, 33 kushite, 77 nubian, 36 beja_culture, 0 helleno_egyptian). The same audit found and fixed nine end-state leaks (upper_egyptian_culture) and three duplicated pop blocks in the Nubia and Beja locations."}
   egypt_christianization_rise:
     entity: culture_old_egyptian
     subject: pop_religion_change_polytheism_to_christianity
@@ -33,7 +37,7 @@ records:
     mechanism: urban mission, monasticism, persecution and post-Constantinian imperial favor
     source_refs: [{id: wiki_christianity_egypt, locator: "Early history; The Rise of Christianity; The Era of Martyrs"}, {id: wiki_coptic_language, locator: "Article intro (Old Coptic, 1st-3rd century)"}]
     confidence: medium
-    integration: {status: pending, target: "events (WS2 religion layer)", note: "Candidate event window c. 150-450; rate must stay gradual."}
+    integration: {status: applied, target: "events (et_culture.1, et_culture.2)", note: "et_culture.1 (200-500) converts the old_egyptian + egyptian_polytheism pops of Lower Egypt (0.30) and Upper Egypt (0.15) to miaphysite; et_culture.2 (300-600) continues with 0.45 and 0.35. The gradual share is the record's own requirement. Test B gate: runtime confirmation pending (run 2026-10-20_1833_test_b)."}
   egypt_coptic_emergence_and_continuity:
     entity: culture_old_egyptian
     subject: culture_continuity_script_and_identity_shift
@@ -48,7 +52,7 @@ records:
     mechanism: language stage change (Demotic to Coptic) plus Christianization
     source_refs: [{id: wiki_coptic_language, locator: "Article intro"}]
     confidence: high
-    integration: {status: pending, target: "culture chain old_egyptian -> coptic_culture", note: "Both keys exist; no new culture key needed."}
+    integration: {status: applied, target: "events (et_culture.2)", note: "et_culture.2 changes the old_egyptian + miaphysite pops to coptic_culture in Lower and Upper Egypt, so the identity shift follows the religion step; both keys already existed, no new culture key was needed. Test B gate: runtime confirmation pending."}
   egypt_chalcedon_split_451:
     entity: culture_coptic
     subject: religious_identity_boundary
@@ -63,7 +67,7 @@ records:
     mechanism: church schism
     source_refs: [{id: wiki_christianity_egypt, locator: "The Byzantine Empire"}]
     confidence: high
-    integration: {status: pending, target: "events (WS2 religion layer)", note: "Identity marker; may not need a direct pop effect."}
+    integration: {status: pending, target: "not scripted (deliberate)", note: "The chain models an uninterrupted Miaphysite church: the Council of Chalcedon (451) falls after the modelled windows and the earlier chalcedonism key was dropped as anachronistic (see the et_culture.2 event note). A Chalcedon event would need its own window plus a Melkite/Greek population layer. Test B gate: n/a."}
   egypt_arab_conquest_639_642:
     entity: culture_coptic
     subject: ruler_change_not_mass_conversion
@@ -78,7 +82,7 @@ records:
     mechanism: conquest and garrison settlement
     source_refs: [{id: wiki_arab_conquest_egypt, locator: "Article intro and campaign sections"}]
     confidence: high
-    integration: {status: pending, target: "state layer; later events", note: "Do not model as single-day pop conversion."}
+    integration: {status: pending, target: "context in events (et_culture.3 historical_info)", note: "The conquest changes rule, not population, and the state layer is out of scope by design (Egypt design note section 3); the record is cited as context in the .3 historical_info and deliberately not scripted as a pop effect. Test B gate: n/a."}
   egypt_arabic_administration_700:
     entity: culture_coptic
     subject: elite_language_shift
@@ -92,7 +96,7 @@ records:
     mechanism: state administration reform
     source_refs: [{id: wiki_coptic_language, locator: "Article intro and history sections"}]
     confidence: medium
-    integration: {status: pending, target: "events", note: "Source attributes the decree to Abd al-Malik (turn of the 8th century); Egypt implementation c. 706 — keep the window."}
+    integration: {status: pending, target: "context in events (et_culture.3 historical_info)", note: "The arabization of the chancery is the elite-language context of .3 (garrison cities, tax rolls and chancery speak Arabic); it is cited in the .3 historical_info and described in the .3 desc, but no separate pop effect is scripted. The source attributes the decree to Abd al-Malik (turn of the 8th century); Egypt implementation c. 706 - keep the window. Test B gate: n/a."}
   egypt_islamization_waves:
     entity: culture_coptic
     subject: pop_religion_change_christian_to_muslim
@@ -108,7 +112,7 @@ records:
     mechanism: fiscal pressure, social mobility, revolts and persecution waves
     source_refs: [{id: wiki_islamization_egypt, locator: "Article intro; Fatimid and Mamluk era sections"}]
     confidence: medium
-    integration: {status: pending, target: "events (WS2 religion layer)", note: "Model with stepped windows and partial shares; majority threshold c. 1000-1200."}
+    integration: {status: applied, target: "events (et_culture.3, et_culture.4)", note: "et_culture.3 (650-1100) converts 0.30 (Lower) / 0.15 (Upper) of the miaphysite and polytheist pops to islam; et_culture.4 (1000-1400) converts 0.60 / 0.50 of the remainder. The owner gate (religion.group = religion_group:muslim) is deliberate: Muslim rule is never forced. Test B gate: runtime confirmation pending, and the panel ratio read in the protocol is the calibration data for design note decision 4."}
   egypt_coptic_spoken_decline:
     entity: culture_coptic
     subject: pop_culture_change_coptic_to_egyptian_arabic
@@ -126,7 +130,7 @@ records:
     mechanism: language shift following Islamization, administration and urban pressure
     source_refs: [{id: wiki_coptic_language, locator: "Article intro and decline sections"}]
     confidence: medium
-    integration: {status: pending, target: "culture chain coptic_culture -> lower/upper egyptian", note: "Leave a residual Coptic share (roughly the modern minority)."}
+    integration: {status: applied, target: "events (et_culture.5)", note: "et_culture.5 (950-1450) moves 0.75 (Lower) / 0.55 (Upper) of the islam + old_egyptian/coptic pops to lower_egyptian_culture / upper_egyptian_culture; the Coptic minority keeps coptic_culture, which is the residual share the record asks for. Test B gate: runtime confirmation pending."}
   egypt_helleno_egyptian_absorption:
     entity: culture_helleno_egyptian
     subject: minority_elite_culture_absorption
@@ -135,14 +139,20 @@ records:
       its administrative role after the conquest (Arabic replaces Greek in
       government by c. 700) and over the early Middle Ages merges into the
       Arabic-speaking majority (partly via the Coptic community); Greek
-      persists mainly as a liturgical language of the Melkite church. The pace
-      of absorption is poorly quantified — flagged for a stronger source.
+      persists mainly as a liturgical language of the Melkite church.
+      Scholarship since 2012 qualifies the older picture: Greek in Egypt worked
+      as a lingua franca and a language of culture rather than a mother
+      tongue, its everyday use receded during the 7th century and by the 8th
+      century was confined to fiscal and administrative documents, while Coptic
+      held official use for roughly seventy years (c. 690-750). The community
+      language shift is therefore datable to the 7th-8th century; the survival
+      of Greek is a religious and commercial afterlife rather than a community.
     population: "urban Greek-speaking communities"
-    dating: {precision: period, date: "c. 700-1100", calendar: ce_year_normalized_to_et}
+    dating: {precision: period, date: "c. 650-800", calendar: ce_year_normalized_to_et}
     mechanism: loss of administrative function, intermarriage, language shift
-    source_refs: [{id: wiki_coptic_language, locator: "Article intro"}, {id: wiki_christianity_egypt, locator: "Under Muslim rule"}]
-    confidence: low
-    integration: {status: pending, target: "events", note: "Needs a dedicated source before scripting; weak dating."}
+    source_refs: [{id: wiki_coptic_language, locator: "Article intro"}, {id: wiki_christianity_egypt, locator: "Under Muslim rule"}, {id: papaconstantinou_greek_in_egypt, locator: "Chapter 3, introduction and conclusion"}, {id: cromwell_egypt_language_policy, locator: "Discussion and conclusion sections"}]
+    confidence: medium
+    integration: {status: pending, target: "not scripted (setup dependency)", note: "The source requirement of design note decision 5 is met: two scholarly sources were added, confidence rose from low to medium and the dating sharpened to c. 650-800. The event still cannot be scripted because the 58 CE setup has no Greek-speaking Egyptian population - 06_pops.txt holds 0 helleno_egyptian pops, so the mod's Egypt is old_egyptian plus Jewish minorities while the helleno_egyptian culture stays defined but unused. The setup decision is filed as egypt_helleno_egyptian_population. Test B gate: n/a."}
   kush_meroe_collapse_and_nubian_successors:
     entity: culture_kushite
     subject: polity_collapse_and_identity_transition
@@ -159,7 +169,7 @@ records:
     mechanism: state collapse, Aksumite campaign, elite replacement by the Nobatae
     source_refs: [{id: wiki_meroe, locator: "Fourth Meroitic Period"}, {id: wiki_nobatia, locator: "History"}]
     confidence: medium
-    integration: {status: pending, target: "culture chain kushite -> nubian", note: "Nubian successor cultures and the nilosahelian_group wiring are now in place."}
+    integration: {status: applied, target: "events (et_culture.6)", note: "Nubia extension, design note section 3 (Nubia) and section 7 decision 3: et_culture.6 (300-450) moves 0.60 of the kushite pops of area:nubia_proper_area to culture:nubian as Meroe collapses. The prerequisites were verified on 20 Oct 2026: the kushite population (195 size in 13 of the 36 locations of the area, 23 locations in total), the anchor locations (faras, dongola, qasr_ibrim, owned by MERO in the 58 CE setup), the vanilla nubian culture and the mod kushite culture with its nilosahelian_group wiring all exist. Test B gate: runtime confirmation pending."}
   nubia_christianization_543:
     entity: culture_kushite
     subject: pop_religion_and_culture_change
@@ -175,4 +185,4 @@ records:
     mechanism: royal conversion, missionary activity, temple conversions
     source_refs: [{id: wiki_nobatia, locator: "Article intro; History and Christianity sections"}]
     confidence: medium
-    integration: {status: pending, target: "events (WS2 religion layer)", note: "Christianization window c. 536-900 with town-then-village pacing."}
+    integration: {status: applied, target: "events (et_culture.7, et_culture.8)", note: "Nubia extension: et_culture.7 (536-700) converts 0.60 of the nubian + egyptian_polytheism pops of area:nubia_proper_area to miaphysite (the town wave) and et_culture.8 (700-900) converts 0.80 of the remainder (the village wave), so the record's town-then-village pacing is modelled with two windows. Test B gate: runtime confirmation pending."}

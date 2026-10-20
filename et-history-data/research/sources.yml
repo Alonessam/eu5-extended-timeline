@@ -1,5 +1,5 @@
 schema_version: 1
-checked_on: "2026-10-17"
+checked_on: "2026-10-20"
 sources:
   unesco_gobekli:
     title: Göbekli Tepe
@@ -648,3 +648,17 @@ sources:
     url: https://en.wikipedia.org/wiki/Portuguese_in_France
     locator: History (Great Portuguese emigration 1957-1974); Demographics table
     caveat: Emigration peaks and community totals combine Portuguese and French census and scholarly estimates and are approximate.
+  papaconstantinou_greek_in_egypt:
+    title: "Why did Coptic fail where Aramaic succeeded? Linguistic developments in Egypt and the Near East after the Arab conquest"
+    publisher: "Arietta Papaconstantinou, in Multilingualism in the Graeco-Roman Worlds (Cambridge University Press, 2012); open preprint (University of Reading, CentAUR)"
+    type: academic_chapter
+    url: https://centaur.reading.ac.uk/32803/1/why%20did%20coptic%20fail.pdf
+    locator: "Chapter 3, introduction and conclusion (Greek functioned as a lingua franca and a language of culture rather than a mother tongue; its use receded after the conquest; Greek survived in the Melkite churches)"
+    caveat: "Open preprint pagination differs from the printed chapter; the chapter argues about registers of language and warns against a simple Coptic-speaking countryside versus Greek-speaking town dichotomy."
+  cromwell_egypt_language_policy:
+    title: "Language Policy and the Administrative Framework of Early Islamic Egypt"
+    publisher: "Jennifer Cromwell, open preprint (Manchester Metropolitan University, 2021)"
+    type: academic_article
+    url: https://e-space.mmu.ac.uk/630555/3/Cromwell%20-%20Lang%20Policy%20%5Brevised%20July%202021%5D.pdf
+    locator: "Discussion and conclusion sections (the decline of Greek was faster than that of Coptic; by the 8th century Greek was restricted to fiscal and administrative use; Coptic held official use c. 690-750)"
+    caveat: "Works from the papyrological record of the first century of Islamic rule; the dated window of official Coptic use rests on the tax documents, and the text was accessed as a preprint."

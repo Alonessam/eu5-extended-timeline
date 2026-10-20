@@ -73448,20 +73448,17 @@ faras = {
 daw_sud = {
 	define_pop = {	type = peasants	size = 4.184	culture = nubian	religion = egyptian_polytheism }
 	define_pop = {	type = peasants	size = 11.510	culture = nubian	religion = egyptian_polytheism }
-	define_pop = {	type = peasants	size = 5.231	culture = upper_egyptian_culture	religion = egyptian_polytheism }
-	define_pop = {	type = tribesmen	size = 5.231	culture = upper_egyptian_culture	religion = egyptian_polytheism }
+	define_pop = {	type = peasants	size = 5.231	culture = kushite	religion = egyptian_polytheism }
 }
 kalabsha = {
 	define_pop = {	type = peasants	size = 5.203	culture = nubian	religion = egyptian_polytheism }
 	define_pop = {	type = peasants	size = 14.310	culture = nubian	religion = egyptian_polytheism }
-	define_pop = {	type = peasants	size = 6.504	culture = upper_egyptian_culture	religion = egyptian_polytheism }
-	define_pop = {	type = tribesmen	size = 6.504	culture = upper_egyptian_culture	religion = egyptian_polytheism }
+	define_pop = {	type = peasants	size = 6.504	culture = kushite	religion = egyptian_polytheism }
 }
 qasr_ibrim = {
 	define_pop = {	type = peasants	size = 7.804	culture = nubian	religion = egyptian_polytheism }
 	define_pop = {	type = peasants	size = 21.466	culture = nubian	religion = egyptian_polytheism }
-	define_pop = {	type = peasants	size = 9.756	culture = upper_egyptian_culture	religion = egyptian_polytheism }
-	define_pop = {	type = tribesmen	size = 9.756	culture = upper_egyptian_culture	religion = egyptian_polytheism }
+	define_pop = {	type = peasants	size = 9.756	culture = kushite	religion = egyptian_polytheism }
 }
 sai = {
 	define_pop = {	type = clergy	size = 0.007	culture = nubian	religion = egyptian_polytheism }
@@ -73489,10 +73486,10 @@ badi = {
 	define_pop = {	type = tribesmen	size = 5.287	culture = beja_culture	religion = egyptian_polytheism }
 }
 deraheib = {
-	define_pop = {	type = nobles	size = 0.007	culture = upper_egyptian_culture	religion = egyptian_polytheism }
-	define_pop = {	type = clergy	size = 0.015	culture = upper_egyptian_culture	religion = egyptian_polytheism }
+	define_pop = {	type = nobles	size = 0.007	culture = beja_culture	religion = egyptian_polytheism }
+	define_pop = {	type = clergy	size = 0.015	culture = beja_culture	religion = egyptian_polytheism }
 	define_pop = {	type = tribesmen	size = 14.390	culture = beja_culture	religion = egyptian_polytheism }
-	define_pop = {	type = tribesmen	size = 3.597	culture = upper_egyptian_culture	religion = egyptian_polytheism }
+	define_pop = {	type = tribesmen	size = 3.597	culture = beja_culture	religion = egyptian_polytheism }
 }
 horn_desert_corridor1 = {
 }

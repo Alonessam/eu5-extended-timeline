@@ -594,6 +594,30 @@ tasks:
       YAML-invalid file in the mod (the Turkish .109 desc with unescaped
       quotes) was fixed at the same time. Test B remains the gate.
 
+      UPDATE 25 (2026-10-20, Egypt decisions and the Nubia extension): the
+      Egypt design note's open decisions 1-5 were closed. (a) The conquest
+      degree stays conditional - the .3 owner gate is deliberate and Muslim
+      rule is never forced. (b) The option pattern is historical plus
+      resistance; the resistance branch does not write a chain variable, so
+      the chain stops there (the same rule now applies to Nubia, with no
+      unread resist variable). (c) The Nubia extension entered Phase 1 and was
+      implemented - et_culture.6-.8 plus et_nubia_yearly_pulse (guard owns =
+      location:faras) and 21 EN/TR keys - after the prerequisites were verified
+      (nubia_proper_area, MERO holding faras/dongola/qasr_ibrim, 33 kushite
+      pops, the vanilla nubian culture and the mod kushite culture). (d) The
+      ratio calibration got its first data point: a static computation over
+      the 58 CE setup gives 1:3.2 for the existing waves, so the Mamluk wave
+      et_culture.9 (1300-1500, 0.65/0.55) was added, with a predicted
+      combined ratio of about 1:9.7; the two fractions are the calibration
+      knob for the Test B panel reading. (e) The Helleno record is now
+      properly sourced (Papaconstantinou 2012, Cromwell 2021; confidence
+      medium, dating c. 650-800) but stays unscripted, because the 58 CE
+      setup has no Greek-speaking Egyptian population - the setup decision is
+      filed as egypt_helleno_egyptian_population. The same session found and
+      fixed nine end-state culture leaks (upper_egyptian_culture) and three
+      duplicated pop blocks in the 58 CE setup, and the record statuses of
+      both chains now follow one factual convention with the Test B gate in
+      the notes.
     acceptance: Maintainers confirm the pilot region and the intermediate-identity policy; phase 1 collects sourced transition records under research/historical-events before any event script is written in the mod.
   culture_group_gaps_remaining:
     period_id: ancient
@@ -791,7 +815,7 @@ tasks:
   egypt_record_status_convention:
     period_id: ancient
     priority: 2
-    state: pending
+    state: completed
     targets: [research/historical-events/2026-10-17_egypt_culture_transition.yml, research/historical-events/2026-10-17_gaul_culture_transition.yml]
     source_refs: []
     question: Should the Egypt records be marked applied like the Gaul records once their facts are in the mod, or should the Gaul side fall back to pending until Test B?
@@ -819,6 +843,117 @@ tasks:
       runtime gate in the integration notes of both chains rather than in the
       status field.
     acceptance: One status convention is used by both chains and the backlog rule about the Test B gate is either kept in the notes or removed.
+    resolution: >-
+      Closed on 20 Oct 2026: the status is now factual in both chains and the
+      Test B gate lives in the integration notes. Four Egypt records were
+      promoted to applied (egypt_christianization_rise,
+      egypt_coptic_emergence_and_continuity, egypt_islamization_waves,
+      egypt_coptic_spoken_decline), the two context-only records keep pending
+      with the note "context in events (et_culture.3 historical_info)", and the
+      four unimplemented records keep pending with the reason in the note. The
+      two Nubia records became applied with the new et_culture.6-.8 events.
+    acceptance: One status convention is used by both chains and the backlog rule about the Test B gate is either kept in the notes or removed. Met on 20 Oct 2026, the status is factual and the gate is in the notes.
+  egypt_nubia_extension:
+    period_id: ancient
+    priority: 2
+    state: completed
+    targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/common/on_action/et_history_pulses.txt", "Extended Timeline/in_game/localization/english/et_culture_events_l_english.yml", "Extended Timeline/in_game/localization/turkish/et_culture_events_l_turkish.yml", "research/historical-events/2026-10-17_egypt_culture_transition.yml"]
+    source_refs: [wiki_meroe, wiki_nobatia]
+    question: Should the Nubia extension (Meroe collapse and the Christian Nubian kingdoms) enter Phase 1, and what does it need?
+    evidence: >-
+      The design note listed the Nubia stretch (.6/.7) with the anchor
+      locations unverified. Verified offline on 20 Oct 2026: the map area
+      nubia_proper_area exists (nobatia/makuria/suakin provinces, 36
+      locations); in the 58 CE setup MERO owns faras, dongola, qasr_ibrim and
+      16 of the 23 locations that hold kushite pops (195 size in total); the
+      vanilla nubian culture and the mod kushite culture (nilosahelian_group)
+      exist, as does meroitic_language; the religion of the Nubian pops in the
+      setup is the vanilla egyptian_polytheism, so no new religion key is
+      needed.
+    resolution: >-
+      Phase 1 accepted and implemented on 20 Oct 2026: et_culture.6 (300-450,
+      kushite -> nubian 0.60 in area:nubia_proper_area), et_culture.7
+      (536-700, 0.60 to miaphysite) and et_culture.8 (700-900, 0.80 of the
+      remainder), the et_nubia_yearly_pulse (guard owns = location:faras,
+      owner-agnostic like the Egypt pulse) and 21 EN/TR localization keys. The
+      resistance branch does not write a chain variable, so the chain stops
+      there and no unread variable is left behind. Test B gate: the chain fires
+      for the AI MERO country in the same session (protocol section R1b).
+    acceptance: The Nubia events and pulse are implemented with sourced records, EN/TR localization and an owner-agnostic pulse; Test B shows the three events firing for MERO.
+  egypt_mamluk_balance_wave:
+    period_id: ancient
+    priority: 2
+    state: completed
+    targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "research/historical-events/2026-10-17_egypt_event_design.md"]
+    source_refs: [wiki_islamization_egypt]
+    question: How do the Egypt chain's fractions reach the record's ten-to-one Muslim-Christian ratio?
+    evidence: >-
+      The record states a Muslim-to-Christian ratio near ten to one by the end
+      of the Mamluk period, and the design note left the calibration to test
+      data. A static computation over the 58 CE setup (old_egyptian +
+      egyptian_polytheism: Delta 3,468.2, Upper Egypt 1,308.8) gives 1:3.2
+      after the current waves (.1/.2/.3/.4), so the existing fractions cannot
+      reach the target and a balance wave is required. Two options were
+      weighed: raising the .3/.4 fractions (which would need 0.87-0.89 in .4,
+      that is a single near-total flip, which breaks the gradual design) or a
+      separate Mamluk-era wave (the design note's own .4b sketch).
+    resolution: >-
+      The separate wave was implemented on 20 Oct 2026: et_culture.9 "The
+      Mamluk Wave" (1300-1500, Delta 0.65 and Upper Egypt 0.55 of the
+      remaining Christian and polytheist pool, chained on the .4 historical
+      variable) with EN/TR localization. The static prediction is Delta 90
+      percent Muslim against 8.6 percent Christian, Upper Egypt 81 against 9.3,
+      combined about 1:9.7. The two fractions are the calibration knob: the
+      Test B panel reading decides whether they move.
+    acceptance: The chain has a modelled path to the record's ratio and the calibration values are documented with their prediction; the final numbers come from the Test B panel reading.
+  egypt_setup_culture_leak_fix:
+    period_id: ancient
+    priority: 2
+    state: completed
+    targets: ["Extended Timeline/main_menu/setup/start/06_pops.txt"]
+    source_refs: []
+    question: Does the 58 CE setup contain populations and cultures that belong to a later stage of the chains?
+    evidence: >-
+      The 20 Oct 2026 setup audit found nine define_pop blocks in the 58 CE
+      start that already carried the arabization end-state culture
+      upper_egyptian_culture (daw_sud, kalabsha, qasr_ibrim, deraheib) with
+      the pre-Islamic religion egyptian_polytheism, and three of them were
+      exact copies of the neighbouring block with the pop type changed to
+      tribesmen. The neighbouring locations follow a clear pattern: the Nobadia
+      locations carry a nubian majority with a kushite minority, and the Beja
+      locations carry beja_culture.
+    resolution: >-
+      Fixed on 20 Oct 2026: the nine blocks were set to the local pattern
+      (kushite in the Nobatia locations, beja_culture in deraheib) and the
+      three duplicated tribesmen copies were removed. The file now holds 0
+      upper_egyptian_culture entries and 49,950 define_pop blocks; the chain
+      inputs were re-counted afterwards (kushite 33, nubian 77, beja_culture
+      36).
+    acceptance: The 58 CE setup contains no end-state cultures and no duplicated pop blocks; the chain input populations are counted and documented.
+  egypt_helleno_egyptian_population:
+    period_id: ancient
+    priority: 3
+    state: pending
+    targets: ["Extended Timeline/main_menu/setup/start/06_pops.txt", "Extended Timeline/in_game/events/et_culture_events.txt", "research/historical-events/2026-10-17_egypt_culture_transition.yml"]
+    source_refs: [papaconstantinou_greek_in_egypt, cromwell_egypt_language_policy]
+    question: Should the 58 CE setup carry the Greek-speaking urban minority of Roman Egypt, so that the helleno_egyptian record can become an event?
+    evidence: >-
+      The record egypt_helleno_egyptian_absorption is now properly sourced
+      (confidence medium, dating c. 650-800), but the 58 CE setup has no
+      Greek-speaking Egyptian population at all: 06_pops.txt holds 0
+      helleno_egyptian pops, so the mod's Egypt is old_egyptian plus Jewish
+      minorities while the helleno_egyptian culture stays defined and unused.
+      Historically Alexandria and the Delta towns were Greek-speaking or
+      bilingual, with Greek in wide use as a second language, so the baseline
+      is thin in exactly the layer the record describes.
+    resolution: >-
+      Pending a maintainer decision. Recommendation: add a helleno_egyptian
+      minority to the Egyptian towns of the 58 CE start (Alexandria, Cairo and
+      the Delta ports), keep the old_egyptian majority, and then script the
+      absorption event in a c. 650-800 window. The alternative is to correct
+      the baseline record to state that the Greek-speaking layer is not
+      modelled.
+    acceptance: Either the setup carries the Greek-speaking urban minority and the absorption event is scripted, or the baseline record is corrected to say the layer is not modelled.
   localization_key_audit:
     period_id: ancient
     priority: 2

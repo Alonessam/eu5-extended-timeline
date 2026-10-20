@@ -45,7 +45,12 @@ log etkisini gösterir.
 Ayrıntılı adımlar tasarım notu bölüm 5'te; özet kontrol listesi:
 
 1. `event_probabilities yearly_country_pulse` → dökümde
-   `et_egypt_yearly_pulse` görünmeli (kanca kanıtı).
+   `et_egypt_yearly_pulse` **ve** `et_nubia_yearly_pulse` görünmeli (kanca kanıtı).
+   Konsol notu: `event_probabilities` yalnızca `monthly_country_pulse`,
+   `yearly_country_pulse`, `biyearly_country_pulse` ve
+   `four_yearly_country_pulse` adlarını kabul eder; modun pulse adını vermek
+   `console_failure` üretir (18 Ekim oturumunda öyle oldu). Doğru komut
+   `event_probabilities yearly_country_pulse`.
 2. `test_event_trigger et_culture.1` → **FAIL** beklenir (58 < pencere).
 3. `change_date 250` → tekrar `test_event_trigger et_culture.1` → **PASS**.
 4. Doğal ateşleme: yıl sınırını geçir (`tick_day`; gerekirse hız 5'te
@@ -58,6 +63,34 @@ Ayrıntılı adımlar tasarım notu bölüm 5'te; özet kontrol listesi:
    FAIL; etkiler `event et_culture.3` ile zorlanır — gerekçe bölüm 5.)
 7. Kapanış: panoda İslam çoğunluk + Kıptî azınlık + Mısır kültürleri;
    `test_event_trigger et_culture.1` → FAIL (tekilleştirme kanıtı).
+8. **Oran ölçümü (tasarım notu karar 4'ün kalibrasyon verisi):** `.4`ten sonra
+   Mısır panosunda Delta ve Yukarı Mısır din dağılımını oku ve `report.md`ye
+   yaz. Statik beklenti (58 CE kurulumundan, paylarla hesaplandı): `.1`
+   sonrası Hristiyan Delta %30 / Yukarı %15; `.2` sonrası Delta %75 / Yukarı
+   %50; `.3` sonrası Müslüman Delta %30 / Yukarı %15; `.4` sonrası Müslüman
+   Delta %72 / Yukarı %57,5 (birleşik ≈ 1:1,3 Müslüman-Hristiyan).
+   `et_culture.9` (Memlûk dalgası) bu oranı ≈ 1:9,7'ye çıkarır; kayıt 10:1'i
+   hedefler. Pano okuması farklıysa yalnızca `.9`un iki sayısı değişir.
+9. **Memlûk dalgası (`.9`):** `change_date 1350` → `.9` doğal ateşlenmeli
+   (önkoşul: `.4`te tarihsel seçenek seçilmiş olmalı) → tarihsel seç; kapanışta
+   Hristiyan azınlık ağırlıklı olarak Yukarı Mısır'da kalmış olmalı.
+
+## R1b — Nübya (MERO, 300 → 900)
+
+Nübya zinciri sahibinden bağımsız bir pulse ile çalışır ve 58 CE kurulumunda
+Nübya'yı **MERO** tuttuğu için aynı oturumda yapay ülke olarak ateşlenir;
+ayrı bir kampanya gerekmez. Ayrıntılı kontrol:
+
+- `event_probabilities yearly_country_pulse` → `et_nubia_yearly_pulse` listede
+  olmalı (R1 adım 1).
+- Günlük ilerlemede logda `et_culture.6` (300-450, Meroë'nin çöküşü),
+  `et_culture.7` (536-700, Nobatia'nın vaftizi) ve `et_culture.8` (700-900,
+   Hristiyan köyler) satırları geçmeli; her biri MERO için ateşlenir.
+- Yapay ülkenin seçtiği dal logdan okunur: tarihsel dalda Nübya nüfusu
+  kushite'den nubian'a ve sonra miaphysite'a döner, direniş dalında zincir
+  durur (ikinci olay tetiklenmez).
+- Görsel doğrulama isteğe bağlı: MERO ile ayrı bir kayıt açılırsa Nübya panosu
+  kontrol edilir.
 
 ## R2 — Galya / Roma (58 → ~490)
 

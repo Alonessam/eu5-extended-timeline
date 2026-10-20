@@ -660,6 +660,384 @@ et_culture.5 = { # Arabization (record: egypt_coptic_spoken_decline)
 }
 
 # ===========================================================================
+# EGYPT BALANCE WAVE (WS4: et_culture.9)
+# The Mamluk 14th-century wave: the last big conversion step that brings the
+# Muslim-to-Christian ratio close to the ten-to-one figure of the record.
+# ID note: the ID continues the Egypt chain (after the Nubia chain .6-.8).
+# Sourced record: et-history-data/research/historical-events/2026-10-17_egypt_culture_transition.yml
+# (egypt_islamization_waves)
+# ===========================================================================
+
+# 9. The Mamluk Wave (MS 1300-1500)
+et_culture.9 = {
+	type = country_event
+	title = et_culture.9.title
+	desc = et_culture.9.desc
+	outcome = neutral
+	historical_info = et_culture.9.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		has_variable = et_egypt_islam_2
+		current_year >= 1300
+		current_year <= 1500
+		NOT = { has_variable = et_egypt_9_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_egypt_9_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.9.a
+		historical_option = yes
+		set_variable = { name = et_egypt_9 value = 1 }
+		custom_tooltip = {
+			text = et_culture.9.a.tt
+			# The last large conversion wave: Lower Egypt first, Upper Egypt after.
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.65
+						religion = religion:islam
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.55
+						religion = religion:islam
+					}
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.9.b
+		custom_tooltip = {
+			text = et_culture.9.b.tt
+			every_owned_location = {
+				limit = {
+					area = area:lower_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.10
+						religion = religion:islam
+					}
+				}
+			}
+			every_owned_location = {
+				limit = {
+					area = area:upper_egypt_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:old_egyptian
+							culture = culture:coptic_culture
+						}
+						OR = {
+							religion = religion:miaphysite
+							religion = religion:egyptian_polytheism
+						}
+					}
+					split_pop = {
+						fraction = 0.10
+						religion = religion:islam
+					}
+				}
+			}
+		}
+		add_stability = -5
+	}
+}
+
+# ===========================================================================
+# NUBIA STRETCH EVENTS (WS4: et_culture.6 - et_culture.8)
+# Period: Meroe collapse and the Christian Nubian kingdoms (MS 300-900)
+# Sourced records: et-history-data/research/historical-events/2026-10-17_egypt_culture_transition.yml
+# Fired via et_nubia_yearly_pulse in on_action/et_history_pulses.txt (owner-agnostic).
+# Design note: et-history-data/research/historical-events/2026-10-17_egypt_event_design.md (section 3, Nubia)
+# ===========================================================================
+
+# 6. The Silence of Meroe (MS 300-450)
+et_culture.6 = {
+	type = country_event
+	title = et_culture.6.title
+	desc = et_culture.6.desc
+	outcome = neutral
+	historical_info = et_culture.6.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		current_year >= 300
+		current_year <= 450
+		NOT = { has_variable = et_nubia_6_fired }
+	}
+
+	immediate = {
+		# One-shot marker, so the pulse cannot open a second popup.
+		set_variable = { name = et_nubia_6_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.6.a
+		historical_option = yes
+		set_variable = { name = et_nubia_6 value = 1 }
+		custom_tooltip = {
+			text = et_culture.6.a.tt
+			# The Meroitic population of the Middle Nile becomes Nubian.
+			every_owned_location = {
+				limit = {
+					area = area:nubia_proper_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:kushite
+					}
+					split_pop = {
+						fraction = 0.60
+						culture = culture:nubian
+					}
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.6.b
+		# No chain variable: the Nubian branch stops here.
+		custom_tooltip = {
+			text = et_culture.6.b.tt
+			every_owned_location = {
+				limit = {
+					area = area:nubia_proper_area
+				}
+				every_pop = {
+					limit = {
+						culture = culture:kushite
+					}
+					split_pop = {
+						fraction = 0.15
+						culture = culture:nubian
+					}
+				}
+			}
+		}
+		add_stability = -5
+	}
+}
+
+# 7. The Baptism of Nobatia (MS 536-700)
+et_culture.7 = {
+	type = country_event
+	title = et_culture.7.title
+	desc = et_culture.7.desc
+	outcome = neutral
+	historical_info = et_culture.7.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		has_variable = et_nubia_6
+		current_year >= 536
+		current_year <= 700
+		NOT = { has_variable = et_nubia_7_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_nubia_7_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.7.a
+		historical_option = yes
+		set_variable = { name = et_nubia_7 value = 1 }
+		custom_tooltip = {
+			text = et_culture.7.a.tt
+			# The towns accept the royal conversion first.
+			every_owned_location = {
+				limit = {
+					area = area:nubia_proper_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:nubian
+							culture = culture:kushite
+						}
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.60
+						religion = religion:miaphysite
+					}
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.7.b
+		custom_tooltip = {
+			text = et_culture.7.b.tt
+			every_owned_location = {
+				limit = {
+					area = area:nubia_proper_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:nubian
+							culture = culture:kushite
+						}
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.10
+						religion = religion:miaphysite
+					}
+				}
+			}
+		}
+		add_stability = -5
+	}
+}
+
+# 8. The Christian Villages (MS 700-900)
+et_culture.8 = {
+	type = country_event
+	title = et_culture.8.title
+	desc = et_culture.8.desc
+	outcome = neutral
+	historical_info = et_culture.8.historical_info
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		has_variable = et_nubia_7
+		current_year >= 700
+		current_year <= 900
+		NOT = { has_variable = et_nubia_8_fired }
+	}
+
+	immediate = {
+		set_variable = { name = et_nubia_8_fired value = 1 }
+	}
+
+	option = {
+		name = et_culture.8.a
+		historical_option = yes
+		set_variable = { name = et_nubia_8 value = 1 }
+		custom_tooltip = {
+			text = et_culture.8.a.tt
+			# The villages follow the towns into the church.
+			every_owned_location = {
+				limit = {
+					area = area:nubia_proper_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:nubian
+							culture = culture:kushite
+						}
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.80
+						religion = religion:miaphysite
+					}
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = et_culture.8.b
+		custom_tooltip = {
+			text = et_culture.8.b.tt
+			every_owned_location = {
+				limit = {
+					area = area:nubia_proper_area
+				}
+				every_pop = {
+					limit = {
+						OR = {
+							culture = culture:nubian
+							culture = culture:kushite
+						}
+						religion = religion:egyptian_polytheism
+					}
+					split_pop = {
+						fraction = 0.10
+						religion = religion:miaphysite
+					}
+				}
+			}
+		}
+		add_stability = -5
+	}
+}
+
+# ===========================================================================
 # GAUL PILOT EVENTS (WS4: et_culture.101 - et_culture.104)
 # Sourced records: et-history-data/research/historical-events/2026-10-17_gaul_culture_transition.yml
 # Number reservation: Egypt .1-.49, Gaul .100-.149

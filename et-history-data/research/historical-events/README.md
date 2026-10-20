@@ -174,6 +174,22 @@ konumlar dahil) ve `06_pops.txt` 1.039 `gallian` + 296 `old_egyptian` pop
 içeriyor, yani iki zincir de girdi popülasyonunu buluyor. Ayrıntı:
 `2026-10-20_gaul_chain_audit.md` (backlog UPDATE 24).
 
+**Mısır kararları ve Nübya eki (20 Ekim 2026):** Tasarım notunun §7'deki 1–5
+kararı kapandı: fetih derecesi koşullu kalıyor (Müslüman egemenliği
+zorlanmaz), seçenek deseni "tarihsel + direniş" (direniş dalı zincir
+değişkenini yazmaz, zincir orada durur), Nübya eki Faz 1'e alındı ve uygulandı
+(`.6`–`.8` + `et_nubia_yearly_pulse`, 21 EN/TR anahtar; öncüller doğrulandı:
+MERO Faras/Dongola/Qasr Ibrim'i tutuyor, 33 `kushite` popu var), oran
+kalibrasyonu için statik hesap yapıldı (mevcut dalgalar 1:3,2 veriyor; hedef
+10:1) ve buna göre Memlûk dengeleme dalgası eklendi (`.9`, 1300–1500, 0,65 /
+0,55; tahmini ≈ 1:9,7, paylar Test B pano okumasıyla kalibre edilecek), Helleno
+kaydı ise iki akademik kaynakla güçlendirildi (güven `medium`, tarihlendirme
+c. 650–800) ama 58 CE kurulumunda Grekçe konuşulan Mısır nüfusu olmadığı için
+olay yazılmadı (görev: `egypt_helleno_egyptian_population`). Aynı denetimde
+kurulumdaki 9 adet bitiş durumu sızıntısı (`upper_egyptian_culture`) ve 3
+kopyalanmış pop bloğu düzeltildi; iki zincirin kayıt statüsü tek olgusal
+konvansiyona geçti (Test B kapısı notlarda).
+
 **Yerelleştirme anahtarı denetimi (20 Ekim 2026):** Olay yerelleştirmesi
 artık çevrimdışı denetleniyor: `et-history-data/scripts/loc-key-audit.py`
 scriptte anılan her `et_culture.*` anahtarının EN ve TR'de tanımlı olduğunu,
