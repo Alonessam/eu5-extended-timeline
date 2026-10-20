@@ -122,7 +122,7 @@ tasks:
       Tigranocerta) and restores Tiridates on 63.1.1 by the treaty. The 66
       coronation in Rome stays a legitimacy event in the record and is not
       turned into a dynasty, religion or ownership change.
-    acceptance: Preserve year/season uncertainty and avoid forcing a precise game day without a documented conversion policy. Met on 20 Oct 2026: every date is a year-level marker with the season or the treaty documented, and no forced day remains.
+    acceptance: Preserve year/season uncertainty and avoid forcing a precise game day without a documented conversion policy. Met on 20 Oct 2026, every date is a year-level marker with the season or the treaty documented, and no forced day remains.
   abbassid_capital_mapping:
     period_id: medieval
     priority: 2
