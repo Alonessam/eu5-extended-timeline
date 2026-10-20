@@ -26,7 +26,7 @@ rom_tiberius_julio_claudian:
     death: yes
 rom_caligula_julio_claudian:
   12.8.31:
-    birth: rome #TODO: Location guessed, check if better data is available
+    birth: terracina # Antium (Anzio); no EU5 key, nearest Latium coastal town; source: research/ancient/2026-10-13_rome_and_east.yml, antium_location_mapping
     first_name: caligula
     dynasty: julio_claudian_dynasty
     #Father was Germanicus, not Tiberius: Suetonius, Caligula 7–8.
@@ -40,7 +40,7 @@ rom_caligula_julio_claudian:
     death: yes
 rom_caligula_julio_claudian_1:
   12.8.31: #Suetonius, Caligula 8.1; see caligula_birth research record
-    birth: rome #TODO: Source favors Antium; replace this old approximation after location mapping
+    birth: terracina # Antium (Anzio); same mapping as the non-suffixed ID; see antium_location_mapping
     first_name: caligula
     dynasty: julio_claudian_dynasty
     adm: 30
@@ -80,7 +80,7 @@ rom_claudius_julio_claudian_1:
     death: yes
 rom_nero_julio_claudian:
   37.12.15:
-    birth: rome #TODO: Location guessed, check if better data is available
+    birth: terracina # Antium (Anzio); no EU5 key, nearest Latium coastal town; source: research/ancient/2026-10-13_rome_and_east.yml, antium_location_mapping
     first_name: nero
     dynasty: julio_claudian_dynasty
     adm: 15

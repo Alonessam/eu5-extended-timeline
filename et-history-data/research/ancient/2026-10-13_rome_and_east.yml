@@ -41,7 +41,7 @@ records:
     dating: {precision: day, date: "12.8.31", calendar: roman_civil_date_normalized_to_et}
     source_refs: [{id: suetonius_caligula, locator: "8.1–5"}]
     confidence: medium
-    integration: {status: applied, target: characters/ROM.yml, note: Corrected the used _1 variant's date; Antium-to-location mapping is still unresolved. The two existing IDs were retained.}
+    integration: {status: applied, target: characters/ROM.yml, location_id: terracina, note: Corrected the used _1 variant's date; the two existing IDs were retained. The Antium mapping is now resolved and recorded in antium_location_mapping - EU5 has no Antium key, so the birthplace was set to terracina, the nearest Latium coastal town of the same type (Antium lies about 52 km from Rome and about 89 km from Terracina).}
   caligula_father:
     entity: Caligula
     subject: genealogy
@@ -73,7 +73,28 @@ records:
     dating: {precision: day, date: "37.12.15", calendar: roman_civil_date_normalized_to_et}
     source_refs: [{id: suetonius_nero, locator: "6.1"}]
     confidence: high
-    integration: {status: collected, target: characters/ROM.yml, note: Existing date agrees; replace the guessed Rome birthplace only after Antium is mapped to an actual location ID.}
+    integration: {status: applied, target: characters/ROM.yml, location_id: terracina, note: Existing date agrees; the Antium mapping is now resolved and recorded in antium_location_mapping, so the guessed Rome birthplace was replaced with terracina, the nearest Latium coastal town of the same type.}
+  antium_location_mapping:
+    entity: location_terracina
+    subject: place_to_key_mapping_for_a_missing_map_location
+    finding: >-
+      Antium, the birthplace favoured by the sources for Caligula and Nero,
+      has no dedicated location key in EU5 1.3.x. The Latium province
+      (marittima_province) holds only three locations: rome, terracina and
+      velletri. Antium (modern Anzio) lies on the same coast about 52 km south
+      of Rome and about 89 km north of Terracina. The mapping chosen is
+      terracina: a small coastal Latium town of the same type as Antium, which
+      follows the repository convention of naming the actual birthplace
+      settlement (mosul, massawa, kotte, pondicherry) rather than the nearest
+      metropolis. Rome is closer in distance, but using it would assert that
+      the emperors were born in the capital, which is a category error. The
+      mapping is an approximation and is recorded as such.
+    population: "not a population finding; a place-to-key mapping for the 58 CE start"
+    dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
+    mechanism: map key mapping read from the installed game map data
+    source_refs: [{id: suetonius_caligula, locator: "8.1-5 (Antium as the birthplace)"}, {id: suetonius_nero, locator: "6.1 (Antium as the birthplace)"}]
+    confidence: medium
+    integration: {status: applied, target: characters/ROM.yml, location_id: terracina, note: "Both Caligula IDs and Nero now use terracina in the research character file, in the generated 58/2025/936 character files and in the mod's setup file; the distances and the rejected alternative are documented above."}
   eastern_han_chronology:
     entity: HAN0
     subject: polity_chronology

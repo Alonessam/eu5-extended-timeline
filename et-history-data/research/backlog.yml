@@ -16,19 +16,72 @@ tasks:
   antium_location_mapping:
     period_id: ancient
     priority: 1
-    state: pending
-    targets: [characters/ROM.yml, locations]
+    state: completed
+    targets: [et-history-data/characters/ROM.yml, research/ancient/2026-10-13_rome_and_east.yml, "Extended Timeline/main_menu/setup/start/05_characters.txt"]
     source_refs: [suetonius_caligula, suetonius_nero]
     question: Which existing EU5 location covers Antium, and how precise is that mapping?
-    acceptance: Record the historical place and verified location ID before replacing the old Rome birthplace approximation.
+    evidence: >-
+      The sources favour Antium for Caligula and Nero, but EU5 1.3.x has no
+      Antium key. The Latium province (marittima_province) holds only three
+      locations - rome, terracina and velletri - and Antium (modern Anzio)
+      lies about 52 km from Rome and about 89 km from Terracina on the same
+      coast. The mod's own convention names the actual birthplace settlement
+      (mosul, massawa, kotte, pondicherry), not the nearest metropolis.
+    resolution: >-
+      Resolved on 20 Oct 2026 and written up as the research record
+      antium_location_mapping: the birthplace key is terracina, a small
+      coastal Latium town of the same type, with rome documented as the
+      closer but type-wrong alternative. Caligula (both IDs) and Nero now
+      carry birth: terracina in et-history-data/characters/ROM.yml, in the
+      generated 58/2025/936 character files and in the mod's setup file.
+    acceptance: Record the historical place and verified location ID before replacing the old Rome birthplace approximation. Met on 20 Oct 2026, the record exists and the four data files carry terracina.
   roman_duplicate_ids:
     period_id: ancient
     priority: 2
-    state: pending
-    targets: [characters/ROM.yml, countries/ROM - Rome.yml]
-    source_refs: [suetonius_caligula, suetonius_claudius]
+    state: completed
+    targets: [et-history-data/characters/ROM.yml, "Extended Timeline/main_menu/setup/start/05_characters.txt"]
+    source_refs: []
     question: Can duplicate Caligula and Claudius IDs be reconciled without breaking historical references?
-    acceptance: Audit every reference first; retain stable IDs or publish a complete alias/migration list.
+    evidence: >-
+      The reference audit on 20 Oct 2026 found 15 references to
+      rom_caligula_julio_claudian, 10 to rom_caligula_julio_claudian_1 and 11
+      to rom_claudius_julio_claudian: the country file's ruler chain uses the
+      _1 variants, the character links point at them (Claudius's father link
+      named rom_caligula_julio_claudian_1) and the three generated character
+      files repeat them. The mod's setup file had also drifted from the
+      research file: the _1 variants still carried the unsourced dates
+      (7.1.1, 2.1.1, 11.1.1) and the false father links that the research
+      layer had already removed.
+    resolution: >-
+      Reconciled on 20 Oct 2026 without renaming anything, so no alias or
+      migration list is needed: the duplicate pairs carry identical sourced
+      data in every file (Caligula 12.8.31, Claudius -10.8.1 at lyon), the
+      false father links (Caligula to Tiberius, Claudius to Caligula) were
+      removed as the records require, and the country file's ruler chain keeps
+      referring to the same IDs. Germanicus and Drusus would each need their
+      own verified record before the father links can be restored
+      (julio_claudian_parent_characters).
+    acceptance: Audit every reference first; retain stable IDs or publish a complete alias/migration list. Met on 20 Oct 2026, every reference was audited, the IDs were retained and the duplicate data aligned.
+  julio_claudian_parent_characters:
+    period_id: ancient
+    priority: 3
+    state: pending
+    targets: [et-history-data/characters/ROM.yml, "Extended Timeline/main_menu/setup/start/05_characters.txt"]
+    source_refs: [suetonius_caligula, suetonius_claudius]
+    question: Should Germanicus (Caligula's father) and Drusus (Claudius's father) be added as characters, so the Julio-Claudian family tree stops at the emperors?
+    evidence: >-
+      The 20 Oct 2026 reconciliation removed the false father links instead of
+      inventing parents: Caligula's father was Germanicus (Suetonius, Caligula
+      7-8), not Tiberius, and Claudius's father was Drusus (Suetonius, Claudius
+      1.1 and 1.6), not Caligula. The research records caligula_father and
+      claudius_father already state that a character with its own verified
+      record is needed. Both men are attested (Germanicus died in 19 CE,
+      Drusus in 9 BCE), so the records can be written from Suetonius.
+    resolution: >-
+      Pending. The data-first rule applies: each character needs a sourced
+      record (birth, death, titles, family links) before the father link can
+      be restored in the character files.
+    acceptance: Germanicus and Drusus each have a sourced record and the father links are restored in the research and mod character data.
   armenia_war_and_succession:
     period_id: ancient
     priority: 1
