@@ -79,10 +79,10 @@ isim havuzu korunur. `punic_dialect` `punic_culture` için ayrı kalır.
 ## Kalan iş
 
 - `et_culture_events.txt` içindeki 103 `Invalid scope types ... link:
-  location` satırı ayrı görevde. Aynı `this = location:` deseni vanilla
-  `flavor_BUL.txt` (efekt) ve `flavor_ENG.txt` (`custom_tooltip` + `NOT`)
-  içinde geçerli; statik karşılaştırma henüz farkı bulamadı, Test B'de tek
-  noktadan doğrulanacak.
+  location` satırı, eski `location = location:X` biçiminden geliyordu; UPDATE
+  19 (`a718859`) 103 bağlantıyı vanilla `this = location:X` biçimine çevirdi.
+  Aynı tabandaki 13 enum hatası ayrıdır ve UPDATE 16 (`9494668`) tarafından
+  düzeltildi. Test B'de 0 bekleniyor. Ayrıntı: `2026-10-20_scope_link_fix.md`.
 - 18 Ekim tabanındaki `jewish`, `berber_group` ve `folk_caucasian_group`
   bulguları bayat: `jewish` kültürü `a718859`'da eklendi; `berber_group`
   referansları mevcut `amazigh_group` / `maghrebi_group` ile değiştirildi ve

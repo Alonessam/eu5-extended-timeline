@@ -1,9 +1,11 @@
 # Test B koşum protokolü — Mısır + Galya zincir doğrulaması (tek oturum)
 
 **Tarih:** 19 Ekim 2026 · **Durum:** koşum takımı hazır, oyun içi koşum bekliyor.
-**Ön koşul:** UPDATE 19 düzeltme paketi (commit `a718859`): 103 kapsam
-düzeltmesi, `swiss_culture` onarımı, `jewish` kültürü, 5 eksik dil tanımı,
-TR loc girdileri. Ayrıntı: `backlog.yml` UPDATE 19.
+**Ön koşul:** UPDATE 19 düzeltme paketi (commit `a718859`): 103
+`location = location:X` → `this = location:X` kapsam düzeltmesi,
+`swiss_culture` onarımı, `jewish` kültürü, 5 eksik dil tanımı, TR loc
+girdileri. UPDATE 16 (`9494668`) enum `outcome = good` → `positive`
+düzeltmesini içerir. Ayrıntı: `backlog.yml` UPDATE 19.
 
 ## Amaç
 

@@ -144,6 +144,16 @@ referansı / 0 çözülemeyen; vanilla 2.087 referans / 0 çözülemeyen.
 regresyon olarak işaretliyor. Ayrıntı:
 `2026-10-20_language_ref_fix.md` (backlog UPDATE 23).
 
+**Kapsam bağlantısı düzeltmesi (20 Ekim 2026):** 18 Ekim tabanındaki 103
+`Invalid scope types ... link: location` satırının tamamı, olay dosyasındaki
+eski `location = location:X` biçiminden geliyordu; sol taraf `location`
+kapsam bağlantısıdır ve olay hedefi için geçerli değildir. UPDATE 19
+(`a718859`) 103 bağlantının tamamını vanilla `this = location:X` biçimine
+çevirdi. Aynı tabandaki 13 `outcome = good` enum hatası ayrıdır ve UPDATE 16
+(`9494668`) tarafından `positive` yapıldı; enum hatası kapsam hatasının
+nedeni değildir. Test B'de 0 kapsam satırı bekleniyor. Ayrıntı:
+`2026-10-20_scope_link_fix.md` (backlog `culture_event_scope_errors`).
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,

@@ -807,23 +807,35 @@ tasks:
   culture_event_scope_errors:
     period_id: ancient
     priority: 1
-    state: pending
+    state: completed
     targets: [Extended Timeline/in_game/events/et_culture_events.txt]
     source_refs: []
-    question: Why do `this = location:<key>` comparisons inside `every_owned_location` limits report Invalid scope types for the location event-target link in et_culture_events.txt when close vanilla patterns are accepted?
+    question: Why do location comparisons inside `every_owned_location` limits report Invalid scope types for the location event-target link in et_culture_events.txt?
     evidence: >-
       The 18 Oct 2026 baseline log has 103 `Invalid scope types ... link:
-      location` lines, all `this = location:<key>` comparisons inside
-      `every_owned_location` limits in et_culture_events.txt. The same
-      location-key comparison is accepted in vanilla flavor_BUL.txt:56-67
-      (every_owned_location effect) and appears inside a custom_tooltip in
-      flavor_ENG.txt:6126 (with `NOT` and a province_definition check). A first
-      static comparison found no scope-type difference between the mod and
-      those vanilla examples; the trigger/effect context and the repeated
-      location lists in et_culture.101-.118 still need a focused comparison.
-      The errors are non-fatal but they are expected to reach zero in the Test B
-      report row.
-    acceptance: Each location list uses a vanilla-verified scope form and a Test B log shows zero `Invalid scope types ... et_culture_events.txt` lines; the report row is 0 with no new errors.
+      location` lines, source lines 702-2086, all 103 old
+      `location = location:X` comparisons inside every_owned_location limits.
+      The 103 baseline source lines were checked against a718859^: 103/103 are
+      `location = location:X`, 0 exceptions. `git show a718859` shows exactly
+      103 deletions of `location = location:X` and 103 additions of
+      `this = location:X` (206 changed lines). The left-hand `location` is a
+      scope link, not a valid event target, so the old form errors; the
+      vanilla form is `this = location:`.
+      The same form is accepted in vanilla flavor_BUL.txt:56-67 and
+      flavor_ENG.txt:6128-6136. The 13 `EAudioEventOutcome` errors in the same
+      baseline are separate: `outcome = good` is invalid and was fixed to
+      `positive` by UPDATE 16 (9494668). The scope errors are not an enum
+      cascade: they also occur in neutral-outcome events (.105, .107, .108,
+      .111, .114, .117), and the 103 errors equal the 103 old links.
+    resolution: >-
+      UPDATE 19 (a718859, 19 Oct 2026) changed all 103 `location =
+      location:X` links to `this = location:X`; the current file has 0
+      `location = location:` and 103 unchanged target keys. No other event
+      syntax change was made. Runtime confirmation is pending: the 20 Oct
+      13:49 main-menu log has no pdx_persistent_reader/database load, so it
+      cannot confirm this. A Test B campaign must show 0 scope lines. Note:
+      research/historical-events/2026-10-20_scope_link_fix.md.
+    acceptance: A Test B log shows zero `Invalid scope types ... et_culture_events.txt` lines and the report row is 0; if any remain, the remaining lines need a fresh review.
   gaul_postwar_immigration_layer:
     period_id: contemporary
     priority: 3
