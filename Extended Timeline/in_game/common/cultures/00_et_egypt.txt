@@ -1,0 +1,23 @@
+﻿# Mod-owned by design (second review, 2026-10-17): verbatim vanilla content
+# plus arabic_group so the Coptic identity shares the Egyptian group
+# (vanilla leaves coptic_culture groupless; source: vanilla egypt.txt).
+# Delivery fix (2026-10-20): moved here from et_egypt.txt so this file sorts
+# before egypt.txt and the delta actually loads.
+
+coptic_culture = {
+	language = coptic_language
+
+	color = color_language_coptic
+
+	tags = { egyptian_gfx middle_east_gfx }
+
+	opinions = {
+		lower_egyptian_culture = positive
+		upper_egyptian_culture = positive
+		libyan_arabic_culture = positive
+	}
+
+	culture_groups = {
+		arabic_group
+	}
+}

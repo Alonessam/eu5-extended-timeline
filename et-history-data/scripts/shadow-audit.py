@@ -371,9 +371,12 @@ def render(report, on_action):
     lines.append("")
     lines.append(
         "Denetim notu 20 Ekim 2026'da düzeltildi: `coptic_culture`, `miaphysite` "
-        "ve `aramaic_language` artık ÖLÜ işaretli; bu üç delta oyuna girmiyor. "
-        "`gothic_language`, `alan_paganism` ve `hellenism_religion` YAŞIYOR; "
-        "`haixi/hurga` tek tanımlı; `yearly_country_pulse` on_action istisnası."
+        "ve `aramaic_language` yüklemede vanilla'ya yeniliyordu. Aynı gün üç "
+        "delta bloğu rakibinden önce sıralanan dosyalara taşındı "
+        "(`00_et_egypt.txt`, `00_et_christianity.txt`, `00_aramaic.txt`); bu "
+        "rapor taşıma sonrası üretildi ve üçü de YAŞIYOR. `gothic_language`, "
+        "`alan_paganism` ve `hellenism_religion` zaten yaşıyordu; `haixi/hurga` "
+        "tek tanımlı; `yearly_country_pulse` on_action istisnası."
     )
     lines.append("")
     lines.append("## Dil, kültür, din ve grup çakışmaları (tam liste)")
@@ -519,9 +522,13 @@ def render(report, on_action):
     lines.append("```")
     lines.append("")
     lines.append(
-        "Raporun dört anahtar için bulduğu kazanan/kaybeden eşleşmesi bu "
-        "satırlarla birebir uyuşuyor. Log satırları hata değil, bilgi "
-        "düzeyindedir; Test B raporunda bu sınıf bilgi olarak kalmalı."
+        "Bu satırlar taşıma öncesi 18 Ekim oturumunun kanıtıdır; adı geçen "
+        "dosya her satırda kaybedendir. Taşıma sonrası rapor aramaic, coptic "
+        "ve miaphysite için kazananı moda çevirdi (kaybeden artık vanilla: "
+        "00_crescent.txt, egypt.txt, christian.txt); gothic_language aynı "
+        "kaldı. Yeni Test B logunda bu üç satırın dosya adı değişecek, satır "
+        "sayısı değişmeyecek. Log satırları hata değil, bilgi düzeyindedir; "
+        "Test B raporunda bu sınıf bilgi olarak kalmalı."
     )
     lines.append("")
     lines.append("## Sınırlar")
@@ -543,11 +550,12 @@ def render(report, on_action):
     lines.append("## Sonraki adım")
     lines.append("")
     lines.append(
-        "Ölü tanımlar için üç yol var: (1) tanımı rakipten önce sıralanacak bir "
-        "dosyaya taşımak, (2) vanilla dosyasıyla aynı adlı tam override "
-        "kullanmak, (3) deltayı silip vanilla davranışını kabul etmek. Karar "
-        "verilmeden veri değiştirilmemeli; Test B log'u bu satırları bilgi "
-        "sınıfında beklemeli."
+        "Dil, kültür ve din deltaları 20 Ekim'de taşıma yöntemiyle düzeltildi; "
+        "bu raporda ölü kalan tek sınıf `setup/countries` (174 tanım). Setup "
+        "için üç yol var: (1) tanımı rakipten önce sıralanacak dosyaya taşımak, "
+        "(2) aynı adlı tam override kullanmak, (3) tanımı silip vanilla "
+        "davranışını kabul etmek. Etiket bazında karar verilmeden veri "
+        "değiştirilmemeli; düzeltme `vanilla_shadow_delivery_fix` görevinde."
     )
     lines.append("")
     return "\n".join(lines)

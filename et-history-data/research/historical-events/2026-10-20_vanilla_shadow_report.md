@@ -16,41 +16,41 @@
 
 | DB | Vanilla dosya | Mod dosya | Aynı-yol override | Gölgelenen anahtar | Ölü | Yaşayan | Mod-içi | Vanilla-içi |
 |---|---|---|---|---|---|---|---|---|
-| `common/languages` | 53 | 10 | 2 | 2 | 1 | 1 | 0 | 0 |
-| `common/cultures` | 52 | 23 | 5 | 1 | 1 | 0 | 0 | 0 |
-| `common/religions` | 29 | 13 | 0 | 3 | 1 | 2 | 0 | 0 |
+| `common/languages` | 53 | 11 | 2 | 2 | 0 | 2 | 0 | 0 |
+| `common/cultures` | 52 | 24 | 5 | 1 | 0 | 1 | 0 | 0 |
+| `common/religions` | 29 | 14 | 0 | 3 | 0 | 3 | 0 | 0 |
 | `common/culture_groups` | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `common/religion_groups` | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `common/language_families` | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `setup/countries` | 45 | 11 | 10 | 663 | 174 | 254 | 235 | 0 |
-| **Toplam** | 182 | 60 | 17 | 669 | 177 | 257 | 235 | 0 |
+| **Toplam** | 182 | 63 | 17 | 669 | 174 | 260 | 235 | 0 |
 
 ## Bilinen dokuz yeniden tanım
 
 | Anahtar | DB | Kazanan | Kaybeden | Sonuç | Not |
 |---|---|---|---|---|---|
-| `coptic_culture` | common/cultures | `common/cultures/egypt.txt` | `common/cultures/et_egypt.txt` (mod, farklı) | ÖLÜ (vanilla kazandı) |  |
+| `coptic_culture` | common/cultures | `common/cultures/00_et_egypt.txt` | `common/cultures/egypt.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |  |
 | `haixi_culture` | common/cultures | — | — | çakışma yok (tek tanım) | Mod tanımı yükleniyor |
 | `hurga_culture` | common/cultures | — | — | çakışma yok (tek tanım) | Mod tanımı yükleniyor |
-| `aramaic_language` | common/languages | `common/languages/00_crescent.txt` | `common/languages/00_et_mesopotamian.txt` (mod, farklı) | ÖLÜ (vanilla kazandı) |  |
+| `aramaic_language` | common/languages | `common/languages/00_aramaic.txt` | `common/languages/00_crescent.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |  |
 | `gothic_language` | common/languages | `common/languages/00_et_germany.txt` | `common/languages/00_germany.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |  |
 | `alan_paganism` | common/religions | `common/religions/et_caucasus.txt` | `common/religions/folk_european.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |  |
 | `hellenism_religion` | common/religions | `common/religions/et_roman.txt` | `common/religions/folk_european.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |  |
-| `miaphysite` | common/religions | `common/religions/christian.txt` | `common/religions/et_christianity.txt` (mod, farklı) | ÖLÜ (vanilla kazandı) |  |
+| `miaphysite` | common/religions | `common/religions/00_et_christianity.txt` | `common/religions/christian.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |  |
 | `yearly_country_pulse` | on_action | — | — | ÖZEL: blok birleşimi | Aşağıdaki on_action notu |
 
-Denetim notu 20 Ekim 2026'da düzeltildi: `coptic_culture`, `miaphysite` ve `aramaic_language` artık ÖLÜ işaretli; bu üç delta oyuna girmiyor. `gothic_language`, `alan_paganism` ve `hellenism_religion` YAŞIYOR; `haixi/hurga` tek tanımlı; `yearly_country_pulse` on_action istisnası.
+Denetim notu 20 Ekim 2026'da düzeltildi: `coptic_culture`, `miaphysite` ve `aramaic_language` yüklemede vanilla'ya yeniliyordu. Aynı gün üç delta bloğu rakibinden önce sıralanan dosyalara taşındı (`00_et_egypt.txt`, `00_et_christianity.txt`, `00_aramaic.txt`); bu rapor taşıma sonrası üretildi ve üçü de YAŞIYOR. `gothic_language`, `alan_paganism` ve `hellenism_religion` zaten yaşıyordu; `haixi/hurga` tek tanımlı; `yearly_country_pulse` on_action istisnası.
 
 ## Dil, kültür, din ve grup çakışmaları (tam liste)
 
 | DB | Anahtar | Kazanan | Kaybeden | Sonuç |
 |---|---|---|---|---|
-| `common/languages` | `aramaic_language` | `common/languages/00_crescent.txt` (vanilla) | `common/languages/00_et_mesopotamian.txt` (mod, farklı) | ÖLÜ (vanilla kazandı) |
+| `common/languages` | `aramaic_language` | `common/languages/00_aramaic.txt` (mod) | `common/languages/00_crescent.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |
 | `common/languages` | `gothic_language` | `common/languages/00_et_germany.txt` (mod) | `common/languages/00_germany.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |
-| `common/cultures` | `coptic_culture` | `common/cultures/egypt.txt` (vanilla) | `common/cultures/et_egypt.txt` (mod, farklı) | ÖLÜ (vanilla kazandı) |
+| `common/cultures` | `coptic_culture` | `common/cultures/00_et_egypt.txt` (mod) | `common/cultures/egypt.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |
 | `common/religions` | `alan_paganism` | `common/religions/et_caucasus.txt` (mod) | `common/religions/folk_european.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |
 | `common/religions` | `hellenism_religion` | `common/religions/et_roman.txt` (mod) | `common/religions/folk_european.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |
-| `common/religions` | `miaphysite` | `common/religions/christian.txt` (vanilla) | `common/religions/et_christianity.txt` (mod, farklı) | ÖLÜ (vanilla kazandı) |
+| `common/religions` | `miaphysite` | `common/religions/00_et_christianity.txt` (mod) | `common/religions/christian.txt` (vanilla, farklı) | YAŞIYOR (mod kazandı) |
 
 ## Setup: ölü kalan mod tanımları (vanilla kazandı)
 
@@ -116,7 +116,7 @@ Duplicated key coptic_culture will not be created from file: common/cultures/et_
 Duplicated key miaphysite will not be created from file: common/religions/et_christianity.txt:108
 ```
 
-Raporun dört anahtar için bulduğu kazanan/kaybeden eşleşmesi bu satırlarla birebir uyuşuyor. Log satırları hata değil, bilgi düzeyindedir; Test B raporunda bu sınıf bilgi olarak kalmalı.
+Bu satırlar taşıma öncesi 18 Ekim oturumunun kanıtıdır; adı geçen dosya her satırda kaybedendir. Taşıma sonrası rapor aramaic, coptic ve miaphysite için kazananı moda çevirdi (kaybeden artık vanilla: 00_crescent.txt, egypt.txt, christian.txt); gothic_language aynı kaldı. Yeni Test B logunda bu üç satırın dosya adı değişecek, satır sayısı değişmeyecek. Log satırları hata değil, bilgi düzeyindedir; Test B raporunda bu sınıf bilgi olarak kalmalı.
 
 ## Sınırlar
 
@@ -126,4 +126,4 @@ Raporun dört anahtar için bulduğu kazanan/kaybeden eşleşmesi bu satırlarla
 
 ## Sonraki adım
 
-Ölü tanımlar için üç yol var: (1) tanımı rakipten önce sıralanacak bir dosyaya taşımak, (2) vanilla dosyasıyla aynı adlı tam override kullanmak, (3) deltayı silip vanilla davranışını kabul etmek. Karar verilmeden veri değiştirilmemeli; Test B log'u bu satırları bilgi sınıfında beklemeli.
+Dil, kültür ve din deltaları 20 Ekim'de taşıma yöntemiyle düzeltildi; bu raporda ölü kalan tek sınıf `setup/countries` (174 tanım). Setup için üç yol var: (1) tanımı rakipten önce sıralanacak dosyaya taşımak, (2) aynı adlı tam override kullanmak, (3) tanımı silip vanilla davranışını kabul etmek. Etiket bazında karar verilmeden veri değiştirilmemeli; düzeltme `vanilla_shadow_delivery_fix` görevinde.

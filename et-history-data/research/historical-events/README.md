@@ -118,10 +118,11 @@ aileleri, `setup/countries`) uygulayan offline denetim
 `et-history-data/scripts/shadow-audit.py` ve raporu
 `2026-10-20_vanilla_shadow_report.md` yayında. Bulgu: dokuz yeniden tanımdan
 `coptic_culture`, `miaphysite` ve `aramaic_language` yüklemede vanilla'ya
-yeniliyor (deltalar oyuna girmiyor); `setup/countries` tarafında 174 mod tanımı
-ölü, 235 mod-içi çakışma var. Düzeltme yolu (tanımı rakibinden önce
-sıralanacak dosyaya taşımak / aynı adlı tam override / deltayı bırakmak)
-`vanilla_shadow_delivery_fix` kaydında izlenir; Test B bu satırları bilgi
+yeniliyordu; üçü de 20 Ekim'de taşıma yöntemiyle düzeltildi
+(`00_et_egypt.txt`, `00_et_christianity.txt`, `00_aramaic.txt`) ve rapor
+taşıma sonrası üretildiğinde yaşıyorlar. `setup/countries` tarafında 174 mod
+tanımı hâlâ ölü, 235 mod-içi çakışma var; etiket bazında uzlaştırma
+`vanilla_shadow_delivery_fix` kaydında izlenir. Test B bu satırları bilgi
 sınıfında tutmalı.
 
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.

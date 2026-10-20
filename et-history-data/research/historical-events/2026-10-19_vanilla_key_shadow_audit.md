@@ -14,8 +14,12 @@ Kalıcı tarama: `et-history-data/scripts/script-token-audit.py`.
 > (`scripts/shadow-audit.py`; rapor
 > `2026-10-20_vanilla_shadow_report.md`) dokuz kayıttan üçünün **ölü** olduğunu
 > gösterdi: `coptic_culture`, `miaphysite`, `aramaic_language`; bu deltalar
-> oyuna hiç girmiyor. Aşağıdaki tablonun karar sütunları buna göre
-> işaretlendi. Aynı kural `setup/countries` için de geçerli:
+> oyuna hiç girmiyordu. **Aynı gün uygulanan taşıma:** üç delta bloğu
+> rakibinden önce sıralanan dosyalara taşındı (`00_et_egypt.txt`,
+> `00_et_christianity.txt`, `00_aramaic.txt`) ve rapor yeniden üretildiğinde
+> üçü de YAŞIYOR; ölü kalan yalnızca `setup/countries` (174 tanım). Aşağıdaki
+> tablonun karar sütunları taşıma sonrası durumu gösterir. Aynı kural
+> `setup/countries` için de geçerli:
 > `et_countries.txt`'teki 174 tanım vanilla'ya yeniliyor ve 235 mod-içi çakışma
 > var (ayrıntı raporda).
 
@@ -39,15 +43,15 @@ Kalıcı tarama: `et-history-data/scripts/script-token-audit.py`.
 
 | Anahtar | Mod dosyası | Karar | Delta / gerekçe |
 |---|---|---|---|
-| `coptic_culture` | `cultures/et_egypt.txt` | ÖLÜ (20 Ekim) | `culture_groups = { arabic_group }` eklendi; ardıl Mısır kimlikleriyle aynı hat (UPDATE 3) — yüklemede vanilla `egypt.txt` kazanıyor |
+| `coptic_culture` | `cultures/00_et_egypt.txt` | YAŞIYOR (20 Ekim taşındı) | `culture_groups = { arabic_group }` eklendi; ardıl Mısır kimlikleriyle aynı hat (UPDATE 3) — `et_egypt.txt`'ten taşındı, artık mod kazanıyor |
 | `haixi_culture` | `cultures/et_1_3_east_asia.txt` | Korundu (tek tanım) | Vanilla 1.3 tanımının birebir kopyası; aynı adlı `east_asia.txt` override'ı gizlediği için geri yüklendi |
 | `hurga_culture` | `cultures/et_1_3_east_asia.txt` | Korundu (tek tanım) | Aynı gerekçe; birebir kopya |
-| `aramaic_language` | `languages/00_et_mesopotamian.txt` | ÖLÜ (20 Ekim) | Vanilla gövde + `# ET ancient Aramaic (58 CE)` isimleri; eksik `color`, `family`, `dynasty_names`, `lowborn` geri geldi — yüklemede vanilla `00_crescent.txt` kazanıyor |
+| `aramaic_language` | `languages/00_aramaic.txt` | YAŞIYOR (20 Ekim taşındı) | Vanilla gövde + `# ET ancient Aramaic (58 CE)` isimleri; eksik `color`, `family`, `dynasty_names`, `lowborn` geri geldi — `00_et_mesopotamian.txt`'ten taşındı, artık mod kazanıyor |
 | `gothic_language` | `languages/00_et_germany.txt` | YAŞIYOR (doğrulandı) | Vanilla gövde + özel `color = rgb{ 20 100 154 }`; `fallback = german_language` geri geldi; boş isim listeleri kaldırıldı |
 | `yearly_country_pulse` | `on_action/et_history_pulses.txt` | Korundu (on_action istisnası) | Vanilla `yearly_country_pulse` on action'ına eklenen `on_actions = { et_egypt_yearly_pulse }` bloğu; vanilla kuralı (mod mevcut bir on action'a yalnızca blok ekleyebilir) dosya içinde not edilmiş |
 | `alan_paganism` | `religions/et_caucasus.txt` | YAŞIYOR (doğrulandı) | `group = folk_caucasian_group` (artık tanımlı); `army_cavalry_power` → `army_light_cavalry_power` düzeltmesi |
 | `hellenism_religion` | `religions/et_roman.txt` | YAŞIYOR (doğrulandı) | `enable = 9999.1.1` yok; 58 CE başlangıcında Helenizm'in açık olması bilinçli |
-| `miaphysite` | `religions/et_christianity.txt` | ÖLÜ (20 Ekim) | `language = coptic_language` eklendi (UPDATE 3) — yüklemede vanilla `christian.txt` kazanıyor |
+| `miaphysite` | `religions/00_et_christianity.txt` | YAŞIYOR (20 Ekim taşındı) | `language = coptic_language` eklendi (UPDATE 3) — `et_christianity.txt`'ten taşındı, artık mod kazanıyor |
 
 Kaldırılan ve yeniden adlandırılanlar:
 
@@ -99,9 +103,11 @@ tanımına çözülür — 58 CE kurulumunda bu etiketler yok.
 - Yükleme sırası denetimi (20 Ekim 2026): `scripts/shadow-audit.py` dil,
   kültür, din, gruplar, dil aileleri ve `setup/countries` DB'lerini kapsayacak
   şekilde yazıldı; rapor `2026-10-20_vanilla_shadow_report.md`. Üç yeniden
-  tanım ölü çıktı (yukarıda işaretli); `haixi/hurga` tek tanım olduğu için
-  yükleniyor; `yearly_country_pulse` on_action blok birleşimi istisnası
-  (log'da çakışma satırı yok).
+  tanım ölü çıktı; aynı gün `00_et_egypt.txt`, `00_et_christianity.txt` ve
+  `00_aramaic.txt` dosyalarına taşınarak düzeltildi (rapor taşıma sonrası:
+  dil/kültür/dinde ölü 0). `haixi/hurga` tek tanım olduğu için yükleniyor;
+  `yearly_country_pulse` on_action blok birleşimi istisnası (log'da çakışma
+  satırı yok).
 
 ## Sınırlar
 
