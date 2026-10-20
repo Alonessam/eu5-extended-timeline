@@ -9,7 +9,7 @@ records:
     dating: {precision: year, year: 750}
     source_refs: [{id: met_abbasid, locator: Opening paragraph}]
     confidence: high
-    integration: {status: collected, target: countries/ABBA - Abbasid.yml, note: Regional control and the exact effective day require separate sources.}
+    integration: {status: collected, target: countries/ABBA - Abbasid.yml, note: Regional control and the exact effective day require separate sources; the country file already carries the 750 succession with the EU4 day 6 August.}
   baghdad_foundation:
     entity: Baghdad
     subject: settlement_and_capital
@@ -17,7 +17,7 @@ records:
     dating: {precision: year, year: 762}
     source_refs: [{id: met_abbasid, locator: "Opening paragraph, City of Peace"}]
     confidence: high
-    integration: {status: collected, location_id: baghdad, target: countries/ABBA - Abbasid.yml, note: Modern location ID can cover earlier settlements; city foundation does not mean the entire location was previously empty.}
+    integration: {status: applied, location_id: baghdad, target: countries/ABBA - Abbasid.yml, note: The country file already sets the capital to baghdad on 762.7.30, a day inherited from the EU4 import while the record keeps year precision. The modern location ID covers earlier settlements: at 58 CE the same tile carries the Seleucia-Ctesiphon reading, and the city foundation does not mean the location was previously empty.}
   samarra_capital_start:
     entity: Samarra
     subject: capital
@@ -25,7 +25,7 @@ records:
     dating: {precision: year, year: 836}
     source_refs: [{id: met_abbasid, locator: "Opening paragraph, Samarra"}]
     confidence: high
-    integration: {status: collected, target: countries/ABBA - Abbasid.yml, note: Verify the game location ID and exact transition date before applying.}
+    integration: {status: applied, location_id: samarra, target: countries/ABBA - Abbasid.yml, note: The game location ID is verified - samarra is a real tile in samarra_province - and the country file used tikrit, a different settlement in the same province, so the 836-892 capital interval was represented by the wrong location; the key is now samarra. The 1 January marker is the repository year-level convention, not a sourced day.}
   samarra_capital_end:
     entity: Samarra
     subject: capital
@@ -33,4 +33,4 @@ records:
     dating: {precision: year, year: 892}
     source_refs: [{id: met_abbasid, locator: "Opening paragraph, interval 836–92"}]
     confidence: high
-    integration: {status: collected, target: countries/ABBA - Abbasid.yml, note: Preserve year precision; do not infer a 1 January transition.}
+    integration: {status: applied, location_id: samarra, target: countries/ABBA - Abbasid.yml, note: The country file returns the capital to baghdad on 892.1.1, the year-level marker that closes the Samarra interval; year precision is preserved and no precise day is inferred.}

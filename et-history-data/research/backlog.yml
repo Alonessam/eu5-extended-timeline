@@ -112,14 +112,27 @@ tasks:
   abbassid_capital_mapping:
     period_id: medieval
     priority: 2
-    state: pending
-    targets: [countries/ABBA - Abbasid.yml, locations]
+    state: completed
+    targets: ["et-history-data/countries/ABBA - Abbasid.yml", research/medieval/2026-10-13_abbasid.yml]
     source_refs: [met_abbasid]
     question: Are the Baghdad and Samarra capital changes already present, and which location IDs represent them?
     evidence: >-
-      The 58 CE cities batch marks the Baghdad tile with the Seleucia-Ctesiphon
-      reading at 58.2.1; a dated 762 change for Baghdad itself is still to be modeled.
-    acceptance: Verify existing timeline keys and mapping before adding year-level events; Baghdad foundation does not erase earlier settlements in its location.
+      The country file already carried the capital changes - 762.7.30 baghdad,
+      796.1.1 raqqa, 809.1.1 baghdad, 836.1.1 tikrit and 892.1.1 baghdad -
+      but the 836 entry used tikrit, a different settlement in the same
+      province, so the Samarra capital interval was represented by the wrong
+      location. The map confirms both real keys: baghdad in baghdad_province
+      and samarra in samarra_province.
+    resolution: >-
+      Resolved on 20 Oct 2026: the 836 capital key is now samarra, and the
+      three capital records carry the verified location IDs and the applied
+      status. The 762 day is an EU4 import day and the notes keep the year
+      precision of the records; the 1 January markers are the repository
+      year-level convention. The 58 CE Seleucia-Ctesiphon reading of the
+      baghdad tile is unaffected - a city foundation does not erase the
+      earlier settlement. Note:
+      research/historical-events/2026-10-20_map_tile_and_setup_audit.md.
+    acceptance: Verify existing timeline keys and mapping before adding year-level events; Baghdad foundation does not erase earlier settlements in its location. Met on 20 Oct 2026, the keys are verified, the 836 entry points at samarra and the earlier settlement is documented.
   eic_full_archive_review:
     period_id: early_modern
     priority: 2
@@ -182,11 +195,25 @@ tasks:
   ancient_city_setup_field:
     period_id: ancient
     priority: 3
-    state: pending
-    targets: [locations]
+    state: completed
+    targets: ["Extended Timeline/main_menu/setup/start/07_cities_and_buildings.txt", research/ancient/2026-10-17_58ce_cities_and_markets.yml]
     source_refs: []
     question: Which vanilla town_setups values exist, and should the 74 city locations gain a setup field?
-    acceptance: Copy setup values only from verified vanilla data; do not invent setup ids.
+    evidence: >-
+      The vanilla city file main_menu/setup/start/07_cities_and_buildings.txt
+      defines 1,019 cities with 114 distinct town_setup values. The mod's 58 CE
+      city file defines 140 cities with 38 distinct values, and every one of
+      the 38 exists in vanilla, so no setup id is invented. The 74 research
+      records write the city rank and the market flag into the 58.2.1 block of
+      the location files, while the setup id itself lives on the game side in
+      the city file with an explanatory comment.
+    resolution: >-
+      Resolved on 20 Oct 2026: the setup ids are verified against the vanilla
+      city file (38/38), and the research layer does not need a separate setup
+      field, because the value is a game-side property that the 58 CE city
+      file already carries with its historical comment. Note:
+      research/historical-events/2026-10-20_map_tile_and_setup_audit.md.
+    acceptance: Copy setup values only from verified vanilla data; do not invent setup ids. Met on 20 Oct 2026, all 38 setup values are vanilla values and no research-side setup field is needed.
   ancient_economy_source_upgrades:
     period_id: ancient
     priority: 2
@@ -198,11 +225,32 @@ tasks:
   location_tile_identifications:
     period_id: ancient
     priority: 2
-    state: pending
-    targets: [locations]
-    source_refs: [wiki_urban_sizes, periplus_schoff]
+    state: completed
+    targets: [research/ancient/2026-10-17_58ce_cities_and_markets.yml, "Extended Timeline/main_menu/setup/start/07_cities_and_buildings.txt"]
+    source_refs: []
     question: Which tiles cover Rhodes, Paithan, Memphis, Berenice, Istakhr and Yangzhou/Guangling, and how precise are the approximations already noted (Petra, Artaxata, Taxila, Cyrene, Chang'an, Linzi, Dunhuang)?
-    acceptance: Verify filename uniqueness and document distances in records; postpone tile renames.
+    evidence: >-
+      The map was read directly from the installed EU5 1.3.x definitions.txt.
+      Rodos and patna exist as tiles with the same names as the places, so
+      both are exact. memphis, berenice and istakhr have no tile at all
+      (the closest are damanhur in the Delta, suakin on the far southern Red
+      Sea and isfahan for Istakhr). yangzhou and guangling exist but as
+      homonyms in Shaanxi and Shanxi, so they do not cover the historical
+      Yangzhou and Guangling; the lower Yangtze is represented by wuxian. The
+      already documented approximations (Petra to maan, Artaxata to yerevan,
+      Taxila to rawalpindi, Cyrene to al_bayda, Chang'an to jingzhao, Linzi to
+      yidu_qingzhou, Carthage to tunis, Korkai to thoothukudi, Muziris to
+      kodungallur) were re-checked in the record notes and no new
+      approximation was found.
+    resolution: >-
+      Documented on 20 Oct 2026 in
+      research/historical-events/2026-10-20_map_tile_and_setup_audit.md with
+      the exact tile, the province and the precision for every one of the six
+      places, plus the homonym audit (changan was already separated from
+      jingzhao on 17 Oct; yangzhou_shaanxi and guangling in yuzhou_shanxi
+      remain). Tile renames are postponed as the task allows, and the
+      distances are written into the note.
+    acceptance: Verify filename uniqueness and document distances in records; postpone tile renames. Met on 20 Oct 2026, the six identifications and the homonym audit are documented; renames postponed.
   historical_events_and_culture_transition:
     period_id: ancient
     priority: 1
