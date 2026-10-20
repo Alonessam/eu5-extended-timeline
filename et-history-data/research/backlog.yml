@@ -869,7 +869,7 @@ tasks:
   gaul_record_backfill:
     period_id: medieval
     priority: 2
-    state: pending
+    state: completed
     targets: [research/historical-events/2026-10-17_gaul_culture_transition.yml]
     source_refs: [weber_peasants_into_frenchmen, wiki_languages_of_france]
     question: Which sourced records are still missing for the Gaul events et_culture.104-118, and which pending records should be promoted after Test B?
@@ -888,7 +888,51 @@ tasks:
       were added (status pending) with source_refs; the five Phase 2/3 records
       were re-targeted to their events and sourced. Promotion to applied still
       waits for Test B.
-    acceptance: Every Gaul event maps to a sourced record (or a documented reason why it does not); statuses reflect the shared Test B gate.
+      UPDATE 24 (2026-10-20): the records are in place and were verified
+      offline - 23/23 Gaul events (.101-.123) map to a record, the 27 source
+      ids they use all exist in sources.yml (100 sources), every
+      integration.target event id exists in the event file, the culture: keys
+      quoted in the notes are defined, and no record misses a schema field.
+      All 22 records carry status applied; the remaining gate is the runtime
+      Test B pass, not a data gap.
+    resolution: >-
+      Closed on 20 Oct 2026 with the verification above; note:
+      research/historical-events/2026-10-20_gaul_chain_audit.md section 1.
+      The `gaul_gallic_empire_260_274` record was updated on the same day: the
+      .105 event is political, so its inert culture effect was replaced and
+      the note now describes the political branch (see
+      gaul_gallic_empire_effect_fix).
+    acceptance: Every Gaul event maps to a sourced record (or a documented reason why it does not); statuses reflect the shared Test B gate. Met offline on 20 Oct 2026; the runtime confirmation remains on Test B.
+  gaul_gallic_empire_effect_fix:
+    period_id: ancient
+    priority: 2
+    state: completed
+    targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/localization/english/et_culture_events_l_english.yml", "Extended Timeline/in_game/localization/turkish/et_culture_events_l_turkish.yml", "research/historical-events/2026-10-17_gaul_culture_transition.yml"]
+    source_refs: [wiki_gallic_empire]
+    question: What should the Imperium Galliarum event do in 260-274, given that the population identity does not change during the secession?
+    evidence: >-
+      The 20 Oct 2026 chain audit found that et_culture.105's historical
+      option could not change any pop: its limit required gallian nobles,
+      clergy and burghers in the nine city locations, and .101 had already
+      converted exactly those pops to gallo_roman in 58-100. This is the same
+      "historical option runs empty" class that the 18 Oct audit found in
+      .107 (fixed by widening the limit to gallian OR gallo_roman); widening
+      cannot help here because the target culture is already the pops'
+      culture. The record gaul_gallic_empire_260_274 describes the secession
+      as a frontier-army political breakaway, not a population change.
+    resolution: >-
+      The event was rewritten as a political event on 20 Oct 2026: option A
+      (historical) ends the breakaway with Aurelian's reconquest (stability
+      +10, prestige bonus), option B lets the provinces break away for good
+      (stability -10, prestige penalty). The inert custom_tooltip block and
+      the et_culture.105.tt key were removed, the EN/TR desc/a/b strings were
+      rewritten, and the record's integration note now describes the political
+      branch. No Gallic-Empire culture key was invented: the corpus has no
+      source-backed Gallic name pool, and a temporary identity would need a
+      restoration event that would break the chronological event-ID order.
+      Note: research/historical-events/2026-10-20_gaul_chain_audit.md
+      section 3.
+    acceptance: The .105 historical option has a visible effect (stability and prestige) and the event text matches the record; the runtime check is the R2 stop at 266 in Test B.
   gaul_dhe_tag_binding_review:
     period_id: medieval
     priority: 2
@@ -917,7 +961,23 @@ tasks:
       The FRAN/FRA boundary follows the rex Francorum -> rex Franciae shift
       (Philip II, 1190/1204). Remaining: Test B must include the ROM -> FRAN
       hand-off case; .109 and .110 sit on different tags, so no double firing.
-    acceptance: Decision recorded in the design note/README; Test B includes an owner-switch or non-ROM/FRAN/FRA case; no double firing.
+      UPDATE 24 (2026-10-20, static verification): the event file matches the
+      decision for all 23 events - ROM for .101-.109, FRAN for .110-.113, FRA
+      for .114-.123 - and every event carries fire_only_once = yes, so no
+      event can fire twice. The hand-off is double-firing free: .109 (ROM,
+      457-486) and .110 (FRAN, 496-508) sit on different tags with
+      non-overlapping windows. Window overlaps inside a band are documented
+      and accepted (.102/.103, .103 containing .104/.105, .106/.107, .107
+      containing .108); they touch different effects. The accepted limitation
+      stands: a non-ROM/FRAN/FRA owner of Paris never runs the chain, which
+      is logged in the Test B report instead of being engineered around.
+    resolution: >-
+      Decision confirmed and verified offline on 20 Oct 2026; the DHE band
+      binding stays. Note: research/historical-events/2026-10-20_gaul_chain_audit.md
+      section 2, with the per-event tag/window table. The Test B execution
+      cases are already in the protocol (R2 `list_dhe_for` for ROM, R3 for
+      FRAN and FRA, plus the ROM -> FRAN tag change).
+    acceptance: Decision recorded in the design note/README; Test B includes an owner-switch or non-ROM/FRAN/FRA case; no double firing. Decision and static verification met on 20 Oct 2026; the runtime cases stay on Test B.
   gaul_history_audit_followups:
     period_id: contemporary
     priority: 2

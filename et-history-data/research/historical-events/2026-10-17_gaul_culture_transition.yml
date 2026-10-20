@@ -83,7 +83,7 @@ records:
     mechanism: military usurpation, frontier-army autonomy, negotiated reabsorption
     source_refs: [{id: wiki_gallic_empire, locator: "Lead; History (Postumus 260; Aurelian 274)"}]
     confidence: high
-    integration: {status: applied, target: "events (et_culture.105)", note: "ROM 260-274; the nobles, clergy and burghers of the nine city locations become gallo_roman. The window follows the empire's lifespan, so the conversion completes before the Roman restoration."}
+    integration: {status: applied, target: "events (et_culture.105)", note: "ROM 260-274; the event is political, not demographic: the Imperium Galliarum is a frontier-army secession and the Gaulish population stays Romano-Gallic. The old culture effect was inert (it required gallian nobles, clergy and burghers in the nine cities, and .101 had already converted them to gallo_roman in 58-100), so on 20 Oct 2026 it was replaced by the political framing of the record: option A (historical) ends the breakaway with Aurelian's reconquest (274) - stability +10, prestige bonus; option B lets the provinces break away for good - stability -10, prestige penalty. No separate Gallic-Empire culture key is introduced: the corpus has no source-backed Gallic name pool, and a temporary identity would need a restoration event, which would break the chronological event-ID order."}
 
   gaul_christianization_martin_tours:
     entity: culture_gallo_roman

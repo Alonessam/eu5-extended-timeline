@@ -936,35 +936,7 @@ et_culture.105 = {
 	option = {
 		name = et_culture.105.a
 		historical_option = yes
-		custom_tooltip = {
-			text = et_culture.105.tt
-			every_owned_location = {
-				limit = {
-					OR = {
-						this = location:lyon
-						this = location:paris
-						this = location:bordeaux
-						this = location:toulouse
-						this = location:nimes
-						this = location:arles
-						this = location:marseille
-						this = location:reims
-						this = location:rouen
-					}
-				}
-				every_pop = {
-					limit = {
-						culture = culture:gallian
-						OR = {
-							pop_type = pop_type:nobles
-							pop_type = pop_type:clergy
-							pop_type = pop_type:burghers
-						}
-					}
-					change_pop_culture = culture:gallo_roman
-				}
-			}
-		}
+		add_stability = 10
 		add_prestige = prestige_mild_bonus
 	}
 

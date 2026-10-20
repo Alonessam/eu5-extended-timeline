@@ -154,6 +154,22 @@ kapsam bağlantısıdır ve olay hedefi için geçerli değildir. UPDATE 19
 nedeni değildir. Test B'de 0 kapsam satırı bekleniyor. Ayrıntı:
 `2026-10-20_scope_link_fix.md` (backlog `culture_event_scope_errors`).
 
+**Galya zincir denetimi (20 Ekim 2026):** Zincirin kayıt kapsamı, DHE etiket
+bağı ve olay etkileri çevrimdışı denetlendi. Kayıtlar: 23/23 olay (`.101`–
+`.123`) kayıtlı, kayıtların kullandığı 27 kaynak id'sinin tamamı `sources.yml`de,
+hedef olay id'leri ve notlardaki kültür anahtarları geçerli; `gaul_record_backfill`
+tamamlandı. DHE: bantlar karara birebir uyuyor (ROM `.101`–`.109`, FRAN
+`.110`–`.113`, FRA `.114`–`.123`), 23 olayın hepsi `fire_only_once = yes`,
+devirde (`.109` ROM → `.110` FRAN) çift ateşleme yok; pencere örtüşmeleri
+protokolde kabul edildiği gibi. Etki denetimi: `.105`in (Galya İmparatorluğu)
+tarihsel seçeneği hiçbir popu değiştiremiyordu (`.101` aynı popları zaten
+`gallo_roman`a çevirmişti) — 18 Ekim'deki `.107` sınıfının aynısı. Kaydın
+siyasi mekanizmasına uygun olarak olay siyasi bir olaya çevrildi: Aurelian'ın
+geri alışı (huzur +10, prestij +) veya eyaletlerin kalıcı kopuşu (huzur −10,
+prestij −); etkisiz `custom_tooltip` bloğu ve `et_culture.105.tt` anahtarı
+kaldırıldı, EN/TR metinleri ve kayıt notu güncellendi. Ayrıntı:
+`2026-10-20_gaul_chain_audit.md` (backlog UPDATE 24).
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,

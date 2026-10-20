@@ -69,11 +69,10 @@
  et_culture.104.tt: "İmparatorluktaki kalan Galya nüfusunun büyük bölümü Roma vatandaşlığını ve Gallo-Romen kimliğini benimser."
 
  et_culture.105.title: "Galya İmparatorluğu"
- et_culture.105.desc: "Roma'nın merkezi otoritesi barbar istilaları ve askeri anarşi altında çökerken, Batavia kökenli general Postumus, Galya, Britanya ve Hispanya'yı kapsayan ayrı bir Galya İmparatorluğu ilan etti. Gallo-Romen elitler Ren sınırında Roma medeniyetini korumak için ona katıldı. Roma bu ayrı devleti tanıyacak mı?"
- et_culture.105.a: "Galya eyaletleri savunulmalı."
- et_culture.105.b: "İsyankar valilerin meşruiyeti yoktur."
+ et_culture.105.desc: "Roma'nın merkezi otoritesi barbar istilaları ve askeri anarşi altında çökerken, Batavia kökenli general Postumus, Galya, Britanya ve Hispanya'yı kapsayan ayrı bir Galya İmparatorluğu ilan etti. Gallo-Romen elitler Ren sınırında Roma medeniyetini korumak için ona katıldı. On dört yıl boyunca ayrılık kendi sikkeleri, senatosu ve konsülleriyle yönetildi; ancak Aurelian'ın geri alışıyla sona erdi. Roma, Galya eyaletlerinin kaderini nasıl belirleyecek?"
+ et_culture.105.a: "Galya İmparatorluğu'na son verilmeli."
+ et_culture.105.b: "Galya eyaletleri Roma'dan kopmalı."
  et_culture.105.historical_info: "MS 260–274 arasında Postumus ve halefleri, Üçüncü Yüzyıl Krizi sırasında Galya, Britanya ve Hispanya'yı kapsayan Imperium Galliarum'u yönettiler. İmparatorluk, Aurelian'ın Tetricus'u Châlons'da yenmesiyle sona erdi."
- et_culture.105.tt: "Ayrılıkçı eyaletlerdeki Gallo-Romen elitler, Gallo-Romen kimliğini benimser."
 
  et_culture.106.title: "Galya Köylüsünün Elçisi"
  et_culture.106.desc: "Tours piskoposu Martin, eski Roma askerliğinden köylü nüfusunun arasına dönerek kutsal korulardan, pagan pınarlarından ve kırsal tapınaklarından kurtulup yerlerine kiliseler ve manastırlar kuruyor. Kırsal Galya dünyası İmparator'un fermanıyla değil, gezgin bir piskoposun özgür iradesiyle yavaşça Hristiyanlığa dönüyor."
@@ -97,7 +96,7 @@
  et_culture.108.tt: "Burgund ve Vizigot yerleşimciler Galya eyaletlerine yerleşiyor."
 
  et_culture.109.title: "Galya'nın Son Romalısı"
- et_culture.109.desc: "Aegidius'un oğlu Syagrius, Soissons çevresindeki son Roma topraklarını koruyor — Frenklerin "Romalıların Krallığı" dediği yer. Clovis 486'da Soissons'da onu yendiğinde, Roma Galya'sı sona eriyor. Frenk çağı başlıyor."
+ et_culture.109.desc: "Aegidius'un oğlu Syagrius, Soissons çevresindeki son Roma topraklarını koruyor — Frenklerin “Romalıların Krallığı” dediği yer. Clovis 486'da Soissons'da onu yendiğinde, Roma Galya'sı sona eriyor. Frenk çağı başlıyor."
  et_culture.109.a: "Galya'daki Roma nizamı sona erdi."
  et_culture.109.b: "Soissons düşmemeli."
  et_culture.109.historical_info: "Syagrius, Aegidius'un oğlu, Clovis'in 486'da Soissons Savaşı'nda yenmesine kadar Soissons çevresindeki son Roma devleti (464–486) yönetti. Bu, Galya'da Roma yönetiminin sona erdiği ve Frenk hâkimiyetinin başladığı anlamına gelir."

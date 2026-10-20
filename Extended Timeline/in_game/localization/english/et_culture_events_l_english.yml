@@ -69,11 +69,10 @@
  et_culture.104.tt: "Remaining Gallic populations throughout the empire receive Roman citizenship and embrace Gallo-Roman culture."
 
  et_culture.105.title: "The Gallic Empire"
- et_culture.105.desc: "As the central authority of Rome falters under barbarian invasions and military anarchy, Postumus, a general of Batavian origin, has declared a separate Gallic Empire encompassing Gaul, Britain, and Hispania. The Gallo-Roman elite rally behind him, seeking to preserve Roman civilization on the Rhine frontier. Will Rome acknowledge this breakaway state?"
- et_culture.105.a: "The Gallic provinces must be defended."
- et_culture.105.b: "Rebel governors have no legitimacy."
+ et_culture.105.desc: "As the central authority of Rome falters under barbarian invasions and military anarchy, Postumus, a general of Batavian origin, has declared a separate Gallic Empire encompassing Gaul, Britain, and Hispania. The Gallo-Roman elite rally behind him, seeking to preserve Roman civilization on the Rhine frontier. For fourteen years the breakaway rules with its own coinage, senate and consuls, and only Aurelian's reconquest ends it. How will Rome settle the fate of the Gaulish provinces?"
+ et_culture.105.a: "The Gallic Empire must be ended."
+ et_culture.105.b: "The Gallic provinces must break away from Rome."
  et_culture.105.historical_info: "From 260 to 274 CE, Postumus and his successors ruled the Imperium Galliarum, a breakaway state encompassing Gaul, Britain, and Hispania during the Crisis of the Third Century. The empire fell when Aurelian defeated Tetricus at Châlons."
- et_culture.105.tt: "Gallic elites in the breakaway provinces adopt the Gallo-Roman identity."
 
  et_culture.106.title: "The Apostle of the Gallic Peasantry"
  et_culture.106.desc: "Martin, a former Roman soldier turned bishop of Tours, travels the countryside destroying sacred groves, pagan springs, and rustic shrines, replacing them with churches and monasteries. The rural Gallic world slowly turns from its ancestral gods to Christ, not by imperial decree but by the zeal of one wandering bishop."
