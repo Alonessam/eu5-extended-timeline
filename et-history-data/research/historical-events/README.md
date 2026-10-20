@@ -103,6 +103,13 @@ listeleri dahil uygulanan mekaniği anlatıyor. Script tarafındaki düzeltmeler
 Test B zinciri hâlâ bekliyor; `pending` → `applied` dönüşümü script'in
 uygulanmış halini kaydeder, oyun içi doğrulamayı değil. Ayrıntı: backlog UPDATE 14.
 
+**Test B koşum takımı (19 Ekim 2026):** Tek oturumluk zincir doğrulaması için
+protokol notu (`2026-10-19_test_b_protocol.md`) ve iki araç yayında:
+`et-history-data/scripts/test-b-prepare.py` (log yedeği + temizliği + koşum
+klasörü) ve `test-b-report.py` (mod filtreli log raporu + sınıf-1
+sınıflaması). Ham kanıt `et-history-data/tests/` altında tutulur (depo dışı).
+UPDATE 19 düzeltmeleri (`a718859`) bu koşumun ön koşuludur.
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,
@@ -314,9 +321,10 @@ Her fazın akışı: kaynaklı veri → olay tasarımı → mod uygulaması → 
   (17 Ekim 2026) · Galya `et_culture.101`–`.103` + `gallo_roman` (Samet)
 - [x] Oyun içi test A — `et_culture.9000` ve Galya `.101` ateşlendi;
   oturumun `error.log`'u mod satırı içermiyor (17 Ekim 2026)
-- [ ] Oyun içi test B — Mısır zinciri `.1`–`.5`: console protokolü
-  (`event_probabilities`, `test_event_trigger`, `change_date`, `tick_day`;
-  ayrıntı: design note bölüm 5)
+- [ ] Oyun içi test B — Mısır `.1`–`.5` + Galya `.101`–`.123`: koşum
+  takımı `2026-10-19_test_b_protocol.md` (`event_probabilities`,
+  `test_event_trigger`, `change_date`, `tick_day`; Mısır ayrıntısı:
+  design note bölüm 5)
 
 ## 6. Bağlayıcı kalite kuralları
 
