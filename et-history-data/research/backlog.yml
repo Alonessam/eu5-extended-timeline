@@ -152,11 +152,29 @@ tasks:
   un_membership_mapping:
     period_id: contemporary
     priority: 2
-    state: pending
-    targets: [international_organizations]
+    state: completed
+    targets: [research/contemporary/un_founding_member_map.yml, research/contemporary/2026-10-13_un.yml]
     source_refs: [un_founders]
     question: Map all 51 founding states and their effective dates to repository tags.
-    acceptance: Separate signature and ratification; do not assign every founding state membership on 24 October 1945.
+    evidence: >-
+      The UN Dag Hammarskjold Library founding-members table was read directly
+      and gives, for every founding member, the date of signing and the date the
+      instrument of ratification was deposited. Fifty states signed on 26 June
+      1945 and Poland on 15 October 1945; twenty-nine states had ratified by
+      24 October 1945, the day the Charter entered into force, and the
+      remaining twenty-two ratified between 25 October and 27 December 1945.
+      The corpus has no Ukraine country tag, so the Ukrainian SSR is the one
+      founding member that cannot be mapped.
+    resolution: >-
+      Mapped on 20 Oct 2026 in research/contemporary/un_founding_member_map.yml:
+      51 rows with the state, the repository tag, the signature date, the
+      ratification date and the notes. Every tag was verified against the mod
+      country list and the repository country files; where the corpus holds a
+      historical and a modern tag for one state (IRA for Persia and IRAN for
+      Iran, HOL and NED, EGY, EGYP and MAM for Egypt, GBR for Great Britain)
+      the modern tag is used and the other is named in the note. The research
+      record un_founding_member_tags points at the table.
+    acceptance: Separate signature and ratification; do not assign every founding state membership on 24 October 1945. Met on 20 Oct 2026: the two dates are separate columns and the table states that 29 of 51 states held membership on 24 October 1945.
   geographic_coverage:
     period_id: ancient
     priority: 1

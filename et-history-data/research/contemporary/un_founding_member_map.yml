@@ -1,0 +1,245 @@
+schema_version: 1
+period_id: contemporary
+collected_on: "2026-10-20"
+source_refs:
+  - id: un_founders
+    locator: "Founding Member States table (Date of Signing and Deposit of Ratification columns)"
+
+notes: >-
+  Signature, ratification and membership-effective are three different events.
+  The Charter was signed on 26 June 1945 by 50 states and on 15 October 1945
+  by Poland, so 51 states signed. Membership becomes effective on the date the
+  instrument of ratification was deposited, and the Charter entered into
+  force on 24 October 1945. Twenty-nine of the 51 founding members had
+  ratified by 24 October 1945 (including the five permanent members and
+  Poland); the remaining 22 deposited their instruments between 25 October and
+  27 December 1945. A membership snapshot dated 24 October 1945 therefore
+  contains 29 states, not 51. The tags are the repository's own country tags
+  (et-history-data/countries/); where a state has more than one tag in the
+  corpus, the modern one is used and the historical one is named in the note.
+
+members:
+  # --- ratified on or before 24 October 1945 (membership effective at 1945.10.24) ---
+  - state: "United States of America"
+    tag: USA
+    signed: "1945.6.26"
+    ratified: "1945.8.8"
+    note: "Permanent Security Council member; the repository name for the tag is America."
+  - state: "France"
+    tag: FRA
+    signed: "1945.6.26"
+    ratified: "1945.8.31"
+    note: "Permanent Security Council member."
+  - state: "Republic of China"
+    tag: CHI
+    signed: "1945.6.26"
+    ratified: "1945.9.28"
+    note: "Permanent Security Council member; the current name of the state is People's Republic of China."
+  - state: "Union of Soviet Socialist Republics"
+    tag: SOVI
+    signed: "1945.6.26"
+    ratified: "1945.10.24"
+    note: "Permanent Security Council member; the current name of the state is Russian Federation."
+  - state: "United Kingdom of Great Britain and Northern Ireland"
+    tag: GBR
+    signed: "1945.6.26"
+    ratified: "1945.10.20"
+    note: "Permanent Security Council member; the repository name for the tag is Great Britain."
+  - state: "Argentina"
+    tag: ARGE
+    signed: "1945.6.26"
+    ratified: "1945.9.24"
+  - state: "Brazil"
+    tag: BRAZ
+    signed: "1945.6.26"
+    ratified: "1945.9.21"
+  - state: "Byelorussian Soviet Socialist Republic"
+    tag: BELA
+    signed: "1945.6.26"
+    ratified: "1945.10.24"
+    note: "Current name Belarus."
+  - state: "Chile"
+    tag: CHIL
+    signed: "1945.6.26"
+    ratified: "1945.10.11"
+  - state: "Cuba"
+    tag: CUBA
+    signed: "1945.6.26"
+    ratified: "1945.10.15"
+  - state: "Czechoslovakia"
+    tag: CZES
+    signed: "1945.6.26"
+    ratified: "1945.10.19"
+    note: "Succeeded by Czechia and Slovakia."
+  - state: "Denmark"
+    tag: DAN
+    signed: "1945.6.26"
+    ratified: "1945.10.9"
+  - state: "Dominican Republic"
+    tag: DOMR
+    signed: "1945.6.26"
+    ratified: "1945.9.4"
+  - state: "Egypt"
+    tag: EGY
+    signed: "1945.6.26"
+    ratified: "1945.10.22"
+    note: "The modern state; the corpus also holds EGYP for the 58 CE Ptolemaic start state and MAM for the Mamluk Sultanate."
+  - state: "El Salvador"
+    tag: ELSA
+    signed: "1945.6.26"
+    ratified: "1945.9.26"
+  - state: "Haiti"
+    tag: HAIT
+    signed: "1945.6.26"
+    ratified: "1945.9.27"
+  - state: "Iran"
+    tag: IRAN
+    signed: "1945.6.26"
+    ratified: "1945.10.16"
+    note: "The corpus also holds IRA for the historical Persia tag."
+  - state: "Lebanon"
+    tag: LEBA
+    signed: "1945.6.26"
+    ratified: "1945.10.15"
+  - state: "Luxembourg"
+    tag: LUX
+    signed: "1945.6.26"
+    ratified: "1945.10.17"
+  - state: "New Zealand"
+    tag: NZEA
+    signed: "1945.6.26"
+    ratified: "1945.9.19"
+  - state: "Nicaragua"
+    tag: NICR
+    signed: "1945.6.26"
+    ratified: "1945.9.6"
+  - state: "Paraguay"
+    tag: PARA
+    signed: "1945.6.26"
+    ratified: "1945.10.12"
+  - state: "Philippine Commonwealth"
+    tag: PHIL
+    signed: "1945.6.26"
+    ratified: "1945.10.11"
+    note: "Current name Philippines."
+  - state: "Poland"
+    tag: POL
+    signed: "1945.10.15"
+    ratified: "1945.10.24"
+    note: "The only founding member that did not sign on 26 June 1945."
+  - state: "Saudi Arabia"
+    tag: SAUD
+    signed: "1945.6.26"
+    ratified: "1945.10.18"
+  - state: "Syrian Arab Republic"
+    tag: SYRI
+    signed: "1945.6.26"
+    ratified: "1945.10.19"
+  - state: "Turkey"
+    tag: TURK
+    signed: "1945.6.26"
+    ratified: "1945.9.28"
+    note: "Current name Turkiye."
+  - state: "Ukrainian Soviet Socialist Republic"
+    tag: null
+    signed: "1945.6.26"
+    ratified: "1945.10.24"
+    note: "Current name Ukraine, but the corpus has no Ukraine country tag, so this founding member cannot be mapped to a game country."
+  - state: "Yugoslavia"
+    tag: YUGO
+    signed: "1945.6.26"
+    ratified: "1945.10.19"
+    note: "Succeeded by Bosnia and Herzegovina, Croatia, Montenegro, North Macedonia, Serbia and Slovenia."
+  # --- ratified after 24 October 1945 (membership effective on the ratification date) ---
+  - state: "Greece"
+    tag: GRE
+    signed: "1945.6.26"
+    ratified: "1945.10.25"
+  - state: "India"
+    tag: INDI
+    signed: "1945.6.26"
+    ratified: "1945.10.30"
+  - state: "Peru"
+    tag: PERU
+    signed: "1945.6.26"
+    ratified: "1945.10.31"
+  - state: "Australia"
+    tag: AUST
+    signed: "1945.6.26"
+    ratified: "1945.11.1"
+  - state: "Costa Rica"
+    tag: COST
+    signed: "1945.6.26"
+    ratified: "1945.11.2"
+  - state: "Liberia"
+    tag: LIBE
+    signed: "1945.6.26"
+    ratified: "1945.11.2"
+  - state: "Colombia"
+    tag: COLO
+    signed: "1945.6.26"
+    ratified: "1945.11.5"
+  - state: "Mexico"
+    tag: MEX
+    signed: "1945.6.26"
+    ratified: "1945.11.7"
+  - state: "Union of South Africa"
+    tag: SAFR
+    signed: "1945.6.26"
+    ratified: "1945.11.7"
+    note: "Current name South Africa."
+  - state: "Canada"
+    tag: CAN
+    signed: "1945.6.26"
+    ratified: "1945.11.9"
+  - state: "Panama"
+    tag: PANA
+    signed: "1945.6.26"
+    ratified: "1945.11.13"
+  - state: "Ethiopia"
+    tag: ETH
+    signed: "1945.6.26"
+    ratified: "1945.11.13"
+  - state: "Bolivia"
+    tag: BOLI
+    signed: "1945.6.26"
+    ratified: "1945.11.14"
+    note: "Current name Plurinational State of Bolivia."
+  - state: "Venezuela"
+    tag: VENE
+    signed: "1945.6.26"
+    ratified: "1945.11.15"
+    note: "Current name Bolivarian Republic of Venezuela."
+  - state: "Honduras"
+    tag: HOND
+    signed: "1945.6.26"
+    ratified: "1945.11.17"
+  - state: "Guatemala"
+    tag: GUAT
+    signed: "1945.6.26"
+    ratified: "1945.11.21"
+  - state: "Norway"
+    tag: NOR
+    signed: "1945.6.26"
+    ratified: "1945.11.27"
+  - state: "Netherlands"
+    tag: NED
+    signed: "1945.6.26"
+    ratified: "1945.12.10"
+    note: "Current name Kingdom of the Netherlands; the corpus also holds HOL for the historical Holland tag."
+  - state: "Uruguay"
+    tag: URUG
+    signed: "1945.6.26"
+    ratified: "1945.12.18"
+  - state: "Iraq"
+    tag: IRAQ
+    signed: "1945.6.26"
+    ratified: "1945.12.21"
+  - state: "Ecuador"
+    tag: ECUA
+    signed: "1945.6.26"
+    ratified: "1945.12.21"
+  - state: "Belgium"
+    tag: BEL
+    signed: "1945.6.26"
+    ratified: "1945.12.27"

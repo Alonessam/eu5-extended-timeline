@@ -34,6 +34,24 @@ records:
     source_refs: [{id: un_founders, locator: "Introduction, Article 110 explanation"}]
     confidence: high
     integration: {status: collected, note: "Membership must be built from country-specific effective dates, not all signature dates."}
+  un_founding_member_tags:
+    entity: United Nations
+    subject: organization_membership_mapping
+    finding: >-
+      The 51 founding members are mapped to the repository's country tags with
+      their two distinct dates: the signature (26 June 1945 for 50 states and
+      15 October 1945 for Poland) and the deposit of the instrument of
+      ratification. Twenty-nine states had ratified by 24 October 1945, the
+      day the Charter entered into force; the remaining 22 ratified between
+      25 October and 27 December 1945. One founding member cannot be mapped:
+      the Ukrainian Soviet Socialist Republic, because the corpus holds no
+      Ukraine country tag.
+    population: "51 founding member states mapped to 50 repository tags"
+    dating: {precision: year, year: 1945}
+    mechanism: "membership effective on the ratification date, not on the signature date"
+    source_refs: [{id: un_founders, locator: "Founding Member States table"}]
+    confidence: high
+    integration: {status: applied, target: research/contemporary/un_founding_member_map.yml, note: "The mapping is stored as a table with the state, the tag, the signature date, the ratification date and the notes. Membership snapshots must use the ratification date, so a snapshot dated 24 October 1945 holds 29 states and not 51."}
   un_founding_member_count:
     entity: United Nations
     subject: organization_membership
