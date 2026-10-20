@@ -1020,7 +1020,7 @@ tasks:
   gaul_dhe_tag_binding_review:
     period_id: medieval
     priority: 2
-    state: in_progress
+    state: completed
     targets: ["Extended Timeline/in_game/events/et_culture_events.txt", "Extended Timeline/in_game/common/on_action/et_history_pulses.txt"]
     source_refs: [wiki_style_of_the_french_sovereign]
     question: Should the Gaul chain keep the dynamic_historical_event tag binding (ROM for .101-.109, FRAN for .110-.113, FRA for .114-.123) or move to the owner-agnostic yearly-pulse pattern used by the Egypt chain?
