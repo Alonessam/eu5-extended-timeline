@@ -122,6 +122,25 @@ edin — `gaul_dhe_tag_binding_review` bulgusudur.
    işlenir (`gaul_record_backfill`, `gaul_dhe_tag_binding_review`,
    `et_culture.9000` emekliliği Test B'ye bağlı).
 
+### Beklenen bilgi sınıfı (regresyon değil)
+
+`test-b-report.py` bu satırları ayrı sayar; taban değerler 18 Ekim
+oturumundan gelir:
+
+- `Duplicated key ... will not be created`: 670 satır (et_german hariç;
+  663 setup + 4 bilinen anahtar + 2 folk_european + 1 et_christianity).
+  Taşıma sonrası aramaic/coptic/miaphysite satırlarında kaybeden dosya
+  vanilla olur; satır sayısı değişmez.
+- Kullanılmayan değişken uyarısı: 8 (`et_egypt_*` direnç/çoğunluk
+  değişkenleri). Mısır zinciri bunları set ediyor, okumuyor; bilinçli kabul
+  (18 Ekim analizi).
+- `could not be found in the database`: 1 (`ubian`, et_countries.txt:12849).
+  `ubian` kültürü `et_german.txt:369`'da tanımlı; 18 Ekim satırı
+  `swiss_culture {` sözdizimi hatasının alan çağlayanıydı (UPDATE 19:
+  `swiss_culture = {`). Test B'de 0 beklenir.
+- Sınıf-1 `*_language` referansları: 13 satır / 7 anahtar; gözlem verisi
+  (rapor bölüm 2), kapanış Test B loguna bağlı.
+
 ## Kabul kriterleri
 
 - Zincirler hedeflenen yönlerde ve sırayla ateşlenir; direnç dalı zinciri
