@@ -1,17 +1,23 @@
 # Test B koşum protokolü — Mısır + Galya zincir doğrulaması (tek oturum)
 
-**Tarih:** 19 Ekim 2026 · **Durum:** koşum takımı hazır, oyun içi koşum bekliyor.
+**Tarih:** 19 Ekim 2026, Mısır eki 20 Ekim 2026 · **Durum:** koşum takımı
+hazır, oyun içi koşum bekliyor.
 **Ön koşul:** UPDATE 19 düzeltme paketi (commit `a718859`): 103 kapsam
 düzeltmesi, `swiss_culture` onarımı, `jewish` kültürü, 5 eksik dil tanımı,
 TR loc girdileri. Ayrıntı: `backlog.yml` UPDATE 19.
+**20 Ekim eki:** `origin/main` senkronu (merge `aeee7f1`) — Gaul yeniden
+numaralandırması (`.103`–`.105`), `outcome = good` → `positive` ve Mısır
+Nübya + siyasi zincirleri aynı dosyada; koşumlar R1b/R1c olarak eklendi.
 
 ## Amaç
 
-Tek oyun oturumunda üç alt koşum:
+Tek oyun oturumunda beş alt koşum:
 
 | Koşum | Sahip | Aralık | Olaylar |
 |---|---|---|---|
 | R1 Mısır | ROM | 58 → 1200 | `et_culture.1`–`.5` (direnç dalı dahil) |
+| R1b Nübya | MERO | 300 → 900 | `.6`–`.7` (`et_nubia_yearly_pulse`) |
+| R1c Mısır siyasi | ROM → BYZ | 214 → 969 | `.8`, `.10`–`.15` (yıllık nabız); `.9`, `.16` (işgalci nabzı) |
 | R2 Galya (Roma) | ROM | 58 → ~490 | `.101`–`.109` |
 | R3 Galya (Frenk/Fransa) | FRAN → FRA | ~490 → 2026 | `.110`–`.113` / `.114`–`.123` |
 
@@ -56,6 +62,52 @@ Ayrıntılı adımlar tasarım notu bölüm 5'te; özet kontrol listesi:
    FAIL; etkiler `event et_culture.3` ile zorlanır — gerekçe bölüm 5.)
 7. Kapanış: panoda İslam çoğunluk + Kıptî azınlık + Mısır kültürleri;
    `test_event_trigger et_culture.1` → FAIL (tekilleştirme kanıtı).
+
+## R1b — Nübya kültür zinciri (MERO, 300 → 900)
+
+`et_test_b_58` kaydını yükle. `event_probabilities yearly_country_pulse`
+dökümünde `et_nubia_yearly_pulse` da görünmeli (ikinci kanca kanıtı);
+58 başlangıcında bölgenin sahibi MERO.
+
+1. `test_event_trigger et_culture.6` → FAIL (58 < 300).
+2. `change_date 350` → `test_event_trigger et_culture.6` PASS; birkaç ay
+   akıt → `.6` doğal ateşlenir (Meroe'nin sessizliği; tarihsel seçenek
+   kushite → nubian).
+3. `change_date 600` → `test_event_trigger et_culture.7` PASS (536–900);
+   doğal ateşleme → `.7` (Nobatia'nın vaftizi; nubian +
+   egyptian_polytheism → miaphysite).
+4. Çift ateşleme kontrolü: tekrar `test_event_trigger` → FAIL
+   (`has_variable`: `et_nubia_6_fired` / `et_nubia_7_fired`).
+5. Kaydet: `et_test_b_nubia`.
+
+## R1c — Mısır siyasi zinciri (214 → 969)
+
+`et_test_b_58` kaydını yükle. Zincir sahip-agnostik nabızlarda çalışır:
+`.8` ve `.10`–`.15` → `et_egypt_yearly_pulse` (`owns`); `.9` ve `.16` →
+`et_egypt_occupier_pulse` (`controls`). Ayrıntı: siyasi tasarım notu bölüm 5
+(`2026-10-18_egypt_political_chain_design.md`).
+
+| `tag` | `change_date` | Olay | Pencere |
+|---|---|---|---|
+| ROM | 215 | `.8` | 214–217 |
+| RASH | 640 | `.10` | 639–650 |
+| UMAY | 705 | `.11` | 700–712 |
+| ABBA | 830 | `.12` | 825–835 |
+| EGY | 870 | `.13` | 866–880 |
+| EGY | 940 | `.14` | 933–945 |
+| FATI | 970 | `.15` | 968–978 |
+| ERA | 620 | `.9` | 618–630 (control) |
+| BYZ | 645 | `.16` | 644–647 (control) |
+
+- Her durakta: `test_event_trigger et_culture.N` → PASS; birkaç ay akıt →
+  doğal ateşleme; sonra tekrar `test_event_trigger` → FAIL (`has_variable`
+  kilidi; çift ateşleme yok).
+- R2 sırasında ROM 214–217'den geçerken `.8` doğal düşebilir (Mısır'ın
+  sahibi ROM) — beklenen; R2 akışını bozmaz.
+- `.9` / `.16`: state katmanının ERA/BYZ kontrol pencereleri oyun içinde
+  doğrulanmadı. `controls` FAIL verirse bulgu `egypt_political_chain_batch2`
+  kapsamında backlog'a yazılır; olay hatası sayılmaz.
+- Kaydet: `et_test_b_egypt_political`.
 
 ## R2 — Galya / Roma (58 → ~490)
 
@@ -120,6 +172,7 @@ edin — `gaul_dhe_tag_binding_review` bulgusudur.
    satırları ise gözlem (gizem verisi).
 3. Konsol çıktıları + önemli panolar rapora eklenir; sonuç backlog'a
    işlenir (`gaul_record_backfill`, `gaul_dhe_tag_binding_review`,
+   `egypt_political_chain_batch2` state katmanı bulguları;
    `et_culture.9000` emekliliği Test B'ye bağlı).
 
 ### Beklenen bilgi sınıfı (regresyon değil)
@@ -133,7 +186,8 @@ oturumundan gelir:
   vanilla olur; satır sayısı değişmez.
 - Kullanılmayan değişken uyarısı: 8 (`et_egypt_*` direnç/çoğunluk
   değişkenleri). Mısır zinciri bunları set ediyor, okumuyor; bilinçli kabul
-  (18 Ekim analizi).
+  (18 Ekim analizi). Siyasi zincirin `et_egypt_polit_*_fired` ve Nübya'nın
+  `et_nubia_*_fired` değişkenleri trigger'da okunur — yeni satır beklenmez.
 - `could not be found in the database`: 1 (`ubian`, et_countries.txt:12849).
   `ubian` kültürü `et_german.txt:369`'da tanımlı; 18 Ekim satırı
   `swiss_culture {` sözdizimi hatasının alan çağlayanıydı (UPDATE 19:
@@ -145,6 +199,9 @@ oturumundan gelir:
 
 - Zincirler hedeflenen yönlerde ve sırayla ateşlenir; direnç dalı zinciri
   durdurur; etiket bağları (ROM/FRAN/FRA) `list_dhe_for` ile doğrulanır.
+- Mısır siyasi zinciri `.8`–`.16` hedeflenen etiket/yıllarda ateşlenir;
+  `.9`/`.16` yalnızca işgalci nabzındadır; `has_variable` kilidi çift
+  ateşlemeyi engeller. R1b'de `.6`–`.7` MERO sahipliğinde ateşlenir.
 - Loglarda mod kaynaklı **yeni** hata yok; UPDATE 19 hedefleri temiz.
 - Sınıf-1 için veri: ya satırlar gitmiştir (çözüldü) ya da dosya
   bağlamıyla belgelenmiş şekilde durur (açık kalır, backlog güncellenir).
