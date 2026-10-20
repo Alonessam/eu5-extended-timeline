@@ -2,8 +2,8 @@
 """Test B sonrasi log raporu (Extended Timeline).
 
 Canli oyun loglarini (debug.log, error.log) kosum klasorune kopyalar,
-"moda ait" hatalari ayiklar, UPDATE 19 beklenenlerini ve sinif-1 gizem
-anahtarlarini siniflandirir, report.md uretir.
+"moda ait" hatalari ayiklar, UPDATE 19 beklenenlerini ve sinif-1 dil
+referanslarini (beklenen sifir) denetler, report.md uretir.
 
 Kullanim:
   python et-history-data/scripts/test-b-report.py
@@ -36,6 +36,10 @@ FIXED_FIVE = [
     "farsi_language",
 ]
 
+# 20 Oct 2026 addressability fix: a parent key with a non-empty `dialects`
+# block is not a valid culture/religion `language` target unless it also has a
+# self-named default dialect. The refs now use a dialect/plain language (or the
+# parent's self-named default), so any hit below is a regression and fails.
 CLASS1_STEMS = [
     "latin_language",
     "occitan_language",
@@ -221,6 +225,8 @@ def main() -> int:
         regressions.append(f"bilinmeyen modifier satiri: {len(modifier_lines)}")
     if fixed_hits:
         regressions.append(f"duzeltilen 5 dil anahtari ref'i: {len(fixed_hits)}")
+    if class1_hits:
+        regressions.append(f"sinif-1 dil referansi (beklenen sifir): {len(class1_hits)}")
     if jewish_hits:
         regressions.append(f"jewish ref'i: {len(jewish_hits)}")
     if unknown:
@@ -263,7 +269,8 @@ def main() -> int:
         ("`Unknown modifier type` (UPDATE 17 fixleri)", 9, len(modifier_lines), "zero"),
         ("Duzeltilen 5 dil anahtari ref'i", 5, len(fixed_hits), "zero"),
         ("`jewish` ref'i", 4, len(jewish_hits), "zero"),
-        ("Sinif-1 anahtar ref'i (gozlem)", "7 anahtar", len(class1_hits), "observe"),
+        ("Sinif-1 dil anahtari ref'i (beklenen sifir)", "13 satir / 7 anahtar",
+         len(class1_hits), "zero"),
         ("Mod dosyali diger anahtar ref'i", 4, len(mod_file_refs), "zero"),
         ("Tanimsiz anahtar ref'i (yeni eksik)", 4, len(unknown), "zero"),
         ("`Duplicated key` golge satiri (bilgi; et_german haric)", 670,
@@ -287,22 +294,23 @@ def main() -> int:
               f"{len(noise_loc)} satir, mount bilgisi {len(noise_mount)} satir")
     md.append(f"- Vanilla tarafindaki anahtar ref'leri (bilgi): {len(vanilla_side)}")
     md.append("")
-    md.append("## 2. Sinif-1 gozlemi (7 `*_language` anahtari)")
+    md.append("## 2. Sinif-1 dil referansi (7 `*_language` anahtari, beklenen sifir)")
     md.append("")
     if class1_hits:
-        md.append(f"{len(class1_hits)} satir bulundu:")
+        md.append(f"REGRESYON: {len(class1_hits)} satir bulundu. Kok neden: "
+                  "dolu `dialects` blogu olan ust dil anahtari culture/religion "
+                  "`language` alaninda adreslenemez; dialect veya duz dil kullanin.")
         md.append("")
         md.append("```")
         for l in class1_hits[:40]:
             md.append(l.strip()[:300])
         md.append("```")
     else:
-        md.append("Temiz - bu oturumda hicbir sinif-1 anahtari referans hatasi "
-                  "vermedi. (18 Ekim'de 7 anahtar basarisizdi; gizemin kapandigi "
-                  "yonunde guclu veri.)")
+        md.append("Temiz - bu oturumda hicbir sinif-1 dil referansi hatasi "
+                  "vermedi. 20 Ekim addressability fix'i sonrasi beklenen sonuc.")
     md.append("")
     regression_lines = (scope_lines + scope_other + german_lines
-                        + enum_lines + modifier_lines)
+                        + enum_lines + modifier_lines + class1_hits)
     if regression_lines:
         md.append("### Beklenen-sifir sinif satirlari")
         md.append("")

@@ -1,7 +1,7 @@
 ﻿
 ##ET
 gallo_roman = {
-	language = latin_language
+	language = roman_dialect
 	
 	color = rgb { 128 45 155 }
 	
@@ -19,7 +19,7 @@ gallo_roman = {
 }
 
 occitan = {
-	language = occitan_language
+	language = occitan_dialect
 	
 	color = rgb { 180 80 60 }
 	

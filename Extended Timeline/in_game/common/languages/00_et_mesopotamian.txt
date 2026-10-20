@@ -23,7 +23,13 @@
 	
 }
 
+# ET (2026-10-20): the engine exposes plain languages and dialects to the
+# culture/religion `language` field, not dialect-group parents. Add the missing
+# family/colour and a self-named default dialect so phoenician_culture resolves.
 phoenician_language = {
+	color = tyrian
+	family = semitic_language_family
+
     dynasty_names = {
 			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid 
 			Milkiramid Philosirid
@@ -41,6 +47,9 @@ phoenician_language = {
             Sibittibaal Tabnit Ummashtart Urumilkat
         }
 	dialects = {
+        phoenician_language = {
+            default = yes
+        }
         punic_dialect = {
             dynasty_names = {
 		        "Didonian" "Magonid" "Hannonian" "Azemilcid" "Baal" "Barca"

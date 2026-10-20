@@ -3,7 +3,7 @@ chalcedonism = {
 	color = rgb { 200 160 0 }
 	group = christian
 	
-	language = latin_language
+	language = church_dialect
 
 	enable = 2.1.1
 		
@@ -26,7 +26,7 @@ arianism = {
 	color = rgb { 120 120 0 }
 	group = christian
 	
-	language = latin_language
+	language = church_dialect
 
 	enable = 2.1.1
 		

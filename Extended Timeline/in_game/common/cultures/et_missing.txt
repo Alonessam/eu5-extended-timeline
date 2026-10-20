@@ -38,7 +38,7 @@ cantonese = {
 }
 
 hubei = {
-	language = mandarin_language
+	language = southern_mandarin_dialect
 	color = rgb{ 180 150 40 }
 	tags = { east_asian_gfx }
 	opinions = {}
@@ -46,7 +46,7 @@ hubei = {
 }
 
 shandong_culture = {
-	language = mandarin_language
+	language = northern_mandarin_dialect
 	color = rgb{ 200 160 80 }
 	tags = { east_asian_gfx }
 	opinions = {}
@@ -54,7 +54,7 @@ shandong_culture = {
 }
 
 xibei = {
-	language = mandarin_language
+	language = northern_mandarin_dialect
 	color = rgb{ 190 140 100 }
 	tags = { east_asian_gfx }
 	opinions = {}
@@ -95,7 +95,7 @@ kanek_culture = {
 
 
 brythonic = {
-	language = brythonic_language
+	language = briton_dialect
 	color = rgb{ 60 140 180 }
 	tags = { celtic_gfx european_gfx }
 	opinions = {}
@@ -119,7 +119,7 @@ germanic = {
 }
 
 bedouin = {
-	language = arabic_language
+	language = peninsular_dialect
 	color = rgb{ 210 180 120 }
 	tags = { middle_east_gfx }
 	opinions = {}
@@ -159,7 +159,7 @@ alan = {
 }
 
 baltic = {
-	language = baltic_language
+	language = western_baltic_dialect
 	color = rgb{ 120 150 170 }
 	tags = { eastern_european_gfx european_gfx }
 	opinions = {}

@@ -1,6 +1,6 @@
 ﻿
 etruscan = {
-	language = latin_language
+	language = roman_dialect
 	
 	color = rgb{ 45 31 205 }
 
@@ -16,7 +16,7 @@ etruscan = {
 	}	
 }
 roman = {
-	language = latin_language
+	language = roman_dialect
 	
 	color = rgb{ 145 31 205 }
 

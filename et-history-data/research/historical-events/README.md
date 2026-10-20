@@ -129,6 +129,21 @@ düzenlemeydi). Setup artık 663/663 yaşıyor; ayrıntı
 `2026-10-20_setup_authority_report.md`. Test B bu satırları bilgi sınıfında
 tutmalı; setup satırlarında kaybeden artık vanilla dosyasıdır.
 
+**Dil referansı adreslenebilirliği (20 Ekim 2026):** 18 Ekim Test B
+tabanında kalan 13 sınıf-1 `Failed to read key reference` satırının (7
+anahtar) kök nedeni bulundu: dolu `dialects` bloğu taşıyan bir üst dil
+anahtarı culture/religion `language` alanında adreslenemiyor; motor yalnızca
+düz dilleri, lehçeleri ve kendi adlı varsayılan lehçesi olan üst dilleri
+çözüyor. On iki referans mevcut lehçelere taşındı (`roman_dialect`,
+`occitan_dialect`, `southern/northern_mandarin_dialect`, `briton_dialect`,
+`peninsular_dialect`, `western_baltic_dialect`, `church_dialect`);
+`phoenician_language` için kendi adlı `default = yes` lehçesi, `color = tyrian`
+ve `family = semitic_language_family` eklendi. Statik denetim: 379 mod
+referansı / 0 çözülemeyen; vanilla 2.087 referans / 0 çözülemeyen.
+`test-b-report.py` sınıf-1'i artık beklenen sıfır sayıyor ve her hit'i
+regresyon olarak işaretliyor. Ayrıntı:
+`2026-10-20_language_ref_fix.md` (backlog UPDATE 23).
+
 **Nasıl kullanılır:** Bu doküman canlıdır; fazlar ilerledikçe güncellenir.
 Katkı vermek isteyen ekip üyeleri bölüm 4'teki iş paketlerinden veya bölüm
 5'teki Faz 1 kontrol listesinden başlayabilir. Yeni veri ve script işleri,

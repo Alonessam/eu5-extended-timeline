@@ -766,6 +766,64 @@ tasks:
       the 20 Oct changes (108 at the 19 Oct close-out; 10 setup overrides
       deleted, 3 delta files added). Parser-level malformed blocks (the
       18 Oct ubian cascade) are outside this check and remain on Test B.
+  language_ref_addressability:
+    period_id: ancient
+    priority: 2
+    state: completed
+    targets: [Extended Timeline/in_game/common/cultures/et_french.txt, Extended Timeline/in_game/common/cultures/et_italian.txt, Extended Timeline/in_game/common/cultures/et_missing.txt, Extended Timeline/in_game/common/religions/et_christianity.txt, Extended Timeline/in_game/common/languages/00_et_mesopotamian.txt, research/historical-events/2026-10-20_language_ref_fix.md]
+    source_refs: []
+    question: Why do culture/religion `language =` refs to seven parent language keys fail to resolve, and which language keys are addressable?
+    evidence: >-
+      The 18 Oct 2026 Test B baseline had 13 `Failed to read key reference`
+      lines for seven `*_language` keys (latin, occitan, mandarin, brythonic,
+      arabic, baltic, phoenician), all from mod culture/religion definitions,
+      not event scripts. Vanilla has 528 top-level language blocks and 612
+      addressable keys (plain languages plus dialects); all 2087 vanilla
+      culture `language` refs resolve to one of those. No vanilla culture
+      points at a parent with a non-empty `dialects` block unless the parent
+      also has a self-named default dialect. The mod's own `gaulish_language` and `akkadian_language`
+      parents have zero direct refs; their cultures use dialects. Empty
+      `dialects = {}` parents (tocharian, saka, pictish) are already referenced
+      without errors.
+    resolution: >-
+      UPDATE 23 (2026-10-20): fixed all 13 refs. gallo_roman, etruscan and roman
+      now use roman_dialect; occitan uses occitan_dialect; hubei uses
+      southern_mandarin_dialect; shandong_culture and xibei use
+      northern_mandarin_dialect; brythonic uses briton_dialect (the mod's
+      ancient Briton name pool, leaving vanilla `language:brythonic_language`
+      trigger semantics unchanged); bedouin uses peninsular_dialect; baltic uses
+      western_baltic_dialect; chalcedonism and arianism use church_dialect.
+      phoenician_culture keeps phoenician_language after adding a self-named
+      `default = yes` dialect, `color = tyrian` (vanilla
+      main_menu/common/named_colors/01_coa.txt) and
+      `family = semitic_language_family`; punic_dialect remains for
+      punic_culture. Etruscan is a documented placeholder because no vanilla or
+      mod Etruscan name data exists. All 379 mod culture/religion `language`
+      refs now resolve (0 unresolved); script-token-audit stays clean at 101
+      targets. test-b-report.py now treats class-1 as expected zero and any hit
+      as a regression. Note:
+      research/historical-events/2026-10-20_language_ref_fix.md.
+    acceptance: Every mod culture/religion `language` ref resolves to a plain language, a dialect, or a parent with a self-named default dialect; the Test B report expects zero class-1 lines and fails on any hit. Offline data side met 20 Oct 2026; runtime confirmation remains on Test B.
+  culture_event_scope_errors:
+    period_id: ancient
+    priority: 1
+    state: pending
+    targets: [Extended Timeline/in_game/events/et_culture_events.txt]
+    source_refs: []
+    question: Why do `this = location:<key>` comparisons inside `every_owned_location` limits report Invalid scope types for the location event-target link in et_culture_events.txt when close vanilla patterns are accepted?
+    evidence: >-
+      The 18 Oct 2026 baseline log has 103 `Invalid scope types ... link:
+      location` lines, all `this = location:<key>` comparisons inside
+      `every_owned_location` limits in et_culture_events.txt. The same
+      location-key comparison is accepted in vanilla flavor_BUL.txt:56-67
+      (every_owned_location effect) and appears inside a custom_tooltip in
+      flavor_ENG.txt:6126 (with `NOT` and a province_definition check). A first
+      static comparison found no scope-type difference between the mod and
+      those vanilla examples; the trigger/effect context and the repeated
+      location lists in et_culture.101-.118 still need a focused comparison.
+      The errors are non-fatal but they are expected to reach zero in the Test B
+      report row.
+    acceptance: Each location list uses a vanilla-verified scope form and a Test B log shows zero `Invalid scope types ... et_culture_events.txt` lines; the report row is 0 with no new errors.
   gaul_postwar_immigration_layer:
     period_id: contemporary
     priority: 3
