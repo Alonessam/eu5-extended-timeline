@@ -55,9 +55,9 @@ records:
     subject: city_rank_58ce
     finding: Narbo (Narbonne), historically a prosperous Mediterranean port city of southern Gaul.
     dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
-    source_refs: [{id: wiki_narbonne, locator: "Article intro"}]
+    source_refs: [{id: wiki_narbonne, locator: "History > Under the Romans (the 118 BC foundation as Colonia Narbo Martius)"}]
     confidence: medium
-    integration: {status: applied, target: locations/europe/western_europe/france_region/languedoc_area/narbonne.yml, note: "Roman colony status (118 BC) not quoted in the cited intro; upgrade source later. City rank added to the 58.2.1 block."}
+    integration: {status: applied, target: locations/europe/western_europe/france_region/languedoc_area/narbonne.yml, note: "The source was upgraded on 20 Oct 2026: the colony status and the provincial capital now come from the history section (118 BC, Colonia Narbo Martius) instead of the intro."}
   tarragona_city_58ce:
     entity: loc_tarragona
     subject: city_and_market_58ce
@@ -71,9 +71,9 @@ records:
     subject: city_rank_58ce
     finding: Corduba (Cordoba), capital of the Roman province of Baetica in Hispania.
     dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
-    source_refs: [{id: wiki_corduba, locator: "Article intro (Italian: capitale della Betica nella Hispania romana)"}]
+    source_refs: [{id: wiki_cordoba_roman, locator: "History, the Roman period (the foundation of 169 or 152 BC and the capital of Baetica)"}]
     confidence: high
-    integration: {status: applied, target: locations/europe/western_europe/iberia_region/andalusia_area/cordoba.yml, note: "Source is the Italian Wikipedia entry for the ancient city name. City rank added to the 58.2.1 block."}
+    integration: {status: applied, target: locations/europe/western_europe/iberia_region/andalusia_area/cordoba.yml, note: "The stub source was replaced on 20 Oct 2026 with the English article, whose history section carries the Roman provincial-capital statement; the contested foundation date (169 or 152 BC) is not used."}
   merida_city_58ce:
     entity: loc_merida
     subject: city_rank_58ce
@@ -199,9 +199,9 @@ records:
     subject: city_and_market_58ce
     finding: Damascus, one of the oldest continuously inhabited capitals of the region and a long-established Syrian caravan centre.
     dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
-    source_refs: [{id: wiki_damascus, locator: "Article intro"}]
+    source_refs: [{id: wiki_damascus, locator: "History > Roman period"}]
     confidence: medium
-    integration: {status: applied, target: locations/asia/middle_east/crescent_region/levant_area/damascus.yml, note: "Cited intro is thin on the pre-Islamic era; upgrade source later. City and market flags added to the 58.2.1 block."}
+    integration: {status: applied, target: locations/asia/middle_east/crescent_region/levant_area/damascus.yml, note: "The source was upgraded on 20 Oct 2026: the pre-Islamic era now comes from the history section on the Roman period instead of the thin intro."}
   jerusalem_city_58ce:
     entity: loc_jerusalem
     subject: city_rank_58ce
@@ -463,9 +463,9 @@ records:
     subject: city_rank_58ce
     finding: Purushapura (Peshawar) at the approaches to the Khyber; compilations estimate about 120,000 around AD 100.
     dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
-    source_refs: [{id: wiki_urban_sizes, locator: "Peshawar row (~120,000)"}]
+    source_refs: [{id: wiki_urban_sizes, locator: "Peshawar row (~120,000)"}, {id: wiki_peshawar, locator: "History > Ancient history > Foundation and the Kushan empire (Purushapura)"}]
     confidence: medium
-    integration: {status: applied, target: locations/asia/south_asia/hindustan_region/punjab_area/peshawar.yml, note: "City rank added to the 58.2.1 block."}
+    integration: {status: applied, target: locations/asia/south_asia/hindustan_region/punjab_area/peshawar.yml, note: "A dedicated source was added on 20 Oct 2026 for the ancient city identity (Purushapura, the Kushan capital), while the population figure still comes from the urban-size compilation."}
   rawalpindi_city_58ce:
     entity: loc_rawalpindi
     subject: city_rank_58ce
@@ -519,9 +519,9 @@ records:
     subject: city_and_market_58ce
     finding: Dunhuang (tile name Shazhou), Han-era commandery city of the Hexi (Gansu) Corridor, the most important trade route in Northwest China on the Northern Silk Road.
     dating: {precision: year, date: "58", calendar: ce_year_normalized_to_et}
-    source_refs: [{id: wiki_hexi_corridor, locator: "Article intro"}]
+    source_refs: [{id: wiki_hexi_corridor, locator: "History > Han dynasty (the Dunhuang commandery and the Silk Road)"}]
     confidence: medium
-    integration: {status: applied, target: locations/asia/east_asia/west_china_region/gansu_area/shazhou.yml, note: "Tile named Shazhou, the historical name of Dunhuang. City and market flags added to the 58.2.1 block."}
+    integration: {status: applied, target: locations/asia/east_asia/west_china_region/gansu_area/shazhou.yml, note: "The source was upgraded on 20 Oct 2026: the Han-dynasty section carries the commandery city, while the intro only names the corridor."}
   luoyang_city_58ce:
     entity: loc_luoyang
     subject: city_and_market_58ce

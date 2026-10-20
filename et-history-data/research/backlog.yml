@@ -290,11 +290,32 @@ tasks:
   ancient_economy_source_upgrades:
     period_id: ancient
     priority: 2
-    state: pending
-    targets: [research/ancient/2026-10-17_58ce_cities_and_markets.yml, research/sources.yml]
-    source_refs: [wiki_corduba, wiki_damascus, wiki_narbonne]
+    state: completed
+    targets: [research/ancient/2026-10-17_58ce_cities_and_markets.yml, et-history-data/research/sources.yml]
+    source_refs: [wiki_cordoba_roman, wiki_peshawar, wiki_damascus, wiki_narbonne, wiki_hexi_corridor]
     question: Replace the weak sources flagged in the 58 CE cities batch (Corduba stub, Damascus intro, Narbonne colony status, Peshawar and Dunhuang intros) with stronger references.
-    acceptance: Keep findings and confidence levels in sync with any replacement; do not silently drop caveats.
+    evidence: >-
+      The five weak references were checked against the live English Wikipedia
+      section structure on 20 Oct 2026. The Corduba stub was an Italian
+      article that only carried the provincial-capital statement; the English
+      article's history section carries the foundation, the colonia status of
+      46-45 BC and the capital of Baetica. The Damascus, Narbonne and Hexi
+      Corridor articles were cited by their intro, while the facts used live in
+      the history sections (Roman period, Under the Romans, Han dynasty). The
+      Peshawar record had only the urban-size compilation, with no source for
+      the ancient city identity itself.
+    resolution: >-
+      Upgraded on 20 Oct 2026. Two sources were added to the catalogue -
+      wiki_cordoba_roman (the English article, with the contested foundation
+      date left unused) and wiki_peshawar (the dedicated article for the
+      Purushapura and Kushan capital identity, with the population figure
+      still coming from the compilation) - and three locators were moved from
+      the intro to the sections that actually carry the facts. The record
+      notes and caveats were updated in step, and a global check confirmed
+      that every source id used by the record layer exists in the catalogue;
+      the only unresolved ids are the ones the requirement files list as still
+      to be obtained.
+    acceptance: Keep findings and confidence levels in sync with any replacement; do not silently drop caveats. Met on 20 Oct 2026, the five records cite the stronger references, the findings and confidence values are unchanged, and the superseded stub stays in the catalogue with a caveat that points to its replacement.
   location_tile_identifications:
     period_id: ancient
     priority: 2

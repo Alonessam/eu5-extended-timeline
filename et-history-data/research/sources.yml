@@ -141,7 +141,8 @@ sources:
     publisher: Wikipedia
     type: encyclopedia_article
     url: https://en.wikipedia.org/wiki/Narbonne
-    locator: Article intro
+    locator: "History > Under the Romans (the 118 BC foundation as Colonia Narbo Martius and the provincial capital)"
+    caveat: "The Roman colony status and the provincial capital come from the history section, not the intro."
   wiki_tarraco:
     title: Tarraco
     publisher: Wikipedia
@@ -166,13 +167,27 @@ sources:
     type: encyclopedia_article
     url: https://en.wikipedia.org/wiki/Camulodunum
     locator: Article intro
+  wiki_cordoba_roman:
+    title: "Cordoba, Spain"
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/C%C3%B3rdoba,_Spain
+    locator: "History, the Roman period (the foundation of 169 or 152 BC, the colonia status of 46-45 BC and the capital of Baetica)"
+    caveat: "The foundation date is contested between 169 and 152 BC; the record only uses the provincial-capital statement."
+  wiki_peshawar:
+    title: Peshawar
+    publisher: Wikipedia
+    type: encyclopedia_article
+    url: https://en.wikipedia.org/wiki/Peshawar
+    locator: "History > Ancient history > Foundation, and the Kushan empire section (Purushapura)"
+    caveat: "Supports the ancient city identity; the population figure still comes from the urban-size compilation."
   wiki_corduba:
     title: Corduba
     publisher: Wikipedia (Italian)
     type: encyclopedia_article
     url: https://it.wikipedia.org/wiki/Corduba
     locator: Article intro
-    caveat: Short stub article used for the provincial-capital statement; upgrade source later.
+    caveat: "Short stub article; superseded for the 58 CE city record by wiki_cordoba_roman, which carries the Roman provincial-capital statement in its history section."
   wiki_tingi:
     title: Tingi
     publisher: Wikipedia
@@ -244,8 +259,8 @@ sources:
     publisher: Wikipedia
     type: encyclopedia_article
     url: https://en.wikipedia.org/wiki/Damascus
-    locator: Article intro
-    caveat: Intro is thin on the pre-Islamic era; upgrade source later.
+    locator: "History > Roman period"
+    caveat: "The pre-Islamic era is taken from the history section rather than the intro, which is thin on it."
   wiki_gaza_city:
     title: Gaza City
     publisher: Wikipedia
@@ -395,7 +410,8 @@ sources:
     publisher: Wikipedia
     type: encyclopedia_article
     url: https://en.wikipedia.org/wiki/Hexi_Corridor
-    locator: Article intro
+    locator: "History > Han dynasty (the Dunhuang commandery and the Silk Road)"
+    caveat: "The Han-dynasty section carries the commandery city; the intro only names the corridor."
   wiki_handan:
     title: Handan
     publisher: Wikipedia
